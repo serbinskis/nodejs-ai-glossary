@@ -1,0 +1,54 @@
+{
+  "name": "node-ai-glossary",
+  "version": "1.0.0",
+  "description": "",
+  "type": "module",
+  "main": "index.cjs",
+  "scripts": {
+    "start": "cd dist & node index.js",
+    "build": "copyfiles -u 1 src/website/** dist & tsc --outDir dist",
+    "test": "rimraf dev & copyfiles -u 1 src/website/** dev & tsc --outDir dev & cd dev & node index.js"
+  },
+  "keywords": [],
+  "author": "Serbinskis",
+  "license": "ISC",
+  "dependencies": {
+    "@ericedouard/vad-node-realtime": "^0.2.0",
+    "@ffmpeg-installer/ffmpeg": "^1.1.0",
+    "@huggingface/gguf": "^0.3.2",
+    "@huggingface/hub": "^2.6.12",
+    "@sigma/striprtf": "npm:@jsr/sigma__striprtf@^1.0.0",
+    "archiver": "^7.0.1",
+    "body-parser": "^1.20.2",
+    "cheerio": "^1.1.2",
+    "connect-busboy": "^1.0.0",
+    "cors": "^2.8.5",
+    "express": "^4.17.1",
+    "extract-zip": "^2.0.1",
+    "file-type": "^21.0.0",
+    "fluent-ffmpeg": "^2.1.3",
+    "got": "^11.8.1",
+    "mammoth": "^1.11.0",
+    "node-llama-cpp": "^3.14.2",
+    "node-schedule": "^2.1.0",
+    "odt2html": "^1.0.1",
+    "pptx-content-extractor": "^1.0.3",
+    "qiao-get-ip": "^0.0.8",
+    "serbinskis-utils": "^1.0.79",
+    "sharp": "^0.34.4",
+    "socket.io": "^3.0.5",
+    "sqlite3": "^5.1.7",
+    "tesseract.js": "^6.0.1",
+    "word-extractor": "^1.0.4"
+  },
+  "engines": {
+    "node": "24.11.0"
+  },
+  "devDependencies": {
+    "@types/node": "^18.19.130",
+    "copyfiles": "^2.4.1",
+    "rimraf": "^4.1.2",
+    "typescript": "^5.8.3",
+    "unpdf": "^1.4.0"
+  }
+}
