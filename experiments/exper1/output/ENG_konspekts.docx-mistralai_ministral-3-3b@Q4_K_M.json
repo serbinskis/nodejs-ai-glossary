@@ -1,0 +1,895 @@
+{
+  "uid": "a8a9d15c-8853-496a-818c-aee0955172b6",
+  "domain": "unknown",
+  "language": "en",
+  "implementation": "LMStudio-mistralai/ministral-3-3b@Q4_K_M",
+  "timestamp_start": 1774466145276,
+  "timestamp_end": 1774467208316,
+  "error_count": 34,
+  "glossary": [
+    {
+      "term": "Artificial Intelligence",
+      "definition": "a field within computer science focused on developing systems capable of performing tasks that typically require human intelligence, such as reasoning, learning from data, recognizing patterns, problem-solving, and interacting with humans or environments.",
+      "sentence": "d 784 p. Negnevitsky M. (2011). Artificial Intelligence: a Guide to Intelligent Systems...",
+      "language": "en",
+      "generated": false,
+      "uid": "b0d6514a-66c1-4b85-b95e-ca23fe5fecd5"
+    },
+    {
+      "term": "intelligent computer systems",
+      "definition": "computational entities designed to mimic aspects of human intelligence, enabling them to perform tasks like decision-making, knowledge representation, and problem-solving autonomously or collaboratively with humans.",
+      "sentence": "...to support humans in the completion of various functions and activities...",
+      "language": "en",
+      "generated": false,
+      "uid": "7cd34816-8cd1-4481-a6a4-78de2097b4d1"
+    },
+    {
+      "term": "problem-solving",
+      "definition": "the process of identifying a discrepancy between an initial state (current situation) and a goal state, then determining actions to transition from the initial state toward achieving the goal through systematic reasoning.",
+      "sentence": "...to complete various functions and activities, or, in other words, to cope with different types of problems...",
+      "language": "en",
+      "generated": false,
+      "uid": "aa26f195-2c67-467d-b024-f247a4644a74"
+    },
+    {
+      "term": "state space",
+      "definition": "The entire set of possible configurations or states that can be considered in a search problem, represented visually as nodes in a graph.",
+      "sentence": "(Figure 19) the state space graph...",
+      "language": "en",
+      "generated": false,
+      "uid": "5367878d-50bb-4333-a144-1f794a2eb77d"
+    },
+    {
+      "term": "state space graph",
+      "definition": "a graphical representation of all possible states (game positions) and their relationships within a search environment, used to analyze game outcomes systematically.",
+      "sentence": "The algorithm searches the **state space graph** using a depth-first search...",
+      "language": "en",
+      "generated": false,
+      "uid": "1fcb651d-7c1a-46c4-a1de-c8957a5e699a"
+    },
+    {
+      "term": "initial state",
+      "definition": "the starting configuration or set of properties describing the current situation in the problem-solving context, representing where one begins to address a given task.",
+      "sentence": "...a state we are in at present (the so-called initial state)...",
+      "language": "en",
+      "generated": false,
+      "uid": "9b3df577-cf84-4179-b3a4-58e96ef54a58"
+    },
+    {
+      "term": "goal state",
+      "definition": "the desired configuration or set of properties that the problem-solving process aims to achieve, marking the end goal after transformation from the initial state.",
+      "sentence": "...a state we would like to reach (the so-called goal state)...",
+      "language": "en",
+      "generated": false,
+      "uid": "44cd7893-6f49-4af3-a020-04bc30534009"
+    },
+    {
+      "term": "discrepancy",
+      "definition": "a difference or inconsistency between two states that need to be resolved through actions and transitions.",
+      "sentence": "To eliminate the discrepancy between these states, we perform actions...",
+      "language": "en",
+      "generated": false,
+      "uid": "f31f733f-eceb-4678-b785-dae53c0401fd"
+    },
+    {
+      "term": "problem definition",
+      "definition": "the act of clearly identifying and specifying an initial state, a goal state, and any discrepancies that necessitate problem-solving actions to transition from one state to another.",
+      "sentence": "...The definition of the problem means that we determine...",
+      "language": "en",
+      "generated": false,
+      "uid": "82cd2a71-f27b-4aa4-8807-f519ed75e537"
+    },
+    {
+      "term": "resources",
+      "definition": "available elements or assets (e.g., time, money, transportation options) that can be used to execute actions necessary for moving from an initial state toward a goal state in problem-solving.",
+      "sentence": "...which together allow the identification of actions...",
+      "language": "en",
+      "generated": false,
+      "uid": "4bce9e89-8ad0-4203-b0bb-e7f9491084e3"
+    },
+    {
+      "term": "action",
+      "definition": "a deliberate move or change performed to transition between states in a problem-solving process, transforming one configuration into another within the defined state space.",
+      "sentence": "...we can start thinking about resources and opportunities available to us, which together allow the identification of actions...",
+      "language": "en",
+      "generated": false,
+      "uid": "1620030b-4d33-44e9-9926-3c5eaa0eb19c"
+    },
+    {
+      "term": "alternative actions",
+      "definition": "multiple possible courses of action derived from available resources, each offering different pathways or conditions for transitioning from an initial state toward a goal state.",
+      "sentence": "...to identify possible alternative actions...",
+      "language": "en",
+      "generated": false,
+      "uid": "93b71b84-2322-4292-97ac-ab6e0b433c90"
+    },
+    {
+      "term": "subjective criteria",
+      "definition": "personal evaluation or judgment used by an agent to select among available alternative actions based on their suitability for achieving a goal, considering factors like feasibility and preference.",
+      "sentence": "...based on your subjective criteria...",
+      "language": "en",
+      "generated": false,
+      "uid": "7a0f2e5e-f073-4e26-9afc-6b1acefbbb8d"
+    },
+    {
+      "term": "formal representation",
+      "definition": "a structured, mathematically precise way of describing objects, their properties, behaviors, or problem-solving processes so that they can be converted into computational constructs for implementation in intelligent systems.",
+      "sentence": "...formal or mathematical representation...",
+      "language": "en",
+      "generated": false,
+      "uid": "562e93b9-86a2-4f2e-b0bd-1f744d7b0580"
+    },
+    {
+      "term": "formal specification",
+      "definition": "a detailed description of the intended properties, behaviors, and constraints of a problem-solving system using formal logic or mathematical frameworks to ensure clarity and computability.",
+      "sentence": "...also called a formal representation...",
+      "language": "en",
+      "generated": false,
+      "uid": "584110fc-994d-4dd7-a7c9-82c0feda2154"
+    },
+    {
+      "term": "data structures",
+      "definition": "organizational schemes for storing, managing, and retrieving data about real-world entities or phenomena in a structured manner to facilitate computational processing.",
+      "sentence": "...a way of structural organization of data about the real world...",
+      "language": "en",
+      "generated": false,
+      "uid": "f244a16f-a105-402f-8ef0-1f32385817e8"
+    },
+    {
+      "term": "data repositories",
+      "definition": "systems (e.g., files, databases) designed to store and organize data derived from observations or problem-solving representations for later retrieval and processing.",
+      "sentence": "...places where to store the data...",
+      "language": "en",
+      "generated": false,
+      "uid": "8f717cc8-b885-4dfc-baed-1a388edd0e9f"
+    },
+    {
+      "term": "algorithms",
+      "definition": "step-by-step procedures or computational routines designed to process, transform, or analyze data in pursuit of specific goals within intelligent systems.",
+      "sentence": "...ways to process data in order to achieve a specific goal...",
+      "language": "en",
+      "generated": false,
+      "uid": "da0257b5-f1e2-4d9e-a5b0-06565df486fd"
+    },
+    {
+      "term": "root node",
+      "definition": "A reference term indicating a node at the boundary of its search direction’s depth limit, marking the end of expansion for that branch.",
+      "sentence": "...nodes located at the depth limit are considered to be leaf/root nodes (depending on the search direction).",
+      "language": "en",
+      "generated": false,
+      "uid": "1340b175-d1d4-49fc-89b0-eafe700000a7"
+    },
+    {
+      "term": "terminal (leaf) node",
+      "definition": "an endpoint in a state space graph representing the goal state of a problem-solving process, with no further descendants.",
+      "sentence": "...a terminal (leaf) node which corresponds to a goal state...",
+      "language": "en",
+      "generated": false,
+      "uid": "eae6ad2e-18f3-4bf6-9275-4bad98d66247"
+    },
+    {
+      "term": "internal nodes",
+      "definition": "intermediate points in a state space graph that represent configurations between the initial and goal states, having both ancestors and descendants.",
+      "sentence": "...may have internal nodes that correspond to intermediate states...",
+      "language": "en",
+      "generated": false,
+      "uid": "379b9d01-95ad-48d2-916d-6bc35f3f3597"
+    },
+    {
+      "term": "arcs",
+      "definition": "lines between nodes in a state space graph that depict legal moves from one state to another.",
+      "sentence": "arcs are used to represent legal moves in the game...",
+      "language": "en",
+      "generated": false,
+      "uid": "9d25d1ed-4c58-4866-a255-8220690d5f09"
+    },
+    {
+      "term": "discrete states",
+      "definition": "specific configurations or snapshots of properties for objects in a problem-solving scenario, defined at distinct points in time to form nodes within the state space graph.",
+      "sentence": "...nodes corresponding to discrete states...",
+      "language": "en",
+      "generated": false,
+      "uid": "ca5e331c-f6ac-4b8a-9694-945a177bd235"
+    },
+    {
+      "term": "intermediate state",
+      "definition": "a state of a problem-solving process or game that occurs between initial and goal states after one or more moves have been made.",
+      "sentence": "we perform actions and pass through a series of intermediate states (Figure 2).",
+      "language": "en",
+      "generated": false,
+      "uid": "e12a8a65-0d32-42fa-ad5e-c64840d5d0e9"
+    },
+    {
+      "term": "problem-solving process",
+      "definition": "a structured sequence of actions aimed at transitioning from an initial state to one or more goal states by making valid moves within the constraints of a given problem.",
+      "sentence": "Playing a game can be seen as a problem-solving process...",
+      "language": "en",
+      "generated": false,
+      "uid": "b64cfaa7-3419-402d-9591-3d2de52a3909"
+    },
+    {
+      "term": "blank grid",
+      "definition": "the initial, unmarked state of a tic-tac-toe board ready for players to make their first moves.",
+      "sentence": "The initial state of the problem-solving process is a blank grid...",
+      "language": "en",
+      "generated": false,
+      "uid": "37ab6679-099a-4737-ac2e-c67973c9d295"
+    },
+    {
+      "term": "goal states",
+      "definition": "specific configurations in a game where three marks corresponding to one player are aligned horizontally, vertically, or diagonally.",
+      "sentence": "Each player wants to reach one of the goal states...",
+      "language": "en",
+      "generated": false,
+      "uid": "4bb4dd42-0a45-4b9d-9c13-68d6380fedd4"
+    },
+    {
+      "term": "legal moves",
+      "definition": "valid actions a player can take in a game, such as placing an X or O mark in empty squares, which modify the current state.",
+      "sentence": "Each player makes moves by putting their marks in empty squares...",
+      "language": "en",
+      "generated": false,
+      "uid": "6108b14f-f354-42e8-90ba-7839bcf886be"
+    },
+    {
+      "term": "nodes",
+      "definition": "represent discrete points in a state space graph, each corresponding to a specific configuration of a game at any given moment.",
+      "sentence": "A state space graph can be used to represent the course of the game in a formal way. Its nodes correspond to...",
+      "language": "en",
+      "generated": false,
+      "uid": "eaefcf23-24f0-4101-9178-9d2b3b566c5c"
+    },
+    {
+      "term": "deterministic two-player game",
+      "definition": "a game where players alternate turns, and each move strictly follows rules with no randomness or chance.",
+      "sentence": "Since moves are made alternately in a deterministic two-player game...",
+      "language": "en",
+      "generated": false,
+      "uid": "7265bf1a-2cfb-49c9-86dc-f596203da626"
+    },
+    {
+      "term": "perfect information",
+      "definition": "a condition where all players know the complete state of the game at any moment, including previous moves and scores.",
+      "sentence": "...of perfect information, node levels are clearly distinguishable...",
+      "language": "en",
+      "generated": false,
+      "uid": "507f9a90-4262-45ed-947d-2178be67e665"
+    },
+    {
+      "term": "levels (in state space graph)",
+      "definition": "distinct layers in a state space graph corresponding to turns of different players, where each level contains states from which only one player can make a move.",
+      "sentence": "node levels are clearly distinguishable in the state space graph...",
+      "language": "en",
+      "generated": false,
+      "uid": "02c7269c-f658-4ab6-968f-11c6d53e05b4"
+    },
+    {
+      "term": "zero-sum game",
+      "definition": "a type of game where a player’s gain is another player’s loss, implying that actions must be chosen with full awareness of their opponent’s possible responses.",
+      "sentence": "...as defined at the beginning of this topic. As a result...",
+      "language": "en",
+      "generated": false,
+      "uid": "d71615c1-5d86-46d3-b050-294682539cee"
+    },
+    {
+      "term": "parameters (of game states)",
+      "definition": "specific attributes that define the state of a game, such as scores or board configurations, which remain constant unless modified by moves and must be tracked across nodes in the graph.",
+      "sentence": "...determine a specific state in the game at a specific moment in time; the values of these parameters should be represented...",
+      "language": "en",
+      "generated": false,
+      "uid": "6e21c8c8-175a-4ef2-bd52-0f88a303e30a"
+    },
+    {
+      "term": "state representation parameters",
+      "definition": "variables such as scores or board configurations that uniquely identify each node in the state space graph, ensuring consistency across levels.",
+      "sentence": "...the properties of the game and its course, in which the values change after making a move during...",
+      "language": "en",
+      "generated": false,
+      "uid": "1adb7af2-9048-4798-a5c7-b2f4ab293e3e"
+    },
+    {
+      "term": "state space complexity",
+      "definition": "the computational challenge posed by a state space graph—reducing redundancy to avoid redundant nodes (identical states) and unnecessary computations.",
+      "sentence": "...complexity of a state space graph is a critical aspect...",
+      "language": "en",
+      "generated": false,
+      "uid": "6783c3fc-db58-4e9d-8740-6f98126ecdd5"
+    },
+    {
+      "term": "state redundancy",
+      "definition": "the repetition of identical game states within the same level in a state space graph, which can be minimized by merging duplicate nodes.",
+      "sentence": "...avoid multiple representations of the same state within...",
+      "language": "en",
+      "generated": false,
+      "uid": "be848b21-9b0a-4e4a-85c6-302f37a6695b"
+    },
+    {
+      "term": "oversimplified game",
+      "definition": "a simplified example of a game used for illustrative purposes in explaining concepts like state space graphs, where rules are streamlined to demonstrate principles without complexity.",
+      "sentence": "...consider the example of the construction of a state space graph...",
+      "language": "en",
+      "generated": false,
+      "uid": "bc469880-e270-43ba-aa7c-38bf3502b22e"
+    },
+    {
+      "term": "numerical string",
+      "definition": "a sequence of numbers (e.g., '2-3-3') representing a specific game state or configuration in which nodes are evaluated during search.",
+      "sentence": "...the node with the numerical string ‘2-3-3’...",
+      "language": "en",
+      "generated": false,
+      "uid": "a77d7612-990a-41c4-8fc1-1cc262213dfe"
+    },
+    {
+      "term": "leaf nodes",
+      "definition": "terminal states in a state space graph where no further moves are possible, typically representing the end of a game (e.g., one number remaining in an oversimplified game).",
+      "sentence": "...until we reach leaf nodes...",
+      "language": "en",
+      "generated": false,
+      "uid": "6ee5ba4b-80de-4b1f-ad1b-570d232cd812"
+    },
+    {
+      "term": "search algorithm",
+      "definition": "a computational method used by intelligent systems to navigate a state space graph, selecting optimal paths from initial states toward goal configurations based on predefined criteria.",
+      "sentence": "...we need to implement a search algorithm...",
+      "language": "en",
+      "generated": false,
+      "uid": "31e87e3b-daaa-49c3-8725-d8ee748e2227"
+    },
+    {
+      "term": "current node",
+      "definition": "The node currently being evaluated or expanded in the search algorithm. It is selected from the OPEN list for processing.",
+      "sentence": "The node K, which is located on the first position of the OPEN list, becomes the current node.",
+      "language": "en",
+      "generated": false,
+      "uid": "593b7068-ea70-4705-9bf0-a6a12c4580b9"
+    },
+    {
+      "term": "descendant",
+      "definition": "A node that is generated from the current node through a single step of expansion in the state space graph.",
+      "sentence": "The algorithm expands the current node I by generating its three descendants - nodes J, K, and G.",
+      "language": "en",
+      "generated": false,
+      "uid": "7a4e3831-ca1a-48e7-a206-b13ee757171e"
+    },
+    {
+      "term": "CLOSED list",
+      "definition": "a data structure used in search algorithms (e.g., Best-First Search) that records nodes that have already been expanded and are no longer available for further consideration.",
+      "sentence": "(The OPEN list is implemented as a data structure called a priority queue...).",
+      "language": "en",
+      "generated": false,
+      "uid": "9d767725-e0a2-4c31-899d-ea2f464f1fb5"
+    },
+    {
+      "term": "OPEN list",
+      "definition": "a data structure used in Best-First Search that stores all nodes discovered during the search, ordered by their heuristic measures (from best to worst), enabling systematic selection of the next node to expand.",
+      "sentence": "This allows the algorithm to switch between different paths in the state space graph...",
+      "language": "en",
+      "generated": false,
+      "uid": "1ea790da-8544-4bec-8eec-ea5b72290498"
+    },
+    {
+      "term": "search goal node",
+      "definition": "the target or endpoint of the search process within a state space graph, toward which the algorithm aims to navigate.",
+      "sentence": "It is the search goal node; thus, the algorithm stops its operation.",
+      "language": "en",
+      "generated": false,
+      "uid": "d671581e-39cc-4fa0-8b7a-65ebf04fb785"
+    },
+    {
+      "term": "depth-first search",
+      "definition": "a search algorithm that explores as far as possible along each branch before backtracking, here used in conjunction with Ertel (2011) to traverse the state space graph.",
+      "sentence": "...using a **depth-first search** (Ertel, 2011)...",
+      "language": "en",
+      "generated": false,
+      "uid": "eb475a29-c1dc-4dcf-b986-1ba968ec8982"
+    },
+    {
+      "term": "shortest path",
+      "definition": "an optimal sequence of nodes connecting a start state to the goal, identified by heuristics that minimize irrelevant factors (e.g., reversals or distances)",
+      "sentence": "(Which **of the identified factors could be used to judge if a node is located on the shortest path?**)",
+      "language": "en",
+      "generated": false,
+      "uid": "ed8bbcba-7800-4768-8c6c-737b15de98fa"
+    },
+    {
+      "term": "indefinitely deep paths",
+      "definition": "Paths in a state space graph that extend infinitely or persistently at great depths, causing inefficient computational time if not managed properly.",
+      "sentence": "...the problem of so-called indefinitely deep paths... Depth-First Search will search for the goal node for a long time...",
+      "language": "en",
+      "generated": false,
+      "uid": "c1a60ca7-adf8-4053-afbf-692b35505b33"
+    },
+    {
+      "term": "Depth-Limited Search",
+      "definition": "An algorithm that explores paths in a state space graph up to a predefined maximum depth; it avoids infinite paths but may miss solutions if the goal is beyond this limit.",
+      "sentence": "Depth-Limited Search overcomes a problem of going along indefinitely deep paths. However, one of the main problems of Depth-Limited Search is a lack of guidelines on how to choose the depth limit for a particular problem.",
+      "language": "en",
+      "generated": false,
+      "uid": "54e67cf7-caed-4c8a-b09c-c598dd4d1d2a"
+    },
+    {
+      "term": "depth limit",
+      "definition": "The maximum allowed depth at which nodes can be expanded in the state space graph, beyond which nodes are considered leaf or root depending on search direction.",
+      "sentence": "...the depth limit is 2. Nodes located at the depth limit are considered to be leaf/root...",
+      "language": "en",
+      "generated": false,
+      "uid": "0dd997bd-f9cb-4ee0-9bfb-901e6b56025e"
+    },
+    {
+      "term": "leaf node",
+      "definition": "a terminal state in the state space graph where no further unconsidered paths exist, representing either a maximizer win or minimizer win based on heuristic evaluation.",
+      "sentence": "...until it reaches a **leaf node**...",
+      "language": "en",
+      "generated": false,
+      "uid": "4f6bcca2-f1bc-4994-9385-083ebbe7e016"
+    },
+    {
+      "term": "depth labels",
+      "definition": "Labels assigned to each node indicating its position in the hierarchy of the state space graph, determined by how many steps it is from the start node.",
+      "sentence": "...nodes should be added to both lists together with their depth labels...",
+      "language": "en",
+      "generated": false,
+      "uid": "74ebd83e-80cc-4df8-9843-c750187392ed"
+    },
+    {
+      "term": "data-driven search",
+      "definition": "An iterative method where nodes are selected and expanded based on specific criteria or data input, such as depth limits in state space graphs.",
+      "sentence": "...by implementing data-driven search in the state space graph...",
+      "language": "en",
+      "generated": false,
+      "uid": "5a1a257c-0015-447a-abc1-630480952cf2"
+    },
+    {
+      "term": "tree crown",
+      "definition": "(Analogy) The uppermost visible part of a tree, used to illustrate the distinction between how Depth-First Search and Depth-Limited Search explore the structure, with limited search capping exploration depth.",
+      "sentence": "...the analogy with the tree crown used before makes evident...",
+      "language": "en",
+      "generated": false,
+      "uid": "c69b195b-f67c-48ca-8e47-0c8fe42a4dae"
+    },
+    {
+      "term": "Iteration",
+      "definition": "a single cycle or step of the algorithm’s operation where a node is selected, expanded, and added to the OPEN/CLOSED lists based on its heuristic evaluation.",
+      "sentence": "Iteration 0: The search start node is added...",
+      "language": "en",
+      "generated": false,
+      "uid": "33df4d3c-18d9-4867-8e66-ab3b465db307"
+    },
+    {
+      "term": "ancestor",
+      "definition": "(In Depth-Limited Search) A node that precedes the current node in the hierarchy, calculated by subtracting depth levels if applicable.",
+      "sentence": "...depth labels allow the algorithm 'to understand' if it is possible to generate descendants/ancestors...",
+      "language": "en",
+      "generated": false,
+      "uid": "b4e2a205-a383-4157-ad11-d82005161dbc"
+    },
+    {
+      "term": "state",
+      "definition": "(Implicit in context) A condition or configuration represented by a node within the state space graph, reflecting its position and status relative to the search goal.",
+      "sentence": "...searches in the state space graph...",
+      "language": "en",
+      "generated": false,
+      "uid": "ec571a4a-60e0-4e9f-b997-f92c1435b6bd"
+    },
+    {
+      "term": "Depth-First Search (DFS)",
+      "definition": "A search algorithm that explores each branch of the state space graph as deeply as possible before backtracking to explore other branches.",
+      "sentence": "Both algorithms considered so far—Depth-First Search and Depth-Limited Search—explored the state space graph through a principle of deepening.",
+      "language": "en",
+      "generated": false,
+      "uid": "6382218b-4df0-45c5-80ef-d7d2593f39b2"
+    },
+    {
+      "term": "Breadth-First Search (BFS)",
+      "definition": "A search algorithm that explores nodes level by level, expanding all possible descendants at each level before moving deeper into the state space graph.",
+      "sentence": "Breadth-First Search explores the state space graph in a level-by-level fashion. This idea is represented in the title of the algorithm: ‘breadth’ means to consider nodes sequentially at the same level before going deeper.",
+      "language": "en",
+      "generated": false,
+      "uid": "b6aa92f3-5980-4ddd-8433-d8755826ac27"
+    },
+    {
+      "term": "level-by-level fashion",
+      "definition": "The principle of Breadth-First Search that involves processing all nodes at a given depth (level) in the state space graph before advancing to nodes at the next level.",
+      "sentence": "'breadth’ means to consider nodes sequentially at the same level before going deeper; ‘first’ indicates finding the first path...",
+      "language": "en",
+      "generated": false,
+      "uid": "63ae6586-ae66-4157-b2ae-4e3a8073df52"
+    },
+    {
+      "term": "queue",
+      "definition": "A data structure used in Breadth-First Search that implements a First-In-First-Out (FIFO) principle, managing nodes to be processed sequentially from the front.",
+      "sentence": "In the implementation of this algorithm, new nodes are added to the right side of the OPEN list. Therefore, this list is a type of data structure called a queue.",
+      "language": "en",
+      "generated": false,
+      "uid": "0f3ac55d-0ae0-4208-ad51-78ae6f18cb31"
+    },
+    {
+      "term": "First-In-First-Out (FIFO)",
+      "definition": "A principle governing how elements are managed in queues or lists: nodes are processed in the order they were added, with the first node entering being the first to be processed.",
+      "sentence": "A queue works according to the ‘First in, First Out’ principle...",
+      "language": "en",
+      "generated": false,
+      "uid": "77228726-31c5-4830-b383-a055bf0d5d10"
+    },
+    {
+      "term": "descendants",
+      "definition": "nodes that result from expanding or moving from a given parent node downward (in terms of state transitions) within the graph.",
+      "sentence": "(depending on the search direction ); the most common of these shortcomings are...",
+      "language": "en",
+      "generated": false,
+      "uid": "afc2bf40-5319-4fbd-8166-15d9c9bb9f36"
+    },
+    {
+      "term": "ancestors",
+      "definition": "nodes that precede or lead to a given child node in the state space graph, representing earlier states in the path.",
+      "sentence": "(depending on the search direction)...",
+      "language": "en",
+      "generated": false,
+      "uid": "9ab26a1a-f6d9-46e9-991d-f37c2c80f5f8"
+    },
+    {
+      "term": "search direction",
+      "definition": "the path or movement (either forward toward descendants or backward toward ancestors) in which a search algorithm explores nodes in relation to its current state.",
+      "sentence": "(depending on the search direction)...",
+      "language": "en",
+      "generated": false,
+      "uid": "6d6af146-c78d-4b9b-acce-b8f9c1238bde"
+    },
+    {
+      "term": "arc",
+      "definition": "A connection between two nodes in a state space graph, representing a transition from one state to another.",
+      "sentence": "The shortest path will be found sooner because it consists of a smaller number of arcs...",
+      "language": "en",
+      "generated": false,
+      "uid": "4169dc0b-46e4-4d72-ace3-c8e68df62353"
+    },
+    {
+      "term": "exhaustive search",
+      "definition": "A method of searching that examines every possible path in the state space graph to ensure completeness, guaranteeing the discovery of the search goal if it exists.",
+      "sentence": "Breadth-First Search is also guaranteed to find the search goal node if this node exists in the state space graph...",
+      "language": "en",
+      "generated": false,
+      "uid": "ae3a60e5-52ee-492a-941b-a119a77dfd0b"
+    },
+    {
+      "term": "Bidirectional Search",
+      "definition": "A modified version of Breadth-First Search that simultaneously searches from both the start and goal nodes toward each other, potentially reducing computational resources needed for exhaustive search.",
+      "sentence": "To overcome this shortcoming, a modification of Breadth-First Search is offered: Bidirectional Search...",
+      "language": "en",
+      "generated": false,
+      "uid": "af4bff37-5886-438f-bf2d-d43691bea83d"
+    },
+    {
+      "term": "factor",
+      "definition": "a specific measurable attribute or characteristic used to evaluate the performance or relevance of a node in relation to an objective, such as proximity to the goal",
+      "sentence": "Applying the defined factor, the first and the third node will acquire a value of 5, while the second node will get a value of 3",
+      "language": "en",
+      "generated": false,
+      "uid": "af0548d8-2884-4b74-a11a-31a9fdc09814"
+    },
+    {
+      "term": "node",
+      "definition": "a distinct state or configuration in a problem-solving state space graph that represents a point where decisions can be made or evaluated for progress toward a goal",
+      "sentence": "(The first and the third node will acquire a value of 5, while the second node will get a value of 3)",
+      "language": "en",
+      "generated": false,
+      "uid": "32ffd43e-c808-4248-894d-564a963b8caf"
+    },
+    {
+      "term": "heuristic evaluation function",
+      "definition": "the algorithmic component that assigns heuristic measures to nodes, guiding prioritization in search processes and influencing the efficiency of algorithms like Hill Climbing or Best-First Search.",
+      "sentence": "which gives heuristic measures of 8, 5, and 4, respectively...",
+      "language": "en",
+      "generated": false,
+      "uid": "ec4f2dee-9e75-4e03-93e8-4adf5fa72f4b"
+    },
+    {
+      "term": "f(n)",
+      "definition": "a placeholder for a heuristic evaluation function that assigns values to nodes based on defined factors (e.g., the number of tiles out of place, sum of distances, or reversals); *n* represents the current state",
+      "sentence": "(f(n) = the number of tiles out of place f(n) = the sum of distances)",
+      "language": "en",
+      "generated": false,
+      "uid": "f63b56e0-3379-43e1-a912-dc6e0a68227e"
+    },
+    {
+      "term": "sum of distances",
+      "definition": "a heuristic factor calculated by summing the Euclidean or similar distance measurements between tiles and their intended positions in a puzzle or game state",
+      "sentence": "(The logic is also very similar here: the smaller the sum of distances, the closer a state is to the search goal node)",
+      "language": "en",
+      "generated": false,
+      "uid": "502c0150-98f0-494d-a7c1-0d8f192cf5d9"
+    },
+    {
+      "term": "tile reversals",
+      "definition": "a heuristic factor representing the number of adjacent tile swaps needed to correct misplaced tiles; particularly relevant in puzzles where moving two tiles back into place requires multiple steps",
+      "sentence": "(the number of pairs of tile reversals)",
+      "language": "en",
+      "generated": false,
+      "uid": "3fe75512-04f6-41d1-a971-f2b50a70825c"
+    },
+    {
+      "term": "promising move",
+      "definition": "a node or transition evaluated as likely to lead closer to a goal based on heuristic values derived from defined factors (e.g., lower distance sum or fewer reversals)",
+      "sentence": "(this could be considered a **promising move**); (Therefore, any move could be considered a promising one if we base our heuristic evaluation function on this factor)",
+      "language": "en",
+      "generated": false,
+      "uid": "e7795d8e-9dea-44ca-8750-9787b5f2e179"
+    },
+    {
+      "term": "branching factor",
+      "definition": "a metric for the average number of possible states (descendants) generated from each node in the state space graph; calculated by dividing the total number of direct descendants across all nodes by the total nodes",
+      "sentence": "(B – the branching factor of the **state space graph**; usually we acquire this factor by dividing...)",
+      "language": "en",
+      "generated": false,
+      "uid": "a120bf4e-9372-487d-8f6e-820d1b5ceb35"
+    },
+    {
+      "term": "depth",
+      "definition": "the maximum length (number of arcs) from a starting node to any terminal or goal state in a state space graph; often approximated as the longest path between states",
+      "sentence": "(L – depth of the **state space graph**... this will allow you to estimate the potential complexity of the state space graph)",
+      "language": "en",
+      "generated": false,
+      "uid": "35bfcab4-570e-46e5-aa54-ec1368c5d9a9"
+    },
+    {
+      "term": "horizon effect",
+      "definition": "a limitation in search algorithms where nodes beyond a predefined computational depth are not explored, forcing reliance on heuristics to evaluate promising nodes within reachable bounds",
+      "sentence": "(As a result, during the operation of an intelligent computer system, the **state space graph is generated to the specified depth**)",
+      "language": "en",
+      "generated": false,
+      "uid": "cbdb553f-ab75-4378-b4c1-894d8276eb46"
+    },
+    {
+      "term": "partly available state space graph",
+      "definition": "a truncated representation of a state space where only a subset (limited by computational constraints) of nodes and arcs are explored, often due to resource limitations",
+      "sentence": "(Only **a part** of a state space graph... during the operation of an intelligent computer system)",
+      "language": "en",
+      "generated": false,
+      "uid": "cad703bf-724b-4fdd-8724-39bb80966af4"
+    },
+    {
+      "term": "fully available state space graph",
+      "definition": "a complete representation of all possible states and transitions, where computational resources allow exploration without truncation or depth limits",
+      "sentence": "(A **full** state space graph... Computational resources are enough to store...)",
+      "language": "en",
+      "generated": false,
+      "uid": "8894fca7-f7f4-47f0-93ed-5ab9fdc7c559"
+    },
+    {
+      "term": "computational costs",
+      "definition": "the resource demands (e.g., time, memory) required to evaluate heuristic factors or explore nodes in a search algorithm; must be balanced with accuracy for optimal performance",
+      "sentence": "(However, when developing a heuristic evaluation function, it is necessary to find a balance between the number of factors included in the function and the **computational costs**...)",
+      "language": "en",
+      "generated": false,
+      "uid": "906e536a-7ad4-4359-a1ff-8d58d66fb189"
+    },
+    {
+      "term": "tile",
+      "definition": "a discrete unit (e.g., puzzle piece or board square) whose position is evaluated in relation to its intended location within a configuration (node)",
+      "sentence": "(the number of **tiles** out of place; sum of distances of **tiles**; number of pairs of tile reversals)",
+      "language": "en",
+      "generated": false,
+      "uid": "3e92ddca-d95a-4c1f-9b4a-d132825dfa24"
+    },
+    {
+      "term": "problem-solving states",
+      "definition": "distinct configurations (nodes) in a state space where decisions can be made to advance toward the goal, often evaluated by heuristic factors",
+      "sentence": "(Which factors characterize **problem-solving states**... in a **state space graph**?)",
+      "language": "en",
+      "generated": false,
+      "uid": "46dc266b-c271-4c2a-9f71-c3fea948a45e"
+    },
+    {
+      "term": "optimization techniques",
+      "definition": "methods (e.g., machine learning, greedy search) used to refine heuristic functions by validating their performance and adjusting weights or factors for improved accuracy",
+      "sentence": "(the heuristic evaluation function... will be **validated using optimization techniques**)",
+      "language": "en",
+      "generated": false,
+      "uid": "c569e95f-7ad2-42b2-81e3-605c7d0f0d4c"
+    },
+    {
+      "term": "domain experts",
+      "definition": "specialists knowledgeable about a problem domain who collaborate with developers to define relevant factors and weights for heuristic functions",
+      "sentence": "(the system’s developer **in collaboration with domain experts**)",
+      "language": "en",
+      "generated": false,
+      "uid": "bb4080c1-6883-47e6-9ff5-4fd7bd10469d"
+    },
+    {
+      "term": "algorithm",
+      "definition": "a systematic procedure or set of rules designed to perform a specific task involving search operations in a state space.",
+      "sentence": "The algorithm checks if it is the search goal node...",
+      "language": "en",
+      "generated": false,
+      "uid": "10ab7cf5-6d64-449b-b131-fec8372c5fba"
+    },
+    {
+      "term": "Hill Climbing",
+      "definition": "a heuristic search algorithm that iteratively selects a node based on a heuristic evaluation function to move toward improving the measure of the current node’s quality (either by increasing or decreasing its heuristic value depending on the function definition).",
+      "sentence": "The Hill Climbing algorithm is able to find the search goal node very quickly if the heuristic evaluation function is well-defined.",
+      "language": "en",
+      "generated": false,
+      "uid": "c2796255-042b-42ad-a0b7-b98679d960a8"
+    },
+    {
+      "term": "heuristic measures",
+      "definition": "a function or metric used by an algorithm to estimate the quality or desirability of a node in the state space, guiding the search toward potential solutions.",
+      "sentence": "The best node is determined by the heuristic measures of nodes.",
+      "language": "en",
+      "generated": false,
+      "uid": "c23eafa3-dc57-437f-99b3-6e7110a3b708"
+    },
+    {
+      "term": "best heuristic measure",
+      "definition": "the evaluation criterion used within Hill Climbing to define whether a node should be selected—either as the highest or lowest heuristic value, depending on how the function is defined.",
+      "sentence": "If the best heuristic measure to be the highest measure, then Hill Climbing will always choose...",
+      "language": "en",
+      "generated": false,
+      "uid": "065cc34d-7a54-4cf7-9a3d-7b0e67185d01"
+    },
+    {
+      "term": "local maximum problem",
+      "definition": "a deficiency in Hill Climbing where the algorithm gets trapped at a node that has better heuristic values than its descendants or ancestors (depending on search direction), preventing it from reaching the actual search goal.",
+      "sentence": "the local maximum problem: the algorithm does not reach the search goal...",
+      "language": "en",
+      "generated": false,
+      "uid": "dc7c42c9-64d2-4244-969a-dfa135617179"
+    },
+    {
+      "term": "plateau problem",
+      "definition": "a scenario in Hill Climbing where no further improvement can be made because the heuristic measure of a node’s best descendant or ancestor is equal to that of its current state, halting progress in the search.",
+      "sentence": "the plateau problem : the algorithm cannot continue the search...",
+      "language": "en",
+      "generated": false,
+      "uid": "061c44e6-5c6c-4d01-a422-3d9780f1a166"
+    },
+    {
+      "term": "Best-First Search",
+      "definition": "a search algorithm that prioritizes nodes based on their heuristic measures, expanding them incrementally and maintaining an OPEN list of all discovered nodes to explore paths flexibly without losing potential solutions.",
+      "sentence": "The Best-First Search algorithm does not have these shortcomings...",
+      "language": "en",
+      "generated": false,
+      "uid": "3415ae21-fdae-43a9-8a1e-ad159c91ed14"
+    },
+    {
+      "term": "priority queue",
+      "definition": "a specialized data structure used to efficiently manage the OPEN list in Best-First Search, ensuring that nodes are processed based on their heuristic measures (with the best measure always at the front).",
+      "sentence": "The priority queue works according to the principle...",
+      "language": "en",
+      "generated": false,
+      "uid": "92df8db7-d830-406e-9f53-44454a481f14"
+    },
+    {
+      "term": "search start node",
+      "definition": "the initial point in the state space graph from which the search algorithm begins its exploration of potential solutions.",
+      "sentence": "The search start node is added to the OPEN list...",
+      "language": "en",
+      "generated": false,
+      "uid": "6d9277c5-befe-4d0d-84c8-f383e38c45ff"
+    },
+    {
+      "term": "beam width",
+      "definition": "a parameter in Beam Search that specifies the maximum number of best-performing nodes to be retained and expanded during each iteration, acting as a trade-off between exploration and computational efficiency.",
+      "sentence": "This algorithm selects a limited number of best nodes for further expansion...",
+      "language": "en",
+      "generated": false,
+      "uid": "7485352d-c323-4437-a50d-d543473d7150"
+    },
+    {
+      "term": "Beam Search",
+      "definition": "a heuristic search method that balances Hill Climbing (by expanding only one node) and Best-First Search (by exploring all nodes), retaining a limited number of top-performing nodes (based on heuristic measures) for expansion in each iteration.",
+      "sentence": "Let’s consider an algorithm providing...",
+      "language": "en",
+      "generated": false,
+      "uid": "486d6274-e150-4a34-aa68-616ce827e707"
+    },
+    {
+      "term": "unconsidered paths",
+      "definition": "paths in a state space graph that have not yet been evaluated or explored by the algorithm during its search process.",
+      "sentence": "It should note that only **unconsidered paths** are cut off!",
+      "language": "en",
+      "generated": false,
+      "uid": "5e71ba71-673e-46cc-bb67-7282f3fc8d08"
+    },
+    {
+      "term": "precise heuristic measure",
+      "definition": "a definitive evaluation of a node’s value, determined when a leaf node or a childless node is reached and no uncertainty remains about its outcome.",
+      "sentence": "...reaches a leaf node or a node with a precise heuristic measure...",
+      "language": "en",
+      "generated": false,
+      "uid": "64993502-a300-482f-a072-207f8ac9cfe6"
+    },
+    {
+      "term": "maximiser",
+      "definition": "the player in a game whose objective is to achieve the highest possible score or outcome, according to the algorithm’s evaluation criteria.",
+      "sentence": "...a state where the **maximiser** wins the game...",
+      "language": "en",
+      "generated": false,
+      "uid": "16bbad52-ba87-40c8-9df4-e142771fcfab"
+    },
+    {
+      "term": "minimiser",
+      "definition": "the player in a game whose objective is to minimize the maximizer’s advantage, preventing them from achieving a high score.",
+      "sentence": "...since in this state the **minimiser** has the higher score and wins...",
+      "language": "en",
+      "generated": false,
+      "uid": "e980b5b9-6dd5-4aaa-bf9d-1ad99dc09995"
+    },
+    {
+      "term": "intermediate heuristic measure",
+      "definition": "an estimated value assigned to a node when exact evaluation is impossible, indicating bounds (e.g., >=1 or <=−1) based on partial information from descendants.",
+      "sentence": "...assigns an intermediate heuristic measure of >=1...",
+      "language": "en",
+      "generated": false,
+      "uid": "36a114a6-abcb-4bae-95c8-7079610f11f1"
+    },
+    {
+      "term": "MAX level",
+      "definition": "the decision-making level where the algorithm assumes a player (maximizer) is evaluating options to maximize their score.",
+      "sentence": "...since the node is located at MAX level...",
+      "language": "en",
+      "generated": false,
+      "uid": "372cb598-59cb-4398-918f-49fbcda9f623"
+    },
+    {
+      "term": "MIN level",
+      "definition": "the decision-making level where the algorithm assumes a player (minimizer) is evaluating options to minimize the maximizer’s advantage.",
+      "sentence": "...since the node is located at MIN level...",
+      "language": "en",
+      "generated": false,
+      "uid": "6af03228-5403-46e4-9a10-735ef68ba237"
+    },
+    {
+      "term": "α value",
+      "definition": "the highest heuristic measure propagated from previous evaluations in Alpha-beta pruning, used to determine if an unconsidered path can be cut off.",
+      "sentence": "...the intermediate heuristic measure of the current node (the β value) is −1 and the measure of the ancestor (the α value) is 1...",
+      "language": "en",
+      "generated": false,
+      "uid": "8fdabbc8-2e2f-406d-8b32-c44693fd10aa"
+    },
+    {
+      "term": "β value",
+      "definition": "the lowest heuristic measure propagated from the evaluated descendants in Alpha-beta pruning, used to compare against the α value for pruning decisions.",
+      "sentence": "...the intermediate heuristic measure of the current node (the β value) is −1...",
+      "language": "en",
+      "generated": false,
+      "uid": "76b8f81d-1ef7-44eb-aa5a-8cf83bd87b84"
+    },
+    {
+      "term": "α-cut-off",
+      "definition": "a pruning technique in Alpha-beta pruning where unconsidered paths are discarded if their estimated value (β) falls below the current best value (α), optimizing search efficiency.",
+      "sentence": "...finds that β is smaller than α, meaning an **α-cut-off** should be performed...",
+      "language": "en",
+      "generated": false,
+      "uid": "f9e518c0-d568-4a3e-8a0b-a5dd6400d25b"
+    },
+    {
+      "term": "Ertel (2011)",
+      "definition": "a reference to the source or context of the depth-first search method mentioned in the algorithm description, attributed to a work by Ertel published in 2011.",
+      "sentence": "...depth-first search (Ertel, 2011)...",
+      "language": "en",
+      "generated": false,
+      "uid": "98aa9d8e-caed-4b5a-8f45-366cee646ffe"
+    },
+    {
+      "term": "game with numerical string",
+      "definition": "a hypothetical game scenario analyzed by the algorithm, where states are represented numerically to evaluate outcomes for maximizer and minimizer players.",
+      "sentence": "...using the previous example of the game with a **numerical string**...",
+      "language": "en",
+      "generated": false,
+      "uid": "afdf1bf3-9f62-4c94-894f-24685ef04a89"
+    }
+  ],
+  "debug_info": {
+    "chunkSize": 7656,
+    "chunkCount": 41,
+    "contextLength": 4096,
+    "temperature": 0.5,
+    "seed": 42,
+    "prompt": "Your task is to analyze the provided text and create a glossary.\nInstructions:\n1. Extract ALL terms and concepts from the text.\n2. Define them using ONLY the provided text.\n3. NO external knowledge. Synthesize exclusively from source.\n4. DO NOT translate. Keep definitions in the source language.\n5. If no terms found, return an empty list.\n\nText to analyze:\n\n",
+    "elapsedTime": 1063.04,
+    "safeMargin": 0.5,
+    "maxResponseTokens": 4096,
+    "maxTimeout": 599940000
+  }
+}

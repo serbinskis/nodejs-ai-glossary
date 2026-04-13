@@ -1,0 +1,497 @@
+{
+  "uid": "e3539554-956e-4c82-974a-8bad4d36d5ba",
+  "domain": "unknown",
+  "language": "lv",
+  "implementation": "LMStudio-qwen/qwen3-vl-4b@Q4_K_M",
+  "timestamp_start": 1775772765531,
+  "timestamp_end": 1775776616552,
+  "error_count": 83,
+  "glossary": [
+    {
+      "term": "problēmrisināšanas procesa stāvoklis",
+      "definition": "konkrētā objekta vai parādības īpašību vērtību kopu noteiktajā laika brīdī",
+      "sentence": "Būtībā katra darbība izmaina problēmrisināšanas procesa stāvokli, kur ar stāvokli mēs saprotam konkrētā objekta vai parādības īpašību vērtību kopu noteiktajā laika brīdī.",
+      "language": "lv",
+      "generated": false,
+      "uid": "a9b43b8d-2878-4671-8d9b-731c859164a0"
+    },
+    {
+      "term": "stāvokļu telpas grafu",
+      "definition": "formāls atspoguļojums problēmrisināšanas procesam",
+      "sentence": "Stāvokļu telpas grafs ir formāls atspoguļojums problēmrisināšanas procesam.",
+      "language": "lv",
+      "generated": false,
+      "uid": "68ac1815-cc54-42e4-bb6e-356e95210305"
+    },
+    {
+      "term": "virsotne",
+      "definition": "atbilst problēmrisināšanas procesa diskrētiem stāvokļiem",
+      "sentence": "Virsotne s, kas atbilst problēmrisināšanas procesa diskrētiem stāvokļiem.",
+      "language": "lv",
+      "generated": false,
+      "uid": "45b41616-653a-4c32-bd79-b54cd9a04c11"
+    },
+    {
+      "term": "saknes virsotne",
+      "definition": "virsotnes, kurām nav priekšteču virsotņu, un atbilst problēmrisināšanas procesa sākumstāvoklim",
+      "sentence": "Stāvokļu telpas grafā ir jābūt vismaz vienai saknes virsotnei, kas atbilst problēmrisināšanas procesa sākumstāvoklim. No grafa struktūras viedokļa tās ir virsotnes, kurām nav priekšteču virsotņu.",
+      "language": "lv",
+      "generated": false,
+      "uid": "43487252-c53e-42b8-8598-ef35e6f2dcdb"
+    },
+    {
+      "term": "strupceļa virsotne",
+      "definition": "virsotnes, kurām nav pēcteču virsotņu, un atbilst problēmrisināšanas procesa mērķa stāvoklim",
+      "sentence": "Stāvokļu telpas grafā ir jābūt vismaz vienai strupceļa virsotnei. Tā atbilst problēmrisināšanas procesa mērķa stāvoklim. No struktūras viedokļa tās ir virsotnes, kurām nav pēcteču virsotņu.",
+      "language": "lv",
+      "generated": false,
+      "uid": "b85807ea-72ad-4633-bfa4-90dd1654a683"
+    },
+    {
+      "term": "iekšējās virsotnes",
+      "definition": "virsotnes, kam ir gan priekšteču, gan pēcteču virsotnes, un atbilst problēmrisināšanas procesa starpstāvokļiem",
+      "sentence": "Stāvokļu telpas grafā var būt iekšējās virsotnes, kas atbilst problēmrisināšanas procesa starpstāvokļiem. No struktūras viedokļa tās ir virsotnes, kam ir gan priekšteču, gan pēcteču virsotnes.",
+      "language": "lv",
+      "generated": false,
+      "uid": "e86ea5d4-9e68-41f2-8aa0-16e185c6f9c7"
+    },
+    {
+      "term": "loks",
+      "definition": "atspoguļo pārejas starp stāvokļiem jeb izpildāmas darbības problēmrisināšanas procesā",
+      "sentence": "Lokus, kas atspoguļo pārejas starp stāvokļiem jeb izpildāmas darbības problēmrisināšanas procesā.",
+      "language": "lv",
+      "generated": false,
+      "uid": "061b4951-c7d4-4d9f-9b26-f8b2b636a2c1"
+    },
+    {
+      "term": "orientēti",
+      "definition": "lokumi, kas norāda, no kura problēmrisināšanas procesa stāvokļa uz kuru notiek pāreja",
+      "sentence": "Lai būtu skaidrs, no kura problēmrisināšanas procesa stāvokļa uz kuru notiek pāreja, lokiem stāvokļu telpas grafā obligāti ir jābūt orientētiem.",
+      "language": "lv",
+      "generated": false,
+      "uid": "2da7e15c-b4f3-446e-b5e9-afd354e53a18"
+    },
+    {
+      "term": "stāvokļu telpas grafa struktūra",
+      "definition": "var būt dažādas, un ir atkarīga no problēmas būtības",
+      "sentence": "Stāvokļu telpas grafa struktūras var būt dažādas (10. att.), un ir jāatceras, ka nav vienas pareizas stāvokļu telpas grafa struktūras visām problēmām, tieši pretēji stāvokļu telpas grafa struktūra ir atkarīga no problēmas būtības!",
+      "language": "lv",
+      "generated": false,
+      "uid": "977d27d5-9ab2-430a-ad6c-506b65146494"
+    },
+    {
+      "term": "4-vietīgs kortežs",
+      "definition": "stāvokļu telpas grafa matemātiskais apraksts, kur V ir virsotņu kopa, kas atbilst stāvokļiem problēmrisināšanas procesā; L ir loku kopa, kas atbilst pārejām starp stāvokļiem jeb darbībām problēmrisināšanas procesā; S ir netukša virsotņu kopas apakškopa, kas satur vienu vai vairākas saknes virsotnes jeb problēmrisināšanas procesa sākuma stāvokļus; M ir netukša virsotņu kopas apakškopa, kas satur vienu vai vairākas strupceļa virsotnes jeb problēmrisināšanas procesa mērķa stāvokļus",
+      "sentence": "No matemātiskā viedokļa stāvokļu telpas grafa struktūra atspoguļo 4-vietīgs kortežs <V, L, S, M>, kur (Luger, 2008): V ir virsotņu kopa, kas atbilst stāvokļiem problēmrisināšanas procesā; L ir loku kopa, kas atbilst pārejām starp stāvokļiem jeb darbībām problēmrisināšanas procesā; S ir netukša virsotņu kopas apakškopa, kas satur vienu vai vairākas saknes virsotnes jeb problēmrisināšanas procesa sākuma stāvokļus; M ir netukša virsotņu kopas apakškopa, kas satur vienu vai vairākas strupceļa virsotnes jeb problēmrisināšanas procesa mērķa stāvokļus.",
+      "language": "lv",
+      "generated": false,
+      "uid": "7bfab5ca-dc5d-4364-9c30-e48aad140085"
+    },
+    {
+      "term": "formāls apraksts",
+      "definition": "atspoguļo problēmrisināšanas procesu, un šis apraksts ļauj pāriet no reālās pasaules objektiem uz intelektisku datorsistēmu pasaules objektiem",
+      "sentence": "Šīs tēmas sākumā tika uzsvērts, ka mums ir vajadzīgs formāls apraksts, lai pārietu no reālās pasaules objektiem uz intelektisku datorsistēmu pasaules objektiem. Turklāt Jums tika nodefinēts, ka stāvokļu telpas grafs ir formāls apraksts problēmrisināšanas procesam.",
+      "language": "lv",
+      "generated": false,
+      "uid": "e6ca4011-e33f-4947-8b30-3c12edca0440"
+    },
+    {
+      "term": "intelektisku datorsistēmu pasaules objekti",
+      "definition": "objekti, uz kuru var pāriet no reālās pasaules objektiem, kad tiek izmantots stāvokļu telpas grafs kā formāls apraksts",
+      "sentence": "Uz kādu tad intelektisku datorsistēmu pasaules objektu tas ļauj mums viegli pāriet?",
+      "language": "lv",
+      "generated": false,
+      "uid": "bf997922-0313-4c3f-9fd1-d3e7ffba1ea1"
+    },
+    {
+      "term": "problēmrisināšanas procesa darbība",
+      "definition": "izpildāmas darbības problēmrisināšanas procesā, kas atbilst lokiem stāvokļu telpas grafā",
+      "sentence": "Pāreja no viena stāvokļa uz citu notiek, realizējot kādas darbības. Šo struktūru sauc par stāvokļu telpas grafu. Stāvokļu telpas grafs ir formāls atspoguļojums problēmrisināšanas procesam. ... Stāvokļu telpas grafā problēmrisināšanas procesa stāvokļiem atbilst virsotnes, bet darbībām – loki.",
+      "language": "lv",
+      "generated": false,
+      "uid": "f39bd308-edb7-451b-bea7-fa27a98f7a39"
+    },
+    {
+      "term": "pārmeklēšanas dziļumā ar ierobežotu dziļumu realizācijas piemērs",
+      "definition": "izpildīts no datiem virzītu pārmeklēšana 12. attēlā redzamajā grafā, kur pārmeklēšanas sākuma virsotne ir A, pārmeklēšanas mērķa virsotne ir K un dziļuma ierobežojums ir 2 līmeņi",
+      "sentence": "Apskatīsim pārmeklēšanas dziļumā ar ierobežotu dziļumu realizācijas piemēru, izpildot no datiem virzītu pārmeklēšanu 12. attēlā redzamajā grafā, kur pārmeklēšanas sākuma virsotne ir A, pārmeklēšanas mērķa virsotne ir K un dziļuma ierobežojums ir 2 līmeņi.",
+      "language": "lv",
+      "generated": false,
+      "uid": "d4aeb3ce-f016-4f88-bcea-b5aeef9eb069"
+    },
+    {
+      "term": "pārmeklēšanas sākuma virsotne",
+      "definition": "virsotne, kas tiek ievietota sarakstā OPEN, jo tā kļūst par pirmo apskatāmo virsotni",
+      "sentence": "0. iterācijā pārmeklēšanas sākuma virsotne tiek ievietota sarakstā OPEN, jo tā kļūst par pirmo apskatāmo virsotni.",
+      "language": "lv",
+      "generated": false,
+      "uid": "f702251a-5374-458f-9ade-cf1520bb7d56"
+    },
+    {
+      "term": "pārmeklēšanas mērķa virsotne",
+      "definition": "virsotne, kas tiek pārbaudīta, vai tā ir pārmeklēšanas mērķa virsotne",
+      "sentence": "Algoritms paņem virsotni, kas atrodas saraksta OPEN pirmajā pozīcijā - virsotni A, un pārbauda, vai tā ir pārmeklēšanas mērķa virsotne.",
+      "language": "lv",
+      "generated": false,
+      "uid": "44f89d3b-b71c-4511-b61c-741e5092663b"
+    },
+    {
+      "term": "dziļuma ierobežojums",
+      "definition": "uzdoto dziļuma ierobežojums ir 2 līmeņi",
+      "sentence": "dziļuma ierobežojums ir 2 līmeņi",
+      "language": "lv",
+      "generated": false,
+      "uid": "dcebf953-3239-4742-b433-d341cde48acd"
+    },
+    {
+      "term": "saraksts OPEN",
+      "definition": "saraksts, kurā tiek ievietotas apskatāmas virsotnes",
+      "sentence": "0. iterācijā pārmeklēšanas sākuma virsotne tiek ievietota sarakstā OPEN, jo tā kļūst par pirmo apskatāmo virsotni.",
+      "language": "lv",
+      "generated": false,
+      "uid": "77753eb6-f5d1-4b89-8e88-50c25b543319"
+    },
+    {
+      "term": "saraksts CLOSED",
+      "definition": "saraksts, kurā tiek pārvietotas jau apskatītas un izvērtas virsotnes",
+      "sentence": "Saraksts CLOSED ir tukšs, jo neviena virsotne vēl netika izvērsta.",
+      "language": "lv",
+      "generated": false,
+      "uid": "cd958866-b1f8-4c22-81d1-6bbd6b3750d7"
+    },
+    {
+      "term": "iterācija",
+      "definition": "algoritma darbība, kas tiek izpildīta, kad algoritms izvērš apskatāmo virsotni un ģenerē tās pēctečus",
+      "sentence": "0. iterācijā pārmeklēšanas sākuma virsotne tiek ievietota sarakstā OPEN, jo tā kļūst par pirmo apskatāmo virsotni.",
+      "language": "lv",
+      "generated": false,
+      "uid": "b67d878d-a1ca-499d-a2cf-aa86ae6cb3d7"
+    },
+    {
+      "term": "apskatāma virsotne",
+      "definition": "virsotne, kas tiek izvērsta un pārbaudīta, vai tā ir pārmeklēšanas mērķa virsotne",
+      "sentence": "Algoritms paņem virsotni, kas atrodas saraksta OPEN pirmajā pozīcijā - virsotni A, un pārbauda, vai tā ir pārmeklēšanas mērķa virsotne.",
+      "language": "lv",
+      "generated": false,
+      "uid": "c6ae2a4c-6b6d-4f25-8c88-32f3e80aacc1"
+    },
+    {
+      "term": "pēctecis",
+      "definition": "virsotne, kas tiek ģenerēta no apskatāmas virsotnes",
+      "sentence": "4. iterācijā algoritms paņem virsotni, kas atrodas saraksta OPEN pirmajā pozīcijā - virsotni H, un pārbauda, vai tā ir pārmeklēšanas mērķa virsotne.",
+      "language": "lv",
+      "generated": false,
+      "uid": "d823214a-9a3d-46f8-8422-c771259f47e3"
+    },
+    {
+      "term": "dizlums",
+      "definition": "dizlums tiek rēķināts, pieskaitot vieninieku A virsotnes dizlumam, un ir vienāds ar 1",
+      "sentence": "Šo virsotņu dizlums tiek rēķināts, pieskaitot vieninieku A virsotnes dizlumam, un ir vienāds ar 1.",
+      "language": "lv",
+      "generated": false,
+      "uid": "75c38c53-513e-48d4-849a-cf75cc0964b2"
+    },
+    {
+      "term": "pārvieto sarakstā CLOSED",
+      "definition": "virsotne, kas tiek pārvietota sarakstā CLOSED, kad tā jau apskatīta un izvērsta",
+      "sentence": "Savukārt virsotne A kā jau apskatīta un izvērsta virsotne tiek pārvietota sarakstā CLOSED.",
+      "language": "lv",
+      "generated": false,
+      "uid": "10f7cd98-ff2b-4332-979a-5b711c31f0b1"
+    },
+    {
+      "term": "nākamā iterācija",
+      "definition": "algoritma darbība, kas tiek uzsākta, kad algoritms pārbauda, vai šīs virsotnes dizlums ir mazāks par uzdoto dizluma ierobežojumu",
+      "sentence": "Tas tā ir, līdz ar to tiek uzsākta nākamā iterācija.",
+      "language": "lv",
+      "generated": false,
+      "uid": "65a44d06-2f53-49d6-821a-e7c4f0718ce9"
+    },
+    {
+      "term": "heiristiski informētas pārmeklēšanas algoritmi",
+      "definition": "pārmeklēšanas algoritmi, kuriem ir nepieciešami principi, kā rēķināt virsotņu heiristiskus vērtējumus, jeb, citiem vārdiem sakot, ir vajadzīga heiristiskā novērtējuma funkcija, kas dod skaitliskus novērtējumus, kas savukārt atspoguļo virsotņu kvalitāti.",
+      "sentence": "Taču heiristiski informētas pārmeklēšanas algoritmiem papildus ir nepieciešami principi, kā rēķināt virsotņu heiristiskus vērtējumus, jeb, citiem vārdiem sakot, ir vajadzīga heiristiskā novērtējuma funkcija, kas dod skaitliskus novērtējumus, kas savukārt atspoguļo virsotņu kvalitāti.",
+      "language": "lq",
+      "generated": false,
+      "uid": "dd979b83-c77a-4d77-afd5-47aeacf5219d"
+    },
+    {
+      "term": "gradienta nolaišanās",
+      "definition": "optimizācijas paņēmiens, ko izmanto, lai noteiktu izmaiņas izejā / rezultātā saistībā ar izmaiņām ievades vērtībās. Tā pamatā ir daļēja atvasinājuma aprēķins attiecībā uz visiem neatkarīgajiem mainīgajiem.",
+      "sentence": "Gradienta nolaišanās ir optimizācijas paņēmiens, ko izmanto, lai noteiktu izmaiņas izejā / rezultātā saistībā ar izmaiņām ievades vērtībās. Tā pamatā ir daļēja atvasinājuma aprēķins attiecībā uz visiem neatkarīgajiem mainīgajiem.",
+      "language": "lq",
+      "generated": false,
+      "uid": "33ea255a-ff81-46f3-a2a9-968ff53a9a7b"
+    },
+    {
+      "term": "klasteri",
+      "definition": "datu grupas, kas veidojas klasterēšanas procesā",
+      "sentence": "kur G, H – klasteri",
+      "language": "lv",
+      "generated": false,
+      "uid": "501ad302-1aaf-4ee7-8932-ea5d3618226f"
+    },
+    {
+      "term": "NG",
+      "definition": "datu objektu skaits klasterī G",
+      "sentence": "NG – datu objektu skaits klasterī G",
+      "language": "lv",
+      "generated": false,
+      "uid": "4e7f8be7-3428-465e-be57-47f31510dfba"
+    },
+    {
+      "term": "NH",
+      "definition": "datu objektu skaits klasterī H",
+      "sentence": "NH – datu objektu skaits klasterī H",
+      "language": "lv",
+      "generated": false,
+      "uid": "78469df9-f856-4f60-ba94-18629cabc3c8"
+    },
+    {
+      "term": "d",
+      "definition": "attālums",
+      "sentence": "d – attālums",
+      "language": "lv",
+      "generated": false,
+      "uid": "59dc548e-09ef-46b8-833b-92d5c25f4676"
+    },
+    {
+      "term": "i",
+      "definition": "datu objekts no G klastera",
+      "sentence": "i – datu objekts no G klastera",
+      "language": "lv",
+      "generated": false,
+      "uid": "a7026c53-ce2b-4924-97d1-39682359d391"
+    },
+    {
+      "term": "i’",
+      "definition": "datu objekts no H klastera",
+      "sentence": "i’ – datu objekts no H klastera",
+      "language": "lv",
+      "generated": false,
+      "uid": "a58ceaf9-508e-40da-9447-ee8be5b4cc68"
+    },
+    {
+      "term": "saistīšanas metodes",
+      "definition": "dažādas metodes, kas nodrošina dažādus pēc satura un skaita klasterus",
+      "sentence": "Dažādas saistīšanas metodes noved pie dažādiem pēc satura un skaita klasteriem",
+      "language": "lv",
+      "generated": false,
+      "uid": "2bcd3c81-bae9-418c-8a8a-048207cb3848"
+    },
+    {
+      "term": "dendrogramma",
+      "definition": "hierarhiskās klasterēšanas rezultāts, kas ir kokam līdzīga diagramma, kas attēlo hierarhiskas attiecības starp datu objektiem datu kopā",
+      "sentence": "Dendrogramma ir hierarhiskās klasterēšanas rezultāts. Tā ir kokam līdzīga diagramma, kas attēlo hierarhiskas attiecības starp datu objektiem datu kopā.",
+      "language": "lv",
+      "generated": false,
+      "uid": "50cd2dc1-bb59-44d7-971c-0c5ada57d186"
+    },
+    {
+      "term": "Hastie, 2017",
+      "definition": "autors, kas norāda, ka dendrogramma nodrošina ļoti interpretējamu pilnīgu hierarhiskās klasterēšanas aprakstu grafiskā formātā",
+      "sentence": "Atbilstoši (Hastie, 2017) \"dendrogramma nodrošina ļoti interpretējamu pilnīgu hierarhiskās klasterēšanas aprakstu grafiskā formātā\".",
+      "language": "lv",
+      "generated": false,
+      "uid": "3ec96cef-8a28-43e9-92ab-518da11b8a11"
+    },
+    {
+      "term": "stabiņi",
+      "definition": "dendrogrammas elementi, kas atspoguļo datu objektu apvienošanu klasteros; katram stabiņam ir noteikts augstums",
+      "sentence": "Dendrogramma sastāv no (5. attēls): stabiņiem, kuri atspoguļo datu objektu apvienošanu klasteros; katram stabiņam ir noteikts augstums",
+      "language": "lv",
+      "generated": false,
+      "uid": "cb07ab68-d28e-413e-ae83-f2417580bd8c"
+    },
+    {
+      "term": "lapas",
+      "definition": "stabiņu apakšējie galapunkti, kuri atbilst klasterēšanas procesā izmantotajiem datu objektiem",
+      "sentence": "lapām, kas ir stabiņu apakšējie galapunkti, kuri atbilst klasterēšanas procesā izmantotajiem datu objektiem.",
+      "language": "lv",
+      "generated": false,
+      "uid": "e79bb545-7ba0-4c0e-aac0-3fbea2021b59"
+    },
+    {
+      "term": "stabiņu augstums",
+      "definition": "klasteru līdzības rādītājs; datu objekti stabiņa galapunktos ir līdzīgāki savā starpā nekā citiem datu objektiem",
+      "sentence": "Stabiņu augstums kalpo kā klasteru līdzības rādītājs: Datu objekti stabiņa galapunktos ir līdzīgāki savā starpā nekā citiem datu objektiem.",
+      "language": "lv",
+      "generated": false,
+      "uid": "1221351c-3531-4ccc-88c4-a8de3cf4c34a"
+    },
+    {
+      "term": "datu objekti",
+      "definition": "datu punkti, kas tiek apvienoti klasteros; 5. attēlā attēloti: A, B, C, D un E",
+      "sentence": "5. attēlā ir attēloti pieci datu objekti – A, B, C, D un E.",
+      "language": "lv",
+      "generated": false,
+      "uid": "b5466669-982b-4c57-bb56-8089887c9480"
+    },
+    {
+      "term": "klasteru skaits",
+      "definition": "noteikts ar horizontālo atdalošo līniju, kas krusto vertikālās līnijas; atbilst vertikālo līniju skaitam, ko krusto horizontālā atdalošā līnija",
+      "sentence": "Klasteru skaits, izmantojot hierarhiskās klasterēšanas algoritma dendrogrammu, tiek noteikts, izmantojot horizontālo atdalošo līniju. Klasteru skaits atbilst vertikālo līniju skaitam, ko krusto horizontālā atdalošā līnija.",
+      "language": "lv",
+      "generated": false,
+      "uid": "6e325464-ac65-4051-870f-3ed63076e18c"
+    },
+    {
+      "term": "horizontālā atdalošā līnija",
+      "definition": "līnija, kas izmantojama, lai noteiktu klasteru skaitu, šķērsojot vertikālās līnijas",
+      "sentence": "Atdalīšanu var veikt dažādos hierarhijas līmeņos, kā rezultātā tiek izveidots atšķirīgs klasteru skaits. Klasteru skaits atbilst vertikālo līniju skaitam, ko krusto horizontālā atdalošā līnija.",
+      "language": "lv",
+      "generated": false,
+      "uid": "548731ff-d434-4af0-bac2-a9fc6a26a3f7"
+    },
+    {
+      "term": "vertikālās līnijas",
+      "definition": "līnijas, kas attiecas uz klasteru apvienošanām; šķērso horizontālā atdalošā līnija, lai noteiktu klasteru skaitu",
+      "sentence": "Piemēram, 6. attēlā pirmā atdalošā līnija šķērso divas vertikālas līnijas, un tiek iegūti divi klasteri...",
+      "language": "lv",
+      "generated": false,
+      "uid": "600f847a-f1b3-4574-9249-cd3155b84a32"
+    },
+    {
+      "term": "klasteru hierarhija",
+      "definition": "sakārtotu klasteru apvienošanas secību",
+      "sentence": "Apkopojot šajā tēmā sniegto informāciju par hierarhisko klasterēšanu, ir vērts pieminēt, ka klasteru hierarhija atspoguļo sakārtotu klasteru apvienošanas secību (Hastie, 2017).",
+      "language": "lv",
+      "generated": false,
+      "uid": "e8f5f629-789a-42cb-9ade-b884c5a1cc5f"
+    },
+    {
+      "term": "hierarhiskās klasterēšanas algoritms",
+      "definition": "algoritms, kas neprasa definēt klasteru skaitu pirms algoritma darbības",
+      "sentence": "Šis algoritms neprasa definēt klasteru skaitu pirms algoritma darbības.",
+      "language": "lv",
+      "generated": false,
+      "uid": "4ff8adee-8279-4404-b4a8-69d9cee0c9a3"
+    },
+    {
+      "term": "izstrādātājam",
+      "definition": "personai, kas izvēlas saistīšanas metodi un atdalošo līniju, lai noteiktu klasteru skaitu",
+      "sentence": "Izstrādātājam ir jāizlemj, a) kur novilkt atdalošo līniju, lai noteiktu gala klasteru skaitu, un b) kuru saistīšanas metodi izmantot, lai noteiktu klasteru līdzību.",
+      "language": "lv",
+      "generated": false,
+      "uid": "674a6baa-5646-43a0-8d58-9b26d2c4a0f4"
+    },
+    {
+      "term": "Hastie, T., Tibshirani, R., Friedman, J. (2017). The elements of Statistical Learning: Data Mining, Inference, and Prediction. Springer Series in Statistics",
+      "definition": "informācijas avots, kas norāda, ka dendrogramma nodrošina ļoti interpretējamu pilnīgu hierarhiskās klasterēšanas aprakstu grafiskā formātā",
+      "sentence": "Atbilstoši (Hastie, 2017) \"dendrogramma nodrošina ļoti interpretējamu pilnīgu hierarhiskās klasterēšanas aprakstu grafiskā formātā\".",
+      "language": "lv",
+      "generated": false,
+      "uid": "89338f82-3df5-4220-8ab2-eab0951ad3d9"
+    },
+    {
+      "term": "Jones T.M. (2009)",
+      "definition": "informācijas avots, kas sniedz informāciju par hierarhisko klasterēšanu",
+      "sentence": "Izmantotie informācijas avoti Hastie, T., Tibshirani, R., Friedman, J. (2017). The elements of Statistical Learning: Data Mining, Inference, and Prediction. Springer Series in Statistics. Jones T.M. (2009).",
+      "language": "lv",
+      "generated": false,
+      "uid": "69b9c685-8ee0-4fff-920f-45ac74aa16ce"
+    },
+    {
+      "term": "Artificial Intelligence",
+      "definition": "A Systems Approach",
+      "sentence": "Jones & Bartlett Learning",
+      "language": "en",
+      "generated": false,
+      "uid": "f91cc10f-22a9-4b67-87b7-7eb2b17e0f28"
+    },
+    {
+      "term": "Kubat, M. (2017)",
+      "definition": "An Introduction to Machine Learning",
+      "sentence": "Springer International Publishing",
+      "language": "en",
+      "generated": false,
+      "uid": "4a162c65-9194-46cf-ab72-93527bb026da"
+    },
+    {
+      "term": "Tyugu, E. (2007)",
+      "definition": "Algorithms and architectures of artificial intelligence",
+      "sentence": "IOS Press",
+      "language": "en",
+      "generated": false,
+      "uid": "822e1a32-9b46-470b-b557-a61398c80545"
+    },
+    {
+      "term": "Pai P. (2021)",
+      "definition": "Hierarchical clustering explained",
+      "sentence": "Available at 4.4",
+      "language": "en",
+      "generated": false,
+      "uid": "10361c73-ee87-451c-9f8a-80960e551815"
+    },
+    {
+      "term": "Tēma - Mašīnmācīšanās algoritmu veiktspējas novērtēšanas metrikas",
+      "definition": "Mašīnmācīšanās modeļa veikuma novērtēšanas metrikas tiek izmantotas, lai salīdzinātu dažādu mašīnmācīšanās algoritmu darbību, tos pielietojot vienai un tai pašai datu kopai, un/ vai analizētu viena un tā paša mašīnmācīšanās algoritma darbību pie dažādām hiperparametru vērtībām",
+      "sentence": "Metrikas ir atkarīgas no uzdevuma, kuram mašīnmācīšanās algoritmu pielieto",
+      "language": "lv",
+      "generated": false,
+      "uid": "75b98bdc-2987-4f9e-b2cb-d8c587c6d37c"
+    },
+    {
+      "term": "Mašīnmācīšanās modeļa veikuma novērtēšanas metrikas",
+      "definition": "Tieks izmantotas, lai salīdzinātu dažādu mašīnmācīšanās algoritmu darbību, tos pielietojot vienai un tai pašai datu kopai, un/ vai analizētu viena un tā paša mašīnmācīšanās algoritma darbību pie dažādām hiperparametru vērtībām",
+      "sentence": "Metrikas ir atkarīgas no uzdevuma, kuram mašīnmācīšanās algoritmu pielieto",
+      "language": "lv",
+      "generated": false,
+      "uid": "cad03f92-55fc-45be-a988-45d028b09b15"
+    },
+    {
+      "term": "Regresijas uzdevums",
+      "definition": "pārraudzītās mašīnmācīšanās uzdevums, līdz ar to datu kopā ir pieejamas īstās datu objektu izeju iezīmes un tās tiek izmantotas, lai noteiktu prognozēto datu objektu iezīmju pareizību",
+      "sentence": "Regresijas uzdevumā tiek veikta nepārtrauktajā skalā atspoguļotas vērtības prognozēšana, līdz ar to regresijas rezultāts ir reālais skaitlis, kas atbilst veiktajai prognozei",
+      "language": "lv",
+      "generated": false,
+      "uid": "60b408ab-6d95-49ba-b2af-1cb56fcf0ff9"
+    },
+    {
+      "term": "Vidējā kvadrātkļūda (angļu val. the Mean squared error, MSE)",
+      "definition": "nosaka vidējo vērtību atsevišķu datu objektu prognozēšanas kļūdu kvadrātiem. Kļūdas aprēķina rezultātā tiek iegūta pozitīva vērtība, kas nav vienāda ar nulli. Jo mazāka ir šīs kļūdas vērtība, jo labāks ir mašīnmācīšanās algoritma veikums. Šās kļūdas vērtību nopietni ietekmē datu kopā esošās izlecošās vērtības",
+      "sentence": "Šīs kļūdas vērtību nopietni ietekmē datu kopā esošās izlecošās vērtības",
+      "language": "lv",
+      "generated": false,
+      "uid": "1dc5e390-f698-4e8c-9339-5de27a377389"
+    },
+    {
+      "term": "Vidējā kvadrātiskā kļūda (angļu val. Root mean square error, RMSE)",
+      "definition": "piemēro kvadrātsakni MSE (iepriekš apskatītās kļūdas vērtībai) un tāpēc nodrošina kļūdas mērvienību tajā pašā vienībā kā mērķa mainīgais. Jo mazāka ir šīs kļūdas vērtība, jo labāks ir mašīnmācīšanās algoritma veikums",
+      "sentence": "Jo mazāka ir šīs kļūdas vērtība, jo labāks ir mašīnmācīšanās algoritma veikums",
+      "language": "lv",
+      "generated": false,
+      "uid": "85edfc4a-9135-4111-bf47-cd91bf4045fb"
+    },
+    {
+      "term": "Vidējā absolūtā kļūda (angļu val. Mean absolute error, MAE)",
+      "definition": "ir absolūtās starpības starp datu objektu īstajām izeju vērtībām un prognozētajām izeju vērtībām summas vidējā vērtība. Tā arī nodrošina kļūdas mērījumu tajā pašā mērvienībā kā mērķa mainīgais. Jo mazāka ir šīs kļūdas vērtība, jo labāks ir mašīnmācīšanās algoritma veikums",
+      "sentence": "Jo mazāka ir šīs kļūdas vērtība, jo labāks ir mašīnmācīšanās algoritma veikums",
+      "language": "lv",
+      "generated": false,
+      "uid": "11698b9e-e76b-477a-a6ec-8802ba555216"
+    },
+    {
+      "term": "R2 koeficients (angļu val. R2 coefficient)",
+      "definition": "ir pazīstams arī kā determinācijas koeficients. Tas norāda, cik tuvu izveidotais modelis (regresijas algoritma atrastā līnija / plakne) atbilst datu objektiem datu kopā. Koeficienta vērtības atrodas diapazonā [0,1], kur 0 norāda, ka modelis neatbilst datu objektiem, un 1 norāda perfektu atbilstību",
+      "sentence": "Koeficienta vērtības atrodas diapazonā [0,1], kur 0 norāda, ka modelis neatbilst datu objektiem, un 1 norāda perfektu atbilstību",
+      "language": "lv",
+      "generated": false,
+      "uid": "29d069c6-ef80-4fe4-8857-c0ec97220285"
+    }
+  ],
+  "debug_info": {
+    "chunkSize": 3167,
+    "chunkCount": 91,
+    "contextLength": 4096,
+    "temperature": 0.5,
+    "seed": 42,
+    "prompt": "Your task is to analyze the provided text and create a glossary.\nInstructions:\n1. Extract ALL terms and concepts from the text.\n2. Define them using ONLY the provided text.\n3. NO external knowledge. Synthesize exclusively from source.\n4. DO NOT translate. Keep definitions in the source language.\n5. If no terms found, return an empty list.\n\nText to analyze:\n\n",
+    "elapsedTime": 3851.021,
+    "safeMargin": 0.5,
+    "maxResponseTokens": 4096,
+    "maxTimeout": 599940000,
+    "repeatPenalty": -1,
+    "inputSize": 334911
+  }
+}

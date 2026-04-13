@@ -1,0 +1,1815 @@
+{
+  "uid": "cbb2b811-894e-497d-9b45-cd42d4fe4e23",
+  "domain": "unknown",
+  "language": "en",
+  "implementation": "LMStudio-qwen/qwen3-vl-8b@Q4_K_M",
+  "timestamp_start": 1774487333434,
+  "timestamp_end": 1774489415155,
+  "error_count": 24,
+  "glossary": [
+    {
+      "term": "playing a game",
+      "definition": "can be seen as a problem-solving process",
+      "sentence": "Playing a game can be seen as a problem-solving process.",
+      "language": "en",
+      "generated": false,
+      "uid": "5369ff5c-30fe-4378-995c-04e2b992056e"
+    },
+    {
+      "term": "initial state",
+      "definition": "a blank grid, which appears when you start the game",
+      "sentence": "The initial state of the problem-solving process is a blank grid, which appears when you start the game",
+      "language": "en",
+      "generated": false,
+      "uid": "fe580b8b-45c8-4243-a17c-ee68c04bd396"
+    },
+    {
+      "term": "goal state",
+      "definition": "in which three marks corresponding to that player are located in a horizontal, vertical or a diagonal row",
+      "sentence": "Each player wants to reach one of the goal states, in which three marks corresponding to that player are located in a horizontal, vertical or a diagonal row",
+      "language": "en",
+      "generated": false,
+      "uid": "87e24682-4d3e-4e43-8db2-a61d72519b71"
+    },
+    {
+      "term": "legal moves",
+      "definition": "by putting their marks in empty squares",
+      "sentence": "To reach a goal state, the players make moves by putting their marks in empty squares",
+      "language": "en",
+      "generated": false,
+      "uid": "67c0a924-4a26-41e5-a456-2f750ed6ab09"
+    },
+    {
+      "term": "state space graph",
+      "definition": "A graph representation of a game where nodes represent game states and edges represent state transitions.",
+      "sentence": "To implement a game, it is not sufficient to represent the game using a state space graph.",
+      "language": "en",
+      "generated": false,
+      "uid": "fa487d9a-6ebf-4543-a71a-09ccebdba391"
+    },
+    {
+      "term": "node",
+      "definition": "a point in the state space graph representing a particular state or configuration of the problem.",
+      "sentence": "The search start node is A. The search goal node is K.",
+      "language": "en",
+      "generated": false,
+      "uid": "9697e958-3758-4bca-87a2-84caf731683d"
+    },
+    {
+      "term": "arc",
+      "definition": "A connection between two nodes in the state space graph representing a possible transition.",
+      "sentence": "The reason is that when searching in a level-by-level fashion, the shortest path will be found sooner because it consists of a smaller number of arcs.",
+      "language": "en",
+      "generated": false,
+      "uid": "8377dd21-daca-491d-83a3-39764b9f0ffa"
+    },
+    {
+      "term": "deterministic two-player game of perfect information",
+      "definition": "moves are made alternately, and node levels are clearly distinguishable in the state space graph",
+      "sentence": "Since moves are made alternately in a deterministic two-player game of perfect information, node levels are clearly distinguishable in the state space graph",
+      "language": "en",
+      "generated": false,
+      "uid": "5ff0b14a-c027-4bb3-b453-197121b218b3"
+    },
+    {
+      "term": "turn",
+      "definition": "one or more nodes are located at each level, and these display states of the game from which only one of the two players can make a move",
+      "sentence": "One or more nodes are located at each level, and these display states of the game from which only one of the two players can make a move",
+      "language": "en",
+      "generated": false,
+      "uid": "17c14be1-cd0f-44ae-abd8-9a2492fcdce6"
+    },
+    {
+      "term": "state space graph level",
+      "definition": "contains states from which only one of the two players can make a move",
+      "sentence": "Each node level contains states from which only one of the two players can make a move",
+      "language": "en",
+      "generated": false,
+      "uid": "459a3ca6-3032-48b7-b057-297d12c4a081"
+    },
+    {
+      "term": "zero-sum deterministic two-player game of perfect information",
+      "definition": "a principle that defines the game, and if an arc was drawn between two nodes at the same level, this would indicate that the same player could make two moves rather than only one, which would contradict this principle",
+      "sentence": "If an arc was drawn between two nodes at the same level, this would indicate that the same player could make two moves rather than only one, which would contradict the principle of a zero-sum deterministic two-player game of perfect information as defined at the beginning of this topic",
+      "language": "en",
+      "generated": false,
+      "uid": "d48507b0-93ce-4b74-a5ad-4937cc596f33"
+    },
+    {
+      "term": "intelligent computer system",
+      "definition": "will effectively be able to use the state space graph for the game only if each node in the graph clearly represents a game state at any specific moment in time",
+      "sentence": "An intelligent computer system will effectively be able to use the state space graph for the game only if each node in the graph clearly represents a game state at any specific moment in time",
+      "language": "en",
+      "generated": false,
+      "uid": "4234694e-2c98-477e-9407-497fac5108f8"
+    },
+    {
+      "term": "parameters that characterise the states in the game",
+      "definition": "related to a computer implementation of a game; correspond to the properties of the game and its course, in which the values change after making a move during the course of the game; not related to the characteristics of the state space graph, such as the number of nodes, the number of levels, the number of arcs, etc.; the values of the parameters allow the players to track the course of the game, since they determine a specific state in the game at a specific moment in time; the values of the parameters should be represented in each node of the state space graph; the parameters depend on the game, and thus may be very different; for example, they may include the score of each player, the current game board, or both the scores of the players and the current game board, etc.",
+      "sentence": "These parameters can be described as follows: they are related to a computer implementation of a game; they correspond to the properties of the game and its course, in which the values change after making a move during the course of the game; they are not related to the characteristics of the state space graph, such as the number of nodes, the number of levels, the number of arcs, etc.; the values of the parameters allow the players to track the course of the game, since they determine a specific state in the game at a specific moment in time; the values of the parameters should be represented in each node of the state space graph; the parameters depend on the game, and thus may be very different; for example, they may include the score of each player, the current game board, or both the scores of the players and the current game board, etc.",
+      "language": "en",
+      "generated": false,
+      "uid": "871d484e-5bf7-4240-9116-b1023640e171"
+    },
+    {
+      "term": "complexity of a state space graph",
+      "definition": "a critical aspect. It is vital to reduce the complexity to avoid overconsumption of computational resources",
+      "sentence": "The complexity of a state space graph is a critical aspect. It is vital to reduce the complexity to avoid overconsumption of computational resources",
+      "language": "en",
+      "generated": false,
+      "uid": "f126e030-19d8-4d5f-8e6b-a3ab952bb1fa"
+    },
+    {
+      "term": "multiple representations of the same state",
+      "definition": "avoided within a specific node level. Nodes at the same level are identical if they have the same values for all of the parameters that characterise the states of the game. If there are identical nodes at the same level, they are not displayed several times, but only once per level, in order to save computational resources. In this case, several incoming arcs are drawn for a single node",
+      "sentence": "When we represent games, we can avoid multiple representations of the same state within a specific node level. Nodes at the same level are identical if they have the same values for all of the parameters that characterise the states of the game. If there are identical nodes at the same level, they are not displayed several times, but only once per level, in order to save computational resources. In this case, several incoming arcs are drawn for a single node",
+      "language": "en",
+      "generated": false,
+      "uid": "812cf0af-c91d-414b-825a-dc1592fc134f"
+    },
+    {
+      "term": "search algorithm",
+      "definition": "an intelligent computer system needs a search algorithm that processes the data structure to find a solution to the problem based on known input data",
+      "sentence": "Additionally, an intelligent computer system needs a search algorithm that processes the data structure to find a solution to the problem based on known input data (Figure 1).",
+      "language": "en",
+      "generated": false,
+      "uid": "d47a61b5-4e9b-41de-a2f5-aa74435edb33"
+    },
+    {
+      "term": "search start node",
+      "definition": "The initial node from which the search begins, added to the OPEN list in iteration 0.",
+      "sentence": "The search start node is added to the OPEN list together with its heuristic measure.",
+      "language": "en",
+      "generated": false,
+      "uid": "905c56cf-fdab-4a1a-a2cd-f49d33907866"
+    },
+    {
+      "term": "search goal node",
+      "definition": "The target node that the search aims to reach; when added to the OPEN list or when a leaf node with a better heuristic measure is reached, the algorithm stops.",
+      "sentence": "The algorithm stops when the search goal node is added to the OPEN list or when leaf nodes with heuristic measures better than the heuristic measure of the search goal node are reached.",
+      "language": "en",
+      "generated": false,
+      "uid": "3674694a-e19f-44a7-8655-426c502b45ca"
+    },
+    {
+      "term": "solution path",
+      "definition": "a path through the state space graph from a given search start node to a given search goal node. It corresponds to an ordered sequence of actions that lead to the solution to the problem.",
+      "sentence": "A solution path is a path through the state space graph from a given search start node to a given search goal node. It corresponds to an ordered sequence of actions that lead to the solution to the problem.",
+      "language": "en",
+      "generated": false,
+      "uid": "76e8b66a-af8c-42ed-ae64-3ab28e318231"
+    },
+    {
+      "term": "open nodes",
+      "definition": "the search algorithm has already generated these nodes, but their descendants/ancestors have not yet been generated",
+      "sentence": "two types of nodes appear: open nodes – the search algorithm has already generated these nodes, but their descendants/ancestors have not yet been generated;",
+      "language": "en",
+      "generated": false,
+      "uid": "ef7ac5bd-50a2-4cf8-b4b0-8868d9e2d290"
+    },
+    {
+      "term": "closed nodes",
+      "definition": "they are nodes whose descendants/ancestors have already been generated",
+      "sentence": "closed nodes – they are nodes whose descendants/ancestors have already been generated.",
+      "language": "en",
+      "generated": false,
+      "uid": "5399f8bf-ecfe-48d2-9d9d-cf7fe71483fc"
+    },
+    {
+      "term": "data-driven search",
+      "definition": "A search approach implemented on a state space graph using predefined data such as heuristic measures and node connections.",
+      "sentence": "Let us consider an example of Beam Search by implementing data-driven search on the state space graph that you can see in Figure 9.",
+      "language": "en",
+      "generated": false,
+      "uid": "60003c66-dc52-4cf3-990f-fa81b8935b29"
+    },
+    {
+      "term": "goal-driven search",
+      "definition": "a search direction starting from the goal state",
+      "sentence": "The algorithm performs a search simultaneously in both directions - data-driven search and goal-driven search - until it finds a point of contact in both directions.",
+      "language": "en",
+      "generated": false,
+      "uid": "8622aae9-9c9b-48e2-9d4a-b8df974d85b5"
+    },
+    {
+      "term": "forward chaining",
+      "definition": "data-driven search",
+      "sentence": "This is called data-driven search or forward chaining .",
+      "language": "en",
+      "generated": false,
+      "uid": "0217ba78-96eb-4932-9e44-367b37869612"
+    },
+    {
+      "term": "backward chaining",
+      "definition": "goal-driven search",
+      "sentence": "This is called goal-driven search or backward chaining .",
+      "language": "en",
+      "generated": false,
+      "uid": "d2115ec4-341c-4056-b6c3-d72aad9d9334"
+    },
+    {
+      "term": "measurable/comparable property of the search goal node",
+      "definition": "a property used to compare the current node with the search goal node to determine if the goal has been reached",
+      "sentence": "Using a measurable/comparable property of the search goal node. In this case, the search algorithm makes a simple comparison between the content of the current node and the search goal node. If the data in both nodes are the same, it means that the search goal node has been reached.",
+      "language": "en",
+      "generated": false,
+      "uid": "15e5a432-657c-4a07-a7e0-2dca0dfde7a0"
+    },
+    {
+      "term": "property of the solution path",
+      "definition": "a characteristic of the path such as shortest, longest, or visiting each node only once",
+      "sentence": "Checking a property of the solution path, for example, by searching for the shortest path, the longest path, or a path visiting each node only once.",
+      "language": "en",
+      "generated": false,
+      "uid": "d17d5c26-bf3c-4d40-8118-54aabfe582e2"
+    },
+    {
+      "term": "root nodes",
+      "definition": "nodes representing initial states of the problem-solving process",
+      "sentence": "a state space graph may be searched for in two directions: From the given data of a problem toward a goal. This is called data-driven search or forward chaining . The search process starts from a root node and it proceeds in forward direction in the state space graph.",
+      "language": "en",
+      "generated": false,
+      "uid": "9e11777f-a9bb-4eec-aeef-aa362906a4bb"
+    },
+    {
+      "term": "leaf nodes",
+      "definition": "nodes displaying goal states",
+      "sentence": "From a goal back to the data. This is called goal-driven search or backward chaining . The search process starts from a leaf node and it proceeds in backward direction in the state space graph.",
+      "language": "en",
+      "generated": false,
+      "uid": "394e5853-f412-432d-a296-126af11ed10c"
+    },
+    {
+      "term": "uninformed search",
+      "definition": "search algorithms that process only nodes and arcs of the state space graph and do not have additional information about the quality of the nodes.",
+      "sentence": "In the case of uninformed search, all of the paths represented in the state space graph are identical, because uninformed search algorithms process only nodes and arcs of the state space graph. They do not have additional information about the quality of the nodes.",
+      "language": "en",
+      "generated": false,
+      "uid": "ed4b7482-ad45-4a7f-b807-22746f2e51ce"
+    },
+    {
+      "term": "heuristic search",
+      "definition": "search algorithms able to distinguish between paths represented in the state space graph by taking into account factors such as distance, location, road surface, and number of traffic lights.",
+      "sentence": "Heuristic search algorithms are able to distinguish between paths represented in the state space graph. Therefore, each path differs from all of the others. This is because heuristic search can take into account such information as the distance between any two settlements, the location of each settlement (north, west, etc.) relative to Paris, the surface of the road leading to each settlement, the number of traffic lights between any two settlements, and many other factors.",
+      "language": "en",
+      "generated": false,
+      "uid": "223bcda5-a8ab-4076-b48d-f78fe17916a3"
+    },
+    {
+      "term": "OPEN list",
+      "definition": "A list that contains nodes that are candidates for expansion, with the number of nodes always equal to the beam width, except for iteration 0 and cases where the number of direct descendants/ancestors is less than the beam width.",
+      "sentence": "The OPEN list always contains the same number of nodes as the beam width, excluding: iteration 0, when only the search start node is added to the OPEN list, and a case when the number of direct descendants/ancestors is less than the beam width.",
+      "language": "en",
+      "generated": false,
+      "uid": "fec21a89-7cbc-41d6-b39b-e7604cb5d5d3"
+    },
+    {
+      "term": "CLOSED list",
+      "definition": "A list that contains nodes that have been expanded or generated but are not selected as the best nodes based on heuristic measures.",
+      "sentence": "Other nodes are placed on the CLOSED list.",
+      "language": "en",
+      "generated": false,
+      "uid": "61cf0e9a-7972-40ec-8f05-8d068ea077f4"
+    },
+    {
+      "term": "Depth-First Search",
+      "definition": "an algorithm that performs an exhaustive search of the state space graph and always goes deeper into the state space graph.",
+      "sentence": "Depth-First Search is guaranteed to find the search goal node if it exists in the state space graph because this algorithm performs an exhaustive search of the state space graph.",
+      "language": "en",
+      "generated": false,
+      "uid": "a7065cd0-aa69-4fc9-8c02-0f8d6230de6f"
+    },
+    {
+      "term": "stack",
+      "definition": "a data structure where new nodes are added to the left side of the OPEN list, working according to the “Last in, First Out” principle.",
+      "sentence": "In the implementation of this algorithm, new nodes are added to the left side of the OPEN list. Therefore, this list is a type of data structure called a stack. A stack works according to the “Last in, First Out” principle: the last data element entered is the first to be processed (Figure 8).",
+      "language": "en",
+      "generated": false,
+      "uid": "b5cd8b39-3a66-4e83-84ac-600993d1ba3e"
+    },
+    {
+      "term": "iteration",
+      "definition": "A step in the Beam Search algorithm where nodes are expanded, evaluated, and selected based on heuristic measures.",
+      "sentence": "Iteration 0: The search start node is added to the OPEN list together with its heuristic measure.",
+      "language": "en",
+      "generated": false,
+      "uid": "59bba76b-d67a-4a7b-9e4f-27249b963fc9"
+    },
+    {
+      "term": "leaf node",
+      "definition": "A node in the game tree that has no descendants, representing a terminal state of the game.",
+      "sentence": "The algorithm goes down using the first unconsidered path on the left until it reaches a leaf node.",
+      "language": "en",
+      "generated": false,
+      "uid": "3ba7a5ff-918a-4dd1-89f7-7241b1b35385"
+    },
+    {
+      "term": "algorithm",
+      "definition": "a procedure that expands nodes in a state space graph to search for a goal node.",
+      "sentence": "The algorithm expands the current node I by generating its three descendants - nodes J, K, and G.",
+      "language": "en",
+      "generated": false,
+      "uid": "0b1a738c-e777-4780-9165-38c890c140a6"
+    },
+    {
+      "term": "descendant",
+      "definition": "A node that can be reached from the current node by following a path in the state space graph.",
+      "sentence": "The algorithm expands the current node A by generating its three descendants - nodes D, H, and E.",
+      "language": "en",
+      "generated": false,
+      "uid": "877cc9b8-b8b4-42ca-a945-19b7ba99b8a7"
+    },
+    {
+      "term": "current node",
+      "definition": "The node currently being processed for expansion in the search algorithm.",
+      "sentence": "The node K, which is located on the first position of the OPEN list, becomes the current node.",
+      "language": "en",
+      "generated": false,
+      "uid": "f6611590-adb0-46ed-9f73-1adcb4b9ee6a"
+    },
+    {
+      "term": "shortest path",
+      "definition": "A path from the start node to the goal node that contains the minimum number of arcs.",
+      "sentence": "This algorithm is also guaranteed to find the shortest path to the search goal node if such a path exists in the state space graph.",
+      "language": "en",
+      "generated": false,
+      "uid": "fd73bc08-dedb-48e8-b97a-bf615ba122c2"
+    },
+    {
+      "term": "indefinitely deep paths",
+      "definition": "a problem where the algorithm searches deeply into the state space graph before returning to higher levels.",
+      "sentence": "Besides that, the algorithm has another serious shortcoming—the problem of so-called indefinitely deep paths . It means that in a situation where the state space graph has many node levels, Depth-First Search will search for the search goal node for a long time in depth before it returns to higher levels.",
+      "language": "en",
+      "generated": false,
+      "uid": "b6561eea-8ba3-4e93-859d-71d34cfa11aa"
+    },
+    {
+      "term": "Depth-Limited Search",
+      "definition": "An algorithm that explores the state space graph by limiting the depth of search to avoid infinite paths, but may fail to find a solution if the goal is beyond the limit.",
+      "sentence": "Depth-Limited Search overcomes a problem of going along indefinitely deep paths. At the same time, it is not able to find a solution path if the search goal node is located below the depth limit.",
+      "language": "en",
+      "generated": false,
+      "uid": "f7ea3b60-f95a-49f2-b07e-cdf386535fde"
+    },
+    {
+      "term": "depth limit",
+      "definition": "A predefined maximum depth for the search in Depth-Limited Search; if the goal is beyond this limit, the algorithm may not find a solution.",
+      "sentence": "However, one of the main problems of Depth-Limited Search is a lack of guidelines on how to choose the depth limit for a particular problem.",
+      "language": "en",
+      "generated": false,
+      "uid": "cc2d3e11-3e9a-4f43-8afe-6c8b1f5d11b9"
+    },
+    {
+      "term": "leaf/root node",
+      "definition": "a node at the depth limit that cannot be expanded further.",
+      "sentence": "Nodes located at the depth limit are considered to be leaf/root nodes (depending on the search direction).",
+      "language": "en",
+      "generated": false,
+      "uid": "983ea163-eadf-4318-beb4-f068cd73db04"
+    },
+    {
+      "term": "depth label",
+      "definition": "a value assigned to each node indicating its depth level in the state space graph.",
+      "sentence": "Depth labels allow the algorithm \"to understand\" if it is possible to generate descendants/ancestors of the current node or if the current node should be considered a leaf/root node.",
+      "language": "en",
+      "generated": false,
+      "uid": "3f36a477-bd16-48d7-a3fe-2fde504f97d7"
+    },
+    {
+      "term": "depth level",
+      "definition": "the number of steps from the start node to reach a particular node.",
+      "sentence": "The depth level of the search start node is equal to 0. The depth level of any other node is calculated by adding 1 to the depth level of the current node.",
+      "language": "en",
+      "generated": false,
+      "uid": "70bcbb4e-33c7-4120-8a76-a499c293a69e"
+    },
+    {
+      "term": "principle of deepening",
+      "definition": "A search strategy that explores one path to its maximum depth before backtracking or exploring other paths.",
+      "sentence": "Both algorithms considered so far—Depth-First Search and Depth-Limited Search—explored the state space graph through a principle of deepening.",
+      "language": "en",
+      "generated": false,
+      "uid": "826f0570-3658-4643-8ad1-c250adf6ca53"
+    },
+    {
+      "term": "Breadth-First Search",
+      "definition": "an algorithm that explores closer branches and then goes to the ends of branches",
+      "sentence": "Breadth-First Search explores closer branches and then goes to the ends of branches.",
+      "language": "en",
+      "generated": false,
+      "uid": "9cd59b01-3887-4b64-a57c-6d467446b969"
+    },
+    {
+      "term": "level-by-level fashion",
+      "definition": "A method of exploring the state space graph where all nodes at the current depth are processed before proceeding to deeper levels.",
+      "sentence": "Breadth-First Search explores the state space graph in a level-by-level fashion.",
+      "language": "en",
+      "generated": false,
+      "uid": "2f497e3f-08e7-4d02-9da7-dba4f9299938"
+    },
+    {
+      "term": "queue",
+      "definition": "A data structure that follows the 'First in, First Out' principle, used to manage the OPEN list in Breadth-First Search.",
+      "sentence": "In the implementation of this algorithm, new nodes are added to the right side of the OPEN list. Therefore, this list is a type of data structure called a queue.",
+      "language": "en",
+      "generated": false,
+      "uid": "60da1814-8be8-43fe-910e-71260cb0e84d"
+    },
+    {
+      "term": "First in, First Out",
+      "definition": "A principle where the first element added to a data structure is the first one to be processed.",
+      "sentence": "A queue works according to the “First in, First Out” principle: the first data element entered is the first to be processed.",
+      "language": "en",
+      "generated": false,
+      "uid": "2f16f8c3-f2c1-49f1-82c0-5a3cb61b1cde"
+    },
+    {
+      "term": "ancestor",
+      "definition": "A node in the game tree that is higher in the hierarchy than the current node, connected by a path of parent-child relationships.",
+      "sentence": "The algorithm checks whether the ancestor of the current node also has an intermediate heuristic measure.",
+      "language": "en",
+      "generated": false,
+      "uid": "a76b1c25-d39e-4853-bee5-8673f8ae9a04"
+    },
+    {
+      "term": "exhaustive search",
+      "definition": "A search that explores all possible paths in the state space graph until the goal is found or all possibilities are exhausted.",
+      "sentence": "Breadth-First Search is also guaranteed to find the search goal node if this node exists in the state space graph, as this algorithm performs an exhaustive search of the space state graph.",
+      "language": "en",
+      "generated": false,
+      "uid": "b360920f-ab3b-42a0-8edf-d2ad9512fb05"
+    },
+    {
+      "term": "computing resources",
+      "definition": "The computational power and memory required to run an algorithm.",
+      "sentence": "Unfortunately, Breadth-First Search has a serious shortcoming related to the consumption of computing resources.",
+      "language": "en",
+      "generated": false,
+      "uid": "e6ab32e6-64c1-40e4-900a-0429745a0eff"
+    },
+    {
+      "term": "Bidirectional Search",
+      "definition": "an algorithm that performs a search simultaneously in both directions - data-driven search and goal-driven search - until it finds a point of contact in both directions",
+      "sentence": "The algorithm performs a search simultaneously in both directions - data-driven search and goal-driven search - until it finds a point of contact in both directions.",
+      "language": "en",
+      "generated": false,
+      "uid": "beabf1db-ab71-4be2-a983-f11428054788"
+    },
+    {
+      "term": "computational resources",
+      "definition": "search time and computer memory",
+      "sentence": "The algorithm reduces the consumption of computational resources (search time and computer memory), which is the main problem with Breadth-First Search.",
+      "language": "en",
+      "generated": false,
+      "uid": "290e705b-f414-4b18-b7c5-0aeee4f3efb1"
+    },
+    {
+      "term": "tree crown",
+      "definition": "an analogy used to describe the state space graph",
+      "sentence": "The difference between Breadth-First Search and Bidirectional Search is evident if we use the analogy of the state space graph and tree crown (Figure 21).",
+      "language": "en",
+      "generated": false,
+      "uid": "e8df8eed-0a5e-4ff3-92cb-f195401aede1"
+    },
+    {
+      "term": "point of contact",
+      "definition": "a common node found in both search directions",
+      "sentence": "until it finds a point of contact in both directions.",
+      "language": "en",
+      "generated": false,
+      "uid": "54d03f79-a6a4-46da-a625-662bf50d3ee6"
+    },
+    {
+      "term": "OPEN lists",
+      "definition": "lists that store nodes to be expanded, used in both directions simultaneously",
+      "sentence": "The algorithm uses two OPEN lists and two CLOSED lists. The lists are filled in simultaneously in both directions.",
+      "language": "en",
+      "generated": false,
+      "uid": "f2b71a53-e250-4a49-b68e-f782b79803da"
+    },
+    {
+      "term": "CLOSED lists",
+      "definition": "lists that store already expanded nodes, used in both directions simultaneously",
+      "sentence": "The algorithm uses two OPEN lists and two CLOSED lists. The lists are filled in simultaneously in both directions.",
+      "language": "en",
+      "generated": false,
+      "uid": "4bd719b8-143a-4a9b-8f2c-03b276fcb7da"
+    },
+    {
+      "term": "operational step",
+      "definition": "an additional step in the algorithm where it checks for common nodes in both OPEN lists after expanding current nodes",
+      "sentence": "Bidirectional Search includes an additional operational step (Figure 22). In each iteration, after expanding the current nodes, it checks if there is at least one common node in both OPEN lists.",
+      "language": "en",
+      "generated": false,
+      "uid": "5e019e74-8572-4b22-ad0f-541ae2724519"
+    },
+    {
+      "term": "common node",
+      "definition": "a node that appears in both OPEN lists, indicating a point of contact",
+      "sentence": "The algorithm checks if there is at least one common node in both OPEN lists.",
+      "language": "en",
+      "generated": false,
+      "uid": "147ff7a1-8697-4f7a-aa1b-2bfded31ad5c"
+    },
+    {
+      "term": "algorithm stops",
+      "definition": "the algorithm terminates when a common node is found or when the state space is fully searched without finding a common node",
+      "sentence": "The algorithm stops if a common node is found or if the state space is fully searched, but a common node is not found.",
+      "language": "en",
+      "generated": false,
+      "uid": "71fe27d2-2cbd-4b2a-af8a-b3994cad421f"
+    },
+    {
+      "term": "state space",
+      "definition": "the set of all possible states in a problem, represented as a graph",
+      "sentence": "The algorithm stops if a common node is found or if the state space is fully searched, but a common node is not found.",
+      "language": "en",
+      "generated": false,
+      "uid": "da502118-fdcf-4a30-8e80-0b03daa1d2ba"
+    },
+    {
+      "term": "heuristic search algorithms",
+      "definition": "search algorithms that receive an additional input — the principles of calculation of the heuristic measures — and perform two additional steps: evaluating generated nodes with a heuristic evaluation function and selecting or ordering nodes based on heuristic measures.",
+      "sentence": "Heuristic search algorithms differ both in the inputs that they need and the operational steps they perform.",
+      "language": "en",
+      "generated": false,
+      "uid": "cb3b0cb9-3bc6-4047-8472-bfcb96528e47"
+    },
+    {
+      "term": "Heuristic knowledge",
+      "definition": "It is used for solving complex problems with incomplete information when it is not possible to describe or evaluate the problem in full detail. However, humans also have a lot of heuristic knowledge related to routine (daily) situations",
+      "sentence": "It is used for solving complex problems with incomplete information when it is not possible to describe or evaluate the problem in full detail. However, humans also have a lot of heuristic knowledge related to routine (daily) situations",
+      "language": "en",
+      "generated": false,
+      "uid": "678c0208-fcdc-4940-8c9f-de1d7fcef277"
+    },
+    {
+      "term": "life hack",
+      "definition": "a widely used concept corresponding to what is understood by heuristic knowledge",
+      "sentence": "Today, the widely used concept of “life hack” corresponds to what is understood by heuristic knowledge.",
+      "language": "en",
+      "generated": false,
+      "uid": "e8b32578-b9d8-456c-b762-519e565b3b72"
+    },
+    {
+      "term": "heuristic methods",
+      "definition": "strategies used to find a path from the initial state to the goal state in an effective way",
+      "sentence": "People use strategies (heuristic methods) to find a path from the initial state to the goal state in an effective way (Eysenck & Keane, 2000).",
+      "language": "en",
+      "generated": false,
+      "uid": "bd44459c-d4e4-4972-aeb5-0bfdf1b36bfe"
+    },
+    {
+      "term": "rule of thumb",
+      "definition": "a heuristic knowledge that will not give the perfect outcome, but will usually lead to a good or at least acceptable outcome with much less effort",
+      "sentence": "Heuristic knowledge is a rule of thumb: it will not give the perfect outcome, but it will nevertheless usually lead to a good or at least acceptable outcome with much less effort (Lieberman, 2012).",
+      "language": "en",
+      "generated": false,
+      "uid": "c32a8b1b-f11b-45a6-8b59-b30ee43a6a34"
+    },
+    {
+      "term": "cognitive psychology",
+      "definition": "a field that contrasts heuristic methods with methods guaranteed to find an exact solution",
+      "sentence": "In cognitive psychology, methods based on heuristic knowledge are often contrasted with methods that are guaranteed to find an exact solution to the problem, if it exists (Eysenck & Kean, 2000; Goldstein, 2008).",
+      "language": "en",
+      "generated": false,
+      "uid": "813a7ba7-2cfe-4e04-afaa-88713198ecfa"
+    },
+    {
+      "term": "heuristic evaluation function",
+      "definition": "function used to find the most promising moves.",
+      "sentence": "use a heuristic evaluation function to find the most promising moves.",
+      "language": "en",
+      "generated": false,
+      "uid": "395c5a1e-7c97-4670-90d1-2c225062dc20"
+    },
+    {
+      "term": "heuristic knowledge acquisition",
+      "definition": "acquired mainly by experience, but also by intuition, observation, and learning by doing",
+      "sentence": "It is acquired mainly by experience, but also by intuition, observation, and learning by doing.",
+      "language": "en",
+      "generated": false,
+      "uid": "ae0d8f44-af81-4ebd-9376-c43c4b8db7a5"
+    },
+    {
+      "term": "heuristic evaluation function development",
+      "definition": "developed by the system’s developer working in close collaboration with domain experts and then applying methods of machine learning and optimization",
+      "sentence": "The heuristic evaluation function is developed by the system’s developer working in close collaboration with domain experts and then applying methods of machine learning and optimization.",
+      "language": "en",
+      "generated": false,
+      "uid": "59826708-2b56-4563-9b0d-0a6276d1e008"
+    },
+    {
+      "term": "heuristic knowledge effectiveness",
+      "definition": "enables more effective problem solving, decision making, and reasoning",
+      "sentence": "It enables more effective problem solving, decision making, and reasoning.",
+      "language": "en",
+      "generated": false,
+      "uid": "24f1eae0-804e-45cf-8f79-fdf566a3734f"
+    },
+    {
+      "term": "cognitive workload reduction",
+      "definition": "reduces the cognitive workload that would be needed for the in-depth analysis of a problem",
+      "sentence": "It reduces the cognitive workload that would be needed for the in-depth analysis of a problem.",
+      "language": "en",
+      "generated": false,
+      "uid": "e68146ba-4e6a-4ba3-b0ef-b841fdfb9331"
+    },
+    {
+      "term": "node visitation reduction",
+      "definition": "reduces the number of nodes visited by an intelligent computer system during search and the search time",
+      "sentence": "The function reduces the number of nodes visited by an intelligent computer system during search and the search time.",
+      "language": "en",
+      "generated": false,
+      "uid": "5e150b1d-4ccd-4b55-94a6-721818722cf9"
+    },
+    {
+      "term": "Heuristic measures",
+      "definition": "Heuristic measures are assigned to nodes of the state space graph. This means that the heuristic knowledge that we usually formulate verbally should be represented mathematically and made accessible by the intelligent computer system through heuristic measures. Heuristic measures represent the quality of the nodes.",
+      "sentence": "Heuristic measures are assigned to nodes of the state space graph. This means that the heuristic knowledge that we usually formulate verbally should be represented mathematically and made accessible by the intelligent computer system through heuristic measures. Heuristic measures represent the quality of the nodes.",
+      "language": "en",
+      "generated": false,
+      "uid": "45bebef3-0a3f-4a8d-a701-45f362bd8840"
+    },
+    {
+      "term": "f(n) = g(n) + h(n)",
+      "definition": "This idea is represented in an abstract way as follows (Luger, 2009): f(n) = g(n) + h(n), where n – a node under consideration; g(n) – the distance between the search start node and node n; this value allows the algorithm to choose the shorter paths that are available; h(n) – a heuristic measure that characterizes the quality of node n or, in other words, the estimation of the distance between the node n and the search goal node; this value allows the algorithm to choose promising paths in a state space graph.",
+      "sentence": "This idea is represented in an abstract way as follows (Luger, 2009): f(n) = g(n) + h(n), where n – a node under consideration; g(n) – the distance between the search start node and node n; this value allows the algorithm to choose the shorter paths that are available; h(n) – a heuristic measure that characterizes the quality of node n or, in other words, the estimation of the distance between the node n and the search goal node; this value allows the algorithm to choose promising paths in a state space graph.",
+      "language": "en",
+      "generated": false,
+      "uid": "2827ff89-76c9-4bad-bba2-0b0a24cc32ed"
+    },
+    {
+      "term": "g(n)",
+      "definition": "g(n) – the distance between the search start node and node n; this value allows the algorithm to choose the shorter paths that are available",
+      "sentence": "g(n) – the distance between the search start node and node n; this value allows the algorithm to choose the shorter paths that are available",
+      "language": "en",
+      "generated": false,
+      "uid": "7cd6b98a-76a8-4427-818d-6d69ab1c44ae"
+    },
+    {
+      "term": "h(n)",
+      "definition": "h(n) – a heuristic measure that characterizes the quality of node n or, in other words, the estimation of the distance between the node n and the search goal node; this value allows the algorithm to choose promising paths in a state space graph.",
+      "sentence": "h(n) – a heuristic measure that characterizes the quality of node n or, in other words, the estimation of the distance between the node n and the search goal node; this value allows the algorithm to choose promising paths in a state space graph.",
+      "language": "en",
+      "generated": false,
+      "uid": "957f8ef7-f7f0-454c-ba46-b4b4d0622671"
+    },
+    {
+      "term": "Polynomial function",
+      "definition": "In practical applications, the previously mentioned elements of the heuristic evaluation function are represented indirectly by focusing on factors characterizing states in the problem-solving process and their importance for reaching the goal state (Figure 3). As a result, the heuristic evaluation function can be represented as a polynomial function, as used by Samuel in his checker program ((Samuel, 1959) as cited in (Luger, 2009)): where n – a node under consideration; ai – the weight of the ith factor; xi – the heuristic measure of the ith factor characterizing states in the problem-solving process.",
+      "sentence": "In practical applications, the previously mentioned elements of the heuristic evaluation function are represented indirectly by focusing on factors characterizing states in the problem-solving process and their importance for reaching the goal state (Figure 3). As a result, the heuristic evaluation function can be represented as a polynomial function, as used by Samuel in his checker program ((Samuel, 1959) as cited in (Luger, 2009)): where n – a node under consideration; ai – the weight of the ith factor; xi – the heuristic measure of the ith factor characterizing states in the problem-solving process.",
+      "language": "en",
+      "generated": false,
+      "uid": "07dea068-2fb3-4bfa-bec9-ab1046b37e03"
+    },
+    {
+      "term": "Tic-tac-toe",
+      "definition": "Imagine we are building an intelligent computer system that will play a game of Tic-tac-toe. The system has a state space graph of the game. In this demonstration we will consider only the initial state of the game and its three descendants (Figure 4).",
+      "sentence": "Imagine we are building an intelligent computer system that will play a game of Tic-tac-toe. The system has a state space graph of the game. In this demonstration we will consider only the initial state of the game and its three descendants (Figure 4).",
+      "language": "en",
+      "generated": false,
+      "uid": "37cb20f0-ef06-42ba-b355-0130b10f8366"
+    },
+    {
+      "term": "8-puzzle",
+      "definition": "Another example is the game of 8-puzzle. There are 8 numbered tiles and 9 squares. Players are allowed to move a tile onto an empty square with the aim of achieving the goal state that you can see in Figure 5. We will consider only three states generated from the initial state of the game.",
+      "sentence": "Another example is the game of 8-puzzle. There are 8 numbered tiles and 9 squares. Players are allowed to move a tile onto an empty square with the aim of achieving the goal state that you can see in Figure 5. We will consider only three states generated from the initial state of the game.",
+      "language": "en",
+      "generated": false,
+      "uid": "cb082e67-73bb-48a0-bb77-bf60e40127b9"
+    },
+    {
+      "term": "Number of tiles out of place",
+      "definition": "The simplest factor to consider is the number of the tiles out of place in each state when it is compared with the goal state (Figure 6). The logic behind such a heuristic evaluation function is quite simple: the state that has the fewest tiles out of place is probably closer to the goal state.",
+      "sentence": "The simplest factor to consider is the number of the tiles out of place in each state when it is compared with the goal state (Figure 6). The logic behind such a heuristic evaluation function is quite simple: the state that has the fewest tiles out of place is probably closer to the goal state.",
+      "language": "en",
+      "generated": false,
+      "uid": "3ebae784-6b66-406a-a9b0-8896aa59faae"
+    },
+    {
+      "term": "Sum up distances of tiles from their intended places",
+      "definition": "Another factor that can be used to evaluate nodes is to sum up distances of tiles from their intended places (Figure 7).",
+      "sentence": "Another factor that can be used to evaluate nodes is to sum up distances of tiles from their intended places (Figure 7).",
+      "language": "en",
+      "generated": false,
+      "uid": "64551223-8593-4507-811d-163510bcc092"
+    },
+    {
+      "term": "transformation",
+      "definition": "the process of reducing the number of states in the game tree by using a symmetry feature of states, as suggested for the game of Tic-tac-toe.",
+      "sentence": "Unfortunately, there are no clear guidelines on how to make such a transformation.",
+      "language": "en",
+      "generated": false,
+      "uid": "3424c0a2-5b91-4446-8d1e-63bd1a2ff461"
+    },
+    {
+      "term": "symmetry feature of states",
+      "definition": "a property that allows reduction of the number of states by considering equivalent positions, e.g., in Tic-tac-toe where placing a sign in any corner is equivalent.",
+      "sentence": "One of the suggestions is to use a symmetry feature of states, which can be done for the game of Tic-tac-toe.",
+      "language": "en",
+      "generated": false,
+      "uid": "0eebb4c3-0d02-4c95-8492-2667b23c52e9"
+    },
+    {
+      "term": "game tree",
+      "definition": "a tree structure representing all possible states or moves in a game, with nodes corresponding to game states.",
+      "sentence": "At the first level of the game tree, it is possible to consider only three states: corner, centre, and side.",
+      "language": "en",
+      "generated": false,
+      "uid": "4ed13bf5-4f9c-4c8f-a692-ff216eb20e6b"
+    },
+    {
+      "term": "complexity",
+      "definition": "the measure of the computational difficulty or the number of nodes in the state space graph that must be visited.",
+      "sentence": "the complexity will be reduced indirectly by visiting fewer nodes during the search.",
+      "language": "en",
+      "generated": false,
+      "uid": "48b65b9f-774f-4057-a5c3-d1bb7a14f778"
+    },
+    {
+      "term": "cost balance",
+      "definition": "the trade-off between the number of factors included in the heuristic evaluation function and the computational costs of calculating the function's values.",
+      "sentence": "it is necessary to remember the cost balance between the number of factors included in the function and the computational costs of calculating the values of the function.",
+      "language": "en",
+      "generated": false,
+      "uid": "4184e868-9bdb-4c26-a3c0-f1a472ca87d5"
+    },
+    {
+      "term": "uninformed search algorithms",
+      "definition": "search algorithms that receive the search start node, the search goal node, and the state space graph as input, and perform three main steps: selecting the current node, checking if it is the goal, and expanding it if not.",
+      "sentence": "In Module 2 of our course, we considered the operational steps of uninformed search algorithms.",
+      "language": "en",
+      "generated": false,
+      "uid": "70230761-5fe6-4d91-8c49-cea45eaafc4a"
+    },
+    {
+      "term": "Hill Climbing algorithm",
+      "definition": "a heuristic search algorithm that always moves to the best node in the state space graph, selecting the node with the best heuristic measure, without backtracking.",
+      "sentence": "The idea of the Hill Climbing algorithm is to always move to the best node in the state space graph.",
+      "language": "en",
+      "generated": false,
+      "uid": "399256a5-6f2f-4389-b1be-8c607106e09a"
+    },
+    {
+      "term": "state space graph (mountain analogy)",
+      "definition": "a representation of the state space graph where the search goal node is the top of the mountain and the search start node is the foot, and the Hill Climbing algorithm climbs to the best heuristic measure.",
+      "sentence": "If we imagine that the state space graph with heuristic measures of nodes is similar to a mountain, then the search goal node can be considered to be the top of the mountain, while the search start node is the foot of the mountain.",
+      "language": "en",
+      "generated": false,
+      "uid": "e3101ed9-4cf1-491f-9a7a-021713f5ad56"
+    },
+    {
+      "term": "heuristic measure",
+      "definition": "A numerical value assigned to a game state to estimate its desirability for the player whose turn it is.",
+      "sentence": "It assigns a precise heuristic measure of “1” to the leaf node, since this is a state where the maximiser wins the game.",
+      "language": "en",
+      "generated": false,
+      "uid": "155a31cd-5e2d-438b-9552-cccd038d4d9a"
+    },
+    {
+      "term": "expanding the current node",
+      "definition": "the process of generating the descendants (or ancestors) of the current node in the state space graph.",
+      "sentence": "They have three main operational steps (Figure 1): selecting the current node; checking if the current node is the search goal node; expanding the current node if it is not the search goal node.",
+      "language": "en",
+      "generated": false,
+      "uid": "dd006f4a-a856-43df-82a4-1a889ad8b2ca"
+    },
+    {
+      "term": "backtracking",
+      "definition": "the process of revisiting previously explored nodes or paths; Hill Climbing does not implement backtracking.",
+      "sentence": "The algorithm does not implement backtracking.",
+      "language": "en",
+      "generated": false,
+      "uid": "dd668349-ffe6-4996-83be-10a9d281c442"
+    },
+    {
+      "term": "descendants",
+      "definition": "nodes that are directly generated from the current node based on the search direction.",
+      "sentence": "The algorithm expands the current node A by generating its three descendants—nodes D, H, and E.",
+      "language": "en",
+      "generated": false,
+      "uid": "4eb5c6c6-fb51-4e88-8693-e215580bb0bc"
+    },
+    {
+      "term": "ancestors",
+      "definition": "nodes that are directly connected to the current node in the reverse direction of the search.",
+      "sentence": "the algorithm does not reach the search goal node because it finds a node that has a better heuristic measure than the heuristic measures of its descendants/ancestors (depending on the search direction).",
+      "language": "en",
+      "generated": false,
+      "uid": "47cbdbc4-1c5f-4999-9242-96d94db445dd"
+    },
+    {
+      "term": "heuristic measures of nodes",
+      "definition": "the values assigned to nodes by a heuristic evaluation function to guide the search.",
+      "sentence": "Heuristic search algorithms receive an additional input — the principles of calculation of the heuristic measures of nodes",
+      "language": "en",
+      "generated": false,
+      "uid": "4a2adde5-30e4-40dc-87c1-721b1f83b60c"
+    },
+    {
+      "term": "search stops",
+      "definition": "the condition under which the Hill Climbing algorithm halts, either when the goal node is reached or when a node is found whose heuristic measure is better than all its descendants/ancestors.",
+      "sentence": "The search stops when: the search goal node is reached or when a node whose heuristic measure is better than the measures of its descendants/ancestors is found.",
+      "language": "en",
+      "generated": false,
+      "uid": "f98cc27e-bcb5-4579-8fb7-7fa4e32cd9e3"
+    },
+    {
+      "term": "Hill Climbing",
+      "definition": "an algorithm that always chooses a node whose heuristic measure is higher than the heuristic measure of the current node if the function defines the best heuristic measure to be the highest measure, or lower if defined as the smallest measure.",
+      "sentence": "Thus, if the function defines the best heuristic measure to be the highest measure, then Hill Climbing will always choose a node whose heuristic measure is higher than the heuristic measure of the current node, and vice versa—if the function defines the best heuristic measure to be the smallest measure, the algorithm will always choose a node whose heuristic measure is less than the heuristic measure of the current node.",
+      "language": "en",
+      "generated": false,
+      "uid": "2a61ca43-044b-4b30-bc19-b9f7a13ce42a"
+    },
+    {
+      "term": "local maximum problem",
+      "definition": "the algorithm does not reach the search goal node because it finds a node that has a better heuristic measure than the heuristic measures of its descendants/ancestors (depending on the search direction).",
+      "sentence": "the local maximum problem : the algorithm does not reach the search goal node because it finds a node that has a better heuristic measure than the heuristic measures of its descendants/ancestors (depending on the search direction).",
+      "language": "en",
+      "generated": false,
+      "uid": "78a8e4ae-0a53-4718-81af-917533d7243e"
+    },
+    {
+      "term": "plateau problem",
+      "definition": "the algorithm cannot continue the search if the heuristic measure of its best descendant/ancestor (depending on the search direction) is equal to the heuristic measure of the current node.",
+      "sentence": "the plateau problem : the algorithm cannot continue the search if the heuristic measure of its best descendant/ancestor (depending on the search direction) is equal to the heuristic measure of the current node.",
+      "language": "en",
+      "generated": false,
+      "uid": "093978b6-bf32-4853-94a8-ea1fc9e7d4f8"
+    },
+    {
+      "term": "Best-First Search",
+      "definition": "an algorithm that selects the best node found so far, keeps all previously found nodes, allows switching between different paths in the state space graph, and does not lose a problem solution if the heuristic evaluation function is not well-defined.",
+      "sentence": "The Best-First Search algorithm does not have these shortcomings. Let’s consider it. In each iteration, Best-First Search selects the best node found so far, but it also keeps all of the nodes that were found before. This allows the algorithm to switch between different paths in the state space graph, and it does not lose a problem solution if the heuristic evaluation function is not well-defined.",
+      "language": "en",
+      "generated": false,
+      "uid": "fe571c3f-ca2a-4836-9f53-c28169ef4dce"
+    },
+    {
+      "term": "priority queue",
+      "definition": "a data structure that implements the OPEN list, where the node with the best heuristic measure is processed first.",
+      "sentence": "The OPEN list is implemented as a data structure called a priority queue (Figure 7). The priority queue works according to the principle that the node with the best heuristic measure is processed first.",
+      "language": "en",
+      "generated": false,
+      "uid": "fc54dc02-0b38-4eff-9bf3-70c53cf05a0b"
+    },
+    {
+      "term": "beam width",
+      "definition": "The maximum number of nodes allowed in the OPEN list at any iteration, which determines how many best nodes are selected based on heuristic measures.",
+      "sentence": "The algorithm takes the node located on the first position in the OPEN list—the node A—and it becomes the current node. The algorithm checks if it is the search goal node. It is not the search goal node; thus, the algorithm starts the next iteration.",
+      "language": "en",
+      "generated": false,
+      "uid": "55fe54a3-db59-4333-a0ff-6811fa0bbd42"
+    },
+    {
+      "term": "Beam Search",
+      "definition": "An algorithm that stops when the search goal node is added to the OPEN list or when leaf nodes with heuristic measures better than the heuristic measure of the search goal node are reached. The algorithm does not backtrack in case of failure.",
+      "sentence": "The algorithm stops when the search goal node is added to the OPEN list or when leaf nodes with heuristic measures better than the heuristic measure of the search goal node are reached.",
+      "language": "en",
+      "generated": false,
+      "uid": "fe785692-f265-4d32-ac9a-c9aafaaac639"
+    },
+    {
+      "term": "direct descendants/ancestors",
+      "definition": "Nodes that are connected to the current node by a direct path; the count of these nodes may be less than the beam width, which affects the OPEN list size.",
+      "sentence": "The OPEN list always contains the same number of nodes as the beam width, excluding: iteration 0, when only the search start node is added to the OPEN list, and a case when the number of direct descendants/ancestors is less than the beam width.",
+      "language": "en",
+      "generated": false,
+      "uid": "855f29af-e677-478a-8f0b-deaa4db84045"
+    },
+    {
+      "term": "complete state space graph",
+      "definition": "A state space graph that includes all states, from the initial state (root node) to all goal states (leaf nodes).",
+      "sentence": "A complete state space graph includes all states, from the initial state of the game (represented by the root node of the graph), to all goal states of the game (represented by leaf nodes).",
+      "language": "en",
+      "generated": false,
+      "uid": "5e56bcce-baed-4875-84d8-a8db44d58ff0"
+    },
+    {
+      "term": "partial state space graph",
+      "definition": "A sub-graph of the complete state space graph, usually including states between a specific node and a predefined depth.",
+      "sentence": "A partial state space graph is a sub-graph of the complete state space graph, and usually includes states between a specific node and a predefined depth.",
+      "language": "en",
+      "generated": false,
+      "uid": "d231b922-eb13-4304-b156-a679cdf56998"
+    },
+    {
+      "term": "deterministic two-player zero-sum game of perfect information",
+      "definition": "A game where two players take turns, the outcome is determined solely by the players’ moves (deterministic), the players have opposing goals (zero-sum), and both players have complete knowledge of the game state (perfect information).",
+      "sentence": "The selection of an algorithm for the implementation of a deterministic two-player zero-sum game of perfect information depends on the availability of the state space graph.",
+      "language": "en",
+      "generated": false,
+      "uid": "c4c1fd8f-4dde-4942-8858-29f5562359c5"
+    },
+    {
+      "term": "maximiser",
+      "definition": "The player who aims to maximise the game result, typically assigned a positive score.",
+      "sentence": "This is a state where the maximiser wins the game, because this player has the highest score.",
+      "language": "en",
+      "generated": false,
+      "uid": "f15dfa3e-4d8f-4470-9b34-5d661cef7e9d"
+    },
+    {
+      "term": "minimiser",
+      "definition": "The player who aims to minimise the game result for the maximiser, typically assigned a negative score.",
+      "sentence": "In this state the minimiser has the higher score and wins the game.",
+      "language": "en",
+      "generated": false,
+      "uid": "735ed108-3a3b-41dd-85f5-2a4bacb9f464"
+    },
+    {
+      "term": "levels",
+      "definition": "Divisions of the state space graph representing turns of the maximiser (MAX) and minimiser (MIN), alternating as moves are made in two-player games of perfect information.",
+      "sentence": "Dividing the state space graph into levels In both cases, the available graph is alternately divided into levels representing the maximiser (labelled as MAX) and minimiser (labelled as MIN), remembering that moves in two-player games of perfect information are made alternately.",
+      "language": "en",
+      "generated": false,
+      "uid": "6b08aeed-2ebb-453b-a484-d26cf10ecfe2"
+    },
+    {
+      "term": "terminal nodes",
+      "definition": "Nodes at the end of a sub-graph (in a partial state space graph) that represent the end of the search depth, even though game results cannot be determined at these nodes.",
+      "sentence": "In the case of a partial state space graph, a search-based game algorithm is applied to only a sub-graph of the complete search state space graph. As a result, the root and leaf nodes are mostly unavailable. Instead of these nodes, the algorithm processes (Figure 3): a node that represents the current state of the game; and the terminal nodes of the sub-graph at the specified depth, even though it is not possible to identify a game result at any of the terminal nodes.",
+      "language": "en",
+      "generated": false,
+      "uid": "f3cb1512-de4a-436e-aa65-783b842e23c8"
+    },
+    {
+      "term": "Alpha-beta pruning",
+      "definition": "principles used by algorithms to find the most promising moves.",
+      "sentence": "They can be based on the principles of either the Minimax or Alpha-beta pruning",
+      "language": "en",
+      "generated": false,
+      "uid": "56c153ca-17d5-4c77-8e92-d09f56ddc6cd"
+    },
+    {
+      "term": "precise heuristic measure",
+      "definition": "A definite numerical value assigned to a node when no further descendants are available or when pruning has occurred.",
+      "sentence": "When a precise heuristic measure has been assigned, the algorithm goes up one level, along the same path that was used to go down.",
+      "language": "en",
+      "generated": false,
+      "uid": "397525dc-cd5e-468c-84d6-ed5a29d54ba6"
+    },
+    {
+      "term": "intermediate heuristic measure",
+      "definition": "A range-bound heuristic value assigned when a node has unconsidered descendants and cannot be assigned a precise value.",
+      "sentence": "The algorithm is able to assign only an intermediate heuristic measure of >=1, since the node is located at MAX level and the only known heuristic measure is 1.",
+      "language": "en",
+      "generated": false,
+      "uid": "6f3887b8-a5f0-49ec-9b3c-c8178d333771"
+    },
+    {
+      "term": "MAX level",
+      "definition": "A node level in the game tree where the current player is the maximiser, aiming to maximise the score.",
+      "sentence": "The node is located at MAX level and the only known heuristic measure is 1.",
+      "language": "en",
+      "generated": false,
+      "uid": "c13680b9-43b2-4842-9ef0-e13540c2324f"
+    },
+    {
+      "term": "MIN level",
+      "definition": "A node level in the game tree where the current player is the minimiser, aiming to minimise the score.",
+      "sentence": "The node is located at the MIN level, but there is no difference between the heuristic measures of the descendants.",
+      "language": "en",
+      "generated": false,
+      "uid": "507bbb21-ecf5-4ac4-970d-b62890b66cd9"
+    },
+    {
+      "term": "α-cut-off",
+      "definition": "A pruning operation that eliminates unconsidered paths below a node when the current β value is less than the ancestor’s α value.",
+      "sentence": "an α-cut-off should be performed by cutting off the unconsidered paths below the current node.",
+      "language": "en",
+      "generated": false,
+      "uid": "1231b878-246f-4f3f-8092-ac13b3e4a451"
+    },
+    {
+      "term": "α value",
+      "definition": "The heuristic measure of an ancestor node at a higher level in the game tree, typically representing the best value found so far for the maximiser.",
+      "sentence": "The measure of the ancestor (the α value) is 1.",
+      "language": "en",
+      "generated": false,
+      "uid": "1e2c0245-a0ef-47b2-9364-1185cba1524b"
+    },
+    {
+      "term": "β value",
+      "definition": "The heuristic measure of the current node, typically representing the best value found so far for the minimiser.",
+      "sentence": "The intermediate heuristic measure of the current node (the β value) is −1.",
+      "language": "en",
+      "generated": false,
+      "uid": "a43bccc1-2f5b-4a58-9497-44dbc6ce15d3"
+    },
+    {
+      "term": "propagate",
+      "definition": "To assign or pass up a heuristic measure from a leaf node to its ancestors in the game tree.",
+      "sentence": "It tries to propagate this heuristic measure to other nodes.",
+      "language": "en",
+      "generated": false,
+      "uid": "f3d96315-a74a-4496-92f8-ee7de9450b53"
+    },
+    {
+      "term": "unconsidered path",
+      "definition": "A branch in the game tree that has not yet been evaluated by the algorithm.",
+      "sentence": "The algorithm goes down using the first unconsidered path on the left.",
+      "language": "en",
+      "generated": false,
+      "uid": "10ecd629-0002-47d2-be07-07bd217dc1fe"
+    },
+    {
+      "term": "numerical string",
+      "definition": "A string representation of a game state or node identifier, such as “2-3-3”.",
+      "sentence": "The node with the numerical string “2-3-3” has another unconsidered descendant.",
+      "language": "en",
+      "generated": false,
+      "uid": "9f33d8bc-b2d4-4f62-901e-00bd4f6151e9"
+    },
+    {
+      "term": "score",
+      "definition": "The numerical value assigned to a game state to indicate which player has won or the result value.",
+      "sentence": "a score of 8 for each player",
+      "language": "en",
+      "generated": false,
+      "uid": "e48a33cf-a147-4e3a-acd5-3762d293d7e4"
+    },
+    {
+      "term": "Figure 8",
+      "definition": "A reference to a specific diagram or illustration used in the example to visualize the game tree structure.",
+      "sentence": "Now let’s consider them using the previous example of the game with the numerical string and a score of 8 for each player (Figure 8).",
+      "language": "en",
+      "generated": false,
+      "uid": "70e1edfb-d2c7-4aeb-9319-1e5492ffd13b"
+    },
+    {
+      "term": "Minimax",
+      "definition": "principles used by algorithms to find the most promising moves.",
+      "sentence": "They can be based on the principles of either the Minimax or Alpha-beta pruning",
+      "language": "en",
+      "generated": false,
+      "uid": "ea90e427-264f-4b3d-96b8-06e81a8e3212"
+    },
+    {
+      "term": "N-ply look-ahead",
+      "definition": "a limited number of levels denoted by n.",
+      "sentence": "N-ply look-ahead explores a limited number of levels denoted by n.",
+      "language": "en",
+      "generated": false,
+      "uid": "8e7d7184-1212-4841-98e6-dfbadf0bb47a"
+    },
+    {
+      "term": "horizon effect",
+      "definition": "a problem with limited look-ahead that may lead to a bad situation later in the game.",
+      "sentence": "One of the most significant problems with this approach is called the horizon effect",
+      "language": "en",
+      "generated": false,
+      "uid": "745d2425-18f8-4363-888e-925b6ee7ffb5"
+    },
+    {
+      "term": "iterative deepening",
+      "definition": "a method to explore the partial state space graph in an iterative manner – at each iteration, it goes one level deeper.",
+      "sentence": "Iterative deepening can be used when there is a time limit on making the next move in the game.",
+      "language": "en",
+      "generated": false,
+      "uid": "e9e1c587-08ab-4832-a221-b4d45eae2061"
+    },
+    {
+      "term": "machine learning",
+      "definition": "a method of data analysis that automates analytical model building. It is a branch of artificial intelligence based on the idea that systems can learn from data, identify patterns and make decisions with minimal human intervention.",
+      "sentence": "Machine learning is a method of data analysis that automates analytical model building.",
+      "language": "en",
+      "generated": false,
+      "uid": "d1fccddc-0ee7-4471-adad-1e11dd65a901"
+    },
+    {
+      "term": "experience E",
+      "definition": "a component in Tom Mitchell's definition of machine learning: 'A computer program is said to learn from experience E with respect to some task T and some performance measure P, if its performance on T, as measured by P, improves with experience E.'",
+      "sentence": "Tom Mitchell (1997) has provided a mathematical definition: 'A computer program is said to learn from experience E with respect to some task T and some performance measure P, if its performance on T, as measured by P, improves with experience E.'",
+      "language": "en",
+      "generated": false,
+      "uid": "1f959653-ad7b-48bb-bd51-17f8ccb67ae9"
+    },
+    {
+      "term": "task T",
+      "definition": "a component in Tom Mitchell's definition of machine learning: 'A computer program is said to learn from experience E with respect to some task T and some performance measure P, if its performance on T, as measured by P, improves with experience E.'",
+      "sentence": "Tom Mitchell (1997) has provided a mathematical definition: 'A computer program is said to learn from experience E with respect to some task T and some performance measure P, if its performance on T, as measured by P, improves with experience E.'",
+      "language": "en",
+      "generated": false,
+      "uid": "b6ebded0-5a0b-450c-b3e8-6b29e1bfa224"
+    },
+    {
+      "term": "performance measure P",
+      "definition": "a component in Tom Mitchell's definition of machine learning: 'A computer program is said to learn from experience E with respect to some task T and some performance measure P, if its performance on T, as measured by P, improves with experience E.'",
+      "sentence": "Tom Mitchell (1997) has provided a mathematical definition: 'A computer program is said to learn from experience E with respect to some task T and some performance measure P, if its performance on T, as measured by P, improves with experience E.'",
+      "language": "en",
+      "generated": false,
+      "uid": "17476e87-55ce-4e96-b45f-3ccbde4836a1"
+    },
+    {
+      "term": "computer science",
+      "definition": "the study of computers and computing, including their theoretical and algorithmic foundations, hardware and software, and their uses for processing information.",
+      "sentence": "Computer science is the broadest concept in this context. It is 'the study of computers and computing, including their theoretical and algorithmic foundations, hardware and software, and their uses for processing information' (Tucker & Belford, 2019).",
+      "language": "en",
+      "generated": false,
+      "uid": "cce5bd46-6843-4550-b4f9-cdf8b9d1b034"
+    },
+    {
+      "term": "artificial intelligence",
+      "definition": "deals with developing hardware and software solutions endowed with human-similar intellectual processes, such as the ability to reason, discover meaning, generalise, or learn from experience.",
+      "sentence": "Artificial intelligence deals with developing hardware and software solutions endowed with human-similar intellectual processes, such as the ability to reason, discover meaning, generalise, or learn from experience (Copeland, 2020).",
+      "language": "en",
+      "generated": false,
+      "uid": "bc811bd6-5da5-4bff-a6dc-37369e9c7a9f"
+    },
+    {
+      "term": "supervised learning",
+      "definition": "one of the three types of algorithms included in machine learning.",
+      "sentence": "machine learning includes three types of algorithms – supervised, unsupervised and reinforcement learning algorithms.",
+      "language": "en",
+      "generated": false,
+      "uid": "0a12e066-ae1e-4368-b626-68feb2a93794"
+    },
+    {
+      "term": "unsupervised learning",
+      "definition": "one of the three types of algorithms included in machine learning.",
+      "sentence": "machine learning includes three types of algorithms – supervised, unsupervised and reinforcement learning algorithms.",
+      "language": "en",
+      "generated": false,
+      "uid": "e34f01ae-c297-47f6-b6e5-22715a84eb03"
+    },
+    {
+      "term": "reinforcement learning",
+      "definition": "one of the three types of algorithms included in machine learning.",
+      "sentence": "machine learning includes three types of algorithms – supervised, unsupervised and reinforcement learning algorithms.",
+      "language": "en",
+      "generated": false,
+      "uid": "d0d3f106-6e97-485a-a046-a3db768ee794"
+    },
+    {
+      "term": "conventional algorithms",
+      "definition": "explicitly programmed by their developers, with each step coded precisely, providing output only for known inputs.",
+      "sentence": "The conventional algorithms of computer science are explicitly programmed by their developers. It means that the developers code each step of an algorithm in a precise way together with possible inputs and outputs.",
+      "language": "en",
+      "generated": false,
+      "uid": "2998e6ed-badb-402f-b0d4-aa7cce03d8f8"
+    },
+    {
+      "term": "machine learning algorithms",
+      "definition": "not based on a precise set of instructions; developers provide only general guidelines about a mathematical model and set initial configuration variables (hyperparameters) of the model.",
+      "sentence": "Machine learning algorithms are not based on a precise set of instructions. On the contrary, the developers provide only general guidelines about a mathematical model that should be used and set initial configuration variables (hyperparameters) of the model.",
+      "language": "en",
+      "generated": false,
+      "uid": "356532be-db61-429b-ba65-0e0e1a458081"
+    },
+    {
+      "term": "univariate linear regression",
+      "definition": "A type of linear regression involving one input feature, where the weights of the model can be calculated using specific equations.",
+      "sentence": "For univariate linear regression, there is a unique solution because the weights of the model can be calculated using the following equations (Russell and Norvig, 2010).",
+      "language": "en",
+      "generated": false,
+      "uid": "c95112aa-9148-4525-a2df-66c6029e058d"
+    },
+    {
+      "term": "closed-form solution",
+      "definition": "A mathematical solution that can be expressed directly in terms of the input variables, used for calculating weights in multiple input feature cases.",
+      "sentence": "There is also a closed-form solution like this one: [not provided].",
+      "language": "en",
+      "generated": false,
+      "uid": "09aeb443-1fcf-4ad4-aceb-92a8ff8d0cdc"
+    },
+    {
+      "term": "matrix singularity",
+      "definition": "A condition in matrix computation where the matrix cannot be inverted, causing failure in calculating weights.",
+      "sentence": "This solution is not used in practice because the computation of matrices can fail if there is a problem of matrix singularity.",
+      "language": "en",
+      "generated": false,
+      "uid": "8ea8a35a-83af-41bd-8966-fcaad77e5fce"
+    },
+    {
+      "term": "computational complexity",
+      "definition": "The amount of computational resources required to perform a calculation, in this case, inverting a multiplication of a transpose of vector X and vector X.",
+      "sentence": "The computational complexity of inverting a multiplication of a transpose of vector X and vector X is very high (Geron, 2017).",
+      "language": "en",
+      "generated": false,
+      "uid": "ac125396-ac9c-4773-88c7-e28fab01ba9f"
+    },
+    {
+      "term": "loss function",
+      "definition": "A function that measures the difference between predicted and actual values, used to determine convergence point.",
+      "sentence": "Calculating the loss function for every possible value of each weight over the entire dataset would be an inefficient way of finding the convergence point (Google Developers, n.d.).",
+      "language": "en",
+      "generated": false,
+      "uid": "8420a7cd-7301-4de8-bacb-124db896b7ee"
+    },
+    {
+      "term": "gradient descent",
+      "definition": "An optimisation technique used to measure changes in the output regarding changes in input values, based on calculating partial derivatives with respect to all independent variables.",
+      "sentence": "The gradient descent is an optimisation technique used to measure changes in the output regarding changes in input values. The gradient descent is based on calculating a partial derivative with respect to all independent variables.",
+      "language": "en",
+      "generated": false,
+      "uid": "c1faf9ef-2dcf-4e98-8879-5038557f9328"
+    },
+    {
+      "term": "cost function",
+      "definition": "A function that represents the output value change across the whole dataset, used to be minimised according to changes in the values of the weights of the linear function.",
+      "sentence": "The gradient descent technique thus allows the cost function value to be minimised according to changes in the values of the weights of the linear function.",
+      "language": "en",
+      "generated": false,
+      "uid": "f8ae9a77-4943-4af4-8584-3e76d40027a8"
+    },
+    {
+      "term": "learning rate",
+      "definition": "A hyperparameter α called learning rate, representing a rate at which Linear regression updates the weights of the linear function.",
+      "sentence": "To apply the gradient descent, a hyperparameter α called learning rate is used. It represents a rate at which Linear regression updates the weights of the linear function.",
+      "language": "en",
+      "generated": false,
+      "uid": "957a3de2-5d86-4c16-8445-e99d802a1782"
+    },
+    {
+      "term": "supervised learning algorithm",
+      "definition": "An algorithm that learns from labelled data to perform tasks such as regression or classification.",
+      "sentence": "Linear regression is a supervised learning algorithm performing the task of regression.",
+      "language": "en",
+      "generated": false,
+      "uid": "14564906-3e3c-4222-8fdc-4b45dc2203b0"
+    },
+    {
+      "term": "linear relationship",
+      "definition": "A relationship between input variables and a single output variable that can be represented by a linear function.",
+      "sentence": "It assumes the linear relationship between the input variables (values of data object features) and the single output variable (a prediction).",
+      "language": "en",
+      "generated": false,
+      "uid": "e2f81591-4f17-4aa5-93e2-e28d19d6d4db"
+    },
+    {
+      "term": "mean square error",
+      "definition": "A metric used to evaluate the performance of the algorithm, accumulating the differences in the distance between the predicted output value and the real output value.",
+      "sentence": "The algorithm's performance is evaluated using the mean square error that accumulates the differences in the distance between the predicted output value and the real output value.",
+      "language": "en",
+      "generated": false,
+      "uid": "5559cf7e-949c-4a15-9126-a9351684c56e"
+    },
+    {
+      "term": "classification task",
+      "definition": "A task to attribute a data object to a specific class/category or to predict a discrete value.",
+      "sentence": "In a classification task, it is necessary to attribute a data object to a specific class/category or, in other words, to predict a discrete value.",
+      "language": "en",
+      "generated": false,
+      "uid": "f4492fc8-55ef-47b5-8117-3945a1da5898"
+    },
+    {
+      "term": "binary classification",
+      "definition": "A classification task where data are classified into two classes or the output variable can take either of two possible values.",
+      "sentence": "The simplest case of classification is the so-called binary classification when data are classified in two classes or, in other words, the output variable can take either of two possible values, for example, whether an e-mail is a spam or not, a review is a positive or negative, a student has passed or failed the study course, etc.",
+      "language": "en",
+      "generated": false,
+      "uid": "c6b9f47e-6ccc-45c7-bc4d-c88c8a36149f"
+    },
+    {
+      "term": "multiclass classification",
+      "definition": "A classification task where data are classified into more than two classes/categories.",
+      "sentence": "There are more than two classes/categories in multiclass classification; for example, in animal classification, we can use labels like Cat, Dog, Horse, etc.; we can classify movies according to their genres like Romance, Comedy, Horror, Drama, etc.",
+      "language": "en",
+      "generated": false,
+      "uid": "576836c8-90f1-4ec9-b79c-a669c4b6483d"
+    },
+    {
+      "term": "logistic regression",
+      "definition": "A classification algorithm, especially for binary classification, that uses a linear function and applies a sigmoid function to squash the output into the range [0,1].",
+      "sentence": "Logistic regression, in its turn, is used for the classification task, especially a binary classification task. Therefore, it predicts one of two classes/categories to which a data object belongs to, for example, success/failure, good/bad, yes/no, win/loss, etc.",
+      "language": "en",
+      "generated": false,
+      "uid": "98a85aa4-4284-4115-b2a7-84d905a952cf"
+    },
+    {
+      "term": "sigmoid function",
+      "definition": "One of the four common activation functions.",
+      "sentence": "The four common choices are the step, sign, linear and sigmoid functions.",
+      "language": "en",
+      "generated": false,
+      "uid": "ca5a4ed8-5b80-42c3-8afe-fef9921908ca"
+    },
+    {
+      "term": "threshold value",
+      "definition": "A value (usually 0.5) at which the sigmoid function crosses the y axis, used to decide whether the output is assigned a class label of 1 or 0.",
+      "sentence": "The threshold value of 0.5 at which the function crosses the y axis is used to decide about a class/category of a data object. If the squashed value is greater than the threshold value, the algorithm assigns a class label of 1 (success, good, yes, win, etc.), else it assigns a class label of 0 (failure, bad, no, loss, etc.).",
+      "language": "en",
+      "generated": false,
+      "uid": "f0341e07-1892-4fe7-99aa-fa9bcab974c0"
+    },
+    {
+      "term": "k-Nearest Neighbour (kNN) algorithm",
+      "definition": "An algorithm used for classification and regression tasks, previously mentioned as part of supervised machine learning.",
+      "sentence": "k-Nearest Neighbour (kNN) algorithm",
+      "language": "en",
+      "generated": false,
+      "uid": "e944a179-c045-4c9c-85ab-9220485e3d5d"
+    },
+    {
+      "term": "regression task",
+      "definition": "a task that demands making predictions in a continuous range, thus its output is a real value.",
+      "sentence": "In general, the regression task demands making predictions in a continuous range. Thus, its output is a real value.",
+      "language": "en",
+      "generated": false,
+      "uid": "fc596e8e-94ae-4e81-9918-8e79dc485646"
+    },
+    {
+      "term": "supervised machine learning",
+      "definition": "a task where actual labels are given in the dataset and are used to determine the correctness of the predicted labels.",
+      "sentence": "Since the regression is a task of supervised machine learning, then actual labels are given in the dataset and are used to determine the correctness of the predicted labels.",
+      "language": "en",
+      "generated": false,
+      "uid": "caff2456-7a7e-41ff-ade6-60cddbcc3d26"
+    },
+    {
+      "term": "Mean squared error (MSE)",
+      "definition": "measures the average of the squared prediction errors for individual data objects. It provides positive non-zero values. It is calculated in the following way: This metric has the same units of measurement as the quantity being estimated. Still, they are squared units; for example, if the classifier predicts the number of graduates, the error will represent \"the squared number of persons\"; if it predicts the house prices in EUR, then the error value will represent \"squared EUR\". This type of error is prone to outliers. The smaller the value, the better the predictive accuracy of the model is.",
+      "sentence": "The Mean squared error (MSE) measures the average of the squared prediction errors for individual data objects. It provides positive non-zero values. It is calculated in the following way: This metric has the same units of measurement as the quantity being estimated. Still, they are squared units; for example, if the classifier predicts the number of graduates, the error will represent \"the squared number of persons\"; if it predicts the house prices in EUR, then the error value will represent \"squared EUR\". This type of error is prone to outliers. The smaller the value, the better the predictive accuracy of the model is.",
+      "language": "en",
+      "generated": false,
+      "uid": "ef71bc83-2b79-4e85-bd63-5fd5485ee0f1"
+    },
+    {
+      "term": "Root mean square error (RMSE)",
+      "definition": "applies a square root to MSE and therefore provides an error measure in the same unit as the target variable, for example, if the classifier predicts the number of graduates, then the error will represent \"the number of persons\"; if it predicts the prices of the house in EUR, then the error value will represent \"price in EUR\". The smaller the value, the better the predictive accuracy of the model is. It is calculated in the following way:",
+      "sentence": "Root mean square error (RMSE) applies a square root to MSE and therefore provides an error measure in the same unit as the target variable, for example, if the classifier predicts the number of graduates, then the error will represent \"the number of persons\"; if it predicts the prices of the house in EUR, then the error value will represent \"price in EUR\". The smaller the value, the better the predictive accuracy of the model is. It is calculated in the following way:",
+      "language": "en",
+      "generated": false,
+      "uid": "56dec4ee-b7ef-4a7f-bda6-36a0b83dde56"
+    },
+    {
+      "term": "Mean absolute error (MAE)",
+      "definition": "is the average of the sums of the absolute difference between predicted output values and actual output values. It also provides an error measure in the same unit as the target variable. It is calculated in the following way:",
+      "sentence": "Mean absolute error (MAE) is the average of the sums of the absolute difference between predicted output values and actual output values. It also provides an error measure in the same unit as the target variable. It is calculated in the following way:",
+      "language": "en",
+      "generated": false,
+      "uid": "ac0fa09e-7b36-4d56-9821-b9da40eec5c6"
+    },
+    {
+      "term": "R2 coefficient",
+      "definition": "also known as the coefficient of determination. It indicates how close the model built (the line/plane found by the regression algorithm) fits the actual data objects available in the dataset. The coefficient values lie in a range [0,1], where 0 indicates that the model does not fit the data objects and 1 indicates the perfect fit. It represents to what extent the observed variance in the actual output values is explained by the features of the constructed model, for example, if the R2 coefficient of a model is 0.88, then approximately 88% of the observed variation in the actual output values can be explained by the model’s features. The coefficent is calculated in the following way:",
+      "sentence": "R2 coefficient is also known as the coefficient of determination. It indicates how close the model built (the line/plane found by the regression algorithm) fits the actual data objects available in the dataset. The coefficient values lie in a range [0,1], where 0 indicates that the model does not fit the data objects and 1 indicates the perfect fit. It represents to what extent the observed variance in the actual output values is explained by the features of the constructed model, for example, if the R2 coefficient of a model is 0.88, then approximately 88% of the observed variation in the actual output values can be explained by the model’s features. The coefficent is calculated in the following way:",
+      "language": "en",
+      "generated": false,
+      "uid": "3211145f-0f91-4ff0-99c1-cdd33b60a141"
+    },
+    {
+      "term": "dataset",
+      "definition": "a collection of 100 data objects, 95 of which labelled as belonging to Class 0, and 5 labelled as Class 1.",
+      "sentence": "Kubat (2017) gives an example for the dataset containing 100 data objects, 95 of which labelled as belonging to Class 0, and 5 labelled as Class 1.",
+      "language": "en",
+      "generated": false,
+      "uid": "c82ec8a0-0349-4d2a-94ce-16fbeea0f92c"
+    },
+    {
+      "term": "dummy model",
+      "definition": "a poorly built model which always predicts Class 0",
+      "sentence": "In this case, a poorly built “dummy” model which always predicts Class 0, achieves a 95% Accuracy, which indicates a very strong model.",
+      "language": "en",
+      "generated": false,
+      "uid": "138bef6b-31c7-49ff-9291-8ac6d35f6ef3"
+    },
+    {
+      "term": "Accuracy",
+      "definition": "a performance metric which, in the case of a dummy model always predicting Class 0, achieves 95% Accuracy, indicating a very strong model, but not really predictive",
+      "sentence": "In this case, a poorly built “dummy” model which always predicts Class 0, achieves a 95% Accuracy, which indicates a very strong model. However, this model is not really predictive and Accuracy is not the right performance metric to evaluate the power of this model",
+      "language": "en",
+      "generated": false,
+      "uid": "a6f31b78-79b3-4fd0-beb4-9881c0de6e3f"
+    },
+    {
+      "term": "precision metric",
+      "definition": "a fraction of predicted positives that are true positives. In other words, the accuracy of the positive predictions. It is the probability that the classifier is right when labelling an example as positive.",
+      "sentence": "A precision metric evaluates a fraction of predicted positives that are true positives. In other words, the accuracy of the positive predictions (Geron, 2017). Precision is the probability that the classifier is right when labelling an example as positive (Kubat, 2017).",
+      "language": "en",
+      "generated": false,
+      "uid": "4dfeb991-adcc-4b0e-b09a-134090fb7679"
+    },
+    {
+      "term": "recall metric",
+      "definition": "a fraction of data objects classified as positives out of the total actual positive data objects. It is the probability that a positive data object will be correctly recognised by the algorithm.",
+      "sentence": "A recall metric (also called sensitivity and true positive rate) evaluates a fraction of data objects classified as positives out of the total actual positive data objects. According to (Kubat, 2017), recall is the probability that a positive data object will be correctly recognised by the algorithm.",
+      "language": "en",
+      "generated": false,
+      "uid": "e16e4e59-7413-4dab-966c-3b7a04927111"
+    },
+    {
+      "term": "precision/recall tradeoff",
+      "definition": "a situation where increasing precision reduces recall and vice versa",
+      "sentence": "Unfortunately, you can't have it both ways: increasing precision reduces recall and vice versa. This is called the precision/recall tradeoff.",
+      "language": "en",
+      "generated": false,
+      "uid": "9e310fbb-2413-42a7-8c62-576381f4e944"
+    },
+    {
+      "term": "F1 score",
+      "definition": "a metric representing the harmonic mean of precision and recall because the classifier will only get a high F1 score if both recall and precision are high. It estimates the number of data objects classified correctly.",
+      "sentence": "The F1 score is one more metric used in the classification tasks. It represents the harmonic mean of precision and recall because the classifier will only get a high F1 score if both recall and precision are high (Geron, 2017). Thus, it estimates the number of data objects classified correctly.",
+      "language": "en",
+      "generated": false,
+      "uid": "5e12c20b-3c7a-4cde-adea-65064ec16c05"
+    },
+    {
+      "term": "ROC curve",
+      "definition": "a curve that plots false positive rate (x-axis) versus true positive rate (y-axis) for each value of the hyperparameter, helping you visualise values that would be good choices for the tradeoff.",
+      "sentence": "The behaviour of the classifier under different values of its parameters can be visualised by the so-called ROC (The receiver operating characteristic) curve (Kubat, 2017). The ROC curve plots false positive rate (x-axis) versus true positive rate (y-axis) for each value of the hyperparameter, helping you visualise values that would be good choices for the tradeoff (Russell & Norvig, 2010; Geron, 2017; Kubat, 2017).",
+      "language": "en",
+      "generated": false,
+      "uid": "61c9d0da-a591-45f9-a09e-445d90d03c00"
+    },
+    {
+      "term": "AUC",
+      "definition": "a single-number summary of the ROC curve that measures the entire two-dimensional area underneath the entire ROC curve. It returns a value in the range [0, 1]. A highly accurate classifier will have a ROC AUC equal to 1; in contrast, a purely random classifier will have a ROC AUC equal to 0.5 (Geron, 2017).",
+      "sentence": "Area under the ROC Curve (AUC) allows comparing different classifiers. It provides a single-number summary of the ROC curve (Russell & Norvig, 2010). It measures the entire two-dimensional area underneath the entire ROC curve. It returns a value in the range [0, 1]. A highly accurate classifier will have a ROC AUC equal to 1; in contrast, a purely random classifier will have a ROC AUC equal to 0.5 (Geron, 2017).",
+      "language": "en",
+      "generated": false,
+      "uid": "effad2b0-23eb-4a34-8cf7-cbf3c69f4594"
+    },
+    {
+      "term": "clustering task",
+      "definition": "a task demanding dividing data objects into representative groups. Its output is groups of data objects. Since it is a task of unsupervised machine learning, there are no labelling of data objects.",
+      "sentence": "In general, the clustering task demands dividing data objects into representative groups. Thus, its output is groups of data objects. Since it is a task of unsupervised machine learning, there are no labelling of data objects.",
+      "language": "en",
+      "generated": false,
+      "uid": "1cc483b4-7c65-4ea1-be8d-0e9aa1152ae9"
+    },
+    {
+      "term": "Silhouette Score",
+      "definition": "a metric that does not demand ground-truth labels. It is calculated by the following way: where a - average intra-cluster distance (the average distance between each point within a cluster), b - average inter-cluster distance (the average distance between all clusters). Therefore, it represents the closeness of each data object in a cluster to data objects in the neighbouring clusters.",
+      "sentence": "One of the metrics that do not demand ground-truth labels is the Silhouette Score. The Silhouette Score is calculated by the following way: where a - average intra-cluster distance (the average distance between each point within a cluster), b - average inter-cluster distance (the average distance between all clusters). Therefore, it represents the closeness of each data object in a cluster to data objects in the neighbouring clusters.",
+      "language": "en",
+      "generated": false,
+      "uid": "cdb0a3ac-479b-4121-ac7e-825904048d64"
+    },
+    {
+      "term": "summation function",
+      "definition": "The function used to combine input signals in artificial neural networks.",
+      "sentence": "We will use the summation function further in this topic.",
+      "language": "en",
+      "generated": false,
+      "uid": "3c5b5acd-7575-4d94-8760-ab18dea091cd"
+    },
+    {
+      "term": "transfer (activation) function",
+      "definition": "The function that determines the output of the neuron.",
+      "sentence": "The transfer (activation) function determines the output of the neuron.",
+      "language": "en",
+      "generated": false,
+      "uid": "3be39911-940e-490e-a502-5eaf1f85c384"
+    },
+    {
+      "term": "step activation function",
+      "definition": "One of the four common activation functions; also called hard limit function, often used in decision-making neurons for classification and pattern recognition tasks.",
+      "sentence": "The step and sign activation functions, also called hard limit functions, are often used in decision-making neurons for classification and pattern recognition tasks ( Negnevitsky , 2011).",
+      "language": "en",
+      "generated": false,
+      "uid": "6df807bb-0c4d-4091-80b2-8bf226e93dc2"
+    },
+    {
+      "term": "sign activation function",
+      "definition": "One of the four common activation functions; also called hard limit function, often used in decision-making neurons for classification and pattern recognition tasks.",
+      "sentence": "The step and sign activation functions, also called hard limit functions, are often used in decision-making neurons for classification and pattern recognition tasks ( Negnevitsky , 2011).",
+      "language": "en",
+      "generated": false,
+      "uid": "dd3a2b8f-2bf8-42a0-9711-346b90a65a47"
+    },
+    {
+      "term": "linear activation function",
+      "definition": "One of the four common activation functions.",
+      "sentence": "The four common choices are the step, sign, linear and sigmoid functions.",
+      "language": "en",
+      "generated": false,
+      "uid": "ce61f4b2-f78e-4cac-befc-e577096fcf47"
+    },
+    {
+      "term": "artificial neural network",
+      "definition": "An artificial neural network comprises one or more artificial neurons connected in some pattern.",
+      "sentence": "An artificial neural network comprises one or more artificial neurons connected in some pattern (Callan, 2003; Jones, 2009; Negnevitsky , 2011).",
+      "language": "en",
+      "generated": false,
+      "uid": "652cb9a7-ef5b-4af5-8d49-4df348ec6a16"
+    },
+    {
+      "term": "processing unit",
+      "definition": "Single neurons are called processing units or nodes.",
+      "sentence": "Single neurons are called processing units or nodes.",
+      "language": "en",
+      "generated": false,
+      "uid": "e16b0258-3b17-4cc4-88fc-1ff296d4afca"
+    },
+    {
+      "term": "input layer",
+      "definition": "The neurons connected to the external environment form input and output layers. The input layer does not contain computing neurons because it only receives inputs signals from the environment and passes them to the hidden layers.",
+      "sentence": "The input layer does not contain computing neurons because it only receives inputs signals from the environment and passes them to the hidden layers.",
+      "language": "en",
+      "generated": false,
+      "uid": "60fbd5b8-2d53-46d8-b583-ddeec2e45dae"
+    },
+    {
+      "term": "output layer",
+      "definition": "The neurons connected to the external environment form input and output layers.",
+      "sentence": "The neurons connected to the external environment form input and output layers.",
+      "language": "en",
+      "generated": false,
+      "uid": "abd3c590-718a-4072-90e9-256f67eaad8c"
+    },
+    {
+      "term": "hidden layer",
+      "definition": "The layers of neurons between input and output layers are called hidden layers.",
+      "sentence": "The layers of neurons between input and output layers are called hidden layers.",
+      "language": "en",
+      "generated": false,
+      "uid": "39deaa08-dbce-4d0e-a4f3-ee97fe5c5b99"
+    },
+    {
+      "term": "feed-forward network",
+      "definition": "A feed-forward network has connections only in one direction. Every processing unit receives input from \"upstream\" processing units and delivers output to \"downstream\" processing units; there are no loops.",
+      "sentence": "A feed-forward network has connections only in one direction. Every processing unit receives input from \"upstream\" processing units and delivers output to \"downstream\" processing units; there are no loops.",
+      "language": "en",
+      "generated": false,
+      "uid": "14ed7647-bf70-465d-8509-c8992be632e6"
+    },
+    {
+      "term": "recurrent network",
+      "definition": "A recurrent network feeds its outputs back into its inputs. It means that the activation levels of the network form a dynamic system that may reach a stable state or exhibit oscillations or even chaotic behaviour.",
+      "sentence": "A recurrent network , on the other hand, feeds its outputs back into its inputs. It means that the activation levels of the network form a dynamic system that may reach a stable state or exhibit oscillations or even chaotic behaviour.",
+      "language": "en",
+      "generated": false,
+      "uid": "3b70d27d-9a82-4fc9-a4d9-9237774a710b"
+    },
+    {
+      "term": "learning in artificial neural networks",
+      "definition": "Learning in artificial neural networks is related to modifying weights in some particular way.",
+      "sentence": "Learning in artificial neural networks is related to modifying weights in some particular way.",
+      "language": "en",
+      "generated": false,
+      "uid": "f4402d5f-58c0-4afc-b69b-58f736e913c8"
+    },
+    {
+      "term": "weight",
+      "definition": "Weights make the memory of the artificial neural network. Their values represent a set of network's knowledge in a particular time moment.",
+      "sentence": "At the beginning of this topic, it was mentioned that weights make the memory of the artificial neural network. Therefore their values represent a set of network's knowledge in a particular time moment.",
+      "language": "en",
+      "generated": false,
+      "uid": "1e346921-a842-4803-b265-69ed53c26165"
+    },
+    {
+      "term": "fault tolerance",
+      "definition": "Artificial neural networks are resistant to partially or entirely damaged processing units or connections between processing units and network operation changes very little. It is called fault tolerance, or, in other words, graceful degradation.",
+      "sentence": "Artificial neural networks are resistant to partially or entirely damaged processing units or connections between processing units and network operation changes very little. It is called fault tolerance, or, in other words, graceful degradation, and it is explained by the fact that the knowledge of the network is not stored in one place, but it is distributed all over the network ( Borisovs et al., 1998).",
+      "language": "en",
+      "generated": false,
+      "uid": "c79f7ba9-c63d-47ee-a42b-d13b3f8033a1"
+    },
+    {
+      "term": "classification",
+      "definition": "Classification means deciding the category to which an input object represented by its feature values belongs.",
+      "sentence": "classification that means deciding the category to which an input object represented by its feature values belongs;",
+      "language": "en",
+      "generated": false,
+      "uid": "82d86db6-7154-4b16-a246-d1571a90f5f0"
+    },
+    {
+      "term": "pattern recognition",
+      "definition": "Pattern recognition assumes identifying the structure or pattern in data.",
+      "sentence": "pattern recognition which assumes identifying the structure or pattern in data;",
+      "language": "en",
+      "generated": false,
+      "uid": "47566ff0-5e08-42c9-840a-ae5790897579"
+    },
+    {
+      "term": "prediction",
+      "definition": "Prediction, such as identifying a disease from symptoms, causes from effects.",
+      "sentence": "prediction, such as identifying a disease from symptoms, causes from effects;",
+      "language": "en",
+      "generated": false,
+      "uid": "b1ec8041-0494-4bf6-9344-ebf943713f45"
+    },
+    {
+      "term": "optimization",
+      "definition": "Optimization or, in other words, finding the \"best\" organization of constraints.",
+      "sentence": "optimization or, in other words, finding the \"best\" organization of constraints;",
+      "language": "en",
+      "generated": false,
+      "uid": "0d4836c0-9f17-4c57-8ead-1295fd459591"
+    },
+    {
+      "term": "noise filtering",
+      "definition": "Noise filtering, or separating signal from background, factoring out the irrelevant components of a signal.",
+      "sentence": "noise filtering, or separating signal from background, factoring out the irrelevant components of a signal;",
+      "language": "en",
+      "generated": false,
+      "uid": "2157f59e-ad25-44e0-be94-3fb847b845f1"
+    },
+    {
+      "term": "non-linear estimation",
+      "definition": "Non-linear estimation determining the values of variables that cannot be measured easily but which are known to depend in some complex way on other more accessible variables and others.",
+      "sentence": "non-linear estimation determining the values of variables that cannot be measured easily but which are known to depend in some complex way on other more accessible variables and others.",
+      "language": "en",
+      "generated": false,
+      "uid": "a373000b-c1ad-4a6e-95c7-e392749cd425"
+    },
+    {
+      "term": "perceptron",
+      "definition": "Rosenblatt developed the perceptron model in the late 1950s.",
+      "sentence": "Rosenblatt developed the perceptron model in the late 1950s (Jones, 2009; Negnevitsky , 2011).",
+      "language": "en",
+      "generated": false,
+      "uid": "a6f51e07-45e0-478f-ba33-192e4c8bf576"
+    },
+    {
+      "term": "Single Layer Perceptron",
+      "definition": "The simplest and the commonly known type of artificial neural network, but its practical applicability is limited because it can learn only linearly separable functions.",
+      "sentence": "A Single Layer Perceptron is the simplest and the commonly known type of artificial neural network, but its practical applicability is limited because it can learn only linearly separable functions.",
+      "language": "en",
+      "generated": false,
+      "uid": "07c33cb9-b21f-40cb-9db5-c1e9116a8612"
+    },
+    {
+      "term": "exceptional knowledge",
+      "definition": "knowledge stored at the level of a concept it belongs to.",
+      "sentence": "The researchers also have revealed that exceptional knowledge is stored at the level of a concept it belongs to.",
+      "language": "en",
+      "generated": false,
+      "uid": "96e68f91-c6c6-45bf-bad1-26444142636c"
+    },
+    {
+      "term": "mean reaction time",
+      "definition": "the average time taken to respond to a question.",
+      "sentence": "the mean reaction time to the question “Can an ostrich fly?” was smaller than to the question “Can an ostrich breathe?”",
+      "language": "en",
+      "generated": false,
+      "uid": "77467f95-4726-4c49-a89d-03a4508b2fc0"
+    },
+    {
+      "term": "semantic network",
+      "definition": "a knowledge representation schema that represents knowledge as a graph: labelled nodes in this graph correspond to domain objects/concepts but directed labelled arcs – to relations between them.",
+      "sentence": "A semantic network is a knowledge representation schema that represents knowledge as a graph: labelled nodes in this graph correspond to domain objects/concepts but directed labelled arcs – to relations between them.",
+      "language": "en",
+      "generated": false,
+      "uid": "dccf417b-99e9-4d60-b73e-1ae0c8970858"
+    },
+    {
+      "term": "knowledge base",
+      "definition": "a network of concepts and their relations.",
+      "sentence": "a knowledge base rooted in semantic networks includes a network of concepts and their relations.",
+      "language": "en",
+      "generated": false,
+      "uid": "4d9440a3-7db5-42dd-8844-a46d6f3ca1e9"
+    },
+    {
+      "term": "subclass-class",
+      "definition": "a relation represented by the title of “is a” (also “is a subclass of”, “is a subset of”, “is a type of” or “is a kind of”).",
+      "sentence": "A relation “subclass-class” (also “subset-set”, “subtype-type”, “ subkind -kind”) is represented by a title of “is a” (also “is a subclass of”, “is a subset of”, “is a type of” or “is a kind of”).",
+      "language": "en",
+      "generated": false,
+      "uid": "bf70b5c0-d5dd-4612-9968-995f9c110d38"
+    },
+    {
+      "term": "class/set/type/kind",
+      "definition": "a set of concepts/objects that share common properties.",
+      "sentence": "A class/set/type/kind includes a set of concepts/objects that share common properties.",
+      "language": "en",
+      "generated": false,
+      "uid": "6e678da9-0353-417a-94a7-046afb2dd3ac"
+    },
+    {
+      "term": "instance-class/set/type/kind",
+      "definition": "a relation represented by the title of “is an instance/example of”.",
+      "sentence": "A relation “instance-class/set/type/kind” is represented by the title of “is an instance/example of”.",
+      "language": "en",
+      "generated": false,
+      "uid": "4d104190-45ef-4d7c-8c52-109dc787b3e3"
+    },
+    {
+      "term": "part-whole",
+      "definition": "a relation represented by the title of “Part of”.",
+      "sentence": "A relation “part-whole” is represented by the title of “Part of”.",
+      "language": "en",
+      "generated": false,
+      "uid": "e7c4affc-4de2-443f-8f3b-de8a7fd4914d"
+    },
+    {
+      "term": "object-property",
+      "definition": "a relation represented by the title of “property/has a property of”.",
+      "sentence": "A relation “object-property” is represented by the title of “property/has a property of”.",
+      "language": "en",
+      "generated": false,
+      "uid": "8278848c-8c3f-4e63-8bd1-dcf82ff49bb9"
+    },
+    {
+      "term": "property",
+      "definition": "a characteristic of an object/concept that can be measured by quantitative (numerical) or qualitative (descriptive) values.",
+      "sentence": "A property is a characteristic of an object/concept that can be measured by quantitative (numerical) or qualitative (descriptive) values.",
+      "language": "en",
+      "generated": false,
+      "uid": "c34d47ce-67bb-4017-ba2c-43ffcda3483e"
+    },
+    {
+      "term": "property-value",
+      "definition": "a relation represented by the title of “value”.",
+      "sentence": "A relation “property-value” is represented by the title of “value”.",
+      "language": "en",
+      "generated": false,
+      "uid": "ab9b1880-3e2b-43fe-9a18-2762f7a42c1b"
+    },
+    {
+      "term": "linguistic relations",
+      "definition": "relations that allow specifying any other kind of relations (for example, like, own, travel, etc.) that cannot be represented by the previously mentioned types of relations.",
+      "sentence": "Linguistic relations (Fig.11). They allow specifying any other kind of relations (for example, like, own, travel, etc.) that cannot be represented by the previously mentioned types of relations.",
+      "language": "en",
+      "generated": false,
+      "uid": "5be776b4-d926-4d00-9756-1081bb88b682"
+    },
+    {
+      "term": "inheritance",
+      "definition": "a process by which a narrower node automatically inherits knowledge from the network, that is, a subclass/subset/subtype/ subkind node inherits knowledge from a class/set/type/kind node or an instance inherits knowledge from a subclass/subset/subtype/ subkind node or a class/set/type/kind node.",
+      "sentence": "Inheritance is a feature of semantic networks (Luger, 2009). Inheritance is a process by which a narrower node automatically inherits knowledge from the network, that is, a subclass/subset/subtype/ subkind node inherits knowledge from a class/set/type/kind node or an instance inherits knowledge from a subclass/subset/subtype/ subkind node or a class/set/type/kind node.",
+      "language": "en",
+      "generated": false,
+      "uid": "20053f08-bfcc-4293-8904-98feee88f64d"
+    },
+    {
+      "term": "inference engine",
+      "definition": "an engine needed to provide possibilities for an intelligent system to use knowledge represented in the form of a semantic network.",
+      "sentence": "To provide possibilities for an intelligent system to use knowledge represented in the form of a semantic network, the inference engine is needed.",
+      "language": "en",
+      "generated": false,
+      "uid": "f24c9f9b-3ed8-4a41-a299-86cd5517f803"
+    },
+    {
+      "term": "structured knowledge representation schemas",
+      "definition": "knowledge representation schemas that use a graph to represent knowledge, where each node represents not a single concept/object, but a complex structure describing an object/concept together with its properties and parts.",
+      "sentence": "Structured knowledge representation schemas also use a graph to represent knowledge. However, comparing to the networked knowledge representation schemas, each node in the graph represents not a single concept/object, but a complex structure describing an object/concept together with its properties and parts.",
+      "language": "en",
+      "generated": false,
+      "uid": "a19e8e52-402d-475c-9a45-9ad72b9ff470"
+    },
+    {
+      "term": "frames",
+      "definition": "an example of structured knowledge representation schemas.",
+      "sentence": "Frames are an example of structured knowledge representation schemas.",
+      "language": "en",
+      "generated": false,
+      "uid": "44605348-e4dc-4a09-817b-26bcf3416853"
+    },
+    {
+      "term": "golden rule",
+      "definition": "reading any two objects/concepts in the direction of the arc of the relationship should yield a meaningful fact.",
+      "sentence": "When relating objects/concepts by the types of relationships defined previosuly , the golden rule should be followed: reading any two objects/concepts in the direction of the arc of the relationship should yield a meaningful fact.",
+      "language": "en",
+      "generated": false,
+      "uid": "88e05f78-776f-4a29-b740-88d69b6350fa"
+    },
+    {
+      "term": "declarative knowledge",
+      "definition": "knowledge about facts, objects, and concepts.",
+      "sentence": "they represent only declarative knowledge (knowledge about facts, objects, and concepts ).",
+      "language": "en",
+      "generated": false,
+      "uid": "ac381009-feb1-4988-b8eb-8509eeb765fc"
+    },
+    {
+      "term": "formal semantics",
+      "definition": "well-defined formal semantics.",
+      "sentence": "they do not have well-defined formal semantics and can introduce ambiguity both during the knowledge representation when the same unit of knowledge can be represented in different ways, and during the interpretation of a semantic network, when the content represented can be interpreted in different ways;",
+      "language": "en",
+      "generated": false,
+      "uid": "740a3a2e-3f26-4530-baa9-4ebb989716f0"
+    },
+    {
+      "term": "negation",
+      "definition": "a specific type of knowledge that semantic networks do not allow to represent.",
+      "sentence": "they do not allow to represent specific types of knowledge like negation, disjunction, or also all/part/several/nobody/many, etc.",
+      "language": "en",
+      "generated": false,
+      "uid": "d0083d2a-806a-4ec3-9cc7-4a8317113169"
+    },
+    {
+      "term": "disjunction",
+      "definition": "a specific type of knowledge that semantic networks do not allow to represent.",
+      "sentence": "they do not allow to represent specific types of knowledge like negation, disjunction, or also all/part/several/nobody/many, etc.",
+      "language": "en",
+      "generated": false,
+      "uid": "3b598b78-ffb4-425f-a53d-6496fdd14dc0"
+    },
+    {
+      "term": "all/part/several/nobody/many",
+      "definition": "specific types of knowledge that semantic networks do not allow to represent.",
+      "sentence": "they do not allow to represent specific types of knowledge like negation, disjunction, or also all/part/several/nobody/many, etc.",
+      "language": "en",
+      "generated": false,
+      "uid": "897a2fc7-cf71-4a28-a7e4-b8e383421022"
+    }
+  ],
+  "debug_info": {
+    "chunkSize": 7669,
+    "chunkCount": 41,
+    "contextLength": 4096,
+    "temperature": 0.5,
+    "seed": 42,
+    "prompt": "Your task is to analyze the provided text and create a glossary.\nInstructions:\n1. Extract ALL terms and concepts from the text.\n2. Define them using ONLY the provided text.\n3. NO external knowledge. Synthesize exclusively from source.\n4. DO NOT translate. Keep definitions in the source language.\n5. If no terms found, return an empty list.\n\nText to analyze:\n\n",
+    "elapsedTime": 2081.721,
+    "safeMargin": 0.5,
+    "maxResponseTokens": 4096,
+    "maxTimeout": 599940000
+  }
+}

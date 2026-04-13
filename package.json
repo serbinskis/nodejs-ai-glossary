@@ -1,0 +1,63 @@
+{
+  "name": "node-ai-glossary",
+  "version": "1.0.0",
+  "description": "",
+  "type": "module",
+  "main": "index.cjs",
+  "scripts": {
+    "start": "cd dist & node index.js",
+    "build": "copyfiles -u 1 src/website/** dist & tsc --outDir dist",
+    "test": "rimraf dev & copyfiles -u 1 src/website/** dev & tsc --outDir dev & cd dev & node index.js --trace-warnings",
+    "dev": "rimraf dev & copyfiles -u 1 src/website/** dev & tsc --outDir dev & cd dev & node index.js --trace-warnings",
+    "test-exp": "rimraf dev & copyfiles -u 1 src/website/** dev & tsc --outDir dev & cd dev & node tests/experiments.js --trace-warnings",
+    "test-tok": "rimraf dev & copyfiles -u 1 src/website/** dev & tsc --outDir dev & cd dev & node tests/tokenization.js --trace-warnings"
+  },
+  "keywords": [],
+  "author": "Serbinskis",
+  "license": "ISC",
+  "dependencies": {
+    "@ericedouard/vad-node-realtime": "0.2.0",
+    "@ffmpeg-installer/ffmpeg": "1.1.0",
+    "@fugood/whisper.node": "1.0.16",
+    "@google/genai": "1.34.0",
+    "@huggingface/gguf": "0.3.2",
+    "@huggingface/hub": "2.6.12",
+    "@lmstudio/sdk": "1.5.0",
+    "@sigma/striprtf": "npm:@jsr/sigma__striprtf@1.0.0",
+    "archiver": "7.0.1",
+    "body-parser": "1.20.2",
+    "cheerio": "1.1.2",
+    "connect-busboy": "1.0.0",
+    "cors": "2.8.5",
+    "express": "4.17.1",
+    "extract-zip": "2.0.1",
+    "file-type": "21.0.0",
+    "fluent-ffmpeg": "2.1.3",
+    "got": "11.8.1",
+    "mammoth": "1.11.0",
+    "node-llama-cpp": "3.14.2",
+    "node-schedule": "2.1.0",
+    "odt2html": "1.0.1",
+    "openai": "6.15.0",
+    "pptx-content-extractor": "1.0.3",
+    "qiao-get-ip": "0.0.8",
+    "serbinskis-utils": "1.0.79",
+    "sharp": "0.34.4",
+    "socket.io": "3.0.5",
+    "sqlite3": "5.1.7",
+    "tesseract.js": "6.0.1",
+    "word-extractor": "1.0.4",
+    "zod": "3.25.76",
+    "zod-to-json-schema": "3.25.1"
+  },
+  "engines": {
+    "node": "24.11.0"
+  },
+  "devDependencies": {
+    "@types/node": "^18.19.130",
+    "copyfiles": "^2.4.1",
+    "rimraf": "^4.1.2",
+    "typescript": "^5.8.3",
+    "unpdf": "^1.4.0"
+  }
+}

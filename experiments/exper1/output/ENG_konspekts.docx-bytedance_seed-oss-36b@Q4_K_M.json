@@ -1,0 +1,945 @@
+{
+  "uid": "5fbba05c-9121-4c0f-a2d8-1fe8d06d21df",
+  "domain": ">The Turing Test was proposed by Alan Turing in 1950 and implies that if a computer system can mimic human responses so well that it is indistinguishable from a real human being, then this system has artificial intelligence (Turing, 1950). Systems that act rationally are based on the principle of rationality. Rational agents theory states that an agent acts rationally when it chooses actions to achieve its goals in the best way given what it knows about the environment (Russell and Norvig, 2009) . Such systems can be implemented as software robots or virtual assistants, which are able to perform a particular task in their specific environment. The fundamental approach to assessment of intelligence of computer system is based on identification of key characteristics of intelligent performance that should be present in such systems (Legg and Hutter, 2007). These characteristics include: learning ability; memory capacity; ability to solve problems; reasoning skills; perception of the environment; ability to communicate with other systems or humans via natural language; decision-making ability. Assessment of intelligence is performed by evaluating how well a computer system demonstrates these characteristics (Legg and Hutter, 2007). It should be noted that there are many approaches to assess intelligence of computer systems, but they all have certain limitations due to the lack of a unified definition of intelligence in general (Legg and Hutter, 2007) . For example, some tests for artificial intelligence may focus only on one or several characteristics mentioned above. Or they can be based on comparison with human performance which is also problematic given that there are no unified standards to measure human intelligence (Legg and Hutter, 2007). Topic 1.2 - Approaches and methods of artificial intelligence development There are two main approaches in the field of artificial intelligence: symbolic AI (also known as good old-fashioned AI or GOFAI) and connectionism (also known as neural networks or parallel distributed processing ). Symbolic AI is based on the idea that human thought processes can be represented by symbols, which can be manipulated using logical rules. In other words, knowledge in this approach is represented explicitly as a set of symbols and rules (e.g., if-then rules). For example, in expert systems, symbolic AI uses a knowledge base containing facts and rules to solve specific problems (e.g., medical diagnosis ). Connectionism, on the other hand, is inspired by the structure and function of the human brain. It involves artificial neural networks that consist of interconnected nodes (neurons) which can learn patterns from data . The learning process in connectionism occurs through adjusting the strengths of connections between neurons based on experience (e.g., backpropagation ). Unlike symbolic AI, connectionism does not require explicit programming of rules; instead, it learns from examples. Both approaches have their advantages and limitations. Symbolic AI is good for tasks that require logical reasoning and explicit knowledge representation, but it struggles with handling uncertainty, ambiguity, and large amounts of unstructured data (e.g., natural language processing or image recognition ). Connectionism excels at processing unstructured data and learning complex patterns, but it often lacks transparency (the “black box” problem ) – it is difficult to understand how the network arrived at a particular decision. Moreover, connectionist systems typically require large amounts of labeled training data to perform well. In addition to these two main approaches, there are other methods and techniques used in AI development, such as: Machine learning : A subset of AI that enables systems to learn from data without being explicitly programmed. It includes supervised learning (where the model is trained on labeled data ), unsupervised learning (training on unlabeled data to find hidden patterns), and reinforcement learning (learning through interaction with an environment by receiving rewards or penalties for actions). Deep learning : A subset of machine learning that uses deep neural networks with multiple layers (hence “deep”) to learn hierarchical representations of data. It is particularly effective for tasks like image recognition, speech recognition , and natural language processing . Expert systems : Computer programs that mimic the decision-making ability of a human expert in a specific domain (e.g., medical diagnosis, finance ). They use a knowledge base and an inference engine to solve problems by applying rules to given facts. Natural language processing (NLP) : A field of AI that focuses on enabling computers to understand, interpret, and generate human language . It includes tasks such as sentiment analysis , machine translation , and chatbot development. Computer vision : A field of AI that enables computers to interpret and understand visual information from the world (e.g., images, videos ). It is used in applications like facial recognition , self-driving cars, and medical imaging analysis. Robotics : The intersection of AI and engineering that involves designing robots capable of performing tasks autonomously or semi-autonomously. Robots can be equipped with sensors and actuators to interact with their environment, and they often use AI techniques (e.g., machine learning, computer vision ) to make decisions. Ethics of AI : The branch of AI that deals with the moral implications of developing and using AI systems. It includes considerations such as bias in AI , privacy concerns, accountability, and the impact of AI on society and jobs. Each of these methods and techniques contributes to the overall development of artificial intelligence, addressing different aspects of intelligent behavior and enabling a wide range of applications.</seed:think>### Glossary   (Domain: Artificial Intelligence Fundamentals)   ---   **Artificial Intelligence (AI)** : The study of creating machines that can simulate aspects of human intelligence (e.g., learning, problem-solving, language use), as defined by John McCarthy in 1956; encompasses systems designed to support or replicate human functions/activities.   **Intelligence** : A broad concept referring to the ability to learn, adapt, solve problems, and interact with environments, observed in humans, animals, and plants; lacks a unified definition due to limited knowledge of its diverse manifestations.   **Human Intelligence** : Studied in fields like psychology, philosophy, and neuroscience; characterized by abilities such as learning, reasoning, and adaptation, but debated whether it is a single ability or set of abilities (e.g., Sternberg, 2019; Legg and Hutter, 2007).   **Animal Intelligence** : Relates to learning abilities in animals (e.g., monkeys, dolphins), but measuring it is challenging due to greater cognitive/perceptual diversity, inability to communicate goals via language, and potential bias from assuming human-like principles.   **Plant Intelligence** : Non-brain/nervous system-based intelligence involving learning through practice, memory, multi-sensory perception (shape, color, smell, sound), environmental awareness, and decision-making to reconcile well-being with the environment (e.g., Trewavas, 2016; Gagliano, 2015).   **Cognitive Modelling Approach** : A method to develop AI systems that ",
+  "language": "en",
+  "implementation": "LMStudio-bytedance/seed-oss-36b@Q4_K_M",
+  "timestamp_start": 1774576865625,
+  "timestamp_end": 1774584657180,
+  "error_count": 1,
+  "glossary": [
+    {
+      "term": "Artificial Intelligence (AI)",
+      "definition": "The study of creating machines that can simulate aspects of human intelligence (e.g., learning, problem-solving, language use), as defined by John McCarthy in 1956; encompasses systems designed to support or replicate human functions/activities.",
+      "sentence": "historically, it has been established that artificial intelligence is considered in a strong connection with human intelligence. This is also justified by a goal defining why intelligent computer systems are developed. People in the real world perform or know how to perform different functions and activities. Intelligent computer systems are designed to support people in the completion of these functions and activities. Consequently, in this context, it would be logical to compare artificial intelligence with human intelligence (Fig. The first definition of artificial intelligence was offered by John McCarthy in 1956. At that time, this researcher organized a summer school with the participation of scientists from the United States who were interested in automata theory, neural networks, studies of intelligence and language simulation. The term “artificial intelligence” was chosen as neutral enough to avoid highlighting a particular topic of the summer school. The definition proposed by McCarthy defines artificial intelligence by emphasizing its similarity to human intelligence, and so it is the following: “The study is to proceed on the basis of the conjecture that every aspect of learning or any other feature of intelligence can in principle be so precisely described that a machine can be made to simulate it. An attempt will be made to find how to make machines use language, form abstractions and concepts, solve kinds of problems now reserved for humans, and improve themselves... ",
+      "language": "en",
+      "generated": false,
+      "uid": "ce77ac58-1983-4205-b5a9-55daf91fc28e"
+    },
+    {
+      "term": "",
+      "definition": "",
+      "sentence": "",
+      "language": "en",
+      "generated": false,
+      "uid": "2ada0365-deba-47d1-806d-06a20c48ecbd"
+    },
+    {
+      "term": "heuristic evaluation function",
+      "definition": "A function used to evaluate nodes in a state space graph; it can be simple (composed of one factor) or complex (combinations of factors, possibly with weights), specific to a problem as it uses heuristic knowledge associated with the problem. Factors included and their weights are determined by the system's developer in collaboration with domain experts and validated using machine learning and optimization techniques.",
+      "sentence": "We can define one more factor for this game: the number of pairs of tile reversals (Figure 8). This means that we need to change the places of two tiles located close one to another, and usually, it takes more than two moves to put them back. In our case, all three nodes will receive a value of 0, because there are no such situations on the board. Therefore, any move could be considered a promising one if we base our heuristic evaluation function on this factor.",
+      "language": "en",
+      "generated": false,
+      "uid": "cb889beb-50b6-4f90-87f2-7e8213903480"
+    },
+    {
+      "term": "factor (in heuristic evaluation)",
+      "definition": "A component used in heuristic evaluation functions to assess nodes; examples include the number of tiles out of place, the sum of distances of tiles from their intended places, and the number of pairs of tile reversals.",
+      "sentence": "Applying the defined factor, the first and the third node will acquire a value of 5, while the second node will get a value of 3, and therefore, this could be considered a promising move. (The paragraph is based on the description given in (Luger, 2009)) Another factor that can be used to evaluate nodes is to sum up distances of tiles from their intended places (Figure 7).",
+      "language": "en",
+      "generated": false,
+      "uid": "05a725fc-c3e1-447a-8feb-35a93cfcd214"
+    },
+    {
+      "term": "number of tiles out of place",
+      "definition": "A factor for heuristic evaluation where nodes are assigned values based on how many tiles are not in their intended places; e.g., first and third nodes acquired a value of 5, second node 3.",
+      "sentence": "Applying the defined factor, the first and the third node will acquire a value of 5, while the second node will get a value of 3, and therefore, this could be considered a promising move. (The paragraph is based on the description given in (Luger, 2009))",
+      "language": "en",
+      "generated": false,
+      "uid": "c0d31952-590f-4261-ab21-d337b57c6484"
+    },
+    {
+      "term": "sum of distances of tiles from their intended places",
+      "definition": "A factor for heuristic evaluation where nodes are evaluated by summing the distances of each tile from its intended place; smaller sums indicate a state closer to the search goal node, e.g., first and third nodes had a value of 6, second node 4.",
+      "sentence": "Another factor that can be used to evaluate nodes is to sum up distances of tiles from their intended places (Figure 7). The logic is also very similar here: the smaller the sum of distances, the closer a state is to the search goal node. Applying the defined factor, the first and the third node will acquire a value of 6, while the second node will get a value of 4, and therefore, this could be considered a promising move.",
+      "language": "en",
+      "generated": false,
+      "uid": "52d87c11-99c1-4ee8-b87a-7fb8038c3738"
+    },
+    {
+      "term": "number of pairs of tile reversals",
+      "definition": "A factor for heuristic evaluation counting pairs of tiles located close to each other that need their places changed (usually taking more than two moves to correct); in the example, all three nodes received a value of 0 as there were no such situations.",
+      "sentence": "We can define one more factor for this game: the number of pairs of tile reversals (Figure 8). This means that we need to change the places of two tiles located close one to another, and usually, it takes more than two moves to put them back. In our case, all three nodes will receive a value of 0, because there are no such situations on the board.",
+      "language": "en",
+      "generated": false,
+      "uid": "c28627b6-6578-48fb-805c-54a7a3df0af3"
+    },
+    {
+      "term": "state space graph",
+      "definition": "A graph representing the states of a problem; its complexity depends on branching factor (B) and depth (L), and it can be partly available (due to limited computational resources) or fully available (enough resources to store/process).",
+      "sentence": "Depending on the type of problem, the search algorithm may have one of the following available: Only a part of a state space graph (a partly available state space graph). It is not possible to store and process the whole graph due to limited computational resources... A full state space graph (a fully available state space graph). Computational resources are enough to store and process such a graph.",
+      "language": "en",
+      "generated": false,
+      "uid": "a8a998bb-ed82-457b-9655-a94792bbccd3"
+    },
+    {
+      "term": "partly available state space graph",
+      "definition": "A state space graph where only a part is accessible due to limited computational resources; the system generates the graph to a specified depth, leading to a horizon effect.",
+      "sentence": "Only a part of a state space graph (a partly available state space graph). It is not possible to store and process the whole graph due to limited computational resources. As a result, during the operation of an intelligent computer system, the state space graph is generated to the specified depth that is allowed by available computational resources. In this case, a so-called horizon effect occurs...",
+      "language": "en",
+      "generated": false,
+      "uid": "fb5cc457-3e71-4325-889c-dbdfffcc84cc"
+    },
+    {
+      "term": "fully available state space graph",
+      "definition": "A state space graph where computational resources are sufficient to store and process the entire graph; use of heuristic evaluation function is not always necessary.",
+      "sentence": "A full state space graph (a fully available state space graph). Computational resources are enough to store and process such a graph. For example, in planning problems that must be solved before a robot starts acting in some environment, an action plan is drawn up and represented as a state space graph. In this case, the use of the heuristic evaluation function is not always necessary.",
+      "language": "en",
+      "generated": false,
+      "uid": "34013987-f3ec-4bbe-aa7b-c3e3b4f673a0"
+    },
+    {
+      "term": "horizon effect",
+      "definition": "A phenomenon where a computer system, due to limited computational resources generating only part of a state space graph (to a specified depth), does not see nodes beyond that depth and uses a heuristic evaluation function to choose promising nodes.",
+      "sentence": "In this case, a so-called horizon effect occurs when the computer does not see nodes located beyond the specified depth, and therefore, it typically uses the heuristic evaluation function to be able to choose nodes that are most likely to lead to the search goal node.",
+      "language": "en",
+      "generated": false,
+      "uid": "ee7a24e4-04be-4260-808b-d72a86a3d06a"
+    },
+    {
+      "term": "branching factor (B)",
+      "definition": "A factor determining the complexity of a state space graph; it is the average number of arcs per node, calculated by dividing the sum of direct descendants of all nodes by the total number of nodes in the graph.",
+      "sentence": "The complexity of a state space graph depends on two factors (Luger, 2009): B – the branching factor of the state space graph. It is the average number of arcs per node. Usually, we acquire this factor by dividing the sum of direct descendants of all nodes with the total number of nodes in the state space graph.",
+      "language": "en",
+      "generated": false,
+      "uid": "6f03799a-39c0-4fa3-9070-53ea8b602fb7"
+    },
+    {
+      "term": "depth of the state space graph (L)",
+      "definition": "A factor determining the complexity of a state space graph; usually the length of the longest path in the graph.",
+      "sentence": "The complexity of a state space graph depends on two factors (Luger, 2009): ... L – depth of the state space graph (usually the length of the longest path).",
+      "language": "en",
+      "generated": false,
+      "uid": "35e76fb0-58d1-4c3d-a180-25c385d7e84f"
+    },
+    {
+      "term": "total number of nodes (T)",
+      "definition": "A measure related to the complexity of a state space graph, dependent on branching factor (B) and depth (L); the interdependence is presented in Figure 11, e.g., with B=2 and depth 6, T exceeds 100 nodes.",
+      "sentence": "Therefore, the total number of nodes (T) is The interdependence of the branching factor (B), the depth (L), and the total number of nodes (T) is presented by the plot that you can see in Figure 11. If the branching factor of the state space graph is equal to 2 (nodes have on average 2 descendants), then exploring all paths to a depth of 6 demands visiting more than 100 nodes.",
+      "language": "en",
+      "generated": false,
+      "uid": "f32c638c-85e9-4c09-b176-bbcd3f22891b"
+    },
+    {
+      "term": "search goal node",
+      "definition": "The target node in a state space graph that the search algorithm aims to reach; factors in heuristic evaluation functions indicate how close a state is to this node (e.g., smaller sum of distances means closer).",
+      "sentence": "The logic is also very similar here: the smaller the sum of distances, the closer a state is to the search goal node.",
+      "language": "en",
+      "generated": false,
+      "uid": "f0110c7c-7867-4c3f-b402-865a8ac70303"
+    },
+    {
+      "term": "promising move",
+      "definition": "A move considered likely to lead to the search goal node, determined by heuristic evaluation function results (e.g., nodes with lower values from certain factors are seen as promising).",
+      "sentence": "Applying the defined factor, the first and the third node will acquire a value of 5, while the second node will get a value of 3, and therefore, this could be considered a promising move.",
+      "language": "en",
+      "generated": false,
+      "uid": "2abbd79e-5b01-45b7-9989-57a7e044b632"
+    },
+    {
+      "term": "Logistic regression",
+      "definition": "An algorithm that sequentially takes data objects from a dataset, calculates the value of a linear function for them, applies the sigmoid function to the obtained value, and assigns a class label of '1' if the sigmoid value is greater than or equal to a threshold, otherwise '0'; it has a cost function that should be minimized.",
+      "sentence": "The simplified steps of Logistic regression are shown in Figure 10. The algorithm sequentially takes the data objects from the data set and calculates the value of the linear function for them. It applies the sigmoid function to the value obtained by the linear function. After acquiring the value of the sigmoid function, the algorithm this value is greater than or equal to the threshold value. If this is the case, then the data object is assigned a class label of ",
+      "language": "en",
+      "generated": false,
+      "uid": "10d34c41-19f4-4865-804d-589ede8cdad4"
+    },
+    {
+      "term": "sigmoid function",
+      "definition": "A function applied to the value obtained from a linear function in Logistic regression.",
+      "sentence": "It applies the sigmoid function to the value obtained by the linear function.",
+      "language": "en",
+      "generated": false,
+      "uid": "f8dddf1e-dccb-49e2-b731-a4ca6909841c"
+    },
+    {
+      "term": "cost function (of Logistic regression)",
+      "definition": "A function associated with Logistic regression that should be minimized.",
+      "sentence": "Logistic regression has the following cost function , which should also be minimised:",
+      "language": "en",
+      "generated": false,
+      "uid": "56a327b3-de70-4c1b-974c-c5f8f738f77d"
+    },
+    {
+      "term": "k-Nearest Neighbour (kNN) algorithm",
+      "definition": "A very simple supervised learning algorithm that can solve both classification and regression tasks; for classification, it identifies the class label of a new data object by finding the most similar neighbours in the existing dataset (based on similarity metrics like distance) and assigning their category/class label, or using a voting mechanism with k nearest neighbours.",
+      "sentence": "K-nearest neighbour or kNN algorithm is a very simple supervised learning algorithm that can solve both classification and regression tasks. Let’s define the idea of this algorithm based on the classification task... when searching for an answer to the question of what the category or class of a new data object is, the algorithm finds the most similar neighbour in the existing dataset and assigns its category/class label to the new data object...",
+      "language": "en",
+      "generated": false,
+      "uid": "56512761-2716-47b0-a3c1-6d5f625c7c7b"
+    },
+    {
+      "term": "supervised machine learning",
+      "definition": "A type of machine learning used for regression and classification tasks (e.g., Linear regression for regression, Logistic regression for classification).",
+      "sentence": "Previously you have learnt that supervised machine learning is used for regression and classification tasks. Linear regression is intended for the regression task while logistic regression – for the classification task.",
+      "language": "en",
+      "generated": false,
+      "uid": "7a91fa5d-3ba1-455a-8a9d-33561ce21782"
+    },
+    {
+      "term": "regression task",
+      "definition": "A machine learning task that Linear regression is intended for, and which kNN algorithm can also solve.",
+      "sentence": "supervised machine learning is used for regression and classification tasks. Linear regression is intended for the regression task while logistic regression – for the classification task... kNN algorithm is a very simple supervised learning algorithm that can solve both classification and regression tasks.",
+      "language": "en",
+      "generated": false,
+      "uid": "beb6b729-b281-4d0a-b638-0838e5f7d7ec"
+    },
+    {
+      "term": "classification task",
+      "definition": "A machine learning task that Logistic regression is intended for, and which kNN algorithm can also solve; involves identifying class labels for data objects (e.g., 'suns' and 'clouds').",
+      "sentence": "supervised machine learning is used for regression and classification tasks... logistic regression – for the classification task... Let’s define the idea of this algorithm based on the classification task. Figure 11 demonstrates the idea of the kNN algorithm. Assume we have a dataset that includes data objects of two classes labelled as suns and clouds. The algorithm should identify class labels for two new data objects represented in yellow.",
+      "language": "en",
+      "generated": false,
+      "uid": "eaa6856f-9c98-45a1-ad80-6d52041cfd7b"
+    },
+    {
+      "term": "similarity metric",
+      "definition": "A measure used to determine the similarity of data objects (e.g., distance between data objects), as similar data objects are close to each other; basis for kNN algorithm.",
+      "sentence": "To determine the similarity of data objects, a similarity metric is used such as the distance between data objects because similar data objects are close to each other... The concept of similarity (sometimes called distance, proximity, or closeness) makes the basis for the algorithm.",
+      "language": "en",
+      "generated": false,
+      "uid": "c446156d-f65e-44e9-be36-9423900d4bbc"
+    },
+    {
+      "term": "similarity (in kNN)",
+      "definition": "The concept that makes the basis for the kNN algorithm; sometimes called distance, proximity, or closeness; determined based on feature-based descriptions of data objects (feature similarity); differs for different data types.",
+      "sentence": "The concept of similarity (sometimes called distance, proximity, or closeness) makes the basis for the algorithm. In this case, the similarity of data objects is determined based on feature-based descriptions of data objects (the so-called feature similarity)... The notion of similarity differs for different data types.",
+      "language": "en",
+      "generated": false,
+      "uid": "1c34dc20-4902-4df1-9888-389a303dfb3e"
+    },
+    {
+      "term": "feature similarity",
+      "definition": "Similarity of data objects determined based on feature-based descriptions of data objects.",
+      "sentence": "In this case, the similarity of data objects is determined based on feature-based descriptions of data objects (the so-called feature similarity).",
+      "language": "en",
+      "generated": false,
+      "uid": "23b9318d-5b31-44f4-bb44-aafbf847dcdf"
+    },
+    {
+      "term": "continuous feature values",
+      "definition": "Feature values for which geometric distance (e.g., Euclidean, Manhattan) can be calculated between any pair of data objects; closer data objects have greater mutual similarity.",
+      "sentence": "For continuous feature values, it is possible to calculate the geometric distance between any pair of data objects: the closer to each other the data objects, the greater their mutual similarity.",
+      "language": "en",
+      "generated": false,
+      "uid": "91dfc09a-26b4-49f0-87c3-898ea7dd8d7e"
+    },
+    {
+      "term": "Euclidean distance",
+      "definition": "A distance metric for continuous feature values that calculates the square root of the sum of the squares of the differences between the value of the i-th feature of a new data object and the value of the i-th feature of an existing data object in the dataset.",
+      "sentence": "For continuous feature values... the Euclidean distance can be the right choice for measuring the similarity of data objects... The Euclidean distance measures the square root of the sum of the squares of the differences between the value of the i-th feature of a new data object and the value of the i-th feature of an existing data object in the dataset.",
+      "language": "en",
+      "generated": false,
+      "uid": "0b32d3d7-7aa3-4d77-90ee-3f18781ffef2"
+    },
+    {
+      "term": "Manhattan distance",
+      "definition": "A distance metric for continuous feature values that calculates the sum of absolute differences between feature values.",
+      "sentence": "Another distance metrics for continuous feature values is the Manhattan distance: Both metrics calculate the distance between the feature vector of a new data object and the feature vector of an existing data object in the dataset... The Manhattan distance calculates the sum of absolute differences between feature values.",
+      "language": "en",
+      "generated": false,
+      "uid": "bed1c08e-22a2-4d44-a526-231f64b95112"
+    },
+    {
+      "term": "categorical feature values",
+      "definition": "Feature values represented as discrete categories/classes; for which Hamming distance is used to calculate similarity (number of features on which two data objects differ).",
+      "sentence": "For categorical feature values, which are represented as discrete categories/classes, the Hamming distance is used that calculates the number of features on which two data objects differ.",
+      "language": "en",
+      "generated": false,
+      "uid": "1ab39cc3-4d39-4183-a413-4b5ab9d2ca85"
+    },
+    {
+      "term": "Hamming distance",
+      "definition": "A distance metric for categorical feature values that calculates the number of features on which two data objects differ; fewer differences mean greater similarity; distance is 0 if same feature values, 1 otherwise.",
+      "sentence": "For categorical feature values... the Hamming distance is used that calculates the number of features on which two data objects differ... The fewer the differences in features, the greater the similarity of data objects. If the values of the same feature of both data objects are the same, then the distance is equal to 0; otherwise, it is equal to 1.",
+      "language": "en",
+      "generated": false,
+      "uid": "a87decfe-e763-4972-b0b1-b2a8c1c8ef99"
+    },
+    {
+      "term": "mixed-type data",
+      "definition": "Datasets that include both continuous and categorical feature values; handled by relying on the sum of the squared distances along corresponding features.",
+      "sentence": "As quite usually datasets include mixed-type data – both continuous and categorical, to cope with these data, we can rely on the sum of the squared distances along corresponding features.",
+      "language": "en",
+      "generated": false,
+      "uid": "0a578c58-8f7a-4b98-90df-5e2725d2674b"
+    },
+    {
+      "term": "distance metric requirements",
+      "definition": "Requirements that any distance metric must satisfy: 1. never negative; 2. distance between two identical feature vectors is zero; 3. distance from x to y is the same as from y to x; 4. satisfies triangular inequality.",
+      "sentence": "However, any distance metric must satisfy the following requirements (Kubat, 2017): 1. the distance must never be negative; 2. the distance between two identical feature vectors is zero; 3. the distance from x to y is the same as the distance from y to x ; 4. the metric must satisfy the triangular inequality:",
+      "language": "en",
+      "generated": false,
+      "uid": "3b288db8-b2ea-4af4-b368-583386a03de5"
+    },
+    {
+      "term": "1NN version (one nearest neighbour)",
+      "definition": "A version of the kNN algorithm where a new data object is classified by finding a single closest data object in the dataset, taking the same class as that closest object; leads to unstable decision boundaries.",
+      "sentence": "In the 1NN version (one nearest neighbour), the algorithm classifies a new data object by finding a single, but the closet data object in the dataset... As a result, in the classification task, the algorithm takes the same class that the closest data object has. However, deciding the output value for a new data object based only on one closest data object leads to unstable decision boundaries.",
+      "language": "en",
+      "generated": false,
+      "uid": "a3e5909c-3a86-4fa8-a299-d01cd09ea0ac"
+    },
+    {
+      "term": "kNN version (k nearest neighbours)",
+      "definition": "A version of the kNN algorithm that uses a hyperparameter k (set by the developer before operation) to define the number of nearest data objects considered; applies a voting mechanism (plurality/majority vote for binary classification) to assign the class label with the majority vote to the new data object, reducing misclassification probability.",
+      "sentence": "In the kNN version of the algorithm, a hyperparameter k is used. It defines the number of nearest data objects that will be considered to identify the output value for a new data object. The developer sets a value of the hyperparameter before the operation of the algorithm. The algorithm applies a voting mechanism ; that is... selects k data objects with smaller distances and take the plurality vote of the neighbours (which is the majority vote in the case of binary classification)... A new data object receives a label of the class with the majority vote. The advantage of this version is that the probability of misclassifying a new data object is reduced because more data objects can weigh in on the result.",
+      "language": "en",
+      "generated": false,
+      "uid": "2b3ad881-9a9c-4424-959d-c9ca80af0fca"
+    },
+    {
+      "term": "hyperparameter k (in kNN)",
+      "definition": "A hyperparameter in the kNN algorithm (set by the developer before operation) that defines the number of nearest data objects considered for assigning the class label.",
+      "sentence": "In the kNN version of the algorithm, a hyperparameter k is used. It defines the number of nearest data objects that will be considered to identify the output value for a new data object. The developer sets a value of the hyperparameter before the operation of the algorithm.",
+      "language": "en",
+      "generated": false,
+      "uid": "82c92948-c5c8-4a56-aafd-6c4c08f94971"
+    },
+    {
+      "term": "voting mechanism (in kNN)",
+      "definition": "A mechanism applied in the kNN version where, after selecting k data objects with smaller distances, the algorithm takes the plurality vote of the neighbours (which is the majority vote in the case of binary classification) to assign the class label with the majority vote to the new data object.",
+      "sentence": "The algorithm applies a voting mechanism ; that is... selects k data objects with smaller distances and take the plurality vote of the neighbours (which is the majority vote in the case of binary classification)... A new data object receives a label of the class with the majority vote.",
+      "language": "en",
+      "generated": false,
+      "uid": "4d35468b-3c8e-4c44-b03b-a7ed95e60c9d"
+    },
+    {
+      "term": "true negatives (for a specific class)",
+      "definition": "Other cells that do not intersect the column and row corresponding to a specific class/category represent true negatives for this specific class.",
+      "sentence": "",
+      "language": "en",
+      "generated": false,
+      "uid": "08f14dee-d793-4992-8c3b-05c5e8bedca1"
+    },
+    {
+      "term": "confusion matrix",
+      "definition": "A table that shows the performance of a classification model by displaying the number of true positives, false positives, true negatives, and false negatives.",
+      "sentence": "",
+      "language": "en",
+      "generated": false,
+      "uid": "fb17f968-6111-4771-bdee-3df72b67b872"
+    },
+    {
+      "term": "accuracy metric",
+      "definition": "Evaluates a fraction of correct predictions over a given set of data objects. Calculated by summing up values of the main diagonal of the confusion matrix and dividing it by the total number of data objects in the dataset. The value lies in the range [0,1]; a larger value indicates better predictive accuracy.",
+      "sentence": "",
+      "language": "en",
+      "generated": false,
+      "uid": "9cd2041c-1a4f-4d06-b98c-299c97027cae"
+    },
+    {
+      "term": "class imbalance",
+      "definition": "A situation where classes in a dataset have unequal representation; accuracy metric is not a clear indicator of performance especially if classes are imbalanced.",
+      "sentence": "",
+      "language": "en",
+      "generated": false,
+      "uid": "1324739a-592a-4a9c-9db7-a15be46e82fa"
+    },
+    {
+      "term": "dummy model",
+      "definition": "A poorly built model which always predicts the majority class; e.g., in a dataset with 100 objects (95 Class 0, 5 Class 1), a dummy model predicting always Class 0 achieves 95% accuracy but is not really predictive.",
+      "sentence": "",
+      "language": "en",
+      "generated": false,
+      "uid": "c662d098-3a45-40fe-911d-98a7fff4710d"
+    },
+    {
+      "term": "precision metric",
+      "definition": "Evaluates a fraction of predicted positives that are true positives; in other words, the accuracy of the positive predictions. It is the probability that the classifier is right when labelling an example as positive. Calculated as (true positives) / (true positives + false positives); value range [0,1], larger indicates better performance. In multiclass classification, macro average precision is calculated by summing precisions for all classes and dividing by the number of classes.",
+      "sentence": "",
+      "language": "en",
+      "generated": false,
+      "uid": "d562ec38-fb8f-4595-b4ec-88684695d878"
+    },
+    {
+      "term": "recall metric",
+      "definition": "Also called sensitivity and true positive rate; evaluates a fraction of data objects classified as positives out of the total actual positive data objects. It is the probability that a positive data object will be correctly recognised by the algorithm. Calculated as (true positives) / (true positives + false negatives); value range [0,1], larger indicates better performance. In multiclass classification, macro average recall is calculated by summing recall values for all classes and dividing by the number of classes.",
+      "sentence": "",
+      "language": "en",
+      "generated": false,
+      "uid": "5ff09cf2-0ac8-4e9b-a71e-3a71174d67fb"
+    },
+    {
+      "term": "false negative",
+      "definition": "A data object that is actually positive but classified as negative; e.g., a patient suffering from an illness not diagnosed as such.",
+      "sentence": "",
+      "language": "en",
+      "generated": false,
+      "uid": "7cbcba71-2033-4acd-ba9b-38776a817976"
+    },
+    {
+      "term": "precision/recall tradeoff",
+      "definition": "The phenomenon where increasing precision reduces recall and vice versa; you can't have both high precision and high recall simultaneously.",
+      "sentence": "",
+      "language": "en",
+      "generated": false,
+      "uid": "d459250b-57b6-4276-8445-765ff6934cdd"
+    },
+    {
+      "term": "F1 score",
+      "definition": "A metric representing the harmonic mean of precision and recall; a classifier gets a high F1 score only if both recall and precision are high. It estimates the number of data objects classified correctly. Calculated as 2 * (precision * recall) / (precision + recall); value range [0,1], high indicates better performance (both precision and recall are high and close). In multiclass classification, macro F1 uses macro average precision and recall.",
+      "sentence": "",
+      "language": "en",
+      "generated": false,
+      "uid": "8bddef44-0b22-450c-8a5c-c161d3687209"
+    },
+    {
+      "term": "hyperparameters",
+      "definition": "Parameters of an algorithm that can be tuned to affect (at least to some extent) the classifier’s behaviour.",
+      "sentence": "",
+      "language": "en",
+      "generated": false,
+      "uid": "a307cdb5-1128-4f02-933e-6c8b1418b8d9"
+    },
+    {
+      "term": "ROC curve",
+      "definition": "Receiver Operating Characteristic curve; visualises the classifier’s behaviour under different hyperparameter values by plotting false positive rate (x-axis) versus true positive rate (y-axis). Helps visualise good choices for the precision/recall tradeoff. Ideal case: upper-left corner (zero false positives, 100% true positives); worst case: 45-degree diagonal line (random chance).",
+      "sentence": "",
+      "language": "en",
+      "generated": false,
+      "uid": "6752eed0-972d-488c-8a7a-55c0bf61ec63"
+    },
+    {
+      "term": "false positive rate",
+      "definition": "The rate of false positives, plotted on the x-axis of the ROC curve.",
+      "sentence": "",
+      "language": "en",
+      "generated": false,
+      "uid": "77178278-ae55-46f4-99d6-6867589672eb"
+    },
+    {
+      "term": "true positive rate",
+      "definition": "Also called recall; the rate of true positives, plotted on the y-axis of the ROC curve.",
+      "sentence": "",
+      "language": "en",
+      "generated": false,
+      "uid": "4272f7a9-66d2-4c1f-a80e-9bebe4e44e7c"
+    },
+    {
+      "term": "Area under the ROC Curve (AUC)",
+      "definition": "A single-number summary of the ROC curve that measures the entire two-dimensional area underneath it. Returns a value in [0,1]; 1 indicates highly accurate classifier, 0.5 indicates purely random classifier. Can be calculated for each class vs other classes in multiclass tasks and averaged across all classes.",
+      "sentence": "",
+      "language": "en",
+      "generated": false,
+      "uid": "a43a9bdf-1d90-45d1-a5db-69a295868b60"
+    },
+    {
+      "term": "clustering task",
+      "definition": "An unsupervised machine learning task that demands dividing data objects into representative groups; since there are no known labels, evaluating clustering is challenging.",
+      "sentence": "",
+      "language": "en",
+      "generated": false,
+      "uid": "86ad5282-b09c-4317-881a-6b33f6ab3f07"
+    },
+    {
+      "term": "artificial intelligence",
+      "definition": "A field mentioned in which knowledge representation is needed to develop knowledge-based intelligent computer systems.",
+      "sentence": "In the field of artificial intelligence, knowledge representation is needed to develop knowledge-based intelligent computer systems.",
+      "language": "en",
+      "generated": false,
+      "uid": "7043d6f5-73be-479b-a99b-eab35644a6b4"
+    },
+    {
+      "term": "knowledge representation",
+      "definition": "Something needed in the field of artificial intelligence to develop knowledge-based intelligent computer systems; also refers to schemas that are means offering a set of formal conventions and rules used to describe knowledge, with using them creating a knowledge representation or description.",
+      "sentence": "In the field of artificial intelligence, knowledge representation is needed to develop knowledge-based intelligent computer systems.",
+      "language": "en",
+      "generated": false,
+      "uid": "ad9b68cc-4f95-4f62-b17a-660483b481e8"
+    },
+    {
+      "term": "knowledge-based intelligent computer system",
+      "definition": "An intelligent computer system that contains two main components – the knowledge base and the inference engine (Hopgood, 2001).",
+      "sentence": "A knowledge-based intelligent system is an intelligent computer system that contains two main components – the knowledge base and the inference engine (Hopgood, 2001).",
+      "language": "en",
+      "generated": false,
+      "uid": "d3225be0-c97b-4606-8ada-29e539cb8466"
+    },
+    {
+      "term": "Knowledge base",
+      "definition": "A storage for knowledge where the structure of rules used by human experts must be preserved; the structure and order of production rules in it determine how and how quickly it is searched.",
+      "sentence": "Therefore, the structure of rules used by the human experts must be preserved in building a knowledge base... The structure and the order of production rules in the knowledge base determine how to search the knowledge base and how quickly it will be searched.",
+      "language": "en",
+      "generated": false,
+      "uid": "0864d528-c28e-4e6f-936d-79f1aad28854"
+    },
+    {
+      "term": "Inference engine",
+      "definition": "The processing mechanism of knowledge stored in the knowledge base; includes forward chaining and backward chaining types chosen based on domain expert behavior.",
+      "sentence": "If a domain expert first needs to gather some information and then tries to infer from it whatever can be inferred, choose the forward chaining inference engine. However, if your domain expert begins with a hypothetical solution and then attempts to find facts to prove it, choose the backward chaining inference engine.",
+      "language": "en",
+      "generated": false,
+      "uid": "ad3459f4-ea78-4c59-a8c8-3b22332ed506"
+    },
+    {
+      "term": "database",
+      "definition": "A system that stores unrelated facts, for example, purchase transactions or grades of students; differs from a knowledge base which stores not only facts but also relations among them.",
+      "sentence": "The database stores unrelated facts, for example, purchase transactions or grades of students. The knowledge base stores a representation not only of facts but also of relations among them.",
+      "language": "en",
+      "generated": false,
+      "uid": "adcb27f9-ae96-486b-9d48-4a08ef43e5e8"
+    },
+    {
+      "term": "weak methods (of artificial intelligence)",
+      "definition": "A group of artificial intelligence methods that do not use knowledge about a problem under consideration, but use general methods like search, logic, syntax-based computation, automatic reasoning.",
+      "sentence": "we considered two groups of artificial intelligence methods: weak methods, which do not use knowledge about a problem under consideration, but use general methods like search, logic, syntax-based computation, automatic reasoning",
+      "language": "en",
+      "generated": false,
+      "uid": "c8c480cd-a268-45cc-ada5-7a213ffacb49"
+    },
+    {
+      "term": "strong methods (of artificial intelligence)",
+      "definition": "A group of artificial intelligence methods that are based on the great amount of knowledge about the problem under consideration; incorporating knowledge into an intelligent computer system belongs to this group.",
+      "sentence": "strong methods, based on the great amount of knowledge about the problem under consideration. Incorporating knowledge into an intelligent computer system belongs to the so-called strong methods of artificial intelligence.",
+      "language": "en",
+      "generated": false,
+      "uid": "d0c7392b-cd79-4f8d-b6ad-21bad8004829"
+    },
+    {
+      "term": "knowledge acquisition",
+      "definition": "The process of getting knowledge to the knowledge base; several main methods are used: knowledge acquired from a domain expert processed by a knowledge engineer and added to the KB, domain expert describing/storing knowledge using an automated knowledge acquisition system, intelligent computer systems learning from examples (Hopgood, 2001).",
+      "sentence": "How does knowledge get to the knowledge base? There are several main methods used for this purpose (Hopgood, 2001): 1) knowledge is acquired from a domain expert, processed by a specialist called a knowledge engineer and then added to the knowledge base, 2) the domain expert can describe and store knowledge using an automated knowledge acquisition system, and 3) nowadays intelligent computer systems are able to learn from examples.",
+      "language": "en",
+      "generated": false,
+      "uid": "51c8a839-8ca6-4649-aaf9-dfde20de502b"
+    },
+    {
+      "term": "knowledge engineer",
+      "definition": "A specialist who knows well methods and tools of artificial intelligence, as well as who has knowledge how to describe and represent knowledge in the knowledge base; works in close collaboration with a domain expert because he/she is not a specialist in all problem domains.",
+      "sentence": "The knowledge engineer is a specialist who knows well methods and tools of artificial intelligence, as well as who has knowledge how to describe and represent knowledge in the knowledge base. However, the knowledge engineer is not a specialist in all problem domains. This is a reason why he/she works in a close collaboration with the domain expert.",
+      "language": "en",
+      "generated": false,
+      "uid": "8171c213-40f3-4df3-9de7-976096c4888c"
+    },
+    {
+      "term": "Domain expert",
+      "definition": "An expert in a specific problem domain who uses conditions specified in rules in a certain order and applies rules in a certain order, whose behavior (gathering info first vs. starting with hypothetical solution) determines the choice of inference engine.",
+      "sentence": "It is well known that problem domain experts use conditions specified in rules in a certain order and also apply rules in a certain order... If a domain expert first needs to gather some information and then tries to infer from it whatever can be inferred, choose the forward chaining inference engine. However, if your domain expert begins with a hypothetical solution and then attempts to find facts to prove it, choose the backward chaining inference engine.",
+      "language": "en",
+      "generated": false,
+      "uid": "a2899f9b-623c-4636-b017-c0eaca2e7160"
+    },
+    {
+      "term": "knowledge acquisition system",
+      "definition": "An automated system that could be used either by the domain expert directly or by the knowledge engineer to describe knowledge and to build a knowledge base; can offer a variety of user interfaces (e.g., creation of diagrams representing some scenarios from the problem domain or structured description of knowledge) and includes a set of tools for analysis, generation of knowledge, and checking consistency of a created representation.",
+      "sentence": "The knowledge acquisition system is an automated system that could be used either by the domain expert directly or by the knowledge engineer to describe knowledge and to build a knowledge base. Such systems can offer a variety of user interfaces, for example, they could offer creation of diagrams representing some scenarios from the problem domain or the creation of structured description of knowledge. Moreover, such systems include a set of tools used for the analysis and generation of knowledge and checking the consistency of a created representation.",
+      "language": "en",
+      "generated": false,
+      "uid": "c8dc2c73-1da4-4d1d-95a5-1c95f6edf5e7"
+    },
+    {
+      "term": "expert system",
+      "definition": "An intelligent computer system that emulates the human expert’s methodology and performance; a knowledge-based intelligent system that solves problems in a narrowly specialised domain in a way and at a performance level similar to one of the human experts (Luger, 2009; Negnevitsky, 2011); addresses various problems like interpretation, prediction, diagnosis, design, planning, monitoring, control.",
+      "sentence": "Intelligent computer systems that emulate the human expert’s methodology and performance are called expert systems (Luger, 2009). An expert system is a knowledge-based intelligent system that solves problems in a narrowly specialised domain in a way and at a performance level similar to one of the human experts (Luger, 2009; Negnevitsky, 2011). Expert systems address a variety of problems ((Waterman, 1986) as cited in (Luger, 2009)): Interpretation - forming high-level conclusions from collections of raw data. Prediction - projecting probable consequences of given situations. Diagnosis - determining the cause of malfunctions in complex situations based on observable symptoms. Design - finding a configuration of system components that meets performance goals while satisfying a set of design constraints. Planning - devising a sequence of actions that will achieve a set of goals given certain starting conditions and run-time constraints. Monitoring - comparing a system’s observed behaviour to its expected behaviour (for example, instruction-assisting in the education process in technical domains). Control - governing the behaviour of a complex environment.",
+      "language": "en",
+      "generated": false,
+      "uid": "d33775d3-8413-4a94-aab4-e4ee994ae309"
+    },
+    {
+      "term": "knowledge representation schema",
+      "definition": "Means that offer a set of formal conventions and rules used to describe knowledge; using them, a knowledge representation or description is created; several categories exist: logical, networked, structured, procedural/rule-based.",
+      "sentence": "Knowledge representation schemas are means that offer a set of formal conventions and rules used to describe knowledge. Using them, a knowledge representation or description is created. Several categories of knowledge representation schemas exist in the field of artificial intelligence (Grimm et al., 2007; Mylopoulos and Levesque, 1983):",
+      "language": "en",
+      "generated": false,
+      "uid": "6bbcae18-0084-446d-b53d-4420f7ce6102"
+    },
+    {
+      "term": "logical knowledge representation schema",
+      "definition": "A category of knowledge representation schema that represents knowledge in the form of logical statements, using constants, variables, functions, predicates, logical operators, and apply inference rules that allow getting new true knowledge from a set of true knowledge.",
+      "sentence": "logical knowledge representation schemas represent knowledge in the form of logical statements, using constants, variables, functions, predicates, logical operators, and apply inference rules that allow getting new true knowledge from a set of true knowledge;",
+      "language": "en",
+      "generated": false,
+      "uid": "83110cd5-2da4-45aa-8059-b2f91adcc91c"
+    },
+    {
+      "term": "networked knowledge representation schema",
+      "definition": "A category of knowledge representation schema that represents knowledge in the form of a directed labelled graph, where each node displays a simple object/concept and directed labelled arcs represent relations between them; based on associationist theories of human mind that postulate knowledge on different concepts is related by associations in the human mind and these associations define the meaning of a concept in relation to meaning of other concepts.",
+      "sentence": "networked knowledge representation schemas represent knowledge in the form of a directed labelled graph, where each node displays a simple object/concept and directed labelled arcs represent relations between them; [...] Networked knowledge representation schemas are based on associationist theories of human mind that were developed in psychology. These theories postulate that knowledge on different concepts is related by associations in the human mind and these associations define the meaning of a concept in relation to meaning of other concepts (Luger, 2009)",
+      "language": "en",
+      "generated": false,
+      "uid": "2012d755-fb22-4835-a92e-f142bd875945"
+    },
+    {
+      "term": "structured knowledge representation schema",
+      "definition": "A category of knowledge representation schema that also uses a graph to represent knowledge, but each node is displayed as a complex structure with all characteristics and components of the object/ concept.",
+      "sentence": "structured knowledge representation schemas also use a graph to represent knowledge, but each node is displayed as a complex structure with all characteristics and components of the object/ concept;",
+      "language": "en",
+      "generated": false,
+      "uid": "73bd62f9-c0a7-4e89-8fb1-f050df5e4b6a"
+    },
+    {
+      "term": "procedural or rule-based knowledge representation schema",
+      "definition": "A category of knowledge representation schema that represents knowledge in the form of a set of procedures/instructions.",
+      "sentence": "procedural or rule-based knowledge representation schemas represent knowledge in the form of a set of procedures/instructions.",
+      "language": "en",
+      "generated": false,
+      "uid": "defaf7ce-2467-46b8-92a9-51bed6a344f3"
+    },
+    {
+      "term": "associationist theories (of human mind)",
+      "definition": "Theories developed in psychology that postulate that knowledge on different concepts is related by associations in the human mind and these associations define the meaning of a concept in relation to meaning of other concepts (Luger, 2009).",
+      "sentence": "Networked knowledge representation schemas are based on associationist theories of human mind that were developed in psychology. These theories postulate that knowledge on different concepts is related by associations in the human mind and these associations define the meaning of a concept in relation to meaning of other concepts (Luger, 2009)",
+      "language": "en",
+      "generated": false,
+      "uid": "d7617ae9-4081-46ce-b27a-341602241f58"
+    },
+    {
+      "term": "hierarchical organization of concepts",
+      "definition": "A way concepts are organized, revealed by research works in psychology, where concepts are related in a hierarchical manner (implied by text: research showed concepts are organized hierarchically).",
+      "sentence": "Research works in psychology revealed that concepts are organized in a hierarchical manner (implied by text: Collins and Levin, 1987).",
+      "language": "en",
+      "generated": false,
+      "uid": "86f13f89-1d37-435e-a595-f5e885b75d6c"
+    },
+    {
+      "term": "Hierarchical levels of knowledge storage",
+      "definition": "Knowledge is organized and stored at different hierarchical levels in memory; accessing features of a concept requires time to traverse the path from the activated concept to its specific features.",
+      "sentence": "This proved that knowledge is stored at different hierarchical levels and time is needed to go along the path from the activated concept to its features.",
+      "language": "en",
+      "generated": false,
+      "uid": "4eb590be-ba46-4773-92ee-3cd265d6e357"
+    },
+    {
+      "term": "Reaction time",
+      "definition": "The duration taken for a person to respond to a question, used in experiments to measure how knowledge is retrieved from hierarchical memory structures.",
+      "sentence": "So, the previously described experiment showed that the mean reaction time to the question “Can a canary bird fly?” is higher than the mean reaction time to the question “Can a canary bird sing?”",
+      "language": "en",
+      "generated": false,
+      "uid": "e01c5060-100f-44a9-8326-9b653194423a"
+    },
+    {
+      "term": "Semantic network",
+      "definition": "A knowledge representation schema that models knowledge as a graph: labeled nodes represent domain objects/concepts, and directed labeled arcs represent relations between them (Callan, 2003; Luger, 2009; Mallach, 1994; Winston, 1992).",
+      "sentence": "Based on the made experiment, Collins and Quillian created a semantic network that is displayed in Figure 4. (the text fragment is based on information given in (Luger, 2009)) A semantic network is a knowledge representation schema that represents knowledge as a graph: labelled nodes in this graph correspond to domain objects/concepts but directed labelled arcs – to relations between them (Callan, 2003; Luger, 2009; Mallach, 1994; Winston, 1992).",
+      "language": "en",
+      "generated": false,
+      "uid": "100dbb2c-c959-460d-9ec4-1d1cca851368"
+    },
+    {
+      "term": "Knowledge base (rooted in semantic networks)",
+      "definition": "A structured collection of concepts and their relations organized within a semantic network.",
+      "sentence": "Therefore, a knowledge base rooted in semantic networks includes a network of concepts and their relations.",
+      "language": "en",
+      "generated": false,
+      "uid": "7c8a8456-a31b-4b2c-8deb-64da964d2456"
+    },
+    {
+      "term": "Subclass-class relation",
+      "definition": "A hierarchical relation represented by titles like “is a” (or “is a subclass of,” etc.), linking narrower concepts to broader concepts; direction is from the narrower to the broader concept.",
+      "sentence": "Several kinds of relations are used in semantic networks: A relation “subclass-class” (also “subset-set”, “subtype-type”, “ subkind -kind”) is represented by a title of “is a” (also “is a subclass of”, “is a subset of”, “is a type of” or “is a kind of”). It allows showing hierarchical relations by relating narrower concepts to broader concepts (Fig.6).",
+      "language": "en",
+      "generated": false,
+      "uid": "115d87ed-09c4-4535-aa9a-d0ef06dd9197"
+    },
+    {
+      "term": "Instance-class relation",
+      "definition": "A hierarchical relation represented by “is an instance/example of,” linking a specific object to the class/set/type/kind it belongs to; direction is from the example to the class.",
+      "sentence": "A relation “instance-class/set/type/kind” is represented by the title of “is an instance/example of”. It also allows creating hierarchical relations by relating one specific object in the problem domain to a class/set/type/kind it belongs to (Fig.7).",
+      "language": "en",
+      "generated": false,
+      "uid": "61680605-30c1-433b-951f-a61c69575f73"
+    },
+    {
+      "term": "Part-whole relation",
+      "definition": "A relation represented by “Part of,” linking parts of an object to the whole; without parts, the object loses important properties or appearance; direction is from parts to the whole.",
+      "sentence": "A relation “part-whole” is represented by the title of “Part of” (Fig.8). It allows relating parts of the object to the whole object. Without the defined parts, the object will lose some important properties or its original appearance.",
+      "language": "en",
+      "generated": false,
+      "uid": "d75f5d8c-0c29-4313-9873-2ceb20db8165"
+    },
+    {
+      "term": "Object-property relation",
+      "definition": "A relation represented by “property/has a property of,” linking objects/concepts to their characteristics (properties), which can be quantitative or qualitative; direction is from the object to the property.",
+      "sentence": "A relation “object-property” is represented by the title of “property/has a property of”. It allows relating objects/concepts to their properties (Fig.9). A property is a characteristic of an object/concept that can be measured by quantitative (numerical) or qualitative (descriptive) values.",
+      "language": "en",
+      "generated": false,
+      "uid": "e696aa54-2a52-40a5-bec8-9450c88fd148"
+    },
+    {
+      "term": "Property-value relation",
+      "definition": "A relation represented by “value,” linking properties to their specific values; can only follow the “object-property” relation; direction is from the property to its value.",
+      "sentence": "A relation “property-value” is represented by the title of “value”. It allows relating properties of objects/concepts to their values (Fig.10). This relation can come only after the relation “property/has a property of”.",
+      "language": "en",
+      "generated": false,
+      "uid": "e3c309ec-7160-4912-82c9-31e9d07e3be2"
+    },
+    {
+      "term": "Linguistic relations",
+      "definition": "Relations (e.g., like, own, travel) that specify other types of connections not covered by subclass-class, instance-class, part-whole, object-property, or property-value relations.",
+      "sentence": "Linguistic relations (Fig.11). They allow specifying any other kind of relations (for example, like, own, travel, etc.) that cannot be represented by the previously mentioned types of relations.",
+      "language": "en",
+      "generated": false,
+      "uid": "3f103b9c-bfff-412c-99dc-59f56bb5b889"
+    },
+    {
+      "term": "Inheritance (in semantic networks)",
+      "definition": "A feature where a narrower node (subclass/instance) automatically acquires knowledge from broader nodes (class/superclass) in the network; reduces knowledge base size and is performed dynamically by intelligent systems.",
+      "sentence": "Inheritance is a feature of semantic networks (Luger, 2009). Inheritance is a process by which a narrower node automatically inherits knowledge from the network, that is, a subclass/subset/subtype/ subkind node inherits knowledge from a class/set/type/kind node or an instance inherits knowledge from a subclass/subset/subtype/ subkind node or a class/set/type/kind node. [...] Inheritance allows reducing the size of the knowledge base and it is performed dynamically by the intelligent system when it is needed.",
+      "language": "en",
+      "generated": false,
+      "uid": "73f2cd7e-c4ef-4d56-be51-c93b980aff6b"
+    },
+    {
+      "term": "Inference engine (for semantic networks)",
+      "definition": "A component that enables intelligent systems to use knowledge from semantic networks, operating on principles: explore relations via arc directions; check local relations first, then use inheritance if knowledge is missing.",
+      "sentence": "To provide possibilities for an intelligent system to use knowledge represented in the form of a semantic network, the inference engine is needed. The inference engine for semantic networks is based on the following principles: to acquire knowledge about some object/concept, explore relations of the object/concept to other objects/concept by following direction of arcs; to find knowledge about a specific object/concept: check local relations of the object/ concept; if knowledge is not found, perform inheritance (if it is possible).",
+      "language": "en",
+      "generated": false,
+      "uid": "5d221a35-8e49-42d2-a46a-3b5a7c1b58f1"
+    },
+    {
+      "term": "Declarative knowledge",
+      "definition": "Knowledge about facts, objects, and concepts (as opposed to procedural knowledge); the only type of knowledge semantic networks can represent.",
+      "sentence": "At the same time, semantic networks have disadvantages: they represent only declarative knowledge (knowledge about facts, objects, and concepts );",
+      "language": "en",
+      "generated": false,
+      "uid": "44894c39-c735-4be0-b026-4f1abf1cb1c8"
+    },
+    {
+      "term": "procedural attachment",
+      "definition": "A feature where a slot can have regular procedures and/or demons added to it (Negnevitsky, 2011).",
+      "sentence": "",
+      "language": "en",
+      "generated": false,
+      "uid": "69c51092-b654-486c-803b-f70a64585c63"
+    },
+    {
+      "term": "regular procedure",
+      "definition": "A self-contained piece of computer code written by the developer of an intelligent computer system, used for purposes like generating an object image, calculating numerical values (e.g., taxes), or acquiring external data (Negnevitsky, 2011).",
+      "sentence": "",
+      "language": "en",
+      "generated": false,
+      "uid": "22817166-18fc-4113-a028-401bdcf6924b"
+    },
+    {
+      "term": "demons",
+      "definition": "Procedures invoked as a side effect of some other action in the knowledge base of a frame-based expert system; they are triggered automatically when a slot value is accessed, control slot-level manipulations, and are typically defined in class/sub-class frames before being inherited and executed in instance frames (Jones, 2009; Luger, 2009; Mallach, 1994; Negnevitsky, 2011; Winston, 1992).",
+      "sentence": "",
+      "language": "en",
+      "generated": false,
+      "uid": "d06baf39-57ae-45d7-802b-bb490c25c296"
+    },
+    {
+      "term": "IF-NEEDED demon",
+      "definition": "A standard demon triggered when a slot value is unspecified and needs to be calculated or set.",
+      "sentence": "",
+      "language": "en",
+      "generated": false,
+      "uid": "eda34fc5-13be-4a7c-8b55-dad6f900dd6c"
+    },
+    {
+      "term": "IF-CHANGED demon",
+      "definition": "A standard demon triggered when a slot value changes.",
+      "sentence": "",
+      "language": "en",
+      "generated": false,
+      "uid": "9bb482c3-7b9e-4043-973b-7f95b70d8408"
+    },
+    {
+      "term": "IF-ADDED demon",
+      "definition": "A standard demon triggered when an unspecified slot value is added to a frame.",
+      "sentence": "",
+      "language": "en",
+      "generated": false,
+      "uid": "94e07a0d-15f1-4cef-a4e9-cad775606993"
+    },
+    {
+      "term": "IF-REMOVED demon",
+      "definition": "A standard demon triggered when a slot value is deleted.",
+      "sentence": "",
+      "language": "en",
+      "generated": false,
+      "uid": "55adac55-42e4-4968-9571-1f6b118e503b"
+    },
+    {
+      "term": "inference engine of frames",
+      "definition": "A component that acquires knowledge about an object/concept by finding the corresponding frame, checking its slots, and (if necessary) performing inheritance, triggering inherited IF-NEEDED demons, or exploring local relations with other frames until the needed knowledge is obtained (Negnevitsky, 2011).",
+      "sentence": "",
+      "language": "en",
+      "generated": false,
+      "uid": "f2836d17-3dfa-4cd2-a1bc-b43cefd3f688"
+    },
+    {
+      "term": "frame-based expert system",
+      "definition": "A type of expert system where demons implement actions (Jones, 2009; Luger, 2009; Mallach, 1994; Negnevitsky, 2011; Winston, 1992).",
+      "sentence": "",
+      "language": "en",
+      "generated": false,
+      "uid": "5478be15-ca27-42ee-a575-0cd8fe6dc2ce"
+    },
+    {
+      "term": "class frame",
+      "definition": "A high-level or sub-level frame in a frame-based system that defines slots and demons inherited by instance frames (e.g., Person, Animal, Cat, Dog in the example).",
+      "sentence": "",
+      "language": "en",
+      "generated": false,
+      "uid": "0c702d9a-361d-4a96-bc37-6ad481b57732"
+    },
+    {
+      "term": "sub-class frame",
+      "definition": "A frame that inherits slots from a higher-level class frame and may add new slots (e.g., Cat and Dog inherit from Animal; Tom and Rex are instances of sub-classes) (Negnevitsky, 2011).",
+      "sentence": "",
+      "language": "en",
+      "generated": false,
+      "uid": "81311955-7cf2-4e1e-896a-813b90bbe207"
+    },
+    {
+      "term": "instance frame",
+      "definition": "A frame that represents a specific instance of a class or sub-class frame (e.g., TreeAlex, BrownLucie, Tom, Rex in the example).",
+      "sentence": "",
+      "language": "en",
+      "generated": false,
+      "uid": "c615c8a0-c5ce-4179-a4bf-cc89195cb922"
+    },
+    {
+      "term": "generalization relation",
+      "definition": "A relation in a frame system represented as a Class slot in sub-class and instance frames, linking lower-level frames to higher-level classes (e.g., Cat-Animal, TreeAlex-Person).",
+      "sentence": "",
+      "language": "en",
+      "generated": false,
+      "uid": "b24959f8-8567-4a4c-b3cf-0c2350d41433"
+    },
+    {
+      "term": "associative relations",
+      "definition": "Relations between frames that describe connections like ownership (Owns, Animal owner) or fear (Afraid of) (e.g., BrownLucie-Tom via Owns; Tom-Rex via Afraid of).",
+      "sentence": "",
+      "language": "en",
+      "generated": false,
+      "uid": "9bc68821-4a18-4145-9e2c-d99d7abca904"
+    },
+    {
+      "term": "Rule-based expert system",
+      "definition": "A system where both data-driven and goal-driven search directions can be combined; the intelligent computer system can start by applying data-driven search, demand user facts, switch to goal-driven search, and back to data-driven when new facts enter to maximize use of new information.",
+      "sentence": "It is possible to combine both search directions in a rule-based expert system (Negnevitsky , 2011; Winston, 1992). In this case, the intelligent computer system can start by applying the data-driven search and demand the user to deliver known facts and then the system can switch on to the goal-driven search, as well as to switch on back to the data-driven search when new facts are entering the system intending to maximise the use of new information in the problem-solving process.",
+      "language": "en",
+      "generated": false,
+      "uid": "af80a8bf-de44-41e1-9077-22a15156f5ba"
+    },
+    {
+      "term": "procedural knowledge representation schemas",
+      "definition": "Schemas used to develop rule-based systems, representing problem-solving instructions rather than knowledge about objects/concepts (e.g., production rules and production systems).",
+      "sentence": "",
+      "language": "en",
+      "generated": false,
+      "uid": "36789218-1a86-48a1-96b4-085ca2715ff0"
+    },
+    {
+      "term": "production rule",
+      "definition": "The simplest type of rule in procedural knowledge representation, a chunk of problem-solving knowledge structured as IF condition THEN consequence (action/statement/conclusion); may have multiple conditions/consequences joined by logical operators (AND/OR) and include objects with values linked by operators (e.g., is red).",
+      "sentence": "",
+      "language": "en",
+      "generated": false,
+      "uid": "2006b8c4-ae4d-41e1-a90d-22578aa989df"
+    },
+    {
+      "term": "Backward chaining",
+      "definition": "Corresponds to a decomposition of the problem’s goal into simpler subgoals; backward search in an expert system corresponds roughly to the process of hypothesis testing in human problem solving.",
+      "sentence": "Backward chaining corresponds to a decomposition of the problem’s goal into simpler subgoals; thus, backward search in an expert system corresponds roughly to the process of hypothesis testing in human problem solving (Luger, 2009).",
+      "language": "en",
+      "generated": false,
+      "uid": "0963e548-4b9a-4d5c-8910-11349784ce9e"
+    },
+    {
+      "term": "Goal-driven search",
+      "definition": "Typically used in tasks of diagnosis when it is known what happened and it is necessary to understand reasons for it.",
+      "sentence": "Goal-driven search is typically used in tasks of diagnosis when it is known what happened and it is necessary to understand reasons for it.",
+      "language": "en",
+      "generated": false,
+      "uid": "a596f4d9-d158-4a40-8863-eac6451d5541"
+    },
+    {
+      "term": "Data-driven search",
+      "definition": "A type of search where a domain expert first gathers some information and then tries to infer from it whatever can be inferred, corresponding to choosing a forward chaining inference engine.",
+      "sentence": "If a domain expert first needs to gather some information and then tries to infer from it whatever can be inferred, choose the forward chaining inference engine.",
+      "language": "en",
+      "generated": false,
+      "uid": "6772ddcc-b123-4882-847a-229603d79cad"
+    },
+    {
+      "term": "Forward chaining inference engine",
+      "definition": "Chosen when a domain expert first gathers some information and then tries to infer from it whatever can be inferred.",
+      "sentence": "If a domain expert first needs to gather some information and then tries to infer from it whatever can be inferred, choose the forward chaining inference engine.",
+      "language": "en",
+      "generated": false,
+      "uid": "d181dc1d-4f02-4005-bf32-0af975feec48"
+    },
+    {
+      "term": "Backward chaining inference engine",
+      "definition": "Chosen when a domain expert begins with a hypothetical solution and then attempts to find facts to prove it.",
+      "sentence": "However, if your domain expert begins with a hypothetical solution and then attempts to find facts to prove it, choose the backward chaining inference engine.",
+      "language": "en",
+      "generated": false,
+      "uid": "30df2d24-1410-4aa3-9a8a-bfbf7f8e4789"
+    },
+    {
+      "term": "Production rules",
+      "definition": "Rules that specify conditions in a certain order and are applied in a certain order by problem domain experts; their structure and order in the knowledge base determine how and how quickly the knowledge base is searched, and they are critical in controlling search to make the system behave logically.",
+      "sentence": "It is well known that problem domain experts use conditions specified in rules in a certain order and also apply rules in a certain order. Such an approach determines the conditions for successful problem solving. Therefore, the structure of rules used by the human experts must be preserved in building a knowledge base... This form of the rules is critical in controlling search, making the system behave logically. The structure and the order of production rules in the knowledge base determine how to search the knowledge base and how quickly it will be searched.",
+      "language": "en",
+      "generated": false,
+      "uid": "7c1e369c-7619-456e-bd34-23132a4861de"
+    },
+    {
+      "term": "Conflict resolution",
+      "definition": "The method of choosing one rule to fire from those that are able to fire, i.e., from the set of enabled rules, known as the conflict set.",
+      "sentence": "Conflict resolution is the method of choosing one rule to fire from those that are able to fire, i.e., from the set of enabled rules, known as the conflict set (Hopgood, 2001; Luger, 2009; Negnevitsky , 2011).",
+      "language": "en",
+      "generated": false,
+      "uid": "eae163ce-c94e-49cf-bbed-941de7b47bb1"
+    },
+    {
+      "term": "Conflict set",
+      "definition": "The set of enabled rules from which one rule is chosen to fire via conflict resolution.",
+      "sentence": "Conflict resolution is the method of choosing one rule to fire from those that are able to fire, i.e., from the set of enabled rules, known as the conflict set (Hopgood, 2001; Luger, 2009; Negnevitsky , 2011).",
+      "language": "en",
+      "generated": false,
+      "uid": "a0242f13-652a-4481-bbcc-5146c91e92d9"
+    },
+    {
+      "term": "Conflict resolution strategy",
+      "definition": "A strategy for resolving conflicts in production systems, such as firing the first/the last rule found, firing rules based on their priorities, firing more specific rules, or firing the rule that uses the most recently entered data in working memory.",
+      "sentence": "Both the structure and the sequence of production rules are significant in the context of a chosen conflict resolution strategy... There are different strategies how to resolve conflicts in production systems, for example: to fire the first/the last rule found... to fire rules based on their priorities... to fire more specific rules... fire the rule that uses the data most recently entered in the working memory.",
+      "language": "en",
+      "generated": false,
+      "uid": "76781f23-3b62-41c6-afa0-e1e60239371d"
+    },
+    {
+      "term": "Working memory",
+      "definition": "A component where facts are stored with time tags; the rule whose antecedent uses the most recently added data to working memory is fired first in one conflict resolution strategy.",
+      "sentence": "fire the rule that uses the data most recently entered in the working memory. This method relies on time tags attached to each fact in the working memory; thus, in the conflict set, the expert system first fires the rule whose antecedent uses the data most recently added to the working memory (Negnevitsky, 2011).",
+      "language": "en",
+      "generated": false,
+      "uid": "391c7c02-e03b-4559-b269-a29f707ca053"
+    },
+    {
+      "term": "Rule-based expert systems advantages",
+      "definition": "Include production rules as a natural knowledge representation (human experts use 'if...then...'), uniform structure (unified storage, self-documented), separation of knowledge and control (ease of modifying knowledge base without changing control code and vice versa), modularity of production rules (syntactic independence, incremental development), tracing and explanation (easy to trace execution, meaningful explanations), and dealing with incomplete and uncertain knowledge (via confidence factors).",
+      "sentence": "Rule-based expert systems have the following advantages: Production rules are a natural way of knowledge representation because human experts very often explain problem-solving using constructions like 'if... then...' (Negnevitsky , 2011 ); Uniform structure. Production rules offer a unified way of storing knowledge because each rule is an independent unit of knowledge; thus, the very syntax of production rules enables them to be self-documented (Negnevitsky , 2011). Separation of knowledge and control. Knowledge is stored in the knowledge base, but its processing mechanism is the inference engine. The advantages of this separation include ease of modifying the knowledge base without requiring a change in the code for program control and, conversely, the ability to alter the code for program control without changing the set of production rules (Hopgood, 2001; Luger, 200; Negnevitsky , 2011) Modularity of production rules. Rules have no syntactic interactions... This syntactic independence supports the incremental development of expert systems by successively adding, deleting, or modifying the knowledge (rules) of the system. (the text fragment is based on the information given in (Luger, 2009; Negnevitsky , 2011) Tracing and explanation. The modularity of rules and the iterative nature of their execution make it easier to trace the execution of production rules... the rule content can provide a meaningful explanation of the system’s current state and action. (the text fragment is based on the information given in (Luger, 2009) Dealing with incomplete and uncertain knowledge. Most rule-based expert systems are capable of representing and reasoning with incomplete and uncertain knowledge by adding confidence factors.",
+      "language": "en",
+      "generated": false,
+      "uid": "70e983ab-c8d5-47bd-85b0-1ff49c3e823c"
+    },
+    {
+      "term": "Rule-based expert systems disadvantages",
+      "definition": "Include difficulty determining each rule’s contribution to problem-solving with many rules, computational resource consumption from searching the whole knowledge base in each iteration (slow with over 100 rules, unsuitable for real-time applications), and inability to learn from experience or recognize outdated rules.",
+      "sentence": "However, rule-based expert systems have also disadvantages (Negnevitsky , 2011): in the case of the considerable number of production rules, it is difficult to find out the contribution of each specific rule to the problem-solving process; in each iteration, the inference mechanism searches the whole knowledge base. It could be a very computational resource-consuming process. Expert systems with a large set of rules (over 100 rules) can be slow, and thus can be unsuitable for real-time applications; rule-based expert systems are not able to learn from the experience and understand which rules are already out-of-date.",
+      "language": "en",
+      "generated": false,
+      "uid": "ac5a5310-e53e-4b87-9a27-5e2022c4e9a4"
+    }
+  ],
+  "debug_info": {
+    "chunkSize": 7653,
+    "chunkCount": 41,
+    "contextLength": 4096,
+    "temperature": 0.5,
+    "seed": 42,
+    "prompt": "Your task is to analyze the provided text and create a glossary.\nInstructions:\n1. Extract ALL terms and concepts from the text.\n2. Define them using ONLY the provided text.\n3. NO external knowledge. Synthesize exclusively from source.\n4. DO NOT translate. Keep definitions in the source language.\n5. If no terms found, return an empty list.\n\nText to analyze:\n\n",
+    "elapsedTime": 7791.555,
+    "safeMargin": 0.5,
+    "maxResponseTokens": 4096,
+    "maxTimeout": 599940000,
+    "repeatPenalty": -1,
+    "inputSize": 312389
+  }
+}

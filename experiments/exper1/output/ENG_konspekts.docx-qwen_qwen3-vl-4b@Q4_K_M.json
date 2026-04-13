@@ -1,0 +1,199 @@
+{
+  "uid": "ef6f96a3-9894-4e17-a26f-7414559f77c5",
+  "domain": "unknown",
+  "language": "en",
+  "implementation": "LMStudio-qwen/qwen3-vl-4b@Q4_K_M",
+  "timestamp_start": 1774467674592,
+  "timestamp_end": 1774469229767,
+  "error_count": 40,
+  "glossary": [
+    {
+      "term": "algorithm",
+      "definition": "The process that expands the current node by generating its descendants and manages the OPEN and CLOSED lists, checks for goal nodes, and controls depth limits.",
+      "sentence": "The algorithm expands the current node I by generating its three descendants - nodes J, K, and G.",
+      "language": "en",
+      "generated": false,
+      "uid": "23eb35ee-6ee0-4117-a8fb-ccbf7f6a9771"
+    },
+    {
+      "term": "node",
+      "definition": "A single entity in the state space graph that can be expanded to generate descendants or be moved to the CLOSED list.",
+      "sentence": "The algorithm expands the current node I by generating its three descendants - nodes J, K, and G.",
+      "language": "en",
+      "generated": false,
+      "uid": "a7eeb45e-e997-4d46-aa40-af3fe17aec2d"
+    },
+    {
+      "term": "descendant",
+      "definition": "A node generated from the expansion of a current node.",
+      "sentence": "The algorithm expands the current node I by generating its three descendants - nodes J, K, and G.",
+      "language": "en",
+      "generated": false,
+      "uid": "a88b1345-2bf6-4365-9092-cd7d07fdefc0"
+    },
+    {
+      "term": "OPEN list",
+      "definition": "A list that stores nodes to be expanded, in the order they were found, and includes depth labels for each node.",
+      "sentence": "The nodes K and G are added to the left side of the OPEN list as new nodes in the sequence that they were found.",
+      "language": "en",
+      "generated": false,
+      "uid": "863ed02f-a726-4f07-b20a-bcaf3554bc38"
+    },
+    {
+      "term": "CLOSED list",
+      "definition": "A list that stores nodes that have been expanded, and prevents re-expansion of already visited nodes.",
+      "sentence": "Taking into account that the node J has been already added to the CLOSED list, it is not added to the OPEN list again.",
+      "language": "en",
+      "generated": false,
+      "uid": "e4cb6a21-6861-4f54-83a7-a39e7bf64bff"
+    },
+    {
+      "term": "current node",
+      "definition": "The node currently being processed by the algorithm, which is moved to the CLOSED list after expansion and may become the next node to expand.",
+      "sentence": "The node I is moved to the CLOSED list as an already expanded node. The node K, which is located on the first position of the OPEN list, becomes the current node.",
+      "language": "en",
+      "generated": false,
+      "uid": "a94c0cd4-9732-4e46-ab70-cbc7ee5bf8fd"
+    },
+    {
+      "term": "search goal node",
+      "definition": "A node that the algorithm is searching for, and when found, causes the algorithm to stop its operation.",
+      "sentence": "The algorithm checks if it is the search goal node. It is the search goal node. Therefore, the algorithm stops its operation.",
+      "language": "en",
+      "generated": false,
+      "uid": "c675eb6a-de84-47b1-aa60-af280d4c8cbb"
+    },
+    {
+      "term": "Depth-First Search",
+      "definition": "An algorithm that performs an exhaustive search of the state space graph and is guaranteed to find the search goal node if it exists, but is not guaranteed to find the shortest path to the search goal node.",
+      "sentence": "Depth-First Search is guaranteed to find the search goal node if it exists in the state space graph because this algorithm performs an exhaustive search of the state space graph. However, this algorithm is not guaranteed to find the shortest path to the search goal node, if such a path exists in the state space graph.",
+      "language": "en",
+      "generated": false,
+      "uid": "830a7d4a-ea97-494a-b7a3-33c7810532eb"
+    },
+    {
+      "term": "indefinitely deep paths",
+      "definition": "A shortcoming of Depth-First Search where the algorithm searches for the search goal node for a long time in depth before returning to higher levels, potentially taking considerable computational time.",
+      "sentence": "Besides that, the algorithm has another serious shortcoming—the problem of so-called indefinitely deep paths . It means that in a situation where the state space graph has many node levels, Depth-First Search will search for the search goal node for a long time in depth before it returns to higher levels. Therefore, if any of the potential goal nodes is placed at higher levels, searching can take considerable computational time.",
+      "language": "en",
+      "generated": false,
+      "uid": "52691d98-4dba-46fb-9f6b-d280651eabd0"
+    },
+    {
+      "term": "Depth-Limited Search",
+      "definition": "A modification of Depth-First Search that overcomes the drawback of indefinitely deep paths by imposing a depth limit that defines how deeply the state space graph can be explored.",
+      "sentence": "To overcome this shortcoming, a modification of Depth-First Search is offered. Depth-Limited Search is a modification of Depth-First Search that overcomes a drawback of Depth-First Search related to going along indefinitely deep paths.",
+      "language": "en",
+      "generated": false,
+      "uid": "959ad841-389d-4547-baee-2b520933facb"
+    },
+    {
+      "term": "depth limit",
+      "definition": "A predefined depth value that defines how deeply the state space graph can be explored, and nodes at or below this depth are considered leaf/root nodes.",
+      "sentence": "The depth limit should be provided before the algorithm starts its operation. Nodes located at the depth limit are considered to be leaf/root nodes (depending on the search direction).",
+      "language": "en",
+      "generated": false,
+      "uid": "1c6f2a86-669c-48d1-882e-f4af31d925db"
+    },
+    {
+      "term": "depth label",
+      "definition": "A value assigned to a node that indicates its depth level, allowing the algorithm to determine if it can generate descendants or should be considered a leaf/root node.",
+      "sentence": "In the implementation of the algorithm, the depth limit should be defined, and nodes should be added to both lists together with their depth labels. Depth labels allow the algorithm \"to understand\" if it is possible to generate descendants/ancestors of the current node or if the current node should be considered a leaf/root node.",
+      "language": "en",
+      "generated": false,
+      "uid": "0370ba16-b046-4949-ad55-617e431fb4b9"
+    },
+    {
+      "term": "search start node",
+      "definition": "The initial node in the search process, added to the OPEN list and assigned a depth level of 0.",
+      "sentence": "The search start node is A. The search goal node is K. The depth limit is 2. Iteration 0: The search start node is added to the OPEN list and it becomes the current node. Its depth is equal to 0.",
+      "language": "en",
+      "generated": false,
+      "uid": "ecc72923-d61c-4caf-92c9-a9eed60588ac"
+    },
+    {
+      "term": "iteration",
+      "definition": "A single step in the algorithm's execution, during which the current node is expanded, its descendants are generated, and checks are performed for goal node or depth limit.",
+      "sentence": "Iteration 0: The search start node is added to the OPEN list and it becomes the current node. Its depth is equal to 0. The CLOSED list is empty because none of the available nodes has been expanded so far.",
+      "language": "en",
+      "generated": false,
+      "uid": "badc69ca-ad23-484d-844f-1772ef2a353a"
+    },
+    {
+      "term": "tree crown",
+      "definition": "An analogy used to illustrate the difference between Depth-First Search and Depth-Limited Search, where Depth-Limited Search restricts exploration to a certain depth level.",
+      "sentence": "The analogy with the tree crown used before makes evident the difference between Depth-First Search and Depth-Limited Search (Figure 11).",
+      "language": "en",
+      "generated": false,
+      "uid": "2255d5ab-ee95-4269-85ae-3b4167d1c779"
+    },
+    {
+      "term": "depth level",
+      "definition": "The numerical value assigned to a node indicating its distance from the search start node, calculated by adding 1 to the depth level of the current node.",
+      "sentence": "The depth level of the search start node is equal to 0. The depth level of any other node is calculated by adding 1 to the depth level of the current node.",
+      "language": "en",
+      "generated": false,
+      "uid": "77c12340-2660-4eea-b9dc-de4082126a7a"
+    },
+    {
+      "term": "state space graph",
+      "definition": "A graph representation of a problem space where nodes are states and edges are actions or transitions between states.",
+      "sentence": "Depth-First Search is guaranteed to find the search goal node if it exists in the state space graph because this algorithm performs an exhaustive search of the state space graph.",
+      "language": "en",
+      "generated": false,
+      "uid": "1d729814-9ea8-4d27-b80c-a6cc08e85779"
+    },
+    {
+      "term": "data-driven search",
+      "definition": "A search method implemented by the algorithm using the state space graph as a data source, where nodes are expanded based on their connections and depth levels.",
+      "sentence": "Let us consider an example of Depth-Limited Search by implementing data-driven search in the state space graph you see in Figure 13.",
+      "language": "en",
+      "generated": false,
+      "uid": "e5587eec-9e02-4302-b157-a94a90d5da7e"
+    },
+    {
+      "term": "Figure 10",
+      "definition": "A visual representation illustrating the concept of Depth-Limited Search, where \"depth\" means going deeper and deeper into the state space graph while expanding nodes, and \"limited\" indicates a depth limit.",
+      "sentence": "The title of the algorithm reveals its main idea (Figure 10): “depth” means to go deeper and deeper into the state space graph while expanding nodes; “limited” indicates that there is a depth limit that defines how deeply the state space graph can be explored.",
+      "language": "en",
+      "generated": false,
+      "uid": "33eb730d-521e-42ec-b97e-59b808912bd3"
+    },
+    {
+      "term": "Figure 11",
+      "definition": "A visual representation illustrating the difference between Depth-First Search and Depth-Limited Search, using the analogy of a tree crown.",
+      "sentence": "The analogy with the tree crown used before makes evident the difference between Depth-First Search and Depth-Limited Search (Figure 11).",
+      "language": "en",
+      "generated": false,
+      "uid": "e8073a26-b2da-4326-861d-3e60825ff437"
+    },
+    {
+      "term": "Figure 12",
+      "definition": "A visual representation illustrating the two checks performed by the algorithm in each iteration: checking if the current node is the search goal node and checking if its depth is lower than the depth limit.",
+      "sentence": "In each iteration, the algorithm performs two checks (Figure 12): it checks if the current node is the search goal node and, if not, it checks if the depth of the current node is lower than the specified depth limit.",
+      "language": "en",
+      "generated": false,
+      "uid": "00051bde-55b2-4c4f-8faa-04ff9a86b39a"
+    },
+    {
+      "term": "Figure 13",
+      "definition": "A visual representation of the state space graph used in the example of Depth-Limited Search, with the search start node A, search goal node K, and depth limit 2.",
+      "sentence": "Let us consider an example of Depth-Limited Search by implementing data-driven search in the state space graph you see in Figure 13.",
+      "language": "en",
+      "generated": false,
+      "uid": "5612861c-79ab-4180-a24a-1c02e33ec574"
+    }
+  ],
+  "debug_info": {
+    "chunkSize": 7669,
+    "chunkCount": 41,
+    "contextLength": 4096,
+    "temperature": 0.5,
+    "seed": 42,
+    "prompt": "Your task is to analyze the provided text and create a glossary.\nInstructions:\n1. Extract ALL terms and concepts from the text.\n2. Define them using ONLY the provided text.\n3. NO external knowledge. Synthesize exclusively from source.\n4. DO NOT translate. Keep definitions in the source language.\n5. If no terms found, return an empty list.\n\nText to analyze:\n\n",
+    "elapsedTime": 1555.175,
+    "safeMargin": 0.5,
+    "maxResponseTokens": 4096,
+    "maxTimeout": 599940000
+  }
+}

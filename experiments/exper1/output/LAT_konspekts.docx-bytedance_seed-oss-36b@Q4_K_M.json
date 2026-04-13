@@ -1,0 +1,457 @@
+{
+  "uid": "29a5fe7b-b639-45e6-bc37-078238bae15f",
+  "domain": "domain",
+  "language": "lv",
+  "implementation": "LMStudio-bytedance/seed-oss-36b@Q4_K_M",
+  "timestamp_start": 1775038518082,
+  "timestamp_end": 1775043891344,
+  "error_count": 0,
+  "glossary": [
+    {
+      "term": "",
+      "definition": "",
+      "sentence": "",
+      "language": "en",
+      "generated": false,
+      "uid": "9e8b4023-5138-40a2-992a-02783f7d3ed5"
+    },
+    {
+      "term": "konekcionistiskā un simboliskā mākslīgā intelekta domāšanas paradigmu salīdzinājums",
+      "definition": "simboliskais mākslīgais intelekts",
+      "sentence": "konekcionistiskais zināšanu atspoguļojums",
+      "language": "mz",
+      "generated": false,
+      "uid": "f8e2f3d6-0814-4f6b-b506-35f5fcc60b1e"
+    },
+    {
+      "term": "konekcionistiskais mākslīgais intelekts",
+      "definition": "simboliskais zināšanu atspoguļojums",
+      "sentence": "vienkāršs (vājais) mākslīgais intelekts",
+      "language": "mz",
+      "generated": false,
+      "uid": "13a02e63-dd72-4e62-895a-bcfbe5ce8deb"
+    },
+    {
+      "term": "bezgalīgu ceļu problēma",
+      "definition": "Nopietns trūkums šim algoritmam, kad pārmeklēšana dziļumā, pie nosacījuma, ka stāvokļu telpas grafā ir daudz virsotņu līmeņu, var ilgi meklēt pārmeklēšanas mērķa virsotni dziļumos, pirms tas atgriezīsies uz augstākajiem līmeņiem, līdz ar to, ja kāda no potenciālām mērķa virsotnēm tiks izvietota augstākos līmeņos, tās sameklēšana var aizņemt ievērojamo laiku.",
+      "sentence": "",
+      "language": "lv",
+      "generated": false,
+      "uid": "26a5df16-089a-465d-b063-8d8062d43d1d"
+    },
+    {
+      "term": "pārmeklēšana dziļumā",
+      "definition": "Pārmeklēšanas veids, kas meklē pārmeklēšanas mērķa virsotni dziļumos stāvokļu telpas grafa līmeņos pirms atgriešanās uz augstākajiem līmeņiem; piemēram, izmantojot koka kronas analoģiju, vispirms pēta tuvākus zarus un pakāpeniski aiziet līdz zaru galiem.",
+      "sentence": "",
+      "language": "lv",
+      "generated": false,
+      "uid": "50093f06-d57a-442a-883d-0afbdd1bbd9e"
+    },
+    {
+      "term": "pārmeklēšana plašumā",
+      "definition": "Pārmeklējšanas veids, kas pēta stāvokļu telpas grafu līmeni pa līmenim; secīgi izvērš virsotnes vienā līmenī pirms pārimegām uz nākamo līmeni; realizējot to, jaunas virsotnes tiek pievienotas saraksta OPEN labajai pusei, un šis saraksts atbilst datu struktūrai - rinda, kas darbojas pēc principa \"Pirmais iekšā, Pirmais ārā\".",
+      "sentence": "",
+      "language": "lv",
+      "generated": false,
+      "uid": "d0e1c17c-f23c-431e-916a-4a2841a0af06"
+    },
+    {
+      "term": "stāvokļu telpas grafā",
+      "definition": "Grafs, kas tiek izmantots pārmeklēšanas algoritmiem, sastāv no virsotņu (piemēram, stāvokļi) un līmeņiem (attiecības starp tiem); analoģisks koka kronai, kurā var atrast tuvākos zarus un zaru galas.",
+      "sentence": "",
+      "language": "lv",
+      "generated": false,
+      "uid": "4c25267b-9e4b-4f9d-8c7d-96c345de5f5b"
+    },
+    {
+      "term": "virsotne",
+      "definition": "Stāvokļu telpas grafa sastāvdaļa, kas var būt pārmeklēšanas sākuma vai mērķa virsotne; piemēram, A, K, D, H, E, J, I, F (attēlā 9. att.) un tās pēcteču.",
+      "sentence": "",
+      "language": "lv",
+      "generated": false,
+      "uid": "3e6f950f-a951-440f-a782-8e11ed3e765d"
+    },
+    {
+      "term": "līmenis",
+      "definition": "Stāvokļu telpas grafa līmeņa, kas attiecas uz virsotņu atrašanās vietu - augstākajiem vai dziļākajiem līmeņiem; pārmeklēšana plašumā pēta tos pa līmenim, pirms pārimegām uz nākamo.",
+      "sentence": "",
+      "language": "lv",
+      "generated": false,
+      "uid": "7d809452-9906-4eb9-9b32-bca6b163b840"
+    },
+    {
+      "term": "pēctečus",
+      "definition": "Virsotņu, kas saistītas ar citu virsotni stāvokļu telpas grafa līmeņos (piemēram, virsotne A ir pēcteču D, H un E; virsotne D ir pēcteča J).",
+      "sentence": "",
+      "language": "lv",
+      "generated": false,
+      "uid": "67620ab8-8e20-4ab9-9d78-c277dd308bec"
+    },
+    {
+      "term": "saraksts OPEN",
+      "definition": "Datu struktūra, kas glabā virsotnes, kuras vēl nav apskatīta pārmeklēšanas algoritmom; jaunas virsotnes tiek pievienotas tai labajai pusei, un tas darbojas pēc principa \"Pirmais iekšā, Pirmais ārā\" (rinda).",
+      "sentence": "",
+      "language": "lv",
+      "generated": false,
+      "uid": "15df6013-90e5-4dcb-a47c-223ca23f9aae"
+    },
+    {
+      "term": "saraksts CLOSED",
+      "definition": "Datu struktūra, kas glabā virsotnes, kuras jau ir apskatītas un izvērstas pārmeklēšanas algoritmom; sākumā tukšs, piemēram, 0. iterācijā - tukšs, pēc 1. iterācijas satur A.",
+      "sentence": "",
+      "language": "lv",
+      "generated": false,
+      "uid": "3448e669-6e1e-4b19-9b46-88b3bee9c4b5"
+    },
+    {
+      "term": "pirmais iekšā, pirmais ārā",
+      "definition": "Princips, pēc kura darbojas saraksts OPEN pārmeklēšanā plašumā - pirma ievietotā virsotne ir pirmā, kas tiek izņemta no saraksta un apskatīta.",
+      "sentence": "",
+      "language": "lv",
+      "generated": false,
+      "uid": "7a42dccf-c05b-4996-812f-c27fcb60dfaa"
+    },
+    {
+      "term": "iterācija",
+      "definition": "Pāmēģinājums pārmeklēšanas algoritmam, kas apzīmē konkrētu soli: ievietošanu sākuma virsotnes OPEN sarakstā (0. iterācija), izvēršanu un pēcteču ģenerāciju (1., 2. utt. iterācijas), pārbaudi vai ir mērķa virsotne.",
+      "sentence": "",
+      "language": "lv",
+      "generated": false,
+      "uid": "6c1da27f-9709-4036-930f-103ba53e158b"
+    },
+    {
+      "term": "Stāvokļu telpas graf",
+      "definition": "Struktūra, kas sastāv no virsotņu un zarošanās, kurā tiek aprakstīts pārmeklējamo stāvokļu kopums un tiem saistītie ceļi (no teksta: \"stavokļu telpas grafa sarežģītību saista ar kopējo pārmeklējamo virsotņu skaitu\", \"apskatīt visus ceļus līdz dziļumam\", \"pārmeklējamo virsotņu skaits aug eksponenciāli\" un cit.).",
+      "sentence": "Tādējādi stāvokļu telpas grafa sarežģītību saista ar kopējo pārmeklējamo virsotņu skaitu (T) : 8. attēls atspoguļo stāvokļu telpas grafa vidējā zarošanās koeficienta B, dziļuma L un kopējā pārmeklējamo virsotņu skaita T savstarpējo atkarību .",
+      "language": "lv",
+      "generated": false,
+      "uid": "547545f4-6a09-4d7c-b29e-843980f64231"
+    },
+    {
+      "term": "Vidējais zarošanās koeficients (B)",
+      "definition": "Indikators, kas norāda vidēju apmeklētu pēcteču skaitu vienai virsotnei stāvokļu telpas grafā (no teksta: \"ja vidējais zarošanās koeficients ir 2 ( tas nozīmē , ka lielākajai daļai virsotņu ir tikai 2 pēcteči )\").",
+      "sentence": "Tajā var redzēt , ka, ja vidējais zarošanās koeficients ir 2 ( tas nozīmē , ka lielākajai daļai virsotņu ir tikai 2 pēcteči ), tad, lai apskatītu visus ceļus līdz 6. dziļumam , būs jāapskata vairāk par 100 virsotnēm .",
+      "language": "lv",
+      "generated": false,
+      "uid": "9163a7aa-00d5-4583-9824-a062786be572"
+    },
+    {
+      "term": "Dziļums (L)",
+      "definition": "Stāvokļu telpas grafa parametrs, kas saistīts ar pārmeklējamo ceļu garumu vai stāvokļu dziļumu no sākuma punkta (no teksta: \"lai apskatītu visus ceļus līdz 6. dziļumam\", \"palielinot dziļumu divās reizēs ( līdz 12), pārmeklējamo virsotņu skaits palielinās gandrīz 10 reizēs\").",
+      "sentence": "Tajā var redzēt , ka, ja vidējais zarošanās koeficients ir 2 ( tas nozīmē , ka lielākajai daļai virsotņu ir tikai 2 pēcteči ), tad, lai apskatītu visus ceļus līdz 6. dziļumam , būs jāapskata vairāk par 100 virsotnēm .",
+      "language": "lv",
+      "generated": false,
+      "uid": "125ebc2b-ef29-4ad6-9f0f-7a9258cfbd88"
+    },
+    {
+      "term": "Kopējā pārmeklējamo virsotņu skaits (T)",
+      "definition": "Stāvokļu telpas grafa metrika, kas norāda kopējo skaitu virsotņu, kuras jāapskata pārmeklēšanas procesā (no teksta: \"stavokļu telpas grafa sarežģītību saista ar kopējo pārmeklējamo virsotņu skaitu (T)\", \"lai apskatītu visus ceļus līdz 6. dziļumam , būs jāapskata vairāk par 100 virsotnēm\").",
+      "sentence": "Tādējādi stāvokļu telpas grafa sarežģītību saista ar kopējo pārmeklējamo virsotņu skaitu (T) : 8. attēls atspoguļo stāvokļu telpas grafa vidējā zarošanās koeficienta B, dziļuma L un kopējā pārmeklējamo virsotņu skaita T savstarpēju atkarību .",
+      "language": "lv",
+      "generated": false,
+      "uid": "340ae8eb-81e1-46e7-862e-95dd249b6a94"
+    },
+    {
+      "term": "Heiristiskā novērtējuma funkcija",
+      "definition": "funkcija, kas ļauj datoram novērtēt gājiena rezultātā veidojušos spēles stāvokļu izdevību un izvēlēties tādu gājienu, kas visticamāk vedīs uz datoram labvēlīgu iznākumu (uzvaras stāvokli vai sliktākajā gadījumā uz neizšķirtu rezultātu).",
+      "sentence": "Heiristiskā novērtējuma funkcija ļauj datoram novērtēt gājiena rezultātā veidojušos spēles stāvokļu izdevību un izvēlēties tādu gājienu , kas visticamāk vedīs uz datoram labvēlīgu iznākumu ( uzvaras stāvokli vai sliktākajā gadījumā uz neizšķirtu rezultātu ).",
+      "language": "lv",
+      "generated": false,
+      "uid": "d29475a9-2d67-4d25-8c32-f5d631921cd5"
+    },
+    {
+      "term": "Stāvokļu telpas grafa transformācija",
+      "definition": "Metode stāvokļu telpas grafa sarežģītības samazināšanai, kas involvēta grafstruktūras mainīšana (piemēram, simetriskuma pazīmu izmantojana), lai samazinātu pārmeklējamo virsotņu skaitu (no teksta: \"stavokļu telpas grafa transformācija\", \"Viena no piedāvātajām pieejām ir ņemt vērā simetriskuma pazīmi , kā to var darīt spēlē “ Krustiņi-nullītes ”, sākumā apskatot tikai trīs iespējamus gājienus\").",
+      "sentence": "Būtībā ir divas metodes stāvokļu telpas grafa sarežģītības samazināšanai : informētāku heiristiskā novērtējuma funkciju izmantošana . Šajā gadījumā heiristiskā novērtējuma funkcijā ir jāietver pēc iespējas vairāk faktoru , tomēr ir jāatceras par izmaksu kompromisu , kas tika atspoguļots 7. attēlā ; stāvokļu telpas grafa transformācija .",
+      "language": "lv",
+      "generated": false,
+      "uid": "39f29e8d-e5ca-4394-8898-481fd63a35e2"
+    },
+    {
+      "term": "Heiristiski informētie pārmeklēšanas algoritmi",
+      "definition": "Algoritmi, kuri izmanto pieredzēju vai problēmsfēras specifisku zināšanu (heiristiskas zināņas), lai samazinētu stāvokļu telpas grafā pārmeklējamo virsotņu skaitu un uzlabotu pārmeklēšanas efektivitāti (no teksta: \"Tēma - Heiristiski informētas pārmeklēšanas algoritmi\", \"izmantojot heiristiskas zināņas , algoritmi apskata mazāk virsotņu stāvokļu telpas grafā un rezultātā samazina arī kopēju pārmeklēšanas laiku\").",
+      "sentence": "Tēma - Heiristiski informētas pārmeklēšanas algoritmi Iepriekšējā tēmā mēs apspriedām , kā pārmeklēšanas efektivitāti stāvokļu telpas grafā var ievērojami uzlabot , izmantojot heiristiskas jeb pieredzē-balstītas zināņas .",
+      "language": "lv",
+      "generated": false,
+      "uid": "03e41547-852d-46a0-bfc7-083cbca7256c"
+    },
+    {
+      "term": "Neinformētas pārmeklēšanas algoritmi",
+      "definition": "Algoritmi, kuri neizmanto pieredzēju vai problēmsfēras specifisku zināšanu, bet paša darbībā izmanto tikai stāvokļu telpas grafu un sākuma/mērķa virsotnes datus, lai atrastu ceļu (no teksta: \"neinformētas pārmeklēšanas algoritmi saņem kā ieejas datus pārmeklēšanas sākuma virsotni un pārmeklēšanas mērķa virsotni , kā resursu – stāvokļu telpas grafu , kurā tie veic pārmeklēšanu\").",
+      "sentence": "Tādējādi neinformētas pārmeklēšanas algoritmi saņem kā ieejas datus pārmeklēšanas sākuma virsotni un pārmeklēšanas mērķa virsotni , kā resursu – stāvokļu telpas grafu , kurā tie veic pārmeklēšanu , un rezultātā tie izdod atrisinājuma ceļu (1. att.).",
+      "language": "lv",
+      "generated": false,
+      "uid": "4eaa4989-af32-4d2a-8dd3-7d7874134445"
+    },
+    {
+      "term": "funkcija",
+      "definition": "nav specifikētas definīcijas tekstā, taču piemērots konteksts apzīmē, ka funkcija var būt nepieciešama algoritmu darbībā un to trūkumi var izpausties, ja tā nav visai labi definēta.",
+      "sentence": "Taču , ja funkcija nav visai labi definēta , tad katram no šiem algoritmiem var izpausties tā trūkumi .",
+      "language": "lv",
+      "generated": false,
+      "uid": "93e1417e-c553-4e41-b4da-919ad8cc2278"
+    },
+    {
+      "term": "algoritms",
+      "definition": "procedūras vai darbpostumi, kas apraksta konkrētu uzdevumu risinājumu, un kuru trūkumi var izpausties, ja funkcija, uz ko tie balstās, nav visai labi definēta.",
+      "sentence": "Taču , ja funkcija nav visai labi definēta , tad katram no šiem algoritmiem var izpausties tā trūkumi .",
+      "language": "lv",
+      "generated": false,
+      "uid": "4bda8534-e319-4ce5-b260-de7a38d64384"
+    },
+    {
+      "term": "informācijas avoti",
+      "definition": "grāmatas un autori, uz kuriem balstās algoritmu apraksti: Coppin B. (2004). Artificial Intelligence Illuminated. Jones and Bartlett Publishers, 739p.; Jones T.M. (2009). Artificial Intelligence: A Systems Approach. Jones & Bartlett Learning, 498p.; Luger G.F. (2009). Artificial Intelligence: Structures and Strategies for Complex Problem Solving. Pearson Education, 784p.",
+      "sentence": "Izmantotie informācijas avoti Algoritmu apraksti balstās uz informāciju , kas ir dota šādās grāmatās : Coppin B. (2004). Artificial Intelligence Illuminated. Jones and Bartlett Publishers, 739p. Jones T.M. (2009). Artificial Intelligence: A Systems Approach. Jones & Bartlett Learning, 498p. Luger G.F. (2009). Artificial Intelligence: Structures and Strategies for Complex Problem Solving. Pearson Education, 784p.",
+      "language": "lv",
+      "generated": false,
+      "uid": "c6cc01bc-4847-4f52-a59f-612953c3bffa"
+    },
+    {
+      "term": "Heiristiski informētas pārmeklēšanas algoritmi spēļu izstrādei",
+      "definition": "algoritmi, kas realizē pārmeklējušanu divpersonu spēlēs, apstrādājot spēles koku, lai dators varētu izpildīt gājienus un virzīt spēli uz priekšu.",
+      "sentence": "Tēma - Heiristiski informētas pārmeklēšanas algoritmi spēļu izstrādei Divpersonu spēļu ar pilnu informāciju realizācija uzskatāmi demonstrē visās iepriekšējās tēmās apgūto jēdzienu praktisko lietojumu . Tātad spēļu realizācijā tiek izmantots spēles koks , kas ir stāvokļu telpas grafa paveids jeb datu struktūra , kas glabā informāciju par spēles gaitu tās stāvokļu un atļauto gājienu terminos . Heiristiski informētas pārmeklēšanas algoritmi divpersonu spēļu realizācijai realizē pārmeklēšanu , apstrādājot spēles koku, lai dators varētu izpildīt gājienus un virzīt spēli uz priekšu .",
+      "language": "lv",
+      "generated": false,
+      "uid": "b4336a91-2e67-44fe-b992-a1354dc52738"
+    },
+    {
+      "term": "Divpersonu spēļu ar pilnu informāciju realizācija",
+      "definition": "praktica lietojums iepriekšējās tēmās apgūto jēdzienu, kas demonstrē divpersonu spēļu izstrādi, izmantojot spēles koku un algoritmus.",
+      "sentence": "Tēma - Heiristiski informētas pārmeklēšanas algoritmi spēļu izstrādei Divpersonu spēļu ar pilnu informāciju realizācija uzskatāmi demonstrē visās iepriekšējās tēmās apgūto jēdzienu praktisko lietojumu .",
+      "language": "lv",
+      "generated": false,
+      "uid": "1244b514-73c2-4133-aef5-51f472725f36"
+    },
+    {
+      "term": "spēles koks",
+      "definition": "stāvokļu telpas grafa paveids vai datu struktūra, kas glabā informāciju par spēles gaitu, tās stāvokļus un atļauto gājienus terminos; var būt pilnībā pieejams (atspoguļojot visus atļautos gājienus no sākumstāvokļa līdz beigu stāvokļiem) vai daļēji pieejams (pilna spēles koka apakškoks, ģenerēts līdz noteiktajam dziļumam).",
+      "sentence": "Tātad spēļu realizācijā tiek izmantots spēles koks , kas ir stāvokļu telpas grafa paveids jeb datu struktūra , kas glabā informāciju par spēles gaitu tās stāvokļu un atļauto gājienu terminos .",
+      "language": "lv",
+      "generated": false,
+      "uid": "9c2f7f8e-c5ae-4863-9cd3-ad92697b3ad5"
+    },
+    {
+      "term": "Divpersonu spēļu ar pilnu informāciju realizācijas algoritma izvēle",
+      "definition": "procesa, kas atkarīga no spēles koka pieejamības (pilnībā vai daļēji pieejama).",
+      "sentence": "Divpersonu spēļu ar pilnu informāciju realizācijas algoritma izvēle ir atkarīga no spēles koka pieejamības .",
+      "language": "lv",
+      "generated": false,
+      "uid": "66415e61-0acb-4c95-9bfe-932a70522897"
+    },
+    {
+      "term": "Pilnībā pieejams (jeb pilns) spēles koks",
+      "definition": "spēles koks, kas atspoguļo visus spēlē atļautos gājienus no spēles sākumstāvokļa (kas atspoguļo spēles koka saknes virsotne) līdz visiem spēles beigu stāvokļiem (kas atspoguļo strupceļa virsotnes).",
+      "sentence": "Pilnībā pieejams ( jeb pilns ) spēles koks ir spēles koks , kas atspoguļo visus spēlē atļautos gājienus no spēles sākumstāvokļa , ko atspoguļo spēles koka saknes virsotne , līdz visiem spēles beigu stāvokļiem , ko atspoguļo strupceļa virsotnes .",
+      "language": "lv",
+      "generated": false,
+      "uid": "c8c8d5d8-6f74-4ca7-a791-84942caa032d"
+    },
+    {
+      "term": "Daļēji pieejams (jeb daļējais) spēles koks",
+      "definition": "pilna spēles koka apakškoks, kas ir ģenerēts līdz noteiktajam dziļumam.",
+      "sentence": "Daļēji pieejams ( jeb daļējais ) spēles koks ir pilna spēles koka apakškoks , kas ir ģenerēts līdz noteiktajam dziļumam .",
+      "language": "lv",
+      "generated": false,
+      "uid": "68d4eac2-119c-42ae-982a-582994b90a35"
+    },
+    {
+      "term": "maksimizētājs",
+      "definition": "spēlētājs, whose stratēģija ir darīt visu iespējamo, lai uzvarētu spēli.",
+      "sentence": "Abos gadījumos spēlētāju nosacīti sauc par: maksimizētāju – šī spēlētāja stratēģija ir darīt visu iespējamo , lai uzvarētu spēli ;",
+      "language": "lv",
+      "generated": false,
+      "uid": "39d06dfc-51f8-4e61-b529-a5189ea6271d"
+    },
+    {
+      "term": "minimizētājs",
+      "definition": "spēlētājs, whose stratēģija ir darīt visu iespējamo, lai neļautu maksimizētājam uzvarēt, cenšoties novest spēli uz stāvokli, kas ir vissliktākais maksimizētājam.",
+      "sentence": "minimizētāju - šī spēlētāja nosacītā stratēģija ir darīt visu iespējamo , lai neļautu maksimizētājam uzvarēt , cenšoties novest spēli uz stāvokli , kas ir vissliktākais maksimizētājam .",
+      "language": "lv",
+      "generated": false,
+      "uid": "76dbab80-1c72-49b3-9968-672df1495db3"
+    },
+    {
+      "term": "aglomeratīva hierarhiska klasterēšana",
+      "definition": "klasterēšanas metode, kurā katrā klasterēšanas solī tiek apvienoti klasteri ar mazāko attālumu starp tiem; soļi ir: piešķirt katru datu objektu vienam klasterim (veidojot N klasterus, kur N ir datu objektu skaits), aprēķināt attālumus starp klasteriem un apvienot divus ar mazāko attālumu, samazinot kopējo klasteru skaitu par 1, pārbaudīt vai visi dati ir vienā klasterī (ja nevis, atkārtot attālumu aprēķinu), pabeigt kad visi ir vienā klasterī",
+      "sentence": "2. attēlā ir parādīts aglomeratīvās hierarhiskās klasterēšanas process, kurā katrā klasterēšanas solī tiek apvienoti klasteri ar mazāko attālumu starp tiem . Aglomeratīvās hierarhiskās klasterēšanas soļi ir šādi (3. att.): Piešķirt katru datu objektu vienam klasterim . Šīs darbības rezultātā veidojas N klasteri , kur N ir datu objektu skaits datu kopā ; Aprēķināt attālumus starp klasteriem un divus klasterus ar mazāko attālumu starp tiem apvienot vienā klasterī . Šis solis samazina kopējo klasteru skaitu par 1; Pārbaudīt , vai visi datu objekti ievietoti vienā klasterī , un, ja tas tā nav, atgriezties pie attālumu aprēķina . Pabeigt algoritma darbību , ja visi datu objekti ir ievietoti vienā klasterī . ",
+      "language": "lv",
+      "generated": false,
+      "uid": "cb167109-b01b-4271-8c65-3c51ec3042ad"
+    },
+    {
+      "term": "sadaloša hierarhiska klasterēšana",
+      "definition": "klasterēšanas metode, kas izmanto klasteru hierarhijas veidošanas pieeju no augšas uz leju: sākas ar visus datu objektus vienā klasterī, pēc tam katrā līmenī rekursīvi sadala vienu esotāju klasteri divos jaunos, izvēloties sadalījumu, lai radētu divus jaunus klasterus ar vislielāko atšķirību starp tiem; pārtraucas, kad katrs datu objekts veido savu klasteri",
+      "sentence": "Sadalošā hierarhiskā klasterēšana izmanto klasteru hierarhijas veidošanas pieeju no augšas uz leju . Tā tiek uzsākta ar klasteri , kuru veido visi datu objekti . Pēc tam katrā hierarhijas līmenī algoritms rekursīvi sadala vienu no esošajiem klasteriem divos jaunos klasteros . Sadalījumu izvēlas tādā veidā , lai radītu divus jaunus klasterus ar vislielāko atšķirību starp tiem (fragments ir balstīts uz informāciju , kas sniegta (Hastie, 2017)). Visbeidzot, klasterēšana tiek pārtraukta , kad katrs datu objekts veido savu klasteri . ",
+      "language": "lv",
+      "generated": false,
+      "uid": "131c6108-6570-4ef5-9702-3954257fa06a"
+    },
+    {
+      "term": "saistīšanas metode",
+      "definition": "aglomeratīvajā hierarhiskajā klasterēšanā izmantotās metodes, lai noteiktu līdzību (attālumu) starp klasteriem, lai pēc tam veiktu klasteru apvienošanu",
+      "sentence": "Aglomeratīvajā hierarhiskajā klasterēšanā ir vairākas metodes , lai noteiktu līdzību ( attālumu ) starp klasteriem , lai pēc tam veiktu klasteru apvienošanu , un tās bieži sauc par saistīšanas metodēm ( angļu val. linkage method).",
+      "language": "lv",
+      "generated": false,
+      "uid": "6367e4a6-66a9-4a85-9939-acacc2c472c8"
+    },
+    {
+      "term": "pilnīga saistīšana (complete-linkage)",
+      "definition": "saistīšanas metode, kur lemjot par klasteru līdzību tiek ņemts attālums starp klasteru vistālākajiem elementiem (garākais attālums)",
+      "sentence": "Pilnīga saistīšana ( angļu val. complete-linkage ): lemjot par klasteru līdzību , tiek ņemts attālums starp klasteru vistālākajiem elementiem ( garākais attālums ): kur G, H – klasteri ; d – attālums ; i – datu objekts no G klastera ; i’ – datu objekts no H klastera .",
+      "language": "lv",
+      "generated": false,
+      "uid": "358805a9-0ac0-44a0-b57d-5659a6e14eff"
+    },
+    {
+      "term": "vienkārša saistīšana (single-linkage)",
+      "definition": "saistīšanas metode, kur lemjot par klasteru līdzību tiek ņemts attālums starp tuvākajiem divu klasteru elementiem (īsākais attālums)",
+      "sentence": "Vienkārša saistīšana ( angļu val. single-linkage): lemjot par klasteru līdzību , tiek ņemts attālums starp tuvākajiem divu klasteru elementiem ( īsākais attālums ): kur G, H – klasteri ; d – attālums ; i – datu objekts no G klastera ; i’ – datu objekts no H klastera .",
+      "language": "lv",
+      "generated": false,
+      "uid": "25b630ce-0c0f-49d8-a7f8-e79bcae13d3f"
+    },
+    {
+      "term": "uz vidējo vērtību balstīta saistīšana (average-linkage)",
+      "definition": "saistīšanas metode, kur attālums starp diviem klasteriem tiek noteikts kā vidējais attālums starp katru datu objektu vienā klasterī līdz katram datu objektam otrā klasterī",
+      "sentence": "Uz vidējo vērtību balstīta saistīšana ( angļu val. average-linkage): attālums starp diviem klasteriem tiek noteikts kā vidējais attālums starp katru datu objektu vienā klasterī līdz katram datu objektam otrā klasterī . kur G, H – klasteri ; NG – datu objektu skaits klasterī G; NH – datu objektu skaits klasterī H; d – attālums ; i – datu objekts no G klastera ; i’ – datu objekts no H klastera .",
+      "language": "lv",
+      "generated": false,
+      "uid": "6a1fb52b-7f3e-4fe0-ae82-928a98615409"
+    },
+    {
+      "term": "dendrogramma",
+      "definition": "hierarhiskās klasterēšanas rezultāts — kokam līdzīga diagramma, kas attēlo hierarhiskas attiecības starp datu objektiem dati kopā; sniedz grafisko aprakstu klasteru veidošanas procesa un sastāv no stabiņiem (atspoguļojot datu objektu apvienošanu) un lapām (atbilstošas izmantotajiem datiem)",
+      "sentence": "Dendrogramma ir hierarhiskās klasterēšanas rezultāts . Tā ir kokam līdzīga diagramma , kas attēlo hierarhiskas attiecības starp datu objektiem datu kopā . Atbilstoši (Hastie, 2017) \" dendrogramma nodrošina ļoti interpretējamu pilnīgu hierarhiskās klasterēšanas aprakstu grafiskā formātā \" . Tādējādi tā sniedz ieskatu klasteru veidošanas procesā . Dendrogramma sastāv no (5. attēls ): stabiņiem , kuri atspoguļo datu objektu apvienošanu klasteros ; katram stabiņam ir noteikts augstums ; lapām , kas ir stabiņu apakšējie galapunkti , kuri atbilst klasterēšanas procesā izmantotajiem datu objektiem .",
+      "language": "lv",
+      "generated": false,
+      "uid": "5b71bdab-244a-415e-a1b7-12f8f20484d6"
+    },
+    {
+      "term": "datu objektu/klasteru pāris",
+      "definition": "pairs of data objects/clusters that are combined at each level of the hierarchy in agglomerative hierarchical clustering until the highest level yields a single cluster containing all data objects",
+      "sentence": "Līdz ar to katrā hierarhijas līmenī tiek apvienots datu objektu / klasteru pāris , līdz visaugstākajā līmenī tiek iegūts viens klasteris , kas satur visus datu objek图斯 .",
+      "language": "lv",
+      "generated": false,
+      "uid": "5847612a-8265-4332-ba90-d17c9d5067b5"
+    },
+    {
+      "term": "attālums starp klasteriem",
+      "definition": "izmanto aglomeratīvajā hierarhiskajā klasterēšanā, lai noteiktu, kuri divi klasteri apvienot; aprēķināts vai izmantots saistīšanas metodes (piem., mazākais, garākais vai vidējais attālums)",
+      "sentence": "Aprēķināt attālumus starp klasteriem un divus klasterus ar mazāko attālumu starp tiem apvienot vienā klasterī .",
+      "language": "lv",
+      "generated": false,
+      "uid": "fe8dc3b0-65e6-4c4e-aa09-aa27046e9104"
+    },
+    {
+      "term": "K-vidēja algoritma rekursīva izpilde",
+      "definition": "metode sadalošās hierarhiskās klasterēšanai, kur K-vidējais algoritms tiek pielietots rekursīvi katram starpposma klasterim, līdz apskatītas visi dati vai minimāls norādīts datu objektu skaits",
+      "sentence": "Pai (2021) norāda , ka viena no metodēm šāda veida hierarhiskās klasterēšanas realizācijai ir K- vidējo algoritma rekursīva izpilde katram starpposma klasterim , līdz tiek apskatīti visi datu kopā esošie datu objekti vai minimālais datu objektu skaits , ko vēlas iekļaut klasterī .",
+      "language": "lv",
+      "generated": false,
+      "uid": "0edf089d-caa2-4c1b-aa58-123dedfe8be8"
+    },
+    {
+      "term": "False positives (FP)",
+      "definition": "Datu objekts realitātē ir negatīvs (iezīme „0“), bet mašīnmācīšanās algoritms to klasificē kā pozitīvu (iezīme „1“); piemēram, e-pasts tiek klasificēts kā surogātpasts, bet realitātē tas nav surogātpasts. Šajā gadījumā tiek uzskatīts, ka datu objekts ir kļūdaini klasificēts kā pozitīvs.",
+      "sentence": "False positives, FP) – datu objekts realitātē ir negatīvs ( iezīme “0”), bet mašīnmācīšanās algoritms to klasificē kā pozitīvu ( iezīme “1”), piemēram , e-pasts tiek klasificēts kā surogātpasts , bet realitātē tas nav surogātpasts . Šajā gadījumā tiek uzskatīts , ka datu objekts ir kļūdaini klasificēts kā pozitīvs .",
+      "language": "lv",
+      "generated": false,
+      "uid": "37be395d-071f-4a4d-bb4e-339fdbb8780c"
+    },
+    {
+      "term": "False negatives (FN)",
+      "definition": "Datu objekts realitātē ir pozitīvs (iezīme „1“), bet mašīnmācīšanās algoritms to klasificē kā negatīvu (iezīme „0“); piemēram, e-pasts tiek klasificēts kā ne-surogātpasts, bet realitātē tas ir surogātpasts. Šajā gadījumā tiek uzskatīts, ka datu objekts ir kļūdaini klasificēts kā negatīvs.",
+      "sentence": "Kļūdaini negatīvi ( angļu val. False negatives, FN) – datu objekts realitātē ir pozitīvs ( iezīme “1”), bet mašīnmācīšanās algoritms to klasificē kā negatīvu ( iezīme “0”), piemēram , e-pasts tiek klasificēts kā ne- surogātpasts , bet realitātē tas ir surogātpasts . Šajā gadījumā tiek uzskatīts , ka datu objekts ir kļūdaini klasificēts kā negatīvs .",
+      "language": "lv",
+      "generated": false,
+      "uid": "3c939852-14aa-4da6-99bc-a66de8d9e93c"
+    },
+    {
+      "term": "kļūdu matrica (confusion matrix)",
+      "definition": "Divdimensiju tabula, kurā norādīts, cik bieži noteiktās klases/kategorijas datu objekti tiek pareizi klasificēti vai nepareizi klasificēti; katra rinda apzīmē īsto klases iezīmi, savukārt katra kolonna apzīmē mašīnmācīšanās algoritma prognozēto klases iezīmi. Galvenā diagonāle atspoguļo pareizi klasificētu datu objektu skaitu (prognozēta klase sakrīt ar īsto), citas šūnas — nepareizi klasificētos.",
+      "sentence": "Minētie rezultāti parasti tiek apkopoti kļūdu matricā ( angļu val. confusion matrix) (Kubat, 2017). Tā ir divdimensiju tabula, kurā norādīts , cik bieži noteiktās klases / kategorijas datu objekti tiek pareizi klasificēti vai nepareizi klasificēti (Russell & Norvig. Tādējādi tā atspoguļo detalizētu informāciju par pareizo un kļūdaino prognožu skaitu katrai klasei / kategorijai . Katra kļūdu matricas rinda apzīmē īsto klases iezīmi , savukārt katra kolonna apzīmē mašīnmācīšanās algoritma prognozēto klases iezīmi (Geron, 2017). Matricas struktūra nedaudz atšķiras binārās klasifikācijas uzdevumam un daudzklašu klasifikācijas uzdevumam . [...] Daudzklašu klasifikācijas uzdevumā kļūdu matricas galvenā diagonāle atspoguļo pareizi klasificētu datu objektu skaitu , kam prognozēta klases iezīme sakrīt ar īsto klases iezīmi . Tomēr citas šūnas atbilst mašīnmācīšanās algoritma nepareizi klasificēto datu objektu skaitam .",
+      "language": "lv",
+      "generated": false,
+      "uid": "dd7b78cc-4f5a-467f-b0b8-bb3ea49e4d9c"
+    },
+    {
+      "term": "binārās klasifikācijas uzdevums",
+      "definition": "Klasifikācijas uzdevums, kur kļūdu matricas struktūra ir noteiktā veida (piemēram, attēlota 1. tabulā); algoritms novērtē, vai datu objekts pieder vienai no divām klases (pozitīvai vai negatīvai).",
+      "sentence": "Matricas struktūra nedaudz atšķiras binārās klasifikācijas uzdevumam un daudzklašu klasifikācijas uzdevumam . 1. tabulā ir attēlota binārās klasifikācijas uzdevuma kļūdu matricas struktūra",
+      "language": "lv",
+      "generated": false,
+      "uid": "1800655c-a08a-4278-b453-bab382c979ee"
+    },
+    {
+      "term": "daudzklašu klasifikācijas uzdevums",
+      "definition": "Klasifikācijas uzdevums, kur algoritms novērtē, vai datu objekts pieder vienai no vairākiem klases; kļūdu matricas galvenā diagonāle atspoguļo pareizi klasificētos objektus (prognozēta klase sakrīt ar īsto), citas šūnas — nepareizi klasificētos.",
+      "sentence": "Matricas struktūra nedaudz atšķiras binārās klasifikācijas uzdevumam un daudzklašu klasifikācijas uzdevumam . [...] Daudzklašu klasifikācijas uzdevumā kļūdu matricas galvenā diagonāle atspoguļo pareizi klasificētu datu objektu skaitu , kam prognozēta klases iezīme sakrīt ar īsto klases iezīmi . Tomēr citas šūnas atbilst mašīnmācīšanās algoritma nepareizi klasificēto datu objektu skaitam .",
+      "language": "lv",
+      "generated": false,
+      "uid": "bae3c430-e9c3-4474-a7b5-242d329fc5e5"
+    },
+    {
+      "term": "precizitāte (accuracy)",
+      "definition": "Metrika, kas novērtē pareizi klasificētu datu objektu proporciju; binārās un daudzklašu klasifikācijas uzdevumos aprēķināta summējot kļūdu matricas galvenās diagonāles vērtības un dalot ar kopējo datu objektu skaitu. Vērts ir [0,1], lielāka vērtība — labāks algoritma veikums, taču jāizmanto ar piesardzību, ja klases ir nelīdzsvarotas.",
+      "sentence": "Precizitātes metrika ( angļu val. accuracy) novērtē pareizi klasificētu datu objektu proporciju . To aprēķina šādi (Kubat, 2017): Precizitāte daudzklašu klasifikācijas uzdevumā tiek aprēķināta , summējot kļūdu matricas galvenās diagonāles vērtības un summu dalot ar kopējo datu objektu skaitu datu kopā . Precizitātes vērtība ir diapazonā [0,1]. Lielāka vērtība norāda uz labāku mašīnmācīšanās algoritma veikumu . Tomēr šī metrika ir jāizmanto ar piesardzību , it īpaši , ja klases datu kopā ir nelīdzsvarotas (Kubat, 2017).",
+      "language": "lv",
+      "generated": false,
+      "uid": "819b4f6b-ee45-406f-87be-959dba14f128"
+    },
+    {
+      "term": "pareizi pozitīvs",
+      "definition": "Datu objekts, kur realitātei un mašīnmācīšanās algoritma prognozei ir pozitīva (iezīme „1“); viena no pareizās klasifikācijas rezultātus.",
+      "sentence": "Ideālam klasifikatoram binārās klasifikācijas uzdevumā būtu tikai pareizi pozitīvi un pareizi negatīvi (Geron, 2017).",
+      "language": "lv",
+      "generated": false,
+      "uid": "2b0b7b30-7d37-435e-804b-a57034a5f1c4"
+    },
+    {
+      "term": "pareizi negatīvs",
+      "definition": "Datu objekts, kur realitātei un mašīnmācīšanās algoritma prognozei ir negatīva (iezīme „0“); viena no pareizās klasifikācijas rezultātus.",
+      "sentence": "Ideālam klasifikatoram binārās klasifikācijas uzdevumā būtu tikai pareizi pozitīvi un pareizi negatīvi (Geron, 2017).",
+      "language": "lv",
+      "generated": false,
+      "uid": "c3a31fae-8181-4dc7-b42a-b65348758151"
+    },
+    {
+      "term": "nelīdzsvarotas klases",
+      "definition": "Klasses datu kopā, kuras ir atšķirīgas izmēri (piemēram, 95% objektu klase „0“ un 5% — klase „1“); precizitātes metrika var liekt klaidu šajos gadījumos, jo nelielais procentus no mazākas klases var paliecināt kopēju precizitāti.",
+      "sentence": "Tomēr šī metrika ir jāizmanto ar piesardzību , it īpaši , ja klases datu kopā ir nelīdzsvarotas (Kubat, 2017). Kubats (2017) sniedz piemēru datu kopai , kurā ir 100 datu objekti , no kuriem 95 pieder klasei „0“, bet 5 — klasei „1“. „Šajā gadījumā slikti izstrādāts „fiktīvs“ modelis, kas vienmēr prognozē „0“ klasi, sasniedz 95% precizitāti, kas norāda uz ļoti spēcīgu modeli. Tomēr šis modelis nav īsti prognozējošs, un precizitāte nav pareizais veikuma rādītājs, lai novērtētu šī modeļa spēcīgumu“ (Kubat, 2017).",
+      "language": "lv",
+      "generated": false,
+      "uid": "386ad70f-9a6d-4d9c-83cb-c914fd1d26f9"
+    },
+    {
+      "term": "<term>",
+      "definition": "<definition>",
+      "sentence": "<sentence number(s)>",
+      "language": "en",
+      "generated": false,
+      "uid": "97cdec94-a2b1-40f9-98bf-85d089301f04"
+    },
+    {
+      "term": "definition",
+      "definition": "entries",
+      "sentence": "passage",
+      "language": "ac",
+      "generated": false,
+      "uid": "c978aa8c-29aa-40b3-9093-01e09e1a4876"
+    }
+  ],
+  "debug_info": {
+    "chunkSize": 4055,
+    "chunkCount": 72,
+    "contextLength": 4096,
+    "temperature": 0.5,
+    "seed": 42,
+    "prompt": "Your task is to analyze the provided text and create a glossary.\nInstructions:\n1. Extract ALL terms and concepts from the text.\n2. Define them using ONLY the provided text.\n3. NO external knowledge. Synthesize exclusively from source.\n4. DO NOT translate. Keep definitions in the source language.\n5. If no terms found, return an empty list.\n\nText to analyze:\n\n",
+    "elapsedTime": 5373.262,
+    "safeMargin": 0.5,
+    "maxResponseTokens": 4096,
+    "maxTimeout": 599940000,
+    "repeatPenalty": -1,
+    "inputSize": 334911
+  }
+}

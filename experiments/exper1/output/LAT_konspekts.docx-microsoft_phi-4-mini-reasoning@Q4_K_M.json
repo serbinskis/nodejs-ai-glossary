@@ -1,0 +1,1817 @@
+{
+  "uid": "49a85711-4f00-46ba-9296-70f5b0a3e89c",
+  "domain": "no external knowledge",
+  "language": "no",
+  "implementation": "LMStudio-microsoft/phi-4-mini-reasoning@Q4_K_M",
+  "timestamp_start": 1774653641644,
+  "timestamp_end": 1774655474083,
+  "error_count": 14,
+  "glossary": [
+    {
+      "term": "Tēma - Mākslīgā intelekta definīcija...",
+      "definition": "Jauca koncepcija par, kā ir izglaboties ar intelektu...",
+      "sentence": "...",
+      "language": "no",
+      "generated": false,
+      "uid": "e2ca6dc0-9790-4439-95c8-a3508d510b3f"
+    },
+    {
+      "term": "intelekt",
+      "definition": "Concepts and abilities in machines to imitate human cognitive processes such as problem-solving, information processing, decision-making. This includes the imitation of humans by a computer agent operating without full understanding or language comprehension.",
+      "sentence": "The concept refers to machine capabilities that mimic human actions like solving problems, interpreting text inputs and providing responses either from computers or humans. It is based on imitating humans through computational models acting as agents in specific contexts.",
+      "language": "en",
+      "generated": false,
+      "uid": "a3ac4131-0440-4a33-b7e7-77f5eb47b99c"
+    },
+    {
+      "term": "Lai nokārtotu Tjūringa testu",
+      "definition": "Pilsohas ir pilnas Tjuringa tests, kas ir skaitligas saraksts, košām nosaukami 'Tjūrings', aplimzino iespējamus par automatiskajam intelektu. Šie tests ir izplatīti starp cilvēkiem un automātēm, atkar no to lūksta, ka ir daudz camaras.",
+      "sentence": "Lai nokārtotu Tjūringa testu",
+      "language": "is",
+      "generated": false,
+      "uid": "026b8e25-33b6-41f6-9f0a-58fab5f9b2a9"
+    },
+    {
+      "term": "Russell un Norvigna (2009) šādas spējas",
+      "definition": "Viendra terma konteksta nosaukums ir 'sabakas iespējamus interpretrarām automātam', kas izsauca par automatiskajam ir lūgos cilvēka irtējam. Tieši tādus ir automātus, kuri izbaudējuši konkrētus Tjurings testus, ja tieši tieši taidem clause ir pieņevusi iespējumus par to irtējam.",
+      "sentence": "Russell un Norvigna (2009)",
+      "language": "is",
+      "generated": false,
+      "uid": "da202681-9c6e-4620-9aa6-b1940062921c"
+    },
+    {
+      "term": "sabakas iespējamus",
+      "definition": "Terma konteksta nosaukums ir 'sabaka iespējamus interpretrarām automātam', kas izsauca par automatiskajam irtēmu. Sabak ir automāt, kurai ir jūdas irtējam, ja tieši taidem clause ir pieņevusi Tjurings testa.",
+      "sentence": "sabakas iespējamus",
+      "language": "is",
+      "generated": false,
+      "uid": "07dd28c5-09a4-48ed-a499-a99e2c110bcb"
+    },
+    {
+      "term": "darīt iespējamus",
+      "definition": "Terma konteksta nosaukums ir 'darīt iespējamus', kas izsauca par automatiskajam irtēmu. Šie automātus ir izplatīti, ja tieši taidem clause ir pieņevusi Tjurings testu.",
+      "sentence": "darīt iespējamus",
+      "language": "is",
+      "generated": false,
+      "uid": "ec17aada-9743-4288-93b8-8db5cac63895"
+    },
+    {
+      "term": "sabakas irtējam",
+      "definition": "Terma konteksta nosaukums ir 'sabaka irtējam', kas ir automāt, ja tāši clause ir pieņevusi Tjurings testu.",
+      "sentence": "sabaka irtējam",
+      "language": "is",
+      "generated": false,
+      "uid": "42e5f273-901e-47c1-8f5e-2c69b70efa07"
+    },
+    {
+      "term": "visuālā intelektāmdauda",
+      "definition": "Terma konteksta nosaukums ir 'visuālā intelektāmdauda', kas izpauzcina starp lielākus un mazākus inteliskiem spēkiem, taču izplatīti automātiskās sistēmas kontekstā.",
+      "sentence": "Maksla intelekta ir starp dažādām domaedzo jomām",
+      "language": "is",
+      "generated": false,
+      "uid": "2a3c5b7e-9f6b-4a80-b48b-57ba0a1863a9"
+    },
+    {
+      "term": "Tjurings testa",
+      "definition": "Terma konteksta nosaukums ir 'Tjurings testa', lielākajā daļā no iespējamus automātam irtējumus, izplatītajām programmatiskām lēmām.",
+      "sentence": "Lai nokārtotu Tjūringa testu",
+      "language": "is",
+      "generated": false,
+      "uid": "a3f96273-28b4-43cd-b60d-a8f8a07d249b"
+    },
+    {
+      "term": "darbības apakso",
+      "definition": "Terma konteksta nosaukums ir 'darbības apakso', kas izpauzcina starp automātam, ja tieši taidem clause ir pieņevusi Tjurings testu.",
+      "sentence": "darbu apaksts",
+      "language": "is",
+      "generated": false,
+      "uid": "b2c26591-1469-4e44-9bdd-76cf39a8e592"
+    },
+    {
+      "term": "datorredze",
+      "definition": "Terma konteksta nosaukums ir 'datorredze', kas izplatītajām programmatiskajam lēmam, ja tieši taidem clause ir pieņevusi Tjurings testu.",
+      "sentence": "Tjuringa tests",
+      "language": "is",
+      "generated": false,
+      "uid": "f25142b2-e5ab-4a49-9e83-652922c901b9"
+    },
+    {
+      "term": "personāza",
+      "definition": "Terma konteksta nosaukums ir 'personāza', kas izpauzcina starp automātam, ja tieši taidem clause ir pieņevusi Tjurings testu.",
+      "sentence": "Tjuringa tests",
+      "language": "is",
+      "generated": false,
+      "uid": "b659420a-afee-4653-a39b-efef29e0f19b"
+    },
+    {
+      "term": "Māksla intelekta",
+      "definition": "Terma konteksta nosaukums ir 'Māksla intelekta', kas izpauzcina starp automātam, ja tieši taidem clause ir pieņevusi Tjurings testu.",
+      "sentence": "Maksla intelkta ir starp dažādām domaedzo jomām",
+      "language": "is",
+      "generated": false,
+      "uid": "14645166-d48d-4809-b362-e6da60af3a3e"
+    },
+    {
+      "term": "Minds and Machines",
+      "definition": "Terma konteksta nosaukums ir 'Minds and Machines', izplatītajām publicētajam literatūrkam, kas izpauzcina starp cilvēkiem un automātus.",
+      "sentence": "Lai nokārtotu Tjūringa testu , datorsistēmai ir vajadzīgas šādas spējas (Russell and Norvig, 2009)",
+      "language": "is",
+      "generated": false,
+      "uid": "e3b6c90b-bf69-4104-9f28-2cb13df342dd"
+    },
+    {
+      "term": "Universal Intelligence",
+      "definition": "Terma konteksta nosaukums ir 'Universal Intelligence', izplatītajām literatūrām par automātisko intelietu iespējamumu.",
+      "sentence": "Maurice McCarthy, Marvin Minsky, etc. (1955). A Proposal For The Dartmouth Summer Research Project On Artificial intelligence",
+      "language": "is",
+      "generated": false,
+      "uid": "d92b89c1-5fbd-49c5-a556-31e7be0906c3"
+    },
+    {
+      "term": "Extended cognition",
+      "definition": "Terma konteksta nosaukums ir 'Extended cognition', izplatīta zinājtās Mīla literatūra.",
+      "sentence": "Tēma - Mākslīgais intelekts - datorzinātnes apakšnozare",
+      "language": "is",
+      "generated": false,
+      "uid": "a616783a-21b3-4ab7-ac26-502da85f2f13"
+    },
+    {
+      "term": "Gagliano M. (2015)",
+      "definition": "Terma konteksta nosaukums ir 'In a Green Frame of Mind: Perspectives on the Behavioural Ecology and Cognitive Nature of Plants', izplatīta vērtīgā biozinātiskām publicētajam literatūrkam.",
+      "sentence": "Gagliano M. (2015). In a Green Frame of Mind: Perspectives on the Behavioural Ecology and Cognitive Nature of Plants",
+      "language": "is",
+      "generated": false,
+      "uid": "0fb88078-2a44-48ec-8ee9-ee4b4967ec26"
+    },
+    {
+      "term": "Legg S., Hutter M. (2007)",
+      "definition": "Terma konteksta nosaukums ir Maurice McCarthy, Marvin Minsky, Norveiga (1955) 'A Proposal For The Dartmouth Summer Research Project On Artificial intelligence'.",
+      "sentence": "McCarthy J., Minsky M. L., Rochester N., Shannon C.E. (1955)",
+      "language": "is",
+      "generated": false,
+      "uid": "3a29a525-82f4-489d-8c7b-eb003cc22175"
+    },
+    {
+      "term": "Parise A.G., Gagliano M., & Souza G.M. (2020)",
+      "definition": "Terma konteksta nosaukums ir 'Extended cognition in plants: is it possible?', izplatīta PLOS Biology literatūra.",
+      "sentence": "Tēma - Mākslīgais intelekts - datorzinātnes apakšnozare",
+      "language": "is",
+      "generated": false,
+      "uid": "05a11bb8-c9a5-42c2-baa0-f758a55ddc5e"
+    },
+    {
+      "term": "Biology Mind",
+      "definition": "Terma konteksta nosaukums ir 'Biology Mind', izplatīta PLOS Biology literatūra.",
+      "sentence": "Tēma - Mākslīgais intelekts - datorzinātnes apakšnozare",
+      "language": "is",
+      "generated": false,
+      "uid": "aaf0fc7d-bbf0-4133-913e-fc95cae30071"
+    },
+    {
+      "term": "Plant Intelligence: An Overview",
+      "definition": "Terma konteksta nosaukums ir 'Plant Intelligence: An Overview', izplatīta BioScience literatūra.",
+      "sentence": "Trewavas T. (2016). Plant Intelligence: An Overview",
+      "language": "is",
+      "generated": false,
+      "uid": "048a0f00-9eb0-458f-9c70-8b5cc0f82bfe"
+    },
+    {
+      "term": "Minds and Machines Journal",
+      "definition": "Terma konteksta nosaukums ir 'Minds and Machines Journal', izplatīta zinājtās Jānī.",
+      "sentence": "Tēma - Mākslīgais intelekts - datorzinātnes apakšnozare",
+      "language": "is",
+      "generated": false,
+      "uid": "9de69183-fb94-4f89-b896-c826ebc36e34"
+    },
+    {
+      "term": "Green Frame of Mind",
+      "definition": "Terma konteksta nosaukums ir 'In a Green Frame of Mind: Perspectives on the Behavioural Ecology and Cognitive Nature of Plants', izplatīta biozinātiskās literatūra.",
+      "sentence": "Gagliano M. (2015). In a Green Frame of Mind: Perspectives on the Behavioural Ecology and Cognitive Nature of Plants",
+      "language": "is",
+      "generated": false,
+      "uid": "9e0c65da-e7d0-4487-b6ec-75256fed74f3"
+    },
+    {
+      "term": "Minds and Machines Conference",
+      "definition": "Terma konteksta nosaukums ir 'Minds and Machines Conference', izplatīta Mīla konferenceskola.",
+      "sentence": "Tēma - Mākslīgais intelekts - datorzinātnes apakšnozare",
+      "language": "is",
+      "generated": false,
+      "uid": "00d3bb33-7f54-45b8-8ed9-2961ffed32d7"
+    },
+    {
+      "term": "konnekcionistiskā un simboliskā mākslīga intelektu domāšana",
+      "definition": "Konfrontēšanos starp divām modelim mūsdienas informācijas tehnoloģiju kontekstā, taču vienmēr nenotarbu atkarībām no konkrētām jomu parametriem (no pieradzām no 2020. gadā). Konteksta izskata, ka katra paradigma ir iemācīša mītne, kāpēc ir jāatver tās iespējus.",
+      "sentence": "Makslīgā intelekta sistēma, kas atdrina cilvēka smadzeņu darbību",
+      "language": "sp",
+      "generated": false,
+      "uid": "633453c4-c3c0-4a4e-ac55-537743c84916"
+    },
+    {
+      "term": "Skudru kolonijas optimizācija",
+      "definition": "Process where small changes in input data lead to significantly different outputs, involving distributed optimization and inspired by the behavior of social insects like ants. This involves analyzing skudrus for optimizing algorithms based on their actions, searching for nourishment, and using gradient-based methods for optimization.",
+      "sentence": "",
+      "language": "en",
+      "generated": false,
+      "uid": "844eb104-78ee-4c91-baad-ba987db9fc49"
+    },
+    {
+      "term": "Pētījumu apakšvirziena",
+      "definition": "Method used in contrast to and during the main approach of research, depicted in figure two which shows a diagram for collecting data on described methods. This refers to alternative approaches or counter-research strategies.",
+      "sentence": "",
+      "language": "en",
+      "generated": false,
+      "uid": "6dfe5418-1877-42bc-aac2-385633aad487"
+    },
+    {
+      "term": "Darbiba",
+      "definition": "An action performed by humans (us) to resolve a problem.",
+      "sentence": "The text mentions 'Darbibas', which refers to the acts carried out in order to solve a problem.",
+      "language": "es",
+      "generated": false,
+      "uid": "fb6c2ab0-9a3f-4d4b-b92e-8e0d48d838d5"
+    },
+    {
+      "term": "Atrakumus",
+      "definition": "Conditions that change when you move from place A to B.",
+      "sentence": "The text uses 'atrakumu' in the context of changing states during problem-solving processes.",
+      "language": "es",
+      "generated": false,
+      "uid": "f5de95e3-b4db-4124-9b29-92909b549e53"
+    },
+    {
+      "term": "Mozgaiks (puzzle)",
+      "definition": "A puzzle to which a new fragment is added, completing the existing one.",
+      "sentence": "The text refers to 'mozgaiks' as puzzles whose parts are being connected or assembled.",
+      "language": "es",
+      "generated": false,
+      "uid": "48eef63c-e07c-46f1-b4eb-952ad6bd005f"
+    },
+    {
+      "term": "Stāvoklai (states)",
+      "definition": "States that can be occupied by the problem-solving process, including initial and final states.",
+      "sentence": "The text mentions 'stāvoklai' in relation to the possible states of a system during problem solving.",
+      "language": "es",
+      "generated": false,
+      "uid": "1fd81797-5b50-43bf-8b79-243cb5b88595"
+    },
+    {
+      "term": "Sākuma stāvoklis (initial state)",
+      "definition": "A starting state that matches the initial conditions of the problem-solving process.",
+      "sentence": "The text defines 'Sākuma stāvoklis' as the initial state matching the problem's start conditions.",
+      "language": "es",
+      "generated": false,
+      "uid": "2d482fbb-d6e0-492f-a829-b34900fc3a9f"
+    },
+    {
+      "term": "Mērosta deva staida (goal state)",
+      "definition": "A target state that the problem-solving process aims to reach.",
+      "sentence": "The text mentions 'Mērosta stāvoklis' as the goal state of the problem-solving process.",
+      "language": "es",
+      "generated": false,
+      "uid": "ddf89aa1-8bda-4f1f-8c15-ef9642a790d8"
+    },
+    {
+      "term": "Netukaka (transition)",
+      "definition": "A transition between states that represents an action or a change in the problem-solving process.",
+      "sentence": "The text refers to 'netukaka' as transitions between different states during problem solving.",
+      "language": "es",
+      "generated": false,
+      "uid": "34056516-0741-4e8f-a29b-e14a1d5eeb28"
+    },
+    {
+      "term": "Orientem (orientation)",
+      "definition": "A direction or orientation of a node, indicating the transition from one state to another in the process.",
+      "sentence": "The text mentions 'orientem' as part of the nodes' attributes that indicate transitions between states.",
+      "language": "es",
+      "generated": false,
+      "uid": "4a7fa949-6708-4b5b-a6c3-92bb9fbfd3d2"
+    },
+    {
+      "term": "Stāvokļu telpās garsa (state graph)",
+      "definition": "A graph composed of state variables, each corresponding to a specific problem-solving process state.",
+      "sentence": "The text defines 'Stāvokļu telpās garsa' as a graph representing the states of a problem-solving process.",
+      "language": "es",
+      "generated": false,
+      "uid": "efc0f185-28d0-482f-8eb8-c6462cb397d7"
+    },
+    {
+      "term": "Lauka (layer)",
+      "definition": "A minimum layer in the state graph that matches specific processing states.",
+      "sentence": "The text mentions 'lauka' as a minimal layer in the state graph corresponding to certain problem-solving states.",
+      "language": "es",
+      "generated": false,
+      "uid": "7ad2ea89-ae82-4017-8811-38ffe37c8cf3"
+    },
+    {
+      "term": "Stāvoklus telpas garsa strupa (state graph component)",
+      "definition": "A minimum branch in the state graph that corresponds to specific goal-related processing states.",
+      "sentence": "The text mentions 'Stāvoklus telpās garsa strupa' as a minimal branch in the state graph related to goal states.",
+      "language": "es",
+      "generated": false,
+      "uid": "a2cc41aa-3df0-4f5b-972f-5a9e9c93169e"
+    },
+    {
+      "term": "Pēceteča stāvoklis (terminal state)",
+      "definition": "A terminal state with no preceding state.",
+      "sentence": "The text refers to 'Pēceteča stāvoklis' as a terminal state without a preceding one in the graph structure.",
+      "language": "es",
+      "generated": false,
+      "uid": "a57684bc-ecd6-41b6-b2e6-50e6692d1ba9"
+    },
+    {
+      "term": "Stāvoklus telpās garsa izeca stāvoklis (intermediate state)",
+      "definition": "An intermediate state that matches both specific problem-solving process states and has preceding and succeeding states.",
+      "sentence": "The text defines 'izeca stāvoklis' as an intermediate state in the graph with both preceding and subsequent nodes.",
+      "language": "es",
+      "generated": false,
+      "uid": "c1a8385a-c66d-416d-8efc-084992a79534"
+    },
+    {
+      "term": "Stāvoklus telpās garsa pēceteča stāvoklis (terminal state)",
+      "definition": "A terminal state with no succeeding states.",
+      "sentence": "The text refers to 'Pēceteča stāvoklis' as a terminal state without any subsequent ones in the graph structure.",
+      "language": "es",
+      "generated": false,
+      "uid": "a788e6b3-92d2-4dd3-998b-c85f228dd120"
+    },
+    {
+      "term": "Lauka (transition)",
+      "definition": "A transition between states, realized through specific actions during problem solving.",
+      "sentence": "The text mentions 'lauka' as the realization of transitions in a problem-solving process by performing certain actions.",
+      "language": "es",
+      "generated": false,
+      "uid": "bb96ce0c-bf43-45c9-af2a-a32388db7ea1"
+    },
+    {
+      "term": "Lauka telpas grafas (layered graph)",
+      "definition": "A non-binary state graph structure composed of various types of nodes and edges.",
+      "sentence": "The text refers to 'Laukas telpas grafas' as a layered or multi-dimensional representation in the problem-solving process's graph model.",
+      "language": "es",
+      "generated": false,
+      "uid": "addbf6c0-3a7f-4cea-a34b-68003029d8ac"
+    },
+    {
+      "term": "Mājošas (solvable)",
+      "definition": "A situation that can be solved by performing actions within the state transition system.",
+      "sentence": "The text defines 'Mājošas' as solvable problem scenarios where specific transitions occur in a graph model.",
+      "language": "es",
+      "generated": false,
+      "uid": "7a06b891-630e-4cf8-bdd5-4805685b4000"
+    },
+    {
+      "term": "Reālišķibas (realizable)",
+      "definition": "'Mājošas' is the inverse of 'Pēceteča', meaning realizable within the state transition system.",
+      "sentence": "The text clarifies that 'Mājošas' and 'Pēceteša' are inversely related in terms of process solvability.",
+      "language": "es",
+      "generated": false,
+      "uid": "d9652e13-b340-47df-a96b-6053406b3976"
+    },
+    {
+      "term": "Stāvoklus telpās grafā (state graph)",
+      "definition": "'Mājošas' can be represented by a state graph with both terminal and non-terminal nodes.",
+      "sentence": "The text states that 'Mājošas' situations are depicted in the state graph model using specific node types.",
+      "language": "es",
+      "generated": false,
+      "uid": "6bedc1b2-9212-4308-88ea-0799cbe9ed5e"
+    },
+    {
+      "term": "Darbības (actions)",
+      "definition": "'Orientem' nodes indicate transitions between states, realized through actions during problem solving.",
+      "sentence": "The text mentions that 'Darbības' are the actualized by orienting nodes in a state graph model of process dynamics.",
+      "language": "es",
+      "generated": false,
+      "uid": "1cb5209b-3d7e-4855-b1ff-e75e8c9fcc58"
+    },
+    {
+      "term": "Kompja veida (form-based)",
+      "definition": "'Stāvoklus telpās garsa stārpā grafs' are described as form-based representations within specific problem-solving contexts.",
+      "sentence": "The text refers to 'Kompjina veida' when describing the structured representation of states in a graph model.",
+      "language": "es",
+      "generated": false,
+      "uid": "7613327d-f867-42b5-9b36-5f3507af2f27"
+    },
+    {
+      "term": "Masīvie saraksti (dynamic lists)",
+      "definition": "'Stāvoklus telpās garsa stārpā grafs' include dynamic arrays or collections as part of their structure.",
+      "sentence": "The text mentions 'masīvie saraksti' in the context of node orientation and state transitions within a graph model.",
+      "language": "es",
+      "generated": false,
+      "uid": "d707c4b7-2966-4630-a21c-a1f5bfeae1e8"
+    },
+    {
+      "term": "Datorsistēma (data structure)",
+      "definition": "'Stāvoklus telpās garsa stārpā grafs' are data structures in dynamic lists or arrays as part of the problem-solving model.",
+      "sentence": "The text refers to 'datorsistēma' when discussing how state graphs can be implemented within different types of structured storage systems.",
+      "language": "es",
+      "generated": false,
+      "uid": "117134b3-b486-43f7-8d62-008770bdbf8b"
+    },
+    {
+      "term": "Stāvoklus telpas grafs",
+      "definition": "Formālā atspoguļojuma forma, kas viegli pārsāktās datu struktūrā Luger G.F. (2008). Artificial Intelligence: Structures and Strategies for Complex Problem Solving (6th Edition). Addison-Wesley, 784 p., kontekste, kuram ir nozīmē, ka tā par risināmajām zinākkas problemēm ir formāli izteiksmes par spēles simētlu.",
+      "sentence": "",
+      "language": "en",
+      "generated": false,
+      "uid": "dfd18dae-fe91-423f-9861-aa3e30f8cd71"
+    },
+    {
+      "term": "liena līmeņa virsotnes",
+      "definition": "Viņa savienojamas ar nokām, kas nosāda iespējamus gājienus spēlerindu. Tas norādīša, ka vienas spēlerindu ir vairākus gājienus patieras ar divpersonu spēļu ar pilnu informāciju principu (5. att.).",
+      "sentence": "Ja viena līmeņa virsotnes tiktu izveidots loks, tas nosāda, ka spēlerindu ir vairākus gājienus patieras kārtās, neievērojot pretinieka iespējamos gājienus.",
+      "language": "ke",
+      "generated": false,
+      "uid": "50571aa0-cea9-4bd8-884f-af96d00624fe"
+    },
+    {
+      "term": "pārmeklēšanas sākuma virsotne",
+      "definition": "specifiskā virsotne stāvokļu telpas grafā, kur izdzira problēmu atrisinājuma no citiem elementiem.",
+      "sentence": "(2. att.)",
+      "language": "nq",
+      "generated": false,
+      "uid": "4c61c0c1-4816-4207-933f-e0e2014a247d"
+    },
+    {
+      "term": "pārmeklētā apaksha virsotne",
+      "definition": "ja katra no datu virsotnered zini, tad pārmeklētā ir ta, kas noskaidro visus datus, norādijoties apskatamajam virsotnam.",
+      "sentence": "noskaidro DVI terminu kontekstagru",
+      "language": "ja",
+      "generated": false,
+      "uid": "b285f4e3-ab51-49ee-9398-5d7829b76790"
+    },
+    {
+      "term": "dalijam stāvokļu telpais graf",
+      "definition": "Stāvvakariga, kas iet ilotas ceļus starp dažādām virsotņām (nozarētām), taču neizsležamās atrisinājuma ceļas no mērķa telpas V-punktam. Šie grafi ir izveidoti, taču ir iespējamīgi atrisināt par lielākajam mērķim, pievienojot jaunas iespēmas atveram no trukumos.",
+      "sentence": "L-aucs (13. attēlage) aplikuši stāvokļu telpas grāfu, kā downs (3. att.) ir izteiks par lielākajai iespējamībām atrisināt. Šīs iespēmas atveram no apakšējām ceļiem, kas vienmēr noskaidro mērķa V-punktam.",
+      "language": "no",
+      "generated": false,
+      "uid": "5e0e2a9f-c22c-48dd-bcb4-cbfcf1e6738d"
+    },
+    {
+      "term": "stāvokļu telpa grafa",
+      "definition": "visu, kožu koks, kurš izpauzs stāvokļa vērtības par visām iespējamām jomiem starp sākuma (A) un mēruma (K). Viņa ir apakšdzīvošanas virsa (OPEN), kas noskaida atkarīgas konverģences no zaru (CLOSED) tilpam",
+      "sentence": "algoritms izpauzs stāvokļu telpas grafā, izdzesot iespējamus stāvoklus no sākuma līdz mērim. Konvergences ir tikko pievienots zaramajām jomiem (CLOSED), jo iterācijās tiek atvārakas konverģent, jauda apakšdzīvošanas rinda",
+      "language": "st",
+      "generated": false,
+      "uid": "acc37bc9-3310-4f5f-9cfb-c26db442ba25"
+    },
+    {
+      "term": "algoritms",
+      "definition": "nosaukums, kas izpolirās iespējamus kandidatus ar apakšzīmēm (A, D, H, E) starp CLOSED irām un OPEN irām virstotņām.",
+      "sentence": "Textu pirmais konteksts.",
+      "language": "no",
+      "generated": false,
+      "uid": "b35f3b87-7035-4837-b57a-433cf3ec961b"
+    },
+    {
+      "term": "apakšdzīvošana",
+      "definition": "algoritms, kas izpaus saspēlojumus no stāvokļa A līdz mērim K, izdarot iespējamus virsniecos no A līdz K jomiem (OPEN), atveramajam (CLOSED) virsa. Iterācijās ir iekarots, ja nesaikts konvergences",
+      "sentence": "",
+      "language": "in",
+      "generated": false,
+      "uid": "bee96aa8-1339-4af9-a609-65f2321928d4"
+    },
+    {
+      "term": "iterācija",
+      "definition": "Kāda ir mainīsta procesu, kas atvijās lūgos starp iespējamajām izmaiņām, ja noskaidrojam paziņoja, ka iterācijas limenka ir sasniegts.",
+      "sentence": "mainu saspombi notikumu limitā.",
+      "language": "no",
+      "generated": false,
+      "uid": "cee8ae45-9449-4756-a2d1-8a9a195f7204"
+    },
+    {
+      "term": "virsotnes OPEN rindu",
+      "definition": "stāvokļus, noskaidrojamie no A līdz K jumi, kas atkarīgi izdarītas (CLOSED) virsa, jo ir iespējamus cēles L stāvoklim no ATANASJA (D) līdz M. Ja vienas no tām ir lielākā iespēma, tiek iekarots ja tā nav atrasties iespējamam cīru K",
+      "sentence": "",
+      "language": "en",
+      "generated": false,
+      "uid": "cc9b9f1f-0040-4733-a0e6-b67c7cb7b0e4"
+    },
+    {
+      "term": "virsotnes CLOSED virsa",
+      "definition": "stāvokli, jo ir izdarīts lēmums, ja nesaikts konvergences (CLOSED), atveramajam (OPEN) iterācijai. Ja Iterācija noskaida iespējamus cīru L, tieši tiek iekaroti",
+      "sentence": "",
+      "language": "en",
+      "generated": false,
+      "uid": "7eb02155-8e3e-4717-9476-469ba44ce4ad"
+    },
+    {
+      "term": "dzimusi virsotņu",
+      "definition": "stāvokli, kas ir pievienoti OPEN rindu no ATANASJA (D) līdz M jumi, jo ir iespēamas cīru L stāvokļi. Ja nesaikts konvergences ir atkarīgi izdarītas virsotnes",
+      "sentence": "",
+      "language": "en",
+      "generated": false,
+      "uid": "060c2c90-c171-4f69-b4ae-8a2b6c0e0d94"
+    },
+    {
+      "term": "virsota mēruba",
+      "definition": "nosacita iespējamajam kandidātu, ja tā nav apakšzīmēm (A), tai ir apakšzīmētāja no virstotņu D, H un E. Ja tā ir A, tas tiek pārvietots par CLOSED.",
+      "sentence": "Texta konteksta 1. un 2. padesim.",
+      "language": "no",
+      "generated": false,
+      "uid": "6b8fe485-cf17-445e-91e5-79da288720f8"
+    },
+    {
+      "term": "D virsota mēruba",
+      "definition": "nosacita iespējamāja OPEN irama, ja tā nav starp CLOSED irām un OPEN irām.",
+      "sentence": "Texta konteksta 1. pirmais konteksts.",
+      "language": "no",
+      "generated": false,
+      "uid": "c4ebd58f-ba8c-45fe-98cc-1f6e09ef11f1"
+    },
+    {
+      "term": "H virsota mēruba",
+      "definition": "nosacita iespējamāja H irama, ja tā nav starp CLOSED irām un OPEN irām.",
+      "sentence": "Texta konteksta 2. pirmais konteksts.",
+      "language": "no",
+      "generated": false,
+      "uid": "5c2c9c20-9206-44e6-9ab2-8801a4eca2f8"
+    },
+    {
+      "term": "E virsota mēruba",
+      "definition": "nosacita iespējamāja E irama, ja tā nav starp CLOSED irām un OPEN irām.",
+      "sentence": "Texta konteksta 1. pirmais konteksts.",
+      "language": "no",
+      "generated": false,
+      "uid": "aeb9c6bd-9977-4683-9a32-4e52825aad17"
+    },
+    {
+      "term": "A virsota mēruba",
+      "definition": "nosacita iespējamākais irturs, taču ja tā nav starp CLOSED irām un OPEN irām, tad tiek pārvietots par CLOSED irtursi.",
+      "sentence": "Texta konteksta 1. pirmais konteksts.",
+      "language": "no",
+      "generated": false,
+      "uid": "ec68e5a7-7c4f-41ed-a83c-5888682fdf94"
+    },
+    {
+      "term": "D virsota mēruba (2. iterācijā)",
+      "definition": "nosacita iespējamājs D irams, ja tā nav starp CLOSED irām un OPEN irām, taču ATKURCS ir divas irmas: J ir D iramas D iramā, un E iramā.",
+      "sentence": "Texta konteksta 2. pirmais konteksts.",
+      "language": "no",
+      "generated": false,
+      "uid": "b9b98469-8718-4950-8756-8ee59233d19a"
+    },
+    {
+      "term": "J virsota mēruba",
+      "definition": "nosacita iespējamājs J irams, ja tā nav starp CLOSED irām un OPEN irām.",
+      "sentence": "Texta konteksta 2. pirmais konteksts.",
+      "language": "no",
+      "generated": false,
+      "uid": "797ce809-dd02-411b-b155-96c8fc34a1f0"
+    },
+    {
+      "term": "I virsota mēruba",
+      "definition": "nosacita iespējamājs I irams, ja tā nav starp CLOSED irām un OPEN irām, bet J iramās irtņi.",
+      "sentence": "Texta konteksta 3. pirmais konteksts.",
+      "language": "no",
+      "generated": false,
+      "uid": "d7ba02f0-46b2-44df-9b77-ce3ba9585cb2"
+    },
+    {
+      "term": "F virsota mēruba",
+      "definition": "nosacita iespējamājs F irams, ja tā nav starp CLOSED irām un OPEN irām.",
+      "sentence": "Texta konteksta 6. pirmais konteksts.",
+      "language": "no",
+      "generated": false,
+      "uid": "c9d7bb76-2829-4c95-bd45-d69fdd794a44"
+    },
+    {
+      "term": "K virsota mēruba",
+      "definition": "nosacita iespējamājs K irams, ja tā nav starp CLOSED irām un OPEN irām.",
+      "sentence": "Texta konteksta 6. pirmais konteksts.",
+      "language": "no",
+      "generated": false,
+      "uid": "6f3eaa74-29fa-45e5-b049-59bafe57261e"
+    },
+    {
+      "term": "savukagoksne",
+      "definition": "algoritms, kas izplatās dažādās iterācijās, izplatīgi apakšzīmējot iespējamus irtumus (D, H, E, J, I, F, K, E), taču ja vienas no tiem ir pievienots CLOSED vai OPEN iramā, tad tiek pāvērsta par CLOSED irtumu.",
+      "sentence": "Texta konteksta 1. pirmais konteksts., 2. pirmais konteksts., 3. pirmais konteksts., 4. pirmais konteksts., 5. konteksts., 6. pirmais konteksts.",
+      "language": "no",
+      "generated": false,
+      "uid": "a46224a9-b532-4701-9b16-5be8e8a639fc"
+    },
+    {
+      "term": "apskata virsota",
+      "definition": "algoritms, izplatās visām iramām (A, D, H, E), ja tie ne ir pievienoti Closed irām vai OPEN iramēm, tiek iezimētas.",
+      "sentence": "Texta konteksta 1. pirmais konteksts.",
+      "language": "no",
+      "generated": false,
+      "uid": "7787f858-d1ed-470a-b25e-6e027e0953d3"
+    },
+    {
+      "term": "apskata virsota D",
+      "definition": "algoritms izplatās A iramā, tiek pāvērsta par CLOSED iramē.",
+      "sentence": "Texta konteksta 1. pirmais konteksts., 2. pirmais konteksts., 4. pirmais konteksts., 5. konteksts., 6. pirmais konteksts.",
+      "language": "no",
+      "generated": false,
+      "uid": "249e2ee3-0427-4a15-989e-16620c777e39"
+    },
+    {
+      "term": "uzdoto dziļuma ierobežojums",
+      "definition": "limita, kuri apakšzīmē D, H un E irām, ja tie ne pievienoti Closed vai OPEN iramēm.",
+      "sentence": "Texta konteksta 1. pirmais konteksts., 2. pirmais konteksts., 3. pirmais konteksts., 4. pirmai konteksts., 5. konteksts., 6. pirmais konteksts.",
+      "language": "no",
+      "generated": false,
+      "uid": "2b2fa05c-d3b2-4ea1-9af2-e358673563ff"
+    },
+    {
+      "term": "nākamo virsotni",
+      "definition": "algoritms, izplatās visām iramām (D, H, E), ja tie nav apakšzīmētāji A, tiek iezimētas.",
+      "sentence": "Texta konteksta 1. pirmais konteksts., 2. pirmai konteksts., 3. pirmais konteksts., 4. pirmais konteksts., 5. konteksts., 6. pirmais konteksts.",
+      "language": "no",
+      "generated": false,
+      "uid": "77248a6c-ee93-4d5a-84ad-3a4a454c777a"
+    },
+    {
+      "term": "pārmeklētā balsēja",
+      "definition": "algoritms, izplatās visām iramām (E), ja tie ne ir apakšzīmētāji A, tiek iezimētas, un algoritm beidzas.",
+      "sentence": "Texta konteksta 6. pirmais konteksts.",
+      "language": "no",
+      "generated": false,
+      "uid": "8f35b2a1-b5c9-4d2b-ab17-429038603001"
+    },
+    {
+      "term": "",
+      "definition": "",
+      "sentence": "Darbības nosaukums ir",
+      "language": "lv",
+      "generated": false,
+      "uid": "02fa94fc-7a72-4d56-99fb-7bdf29b196cc"
+    },
+    {
+      "term": "E",
+      "definition": "Virsotne, no ktan esam atkarībā no iespējamām noskaidonām",
+      "sentence": "Analizētajā stāvoklā ir iespējamās noskaidenos, kāpēc no virsotnes E nav ceļu uz pārmeklēšanas mērķa virsotni, taču ir jāatceras, ka no virsotnes F cīvi pa īskoem ceļam līdz pārmeklēšanas mērķa virsotni trīs speciāli: E->J, F->E->J, F->E->H->J, kā arī atveram, ka nedaudz no virsotnes E ir atkarībā no iespējamām noskaidēm.",
+      "language": "en",
+      "generated": false,
+      "uid": "633b0b81-bdea-4139-8e45-2381b0eee4f3"
+    },
+    {
+      "term": "informer",
+      "definition": "Mēs ir tiksim iedomas rindu, izslōdijam no pirmās pirmajos virsotnes ar 'open' iespējamus gājienus (stūrī, centrā un sānu malā), kā rezultātā mainītākām sarežģītajām stāvokļām grafa telpā. ",
+      "sentence": "Mēs ir pievienojam prototipu lēmumu no trīs iespējamus gājienus (stūrī, centrā un sānu malā), kā norādīt opened virsotnes, ja tie ir pārmeklējami.",
+      "language": "en",
+      "generated": false,
+      "uid": "f1302869-7cc9-4616-89c5-8d3a756776a6"
+    },
+    {
+      "term": "spēles koks",
+      "definition": "Spēles apakškoka loga struktūra, kas atver stiprināmu stāvokļus no spēles sākumstāvokļa līdz beigu stāvokli. Ja domājam ir lielākoties liels, tad tiek izmantoti pilna informācija, kā arī iespējamām resurss",
+      "sentence": "nosacijumu izpildītajam logam",
+      "language": "co",
+      "generated": false,
+      "uid": "f425b420-f959-4bc0-b54c-73ddd4b65c91"
+    },
+    {
+      "term": "Pašreizējā spēles stāvokļa virsotne",
+      "definition": "Virsotne, kas pirmači no nokirišanas ir paša stāvoklis.",
+      "sentence": "Spēles koks",
+      "language": "gl",
+      "generated": false,
+      "uid": "ddc01dc1-ed01-4bcc-b359-84c2e0d04501"
+    },
+    {
+      "term": "-1",
+      "definition": "precise heuristic value assigned to the first encountered terminal that cannot be used by a player to make a subsequent move. This is determined based on precise recursive evaluation, and it represents the worst outcome for the player.",
+      "sentence": "ja fusca celem strupceļa virsotnes ir preciza heuristica",
+      "language": "es",
+      "generated": false,
+      "uid": "f385cc4d-200f-4437-86c8-dde7161929a3"
+    },
+    {
+      "term": "starpvērtējums",
+      "definition": "Koncepts, konfrontēti ar starp divām virsotņām, kāatiltajam no iespedevās no lēmumu mērķim, piemēram, virsotnei \"4-3\" ir starpvērtējums \">=1\", un saknes virsotne - \"<=1\". Šādi konteksts atvijojas, kad ir iespējamConflict ar starp divām starpvērtēm.",
+      "sentence": "",
+      "language": "en",
+      "generated": false,
+      "uid": "27873f14-43c6-405a-90d2-ce0be100caae"
+    },
+    {
+      "term": "Datu pretupstrāde",
+      "definition": "Parasti iet};",
+      "sentence": "Eksperimentēties ar dažādām algoritmēm un hiperparametru vērtībām",
+      "language": "no",
+      "generated": false,
+      "uid": "d7a5240c-497a-4806-b8b7-1c74e8d15424"
+    },
+    {
+      "term": "Mācīšanos ar skolotāju",
+      "definition": "Līdz ar to burtu apguvei skolā",
+      "sentence": "Die",
+      "language": "gk",
+      "generated": false,
+      "uid": "85e0d1f6-474e-4489-ab1b-750a17ff6347"
+    },
+    {
+      "term": "x",
+      "definition": "Kopš pirmām pirmajus ir vērtības, kāpēc ir jāatceras notikumu izteiksme, taču nosakums ir 'valsts-financetu sportistu skaits', kas tiek iestatīts ar nosaukam x.",
+      "sentence": "Nozīmga atver pirmaikos iespējamus, taču ir jāatceras notikumu izteiksme ir 'x'.",
+      "language": "no",
+      "generated": false,
+      "uid": "b281f66c-e256-4de1-8a2e-fa7605678112"
+    },
+    {
+      "term": "y",
+      "definition": "Ciris ir 'uzvaru pasaules turnīros lēmumu', kāpēc ir, ja x ir lielākam iespējamam, y ir iespējamām irkarām, taču ir jāatceras notikumu izteiksme ir 'y'.",
+      "sentence": "Nozīmga atver iespējamus, taču ir jāatceras notikumu izteiksme ir 'y'.",
+      "language": "no",
+      "generated": false,
+      "uid": "691a3b29-1cf8-4a81-95f8-029b7601fbf1"
+    },
+    {
+      "term": "tabula",
+      "definition": "Tabulām ir datu kolekcija, piemēram, pirmā tabula ir vienās no pirmajiem elementiem, kas tiek iestatīti 'datu objekam', bet 2. tabula ir citas datus, kas saistiti ar tiem.",
+      "sentence": "Pirmā tabula ir viens no iespējamām atverām, ja ir jāatceras notikumu izteiksme ir x.",
+      "language": "no",
+      "generated": false,
+      "uid": "e46f6771-976a-455b-83bc-461c2f080aef"
+    },
+    {
+      "term": "pasaule turniņam",
+      "definition": "Pasaule turna lēmums tiek iestatīts 2. tabulā, kāpēc ir jāatceras notikumu izteiksme ir y .",
+      "sentence": "Ciris ir 'uzvaru pasaule turnīru lēmuma', kāpēc ir jāatver iespējamus, ja x ir lielākam iespējamam, y ir iespējamām irkarām.",
+      "language": "no",
+      "generated": false,
+      "uid": "4d70df33-2e15-4e3d-8406-1ffbc5feeeee"
+    },
+    {
+      "term": "m-aizs",
+      "definition": "M ir reālais skaitlis, kas atbilst plkst. m.l.v., taču ir jāatceras notikumu izteiksme ir 'y'.",
+      "sentence": "Pirmaikos iespējamām ir 'x', kādēs ir lielākam iespējamam irakām ir 'y', kāpēc tiek atver iespējamus, ja ir jāatceras notikumu izteiksme ir y.",
+      "language": "no",
+      "generated": false,
+      "uid": "c6ee0924-ac68-4f6f-a87f-c6afc01a0b67"
+    },
+    {
+      "term": "b-aizs",
+      "definition": "B ir reālais skaitlis, kas atbilst plkst. b.l.v., taču ir jāatver iespējamus, ja ir jāatceras notikumu izteiksme ir y.",
+      "sentence": "Pirmaikos iespējamām ir 'x', kādēs ir lielākam iespējamam irakām ir 'y', kāpēc tiek atver iespējamus, ja ir jāatceras notikumu izteiksme ir y.",
+      "language": "no",
+      "generated": false,
+      "uid": "235d0b26-85f3-4170-9de9-af236e2cd826"
+    },
+    {
+      "term": "nobīda",
+      "definition": "Nobīdas ir reālais skaitlis, kas atbilst pirmaikos iespējamām irakām. Ja ir jāatver iespējamus, ja ir jāatceras notikumu izteiksme ir y.",
+      "sentence": "Pirmaikos iespējamām ir 'x', kādēs ir lielākam iespējamam irakām ir 'y', kāpēc tiek atver iespējamus, ja ir jāatceras notikumu izteiksme ir y.",
+      "language": "no",
+      "generated": false,
+      "uid": "d8a2866d-0d71-4ef1-a51d-9311fbccceb1"
+    },
+    {
+      "term": "variantes",
+      "definition": "Varianta ir lēmums, ka datu objekti ir vairāku variantām, taču ir lēmums, kā atver iespējamus, ja ir jāatceras notikumu izteiksme ir y.",
+      "sentence": "Pirmaikos iespējamām ir 'x', kādēs ir lielākam iespējamam irakām ir 'y', kāpēc tiek atver iespējamus, ja ir jāatceras notikumu izteiksme ir y.",
+      "language": "no",
+      "generated": false,
+      "uid": "51e936d3-bc80-4017-acd8-32b9a94c701d"
+    },
+    {
+      "term": "kati par X",
+      "definition": "Kad katru datu objekta ir iestatīti 'X', ir lēmums atklīt iespējamus, ja ir jāatceras notikumu izteiksme ir y.",
+      "sentence": "Pirmaikos iespējamām ir 'x', kādēs ir lielākam iespējamam irakām ir 'y', kāpēc tiek atver iespējamus, ja ir jāatceras notikumu izteiksme ir y.",
+      "language": "no",
+      "generated": false,
+      "uid": "0fd07961-7262-488b-a03e-90dfd923c451"
+    },
+    {
+      "term": "X=0",
+      "definition": "Kāda ir X, ja ir nobeiguma iespējamus, ja ir jāatver iespējamus, ja ir jāatceras notikumu izteiksme ir y.",
+      "sentence": "Pirmaikos iespējamām ir 'x', kādēs ir lielākam iespējamam irakām ir 'y', kāpēc tiek atver iespējamus, ja ir jāatceras notikumu izteiksme ir y.",
+      "language": "no",
+      "generated": false,
+      "uid": "2ece6210-f017-4ba2-b49e-2c626db23b81"
+    },
+    {
+      "term": "varianti",
+      "definition": "Viņa no iespējamām ir lēmums, kas atbilst 'X' novietošanai, taču ir lēmums, kā atver iespējamus, ja ir jāatceras notikumu izteiksme ir y.",
+      "sentence": "Pirmaikos iespējamām ir 'x', kādēs ir lielākam iespējamam irakām ir 'y', kāpēc tiek atver iespējamus, ja ir jāatceras notikumu izteiksme ir y.",
+      "language": "no",
+      "generated": false,
+      "uid": "6853b0ff-6a0c-442a-8da4-018dbbf83354"
+    },
+    {
+      "term": "plakne",
+      "definition": "Plakna ir iespējamus, kas noskaidro X, taču ir lēmums, kā atver iespējamus, ja ir jāatceras notikumu izteiksme ir y.",
+      "sentence": "Pirmaikos iespējamām ir 'x', kādēs ir lielākam iespējamam irakām ir 'y', kāpēc tiek atver iespējamus, ja ir jāatceras notikumu izteiksme ir y.",
+      "language": "no",
+      "generated": false,
+      "uid": "6ac656c7-840c-4bac-8032-b9b5aa5b9591"
+    },
+    {
+      "term": "varianta",
+      "definition": "Viņa no iespējamām ir lēmums, kas atbilst 'X' novietošanai, taču ir lēmums, kā atver iespējamus, ja ir jāatceras notikumu izteiksme ir y.",
+      "sentence": "Pirmaikos iespējamām ir 'x', kādēs ir lielākam iespējamam irakām ir 'y', kāpēc tiek atver iespējamus, ja ir jāatceras notikumu izteiksme ir y.",
+      "language": "no",
+      "generated": false,
+      "uid": "ca92fb83-4573-4625-8864-a245b8e713ae"
+    },
+    {
+      "term": "plakna",
+      "definition": "Plakna ir iespējamus, kas noskaidro X, taču ir lēmums, kā atver iespējamus, ja ir jāatceras notikumu izteiksme ir y.",
+      "sentence": "Pirmaikos iespējamām ir 'x', kādēs ir lielākam iespējamam irakām ir 'y', kāpēc tiek atver iespējamus, ja ir jāatceras notikumu izteiksme ir y.",
+      "language": "no",
+      "generated": false,
+      "uid": "5222d95b-6dad-43bc-8e8c-77699dc392bb"
+    },
+    {
+      "term": "Lineāras regresijas modelī",
+      "definition": "Riga pretaviesa metode, kas tiek izmantota datu analīzei, kāpēc lineārās slēgumus atrast. Šo modeli iezima no vienas ar lineārām funkcijām apak Sty rumiem.",
+      "sentence": "Lineāras regresijas algoritms",
+      "language": "es",
+      "generated": false,
+      "uid": "9ff4c20f-702e-432b-814f-6fffc589ebf3"
+    },
+    {
+      "term": "Kļuda funkcija",
+      "definition": "To ir funkcija, kura tiek izmantota novarantизма iestādīšana lineārās regresijai. Kļudas vērtiba tiek apakust atbilstoši pārkāpi iezimām lēmju rindu.",
+      "sentence": "Linear regressijas algoritms",
+      "language": "es",
+      "generated": false,
+      "uid": "2c16a65b-90e4-4e28-ad35-773c8185534f"
+    },
+    {
+      "term": "8. att.",
+      "definition": "Viāda no divas laikas, kā algoritmus izveidst, taču nosaukums nav specifikuši.",
+      "sentence": "Lineāras regresijas algoritms",
+      "language": "es",
+      "generated": false,
+      "uid": "d7215fc8-84b7-4dcd-8d04-9017353b351d"
+    },
+    {
+      "term": "prognozeta izeita katr ",
+      "definition": "Koks ir iespējamam vērtībām, kas tiek iestatīti visai datu kopai.",
+      "sentence": "Lineāras regresijas algoritms",
+      "language": "es",
+      "generated": false,
+      "uid": "aba89504-716b-462e-9b33-71f9bb32e4fb"
+    },
+    {
+      "term": "ja sasniegti...",
+      "definition": "Ja noskaidro iespējamām ir lielākam lomu, tiek izslepta iespējamā ize. Ja nav saistīti iespējamās ize, tiek pievienot jaunas iespēamas ize.",
+      "sentence": "Lineāras regresijas algoritms",
+      "language": "es",
+      "generated": false,
+      "uid": "a692e436-ec24-484c-83f3-6e5c796f3e99"
+    },
+    {
+      "term": "gradienta nolaišanos",
+      "definition": "Jaunu modeļa pirmaji izmaiņi tiek atrastīti, taču no piecvadratno atkarībā. JaCTV ir lineārā funkcija.",
+      "sentence": "Lineāras regresijas algoritms",
+      "language": "es",
+      "generated": false,
+      "uid": "95b7e96a-8dec-4614-adaa-1c6aad164418"
+    },
+    {
+      "term": "mācīšanās ātrums alpha",
+      "definition": "Kāda ir mācīšanas rādītāja ātruma vērtiba, taču nosaukumu ir limīta.",
+      "sentence": "gradienta nolaišanos",
+      "language": "es",
+      "generated": false,
+      "uid": "4ce60523-f836-4aca-920e-b0323db1733c"
+    },
+    {
+      "term": "datu objekta pazīmju vektors",
+      "definition": "Jauna ize ir taustiņīgi, ja ir lineaaritājs.",
+      "sentence": "Lineāras regresijas algoritms",
+      "language": "es",
+      "generated": false,
+      "uid": "805fd2f2-5ee5-40fd-8064-ef8bd7f3a6c7"
+    },
+    {
+      "term": "loģistiskā regresija",
+      "definition": "Kāda ir tā laukszemstarpējā nosaksta, ka tiek izmantota taurinam, kas klasifikuja ar logi staro jūnos kadrētām (vai un nenovēršām), taču ievadu iezīmēm ir iespēamas iespēmas atkarībā no Jaiparus kadrētam.",
+      "sentence": "beceptvs",
+      "language": "ng",
+      "generated": false,
+      "uid": "5ef0f25d-02f7-4cfa-b2c5-e3aacd8649c9"
+    },
+    {
+      "term": "Vienkāršākais klasifikācijas problēmas gadījums",
+      "definition": "Kāda ir tā laukszemstarpējā nosaksta, ka ir vienkārša binārās klasifikācijs, tačuCLC: Pievairosta tekstā ir minēt taurinus ar divām klasiem, taču kontekste ",
+      "sentence": "Vienkāršāk beetverks",
+      "language": "nq",
+      "generated": false,
+      "uid": "977cd21e-9c27-4ff6-bc44-3986b2add339"
+    },
+    {
+      "term": "daudzklašu klasifikācība",
+      "definition": "Kāda ir tā laukszemstarpējā nosaksta, ka ir vairāk kā divām klasiem / kategorijām, piemēram, dzīvinu klasifēru ar iezīmēm kā kaķis un zirgs, bet taurinam ir pievienotākas iespējamām vērtībēm atkarībā no jūnos kategoriju apaksskaidrojošiem iezīmēm.",
+      "sentence": "beceptvs",
+      "language": "ng",
+      "generated": false,
+      "uid": "5695d2c7-bb38-41e4-b919-c623914bbb45"
+    },
+    {
+      "term": "pārtrūdkuma regresija",
+      "definition": "Kāda ir tā laukszemstarpējā nosaksta, ka tiek izmantota lineārā regresija datu analīsim, taču ar papildinamām funkcijām no binārām kadrētam jūnos kategoriju atkarībām.",
+      "sentence": "beceptvs",
+      "language": "ng",
+      "generated": false,
+      "uid": "3e1c408d-11f1-4845-a3ed-89a5e498a29a"
+    },
+    {
+      "term": "datu objekta piederība",
+      "definition": "Kāda ir tā laukszemstarpējā nosaksta, ka ir atkarīga no datu kopa ar iezīmēm, piemēram, studenta pierazīmes un lecka, taču tiek novērslas ar iespējamām categorijām (vai, nenoververs).",
+      "sentence": "beceptvs",
+      "language": "ng",
+      "generated": false,
+      "uid": "1d54edbd-3a3d-4eb6-9c7c-9247f7f94e10"
+    },
+    {
+      "term": "prognozētajam modeli",
+      "definition": "Kāda ir tā laukszemstarpējā nosaksta, ka tiek izslegeta ar mātīnu modelu, lai prognozētu iespējamus kadrētus (vai vai nenoververs) atkarībā no studenta pieradītām iezīmēm.",
+      "sentence": "beceptvs",
+      "language": "ng",
+      "generated": false,
+      "uid": "695c107e-6145-4489-98fb-656d2660c0bb"
+    },
+    {
+      "term": "slēdzīgā funkcija",
+      "definition": "Kāda ir tā laukszemstarpējā nosaksta, koja tiek izmantota logi staro jūnos kadrētam (vai un nenoververs), taču iespēamas ir iespējamās irklākas atkarībā no irādītām irāda vērtībēm (pārskaitamajam 0.5 irta limitam). Mēs ir izteikslīzu, ka ir taurinam atšķirīgas iespēmas logi staro jūnos kadrētam (vai nenoververs), ja irevēloties ar slēdzīgus irādītus vērtības (pārskaitamajam 0.5 irta limitam).",
+      "sentence": "beceptvs",
+      "language": "ng",
+      "generated": false,
+      "uid": "f3a5a5f4-8b32-4a0f-b9b3-7fa074c12c98"
+    },
+    {
+      "term": "algoritemu izslegeta",
+      "definition": "Kāda ir tā laukszemstarpējā nosaksta, ka tiek pievienots vairakamie iezīmji no data kopa, lai ieteiktu taurinam atšķirīgas iespēmas (vai nenoververs) atkarībā no tām.",
+      "sentence": "beceptvs",
+      "language": "ng",
+      "generated": false,
+      "uid": "e64d42be-bfde-4fe6-9875-3f2be2394172"
+    },
+    {
+      "term": "izmaksu funkcija",
+      "definition": "Kāda ir tā laukszemstarpējā nosaksta, ka tiek izmantota mātīna, kuras ir taikomta novērot jauna data koka atkarībā no tām iespējamām kadrētam (vai nenoververs), un tiek izslegeta visliela izmaksu no taurinim. Mēs ir taikomusi speciāli vēlatāko iespēpi izmaiņu, ja irādītās irāda vērtības ir lielākas par 0.5 irta limitam.",
+      "sentence": "beceptvs",
+      "language": "ng",
+      "generated": false,
+      "uid": "8faa9491-7dc8-456f-9a35-f4f10316590c"
+    },
+    {
+      "term": "K-NAKERE THETA",
+      "definition": "Kāda ir tā laukszemstarpējā nosaksta, ka tiek izmantota K-N metodes, kas atver taurinam no studentaspēkām (vai, nenoververs) atkarībā no tām.",
+      "sentence": "beceptvs",
+      "language": "ng",
+      "generated": false,
+      "uid": "d3ea8f20-138c-40e8-99cc-58fea5f2169c"
+    },
+    {
+      "term": "Turklāt",
+      "definition": "No citas iestatījumam secināt, ka šim algoritmam nav atsevišķas apmācības fāzes.",
+      "sentence": "no citām iestatīti",
+      "language": "gx",
+      "generated": false,
+      "uid": "efb3c17d-349f-4cb3-b9c6-c7f6439acb27"
+    },
+    {
+      "term": "datu objekts",
+      "definition": "Datuma objekta, kurš ir pieejams un tiek iegūts ar datu kopā. Jau maca pretējam atkarās no iesp. KLASIFIKATĪ",
+      "sentence": "(5 att) doti 6. att.",
+      "language": "es",
+      "generated": false,
+      "uid": "6d327e04-5355-4793-b621-bfb49335ee0b"
+    },
+    {
+      "term": "attēlā ir parādīta vienkāršota sadaloša hierarhiskā klasterēšana",
+      "definition": "noa no att Latv s a l i c k h e r ar h i g e r a t i k a k l a s t e r e n a m",
+      "sentence": "Datu objekti, kuriem ir vislielākais attālums no citiem datu objektiem klasterī, tiek sadalīti atsevišķajos klasteros katrā sadalošās hierarhiskās klasterēšanā. Vienda (Hastie, 2017) paplaicia, ka vienas no ir lauks slōdīgām, bet atkarīgi izplatītākām pētījam.",
+      "language": "en",
+      "generated": false,
+      "uid": "93513074-8d38-4407-ac4b-267d36654009"
+    },
+    {
+      "term": "F1 mērs",
+      "definition": "Attums ir nosaukens starp [0, 1], kas izpauzīgi no clsiva iespējamam jūrām. F1 merns ir vienas no izteiksmiemerām, jo ir apvieni jūdas (juts) un pirmais clsiva cilns (precision), taču izteiksmas nosaksta F1 merns ir precize ar 1, ja clsiva iespējamus ir augsta un paieltpieviesa par taip re r (d)).",
+      "sentence": "i",
+      "language": "ij",
+      "generated": false,
+      "uid": "99832823-a4d2-4aa6-8e65-52000daed13e"
+    },
+    {
+      "term": "t",
+      "definition": " ",
+      "sentence": " t ",
+      "language": "tw",
+      "generated": false,
+      "uid": "2545c5ed-34f2-41d0-8661-f69eeffc7125"
+    },
+    {
+      "term": " t",
+      "definition": " t",
+      "sentence": "t",
+      "language": "nq",
+      "generated": false,
+      "uid": "141b61e2-2290-45f8-84b1-5e470bed42a1"
+    },
+    {
+      "term": "klasterešanas rezultātus",
+      "definition": "Vienojumus, kas izpauzs no daudziem metrikām (Silueta koeficienta), un ir saistīti ar bio neironām",
+      "sentence": "Nepieraksta iespāvie nobi kontekstos",
+      "language": "ne",
+      "generated": false,
+      "uid": "f19952b5-efac-415e-b81c-25e80908c58d"
+    },
+    {
+      "term": "Neironosa funkcija",
+      "definition": "Tomēr ir iespējams izmantot citas funkcijas, piemēram, visu svaru un ieejas signālu reizinājumu vai maksimālo/ minimālo vērtību no svara un ieejas signāla rezināmām. Tipiskā lietošana ir Toeņa Toeņa tīkla kontekste, kur noskaidro neirona izeju.",
+      "sentence": "Neironos",
+      "language": "en",
+      "generated": false,
+      "uid": "e158e9a0-9199-4a6d-a974-76ac8dad43aa"
+    },
+    {
+      "term": "Summēšanas funkcija",
+      "definition": "Tomēr ir iespējams izmantot citas funkcijas, piemēram, visu svaru un ieejas signālu reizinājumu vai maksimālo/ minimālo vērtību no svara un ieejas signāla rezināmām. Tipiskajā lietošanā noskaidro neirona izeju.",
+      "sentence": "en",
+      "language": "no",
+      "generated": false,
+      "uid": "27248d4c-b447-4ced-9ae1-cd5068f9623f"
+    },
+    {
+      "term": "Aktivizācijas funkcija",
+      "definition": "Tomēr ir iespējams izmantot citas funkcijas, piemēram, neironos . Noskaidoja neirona izeju, taču aktīzācija ir no neirona . Tomēr ir iespemba likum .",
+      "sentence": "en",
+      "language": "no",
+      "generated": false,
+      "uid": "ea8fa8bf-0383-4919-8fb4-072f772206c2"
+    },
+    {
+      "term": "Negvitsky",
+      "definition": "Atbilstoši (Negnevitsky, 2011), daudzi slēptie neironi atvaires no vispāritzējoāmācībās . Katras tīkla ir nekad izdzīloši .",
+      "sentence": "en",
+      "language": "no",
+      "generated": false,
+      "uid": "b511c084-b0c6-42bb-a815-75fdea5ad4b7"
+    },
+    {
+      "term": "Callan",
+      "definition": "Citiem vārdiem ir noskaidrotiIPC: Callana 2003 paraksta datus atveram 'datu struktūras', kādām ir iespējamus slotu vērtības.",
+      "sentence": "Callan ir zinātājs, kuram ir noskaidrīgi atkarīgi no datus.",
+      "language": "sr",
+      "generated": false,
+      "uid": "01a7b6f3-b97b-4c03-a5b2-bc3b2b8a135d"
+    },
+    {
+      "term": "Jones",
+      "definition": "(Callan, 2003; Jones, 2009; Negnevitsky , 2011). Neironi ir savienoti, pārrodot neirona virskus .",
+      "sentence": "en",
+      "language": "no",
+      "generated": false,
+      "uid": "c78eafa4-6713-42bb-b582-4529b9569ccf"
+    },
+    {
+      "term": "Slēptais slānis",
+      "definition": "Līdz ar to neitherjas slanī, taču ir nosūtītāji no vides . Līdz ar to neironos saturoši ieejas signālus .",
+      "sentence": "en",
+      "language": "no",
+      "generated": false,
+      "uid": "e9a953ab-96e8-463b-ba15-1fc892931c0e"
+    },
+    {
+      "term": "Ieejas slānis",
+      "definition": "Saņem ieejas signālus no neitherjas, ir nosūtītājis izejas virskam .",
+      "sentence": "en",
+      "language": "no",
+      "generated": false,
+      "uid": "1b0bc673-865c-40c3-9aa5-a9b06ce9df75"
+    },
+    {
+      "term": "Iezimte koņējamie neironi",
+      "definition": "Cirisnukotā ir neitherja, nosūtītājis no vīdzemas .",
+      "sentence": "en",
+      "language": "no",
+      "generated": false,
+      "uid": "d22acf43-f707-44d0-9f18-8871ae1ae882"
+    },
+    {
+      "term": "Izejas slānis",
+      "definition": "Iezimte koņējamie, nosūtītāja ir neitherja .",
+      "sentence": "en",
+      "language": "no",
+      "generated": false,
+      "uid": "28e474f3-0808-4928-815b-3e8889f138f1"
+    },
+    {
+      "term": "Katra neirns",
+      "definition": "Dabaga no neitherjas tīkla ir neitherjas, taču nosūtītāji, kā arī neitherja .",
+      "sentence": "en",
+      "language": "no",
+      "generated": false,
+      "uid": "1fffc12c-03bf-4e5c-aaa6-47e32e5f704f"
+    },
+    {
+      "term": "Apmācības likums",
+      "definition": "Pārāk lielāko lēmumu paredz tādu, kādai ir iespemba neitherna .",
+      "sentence": "en",
+      "language": "no",
+      "generated": false,
+      "uid": "71cb1a42-bd42-4042-8449-cdef1402643a"
+    },
+    {
+      "term": "Spariņa",
+      "definition": "Maksla/ minima no svara un ieejas signālu .",
+      "sentence": "en",
+      "language": "no",
+      "generated": false,
+      "uid": "c0f89b7e-1450-49c1-9014-2eebf9309e5c"
+    },
+    {
+      "term": "perceptrons",
+      "definition": "Modi, kurus izstrada daudziet atrastie, piemēram, 50. gads Rozenblats, ir iespējamam vērtībām ietekam . Vēlatieji ir . Vienslāņa perceptronai ir tikai ieejas slānis un izejas slānis, papildus, ka tiem ir vienkārši no ieejas signāliem. Dubas perceptrons var atstāt vairāk fiksām funkcijām",
+      "sentence": "(5 att), (6 b) att., (50 gads Rozenblats)",
+      "language": "es",
+      "generated": false,
+      "uid": "0a43d2f5-9b73-4459-99d0-5b107a9185cb"
+    },
+    {
+      "term": "deepeness",
+      "definition": "Kāda ir iesp. KLASIFIKATĪ, piemēram, tiek apmaičup gribas ar nosaukumiem . Viest svars ir ietekma no tiks Latv.",
+      "sentence": "(5 att)",
+      "language": "es",
+      "generated": false,
+      "uid": "598ba8c7-b201-4af4-959b-e9e65bf86971"
+    },
+    {
+      "term": "activation",
+      "definition": "Jauna notiek maca, ja tiek atvaida notikumu, piemērupreišādijā notuši . Ja ir patversta . Activation ir iesp. KLASIFIKATĪ . Vairamaka veida ir . Viest notuši .",
+      "sentence": "(5 att)",
+      "language": "es",
+      "generated": false,
+      "uid": "c7f14115-7037-4923-ac75-59750dd81758"
+    },
+    {
+      "term": "learning algorithm",
+      "definition": ". Percevona apmācība ir iesp. KLASIFIKATĪ, kuram ir iedalīts ar . Vairamaka ir . Ja ir patversta notikumu .",
+      "sentence": "(5 att)",
+      "language": "es",
+      "generated": false,
+      "uid": "49d079d5-fbac-4ccb-93ec-c832be3c81c4"
+    },
+    {
+      "term": "delta rule",
+      "definition": ". Percevona apmācības ir . Vairamaka ir . Ja ir patversta notikumu .",
+      "sentence": "(5 att)",
+      "language": "es",
+      "generated": false,
+      "uid": "ca2eddbc-bdd2-4cc3-b656-0cfcfa8f4097"
+    },
+    {
+      "term": "Perceptron",
+      "definition": "A type of artificial neural network with a multilayer architecture used for classification and regression tasks.",
+      "sentence": "The text describes the visualized structure of an attēlā, which is modeled after perceptrons but adapted for broader application in machine learning.",
+      "language": "ve",
+      "generated": false,
+      "uid": "218d09a8-42c1-4229-9213-dd41be1ffcb5"
+    },
+    {
+      "term": "slānis",
+      "definition": "Slánis refers to the number of labels assigned in classification tasks, distinguishing between positive and negative examples based on their occurrence count. It can also be manually set for binary classification outcomes.",
+      "sentence": "Iesais (Negnevsky) is a type of learning process where the model predicts outputs that match the distribution of class labels used for training data categorization. In contrast, izejs uses actual counts of examples from each category to train and classify new instances.",
+      "language": "ne",
+      "generated": false,
+      "uid": "64960e02-986f-4e2a-8b91-abdd734c1b5d"
+    },
+    {
+      "term": "exponential complexity",
+      "definition": "A term describing how computational requirements grow exponentially with an increase in the number of layers (Negnevsky). This is particularly relevant when dealing with multilayer neural networks.",
+      "sentence": "Nobīda (Russell & Norvig) refers to a component's coefficient that influences error correction by adjusting values during training, often associated with activation functions.",
+      "language": "ve",
+      "generated": false,
+      "uid": "d3f73120-5756-46c5-bba3-5dd779e25661"
+    },
+    {
+      "term": "error propagation",
+      "definition": "A training algorithm in neural networks where errors are propagated backward through the network (Ertel) to adjust neuron values.",
+      "sentence": "This method involves summing deltas across neurons and applying activation functions during the adjustment process.",
+      "language": "ve",
+      "generated": false,
+      "uid": "d34f5059-a1d3-43fa-affc-5ebb84c728c5"
+    },
+    {
+      "term": "error backpropagation",
+      "definition": "An algorithm for training neural networks where errors are propagated backward through the network to adjust weights and biases (Ertel). It involves summing deltas across neurons and applying activation functions.",
+      "sentence": "Apmacibas ir neuron's value change based on the sum of derivatives of the error with respect to its input, scaled by a learning rate. This adjustment is made during training using an activation function (Ertel).",
+      "language": "ve",
+      "generated": false,
+      "uid": "2105c773-095f-4160-8880-40b5882a5828"
+    },
+    {
+      "term": "data grouping",
+      "definition": "In machine learning, data grouping involves partitioning all data into categories based on known class indicators.",
+      "sentence": "This process aims to predict the output that matches a pre-known classification characteristic. The goal is to generate an error prediction for each input object.",
+      "language": "ve",
+      "generated": false,
+      "uid": "4181ac3e-95e2-476c-997d-a44c4aa5263e"
+    },
+    {
+      "term": "error",
+      "definition": "An inconsistency arising when predicted outputs differ from actual values, particularly in data distribution during testing.",
+      "sentence": "To understand errors, consider that the neuron's value is adjusted based on error derivatives scaled by learning rates. This adjustment occurs through activation functions (Ertel).",
+      "language": "ve",
+      "generated": false,
+      "uid": "d30be943-9875-4f58-aa88-2b5300ae169c"
+    },
+    {
+      "term": "learning rate",
+      "definition": "A parameter that scales the adjustment to neuron values during training, influencing how rapidly or a check is made. This can be used for complexity (Ertal)).",
+      "sentence": "to <<etc>...",
+      "language": "tq",
+      "generated": false,
+      "uid": "14fcf916-d947-4ee7-9c70-5dde582b6cfa"
+    },
+    {
+      "term": "error correction",
+      "definition": "The process of minimizing discrepancies by adjusting weights based on the difference between predictions made in current and subsequent layers (Negnevsky).",
+      "sentence": "In this approach, adjustments are made to neurons' inputs using scaled error derivatives from both current and future layers.",
+      "language": "ve",
+      "generated": false,
+      "uid": "c5ec6698-6acd-47e7-934d-bbf47e6286a3"
+    },
+    {
+      "term": "input layer",
+      "definition": "The initial layer of a neural network where input data is fed into the system, often containing all features necessary for classification tasks.",
+      "sentence": "During training, an input layer neuron value adjustment occurs based on error derivatives scaled by learning rates and subsequent layers.",
+      "language": "ve",
+      "generated": false,
+      "uid": "6384d4d3-aa05-4bd6-a791-b0d9db4dfce3"
+    },
+    {
+      "term": "output neuron",
+      "definition": "A neuron in the output layer of a neural network that predicts values for classification or regression tasks.",
+      "sentence": "In error correction, an output neuron's adjustment is influenced by scaled error derivatives and learning rates.",
+      "language": "ve",
+      "generated": false,
+      "uid": "690cb89e-f601-48b1-a116-6691fbabef2c"
+    },
+    {
+      "term": "hidden layers",
+      "definition": "Layers between input and output in a neural network. Practical applications often use three hidden layers (Negnevsky), with complexity increasing exponentially with more layers.",
+      "sentence": "The number of neurons in each layer affects computational requirements, which grow exponentially with additional layers.",
+      "language": "ve",
+      "generated": false,
+      "uid": "52bb4c2a-1611-4565-9767-73fbbabcff19"
+    },
+    {
+      "term": "Bayesian prediction",
+      "definition": "A method involving probabilistic predictions based on prior knowledge and current data (Bermúdez). This approach aims to match predicted outputs as closely as possible to known class characteristics.",
+      "sentence": "The goal is to generate an output that matches the most probable value for a given input, considering both learned patterns and pre-existing biases.",
+      "language": "ve",
+      "generated": false,
+      "uid": "7b5caf6e-078a-40bc-b798-1691b70ef644"
+    },
+    {
+      "term": "classical bias",
+      "definition": "An inherent tendency towards certain responses or classifications based on prior knowledge (Bermúdez).",
+      "sentence": "This refers to the predisposition in classification tasks where outputs are adjusted considering both learned patterns and pre-existing biases.",
+      "language": "ve",
+      "generated": false,
+      "uid": "4af9d684-623d-473c-99af-1349d5b19325"
+    },
+    {
+      "term": "output error",
+      "definition": "The discrepancy between predicted values by output neurons and actual observed data, especially when class distributions differ during testing.",
+      "sentence": "Classical approaches to neural network training often involve adjusting weights based on the difference between predictions made in subsequent layers.",
+      "language": "ve",
+      "generated": false,
+      "uid": "be4879c1-5091-4b93-a7b5-d7eebdeae2f2"
+    },
+    {
+      "term": "delta calculation",
+      "definition": "The process of computing the change needed to adjust weights by comparing predictions made from current inputs versus those considering future layers.",
+      "sentence": "This involves calculating deltas for each neuron based on differences in outputs predicted when neurons are or aren't considered.",
+      "language": "ve",
+      "generated": false,
+      "uid": "022a0009-e718-46b7-9633-be09053caa71"
+    },
+    {
+      "term": "activation function",
+      "definition": "A mathematical function applied to a neuron's input sum to determine its output value, introducing non-linearity into the network.",
+      "sentence": "After adjusting neuron values based on deltas and learning rates, an activation function is applied to introduce necessary complexity or transformation.",
+      "language": "ve",
+      "generated": false,
+      "uid": "1f617b24-c13a-4bb1-9b83-0d0d30d3ab86"
+    },
+    {
+      "term": "Cognitive Science",
+      "definition": "A field studying the mind's workings through interdisciplinary approaches combining computer science, psychology, neuroscience, and other fields.",
+      "sentence": "An introductory text on Cognitive Science (Hopgood), providing foundational knowledge for understanding intelligent systems.",
+      "language": "ve",
+      "generated": false,
+      "uid": "83d09d9f-ea08-450a-b77b-8744cc135037"
+    },
+    {
+      "term": "Artificial Intelligence",
+      "definition": "A field focused on creating machines capable of performing tasks that require human intelligence, such as problem-solving and decision-making.",
+      "sentence": "An introductory text (Callan) covering the foundational concepts in AI research and application.",
+      "language": "ve",
+      "generated": false,
+      "uid": "5d1fc3ad-0c43-4d01-b3d9-b4cb9ec7164c"
+    },
+    {
+      "term": "Structures and Strategies for Complex Problem Solving",
+      "definition": "A book by Luger discussing systematic approaches to solving complex computational problems through structured methods.",
+      "sentence": "Ertel's Introduction to Artificial Intelligence (2011) provides foundational knowledge on AI architectures.",
+      "language": "ve",
+      "generated": false,
+      "uid": "cd869cd9-a2a7-4db8-a370-50f9a41fb8fe"
+    },
+    {
+      "term": "Hopgood A.A.",
+      "definition": "A reference book by Hopgood providing an introduction to the science of artificial intelligence, covering fundamental concepts and systems.",
+      "sentence": "Russell & Norvig's 2010 textbook is a comprehensive resource on AI methodologies and applications.",
+      "language": "ve",
+      "generated": false,
+      "uid": "013b7c81-42b4-4952-8e2a-7cb3e1f78da7"
+    },
+    {
+      "term": "Russian and Norvig",
+      "definition": "A reference work by Russell and Norvig that covers various aspects of artificial intelligence, including algorithmic foundations.",
+      "sentence": "Poole & Mackworth's 2010 book introduces computational agents with intelligent behaviors.",
+      "language": "ve",
+      "generated": false,
+      "uid": "dabe1229-35db-4305-a295-0d53042ba9f3"
+    },
+    {
+      "term": "Bermudez J.L.",
+      "definition": "A reference text by Bermúdez discussing cognitive science principles applied to machine learning and AI.",
+      "sentence": "Callan R.'s 2003 book offers an overview of artificial intelligence concepts for both beginners and advanced learners.",
+      "language": "ve",
+      "generated": false,
+      "uid": "b4ebc576-23ee-4df3-a15a-4291874061e4"
+    },
+    {
+      "term": "Russell & Norvig, 2010",
+      "definition": "A modern textbook on artificial intelligence providing in-depth coverage of AI methodologies and applications.",
+      "sentence": "Jones T.M.'s 2009 book presents a systems approach to understanding complex problem-solving within the context of AI.",
+      "language": "ve",
+      "generated": false,
+      "uid": "01702f29-904c-4a14-b966-36796501e992"
+    },
+    {
+      "term": "Ertel",
+      "definition": "An author who contributed foundational texts on artificial intelligence, focusing on neural network structures and learning algorithms.",
+      "sentence": "Negnevsky's 2011 guide offers practical insights into implementing perceptrons in machine learning tasks.",
+      "language": "ve",
+      "generated": false,
+      "uid": "d91f5f25-a639-4396-aad3-88d95cd053e6"
+    },
+    {
+      "term": "multilayer perceptron",
+      "definition": "A neural network model consisting of multiple layers between input and output, used to solve complex problems by introducing non-linear relationships (Ertel).",
+      "sentence": "Attēlā represents a generalized form of the perceptron architecture designed for more versatile application in machine learning tasks.",
+      "language": "ve",
+      "generated": false,
+      "uid": "e5907e21-bb0b-4d54-88d3-62d064c672fc"
+    },
+    {
+      "term": "attēlā",
+      "definition": "A term referring to the visual representation or structure of an artificial neural network, particularly one modeled after perceptrons but extended for broader use.",
+      "sentence": "The text uses attēlā to describe a generalized architectural model inspired by traditional perceptrons.",
+      "language": "ve",
+      "generated": false,
+      "uid": "aa6d6ff5-812c-47bb-bcda-23e82ad12a14"
+    },
+    {
+      "term": "delta",
+      "definition": "A value representing the change needed in a neuron's input, calculated based on differences between predicted outputs from current inputs versus those considering future layers.",
+      "sentence": "Deltas are computed as part of error correction mechanisms in neural networks.",
+      "language": "ve",
+      "generated": false,
+      "uid": "bbd7578d-e977-4747-94da-bb03e991493d"
+    },
+    {
+      "term": "tq",
+      "definition": "d",
+      "sentence": " s-t-m-s-t-m-l-se-n-m-3x8",
+      "language": "dn",
+      "generated": false,
+      "uid": "3ea2e373-182f-4b00-bef8-69c5ceb9ef7b"
+    },
+    {
+      "term": "ideja apskata koncepts",
+      "definition": "Konceptuālā ikssaka, kas atspēlēs iespēju starp tiem nožāmām ir trīs objektus - Janis, Pēteris un Ieva, kā arī dvīnes attiecības: Tēvs-Dēls un Vīrs-sieva. Šīs koncepts ir saistītās ar cilvēku savstākamajam dzīvimiem.",
+      "sentence": "Konceptuālā ikssaka",
+      "language": "cz",
+      "generated": false,
+      "uid": "3d8461cc-1d98-4682-84a7-f630bad6daf0"
+    },
+    {
+      "term": "žņatklātuvī",
+      "definition": ": Žņa no žņotamām (no texta literatūrām), kā izteiksnis, ka irbons norādītamajam elementam.",
+      "sentence": "Šīs tīklo semantiķis ir apakšklase/ ...",
+      "language": "no",
+      "generated": false,
+      "uid": "6cc09a29-4d47-43ad-84ec-4acc89f4fbc7"
+    },
+    {
+      "term": "Mehānisms",
+      "definition": "Riotajs konceptu starp izplatībām ir iespemba izveido jaunas intersekciju virsons, lai izaukti novārēs par specifiem objektumiem vai jēdzeni.",
+      "sentence": "Izplatība",
+      "language": "no",
+      "generated": false,
+      "uid": "091d2016-70c7-41e1-ac83-26eb412baedf"
+    },
+    {
+      "term": "Semantiskajos tīkli",
+      "definition": "Tāpēc ir jāpēta individu vis tukloj, kā izbaudīt atkarības virzini, lai iegūt zinājumus par specifiem objektumiem vai jēdzeni.",
+      "sentence": "Izplatība",
+      "language": "no",
+      "generated": false,
+      "uid": "e680de30-1580-4a53-b8c1-37ed2df0e93e"
+    },
+    {
+      "term": "Konkreta zināšanas",
+      "definition": "Ja, izmaiņos, ir jārealizē zināšanu pārmantošana, ja ta ir iespējamā.",
+      "sentence": "Izplatība",
+      "language": "no",
+      "generated": false,
+      "uid": "757461f5-4d57-4805-a284-33bb7adfff13"
+    },
+    {
+      "term": "Zināšanas struktūrize",
+      "definition": "Tiekaturs par izplatītajam atšķilim starp atversta atvaika un izciliem atkarībām.",
+      "sentence": "Izplatība",
+      "language": "no",
+      "generated": false,
+      "uid": "8a13899b-7720-48cb-b6ab-1cc476453fa1"
+    },
+    {
+      "term": "Divdoma lībība",
+      "definition": "Jaunas iespējamus, ja viena virsotne tiks sausi ar citiem, izmantojot nosaukumus.",
+      "sentence": "Izplatība",
+      "language": "no",
+      "generated": false,
+      "uid": "c4523b17-54d2-4ff5-aba9-9700802bc654"
+    },
+    {
+      "term": "Minskis Freim",
+      "definition": "Tā lauks ir iespējamus, ja indivīns izbaudēs situāciju, vienojoties ar pieredjiem.",
+      "sentence": "Izplatība",
+      "language": "no",
+      "generated": false,
+      "uid": "359b2ef2-8a03-45e5-9556-19dc4b48692a"
+    },
+    {
+      "term": "Darbības principa",
+      "definition": "Jaunas iespējamus ir izveidoji Minskis 1975. gadā, konstatējot, ka indivīns izvē-las atmiņēt pirmo situāciju, jo lēmumu bazās.",
+      "sentence": "Izplatība",
+      "language": "no",
+      "generated": false,
+      "uid": "048f3951-662a-4c9d-a2c8-7d1762bc4026"
+    },
+    {
+      "term": "jaunā situācijā",
+      "definition": "Situācija, kas atšķiras no pagātnes situācības, kurās ir neizvelissus zināšanās. Piezete ir apdraivas un maina iriekam no izglātītās zināšanām.",
+      "sentence": "Kāda atšķida no pagātnes situācijas, kādās ir patarba trūkstoši, un ir cilvēks, kas jāatver mainas, jaudzegls no ieguvētajām zināšanām.",
+      "language": "sr",
+      "generated": false,
+      "uid": "3f2fbf3b-5285-4dca-8817-504d73911953"
+    },
+    {
+      "term": "RTU",
+      "definition": "Rīgas Tehniskā universitātē, ir augsta izglātīta universitāte, kur Kāvi noskaidro, ka viņa ir ieguvusi augsto izglātītību no tam.",
+      "sentence": "Augsta izglātita universitāte, kā Rīgas Tehniskā universitātē, kurie ir noskaidri izglātīti.",
+      "language": "sr",
+      "generated": false,
+      "uid": "a73c9611-5004-4ba2-b193-b2b2b08eea33"
+    },
+    {
+      "term": "Sorbon",
+      "definition": "Parīzē esoša augsta izglātita institūcija, kādām ir jāatver maina no ieguvētajām zināšanām no RTU.",
+      "sentence": "Augsta izglātita paraugstītīga institūcija, kurai ir iespējamus atšķirumus no ieguvētajām zināšanām.",
+      "language": "sr",
+      "generated": false,
+      "uid": "51895699-e39e-45ea-8507-ed804b3f69f2"
+    },
+    {
+      "term": "Freijs",
+      "definition": "Sirds Minsky 1975 saraksta ir 'datu struktūra stereotipācās atbalstošana', kādām ir slotu, kas satur patarba trūkstošu informaciju.",
+      "sentence": "Frei ir noteiktais tipa sacaukkonspektīvs datstru confused structureat balstamas datu struktūru atvaida norādītam.",
+      "language": "sr",
+      "generated": false,
+      "uid": "d672651a-1940-4859-ab85-3ef3cfa20093"
+    },
+    {
+      "term": "Citiem vārdiem",
+      "definition": "Vēlāk saturēt slotus ir no iespējamajām informācijam, kādām ir iespējamas patarba trūkstoši.",
+      "sentence": "Viens no iespējamajām slotu vērtībām, kas saturat sevi, vai arī ir iespēamas no ir Gauja.",
+      "language": "sr",
+      "generated": false,
+      "uid": "fa35bc42-1e7d-42d2-b52c-50167edb3573"
+    },
+    {
+      "term": "Slotu",
+      "definition": "Frei ir atkarīgs no slotu, kur ir noskaidroti ir patarba trūkstoši. Slotus saturat iespējamus vērtības un ir noskaidrīgi atkarīgas structurā.",
+      "sentence": "Slotu ir Frei struktūru daļa, kas noskaidroja irpatrākos pišķeris.",
+      "language": "sr",
+      "generated": false,
+      "uid": "2ed34969-6978-45a0-9c4d-f28584955c65"
+    },
+    {
+      "term": "Fete",
+      "definition": "Feti ir iespējamus slotus, kas saturat patarba sevi, kādām ir iespējamas patarbu trūkstoši.",
+      "sentence": "Feta ir Frei struktūru daļa, kas noskaidroja pišķeriba.",
+      "language": "sr",
+      "generated": false,
+      "uid": "a07e87ff-6fbc-468d-bc97-bb985ff917b6"
+    },
+    {
+      "term": "Klauza freim",
+      "definition": "Frei ir atkarīgs no Klauza Freima, kur ir noskaidrīgi parakstīti slotus, kas saturat iespējamus vērtības.",
+      "sentence": "Klausas Frei ir Freim, kas noskaidroja klasiskākā pišķeriba.",
+      "language": "sr",
+      "generated": false,
+      "uid": "a199f65a-ef9e-49d3-b687-98f7206010e3"
+    },
+    {
+      "term": "Apakšklase",
+      "definition": "Ir Klauza Freima atvasināta Apakšklasa, kur ir slotus, kas nav iekļavoti Klauza Freim, bet raksturoja apakšklases objekts.",
+      "sentence": "Apakšklase ir Klauza Frei atvasinājoša klase, kas noskaidroja apakšklasiskiem slotus.",
+      "language": "sr",
+      "generated": false,
+      "uid": "f054157c-0996-499e-8971-422b2959ef58"
+    },
+    {
+      "term": "Slotu vērtības",
+      "definition": "Frei ir atkarīgs no slotu vērtību, kurām ir iespējamas patarba trūkstoši. Slotus saturat iespējamus irklaukus.",
+      "sentence": "Slota vērtības ir Frei lūgos, kas noskaidroja iespējamus slotus.",
+      "language": "sr",
+      "generated": false,
+      "uid": "a4fc1be0-7680-49d1-93a9-ff7ef71bd97f"
+    },
+    {
+      "term": "Minsky",
+      "definition": "Minsky 1975 atveras 'datu struktūra stereotipācīs atbalstošana', kādām ir iespējamus slotu vērtības.",
+      "sentence": "Minsky ir zinātājs, kuram ir atkarīgi no datus, kādām ir iespējamus slotu vērtības.",
+      "language": "sr",
+      "generated": false,
+      "uid": "1b9d4776-a7d0-4288-b3ec-6ecab5dba94f"
+    },
+    {
+      "term": "Negnevitsky",
+      "definition": "Negnevitsky 2011 atveras Frei 'datu struktūras, kādām ir iespējamus slotu vērtības.",
+      "sentence": "Negnevitsky ir zinātājs par Freim, kuram ir iespējamus slotu vērtības.",
+      "language": "sr",
+      "generated": false,
+      "uid": "788131bf-f6af-495f-a16d-1c32b4a5fc6b"
+    },
+    {
+      "term": "Winston",
+      "definition": "Winston 1992 atveras 'datu struktūras, kādām ir iespējamus slotu vērtības.",
+      "sentence": "Winston ir zinātājs par Freim, kuram ir iespējamus slotu vērtības.",
+      "language": "sr",
+      "generated": false,
+      "uid": "baa5c073-9195-43af-9de3-38b8a331c98b"
+    },
+    {
+      "term": "Karte#2967",
+      "definition": "Freims satur atpakaļnoķētas zināšanas par Bagāžas apdrošināšanu bezmaksas slots.",
+      "sentence": "Freims \"Karte#2967\" satur atpakaļnoķētas zināšanas par Bagāžas apdrošināšanu bezmaksas slotā \"Nodrošinātie pakalpojumi\".",
+      "language": "lv",
+      "generated": false,
+      "uid": "847965b1-5e12-4cf6-b91c-4ec3293f9c61"
+    },
+    {
+      "term": "atlaide aprēčina",
+      "definition": "Dēmons IF-NEEDED ir freimu, kas atgūsta atlaides apmēru konkrētam klientam.",
+      "sentence": "Freimus ievērīga mehānisms ir pievienoted jauniem elements par Bagāžas apdrošināšanu bezmaksas slots.",
+      "language": "lv",
+      "generated": false,
+      "uid": "3acc5c99-ebb0-45e3-aff8-9b956388d113"
+    },
+    {
+      "term": "jevuma mehānums",
+      "definition": "Freimus izveidoja speciālos mehānismus, kas atvij pirmakad zinājumus par jēdzienu / objekta īpašībām.",
+      "sentence": "Diemgadu vajagoje ir iespējamie jauni elements.",
+      "language": "lv",
+      "generated": false,
+      "uid": "ce351a9f-39dc-4620-9c07-773b4eeacbe9"
+    },
+    {
+      "term": "freimas",
+      "definition": "Frei ir informācijas bāze, kas satur zinājumus par cilvēkiem un dzīvimiem, piemēram, kaķiem un suņiem.",
+      "sentence": "\"Freims \"karte#2967\" satur ...",
+      "language": "lv",
+      "generated": false,
+      "uid": "452a55ac-b643-4efe-b702-72abc21ced01"
+    },
+    {
+      "term": "persona freimas",
+      "definition": "Vidzemes ir divi augsta līmeņa klašu freimi, nosaukums \"Persona\".",
+      "sentence": "\"Attēls ir ... divi augsta līmeņa klašu freimus: ± Persona ... talakslí freimu. ...",
+      "language": "lv",
+      "generated": false,
+      "uid": "9b330aa4-7bfc-4263-94d4-562ef3ad4e00"
+    },
+    {
+      "term": "apakšklašu freimas",
+      "definition": "Teipei ir divi apakšklašu freimi: \"Kaķis\" un \"Suns.\"",
+      "sentence": "\"... Tālāk ir ... Katram no ... ar ... atkarībā . Visbeidzot, ir četri eksemplāra freimus: ± JánisGrīns ... , un ± IevaKļava ...",
+      "language": "lv",
+      "generated": false,
+      "uid": "b857b390-fc9c-4199-94e8-22a5e868a4b4"
+    },
+    {
+      "term": "vispārināšanas konteksts",
+      "definition": "\"Tads ir ... \"JānisGrīns\" un \"Persona\", ± IevaKļava ... , ± Rekss ... . Vispárinatajā ...",
+      "sentence": "Frei ... ir atkaraga no ...",
+      "language": "lv",
+      "generated": false,
+      "uid": "d84f20c3-86a5-45f9-b46e-b6f47ae39314"
+    },
+    {
+      "term": "nodrošināta pārmanta",
+      "definition": "\"Freimu ... ir ... , ja tá tiek patrauc \\(Diemgadu vajagoje\\) ... . \"Negsevitsky, 2011.\"",
+      "sentence": "Taim atveram ...",
+      "language": "lv",
+      "generated": false,
+      "uid": "7dc81c01-3242-48cb-99e8-8290212d6498"
+    },
+    {
+      "term": "trukums",
+      "definition": "\"... ir grūtības atspágu ... , piemēram, ka \\(Toms ne\\_ed peles \\). \"Wu, 1995.\"",
+      "sentence": "Diemgadu vajagoje ir ...",
+      "language": "lv",
+      "generated": false,
+      "uid": "7e4029b6-c46b-414f-ae47-74e7caa95203"
+    },
+    {
+      "term": "expertsistēma",
+      "definition": "Likumos sakņoka intelektu, kas atvij zinājumus par konkrētām jēdzeniem / objektiem.",
+      "sentence": "\"Populárati \\(Callan R. 2003\\) ... likumu kopas veidā.\"",
+      "language": "lv",
+      "generated": false,
+      "uid": "e1416d00-a466-482d-829d-57815d301f19"
+    },
+    {
+      "term": "zināšanas bāze",
+      "definition": "\"13. attēlä ir atpakaļnoķētās zinājumus par ... , piemēram, kaķiem un suņiem . \"Negsevitsky, 2011.\"",
+      "sentence": "Attelis ir ...",
+      "language": "lv",
+      "generated": false,
+      "uid": "e6c4b552-9103-4adf-8e2f-acd12aabc1a7"
+    },
+    {
+      "term": "visbeidrihs",
+      "definition": "\"Tads ir ... \"JānisGrīns\" un \"Persona\", ± IevaKļava ...",
+      "sentence": "\"Frei ... ir atkaraga no ... , ja tá tiek patrauc \\(Diemgadu vajagoje\\) ... . \"Negsevitsky, 2011.\"",
+      "language": "lv",
+      "generated": false,
+      "uid": "652e985a-8d79-4804-a500-932889a30cb9"
+    },
+    {
+      "term": "defineta forma",
+      "definition": "\"Likumos sakņoka intelektu, kas atvij zinājumus par ... \"Wu, 1995.\"\n...",
+      "sentence": "\"Populárati ... likumu kopas veidā.\"",
+      "language": "lv",
+      "generated": false,
+      "uid": "d31a1d29-f723-4891-aecb-d65e0d27d9b3"
+    },
+    {
+      "term": "nepatveriba",
+      "definition": "\"... ir grūtības atspágu ... , piemēram, ka \\(Toms ne\\_ed peles \\). \"Wu, 1995.\"",
+      "sentence": "\"Diemgadu vajagoje ir ... . \"Negsevitsky, 2011.\"\n...",
+      "language": "lv",
+      "generated": false,
+      "uid": "0fa29fc5-bd9e-45a5-b7c3-a65c2e604ad7"
+    },
+    {
+      "term": "experts",
+      "definition": "Intelligent system, atvijens specializing in knowledge representation of specific domain.",
+      "sentence": "\"Likumos sakņoka intelektu, kas atvij zinājumus par ...",
+      "language": "lv",
+      "generated": false,
+      "uid": "f231e7a9-543b-4d23-8a10-3be74c3eb124"
+    },
+    {
+      "term": "zinātņu bāze",
+      "definition": "Satur atpakaļnoķatavas zināšanas systema, piemēram, konfrontēšies ar cilvēka un dzimten izskatu.",
+      "sentence": "\"Negsevitsky (2011) ... satur ... , piemēram, ka\\_suns ne\\_ed peles . \"Wu, 1995.\"\n...",
+      "language": "lv",
+      "generated": false,
+      "uid": "3fa19ffc-2cc0-443a-97d3-31799feddb1b"
+    },
+    {
+      "term": "klase",
+      "definition": "Frei ir pievienots speciāli izveidoti klase, piemēram, \\(Toms\\) ir klases ... ",
+      "sentence": "\"... Katram no ... ar ... atkarībā . Visbeidzot, ir četri eksemplāra freimus: ± JánisGrīns ... , un \\(IevaKļava\\) ...",
+      "language": "lv",
+      "generated": false,
+      "uid": "5b60cebc-c738-4dfb-8fb5-0bfa0c2eaf5c"
+    },
+    {
+      "term": "vispārinātājs",
+      "definition": "\"Tads ir ... \"JānisGrīns\" un ± IevaKļava \\(, \\text{ ties Ja\\_nis Gríns} \\) ...",
+      "sentence": "Frei ... ir atkaraga no ...",
+      "language": "lv",
+      "generated": false,
+      "uid": "b45d1e35-0f63-4315-858c-1aa47140b3a6"
+    },
+    {
+      "term": "vislielai mērbamantajam",
+      "definition": "\"Freimu ... ir ... , ja tá tiek patrauc \\(Diemgadu vajagoje\\) ... . \"Negsevitsky, 2011.\"",
+      "sentence": "Taim atveram ...",
+      "language": "lv",
+      "generated": false,
+      "uid": "e290a3a8-8d7e-46c4-86e6-06a6f888258d"
+    },
+    {
+      "term": "patveriba trukums",
+      "definition": "\"... ir grūtības atspágu ... , piemēram, ka \\(Toms ne\\_ed peles \\). \"Wu, 1995.\"",
+      "sentence": "Diemgadu vajagoje ir ...",
+      "language": "lv",
+      "generated": false,
+      "uid": "98487709-ddd3-4d50-96d0-621b39caeaad"
+    },
+    {
+      "term": "likumu kopas veidā",
+      "definition": "\"Populárati ... likumu kopas veidā.\"",
+      "sentence": "\"Likumos sak\\_ņoka intelektu, kas atvij zin\\_ājumus par ...",
+      "language": "lv",
+      "generated": false,
+      "uid": "ea41f9a3-2023-4ae9-9270-bf1f17f1995c"
+    },
+    {
+      "term": "visezjaugi",
+      "definition": "\"... ir ... , ja tá tiek patrauc \\(Diemgadu vajagoje\\) ... . \"Negsevitsky, 2011.\"",
+      "sentence": "Taim atveram ...",
+      "language": "lv",
+      "generated": false,
+      "uid": "eec19845-b541-47de-92bb-29b6d304a36c"
+    },
+    {
+      "term": "visezglais",
+      "definition": "\"Frei ir ... , ja t\\_at \\(Diemgadu vajagoje... \"Negsevitsky, 2011.\"",
+      "sentence": "Taim atveram ...",
+      "language": "lv",
+      "generated": false,
+      "uid": "5124df1a-2af3-45d1-aba1-ff28499ba8ee"
+    },
+    {
+      "term": "vispievienotajams",
+      "definition": "\"Frei ir ... j꿬tions, ... \"Diemg\\u\\...",
+      "sentence": "io \\ \\\\\\ ...",
+      "language": "os",
+      "generated": false,
+      "uid": "f1d1285e-0409-45e0-8acf-74d556312ec2"
+    },
+    {
+      "term": "Šādu sistēmu izveide",
+      "definition": "Izveidoja sistemes, kas pievērš iespās limena likumam norādīt zinājumus no konkrētām situācijām. Šāda ir procesu atspoguļošanas veids.",
+      "sentence": "",
+      "language": "en",
+      "generated": false,
+      "uid": "08a07dbc-e4e3-4525-8a69-ffbb959bbf41"
+    },
+    {
+      "term": "no mērķa pārzītā pārmeklēšana",
+      "definition": "Sākumā darba atmiņā ievieto mērķi (paraugu). Pārdzes darbības cikls 'atpazīt-darboties', kas pārbauda parauga sakrienta ar likumu THAN daļu. Iedarbinot kādu konikum, tā IF daļa tiek ievietota darba atmiņā un process atkārtojas. Pārmeklēšana beidzas, kad ir iegūti noteikti fakti par problēmu.",
+      "sentence": "No mērķa virzītā pārmeklēšana atbilst problēmas mērķa sadalīšanai vienkāršos apakšmērks",
+      "language": "no",
+      "generated": false,
+      "uid": "b54c0b4d-1d8f-484c-8ea0-3e65457c030b"
+    },
+    {
+      "term": "darba cikls 'atpazīt-darboties'",
+      "definition": "Kāda ir darbības cikls, kas ietver atpazirutāji (paraugus) un mainitājus (darboties), taču konteksta atvēršanas logiku izplatīti.",
+      "sentence": "kāda ir 'atpazīt-darboties' cikls, kurā ir apakšmērks parauga sakrienta ar likumu THAN daļa.",
+      "language": "no",
+      "generated": false,
+      "uid": "e7e2df0e-6c03-4fcf-84c5-518574822e51"
+    },
+    {
+      "term": "parauga sakrienta",
+      "definition": "Parkaisa, kas noskaidro iespējamus situācijas izmaiņas, taču ja tā nokomplicēt ir pilnīgi atvērsta konteksta atvaika.",
+      "sentence": "ja parauga ir sakrients ar likumu THAN daļas ir taču jāatpazizuši mainitājus",
+      "language": "no",
+      "generated": false,
+      "uid": "94b23b31-e0d6-4567-bcc8-ab72647b2244"
+    },
+    {
+      "term": "IF daļa",
+      "definition": "Darbības logikas daļa, kas ieteiks operāciju darbību atkarībām tam ir izveidota iespējamā fakta.",
+      "sentence": "[none]",
+      "language": "no",
+      "generated": false,
+      "uid": "cf492def-3d14-414e-b06c-99072948c21d"
+    }
+  ],
+  "debug_info": {
+    "chunkSize": 4290,
+    "chunkCount": 68,
+    "contextLength": 4096,
+    "temperature": 0.5,
+    "seed": 42,
+    "prompt": "Your task is to analyze the provided text and create a glossary.\nInstructions:\n1. Extract ALL terms and concepts from the text.\n2. Define them using ONLY the provided text.\n3. NO external knowledge. Synthesize exclusively from source.\n4. DO NOT translate. Keep definitions in the source language.\n5. If no terms found, return an empty list.\n\nText to analyze:\n\n",
+    "elapsedTime": 1832.439,
+    "safeMargin": 0.5,
+    "maxResponseTokens": 4096,
+    "maxTimeout": 599940000,
+    "repeatPenalty": -1,
+    "inputSize": 334911
+  }
+}

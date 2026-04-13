@@ -1,0 +1,1529 @@
+{
+  "uid": "dd34736c-f488-44d3-a19e-36fe42fd1953",
+  "domain": "unknown",
+  "language": "lz",
+  "implementation": "LMStudio-mistralai/ministral-3-3b@Q4_K_M",
+  "timestamp_start": 1774650704840,
+  "timestamp_end": 1774653637270,
+  "error_count": 58,
+  "glossary": [
+    {
+      "term": "vispārīgā intelektuālā darbība",
+      "definition": "darbība, kurai ir pieciešami un pietiekamie līdzekļi, kas realizējas ar fizisko simbolu sistēmu, atspoguļojot cilvēka vai datora zināšanas, pieredzi, jēdzienus un cēloņsakarības.",
+      "sentence": "Fizisko simbolu sistēmai ir nepieciešamie un pietiekamie līdzekļi vispārīgai intelektuālai darbībai",
+      "language": "lv",
+      "generated": false,
+      "uid": "21945811-5567-4a20-8ff0-a27f6547e939"
+    },
+    {
+      "term": "stāvokļu telpas grafā",
+      "definition": "grafa struktūra, kurā ir apvienotas virsotnes un loki (saistības starp virsotnēm), kas atspoguļo stāvokļu telpu pārmeklēšanas procesā.",
+      "sentence": "Ko darīt ar cikliem , ja tādi eksistē stāvokļu telpas grafā ?",
+      "language": "lv",
+      "generated": false,
+      "uid": "31cb41ab-d1a8-4feb-8361-7159ecbd26b5"
+    },
+    {
+      "term": "virsotne",
+      "definition": "grafa nodaļa, kas atspoguļo sarežģītas datu struktūras (objekti ar īpašībām un sastāvdaļām)",
+      "sentence": "grafa virsotnes atspoguļo nevis vienkāršu objektu / jēdzienu, bet sarežģītu datu struktūru...",
+      "language": "lw",
+      "generated": false,
+      "uid": "b17eb82b-7914-4726-8075-e22784bd0dfc"
+    },
+    {
+      "term": "mērķa virsotne",
+      "definition": "virsotne, kuru tiek meklēts kā pabeigtā stāvokļa un atrisinājuma punktā pārmeklēšanas algoritmā.",
+      "sentence": "ja pārmeklēšanas mērķa virsotne nav sasniegta , ejot pa pašreizģenerēto ceļu",
+      "language": "lv",
+      "generated": false,
+      "uid": "ec9da39e-bff9-45ff-8021-25e91b543dc3"
+    },
+    {
+      "term": "pārmērķa virsotne",
+      "definition": "virsotne, kas atrodas stāvokļu telpas grafā, bet nav pārmeklēšanas mērķa virsotne; tiek izmantota atkāpšanās principā.",
+      "sentence": "ja pārmeklēšana sasniedz strupceļa virsotni , kas nav pārmeklēšanas mērķa virsotne",
+      "language": "lv",
+      "generated": false,
+      "uid": "b2e87d14-6324-4dad-a29c-894d0b3b62cf"
+    },
+    {
+      "term": "strupceļa virsotne",
+      "definition": "virtones punkt, kurš nav uzrādīts ar iespējām pēctecēm (atkarībā no attēlā), tāpēc tā ir izmantojama tikai kā atlikuma elementā CLOSED sarakstā.",
+      "sentence": "(…tās pēctečus, bet tādu nav, jo šī ir strupceļa virsotne)",
+      "language": "lz",
+      "generated": false,
+      "uid": "f5e6ca12-317a-4b13-bd35-15b70f5d4099"
+    },
+    {
+      "term": "cikls",
+      "definition": "pēc kāda ceļa pārmeklēšanas algoritma procesa, kad tiek atkārtoti apmekstas virsotnes ar neapskatītiem pēcteciem bez sasniegta mērķa.",
+      "sentence": "Ko darīt ar cikliem , ja tādi eksistē stāvokļu telpas grafā ?",
+      "language": "lv",
+      "generated": false,
+      "uid": "4f52bf43-0936-4c9d-b87d-6492bf03b058"
+    },
+    {
+      "term": "pēctecis",
+      "definition": "virsote, ko iegūst no citas virsotes, apzīmēta kā virsotes atbildis jeb ",
+      "sentence": "ģenerējot tās trīs pēctečus – virsotnes D, H un E...",
+      "language": "lw",
+      "generated": false,
+      "uid": "35d47206-803d-4045-b9c9-57941c869e9d"
+    },
+    {
+      "term": "loki",
+      "definition": "saistības starp virsotnēm stāvokļu telpas grafā, kuras tiek izmantotas pārmeklēšanas ceļiem veidošanai.",
+      "sentence": "stāvokļu telpas grafā esošās virsotnes un loki",
+      "language": "lv",
+      "generated": false,
+      "uid": "de39bc32-4954-453a-89b1-db2da8753ab3"
+    },
+    {
+      "term": "pārmeklēšana atkāpjoties",
+      "definition": "stratēģija pārmeklēšanas algoritma, kurā, ja nav sasniegts mērķis, tiek atkārtoti izmantoti ievērojami neapskatīti pēcteci un atkāpās uz vietu ar vairākam iespējām, lai turpinātu meklēt.",
+      "sentence": "Pārmeklēšana atkāpjoties mūsdienās tiek uzskatīta par pārmeklēšanas vadības pamatstratēģiju",
+      "language": "lv",
+      "generated": false,
+      "uid": "4a4c51f7-9065-4487-a2b4-91ac2f7b284b"
+    },
+    {
+      "term": "algoritms",
+      "definition": "struktūrētā procesa, kurā tiek izmantoti specifiski principi (piemēram pārmeklēšanas atkāpjoties) stāvokļu telpas grafā, lai meklētu atrisinājumu.",
+      "sentence": "principu , kā tiek izvēlēta nākamā apskatāmā virsotne , nosaka specifisks pārmeklēšanas algoritms",
+      "language": "lv",
+      "generated": false,
+      "uid": "ca5aecbb-ea00-4c77-aff4-be094bc02e39"
+    },
+    {
+      "term": "ievērojams pēctecis",
+      "definition": "virsotne, kuru ir jānāk pārmeklēt pēc atkāpšanās no virsotnes ar neapskatītiem pēcteciem (i.e. tie ir vislabāk izvēlētais ceļš turpināt meklēt).",
+      "sentence": "tad tā atkāpjas uz virsotni B, jo tieši šai virsotnei ir vēl neapskatītais pēctecis G.",
+      "language": "lv",
+      "generated": false,
+      "uid": "712e10d8-46ad-400e-9673-c979a95cd860"
+    },
+    {
+      "term": "ievērojami neapskatīti pēcteci",
+      "definition": "virsotnes, kuras ir atrastas pēc atkāpšanās un kurām vēl ir pārmeklējamo virsotņu (pēctecu).",
+      "sentence": "tā atkāpjas uz vistuvāko virsotni saģenerētajā ceļā, kurai vēl ir neapskatīti pēcteci.",
+      "language": "lv",
+      "generated": false,
+      "uid": "8676dc4f-ce1f-4275-af67-a105fef646c2"
+    },
+    {
+      "term": "stāvokļu telpa",
+      "definition": "vispārīgais stāvokļu pārmeklēšanas konteksts, kurā tiek apvienotas virsotnes un loki, atspoguļojot reālos vai teorētiskos stāvokļus.",
+      "sentence": "stāvokļu telpas grafā esošas virsotnes",
+      "language": "lv",
+      "generated": false,
+      "uid": "3006e936-4541-4a09-93a0-6f683c94b1f9"
+    },
+    {
+      "term": "atrisinājuma ceļš",
+      "definition": "ceļš starp sākum- un mērķa virsotnēm, kas tiek atrasts pārmeklēšanas algoritma darbībā.",
+      "sentence": "tās ideja ir ļoti vienkārša – ja pārmeklēšanas mērķa virsotne nav sasniegta",
+      "language": "lv",
+      "generated": false,
+      "uid": "84d8b454-8cec-465f-9447-7702a1562709"
+    },
+    {
+      "term": "atkāpšanās princips",
+      "definition": "algoritma strategija, kurā atkāpjās uz vietu ar neapskatītiem pēcteciem, lai turpināt meklēt mērķa virsotni, izmantojot jaunu ceļu.",
+      "sentence": "Pārmeklēšana atkāpjoties sākas pārmeklēšanas sākuma virsotnē un veic pārmeklēšanu , ievērojot trīs nosacījumus",
+      "language": "lv",
+      "generated": false,
+      "uid": "306f848c-d7d6-43dc-bc7b-54f8e47341f5"
+    },
+    {
+      "term": "iterācija",
+      "definition": "procesa kārta, kurā produkciju sistēmā tiek pārskatīti likumi un izmantota zināšanas bāze, lai novērtētu un nodrošinātu izveidojumu",
+      "sentence": "izveduma mehānisms katrā iterācijā pārskata visus zināšanu bāzē esošus likumus",
+      "language": "lz",
+      "generated": false,
+      "uid": "ae4f33e1-5f22-4c06-a1d3-b13ba47f9b62"
+    },
+    {
+      "term": "apskatāma virsotne",
+      "definition": "virsotne, kuru nākamajā kārtē algoritms pārbauda un atpakaļnosāk ar tās pēctecēm analīzi.",
+      "sentence": "algorithms izvērš apskatāmo virsotni D...",
+      "language": "lz",
+      "generated": false,
+      "uid": "5e580ee2-b443-4d63-a6ee-4ac5880b2b2c"
+    },
+    {
+      "term": "pēctecs",
+      "definition": "virsotne, kuru nodrošina no kāda iepriekšējā stāvokļa vai virsotes. Pēcteci tiek izmantoti algoritma iterācijās, lai novērtētu ceļu līdz citām virsotnēm.",
+      "sentence": "algorithms ģenerējas tā pēcteci – virsotni J...",
+      "language": "lz",
+      "generated": false,
+      "uid": "3057784b-427c-40e0-8779-52b953269113"
+    },
+    {
+      "term": "OPEN saraksts",
+      "definition": "raksts, kas nodrošina informāciju par spēlējas virsotnēm, kuras tiek izmantotas tālākās pārmeklēšanas iterācijā (pārvietošanai vai gājienu atzīmēšanai).",
+      "sentence": "Algoritms paņem abas virsotnes, kas atrodas sarakstā OPEN...",
+      "language": "lz",
+      "generated": false,
+      "uid": "9ee12802-e955-4147-be10-9dbde9d038a8"
+    },
+    {
+      "term": "CLOSED saraksts",
+      "definition": "raksts, kurš nodrošina informāciju par spēlējas virsotnēm, kas jau ir apskatītas vai izvērstas un netiek izmantotas tālākās pārmeklēšanas iterācijā.",
+      "sentence": "tiek pārvietotas sarakstā CLOSED...",
+      "language": "lz",
+      "generated": false,
+      "uid": "65e0153e-a704-43e2-a8c7-a4f56d59e719"
+    },
+    {
+      "term": "pārmeklēšanas mērķa virsotne",
+      "definition": "spēlējas stāvoklis, kurš tiek piesaistīts kā gājiena un pārmeklēšanas nosaukums, piemēram, uzvaras vai neizšķirta rezultāta stāvoklis.",
+      "sentence": "pārbauda, vai starp tām ir pārmeklēšanas mērķa virsotne...",
+      "language": "lz",
+      "generated": false,
+      "uid": "5a802e12-7c93-4c9b-bb49-440e172d4908"
+    },
+    {
+      "term": "pārmeklēšana dziļumā",
+      "definition": "Depth-First Search (DFS) algorithm that explores as far as possible along each branch before backtracking, without depth limits.",
+      "sentence": "Pārmeklēšana dziļumā ar ierobežotu dziļumu ir pārmeklēšanas dziļumā modifikācija",
+      "language": "lz",
+      "generated": false,
+      "uid": "a0887df1-618d-433c-877c-f0bdbc890176"
+    },
+    {
+      "term": "īss ceļš",
+      "definition": "neatkarīgi, kad algoritms atrasta pārmeklēšanas mērķa virsotni dziļumā, tā ceļu garums nav garantēt kā īsākais, jo tas var būt ilgs līdz augstiem līmeņiem.",
+      "sentence": "algorithms nespēj garantēti atrast īsāko ceļu...",
+      "language": "lz",
+      "generated": false,
+      "uid": "8b4ccf6d-6de8-4bea-9a8e-6d2ab0391a45"
+    },
+    {
+      "term": "bezgalīga ceļa problēma",
+      "definition": "algoritma trūkums, kurā pārmeklēšana var ilgst ilgi, ja virsotes ir daudz līmeņu un mērķa atrādēs augšupstiegs ceļš. Tās sameklēšana aizņem ilgu laiku.",
+      "sentence": "Turklāt šim algoritmam piemīt vēl viens trūkums – tā saucama ‘ bezgalīgu ’ ceļu problēma...",
+      "language": "lz",
+      "generated": false,
+      "uid": "f90325a4-8d7e-4c6d-ae12-f40b74aad527"
+    },
+    {
+      "term": "pārmeklēšana plašumā",
+      "definition": "algoritms, kas izpilda pārmeklēšanu no datiem un no mērķa līdz saskares virsotniem abos virzienos.",
+      "sentence": "Divvirzienu pārmeklēšana plašumā ir pārmeklēšanas plašumā modifikācija...",
+      "language": "lz",
+      "generated": false,
+      "uid": "b5a41621-5bb3-4653-a942-68c8f539520f"
+    },
+    {
+      "term": "koka kroni analogija",
+      "definition": "metaphoriskais apraksts stāvokļu telpas grafā kā koka kronim, kurā virsotes ir zaru galas un līmeņi – zaru līmeni. Šī analīze palīdz skatīt algoritmu veidojumu.",
+      "sentence": "Atkārtoti izmantojot stāvokļu telpas grafa analoģiju ar koka kroni...",
+      "language": "lz",
+      "generated": false,
+      "uid": "421f16e7-4cd0-40a9-bc02-cb2271b6c7ad"
+    },
+    {
+      "term": "tuvākie zaru galis",
+      "definition": "konceptus, kas apraksta pārmeklēšanas dziļumā veidu, kuram algoritms atpakaļnosāk ar jaunām virsotēm no tuvākiem līmeņiem un tiek izmantots, lai novērstu bezgalīgu ceļu.",
+      "sentence": "mēs varam redzēt, ka šis algoritms vispirms pēta tuvākus zarus...",
+      "language": "lz",
+      "generated": false,
+      "uid": "bfb306c5-fce5-4529-9729-0bd7be2843cb"
+    },
+    {
+      "term": "pārmeklēšana",
+      "definition": "procesā, kur tiek izmantots algoritms, lai atrastu pārmeklēšanas mērķa virsotni no sākuma virsotnes starp jebkuras struktūrās (virsotes starppiedalībām)",
+      "sentence": "Realizējot pārmeklēšanu plašumā...",
+      "language": "lw",
+      "generated": false,
+      "uid": "c9c1df9c-cf21-403e-9c4c-2f349bd2b3c4"
+    },
+    {
+      "term": "pārmeklēšanas sākuma virsotne",
+      "definition": "virtones punkt, no kurienes algoritms uzsākas pārmeklēt grafā, norādīta kā pirmais elementā sarakstā OPEN (ar atkarībā no heuristiskiem vērtējumiem).",
+      "sentence": "(…pārmeklēšanas sākuma virsotne ir virsotne A)",
+      "language": "lz",
+      "generated": false,
+      "uid": "6ecec5c3-8f2a-4040-a62f-e52236ddb4a4"
+    },
+    {
+      "term": "virsote",
+      "definition": "elementā, kas tiek pārbauda vai atrodama kā korpusa pēctecis (pieņemot struktūru 'rinda – princips ",
+      "sentence": "kur pārmeklēšanas sākuma virsotne ir A...",
+      "language": "lw",
+      "generated": false,
+      "uid": "1481163b-a7da-45cb-8633-77af1cfdfe82"
+    },
+    {
+      "term": "rinda",
+      "definition": "struktūra, kas darbojās pēc principa *‘Pirmais iekšā, Pirmais ārā’*, kurā ir saraksti OPEN un CLOSED",
+      "sentence": "tikai atbilst datu struktūrai – rinda...",
+      "language": "lw",
+      "generated": false,
+      "uid": "885f4bb4-d96e-45b1-9f56-b4c174102c2f"
+    },
+    {
+      "term": "princips *‘Pirmais iekšā, Pirmais ārā’*",
+      "definition": "strateģija, kurā ir izmantots kā pirmais korpusa atklāšana un pārbaude no saraksta OPEN, bet pēc tam pārvadājama uz CLOSED",
+      "sentence": "darbojas pēc principa “ Pirmais iekšā , Pirmais ārā ”...",
+      "language": "lw",
+      "generated": false,
+      "uid": "bcd076c3-9fae-49db-a1bc-382529d05d71"
+    },
+    {
+      "term": "saraksts OPEN",
+      "definition": "struktūra, kurā tiek sauktas jaunas virsotes, kas ir atklātas, bet vēl nav pārbaudītas; tas darbojas kā iekšējais korpusa saraksts",
+      "sentence": "jaunas virsotnes tiek pievienotas saraksta OPEN labajai pusei...",
+      "language": "lw",
+      "generated": false,
+      "uid": "25f82d57-0d78-4d7f-bf6a-b3da71c70139"
+    },
+    {
+      "term": "labaja puse",
+      "definition": "daļa no struktūras, kurā jaunas atklātās virsotes tiek pieskaitītas pēc atrastās secības (atkarībā no pirmajām iterācijām)",
+      "sentence": "pievienotas saraksta OPEN labajai pusei...",
+      "language": "lw",
+      "generated": false,
+      "uid": "139a8829-e358-403a-864d-518d85cc6913"
+    },
+    {
+      "term": "saraksts CLOSED",
+      "definition": "struktūra, kurā tiek sauktas virsotes, kas jau ir pārbaudītas un atzīmētas kā izvērstās",
+      "sentence": "Saraksts CLOSED ir tukšs...",
+      "language": "lw",
+      "generated": false,
+      "uid": "62149a4b-20de-4309-8010-492d601074f6"
+    },
+    {
+      "term": "atklātās virsotes pievienošana",
+      "definition": "piedalījums jaunām virsotēm, kas nav atkarīgās ne no OPEN, ne no CLOSED sarakstiem, tādējādi iegūstot jaunas struktūras ietvertās",
+      "sentence": "tās visas pievieno sarakstam OPEN atrašanās secībā...",
+      "language": "lw",
+      "generated": false,
+      "uid": "5a74b5ba-8cfa-4946-ad94-9630682023e7"
+    },
+    {
+      "term": "Savukārt",
+      "definition": "kontekstually, accordingly",
+      "sentence": "virsotnes G kā jauna virsotne tiek pievienota saraksta OPEN labajai pusei.",
+      "language": "lz",
+      "generated": false,
+      "uid": "906fd42a-afaf-4fa9-bbc4-71fa277eedeb"
+    },
+    {
+      "term": "pēcteči",
+      "definition": "virsotnes, kas tiek ieviestas kā atkarībā no ievērojamās virsotnes (tiek apvienotas ar tādu virsotni) un ir jāaprēķina tālākais gājienu plānošanas procesā.",
+      "sentence": "Virsotnei E pēcteči ir virsotnes I, K un F. Virsotnes H pēcteči ir J, I un E...",
+      "language": "lz",
+      "generated": false,
+      "uid": "876248c3-14e3-43a7-8f34-4e78278c8dec"
+    },
+    {
+      "term": "strupceļi",
+      "definition": "nodes that precede the current node (i.e., parents or predecessors in graph traversal), which lead to the state before the current one.",
+      "sentence": "kuram nav pēcteču jeb strupceļa virsotnēm",
+      "language": "lz",
+      "generated": false,
+      "uid": "3b1a1ab1-5ad0-4573-9323-72753d856d5f"
+    },
+    {
+      "term": "stāvokļu telpas grafs",
+      "definition": "grafa struktūra, kurā pārmeklētās stāvokļus ir savienoti ar kārtību, kas atspoguļo relācijas starp virsotnēm.",
+      "sentence": "Apskatīsim divvirzienu pārmeklēšanas plašumā realizācijas piemēru , izmantojot 14. attēlā doto stāvokļu telpas grafu...",
+      "language": "lz",
+      "generated": false,
+      "uid": "d4d46cdd-dd29-4b5d-9512-6f4339023321"
+    },
+    {
+      "term": "īsākais ceļš",
+      "definition": "the shortest path from the starting node to a target node, determined by BFS due to its level-order processing which ensures minimal hops.",
+      "sentence": "īsākā ceļa līdz pārmeklēšanas mērķa virsotnei atrašana",
+      "language": "lz",
+      "generated": false,
+      "uid": "c840226c-7ead-490c-8c14-cfe31bd2a383"
+    },
+    {
+      "term": "ierobežota dziļuma pārmeklēšana",
+      "definition": "Depth-First Search with a depth limit, preventing infinite exploration by capping how deep the algorithm can go.",
+      "sentence": "Pārmeklēšana dziļumā ar ierobežotu dziļumu",
+      "language": "lz",
+      "generated": false,
+      "uid": "3e23b74a-bead-404d-bc7c-424e9df99638"
+    },
+    {
+      "term": "dziļuma ierobežojums",
+      "definition": "maximum depth allowed for exploration in a depth-first search to prevent infinite recursion and limit computation.",
+      "sentence": "virsotnes uzdotajā dziļuma ierobežojumā tiek uzskatāmi par virsotnēm",
+      "language": "lz",
+      "generated": false,
+      "uid": "b86b1d0b-dbc4-4afe-9677-884d39e0eac0"
+    },
+    {
+      "term": "Dziļums",
+      "definition": "līmenis, līdz kuram tiek pētīts spēles koks, atkarībā no spēļu tipa un algoritma, kas var būt nenoteikts.",
+      "sentence": "Dziļums, līdz kuram tiek pētīts spēles koks, var nenoteikt",
+      "language": "lz",
+      "generated": false,
+      "uid": "07bcac7f-4f75-4687-92b9-af4f9278f75f"
+    },
+    {
+      "term": "pārbauda",
+      "definition": "check performed by the algorithm during traversal to validate if a node meets criteria (e.g., being the target or within depth limits).",
+      "sentence": "algorithms veic 2 pārbaudes: 1) pārbaudi vai apskatāmā virsotne ir pārmeklēšanas mērķa virsotne; 2) pārbauda, vai tā dziļums ir mazāks par uzdoto dziļuma ierobežojumu.",
+      "language": "lz",
+      "generated": false,
+      "uid": "2955c1b4-91f5-4f2b-bc81-15c30dc234b7"
+    },
+    {
+      "term": "skaitļošanas resursu patēriņš",
+      "definition": "computational resource consumption, particularly memory and processing time, during graph traversal algorithms like BFS or DFS.",
+      "sentence": "Šim algoritmam tika veikts eksperiments, kurā tika izmantots stāvokļu telpas grafs",
+      "language": "lz",
+      "generated": false,
+      "uid": "a97897ae-48f8-47bf-9d5d-e8f5b201902f"
+    },
+    {
+      "term": "Divvirzienu pārmeklēšana plašumā",
+      "definition": "pārmeklēšanas plašumā modifikācija, kas novērš lielas skaitļošanas resursu patēriņa problēmu, atrast saskares virsotni abos pārmeklēšanas virzienos līdz brīdim, kad ir atrasta kopīga virsotne.",
+      "sentence": "Divvirzienu pārmeklēšana plašumā ir pārmeklēšanas plašumā modifikācija...",
+      "language": "lz",
+      "generated": false,
+      "uid": "bb738e46-9e3e-41ad-912d-85ee15293ebd"
+    },
+    {
+      "term": "pārmeklēšanas virziens",
+      "definition": "direkcija, kurā veicot pārmeklēšanu no datiem vai no mērķa, atkarībā no kāda saraksta tiek izmantots (OPEN vai CLOSED).",
+      "sentence": "pārmeklēšanu abos pārmeklēšanas virzienos vienlaicīgi – gan no datiem , gan no mērķa...",
+      "language": "lz",
+      "generated": false,
+      "uid": "20140b97-97d7-45e2-8718-d9d48e884124"
+    },
+    {
+      "term": "saskares virsotne",
+      "definition": "virsotne, kur abas pārmeklēšanas virzienos atsevišķi atrastās kopīgas nodrošinājuma punkti, kurā algoritms beidz darbu.",
+      "sentence": "līdz brīdim , kad atrod saskares virsotni abos pārmeklēšanas virzienos...",
+      "language": "lz",
+      "generated": false,
+      "uid": "ddfd3dcd-591e-4576-b21e-3e61e67db371"
+    },
+    {
+      "term": "priekšteči",
+      "definition": "virsotnes, kas ir atrastas no mērķa virzītos pārmeklēšanas virzienā, tiek uzskaitītas kā jaunas nodrošinājamās pārmeklētās virsotnes.",
+      "sentence": "Virsotnes K priekšteči ir virsotnes I, E, F un G...",
+      "language": "lz",
+      "generated": false,
+      "uid": "56bb220f-3429-406a-9107-77c67727e935"
+    },
+    {
+      "term": "neinformētās pārmeklēšanas algoritmi",
+      "definition": "algoritmu grupa, kas neizmantos informācijas par mērķi un atrod kopīgas virsotnes abos pārmeklēšanas virzienos.",
+      "sentence": "Šajā tēmā esam apskatījuši četru neinformētas pārmeklēšanas algoritmu idejas...",
+      "language": "lz",
+      "generated": false,
+      "uid": "b9b5926d-ccb9-4302-882e-3f904c5bc959"
+    },
+    {
+      "term": "prioritātes rinda",
+      "definition": "struktūra, kurā pārmeklēšanas virsotnes tiek sakārtotas atbilstoši heiristiskajiem vērtējumiem – ar labākām vērtējumu pirms sliktākām.",
+      "sentence": "(…kas darbojas pēc principa — kam ir labāks vērtējums, tas pirms tiek apskatīts)",
+      "language": "lz",
+      "generated": false,
+      "uid": "c6bbf7a2-7fe9-457c-aac1-cbee845ec90a"
+    },
+    {
+      "term": "heiristiskie vērtējumi",
+      "definition": "vārdi, kurus tās atlikumā tiek apzīmēti pārmeklētās virsotnes hierarhijas līmenis, kas izmanto labākā vērtējuma principu (mazākais vērtējums nozīmē labāko ieejas vai izvērstības statusu).",
+      "sentence": "(…un ir pieņemts, ka labākais heiristiskais vērtējums ir mazākais)",
+      "language": "lz",
+      "generated": false,
+      "uid": "3acf65ba-2b7d-4dc3-9f42-27008415bc22"
+    },
+    {
+      "term": "0. iterācija",
+      "definition": "pirmais algoritma kroks pārmeklēšanas cīņā: sākuma virsotne (A) tiek iekļauta sarakstā OPEN ar atbilstošiem heuristiskajiem vērtējumu, bet CLOSED ir tukšs, jo tā netika izpildīta.",
+      "sentence": "(0. iterācijā pārmeklēšanas sākuma virsotne kopā ar tās heiristisko vērtējumu tiek ievietota sarakstā OPEN)",
+      "language": "lz",
+      "generated": false,
+      "uid": "02993e47-1e94-4875-bfc5-9a6a3fd624b5"
+    },
+    {
+      "term": "pēctečus",
+      "definition": "virtones, kuras tiek izvietošanas kā uzdevumu rezultātā no atbilstošā virsotnes (eksplorētās virsotnes) pēc heuristiskiem vērtējumiem, lai tās būtu sakārtotas OPEN sarakstā.",
+      "sentence": "(…ģenerējot tās trīs pēctečus)",
+      "language": "lz",
+      "generated": false,
+      "uid": "8fd1ed20-7169-42c5-bcbe-b74baf99ee75"
+    },
+    {
+      "term": "vislabākā stāvokļa meklēšanas algoritms",
+      "definition": "pārmeklēšanas metods (tiek uzskatīts par A* analogu), kurš izmanto heuristiskus vērtējumus, lai optimizētu pārmeklēšanas procesu, atgriežot labāko mērķa sasniegumu.",
+      "sentence": "(…apskatīsim vislabākā stāvokļa meklēšanas algoritma realizācijas piemēru)",
+      "language": "lz",
+      "generated": false,
+      "uid": "e59e1f27-a531-40b3-afff-37d01b8ef7af"
+    },
+    {
+      "term": "virsotņu koks",
+      "definition": "spēles stāvokļu telpas grafiska struktūra, kas glabā informāciju par spēlēšanas gaitu, atļautajiem gājieniem un atkarībām starp virsotnēm.",
+      "sentence": "Tātad spēļu realizācijā tiek izmantots spēles koks...",
+      "language": "lz",
+      "generated": false,
+      "uid": "ac6e13ff-0aff-428b-9f21-fa212cd231ef"
+    },
+    {
+      "term": "spēles koks",
+      "definition": "visu spēļu gājienu sekas uzbūvēta kā dziļais grafs, kurā katrs līmeņš ir atkarīgs no pirmais gājiena.",
+      "sentence": "tiek pētīts spēles koks",
+      "language": "lz",
+      "generated": false,
+      "uid": "27ded0c7-494b-4986-8128-75c8738408af"
+    },
+    {
+      "term": "stāva",
+      "definition": "virsotnes, kas ir atzīmēta kā iepriekš apgrūtināta un nepieejama tālākās pārmeklēšanas ieteiksmīgai apskaitīšanai.",
+      "sentence": "Virsotnei E pēcteči ir virsotnes I, K un F. Virsotnes H pēcteči ir J, I un E. Tā kā virsotne E jau atrodas sarakstā OPEN...",
+      "language": "lz",
+      "generated": false,
+      "uid": "e404b24a-2ac2-48f7-8922-74435bd29366"
+    },
+    {
+      "term": "heiristiskais vērtējums",
+      "definition": "spēlējas stāvokļa vērtējuma funkcija, kas novērtē spēlējas izdevību pēc kārtas un izvērš to labākos gājienus tādā veidā, lai tālākās iterācijas būtu maksimalā efektivitāte.",
+      "sentence": "tiegūst visu šo virsotņu heiristiskos vērtējumus – 2, 0, 1 un 3...",
+      "language": "lz",
+      "generated": false,
+      "uid": "2684bbbc-8256-4c8d-affa-4964f44b7153"
+    },
+    {
+      "term": "heiristiskā novērtējuma funkcija",
+      "definition": "algoritma funkcija, kas atkarībā no spēlēm veic vērtējumu starp stāvokļiem (spēles stāvokļu uzskaitījumam), izmantojot heuristikas.",
+      "sentence": "galvenais iemesls ir ne visai labi informēta heiristiskā novērtējuma funkcija",
+      "language": "lz",
+      "generated": false,
+      "uid": "66a6e80a-8df7-41be-ab6e-0d65ca89f355"
+    },
+    {
+      "term": "stara platumas izvēle",
+      "definition": "izmērs, kas tiek izmantots algoritma darbībā, lai noteiktu kādās virsotnēm ir augsts gājiena ietekme un tālākā pārmeklēšanas procesa prioritātes.",
+      "sentence": "Šajā tēmā esam apskatījuši trīs heiristiski informētas pārmeklēšanas algoritmu idejas, izmantojot stara platumu...",
+      "language": "lz",
+      "generated": false,
+      "uid": "6f714b87-10db-44fa-8a19-05bc6f9ede43"
+    },
+    {
+      "term": "gājienu ievirze",
+      "definition": "izvirzīšana vai uzņemšana spēlējas gājiens no virsotnes, kas tiek izmantota pārmeklēšanas algoritma darbībā (ietekmējot tālākās iterācijas).",
+      "sentence": "algoritms beidz darbību, paziņojot, ka pārmeklēšanas mērķa virsotne ir sasniegta.",
+      "language": "lz",
+      "generated": false,
+      "uid": "cabebe4e-bc9c-40fe-82f3-ebfee7862a69"
+    },
+    {
+      "term": "heiristiski daudzsološs",
+      "definition": "spēļu stāvoklis, kurā visi gājieni ir atkarīgiem no atsevišķu vai kopējām uzdevumu solēm un var izraisīt pozitīvus vai negatīvus rezultātus.",
+      "sentence": "ceļš, kurš visu laiku ir bijis heiristiski daudzsološs",
+      "language": "lz",
+      "generated": false,
+      "uid": "8a3a76f9-1586-498e-bc97-bc9b018d8603"
+    },
+    {
+      "term": "sliktā situācija",
+      "definition": "spēļu stāvoklis, kurā uzdevuma izpildīšana rezultētu nepieciešamās resursu zaudēšanu vai spēles beigām bez pozitīviem rezultātiem.",
+      "sentence": "beigās var novest sliktā situācijā",
+      "language": "lz",
+      "generated": false,
+      "uid": "3ff5632e-5165-4234-8b45-5a7e204f60a0"
+    },
+    {
+      "term": "nestabilie stāvokļi",
+      "definition": "spēļu stāvokļi, kur heiristiskie vērtējumi atšķiras krasi pēc dažādiem gājienu izpildījumiem no vienā un tā paša spēles stāvokļa.",
+      "sentence": "problēma ir saistīta ar nestabiliem stāvokļiem, t.i. tādiem stāvokļiem",
+      "language": "lz",
+      "generated": false,
+      "uid": "6e566ac3-0ebe-47b8-aac9-111aac0d260e"
+    },
+    {
+      "term": "Progresējošās iedziļināšanas metode",
+      "definition": "metode, kurā spēlēs ar laika ierobežojumu tiek pētīts apakškoks līmeni pa līmenim, izmantojot heuristiskus vērtējumus un algoritmus minimaksas vai Alfa-beta.",
+      "sentence": "Progresējošās iedziļināšanas metode tiek izmantota spēlēm",
+      "language": "lz",
+      "generated": false,
+      "uid": "1e25ea57-95f2-49d5-8e3e-ba0de31e96e1"
+    },
+    {
+      "term": "Pārlūkošana uz priekšu pār n-gājieniem",
+      "definition": "strateģija, kurā algoritms pēta visus iespējamos gājienus no savas pozīcijas līdz spēles beigām (n-līmeņiem) bez laika ierobežojuma.",
+      "sentence": "nav iespējams izmantot Pārlūkošanu uz priekšu pār n-gājieniem",
+      "language": "lz",
+      "generated": false,
+      "uid": "71cbbdd3-a1ba-4fce-8f2e-933cead34d4c"
+    },
+    {
+      "term": "apakškoks",
+      "definition": "daudzsološs spēles koka atveidots daļiņš, kurā ir pētīti dažādus gājienus no kāda stāvokļa.",
+      "sentence": "saģenerētais apakškoks var būt tik liels , ka gājienam atvēlētais laiks...",
+      "language": "lz",
+      "generated": false,
+      "uid": "a50a407f-b6ad-4d67-bafd-cdca0b6ef8c8"
+    },
+    {
+      "term": "Minimaksas princips",
+      "definition": "algoritma princips, kurā uzstādīts pieņēmuma stāvoklis, kas ir minimizācija pret maksima (uzdevums ir atkarīgs no spēlētāja un varētu būt aizvēršams).",
+      "sentence": "Progresējošās iedziļināšanas metode arī var tikt balstīta gan uz Minimaksa",
+      "language": "lz",
+      "generated": false,
+      "uid": "1bf980bc-331e-4b48-a2be-d4d51c31a373"
+    },
+    {
+      "term": "Alfa-beta algoritms",
+      "definition": "algoritms, kas optimizē spēlēšanu līmeni pa līmenim, izmantojot alfa (minimizācija) un beta (maksimizācija) vērtējumu, lai novērstu pārmaiņas, kuras nav nepieciešamas.",
+      "sentence": "tā var tikt balstīta gan uz Alfa-beta algoritma principiem",
+      "language": "lz",
+      "generated": false,
+      "uid": "1c7a3c2d-00b9-470f-a48b-d24bd06893c2"
+    },
+    {
+      "term": "1. līmeņa virsotnes",
+      "definition": "spēles stāvokļu nodrošinājums no ko sākas heuristiskais novērtējuma pētījums, kur tiek izmantoti ievērojami gājieni no pirmās līmeņas.",
+      "sentence": "tā uzsāk novērtēšanu ar 1. līmeņa virsotnēm",
+      "language": "lz",
+      "generated": false,
+      "uid": "c249f967-c772-4547-ab4b-44ab2786b4a8"
+    },
+    {
+      "term": "heiristiski vērtējumi",
+      "definition": "aprakstītas spēlēs stāvokļu novērtēšanas funkcionālie vērtējumi, kas tiek izmantoti no apakškoka līmeņa virsotnēm uz augšu.",
+      "sentence": "tās novērtē, izmantojot heiristiskā novērtējuma funkciju",
+      "language": "lz",
+      "generated": false,
+      "uid": "a6b3471f-082b-40ea-88fd-9b36292d3a19"
+    },
+    {
+      "term": "ieejas mainīgā",
+      "definition": "mainīgā, kas tiek izmantota kā ievades informācijas avots datu analīzē, piemēram, mājas platība, stāvu skaits vai valsts finansēto sportistu skaits.",
+      "sentence": "Piemēram, ieejas mainīgā var atspoguļot dažādu mājas pazīmju kā mājas platību.",
+      "language": "lz",
+      "generated": false,
+      "uid": "ef48b823-d4da-4000-88f4-4e6c431bcd76"
+    },
+    {
+      "term": "izejas mainīgā",
+      "definition": "mainīgā, kurai tiek piešķirta prognozēta vērtība no ievades datiem. Izejas mainīgā atspoguļo konkrētās mājas cenu vai sportistu uzvaru skaitu.",
+      "sentence": "Izejas mainīgā y vērtība arī ir dota katram datu objektam, piemēram, uzvaru skaits valsts sportistiem pasaules turnīros.",
+      "language": "lz",
+      "generated": false,
+      "uid": "4b381a6a-51e4-49a2-a1c4-ab49c440ed7a"
+    },
+    {
+      "term": "lineārās regresijas prognoze",
+      "definition": "prognoze par izejas mainīgā vērtību, ko sniegtu lineārās regresijas algoritms no ievades datiem, piemēram, mājas cenu vai absolventu skaitu.",
+      "sentence": "Lineārā regresija šajā gadījumā sniegtu prognozi par mājas cenu.",
+      "language": "lz",
+      "generated": false,
+      "uid": "c2609ed4-b8d6-4e34-9e4e-504967017ef3"
+    },
+    {
+      "term": "datu kopa",
+      "definition": "uzskaitījums ar datiem, kas tiek izmantoti māšīnmācības procesā. Tās sastāvdaļas ir pazīmes (mainīgie) un izejas vērtības vai klases.",
+      "sentence": "Datu kopa , kas tiek izmantota loģistiskajā regresijā",
+      "language": "lz",
+      "generated": false,
+      "uid": "7147c14c-1075-4aec-961d-ac2150fe83e9"
+    },
+    {
+      "term": "reālais skaitlis",
+      "definition": "matemātiskā vērtība, kas tiek izmantota lineārās regresijas vienādojumā, piemēram, slīpuma koeficientis (m) vai nobīdes koeficientis (b).",
+      "sentence": "y = m*x + b, kur x ir ieejas mainīgā vērtība, y — izejas mainīgā vērtība, m un b ir reālais skaitlis.",
+      "language": "lz",
+      "generated": false,
+      "uid": "0725710a-b2f3-4ece-94bc-53fbd231cbd1"
+    },
+    {
+      "term": "tailsnes slīpums",
+      "definition": "koeficientis (m) no lineārās funkcijas y = m*x + b, kas atbilst tautā, kāda taisne šķērso asī. Šī vērtība ir izmantota, lai noteiktu tā skaitlisko attiecību starp ievades un izejas mainīgajiem.",
+      "sentence": "m — reālais skaitlis, kas atbilst taisnes slīpumam.",
+      "language": "lz",
+      "generated": false,
+      "uid": "be009737-43fb-49bf-be15-226078f18aea"
+    },
+    {
+      "term": "nobīdes koeficientis",
+      "definition": "reālais koeficientis (b) no lineārās funkcijas y = m*x + b, kas atbilst punktam, kurā taisne šķērso y asī, t.i., tas ir y vērtība, kad x ir vienāds ar 0.",
+      "sentence": "b — reālais skaitlis, kas atbilst punktam, kurā taisne šķērso y asi vai, citiem vārdiem sakot, tā ir y vērtība, kad x ir vienāds ar 0.",
+      "language": "lz",
+      "generated": false,
+      "uid": "71be9a2f-4153-46e4-b2e7-f7ef763538a9"
+    },
+    {
+      "term": "matemātiskā sakarība",
+      "definition": "attiecība starp diviem mainīgajām (x un y), kas tiek atrasta no datu kopas, piemēram, ar lineārās regresijas metodi, lai paredzētu jauniem datu objektiem izejas vērtības.",
+      "sentence": "mums ir jāatrod matemātiskā sakarība starp x un y, kas ir paslēpta pieejamajā datu kopā.",
+      "language": "lz",
+      "generated": false,
+      "uid": "23dc7231-2461-41be-9afa-45fcf35678d2"
+    },
+    {
+      "term": "lineārās regresijas modeļa prognoze",
+      "definition": "prognozētā izejas vērtība, kas tiek noteikta no lineārajiem koeficientiem (m un b), izmantojot ievades datus.",
+      "sentence": "Lineārā regresija atrod tādus lineārās funkcijas svarus, kuri samazina kopējo kļūdu visā datu kopā.",
+      "language": "lz",
+      "generated": false,
+      "uid": "17ad9335-0069-4552-8247-802663aca384"
+    },
+    {
+      "term": "kļūda",
+      "definition": "atšķirība starp izejas mainīgās vērtības īsto vērtību un prognozēto vērtību no lineārās regresijas modeļa. Tas ir attiecība starp datu objektiem un tās prognozētā modelī.",
+      "sentence": "Starpību starp datu objekta īsto izejas vērtību un lineārās regresijas modeļa prognozēto izejas vērtību sauc par kļūdu.",
+      "language": "lz",
+      "generated": false,
+      "uid": "339af430-b9b5-4595-9bbf-e0d04375ff63"
+    },
+    {
+      "term": "vislabākā taisnes atbilstība",
+      "definition": "tādas lineārās funkcijas parametri (slīpums un nobīde), kas minimalizē kopējā kļūdu starp datu objektiem un prognozēto izejas vērtību.",
+      "sentence": "Līdz ar to lineārās regresijas uzdevums ir atrast tādas svaru vērtības, kas nodrošinātu vislabāko taisnes atbilstību datu objektiem.",
+      "language": "lz",
+      "generated": false,
+      "uid": "5c494b1a-db10-4516-8cdb-5a95ddc0b0f6"
+    },
+    {
+      "term": "svari",
+      "definition": "vielas, kuras tiek izmantotas lineārās regresijas algoritmā, lai noteiktu slīpumu un nobīdes koeficientus (parasti vienādojot kopējo kvadrātisko kļūdu), nodrošināt vislabāko atbilstību.",
+      "sentence": "Taisnes novietojumu un slīpumu nosaka funkcijā izmantojamie svari.",
+      "language": "lz",
+      "generated": false,
+      "uid": "becf7682-c86b-4a0d-a51f-f5bae06d93e6"
+    },
+    {
+      "term": "gradienta nolaišana",
+      "definition": "proces, kurā tiek izmantots hiperparametrs α (mācīšanās ātrums) ar cilmi, ka algoritms parādīs labāku rezultātus, samazinājot kļūdu uzdevuma funkciju vērtību, izmantojot lineāru funkciju atjaunošanas metodes.",
+      "sentence": "Lai pielietotu gradienta nolaišanos , tiek izmantots hiperparametrs α",
+      "language": "lz",
+      "generated": false,
+      "uid": "6e8eaa2f-ba33-4751-867e-2aa767fbebe7"
+    },
+    {
+      "term": "mācīšanās ātrums",
+      "definition": "hiperparams, kas atspoguļo ātrumu, ar kādu lineārā regresija atjaunina lineārajās funkcijas svaru vērtības. Tas ir saistīts ar algoritma ātrumu, kurš var atrast kļūdas minimumu vai noteikt citus parametrus.",
+      "sentence": "Tas atspoguļo ātrumu , ar kādu lineārā regresija atjaunina lineārās funkcijas svarus",
+      "language": "lz",
+      "generated": false,
+      "uid": "8913982a-f3de-4750-be26-83f45d77a07b"
+    },
+    {
+      "term": "lineārā regresija",
+      "definition": "pārraudzītās mašīnmācīšanās algoritms, kas veic regresiju uzdevumu. Izmantojas lineārajā sakarībā starp ieejas mainīgajiem (datu objektu pazīmēm) un vienu izejas mainīgo (klases iezīmi vai prognozi). Tā iegūst svaru vērtības pamatojoties uz doto apmācības kopu.",
+      "sentence": "Tas ir pārraudzītās mašīnmācīšanās algoritms , kas veic regresijas uzdevumu",
+      "language": "lz",
+      "generated": false,
+      "uid": "f4e82c80-e1c5-47fa-ad2d-8895c6da1a63"
+    },
+    {
+      "term": "iterācijas",
+      "definition": "darba cikls, kad algoritms atkārto operācijas, lai samazinātu kļūdu minimumu. Zema mācīšanās ātruma rezultāts ir daudz iterāciju nepieciešams.",
+      "sentence": "Ja mācīšanās ātrums ir zems , algoritmam būs jāveic daudzas iterācijas",
+      "language": "lz",
+      "generated": false,
+      "uid": "b4f69033-fa08-4141-bd51-0711e23a6e59"
+    },
+    {
+      "term": "kļūdas minimumu",
+      "definition": "optimālais punktā, kur kļūda funkcija (atšķirības starp izejas vērtībām) ir minimāla. Ja mācīšanās ātrums ir pārāk augsts, algoritms var atrast šo minimumu neprecīzi vai ilgstoši.",
+      "sentence": "algoritms var palaist garām kļūdas minimumu",
+      "language": "lz",
+      "generated": false,
+      "uid": "57856219-4187-40d0-8e8a-6b34b6304431"
+    },
+    {
+      "term": "empīrisks process",
+      "definition": "metode, kas pamatojas uz eksperimentēšanu ar dažādām vērtībām mācīšanās ātrumā, lai atrastu pieņemamu vērtību.",
+      "sentence": "Parasti pieņemama mācīšanās ātruma atrašana ir empīrisks process",
+      "language": "lz",
+      "generated": false,
+      "uid": "98980738-6a14-4b8e-9e53-1cc040e88dda"
+    },
+    {
+      "term": "kļūdas funkcija",
+      "definition": "funkcija, kas novērtē algoritma darbību starp datu objektu izejas vērtībām un prognozētām vērtībām.",
+      "sentence": "Algoritma darbību novērtē , izmantojot kļūdas funkciju",
+      "language": "lz",
+      "generated": false,
+      "uid": "0e4a42a0-9b2d-4b95-a0e5-a95bf7334cde"
+    },
+    {
+      "term": "binārā klasifikācija",
+      "definition": "specifīkās klasifikācijas uzdevuma forma, kur datu objekti tiek atdalīti divās klasēs. Izejas mainīgais var pieņemt vienu no divām vērtībām, piemēram, 1 vai 0.",
+      "sentence": "Vienkāršākais klasifikācijas problēmas gadījums ir tā sauktā binārā klasifikācija",
+      "language": "lz",
+      "generated": false,
+      "uid": "30d76092-f018-430a-962d-9c220a91dbc4"
+    },
+    {
+      "term": "diskrētā vērtība",
+      "definition": "vērtība, kas nav reālā skaitļa (piemēram, 1 vai 0), kuras iegūst klasifikācijas uzdevumos.",
+      "sentence": "Klasifikācijā ir jāprognozē diskrēta vērtība",
+      "language": "lz",
+      "generated": false,
+      "uid": "2517db9c-0860-4098-b509-dd3e004c3cb4"
+    },
+    {
+      "term": "loģistiskā regresija",
+      "definition": "algoritms, kas tiek izmantots binārās klasifikācijas uzdevumos. Izvietojas starp lineāro regresiju un klasifikācijas uzdevumu izpildīšanu, atšķirībā no lineārajām regresijām, kur iegūst reālā skaitļa vērtību.",
+      "sentence": "Loģistiskā regresija ... tiek izmantota klasifikācijas uzdevumam",
+      "language": "lz",
+      "generated": false,
+      "uid": "7b732111-3379-48f0-9571-4e369cbf8a9b"
+    },
+    {
+      "term": "datu objektu pazīmes",
+      "definition": "izmērs, kurš atspoguļo datu objekta īpašības. Piemēram, mājas platība, stāvu skaits un zemes platība.",
+      "sentence": "Piemēram, pamatojoties uz datiem par mājas platību , stāvu skaitu un zemes platību",
+      "language": "lz",
+      "generated": false,
+      "uid": "ce8f27e2-16f7-4589-9e83-10ed1f1ba40c"
+    },
+    {
+      "term": "klases iezīmes",
+      "definition": "bināras vērtības (1 vai 0), kas atspoguļo objektu piederību konkrētās klasē. Piemēram, studenta sniegums vai veiksme.",
+      "sentence": "Tādējādi tā nosaka datu objekta piederību vienai no divām klases/ kategorijām",
+      "language": "lz",
+      "generated": false,
+      "uid": "dde4449a-c525-4322-9211-276bbac53f18"
+    },
+    {
+      "term": "dauzklašu klasifikācija",
+      "definition": "uzdevums, kur datu objekti tiek atdalīti vairākās (ne tikai divās) klasēs. Piemēram, dzīvnieku klasifikācijā ir vairākas kategorijas.",
+      "sentence": "Daudzklašu klasifikācijā ir vairāk nekā divas klases",
+      "language": "lz",
+      "generated": false,
+      "uid": "77352e5b-6e38-4edc-b558-00cf5ed3c6cd"
+    },
+    {
+      "term": "Eiklīda attālums",
+      "definition": "attāluma metrika nepārtrauktām pazīmju vērtībām, kas tiek noteikta kā kvadrātsaknes summa absolūto starpību vērtībām starp visām datu objektu pazīmju vērtībām.",
+      "sentence": "Tādā gadījumā Eiklīda attālums var būt pareizā izvēle datu objektu līdzības noteikšanai",
+      "language": "lv",
+      "generated": false,
+      "uid": "fca43f10-a6c1-4918-8d51-2a9cd051ac12"
+    },
+    {
+      "term": "Manhetenas attālums",
+      "definition": "attāluma metrika nepārtrauktām pazīmju vērtībām, kas ir kvadrātsakni no absolūto starpību summas starp visām datu objektu pazīmju vērtībām.",
+      "sentence": "Vēl viena attāluma metrika nepārtrauktām pazīmju vērtībām ir Manhetenas attālums",
+      "language": "lv",
+      "generated": false,
+      "uid": "4db2eb34-ef68-4566-ac5c-7f41a1ffc110"
+    },
+    {
+      "term": "Heminga attālums",
+      "definition": "metrika, kas izmantota kategoriskajās pazīmju vērtību datu objektu atšķirības aprēķinājumā: nosaka kopējo pazīmju skaitu, kuras atšķiras",
+      "sentence": "kategoriskām pazīmju vērtībām parasti tiek izmantots Heminga attālums...",
+      "language": "lz",
+      "generated": false,
+      "uid": "8d55f54f-a46d-472f-a975-8b20a1560b5d"
+    },
+    {
+      "term": "datu objektu līdzība",
+      "definition": "līdzība, kas apzīmē, kad mazāk atšķirību ir pazīmju vērtībās starp datu objektiem, tāpēc lielāka datu objektu līdzība.",
+      "sentence": "Jo mazāk attšķirību pazīmju vērtībās, jo lielāka datu objektu līdzība",
+      "language": "lv",
+      "generated": false,
+      "uid": "438441a0-c8a1-4557-b0c1-0fbc24e5bbd3"
+    },
+    {
+      "term": "attāluma metrika",
+      "definition": "metode, kurai ir jāatbilst prasībām: attālums nekad nedrīkst būt negatīvs; attālums starp identiskiem pazīmju vektoriem ir nulle; attālums no x līdz y ir tāds pats kā attālums no y līdz x; metrika jāapmierina nevienādību.",
+      "sentence": "Tomēr jebkurai attāluma metrikai ir jāatbilst šādām prasībām",
+      "language": "lv",
+      "generated": false,
+      "uid": "e3546b82-accb-427c-b422-82e7ea7e2270"
+    },
+    {
+      "term": "kNN algoritms (k-tuvākais kaimiņš)",
+      "definition": "algoritms, kas klasificē jaunu datu objektu no to tuvāko kaimiņu datu kopas.",
+      "sentence": "Vispārīgā gadījumā mēs varam atšķirt divas kNN algoritma versijas",
+      "language": "lv",
+      "generated": false,
+      "uid": "909c3b37-2959-4bee-a5ba-417117bc62c4"
+    },
+    {
+      "term": "1NN (vienu tuvāko kaimiņu)",
+      "definition": "kNN algoritma versija, kas klasificē jaunu datu objektu pēc vienu tuvākā datu objektu klases.",
+      "sentence": "1NN versijā algoritms klasificē jaunu datu objektu, atrodot vienu tuvāko datu objektu datu kopā",
+      "language": "lv",
+      "generated": false,
+      "uid": "eebd40dc-56d0-4490-90f9-a9b1c3fba33c"
+    },
+    {
+      "term": "hiperparametrs k",
+      "definition": "hiperparametra vērtība, kas nosaka skaitu tuvākajiem datu objektiem, kurus tiek izmantoti, lai identificētu jaunā datu objektas klases vērtību.",
+      "sentence": "kNN versijā tiek izmantots hiperparametrs k",
+      "language": "lv",
+      "generated": false,
+      "uid": "6a3d5318-bbeb-402f-ad4b-660c5b6566d0"
+    },
+    {
+      "term": "tuvākais kaimiņš",
+      "definition": "atšķirīga reference no 1NN, kur tiek apzīmēts kā tikai viens tuvākais objektis. Izmantojot tuvu kaimiņu (k=1), tas ir vienāds ar 1NN.",
+      "sentence": "Izmantojot hiperparametra vērtību pirms algoritma darbības.",
+      "language": "lv",
+      "generated": false,
+      "uid": "2f21b6ee-7de6-43f4-a1a3-32446fb24844"
+    },
+    {
+      "term": "datu kopas",
+      "definition": "visu datu objektu kolektīvs, kuru tiek apstrādāts klasterēšanas algoritms.",
+      "sentence": "...pēc pēdējais datu objekts datu kopā...",
+      "language": "lh",
+      "generated": false,
+      "uid": "bbd6948a-6879-4f7d-afc5-8a529a6bc61e"
+    },
+    {
+      "term": "diskrētas kategorijas/klases",
+      "definition": "pazīmes vērtības, kuras ir diskretas un atspoguļo katru datu objektu kā atšķirīgās klasifikācijas vienības.",
+      "sentence": "Kategoriskām pazīmju vērtībām, kas tiek atspoguļotas kā diskrētas kategorijas/klases...",
+      "language": "lv",
+      "generated": false,
+      "uid": "39c22b46-6ffa-4d0a-abe1-c4453e8a6a49"
+    },
+    {
+      "term": "līdzīgākie datu objekti",
+      "definition": "datu objekti, kuriem ir mazāk attāluma starp viena un otru, no aprēķinātajām attālumiem.",
+      "sentence": "ka Students 1 un Students 3 ir vislīdzīgākie datu objekti, jo attālums starp tiem ir mazākais",
+      "language": "lv",
+      "generated": false,
+      "uid": "2043900a-4fc5-4462-b317-81be377a2143"
+    },
+    {
+      "term": "jauna datu objektu klasifikācija",
+      "definition": "proces, kurā jauns datu objektu klasi tiek noteikts no atšķirīgo tuvāko kaimiņu vektoriem.",
+      "sentence": "Ja abu datu objektu vienas un tās pašas pazīmes vērtības ir vienādas, tad attālums ir vienāds ar 0; pretējā gadījumā tas ir vienāds ar 1. (klasifikācija kontekstā).",
+      "language": "lv",
+      "generated": false,
+      "uid": "9d16d0f7-d9ef-4bf9-af2e-81060aee1719"
+    },
+    {
+      "term": "nepārraudzītās mašīnmācīšanas algoritms",
+      "definition": "algoritms, kas netiek izmantots ar priekšprātētu datu objektu izeju zīmēm, un līdz ar to ļauj atklāt datu kopas struktūru",
+      "sentence": "Tēma tika definēts, ka nepārraudzītās mašīnmācīšanās algoritmos netiek izmantotas datu objektu izeju iezīmes...",
+      "language": "lz",
+      "generated": false,
+      "uid": "8d0cfc04-71b5-4797-b357-da4937171bba"
+    },
+    {
+      "term": "klasterēšana",
+      "definition": "nepārraudzītās mašīnmācīšanas uzdevums, kur datu objektu izeiņas vērtības nav dotas un rezultāts ir datu grupu atdalījums",
+      "sentence": "Klasterēšana ir nepārraudzītās mašīnmācīšanās uzdevums...",
+      "language": "lz",
+      "generated": false,
+      "uid": "f3f80f4c-53ed-48af-9821-5ce1d27f3da2"
+    },
+    {
+      "term": "klasters",
+      "definition": "datu apakškopa, kurā ir grupotu datu objekti, piemēram, uzņēmums var grupēt klientus pamatojoties uz ienākumu līmeni (araugstiem, vidējiem un zemiem ienākumiem)",
+      "sentence": "Tas ir process, kurā pieejamo datu kopu sadala apakškopās, kurām ir zināma līdzība. Šīs datu apakškopas sauc par klasteriem...",
+      "language": "lz",
+      "generated": false,
+      "uid": "e692461a-5bde-4b12-8c17-2e0377f591ae"
+    },
+    {
+      "term": "datu objektu līdzība klastera ietvaros",
+      "definition": "raksturo datu objekti un to attiecību vienā klasterī, kur tie ir atkarīgi no pazīmju tipiem (nepārtraukti vai kategoriskie)",
+      "sentence": "Šīs datu apakškopas sastāv no viena vai vairākiem datu objektiem un to raksturo divi aspekti: ... līdzība klastera ietvaros",
+      "language": "lz",
+      "generated": false,
+      "uid": "912be7a4-9279-46e6-b340-15ccc15dae25"
+    },
+    {
+      "term": "datu objektu atšķirība starp klasteriem",
+      "definition": "atšķiras starp dažādām grupētajām datu apakškopām, kuras tiek noteiktas pēc dažādu pazīmju vērtību",
+      "sentence": "...datu objektu atšķirība starp klasteriem. Daudzos gadījumos...",
+      "language": "lz",
+      "generated": false,
+      "uid": "8324f39f-a924-4617-b177-64f45112d1d1"
+    },
+    {
+      "term": "līgijuma jēdziens",
+      "definition": "jēdziens, kas izpratnes datu objektu līdzību atkarībā no pazīmju tipiem: nepārtrauktām pazīmju vērtībām tiek aprēķināts ģeometriskais attālums (Eiklīda vai Manhetenas), bet kategoriskajās pazīmju vērtībām tiek izmantots Heminga attālums",
+      "sentence": "Līdzības jēdziens tika detalizēti skaidrots 4.2 tēmā, apskatot kNN algoritmu... Tāpēc ir vērts atgādināt...",
+      "language": "lz",
+      "generated": false,
+      "uid": "79d14fe0-a752-4e49-9440-68236dbeefe2"
+    },
+    {
+      "term": "Ģeometriskais attālums",
+      "definition": "Eiklīda vai Manhetenas metrika, kas aprēķina nepārtraukto pazīmju vērtību datu objektu atšķirību: jo tuvāk ir objektu vektori, jo lielāka ir līdzība",
+      "sentence": "nepārtrauktām pazīmju vērtībām tiek aprēķināts ģeometriskais attālums...",
+      "language": "lz",
+      "generated": false,
+      "uid": "d3ee02d3-7728-4132-8869-851ef566fc07"
+    },
+    {
+      "term": "K- vidējais algoritms (K-means)",
+      "definition": "populārs nepārraudzītās mašīnmācīšanās algoritms, kurš balstās uz attāluma un centroīda jēdzieniem. Izveido klasterus, samazinādams datu objektu attākumu no centroīdu",
+      "sentence": "K- vidējo algoritms ir viens no populārākajiem nepārraudzītās mašīnmācīšanās algoritmiem...",
+      "language": "lz",
+      "generated": false,
+      "uid": "5f3991c7-6dfe-46ad-8a9b-8ab86cb7d1b3"
+    },
+    {
+      "term": "attāluma jēdziens",
+      "definition": "metrika, kas tiek izmantota K-means algoritmam, lai grupētu datu objekti klasteros, noteicot to līdzību",
+      "sentence": "Atbilstoši (Jones, 2009), 'algoritms ir populārs galvenokārt tāpēc, ka tas darbojas salīdzinoši labi... Attālums ir līdzības metrika...",
+      "language": "lz",
+      "generated": false,
+      "uid": "0dcb96d4-9b07-47ed-abe3-c44602fbc12f"
+    },
+    {
+      "term": "centroīds",
+      "definition": "klastera pārstāvnieks, ko izveidojas no visiem datu objektiem šajā klasterā; tas ir vektora, kas apvieno pazīmju vidēji (skaitliskās vidējās vērtības) no klastera ietilpstošajiem objektiem.",
+      "sentence": "tiek aprēķināts attālums starp datu objektu un katru no centroīdiem...",
+      "language": "lh",
+      "generated": false,
+      "uid": "2a1abb6d-c780-4145-a8d1-9ae79886c931"
+    },
+    {
+      "term": "K (skaits) hiperparametrs",
+      "definition": "klasteru skaits, kas tiek izvēlēts algoritmam. Izveidots no modeļa izstrādātāja, izmēģinājumu un kļūdu pieeju vai hieristiskajās zināšanās metodes",
+      "sentence": "Parasti to izvēlas modeļa izstrādātājs, izmantojot izmēģinājumu-un-kļūdu pieeju...",
+      "language": "lz",
+      "generated": false,
+      "uid": "3dedcb49-a5d4-4d34-9610-2a1d97585ab9"
+    },
+    {
+      "term": "datu objekts",
+      "definition": "individuāls datu punktu, kuram tiek piešķirtas vairākas pazīmes (vectoru elementi), kas tiek izmantoti klasterēšanas procesā.",
+      "sentence": "Sākot ar pirmo datu objektu...",
+      "language": "lh",
+      "generated": false,
+      "uid": "0cc39dc2-9e9b-4fd2-9d32-5c62c6b66bb7"
+    },
+    {
+      "term": "attālums",
+      "definition": "matemātiskā distanca starp diviem datu objektiem vai starp datu objektu un centroīdu, izmantojot pazīmju vektoru attēlošanu.",
+      "sentence": "...tiek aprēķināts attālums starp datu objektu un katru no centroīdiem...",
+      "language": "lh",
+      "generated": false,
+      "uid": "48e41e4e-0060-47ba-b18e-aa91adcfac03"
+    },
+    {
+      "term": "klasteris",
+      "definition": "grupa vienādi raksturīgiem datu objektiem, kuriem ir sabiedrota pazīmju vektoru struktūra; šīs grupas tiek izveidotas no centroīdu punktiem.",
+      "sentence": "...datu objekts tiek attiecināts uz atbilstošā centroīda klasteri...",
+      "language": "lh",
+      "generated": false,
+      "uid": "5ce7d64f-3ed4-4aff-8679-5cc9ff947d8b"
+    },
+    {
+      "term": "K-vidējais algoritms",
+      "definition": "klasterēšanas metods, kurā tiek noteikts klasteru skaits (K) un datu objekti atzīmēti uz šādiem centroīdu klasteriem, apmaiņot centroīdu līdz tam, kad tie nemainās.",
+      "sentence": "...Tipiski klasterēšanas procesa beigu kritēriji K- vidējo algoritmā...",
+      "language": "lh",
+      "generated": false,
+      "uid": "2f08977c-ac45-4a58-ae53-924d6f55e8e7"
+    },
+    {
+      "term": "iterāciju skaits",
+      "definition": "pārraudzījamais ciklu skaits, kuru algorithms uzskata par beigām, atkarībā no izstrādātāja noteiktiem kritērijiem.",
+      "sentence": "...ir iespējams pārtraukt klasterēšanas procesu , sasniedzot iepriekš noteiktu iterāciju skaitu...",
+      "language": "lh",
+      "generated": false,
+      "uid": "b5e9b839-9dec-4cb9-a1f2-527329b285a3"
+    },
+    {
+      "term": "klasteru skaits",
+      "definition": "neobīdens, bet noteikts skaits klasteriem, ko algoritms jāveido no datu objektu kopas; tas ir obligāts kritērijs K- vidējo algoritmam.",
+      "sentence": "...pirms klasterēšanas procesa ir jānosaka klasteru skaits...",
+      "language": "lh",
+      "generated": false,
+      "uid": "0c2bc109-f603-4fcf-920b-c9a82326179b"
+    },
+    {
+      "term": "centroīdu sākotnējā izvēle",
+      "definition": "proces, kad tiek izvēlēti pirmie centroīdi no datu objektu kopas, kas ir pamats klastera izveidē K- vidējo algoritmā.",
+      "sentence": "...problemātiska var būt arī centroīdu sākotnējā izvēle...",
+      "language": "lh",
+      "generated": false,
+      "uid": "e0ffe4ac-6eec-4ac8-961e-3126b0737793"
+    },
+    {
+      "term": "Hierarhiskā klasterēšana",
+      "definition": "klasterēšanas metods, kurš veido klasteru hierarhiju, apvienojot / sadalot klasterus vairākos līmenīs, no datu objektiem līdz vienam vispārīgam.",
+      "sentence": "...Hierarhiskā klasterēšana ir vēl viens nepārraudzītās mašīnmācīšanās algoritms...",
+      "language": "lh",
+      "generated": false,
+      "uid": "d1b0c18b-5389-4bbf-8dab-440b46ae0a63"
+    },
+    {
+      "term": "klasteru hierarhija",
+      "definition": "struktūra, kas apvieno datu objekti vai klasterus vairākos līmenīs no pamatpunktiem līdz vienam lielam, saturošam visus objektiem.",
+      "sentence": "...viszemākajā hierarhijas līmenī katram datu objektam ir savs klasteris...",
+      "language": "lh",
+      "generated": false,
+      "uid": "e5fa80db-08c7-4617-b1fb-3831f2168ae7"
+    },
+    {
+      "term": "apvienošana",
+      "definition": "proces, kad divi vai vairāki klasteri tiek apvienoti vienā lielākajā grupā (aglomeratīvās hierarhiskās klasterēšanas gadījumā).",
+      "sentence": "...viszemākajā līmenī visi datu objekti tiek apvienoti vienā klasterī...",
+      "language": "lh",
+      "generated": false,
+      "uid": "27d69751-b0d5-4a1d-8c71-6ebade359d5d"
+    },
+    {
+      "term": "aglomeratīvā hierarhiskā klasterēšana",
+      "definition": "tipisks hierarhiskās klasterēšanas veids, kad procesa sākums ir datu objekti, kuri tiek apvienoti rekurīvi no zemākām līmeņiem līdz vienam lielam klasterim.",
+      "sentence": "...Aglomeratīvā hierarhiskā klasterēšana izmanto klasteru hierarhijas veidošanas pieeju no apakšas uz augšu...",
+      "language": "lh",
+      "generated": false,
+      "uid": "91b7d734-0ac7-4c6c-870c-99fc11833a8b"
+    },
+    {
+      "term": "sadalība",
+      "definition": "proces, kad viens lielais klasteris tiek sadalīts vairākos malos (sadalošās hierarhiskās klasterēšanas gadījumā).",
+      "sentence": "...Sadalošā hierarhiskā klasterēšana izmanto klasteru hierarhijas veidošanas pieeju no augšas uz leju...",
+      "language": "lh",
+      "generated": false,
+      "uid": "ff0ae746-1dec-4255-9620-bdb1971b0422"
+    },
+    {
+      "term": "viszemākais līmenis",
+      "definition": "augstākais hierarhiskās klasterēšanas līmens, kurā visi datu objekti ir apvienoti vienā klasterī.",
+      "sentence": "...viszemākajā hierarhijas līmenī katram datu objektam ir savs klasteris...",
+      "language": "lh",
+      "generated": false,
+      "uid": "2ab3c335-ce14-4fc5-ab39-4243ea55ea55"
+    },
+    {
+      "term": "visaugstākais līmens",
+      "definition": "apvienojums, kurā ir saturosies visi datu objekti kā vienā lielā klasterī.",
+      "sentence": "...visaugstākajā hierarhijas līmenī ir tikai viens klasteris...",
+      "language": "lh",
+      "generated": false,
+      "uid": "679da18c-c054-4500-b095-4b7d19741f60"
+    },
+    {
+      "term": "fragments",
+      "definition": "izņemta informācija no (Hastie, 2017) par apvienošanas kritēriju, kur tiek izvēlēti datu objekti / klasteri ar mazākajām atšķirībām.",
+      "sentence": "...kuriem ir vismazākās atšķirības...",
+      "language": "lh",
+      "generated": false,
+      "uid": "e41d83ab-3ca1-466c-b7f5-03dc249fc7cb"
+    },
+    {
+      "term": "pozitīvā prognozējošā vērtība",
+      "definition": "vērtība, kas novērtē mašīnmācīšanas algoritmu spēju atklāt pozitīvas klasifikācijas rezultātus, kuras ir uzreiz parādītas kā pozitīvās",
+      "sentence": "Tas atspoguļo katra klastera datu objektu tuvumu blakus esošo klasteru datu objektiem.",
+      "language": "lz",
+      "generated": false,
+      "uid": "e2d81ff2-56e5-443d-96eb-63969ab56a7d"
+    },
+    {
+      "term": "jutīgums",
+      "definition": "mašīnmācīšanas algoritmu spēja atzīst pozitīvās klasifikācijas rezultātus, kad tie nav tik īsti pozitīvi, salīdzinājot ar negatīvo klasifikāciju",
+      "sentence": "Tas ir augstu F1 mēru tikai tad, ja gan jutīgums, gan pozitīvā prognozējošā vērtība ir augstas.",
+      "language": "lz",
+      "generated": false,
+      "uid": "c276c1c3-5d6c-4c62-9175-515f2cc512d7"
+    },
+    {
+      "term": "F1 mērs",
+      "definition": "aprēķināts no pozitīvās prognozējošās vērtības un jutīguma vidējās vērtību diapazonā [0,1], kas novērtē pareizi klasificēto datu objektu skaitu.",
+      "sentence": "F1 mēra vērtība ir diapazonā [0,1]. Augsta F1 mēra vērtība norāda uz to...",
+      "language": "lz",
+      "generated": false,
+      "uid": "7fe27381-1431-4fe3-aab3-e7bc519ebfc7"
+    },
+    {
+      "term": "makra F1 mērs",
+      "definition": "F1 mēra aprēķinājums dažklasīgās klasifikācijas uzdevumā, pamatojoties uz makro-vidējām pozitīvām prognozējošajām vērtībām un jutīguma",
+      "sentence": "Daudzklašu klasifikācijas uzdevumā makro F1 mērs tiek aprēķināts, pamatojoties...",
+      "language": "lz",
+      "generated": false,
+      "uid": "5b9e40a1-f2ff-42f5-b299-d14ea10e08af"
+    },
+    {
+      "term": "hiperparametru vērtību izmaiņas",
+      "definition": "izmaiņas parametriem, kurus izmantojot mašīnmācīšanas algoritmā, kas var ietekmēt tā darbības rezultātus un precizitāti",
+      "sentence": "Ir zināms, ka hiperparametru vērtību izmaiņas var ietekmēt mašīnmācīšanās algoritma darbību.",
+      "language": "lz",
+      "generated": false,
+      "uid": "94798b10-b45e-4d67-92b9-92bb688fb9ca"
+    },
+    {
+      "term": "ROC līkne",
+      "definition": "vizuālā grafikā, kas attēlojot kļūdainu pozitīvo skaitu un jutīguma vērtību atspoguļo hiperparametru izmaiņas uz x un y asu",
+      "sentence": "ROC līkne tiek veidota, attēlojot katrai hiperparametra vērtībai...",
+      "language": "lz",
+      "generated": false,
+      "uid": "840ac93f-4de9-49bd-8213-f9a009e0c584"
+    },
+    {
+      "term": "Receiver Operating Characteristic (ROC)",
+      "definition": "angļu termins, kas raksturīgs šajā kontekstā kā *receiver operating characteristic* līkne, kuras izmantojamais mērvērtības skala ir kļūdainu pozitīvo skaits un jutīgums.",
+      "sentence": "Mašīnmācīšanas algoritma darbību pie dažādām tā hiperparametru vērtībām var vizualizēt ar ROC līkni.",
+      "language": "lz",
+      "generated": false,
+      "uid": "2f4f68a9-ea25-4f3b-8ffe-dc7f3775041a"
+    },
+    {
+      "term": "Area Under the ROC Curve (AUC)",
+      "definition": "skaitlis, kas apraksta visu divdimensiju laukumu zem ROC līknes un atspoguļo klasifikatora precizitāti diapazonā [0,1]. AUC tiek aprēķināts ar katru klasteri salīdzinājumā daudzklašu klasifikācijas uzdevumā.",
+      "sentence": "Laukums zem ROC līknes ļauj salīdzināt dažādus klasifikatorus. Šis rādītājs mēra...",
+      "language": "lz",
+      "generated": false,
+      "uid": "141682e1-b8f3-42d7-9fb9-c1cdc9571ef8"
+    },
+    {
+      "term": "klasteri",
+      "definition": "reprezentatīvās grupas, kuras datu kopas sadalīja klasterēšanas algoritms, novērtējot datu objektu attālumu starp viņu grupām",
+      "sentence": "Klasterēšana paredz datu kopas sadalīšanu reprezentatīvās grupās.",
+      "language": "lz",
+      "generated": false,
+      "uid": "d20d5738-4997-4717-bd76-10ec3ee5253a"
+    },
+    {
+      "term": "Silueta koeficients",
+      "definition": "metriks, kas novērtē klasterēšanas algoritmu veikumu bez izaiņas vērtību prasībām. Tas aprēķina katru datu objektu attālinājušos no saviem un blakus esošo klasteru vidējajiem attālumiem.",
+      "sentence": "Eksistē dažādu metriku, lai novērtētu klasterēšanas algoritmu veikumu. Viens no rādītājiem...",
+      "language": "lz",
+      "generated": false,
+      "uid": "9faa7b9b-d50a-477a-b402-e8fd72689bec"
+    },
+    {
+      "term": "Silueta koeficients aprēķinājums",
+      "definition": "a = vidējais attālums klastera iekšā, b = vidējais attālums starp klasteriem, kur šis koeficientu aprēķina pēc attālumu no katra datu objekta savam un citiem klasteriem.",
+      "sentence": "Silueta koeficients aprēķina šādi: a — vidējais attālums klastera iekšā, b — vidējais attālums starp klasteriem...",
+      "language": "lz",
+      "generated": false,
+      "uid": "4630f6b1-3ce0-46e1-8a33-ba177691f3c7"
+    },
+    {
+      "term": "eksemplārs-klase / kopa / tips / veids",
+      "definition": "attiecība, kurā vienu objektu (piemēram, problēmāsferas konkrēto objektu) saistīts ar klasi, kopu, tipu vai veidu, kam tas pieder; virziens ir no piemēra uz klasu/kopu/tips/veidam",
+      "sentence": "'eksemplārs-klase / kopa /tips/ veids' jeb ‘Ir piemērs / eksemplārs’ attiecība, kas arī ļauj veidot hierarhiskas attiecības, saistot vienu konkrētu problēmsfērā eksistējošo objektu / jēdzienu ar klasi / kopu / tipu / veidu...",
+      "language": "lh",
+      "generated": false,
+      "uid": "b45cbdae-e909-4092-b7be-635b84340847"
+    },
+    {
+      "term": "daļa-vesels",
+      "definition": "attiecība, kas norādīja sastāvdaļas, kuras veido konkrētu objektu/jēdzienu un bez kurām objekts/ jēdziens zaudē savu oriģinālizskatu; virziens ir no daļas uz veselu objektu",
+      "sentence": "'daļa-vesels' jeb ‘Ir daļa / sastāvdaļa’ attiecība, kas ļauj norādīt sastāvdaļas...",
+      "language": "lh",
+      "generated": false,
+      "uid": "97090f8b-cba1-4ff2-b028-553fac19e6e4"
+    },
+    {
+      "term": "objekts-īpašība",
+      "definition": "attiecība, kas saitīt objektus/jēdzienus ar īpašībām, kuras tos raksturo; attiecas uz jautājumam ‘Kāds ir objekts/jēdziens?’ un var tiekta novērtēt ar kvalitatīvām vai kvantitatīvām vērtībām",
+      "sentence": "'Objekts-īpašība’ jeb ‘Īpašība’ attiecība, kas ļauj saitīt objektus/jēdzienus ar īpašībām...",
+      "language": "lh",
+      "generated": false,
+      "uid": "22d62365-fbf5-42f8-ba7f-701409590883"
+    },
+    {
+      "term": "īpašība-vērtība",
+      "definition": "attiecība, kas atspoguļo objekta/jēdziena raksturojuma vērtību pēc attiecības ‘īpašība’; virziens ir no īpašības uz vērtību",
+      "sentence": "'Īpašība-vērtība’ jeb ‘Vērtība’ attiecība, kas ļauj atspoguļot objekta/jēdziena specifisku raksturojuma vērtību...",
+      "language": "lh",
+      "generated": false,
+      "uid": "10b4b930-837d-47ac-aa4a-df39a183e92f"
+    },
+    {
+      "term": "lingvistiskas attiecības",
+      "definition": "attiecības, kas ļauj brīvi atspoguļot jebkādas citas attiecības, kas eksistē problēmāsferā; nav aprakstamas ar iepriekš definētajiem attiecību tipiem (piemēram ‘patīk’, ‘ēd’)",
+      "sentence": "Lingvistiskajiem attiecībām: ‘Lingvistiskas attiecības (11. att.), kuras ļauj brīvi atspoguļot jebkādas citas attiecības...’",
+      "language": "lh",
+      "generated": false,
+      "uid": "7eb3136a-5be1-4eb7-a714-597dabd80b22"
+    },
+    {
+      "term": "pārmantošana",
+      "definition": "īpašība semantiskajiem tīkliem, kas nozīmē, ka virsotnes, kuras ir kādas klases/kopas/tipa/veida speciālganājumi (piemēram apakšklase/apakškopa/apakštips/apakšveids vai piemērs), pārmanto zināšanu no tīkla",
+      "sentence": "Semantiskajiem tīkliem piemīt pārmantošanas īpašība...",
+      "language": "lh",
+      "generated": false,
+      "uid": "774618fe-d97c-40e0-983f-05059250a781"
+    },
+    {
+      "term": "zelta likums attiecību loka virzienā",
+      "definition": "princips, kuram pēc attiecības saistījuma diviem objektiem/lokām ir jāiegūst jēgpilns fakts; jebkurā attiecība starp objektiem jādod zinātību ar tikai faktiem",
+      "sentence": "Sakarā ar to, ka automobilis ir transportlīdzekļa apakšklase, tas pārmanto abas īpašības... Lai intelektiskā datorsistēma spētu izmantot zināšanas...",
+      "language": "lh",
+      "generated": false,
+      "uid": "3d40e7e3-7e45-4d12-95f6-6d7f3d7443ee"
+    },
+    {
+      "term": "semantiskais tīkla konstrukcija",
+      "definition": "struktūrētās zināņu atspoguļojuma veids, kas atspoguļo objektus, jēdzienus un attiecības starp tiem, piemērots semantiskajiem tīkliem",
+      "sentence": "13. attēlā redzamajā semantiskajā tīklā ir atspoguļots...",
+      "language": "lh",
+      "generated": false,
+      "uid": "eb3e3d71-26db-4344-9540-1e42b4049ead"
+    },
+    {
+      "term": "lokālās attiecības",
+      "definition": "attiecības, kuras tiek aprakstītas starp konkrētu objektu/jēdzienu un citiem objektiem/lokām, kamēr izmantojot pārdošanas principus (izveduma mehānisms) tās ir jāaprēķina pirms pārmantošanu izmantojanas",
+      "sentence": "lai iegūtu zināšanas par konkrētu objektu/jēdzienu: vispirms jāpārbauda šī objekta/jēdziena lokālās attiecības...",
+      "language": "lh",
+      "generated": false,
+      "uid": "f80b67e5-840c-4586-9a8b-ee312b5a30dd"
+    },
+    {
+      "term": "izveduma mehānisms",
+      "definition": "strādājums, kas nodrošina zināņu ieguvi no semantiskajiem tīkliem, atkarībā no attiecību bultījuma virzieniem: saistot objektus ar lokālām attiecībām vai izmantojot pārmantošanu",
+      "sentence": "Izveduma mehānisms semantiskajos tīklos ir šāds...",
+      "language": "lh",
+      "generated": false,
+      "uid": "706f7485-4252-412d-9bc2-97ef89ad85b8"
+    },
+    {
+      "term": "pārmantojamo zināņu izmantošana",
+      "definition": "princips, kas nodrošina mazāko zināņu bāzes izmēru, izmantojot specializētus konkrētu objekta/zināšanu aprakstu (piemēram, kad vajadzīgas zināšanas ir intelektiskās datorsistēmas darbībai)",
+      "sentence": "Pārmantošana ļauj samazināt zināšanu bāzes izmēru...",
+      "language": "lh",
+      "generated": false,
+      "uid": "55cab0c8-f213-44b7-b876-b521cd6f5a22"
+    },
+    {
+      "term": "semantiskie tīkli",
+      "definition": "struktūru, kas atspoguļo zināšanas par faktiem, jēdzieniem un objektiem, bez formālās semantikas",
+      "sentence": "Tajā pašā laikā semantiskajiem tīkliem ir raksturīgi arī trūkumi : semantiskie tīkli atspoguļo tikai deklaratīvas zināšanas par faktiem, jēdzieniem un objektiem.",
+      "language": "lw",
+      "generated": false,
+      "uid": "be35b5fd-f03e-44ee-949d-cefe51e31318"
+    },
+    {
+      "term": "deklaratīvajas zināšanas",
+      "definition": "zināšanas, kas apraksta faktius, jēdzienus un objekti bez struktūriju vai formālās semantikas",
+      "sentence": "semantiskie tīkli atspoguļo tikai deklaratīvajas zināšanas par faktiem, jēdzieniem un objektiem;",
+      "language": "lw",
+      "generated": false,
+      "uid": "11dbfd50-2e25-44a8-9035-15896534bdf3"
+    },
+    {
+      "term": "zināšanu atspoguļošana",
+      "definition": "proces, kurā tiek pārstāvētas zināšanas par faktiem un jēdzieniem bez formālās semantikas",
+      "sentence": "semantiskie tīkli atspoguļo tikai deklaratīvas zināšanu atspoguļošanas veidu",
+      "language": "lw",
+      "generated": false,
+      "uid": "b951c7fd-66bf-4baa-a6df-02cfd1617c20"
+    },
+    {
+      "term": "formālas semantikas trūkums",
+      "definition": "nedokumentētas un nevienprātīgās struktūras, kas nodrošina precīzu zināšanu interpretāciju semantiskajiem tīklos",
+      "sentence": "semantiskajiem tīkliem nav labi definētas formālas semantikas.",
+      "language": "lw",
+      "generated": false,
+      "uid": "65c54576-d095-40ea-9af8-46a2221292b6"
+    },
+    {
+      "term": "divdomība",
+      "definition": "viena un tā paša zināšanas vienība atspoguļo dažādus veidus (tiek interpretēti dažādi nozīmējumi)",
+      "sentence": "tas var ievest divdomību gan zināšanu atspoguļošanas laikā, kad vienas un tās pašas zināšanu vienības var tikt atspoguļotas dažādos veidos, un arī semantiskā tīkla interpretācijas laikā, kad atspoguļotais saturs var tikt dažādi interpretēts;",
+      "language": "lw",
+      "generated": false,
+      "uid": "4acef2ad-6f8e-4475-af0d-bbbbf9bbc707"
+    },
+    {
+      "term": "negācija",
+      "definition": "zināšanas tipa par negatīvu, kontrāri no faktiem vai jēdzieniem",
+      "sentence": "Izmantotie informācijas avoti...; ...semantiskie tīkli nespēj atspoguļot atsevišķu tipu zināšanas, piemēram, negāciju...",
+      "language": "lw",
+      "generated": false,
+      "uid": "c3e08df9-1ac8-4e97-871d-2a5fb2d16ebc"
+    },
+    {
+      "term": "disjunkcija",
+      "definition": "logiska operācija, kas apzīmē vienas vai citas jēdziena vai fakta iespējumu",
+      "sentence": "...negāciju, disjunkciju...",
+      "language": "lw",
+      "generated": false,
+      "uid": "3555419b-03ba-4f8c-bc65-79837f6c02ff"
+    },
+    {
+      "term": "visi/daļa/daži/neviens/daudz",
+      "definition": "logiskas operācijas, kas apraksta kombinācijas starp faktiem vai jēdzieniem (piemēram, visus, daļu, dažus, neviens vai daudz objekti)",
+      "sentence": "...visi / daļa / daži / neviens / daudz...",
+      "language": "lw",
+      "generated": false,
+      "uid": "3eb9c5d6-621a-4ea0-82fe-9c62d448427b"
+    },
+    {
+      "term": "grafa struktūra",
+      "definition": "struktūru, kas pamatojas uz grafu un atspoguļo sarežģītas datu struktūras (objekti ar īpašībām un sastāvdaļām)",
+      "sentence": "Strukturizētas zināšanu atspoguļošanas shēmas arī izmanto grafu par pamatu zināšanu atspoguļošanai. Taču atšķirībā no tīklveida zināšanu atspoguļošanas šēmām, grafa virsotnes atspoguļo nevis vienkāršu objektu/jēdzienu, bet sarežģītu datu struktūru...",
+      "language": "lw",
+      "generated": false,
+      "uid": "8c5b969e-af06-4490-b0f5-fe988df26e4b"
+    },
+    {
+      "term": "atsaukšanas princips",
+      "definition": "princips, kurā atsevišķas virsotnes tiek saistītas ar citām virsotnēm, izmantojot tās nosaukumu (ne tieši kā loki, bet atkarībā no nosaukuma atsauces).",
+      "sentence": "attiecības starp grafa virsotnēm netiek norādītas tiešā veidā kā loki semantiskajos tīklos , bet to izveide balstās uz atsaukšanas principu...",
+      "language": "lw",
+      "generated": false,
+      "uid": "8a6dc5a6-eafa-4166-8f08-d5b231141380"
+    },
+    {
+      "term": "freimi",
+      "definition": "struktūra, ko izmanto cilvēki, atmiņā saglabājot zināšanas par situācijām un izmaiņās tās atspoguļošanai (piedzīvotās situācijas kā pamats)",
+      "sentence": "Freimi ir piemērs strukturizētām zināšanu atspoguļošanas šēmām. Tos izstrādāja Minskis (Minsky) 1975. gadā. Freimu ideja ir šāda: ‘Kad indivīds sastopas ar jaunu situāciju ( vai izdara būtiskas izmaiņas savā viedoklī par viņam jau zināmo situāciju ), viņš no atmiņas izvēlas struktūru, ko sauc par freimu. Šis ir iepriekš iegaumēts ietvars, kas jāpielāgo jaunai realitātei...’",
+      "language": "lw",
+      "generated": false,
+      "uid": "3d328174-aeea-4bcd-9d39-7a7b663b41a4"
+    },
+    {
+      "term": "ietvars",
+      "definition": "preparētais struktūru elementu kopums, ko cilvēks izmantojot atmiņas zināšanas par situāciju, piemēram, pārisituācijā, pievieno vai maina detaļas",
+      "sentence": "Šis ir iepriekš iegaumēts ietvars, kas jāpielāgo jaunai realitātei...",
+      "language": "lw",
+      "generated": false,
+      "uid": "3a9e9e3d-5761-4ed2-9227-e1c528f509be"
+    },
+    {
+      "term": "ilsglaicīgajā atmiņā",
+      "definition": "zināšanas struktūra, ko cilvēks saglabājis no priekšējām situācijām un izmantojis tās pēc vajadzībām (piedzīvotās situācijas kā pamats)",
+      "sentence": "Zināšanas par šo situāciju viņš ir strukturizējis un saglabājis savā ilglaicīgajā atmiņā.",
+      "language": "lw",
+      "generated": false,
+      "uid": "5aca6a64-f896-46b2-8e10-628a2c356a5c"
+    },
+    {
+      "term": "Turklāt",
+      "definition": "izrūpstīts vārds, kas tiek izmantots kā apstiprinājuma vai atbalsta priekšnesi, turpinot rēķinu vai argumentāciju",
+      "sentence": "tā kā katrs likums atbilst vienai problēmrisināšanas zināšanu vienībai",
+      "language": "lz",
+      "generated": false,
+      "uid": "3e8e8862-8d1c-40e6-8ced-c83d1c59d839"
+    },
+    {
+      "term": "likums",
+      "definition": "normatīvais dokumentu, kas apstiprina un regulē sistēmas pašreizējo darbību vai atbildīgās problēmrisināšanas zināšanu vienības ievērojumus",
+      "sentence": "katrs likums atbilst vienai problēmrisināšanas zināšanu vienībai",
+      "language": "lz",
+      "generated": false,
+      "uid": "9b6bf6c7-84f5-4321-ba4f-b8cac91bd459"
+    },
+    {
+      "term": "problēmrisināšanas zināšanu vienība",
+      "definition": "vienība, kas spēj pārskatīt un izmantot likumu, lai nodrošinātu skaidrojumu par sistēmas stāvokli vai problēmām risināšanu",
+      "sentence": "likuma saturs var sniegt jēgpilnu skaidrojumu par sistēmas pašreizējo stāvokli un darbību",
+      "language": "lz",
+      "generated": false,
+      "uid": "a7a4f987-37b4-48eb-a9dd-5435d9aca4d0"
+    },
+    {
+      "term": "jēgpilna skaidrojums",
+      "definition": "spēja, ar kādu likums sauc un izskaidro sistēmas pašreizējās darbības vai stāvokļa kontekstu ar nepilnīgām zināšanām",
+      "sentence": "likuma saturs var sniegt jēgpilnu skaidrojumu par sistēmas pašreizējo stāvokli un darbību",
+      "language": "lz",
+      "generated": false,
+      "uid": "8776be4f-cf03-49b3-b597-6f6e20734f18"
+    },
+    {
+      "term": "Nepilnīgu zināšanu apstrāde",
+      "definition": "metodoloģija, kas apvieno nepilnīgās vai nenoteiktās zināšanas sistēmas darbībai un iegūstam tikai priekšlikumu par problēmām risināšanu",
+      "sentence": "Nepilnīgu un nenoteiktu zināšanu apstrāde. Lielākā daļa likumos sakņotu ekspertsistēmu spēj spriest ar nepilnīgām un nenoteiktām zināšanām",
+      "language": "lz",
+      "generated": false,
+      "uid": "8b0be807-363f-44c2-91ae-2550b1f0dd6b"
+    },
+    {
+      "term": "nepilnīgās zināšanas",
+      "definition": "apzīmē zināšanu vienību, kas nav pilnīgi noteikta vai precīza un tiek izmantota ekspertsistēmā, lai nodrošinātu risinājumu ar ticamības faktoru",
+      "sentence": "Nepilnīgās un nenoteiktās zināšanas tiek pievienotas likumiem, kāda tikamības faktora veidā",
+      "language": "lz",
+      "generated": false,
+      "uid": "88710005-d9f6-4da3-afc2-8c4c5f4eac74"
+    },
+    {
+      "term": "ticamības faktori",
+      "definition": "elementi vai principi, kas piešķir tikušām apzīmējumiem vai risinājumu atbalstu ar nepilnīgās zināšanas sistēmā",
+      "sentence": "pievienojot likumiem ticamības faktorus",
+      "language": "lz",
+      "generated": false,
+      "uid": "05f3fe90-a7e7-4d8d-bf27-299076d02359"
+    },
+    {
+      "term": "ekspertsistēma",
+      "definition": "kompjutējamā sistēma, kas spēj izmantot ekspertu zināšanu kopienas likumus un nepilnīgās zināšanas, lai risinātu problēmas",
+      "sentence": "lielākā daļa likumos sakņotu ekspertsistēmu spēj spriest ar nepilnīgām un nenoteiktām zināšanām",
+      "language": "lz",
+      "generated": false,
+      "uid": "918d4385-3805-4cb6-a28f-e673f24efb21"
+    },
+    {
+      "term": "produkciju sistēmās",
+      "definition": "sistēmas, kuras tiek izmantotas, lai nodrošinātu iterācijas procesu, analizējot visus likumus zināšanu bāzē un pārskatījot izvedumu",
+      "sentence": "produkciju sistēmās izveduma mehānisms katrā iterācijā pārskata visus zināšanu bāzē esošus likumus",
+      "language": "lz",
+      "generated": false,
+      "uid": "1b066526-9c32-4cfc-bf33-81b83ee241c7"
+    },
+    {
+      "term": "ievērojums skaitļošanas resursi",
+      "definition": "pieņemts nozīmīgs apzīmējums, kuram tiek piešķirta attiecība ar resursu izmantojumu vai ierobežojumu procesā, kad sistēma pārskata likumus un risinājumu",
+      "sentence": "tas var prasīt ievērojumus skaitļošanas resursus",
+      "language": "lz",
+      "generated": false,
+      "uid": "4850dbc9-f071-42b4-b704-8c483d7ff88a"
+    },
+    {
+      "term": "likumu skaits",
+      "definition": "daudzums atsevišķiem likumiem, kas tiek ierakstīts sistēmās un ko sistēma izmantojot ir grūti noteikt kādu ieguldījumu",
+      "sentence": "kad ir liels likumu skaits, ir grūti noteikt, kādu ieguldījumu atsevišķs likums veic problēmas risināšanā",
+      "language": "lz",
+      "generated": false,
+      "uid": "a260bb89-429b-4e84-a5ff-131d42ca014c"
+    },
+    {
+      "term": "ievērojums (likuma ieguldījums)",
+      "definition": "specifiskais ietekmes mērķis vai uzdevums, ko atsevišķs likums veic sistēmā, lai nodrošinātu problēmām risināšanu",
+      "sentence": "ir grūti noteikt, kādu ieguldījumu atsevišķs likums veic problēmas risināšanā",
+      "language": "lz",
+      "generated": false,
+      "uid": "d6d162f5-1903-458b-b5ab-0c907adde262"
+    },
+    {
+      "term": "vairāk nekā 100 likumu ekspertsistēm",
+      "definition": "ekspertsistēmu tipa sistēma, kas tiek izmantota ar lielu kopumu likumiem (vietoņus, kur ir vairāk kā desmit likumi), un ko darbojas lēni, nepieciešams reāllaika lietošana",
+      "sentence": "Ekspertsistēmas ar lielu likumu kopumu (vairāk nekā 100 likumu) var darboties lēni",
+      "language": "lz",
+      "generated": false,
+      "uid": "33169df8-8415-4b57-871c-86d09ac396e1"
+    },
+    {
+      "term": "reāllaika lietošana",
+      "definition": "izmantojums sistēmām, kuru iepasienotāks ir ietverts reālos laikus un uzdevumu risināšanas spējas, lai novērtētu problēmas ātri un precīzi",
+      "sentence": "Ekspertsistēmas ar lielu likumu kopumu (vairāk nekā 100 likumu) var nebūt piemērotas reāllaika lietošanai.",
+      "language": "lz",
+      "generated": false,
+      "uid": "2c99b04f-a164-4eed-a09a-62356a1deafc"
+    },
+    {
+      "term": "novecojis",
+      "definition": "izpausa, kad likums tiek uzskatīts par neaktīvu vai precīzu, tāpēc sistēma to netiek izmantota reālos laikos ar jaunām informācijās",
+      "sentence": "produkciju sistēmām ir maz iespēju apmācīties un noteikt, kad likums ir novecojis.",
+      "language": "lz",
+      "generated": false,
+      "uid": "f51680f5-d8c1-4d45-ae83-994c2a957306"
+    }
+  ],
+  "debug_info": {
+    "chunkSize": 3857,
+    "chunkCount": 76,
+    "contextLength": 4096,
+    "temperature": 0.5,
+    "seed": 42,
+    "prompt": "Your task is to analyze the provided text and create a glossary.\nInstructions:\n1. Extract ALL terms and concepts from the text.\n2. Define them using ONLY the provided text.\n3. NO external knowledge. Synthesize exclusively from source.\n4. DO NOT translate. Keep definitions in the source language.\n5. If no terms found, return an empty list.\n\nText to analyze:\n\n",
+    "elapsedTime": 2932.43,
+    "safeMargin": 0.5,
+    "maxResponseTokens": 4096,
+    "maxTimeout": 599940000,
+    "repeatPenalty": -1,
+    "inputSize": 334911
+  }
+}

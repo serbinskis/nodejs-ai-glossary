@@ -1,0 +1,1625 @@
+{
+  "uid": "4a5dfbf3-9767-4399-8581-eb2b21478e31",
+  "domain": "intelekt",
+  "language": "ex",
+  "implementation": "LMStudio-liquid/lfm2-1.2b@Q4_K_M",
+  "timestamp_start": 1774647667567,
+  "timestamp_end": 1774648582564,
+  "error_count": 39,
+  "glossary": [
+    {
+      "term": "intelekta",
+      "definition": "cogito, ergo sum (I think, therefore I am) - a philosophical concept from René Descartes, implying the existence of the self or mind through thought.",
+      "sentence": "",
+      "language": "nl",
+      "generated": false,
+      "uid": "782742c0-a081-4949-ab6f-b506ff2d96b9"
+    },
+    {
+      "term": "intelekts",
+      "definition": "a mental process or faculty, referring to cognitive abilities such as thinking, perceiving, remembering, etc., which are considered fundamental to intelligence.",
+      "sentence": "",
+      "language": "nl",
+      "generated": false,
+      "uid": "5e1bb010-d414-4588-979b-5e0b016c58cf"
+    },
+    {
+      "term": "intellectus",
+      "definition": "the faculty of reason, understanding, and knowledge; the mental capacity for abstract thought, problem-solving, and learning.",
+      "sentence": "",
+      "language": "nl",
+      "generated": false,
+      "uid": "f92dacf9-c5dd-4080-affb-cd4b6a54412b"
+    },
+    {
+      "term": "piemīt",
+      "definition": "piemīt",
+      "sentence": "piemīt pārmantošanas ļauj samazināt zināšanu bāzes izmēru",
+      "language": "lg",
+      "generated": false,
+      "uid": "6e3b1801-e354-4e70-9230-05bd6163e232"
+    },
+    {
+      "term": "spējas",
+      "definition": "a cognitive component or aspect of intelligence, often considered part of Sternberg's triarchic theory of intelligence which includes analytical, creative, and practical intelligence.",
+      "sentence": "",
+      "language": "nl",
+      "generated": false,
+      "uid": "092c2289-3934-44c2-8578-91d577086aa4"
+    },
+    {
+      "term": "diviem pētniekiem",
+      "definition": "a concept from Spearman's theory of general intelligence (g), referring to the broad, underlying factor that influences performance across various cognitive tasks.",
+      "sentence": "",
+      "language": "nl",
+      "generated": false,
+      "uid": "25f97d5e-9ee0-46a8-a864-6ef7d4a3e5f3"
+    },
+    {
+      "term": "autiskā spektra traucējumiem intelektu",
+      "definition": "individual differences in intellectual abilities that span a range of cognitive strengths and weaknesses, as proposed by some psychological theories.",
+      "sentence": "",
+      "language": "nl",
+      "generated": false,
+      "uid": "a17cb878-d28c-433b-aac4-1a770293f788"
+    },
+    {
+      "term": "dzīvnieku intelektu",
+      "definition": "a specific type of intelligence or cognitive ability that is distinct from general intelligence (g) and is often measured separately in psychological assessments.",
+      "sentence": "",
+      "language": "nl",
+      "generated": false,
+      "uid": "d4da5dcd-6b8a-4320-8bd6-2b1928297122"
+    },
+    {
+      "term": "spēju mācīties",
+      "definition": "individual differences in specific cognitive abilities or skills, such as verbal ability, spatial ability, or numerical ability.",
+      "sentence": "",
+      "language": "nl",
+      "generated": false,
+      "uid": "0c893513-a04c-46e3-9691-67534e558270"
+    },
+    {
+      "term": "pielāgoties vides stāvoklim laika gaitā",
+      "definition": "a measure of intelligence that assesses different aspects of cognitive functioning, including verbal comprehension, visual-spatial ability, and working memory.",
+      "sentence": "",
+      "language": "nl",
+      "generated": false,
+      "uid": "22938e26-3c62-4448-9565-cdcd3dae0ddb"
+    },
+    {
+      "term": "tsa lielākoties",
+      "definition": "individuals who exhibit exceptional cognitive abilities or talents, often described as gifted or highly intelligent.",
+      "sentence": "",
+      "language": "nl",
+      "generated": false,
+      "uid": "7921e1c1-7339-49c2-a1d9-821b15fa3ab2"
+    },
+    {
+      "term": "piemīt tādiem dzīvniekiem",
+      "definition": "the manifestation of a particular aspect or component of intelligence in an individual.",
+      "sentence": "",
+      "language": "nl",
+      "generated": false,
+      "uid": "7ed23a30-8c03-4647-9688-276d9b737a7a"
+    },
+    {
+      "term": "pērtiķi",
+      "definition": "individuals with exceptional intellectual abilities or talents, often described as geniuses.",
+      "sentence": "",
+      "language": "nl",
+      "generated": false,
+      "uid": "5e768058-c8b3-44a3-a240-dceea74fd00d"
+    },
+    {
+      "term": "ziloni",
+      "definition": "individuals who demonstrate exceptional skills or talents in a particular domain, such as mathematics, music, or art.",
+      "sentence": "",
+      "language": "nl",
+      "generated": false,
+      "uid": "01369020-0937-42c2-ace6-f783c1be9049"
+    },
+    {
+      "term": "delfīni",
+      "definition": "individuals with extraordinary intellectual capabilities, often described as highly gifted or gifted in specific areas.",
+      "sentence": "",
+      "language": "nl",
+      "generated": false,
+      "uid": "94e0c0ba-d10a-4e5d-8377-bd63f3bdd170"
+    },
+    {
+      "term": "žurkas",
+      "definition": "a cognitive ability related to the understanding and manipulation of language structures, including grammar, syntax, and semantics.",
+      "sentence": "",
+      "language": "nl",
+      "generated": false,
+      "uid": "6554b410-3454-495d-acf7-a5f1d2d69fb3"
+    },
+    {
+      "term": "vārnas",
+      "definition": "individuals with exceptional intellectual abilities or talents, often described as geniuses or highly gifted in specific areas.",
+      "sentence": "",
+      "language": "nl",
+      "generated": false,
+      "uid": "7567a8d1-a89e-4845-93b0-5669aa9f48b2"
+    },
+    {
+      "term": "tsa laikā augiem piemīt vairākas intelektuālas",
+      "definition": "the process of recognizing and identifying exceptional intellectual abilities or talents in individuals.",
+      "sentence": "",
+      "language": "nl",
+      "generated": false,
+      "uid": "48eee543-0da2-497f-8a94-bfb188edad5d"
+    },
+    {
+      "term": "mākslīgo intelekts",
+      "definition": "Intelektu var precīzi aprakstītu jebkuru mācīšanās aspektus, kas principā var precīzi aprakstītu šāda: Mākslīgais intelekts ir izpēte, kas ",
+      "sentence": " ",
+      "language": "mj",
+      "generated": false,
+      "uid": "4deccdef-5152-4f98-bbab-3760a01ac92a"
+    },
+    {
+      "term": "Makslīgais intelekts",
+      "definition": "a form of intelligence, as described in the text, encompassing aspects like metožu (sensory perception), tehnoloģiju daudzveidību (technological understanding), zināšanu atspoguļošanu (cognitive processes related to problem-solving and decision-making), dabiskas valodas apstrādi (biological intelligence), robotiku (robotics), evolucionārās skaitļošanas modeļus (evolutionary aspects of cognition), bioloģiski iedvesmotus modeļus (plant intelligence), intelektiskus aģentus (intellectual capacity), u.c.",
+      "sentence": "the author's own term for the broad concept of intelligence encompassing various domains including biological, technological, cognitive, and plant-based forms of intelligence",
+      "language": "ex",
+      "generated": false,
+      "uid": "d7e45b9c-ee0b-447d-9b4c-4f8303b4a1c6"
+    },
+    {
+      "term": "Intelektās",
+      "definition": "The capacity of the mind to acquire, process, and apply knowledge; intellect",
+      "sentence": "intellect",
+      "language": "ne",
+      "generated": false,
+      "uid": "ad53cc90-9f44-4331-8e50-e2036687731a"
+    },
+    {
+      "term": "Vispārīgas problēmas",
+      "definition": "Specific problems related to intelligence, not general problems",
+      "sentence": "problems related to intelligence",
+      "language": "ne",
+      "generated": false,
+      "uid": "2a01b43b-b998-4907-8033-91a56e08d381"
+    },
+    {
+      "term": "Ipašības",
+      "definition": "Obstacles or difficulties that hinder understanding or progress",
+      "sentence": "obstacles",
+      "language": "ne",
+      "generated": false,
+      "uid": "af3f5445-4952-4196-af36-4fb0f5bb4756"
+    },
+    {
+      "term": "Specifiskas problēmas",
+      "definition": "Specific problems, not general ones",
+      "sentence": "specific problems",
+      "language": "ne",
+      "generated": false,
+      "uid": "32e3f931-efbb-4b43-8ac8-58b092ef893e"
+    },
+    {
+      "term": "Efektivitāti",
+      "definition": "Efektivite, nozītām skaitu pārmeklējamo virsotņu skaits kompromisu varībāt nolūkam.",
+      "sentence": "L",
+      "language": "no",
+      "generated": false,
+      "uid": "bf040ae3-8dc7-4907-bedc-7fb455518f5c"
+    },
+    {
+      "term": "Pielietojotas",
+      "definition": "Incomplete terms",
+      "sentence": "incomplete",
+      "language": "ne",
+      "generated": false,
+      "uid": "2993374e-ccd5-40b4-a07f-8ba11a5adc7f"
+    },
+    {
+      "term": "Apskatītas iepriekš",
+      "definition": "The focus of the research",
+      "sentence": "focus",
+      "language": "ne",
+      "generated": false,
+      "uid": "69d0f96c-46f0-46a6-ba04-0352edd69f35"
+    },
+    {
+      "term": "Gudruā",
+      "definition": "Grounding or anchoring the problem in context",
+      "sentence": "grounding",
+      "language": "ne",
+      "generated": false,
+      "uid": "9785ec88-9476-41f6-8063-0c18a68a7d76"
+    },
+    {
+      "term": "Sistēmu intelekts",
+      "definition": "Intellect as a system or process",
+      "sentence": "system",
+      "language": "ne",
+      "generated": false,
+      "uid": "4675bdef-b715-4434-b61a-2be30396c26f"
+    },
+    {
+      "term": "Rodas daudzu",
+      "definition": "Collective intelligence, often associated with groups or systems",
+      "sentence": "collective intelligence",
+      "language": "ne",
+      "generated": false,
+      "uid": "9ac6f5e5-3bd6-4b51-83be-c7955061a6ef"
+    },
+    {
+      "term": "Optimizācija",
+      "definition": "Optimization, improvement of something",
+      "sentence": "optimization",
+      "language": "ne",
+      "generated": false,
+      "uid": "f7d466c0-1764-41dc-b4c9-4b3f22c6c975"
+    },
+    {
+      "term": "Algoritmus",
+      "definition": "Algorithm, a set of rules for solving a problem",
+      "sentence": "algorithm",
+      "language": "ne",
+      "generated": false,
+      "uid": "8353dccb-b3b1-4862-bc2d-80c59a376294"
+    },
+    {
+      "term": "Sistēmā",
+      "definition": "System or mechanism",
+      "sentence": "system",
+      "language": "ne",
+      "generated": false,
+      "uid": "dfac2238-0569-4651-bd75-b1822be5a93a"
+    },
+    {
+      "term": "Gadījumā",
+      "definition": "A type of neural network model, specifically a Perceptron, used for binary classification tasks.",
+      "sentence": "Gadījuma ir atspoguļotas 5. attēlā -  perceptronā, perceptrona modeli",
+      "language": "sr",
+      "generated": false,
+      "uid": "039972ff-11ed-44aa-a28c-0188e5b77494"
+    },
+    {
+      "term": "Protams",
+      "definition": "Perceptions, judgments",
+      "sentence": "perceptions",
+      "language": "ne",
+      "generated": false,
+      "uid": "70d16dd7-aaf7-41cc-bcb3-42ab67314cfb"
+    },
+    {
+      "term": "Parādību kopums",
+      "definition": "Boundaries or limits of a system",
+      "sentence": "boundaries",
+      "language": "ne",
+      "generated": false,
+      "uid": "2f1073ec-5e95-4aca-a217-a136f1837090"
+    },
+    {
+      "term": "Kolonijas optimizāciju",
+      "definition": "Collective optimization",
+      "sentence": "collective optimization",
+      "language": "ne",
+      "generated": false,
+      "uid": "54605bcf-02b9-40ee-a847-1e5dc6ab9ba2"
+    },
+    {
+      "term": "Sistēmu spieta",
+      "definition": "System or mechanism of optimization",
+      "sentence": "system",
+      "language": "ne",
+      "generated": false,
+      "uid": "a3dc4e62-3a89-4373-ad37-566c4d260bbb"
+    },
+    {
+      "term": "Metodi",
+      "definition": "Methods, procedures",
+      "sentence": "methods",
+      "language": "ne",
+      "generated": false,
+      "uid": "399084ad-46f4-4fc1-8b84-d71e41b72e75"
+    },
+    {
+      "term": "vērtības",
+      "definition": "matematika",
+      "sentence": "novērtējumus",
+      "language": "no",
+      "generated": false,
+      "uid": "0cd9102f-e470-43b9-9373-e0ea424ef2a5"
+    },
+    {
+      "term": "Sasniedz sarežģītāku",
+      "definition": "Evidence or proof",
+      "sentence": "evidence",
+      "language": "ne",
+      "generated": false,
+      "uid": "8806c887-f524-4d31-b46d-9251cd5175ad"
+    },
+    {
+      "term": "Kopā sasniedz",
+      "definition": "Reasons for believing",
+      "sentence": "reasons",
+      "language": "ne",
+      "generated": false,
+      "uid": "7be1bdfd-5ebc-473e-9f62-b1c529fe6c49"
+    },
+    {
+      "term": "Vērā problēmas risināšanas kontekstu",
+      "definition": "Contextual problems of intelligence",
+      "sentence": "context",
+      "language": "ne",
+      "generated": false,
+      "uid": "c5aee3cb-dd4b-4c10-a1c7-96f4462513b6"
+    },
+    {
+      "term": "Apskatāmo problēmu",
+      "definition": "Specific problems to be solved",
+      "sentence": "specific problems to solve",
+      "language": "ne",
+      "generated": false,
+      "uid": "8c62cb26-96fe-42c8-8835-8bdc36a5da6b"
+    },
+    {
+      "term": "Problematikas",
+      "definition": "Problem, challenge",
+      "sentence": "problem",
+      "language": "ne",
+      "generated": false,
+      "uid": "1a4b3979-e36b-49b7-9926-fd97187bddbe"
+    },
+    {
+      "term": "Itašķirību",
+      "definition": "Demonstration of understanding",
+      "sentence": "demonstration",
+      "language": "ne",
+      "generated": false,
+      "uid": "3e9122be-0262-4772-8c8d-c07aa5ba952d"
+    },
+    {
+      "term": "Starp mākslīgā intelekta metožu grupām",
+      "definition": "Demonstration of collective intelligence by a group of experts",
+      "sentence": "demonstration",
+      "language": "ne",
+      "generated": false,
+      "uid": "7b4ad562-abba-4c8d-b9f2-c6b26576a919"
+    },
+    {
+      "term": "diagnozēm",
+      "definition": "medical diagnosis",
+      "sentence": "diagnosis (medical)",
+      "language": "no",
+      "generated": false,
+      "uid": "469cd81c-5e94-4c38-87e3-5465ef73cd12"
+    },
+    {
+      "term": "simptomiem",
+      "definition": "symptoms",
+      "sentence": "symptoms (symptoms)",
+      "language": "no",
+      "generated": false,
+      "uid": "80bb7784-8f92-4431-b698-82874a066923"
+    },
+    {
+      "term": "procesūrām",
+      "definition": "processes",
+      "sentence": "processes (data processing)",
+      "language": "no",
+      "generated": false,
+      "uid": "16fae723-2728-4f64-9bd9-812898a83132"
+    },
+    {
+      "term": "UML valodas klašu diagrammu",
+      "definition": "UML class diagram (class diagram)",
+      "sentence": "UML class diagram (UML structure representation)",
+      "language": "no",
+      "generated": false,
+      "uid": "95c3e65e-ccff-4b01-a1e2-c0968994c3dc"
+    },
+    {
+      "term": "klašu aprakstus objektos",
+      "definition": "object model",
+      "sentence": "object model (object model)",
+      "language": "no",
+      "generated": false,
+      "uid": "f0f9e6bc-76cf-448f-b999-64e18020473a"
+    },
+    {
+      "term": "differenciālvienādojumu robota rokas",
+      "definition": "robot motion differentiation",
+      "sentence": "differentiation of robot motion",
+      "language": "no",
+      "generated": false,
+      "uid": "3c0041fd-7f2e-41dd-b136-c5d4cc9055cd"
+    },
+    {
+      "term": "atspoguļots",
+      "definition": "assistants",
+      "sentence": "assistants (helpers)",
+      "language": "no",
+      "generated": false,
+      "uid": "cc4e74f1-d36a-4c4c-afda-abfc1e32ae4b"
+    },
+    {
+      "term": "citiem objektiem un izpildāmas funkcijas",
+      "definition": "accessing object data and functions",
+      "sentence": "accessing object data and functions (data access and operations)",
+      "language": "no",
+      "generated": false,
+      "uid": "d46be18a-12cb-4642-8404-70a444aef890"
+    },
+    {
+      "term": "problemas",
+      "definition": "problema, īstorība",
+      "sentence": "problema",
+      "language": "pl",
+      "generated": false,
+      "uid": "172aa7f2-cc02-44fe-86a3-a5ce1e693558"
+    },
+    {
+      "term": "spēles",
+      "definition": "deterministiskas divpersonu, spēlētāji",
+      "sentence": "spēles kokā ir skaidri izdalāmi virsotņu līmeņi",
+      "language": "go",
+      "generated": false,
+      "uid": "da8c0457-c651-4b4f-bee9-456fd90dbc62"
+    },
+    {
+      "term": "Intelektisku datorsistēmu",
+      "definition": "Process of handling and managing intellectual data, specifically in the context of algorithmic approaches to problem-solving.",
+      "sentence": "Citiem vārdiem sakot , kā “iemācīt ” intelektisku datorsistēmu no visām stāvokļu telpas grafā pieejamām darbību alternatīvām izvēlēties tikai vienu",
+      "language": "no",
+      "generated": false,
+      "uid": "53d9faca-eb48-4625-a70f-209509ed7af3"
+    },
+    {
+      "term": "Algorithms",
+      "definition": "Mathematical models used for data processing and analysis, which form the basis of machine learning techniques.",
+      "sentence": "Algorithms are mathematical models used for data processing and analysis in machine learning.",
+      "language": "sk",
+      "generated": false,
+      "uid": "cd8972bb-e64e-457c-b4ee-ad2aadf5638e"
+    },
+    {
+      "term": "pārmeklēšana dziļumā",
+      "definition": "algoritmo, kā pārmeklēšana dziļumā ar ierobežotu dziļumu un divvirzienu pārmeklēšana plašumā",
+      "sentence": "a process or sequence of steps designed to solve a specific problem or perform a particular task, often involving iterative processes and comparisons.",
+      "language": "sr",
+      "generated": false,
+      "uid": "2fe83d1e-2335-4f22-9c51-28db4089cf29"
+    },
+    {
+      "term": "piemīt vēl viens nopietns trūkumus",
+      "definition": "a problem that involves finding a minimal spanning tree",
+      "sentence": "a problem that involves finding a minimal spanning tree – tā saucama \" bezgalīgu\" ceļu problēma , kad pārmeklēšana dziļumā, pie nosacījuma, ka stāvokļu telpas grafā ir daudz virsotņu līmeņu",
+      "language": "go",
+      "generated": false,
+      "uid": "61cdbdfa-3a1c-45cb-bf0e-2e19334497bd"
+    },
+    {
+      "term": "paralēli",
+      "definition": "algorithms",
+      "sentence": "Turklāt šie saraksti tiek aizpildīti paralēli",
+      "language": "no",
+      "generated": false,
+      "uid": "e739808a-1967-4cb0-ad3e-8ff8e05f7fc1"
+    },
+    {
+      "term": "Algoritmo",
+      "definition": "Procedimiento matematiskas algoritmu, ka izstrādāt virsotne funkcijas",
+      "sentence": "procedimiento matematiskas algoritmu, ka izstrādāt virzienu",
+      "language": "ef",
+      "generated": false,
+      "uid": "70c998f0-31e8-44ca-a003-1a22c68f41ca"
+    },
+    {
+      "term": "heiristiskus",
+      "definition": "algorithmus",
+      "sentence": "algorithmu",
+      "language": "no",
+      "generated": false,
+      "uid": "20ab3290-5bea-497d-9289-f891e56d2e86"
+    },
+    {
+      "term": "grafa",
+      "definition": "grafu",
+      "sentence": "grafā",
+      "language": "no",
+      "generated": false,
+      "uid": "87146f4a-9e86-493e-b6b6-1fca4306424f"
+    },
+    {
+      "term": "pārmeklēšanas mērķa virsotni",
+      "definition": "pārmeklēšanas mērķa virsotni",
+      "sentence": "mērķa virsotni",
+      "language": "no",
+      "generated": false,
+      "uid": "318a3488-4357-4185-92ec-770a1f76a40a"
+    },
+    {
+      "term": "stāvokļu telpas grafu",
+      "definition": "grafas grafu",
+      "sentence": "grafas grafu",
+      "language": "no",
+      "generated": false,
+      "uid": "e6ea9e75-cc7f-4eea-917a-36e948dafecb"
+    },
+    {
+      "term": "turklāt heiristiski informētas pārmeklēšanas algoritmiem",
+      "definition": "novērtērt turklāti heiristiski informētas algoritmus",
+      "sentence": "novērtērt heiristiski informētas algoritmus",
+      "language": "no",
+      "generated": false,
+      "uid": "e948dc4d-6406-4a36-bd85-4de052a634b8"
+    },
+    {
+      "term": "Funktija-polinoms no faktoriem",
+      "definition": "A function defined by a polynomial expression consisting of variables and coefficients.",
+      "sentence": "Rezultātā heiristiskā novērtējuma funkcija tiek izteikta kā funkcija-polinoms no faktoriem",
+      "language": "sk",
+      "generated": false,
+      "uid": "727aa3da-cd19-4f0e-8d85-dffbb08b8999"
+    },
+    {
+      "term": "Heuristic Function",
+      "definition": "A function used in problem-solving or optimization algorithms to estimate the cost or value of a solution, guiding the search process towards promising areas.",
+      "sentence": "piemēram : f(n) = kauliņu skaits pareizajās vietās",
+      "language": "nq",
+      "generated": false,
+      "uid": "a505868b-b899-48b1-8b50-d56386576f25"
+    },
+    {
+      "term": "Stāvokļu telpas grafa",
+      "definition": "Heiristiskā funkcija, kas pārmeklēšana informācijas skaits komplexām, nozītām ar algoritmusā.",
+      "sentence": "L",
+      "language": "no",
+      "generated": false,
+      "uid": "08a61cfe-862b-4ba7-982a-22c4310b205e"
+    },
+    {
+      "term": "Kompromisu",
+      "definition": "Spēlē ar atspoguļot ir jāatceras kompromis, toks no izmaksu atspoguļoti varību pārmeklēšanās efektivitāti.",
+      "sentence": "L",
+      "language": "no",
+      "generated": false,
+      "uid": "34887f53-00f8-4c7d-b408-9dcd71d70636"
+    },
+    {
+      "term": "Redzēt",
+      "definition": "Spēlē ar atkarīga no diviem faktoriem, toks no izmaksu informācijas skaits kompromisu.",
+      "sentence": "L",
+      "language": "no",
+      "generated": false,
+      "uid": "5a6e0d03-c2df-4c70-be5e-b7f86337d73b"
+    },
+    {
+      "term": "Pārmeklējamo virsotņu skaita",
+      "definition": "Skaitu pārmeklēšanas efektivitāti, nozītām atkarīga informācijas skaits kompromisu.",
+      "sentence": "L",
+      "language": "no",
+      "generated": false,
+      "uid": "3d874d84-0bae-4ee7-8839-f911b3442187"
+    },
+    {
+      "term": "Informētāku heiristiskā novērtējuma funkciju izmantošana",
+      "definition": "Metode izmantotaītājas skaits informācijas kompromisu, nozītām informācijas izmantotājot ir atkarīga informācijas skaits kompromisu.",
+      "sentence": "L",
+      "language": "no",
+      "generated": false,
+      "uid": "9e09b97c-3b6b-4fb1-aa52-a216d2b48b59"
+    },
+    {
+      "term": "Transformācija",
+      "definition": "Spēlē transformāciju, nozītām ir jāatceras transformācija informācijas skaits kompromisu.",
+      "sentence": "L",
+      "language": "no",
+      "generated": false,
+      "uid": "6ddc65c6-21f6-4357-928b-275a3f2dbb9e"
+    },
+    {
+      "term": "Metode nav precīzu vadlīniju",
+      "definition": "Metodi izmantotaītājas skaits informācijas transformāciju, nozītām veikt transformāciju.",
+      "sentence": "L",
+      "language": "no",
+      "generated": false,
+      "uid": "7aa6bd49-9889-4f02-b861-6ed7d12403d5"
+    },
+    {
+      "term": "Simetriskuma pazīmi",
+      "definition": "Spēlē simetriskumu pazīgējot, nozītām spēlē darīt spēlē ",
+      "sentence": "L",
+      "language": "no",
+      "generated": false,
+      "uid": "40c6ab56-05f3-4fc8-8366-cd924a7d2e54"
+    },
+    {
+      "term": "Simultane kompromisu",
+      "definition": "Spēlē kompromis ir varību nozītām pārmeklējamo virsotņu skaita nozītām atkarību pārmeklējamo virsotņu skaits.",
+      "sentence": "L",
+      "language": "no",
+      "generated": false,
+      "uid": "b10a547f-2b58-4e77-849a-8b8407071c40"
+    },
+    {
+      "term": "Samazināt",
+      "definition": "Samazināt, kas ir vairāk faktoru pārmeklējamo virsotņu skaits kompromisu varībāt nolūkam.",
+      "sentence": "L",
+      "language": "no",
+      "generated": false,
+      "uid": "51496b1d-4dd0-47f0-b03a-221b4b9e29f5"
+    },
+    {
+      "term": "heiristiski informētas pārmeklēšanas algoritmi",
+      "definition": "pārmeklēšanas algorithmi ar heiristiskui informāciju pārmeklēšana",
+      "sentence": "pairs",
+      "language": "no",
+      "generated": false,
+      "uid": "0b527ee5-a2cb-438e-80fe-9f958d2b6b8e"
+    },
+    {
+      "term": "Algoritms",
+      "definition": "Process",
+      "sentence": "Process",
+      "language": "ex",
+      "generated": false,
+      "uid": "c6d389d9-812b-4ad1-8baf-4d4669805120"
+    },
+    {
+      "term": "algorithmi",
+      "definition": "pārmeklēšanas mērķa virsotnes",
+      "sentence": "algorithm",
+      "language": "no",
+      "generated": false,
+      "uid": "74c685f3-6468-4fc3-bc87-301968e85a2a"
+    },
+    {
+      "term": "Heiristisko vērtējumu",
+      "definition": "A function that evaluates the maximum or minimum value of a given variable based on a set of criteria, in this context, likely referring to a scoring system for financial decisions or investments",
+      "sentence": "1 - maximum; -1 - minimum",
+      "language": "sj",
+      "generated": false,
+      "uid": "29dd66d4-444a-4ccb-8625-d3b9407368da"
+    },
+    {
+      "term": "MAX vai MIN",
+      "definition": "Atcerieties MAX vai MIN, arī skaiti, atrodas MAX līmenī ir MAX līmenī",
+      "sentence": "4. attēls",
+      "language": "ee",
+      "generated": false,
+      "uid": "fe653321-2925-44a8-83c1-2cd9d7504f4f"
+    },
+    {
+      "term": "Heiristiskie vērtējumi",
+      "definition": "Heritage vērtējumi, arī skaiti, atrodas heiristiskais vērtējumi",
+      "sentence": "4. attēls",
+      "language": "ee",
+      "generated": false,
+      "uid": "fa9d06f1-61ac-4787-8dae-b86fbea912b4"
+    },
+    {
+      "term": "Algoritma",
+      "definition": "Algoritma, arī par to, ka, ja ir kāds slikts stāvoklis",
+      "sentence": "Luger, 2009",
+      "language": "ee",
+      "generated": false,
+      "uid": "eb908d4d-42c8-4074-bec2-da3f165595fd"
+    },
+    {
+      "term": "Alpha-beta algoritms",
+      "definition": "Alfa-beta algoritma, par to, ka, ja ir kāds slikts spēles rezultāti",
+      "sentence": "Luger, 2009",
+      "language": "ee",
+      "generated": false,
+      "uid": "94272bc8-8c02-4ed1-b42c-2f1791e7d63f"
+    },
+    {
+      "term": "Minimaksa algoritma",
+      "definition": "Minimaksa algoritma, par to, ka, ja ir kāds slikts spēles rezultāti, samazinot novērtējamo virsotņu skaitu un līdz ar to arī kopējo pārmeklēšanas laiku",
+      "sentence": "Luger, 2009",
+      "language": "ee",
+      "generated": false,
+      "uid": "8cdbc5a8-37e7-4a18-9c8b-b47e16054bd1"
+    },
+    {
+      "term": "skaiti",
+      "definition": "Skaiti, arī par to, ka, ja ir kāds efektivitāti",
+      "sentence": "Luger, 2009",
+      "language": "ee",
+      "generated": false,
+      "uid": "6ccf5eba-f4cf-41bb-bd09-1cc36fad18cf"
+    },
+    {
+      "term": "stāvokļ",
+      "definition": "family of problems",
+      "sentence": "Papildus problēma ir saistīta ar nestabiliem stāvokļiem , t.i. tādiem stāvokļiem",
+      "language": "pl",
+      "generated": false,
+      "uid": "dcdfd5f6-80b6-4bb6-aa15-3360807d0622"
+    },
+    {
+      "term": "Regressions",
+      "definition": "A type of machine learning algorithm used for predicting a continuous output variable based on one or more input variables. It aims to model the relationship between these variables, often represented as a function of input features.",
+      "sentence": "Lineārās regresijas",
+      "language": "sk",
+      "generated": false,
+      "uid": "03f80736-2e9f-4cc6-8305-584769c54d7a"
+    },
+    {
+      "term": "regressijas",
+      "definition": "classification problems that predict continuous values",
+      "sentence": "classification problems that predict continuous outcomes",
+      "language": "ex",
+      "generated": false,
+      "uid": "89bca99e-6544-4d56-815d-9125a831a424"
+    },
+    {
+      "term": "attālums",
+      "definition": "classification problem",
+      "sentence": "ja abu datu objektu vienas un tās pašas pazīmes vērtības ir vienādas, tad attālums ir vienāds ar 0; pretējā gadījumā tas ir vienāds ar 1.",
+      "language": "go",
+      "generated": false,
+      "uid": "f00dfbee-970a-41a4-a83f-08c97be15c57"
+    },
+    {
+      "term": "versijas priekšrocība",
+      "definition": "classification problem",
+      "sentence": "the task of categorizing objects into predefined classes",
+      "language": "ex",
+      "generated": false,
+      "uid": "d95ce44a-0fee-4a25-a989-f405d2278068"
+    },
+    {
+      "term": "kNN algoritma",
+      "definition": "k-Nearest Neighbors algorithm",
+      "sentence": "a machine learning algorithm used for classification that relies on the principle of 'closeness'",
+      "language": "ex",
+      "generated": false,
+      "uid": "3c2e75d1-5a2f-4c70-b3d2-c23c594d29f2"
+    },
+    {
+      "term": "hiperparametra",
+      "definition": "parameters set before the execution of a learning algorithm",
+      "sentence": "parameters set prior to training a model",
+      "language": "ex",
+      "generated": false,
+      "uid": "cd850a07-4792-49ac-b1a1-1a0c4465922d"
+    },
+    {
+      "term": "diagrammu",
+      "definition": "graph",
+      "sentence": "a visual representation of relationships between data points",
+      "language": "ex",
+      "generated": false,
+      "uid": "67987058-e24a-4980-97c7-6c6d625ea85c"
+    },
+    {
+      "term": "Atspoguļot",
+      "definition": "A class in machine learning that attempts to classify data into predefined categories based on learned patterns.",
+      "sentence": "Atspoguļot",
+      "language": "sk",
+      "generated": false,
+      "uid": "b03dd269-2413-434a-b5a4-65c3351cba95"
+    },
+    {
+      "term": "mazāko",
+      "definition": "indices or labels used to identify data points",
+      "sentence": "labels or identifiers used to label data points",
+      "language": "ex",
+      "generated": false,
+      "uid": "da93b186-ecb2-40d1-9e5f-c7281429c4b0"
+    },
+    {
+      "term": "iepriekš",
+      "definition": "classification problem (repeated)",
+      "sentence": "the task of classifying data into predefined categories",
+      "language": "ex",
+      "generated": false,
+      "uid": "7c9e227a-ba53-4584-9aeb-55ddd5eb914e"
+    },
+    {
+      "term": "pieterošu",
+      "definition": "instance points in a dataset",
+      "sentence": "data points in a dataset",
+      "language": "ex",
+      "generated": false,
+      "uid": "99017ceb-8bf2-4fef-8252-b5ac15fe908d"
+    },
+    {
+      "term": "reizes palaist",
+      "definition": "features or characteristics used to classify data",
+      "sentence": "features or attributes used for classification",
+      "language": "ex",
+      "generated": false,
+      "uid": "65533016-a370-4b04-bd82-92e0d00329ef"
+    },
+    {
+      "term": "atgriež",
+      "definition": "measures of similarity or distance between data points",
+      "sentence": "metrics used to quantify the similarity or dissimilarity between data points",
+      "language": "ex",
+      "generated": false,
+      "uid": "6f3cb6cd-33a3-4cf0-b80b-ca5d9d247a7a"
+    },
+    {
+      "term": "pārbaudāmo",
+      "definition": "parameters controlling the learning process of an algorithm",
+      "sentence": "parameters governing the learning process of a machine learning model",
+      "language": "ex",
+      "generated": false,
+      "uid": "0e5ef712-cf15-446f-8db1-2054198cd52d"
+    },
+    {
+      "term": "pārāk liela",
+      "definition": "methods used to visualize the decision boundaries of a classifier",
+      "sentence": "methods to depict the decision boundary of a classifier",
+      "language": "ex",
+      "generated": false,
+      "uid": "1215325a-d8ba-4e92-a887-8c0247e75ee2"
+    },
+    {
+      "term": "tas",
+      "definition": "output or prediction of the classification model",
+      "sentence": "prediction or output generated by a classifier",
+      "language": "ex",
+      "generated": false,
+      "uid": "e32193fa-5d57-4d33-81a8-0084cb31a228"
+    },
+    {
+      "term": "atgriež visbiežāko klases",
+      "definition": "measures of the separation between classes in a dataset",
+      "sentence": "metrics quantifying class separation",
+      "language": "ex",
+      "generated": false,
+      "uid": "0946d66b-9e50-4da4-b03e-909dbd44d9ca"
+    },
+    {
+      "term": "regressijas uzdevumā",
+      "definition": "classification problems predicting continuous values",
+      "sentence": "classification tasks predicting numerical outcomes",
+      "language": "ex",
+      "generated": false,
+      "uid": "c66f5cfb-e991-4d38-a0da-697b49ec5dc0"
+    },
+    {
+      "term": "klasteri",
+      "definition": "Hierarchical groups of data objects",
+      "sentence": "Līdz ar to katrā hierarhijas līmenī tiek apvienots datu objektu / klasteru pāris...",
+      "language": "go",
+      "generated": false,
+      "uid": "f35a9a6d-3993-4ab7-a266-41cad84080f4"
+    },
+    {
+      "term": "Machine Learning",
+      "definition": "An Introduction to Machine Learning",
+      "sentence": "Kubat, M. (2017). An Introduction to Machine Learning. Springer International Publishing.",
+      "language": "ex",
+      "generated": false,
+      "uid": "569cd954-8407-432c-9243-9cad4d24c8b3"
+    },
+    {
+      "term": "Klassifikācijas uzdevumos",
+      "definition": "The process of categorizing data into predefined classes or categories.",
+      "sentence": "Klassifikācijas uzdevums arī ir pārraudzītās mašīnmācīšanās uzdevums",
+      "language": "no",
+      "generated": false,
+      "uid": "28e692e3-9eaa-414b-b26f-7c09ffb76436"
+    },
+    {
+      "term": "classification",
+      "definition": "The process of categorizing or classifying data into predefined groups or classes based on certain characteristics.",
+      "sentence": "Piemēram, ka tika veikta nepareiza pozitīvās klases prognoze vai citiem vārdiem sakot, datu objekta īstā klase ir negatīva.",
+      "language": "rg",
+      "generated": false,
+      "uid": "5a8056ee-f4d1-4599-a875-ca3b3e206590"
+    },
+    {
+      "term": "positīvia prognozējošā",
+      "definition": "prognostication based on positive data, which distinguishes between positive and negative classifications",
+      "sentence": "precision",
+      "language": "ne",
+      "generated": false,
+      "uid": "53f2359e-1703-4296-af98-7167f3713a3a"
+    },
+    {
+      "term": "bioloģisko smadzeņu",
+      "definition": "Biological structure that is adaptable and allows individual organisms to adjust their activities in response to environmental changes",
+      "sentence": "bioloģisko struktūra ir adaptīva, un tā mainās elastīgi atbilstoši indivīda aktivitātēm un vides ietekmei",
+      "language": "on",
+      "generated": false,
+      "uid": "2b8640b3-7b09-4690-be0c-b883ddbbe2ae"
+    },
+    {
+      "term": "avotā",
+      "definition": "Repeated occurrence of 'avotā' in the text, likely referring to the same concept discussed earlier",
+      "sentence": "Avotā ir uzsvērts, ka tā kā mākslīgo neironu tīkli ir daudz vienkāršāki nekā bioloģiskie, ir nereāli gaidīt, ka tie radīs izsmalcinātu cilvēka vai dzīvnieku uzvedību",
+      "language": "on",
+      "generated": false,
+      "uid": "09edf3d5-ae3b-4573-af87-05cd59f97b9d"
+    },
+    {
+      "term": "savukārt mākslīgo neironu tīkli",
+      "definition": "A term likely referring to a specific model or framework related to neural connections or synapses, possibly a conceptualization of how neurons are interconnected in biological systems",
+      "sentence": "Savukārt mākslīgo neironu tīkli ir daudz vienkāršāki nekā bioloģiskie, ir nereāli gaidīt, ka tie radīs izsmalcinātu cilvēka vai dzīvnieku uzvedību",
+      "language": "on",
+      "generated": false,
+      "uid": "dd7b149a-4cb1-426a-b091-2ec51bff981d"
+    },
+    {
+      "term": "avotā (Hopgood, 2001)",
+      "definition": "A work by Hopgood (2001) potentially covering the biological aspects of neural networks and their adaptive properties",
+      "sentence": "Avotā ir norādīts , ka tā kā mākslīgo neironu tīkli ir daudz vienkāršāki nekā bioloģiskie, ir nereāli gaidīt, ka tie radīs izsmalcinātu cilvēka vai dzīvnieku uzvedību",
+      "language": "on",
+      "generated": false,
+      "uid": "7be93383-32d0-41ed-8c53-e2c63774cc96"
+    },
+    {
+      "term": "avotā (Ertel, 2011)",
+      "definition": "Another work by Ertel (2011) likely focusing on the adaptability of biological systems and their structural and functional aspects",
+      "sentence": "Avotā ir uzsvērts , ka bioloģisko smadzeņu struktūra ir adaptīva, un tā mainās elastīgi atbilstoši indivīda aktivitātēm un vides ietekmei",
+      "language": "on",
+      "generated": false,
+      "uid": "b152aefc-784a-40be-be69-b5daf6ae9569"
+    },
+    {
+      "term": "avotā (Jones, 2009)",
+      "definition": "A study by Jones (2009) possibly providing insights into the biological modeling of neural networks and their functions",
+      "sentence": "Avotā ir uzsvērts , ka tā kā mākslīgo neironu tīkli ir daudz vienkāršāki nekā bioloģiskie, ir nereāli gaidīt, ka tie radīs izsmalcinātu cilvēka vai dzīvnieku uzvedību",
+      "language": "on",
+      "generated": false,
+      "uid": "9e63b45c-ee74-4226-ae8a-2992f4ca9a40"
+    },
+    {
+      "term": "avotā (Negnevitsky, 2011)",
+      "definition": "A work by Negnevitsky (2011) likely discussing the biological modeling of neural networks and their applications",
+      "sentence": "Avotā ir uzsvērts , ka tā kā mākslīgo neironu tīkli ir daudz vienkāršāki nekā bioloģiskie, ir nereāli gaidīt, ka tie radīs izsmalcinātu cilvēka vai dzīvnieku uzvedību",
+      "language": "on",
+      "generated": false,
+      "uid": "9876444f-9d38-40a0-b708-c1b8c1daf991"
+    },
+    {
+      "term": "avotā (Russell & Norvig, 2010)",
+      "definition": "A reference to a work by Russell and Norvig (2010) likely providing insights into computational models of neural networks",
+      "sentence": "Avotā ir uzsvērts , ka sauc par neironiem Cilvēka mentālā darbība galvenokārt ir saistīta ar elektroķīmisko aktivitāti neironu tīklos",
+      "language": "on",
+      "generated": false,
+      "uid": "7bef35ce-24a0-463b-b8cb-c300c699442d"
+    },
+    {
+      "term": "avotā (Bermudez, 2014)",
+      "definition": "A study by Bermudez (2014) possibly contributing to the understanding of synapse models and their biological implications",
+      "sentence": "Mākslīgo neironu tīklu darbības principus ir vieta, kas nonāk sinapsēs kopējais stiprums un līdz ar to kopējais ieejas signāls neironā pārsniedz neirona slieksni , neirons aktivizējas",
+      "language": "on",
+      "generated": false,
+      "uid": "947cc4aa-46f3-49a2-ba55-153ff540fd11"
+    },
+    {
+      "term": "avotā (Callan, 2003)",
+      "definition": "A work by Callan (2003) likely discussing the biological modeling of neural networks and their functions",
+      "sentence": "Avotā ir uzsvērts , ka makslīgo neironu tīklu darbības principus un vai vairākas ieejas (dažreiz sauktas arī par ieejas signāliem )",
+      "language": "on",
+      "generated": false,
+      "uid": "2b8c8a28-193a-4ab2-a860-b05b335bf244"
+    },
+    {
+      "term": "avotā (Ertel, 2011; Callan, 2003; Hopgood, 2001; Jones, 2009; Luger, 2009; Negnevitsky, 2011)",
+      "definition": "Multiple references to works by Ertel, Callan, Hopgood, Jones, Luger, and Negnevitsky likely providing foundational knowledge on neural networks and their biological models",
+      "sentence": "Avotā ir uzsvērts , ka makslīgo neironu tīklu darbības principus ir vieta, kas lika pamatus mākslīgo neironu tīkliem",
+      "language": "on",
+      "generated": false,
+      "uid": "fdd7479f-9aaa-4eee-bf08-d963b66e8058"
+    },
+    {
+      "term": "ieejas signālus",
+      "definition": "a system of signs or symbols used to represent data, often in the context of information processing",
+      "sentence": "Katrs neirons, izņemot tos, kuri pieņem ieejas signālus, pielieto summēšanas un aktivizācijas funkcijas un iegūst izejas signālu",
+      "language": "nz",
+      "generated": false,
+      "uid": "00d0399b-5b1b-4ad0-824e-c5557c32965f"
+    },
+    {
+      "term": "intellectiskā sistēmā",
+      "definition": "a theoretical framework or system that describes the structure and function of human thought processes, particularly reasoning, problem-solving, and knowledge acquisition",
+      "sentence": "a theoretical framework or system that describes the structure and function of human thought processes, particularly reasoning, problem-solving, and knowledge acquisition",
+      "language": "rx",
+      "generated": false,
+      "uid": "8a6995d3-c4a3-4ea8-bc97-1c7d5a09f43a"
+    },
+    {
+      "term": "intellectiskas datorsistēma",
+      "definition": "Intelectualist approach to education, characterized by a focus on abstract thinking, theoretical knowledge, and critical analysis.",
+      "sentence": "Pirmkārt, Tas norāda tikai un vienīgi uz to, ka ir jāiegūst un jāapraksta visas tās zināšanas, kas ir atbilstošasospace zemes uzdevumiem, kurus veiks intelektiska datorsistēma.",
+      "language": "ex",
+      "generated": false,
+      "uid": "52357c4c-12a2-4ac1-83e0-973d59573abd"
+    },
+    {
+      "term": "pirmajām",
+      "definition": "Student's perspective or viewpoint within the educational context, specifically referring to the student's own understanding and experiences.",
+      "sentence": "Pirmkārt, vienā no pirmajām šī studiju kursa tēmām mēs jau noskaidrojām...",
+      "language": "ex",
+      "generated": false,
+      "uid": "9a0979f1-6d23-4ad9-8db6-7cc82cfac0ac"
+    },
+    {
+      "term": "logiski būtu",
+      "definition": "Social context or environment surrounding education, encompassing factors like societal norms, cultural values, and political influences.",
+      "sentence": "Pirmkārt, kontekstā loģiski būtu apgādāt intelektisku datorsistēmu ar zināšanām...",
+      "language": "ex",
+      "generated": false,
+      "uid": "801ba451-eb5b-4d58-b59f-f6f0162ddd9c"
+    },
+    {
+      "term": "matemātiskajā",
+      "definition": "Mathematical approach to education, emphasizing logical reasoning, problem-solving skills, and quantitative analysis.",
+      "sentence": "Šajā kontekstā loģiski būtu apgādāt intelektisku datorsistēmu ar zināšanām, jo cilvēki izmanto zināšanas problēmu risināšanai...",
+      "language": "ex",
+      "generated": false,
+      "uid": "877d8eff-cd02-435e-8abc-679f5c12f8f3"
+    },
+    {
+      "term": "paskidrot",
+      "definition": "Practical application or implementation of knowledge in real-world situations.",
+      "sentence": "Otrkārt, nepieciešamību pēc zināšanām diktē intelektisku datorsistēmu funkcionalitāte...",
+      "language": "ex",
+      "generated": false,
+      "uid": "820d9ca4-2f7f-4beb-b863-184c2a5bf603"
+    },
+    {
+      "term": "diktē",
+      "definition": "Problems or issues arising from the interaction between intellectualism and practicality in education.",
+      "sentence": "Šajā kontekstā loģiski būtu apgādāt intelektisku datorsistēmu ar zināšanām, jo cilvēki izmanto zināšanas problēmu risināšanai...",
+      "language": "ex",
+      "generated": false,
+      "uid": "69189f17-c038-486a-873d-dd48a7809c3f"
+    },
+    {
+      "term": "transakcijas",
+      "definition": "Interactions and collaborations among students in a learning environment.",
+      "sentence": "Šajā kontekstā loģiski būtu apgādāt intelektisku datorsistēmu atspoguļot zināšanas...",
+      "language": "ex",
+      "generated": false,
+      "uid": "34b0fb78-e777-47eb-b225-f8ac1eeb59ff"
+    },
+    {
+      "term": "transmudības",
+      "definition": "Theory or system explaining the relationship between abstract thought and concrete action.",
+      "sentence": "Šajā kontekstā loģiski būtu apgādāt intelektisku datorsistēmu atspoguļošana ir vajadzīga...",
+      "language": "ex",
+      "generated": false,
+      "uid": "4283c15c-b3fe-4859-ab13-4f6a58ef03aa"
+    },
+    {
+      "term": "mehānismus",
+      "definition": "Mehānism, a philosophical approach emphasizing the primacy of intuition and spiritual insight over rational analysis.",
+      "sentence": "Šajā kontekstā loģiski būtu apgādāt intelektisku datorsistēmu ir vajadzīga...",
+      "language": "ex",
+      "generated": false,
+      "uid": "ed3c582c-1d71-4200-acc6-047da6c07ed7"
+    },
+    {
+      "term": "transaktīvā",
+      "definition": "Interaction or exchange, often in the context of social or economic relations.",
+      "sentence": "Šajā kontekstā loģiski būtu apgādāt intelektisku datorsistēmu...",
+      "language": "ex",
+      "generated": false,
+      "uid": "6571cbe8-4998-4af5-b155-9032b59063cd"
+    },
+    {
+      "term": "pamatu",
+      "definition": "To solve a problem or issue, particularly in a practical or constructive way.",
+      "sentence": "Šajā kontekstā loģiski būtu apgādāt intelektisku datorsistēmu izstrādei...",
+      "language": "ex",
+      "generated": false,
+      "uid": "c513d435-6605-41fc-a552-e2754e0fb394"
+    },
+    {
+      "term": "transmudītas",
+      "definition": "Theory explaining the relationship between abstract concepts and concrete actions in a specific domain or field.",
+      "sentence": "Šajā kontekstā loģiski būtu apgādāt intelektisku datorsistēmu ir vajadzīga...",
+      "language": "ex",
+      "generated": false,
+      "uid": "9fe41e54-454c-42d4-b99f-fdc1fbecadf1"
+    },
+    {
+      "term": "sistem",
+      "definition": "A structured set of principles or rules governing a particular activity or system.",
+      "sentence": "Šajā kontekstā loģiski būtu apgādāt intelektisku datorsistēmu ir vajadzīga...",
+      "language": "ex",
+      "generated": false,
+      "uid": "cb020348-bb9a-4c03-8ca5-179000779e3c"
+    },
+    {
+      "term": "savienošanas",
+      "definition": "Relevant or applicable to the current context, often referring to theoretical concepts in practical application.",
+      "sentence": "Šajā kontekstā loģiski būtu apgādāt intelektisku datorsistēmu ir vajadzīga...",
+      "language": "ex",
+      "generated": false,
+      "uid": "3cd1411e-1813-4ec0-b471-bb08e6fd65c7"
+    },
+    {
+      "term": "transakcijas grupas",
+      "definition": "Groups of students working together on a project or task.",
+      "sentence": "Šajā kontekstā loģiski būtu apgādāt intelektisku datorsistēmu atspoguļot zināšanas...",
+      "language": "ex",
+      "generated": false,
+      "uid": "18fb5daa-60bc-4f85-959a-1b94e9f9a033"
+    },
+    {
+      "term": "transmudības savienošana",
+      "definition": "Theory explaining how abstract concepts are translated into practical actions.",
+      "sentence": "Šajā kontekstā loģiski būtu apgādāt intelektisku datorsistēmu atspoguļot zināšanas...",
+      "language": "ex",
+      "generated": false,
+      "uid": "b9d25965-181d-49f5-ba44-08e8154c0f54"
+    },
+    {
+      "term": "transmudītas savienošana",
+      "definition": "Theory explaining the process of applying abstract concepts to real-world situations.",
+      "sentence": "Šajā kontekstā loģiski būtu apgādāt intelektisku datorsistēmu atspoguļot zināšanas...",
+      "language": "ex",
+      "generated": false,
+      "uid": "93670ee5-fb20-47ad-bb2f-61c9bc3e66b1"
+    },
+    {
+      "term": "transmudītas sistēmas",
+      "definition": "Theory explaining the structure and organization of a system, often in a theoretical context.",
+      "sentence": "Šajā kontekstā loģiski būtu apgādāt intelektisku datorsistēmu ir vajadzīga...",
+      "language": "ex",
+      "generated": false,
+      "uid": "f2b2e5b9-3e78-4d4c-9abe-6aeac6776a72"
+    },
+    {
+      "term": "transmudītas zināšanas",
+      "definition": "Theory explaining the nature and behavior of problems in social or cultural contexts.",
+      "sentence": "Šajā kontekstā loģiski būtu apgādāt intelektisku datorsistēmu ir vajadzīga...",
+      "language": "ex",
+      "generated": false,
+      "uid": "9675a093-d57f-428b-994b-42839ccd41a3"
+    },
+    {
+      "term": "transmudītas zināšanas sakņotas",
+      "definition": "Theory explaining the relationship between problems and their solutions in practical contexts.",
+      "sentence": "Šajā kontekstā loģiski būtu apgādāt intelektisku datorsistēmu ir vajadzīga...",
+      "language": "ex",
+      "generated": false,
+      "uid": "54002fbc-a6b1-4176-bf5c-952a2e2dc089"
+    },
+    {
+      "term": "transmudītas glabā",
+      "definition": "Theory explaining the relationship between abstract concepts and concrete actions in practical settings.",
+      "sentence": "Šajā kontekstā loģiski būtu apgādāt intelektisku datorsistēmu ir vajadzīga...",
+      "language": "ex",
+      "generated": false,
+      "uid": "cce121b7-b44a-4efa-b468-263d60fe30ed"
+    },
+    {
+      "term": "transmudītas zināšanas sakņota",
+      "definition": "Theory explaining the relationship between problems and their solutions in philosophical or theoretical contexts.",
+      "sentence": "Šajā kontekstā loģiski būtu apgādāt intelektisku datorsistēmu ir vajadzīga...",
+      "language": "ex",
+      "generated": false,
+      "uid": "53877b02-a9ba-4fa8-bf7f-30069b08633f"
+    },
+    {
+      "term": "ir",
+      "definition": "objekta / jēdziena specifiska raksturojuma vērtību",
+      "sentence": "Attiecība īpašības ir no objekta uz īpašību",
+      "language": "lg",
+      "generated": false,
+      "uid": "38cdeb70-886b-4af3-936c-7816e410d77f"
+    },
+    {
+      "term": "raksturojums",
+      "definition": "objekts / jēdziens",
+      "sentence": "tik novērtēts ar kvalitatīvām (aprakstošām) vai kvantitatīvām (skaitliskām) vērtībām",
+      "language": "lg",
+      "generated": false,
+      "uid": "fb166ed1-f199-4df9-8033-9590b88e2e2d"
+    },
+    {
+      "term": "īpašības",
+      "definition": "Vērtība",
+      "sentence": "Attiecība īpašības",
+      "language": "lg",
+      "generated": false,
+      "uid": "8bc2c6af-c98c-4925-bf97-34ff3d934f0e"
+    },
+    {
+      "term": "tikt",
+      "definition": "nārads (event/process)",
+      "sentence": "tikt novērtēts ar kvalitatīvām (aprakstošām) vai kvantitatīvām (skaitliskām) vērtībām",
+      "language": "lg",
+      "generated": false,
+      "uid": "c0baf175-f03e-4dbc-b298-601bce5d0e9b"
+    },
+    {
+      "term": "kvantitatīvām",
+      "definition": "skaitliskā (quantitative)",
+      "sentence": "tik novērtēts skaitliskā vērtībām",
+      "language": "lg",
+      "generated": false,
+      "uid": "4535de9b-6100-4bc3-b858-eddd8630fc32"
+    },
+    {
+      "term": "no",
+      "definition": "nūtības (exclusive)",
+      "sentence": "attiecības no objekta uz īpašību",
+      "language": "lg",
+      "generated": false,
+      "uid": "1a04adef-f6e8-4f21-9f28-e0b6a140fc29"
+    },
+    {
+      "term": "vērtība",
+      "definition": "Vērtība",
+      "sentence": "Attiecība īpašības un tās virziens ir no īpašības uz vērtību",
+      "language": "lg",
+      "generated": false,
+      "uid": "8117704d-a130-4710-9207-8ccc549fa763"
+    },
+    {
+      "term": "no objekta",
+      "definition": "objekta / jēdziena specifiska raksturojuma vērtību",
+      "sentence": "Attiecība īpašības no objekta uz īpašību",
+      "language": "lg",
+      "generated": false,
+      "uid": "d26add22-8bf1-4b2d-b915-527d923d6b1b"
+    },
+    {
+      "term": "tās",
+      "definition": "tika (example)",
+      "sentence": "tik novērtēts ar kvalitatīvām (aprakstošām) vai kvantitatīvām (skaitliskām) vērtībām",
+      "language": "lg",
+      "generated": false,
+      "uid": "cf7eb02a-ffd9-4858-ab91-875995856691"
+    },
+    {
+      "term": "virziens",
+      "definition": "no īpašības uz vērtību",
+      "sentence": "Attiecība īpašības un tās virziens ir no īpašības uz vērtību",
+      "language": "lg",
+      "generated": false,
+      "uid": "8d94c6a9-59e0-4ce5-a005-8819f44b577b"
+    },
+    {
+      "term": "kuras",
+      "definition": "irautiecības (plural)",
+      "sentence": "Attiecība īpašības ir no objekta uz īpašību attiecības",
+      "language": "lg",
+      "generated": false,
+      "uid": "b42231a9-787c-4dfd-b197-35acb7bc9ae3"
+    },
+    {
+      "term": "kuras ļauj brīvi atspoguļot",
+      "definition": "kuras ļauj brīvi atspoguļot jebkādas citas attiecības",
+      "sentence": "Lingvistiskas attiecības (11. att.) kuras ļauj brīvi atspoguļot jebkādas citas attiecības",
+      "language": "lg",
+      "generated": false,
+      "uid": "84410273-69b5-407b-b6fb-096c00b68509"
+    },
+    {
+      "term": "piemēram",
+      "definition": "piemēram",
+      "sentence": "piemēram, patīk, ēd, u.c.",
+      "language": "lg",
+      "generated": false,
+      "uid": "d47c7df0-f358-48ea-b249-8227440e2dcd"
+    },
+    {
+      "term": "automatātiski pārmanto zināšanas no tīkla",
+      "definition": "automātiski pārmanto zināšanas no tīkla",
+      "sentence": "Semantiskajiem tīkliem piemīt pārmantošanas ļauj samazināt zināšanu bāzes izmēru, neatspoguļojot vairākkārtēji vienas un tās pašas zināšanas",
+      "language": "lg",
+      "generated": false,
+      "uid": "961fa491-e159-4be3-979c-3db72aff3588"
+    },
+    {
+      "term": "klases",
+      "definition": "klasses",
+      "sentence": "apakšklase apakškopa apakštips apakšveids vai piemērs",
+      "language": "lg",
+      "generated": false,
+      "uid": "caf1e3a1-b1e9-4583-9331-c2bd65a22a35"
+    },
+    {
+      "term": "semantiskajiem tīkliem",
+      "definition": "Systems of knowledge concerning the relationships between concepts, objects, and their meanings.",
+      "sentence": "Tajā pašā laikā semantiskajiem tīkliem ir raksturīgi arī trūkumi : semantiskie tīkli atspoguļo tikai deklaratīvas (zināšanas par faktiem, jēdzieniem un objektiem) zināšanas",
+      "language": "ti",
+      "generated": false,
+      "uid": "e575a537-4dc2-4b7a-be3a-6b62a43a7a47"
+    },
+    {
+      "term": "neatspoguļojot",
+      "definition": "neatspoguļojot",
+      "sentence": "neatspoguļojot vairākkārtēji vienas un tās pašas zināšanas",
+      "language": "lg",
+      "generated": false,
+      "uid": "1923214f-89ac-4bd4-8998-88e4593ffd76"
+    },
+    {
+      "term": "pārmantošana",
+      "definition": "pārmantošana",
+      "sentence": "pārmantošana tad",
+      "language": "lg",
+      "generated": false,
+      "uid": "8df5580e-1641-47f0-b793-33f7e20bde9a"
+    },
+    {
+      "term": "zināšanas",
+      "definition": "zināšanas",
+      "sentence": "zināšanu",
+      "language": "lg",
+      "generated": false,
+      "uid": "e04d18f1-cd34-431c-8c5c-bfe6e222c9b5"
+    },
+    {
+      "term": "zināšanu",
+      "definition": "zināšanu",
+      "sentence": "zināšanu",
+      "language": "lg",
+      "generated": false,
+      "uid": "45e19831-c6ab-4b20-8b41-4a44754d5971"
+    },
+    {
+      "term": "tad",
+      "definition": "tād",
+      "sentence": "tad",
+      "language": "lg",
+      "generated": false,
+      "uid": "294e92cd-3612-41ea-bcc7-15d102089cd5"
+    },
+    {
+      "term": "piemārtem",
+      "definition": "piemārtem",
+      "sentence": "tīkla",
+      "language": "lg",
+      "generated": false,
+      "uid": "02f84bc5-7d38-440e-b6dd-b44432b1649b"
+    },
+    {
+      "term": "semantiskie tīkli atspoguļo tikai deklaratīvas",
+      "definition": "Semantic expressions used to define facts, propositions, or relationships between concepts and objects.",
+      "sentence": "(zināšanas par faktiem, jēdzieniem un objektiem)",
+      "language": "ti",
+      "generated": false,
+      "uid": "d0f02a1a-bde5-45d5-98fb-4b72506c4793"
+    },
+    {
+      "term": "semantikas",
+      "definition": "The study of meaning in language and communication.",
+      "sentence": "semantiskas tīkla interpretācijas laikā",
+      "language": "ti",
+      "generated": false,
+      "uid": "704f0694-fc6c-4e02-95a8-c51c47f20459"
+    },
+    {
+      "term": "tās pašas",
+      "definition": "Factual information or assertions that establish the context or background for understanding a statement.",
+      "sentence": "vienas un tās pašas zināšanu vienības var tikt atspoguļotas dažādos veidos",
+      "language": "ti",
+      "generated": false,
+      "uid": "67657f7e-5c0b-4f81-9b10-30842c2e0471"
+    },
+    {
+      "term": "semantiskā tīkla",
+      "definition": "Semantic structures or frameworks that interpret and organize information.",
+      "sentence": "semantiskajiem tīkliem nav labi definētas formālas semantikas",
+      "language": "ti",
+      "generated": false,
+      "uid": "8ab06c1c-c21e-4637-98e3-50432e7c3278"
+    },
+    {
+      "term": "negāciju",
+      "definition": "A negation or denial of a statement.",
+      "sentence": "nevis vienkāršu objektu / jēdzienu",
+      "language": "ti",
+      "generated": false,
+      "uid": "77283a0f-b82b-4372-a0df-7e52f621d344"
+    },
+    {
+      "term": "disjunkciju",
+      "definition": "A disjunction or logical OR between two statements.",
+      "sentence": "disjunkciju",
+      "language": "ti",
+      "generated": false,
+      "uid": "1017cf45-a687-4164-bb03-6772b2780900"
+    },
+    {
+      "term": "visi / daļa / daži / neviens / daudz",
+      "definition": "Various ways of expressing agreement or disagreement, often informal or colloquial.",
+      "sentence": "visi / daļa / daži / neviens / daudz",
+      "language": "ti",
+      "generated": false,
+      "uid": "46ea48b7-d213-4d4e-b696-885d06f01065"
+    },
+    {
+      "term": "situāciju",
+      "definition": "a specific state or condition of affairs",
+      "sentence": "viņš ir strukturizējis un saglabājis savā ilglaicīgi",
+      "language": "no",
+      "generated": false,
+      "uid": "68fe4d83-3fb7-4471-805c-f1e34c7777e0"
+    },
+    {
+      "term": "processus",
+      "definition": "a series of steps or actions involved in creating or producing something",
+      "sentence": "Šādu sistēmu izveidei tiek izmantotas likumos balstītas jeb procesuālu zināšanu atspoguļošanas shēmas...",
+      "language": "lg",
+      "generated": false,
+      "uid": "cc197610-ddd6-44c7-9882-2ffb92a8c6b7"
+    },
+    {
+      "term": "pārmeklēšana",
+      "definition": "The process of analyzing and drawing conclusions from data to optimize the performance of a system or organization.",
+      "sentence": "Šajā gadījumā sistēma var sākt ar no datiem virzīto pārmeklēšanu un lūgt sistēmas lietotājam ievadīt zināmus datus un tad pārslēgties uz no mērķa virzīto pārmeklēšanu",
+      "language": "fi",
+      "generated": false,
+      "uid": "d4828aca-aade-4eda-a892-d898c408dc10"
+    },
+    {
+      "term": "konfliktu atrisināšana",
+      "definition": "A conflict arising from differences in priorities, goals, or methods within a system or organization.",
+      "sentence": "Konfliktu atrisināšana ir stratēijas, kā izvēlēties vienu likumu no sagatavoto likumu kopas",
+      "language": "fi",
+      "generated": false,
+      "uid": "4516a20f-ec08-4247-9fcf-3d65bf7f8a62"
+    },
+    {
+      "term": "expertsystem",
+      "definition": "A system designed to mimic the decision-making ability of a human expert in a specific domain.",
+      "sentence": "Produkciju likumi ir dabisks zināšanu atspoguļošanas veids , jo cilvēki bieži risina problēmas , izmantojot struktūru “ ja ... tad...”",
+      "language": "ex",
+      "generated": false,
+      "uid": "31db7ce4-e0ef-470d-b408-bd87d45fd7d1"
+    },
+    {
+      "term": "structura",
+      "definition": "The organizational structure or framework of an expert system.",
+      "sentence": "Produkciju likumi piedāvā unificētu struktūru “ ja ... tad...”",
+      "language": "ex",
+      "generated": false,
+      "uid": "61e81d50-389b-4887-9184-63e062e8cc79"
+    },
+    {
+      "term": "nodalé",
+      "definition": "A central point or hub in a network or structure, often acting as a decision-making unit.",
+      "sentence": "Zināšanas tiek glabātas zināšanu bāzē , bet tās apstrādā izveduma mehānisms , līdz ar to šāda nodalīšana . Zināšanas tiek glabātas zināšanu bāzes modificēšanas vienkāršību , nemainot programmas vadības kodu un, otrādi , iespēju mainīt programmas vadības struktūru",
+      "language": "ex",
+      "generated": false,
+      "uid": "5e5c5af1-2829-4808-a939-daeff7979d65"
+    },
+    {
+      "term": "sintaktikas neatkarība",
+      "definition": "The syntactic structure or grammar of a language, specifically the rules governing the formation of sentences.",
+      "sentence": "Likumiem nav sintaktiskas mijiedarbības",
+      "language": "ex",
+      "generated": false,
+      "uid": "3e686ad4-fc98-409f-bab2-70ffb1009bdf"
+    },
+    {
+      "term": "citā likumā",
+      "definition": "A reference to a prior discussion or document.",
+      "sentence": "izsaukt citus likumus vai mainīt citā likumā esošo mainīgo vērtības",
+      "language": "ex",
+      "generated": false,
+      "uid": "d074e1a2-e8ef-451c-a24f-80770bec9402"
+    },
+    {
+      "term": "fragments ir balstīts",
+      "definition": "Short, incomplete sentences or phrases that provide information but lack full grammatical completeness.",
+      "sentence": "teksta fragments ir balstīts uz informāciju",
+      "language": "ex",
+      "generated": false,
+      "uid": "a55c6888-564a-4c44-b3f4-2c079ce9f0c8"
+    },
+    {
+      "term": "mēanisms",
+      "definition": "Rules or principles governing the interaction of elements within a system, often used in expert systems to model human reasoning.",
+      "sentence": "katrā vadības cikla “ Atpazīt-darboties ètitizājā var tikt izvadīts izvēlētais likums",
+      "language": "ex",
+      "generated": false,
+      "uid": "093044aa-b50e-4c39-8a64-282e4048e4c0"
+    },
+    {
+      "term": "iterācija",
+      "definition": "A repeated cycle or process, often used in expert systems to allow for refinement and improvement based on feedback or new information.",
+      "sentence": "var tikt izvadīts izvēlētais likums . Turklāt, tā kā katrs likums atbilst vienai problēmrisināšanas zināšanu vienībai",
+      "language": "ex",
+      "generated": false,
+      "uid": "e89c2279-86c7-4a61-9574-e6d7b26eb4f2"
+    },
+    {
+      "term": "pārskata visus",
+      "definition": "To draw conclusions or make inferences based on available information.",
+      "sentence": "lielākā daļa likumos sakņotu ekspertsistēmu spēj spriest ar nepilnīgām un nenoteiktām zināšanām",
+      "language": "ex",
+      "generated": false,
+      "uid": "8c2547ee-52c2-48aa-8893-1a63e69f6344"
+    },
+    {
+      "term": "apstrāde",
+      "definition": "Conclusions or inferences drawn from available information.",
+      "sentence": "pārskata visus katrā iterācijā pārskata visus",
+      "language": "ex",
+      "generated": false,
+      "uid": "bf808e0d-23c5-4eb8-bacf-0c2119f2c7ae"
+    },
+    {
+      "term": "lielu likumu kopumu",
+      "definition": "A specific instance or example of a problem within the expert system's domain.",
+      "sentence": "kad ir liels likumu skaits, ir grūti noteikt, kādu ieguldījumu atsevišķs likums veic problēmas",
+      "language": "ex",
+      "generated": false,
+      "uid": "f4a901fa-7f2e-4ccf-a6bb-63cbe751a06c"
+    },
+    {
+      "term": "lielu likumus",
+      "definition": "The specific area of expertise that an expert system is designed to handle.",
+      "sentence": "likums un tas var prasīt ievērojumus skaitļošanas resursus",
+      "language": "ex",
+      "generated": false,
+      "uid": "9a704ffd-8d00-4001-8a6f-7b8e5bc66dc9"
+    },
+    {
+      "term": "resursus",
+      "definition": "A collection of facts, data, or results.",
+      "sentence": "taču produkciju sistēmām ir maz iespēju apmācīties un noteikt",
+      "language": "ex",
+      "generated": false,
+      "uid": "b6669490-f927-47a4-8ef8-1e0d6c3f25db"
+    },
+    {
+      "term": "skaidrojumu",
+      "definition": "A problem or challenge that the expert system is designed to address.",
+      "sentence": "skaidrojumu par sistēmas pašreizējo stāvokli un darbību",
+      "language": "ex",
+      "generated": false,
+      "uid": "e7ce9ed2-52f3-408e-b406-b49c373a6b0e"
+    },
+    {
+      "term": "pārskata visus piemērotas",
+      "definition": "Conclusions or inferences drawn from the available data.",
+      "sentence": "lielākā daļa likumos sakņotu ekspertsistēmu spēj spriest ar nepilnīgām un nenoteiktām zināšanām",
+      "language": "ex",
+      "generated": false,
+      "uid": "12c815c3-8ffb-4c76-83a7-e8c9c14a7544"
+    },
+    {
+      "term": "prasīt ievērojumus",
+      "definition": "To solve a complex problem by breaking it down into simpler, more manageable parts.",
+      "sentence": "pārskata visus piemērotas resursus",
+      "language": "ex",
+      "generated": false,
+      "uid": "8f384923-c688-4d48-ac47-b233968cc39d"
+    },
+    {
+      "term": "maz apmācīties",
+      "definition": "Complex problems that require sophisticated methods to solve.",
+      "sentence": "maz apmācīties un noteikt",
+      "language": "ex",
+      "generated": false,
+      "uid": "fe79514d-f9c7-4eea-a794-10ad7f130f5c"
+    },
+    {
+      "term": "noteikt",
+      "definition": "Assumptions or hypotheses that are taken for granted within an expert system, often serving as the basis for decision-making processes.",
+      "sentence": "kad likums ir novecojis",
+      "language": "ex",
+      "generated": false,
+      "uid": "ce74a96f-e15b-452e-b66f-377b1638394c"
+    }
+  ],
+  "debug_info": {
+    "chunkSize": 3284,
+    "chunkCount": 89,
+    "contextLength": 4096,
+    "temperature": 0.5,
+    "seed": 42,
+    "prompt": "Your task is to analyze the provided text and create a glossary.\nInstructions:\n1. Extract ALL terms and concepts from the text.\n2. Define them using ONLY the provided text.\n3. NO external knowledge. Synthesize exclusively from source.\n4. DO NOT translate. Keep definitions in the source language.\n5. If no terms found, return an empty list.\n\nText to analyze:\n\n",
+    "elapsedTime": 914.997,
+    "safeMargin": 0.5,
+    "maxResponseTokens": 4096,
+    "maxTimeout": 599940000,
+    "repeatPenalty": -1,
+    "inputSize": 334911
+  }
+}

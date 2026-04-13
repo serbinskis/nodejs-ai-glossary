@@ -1,0 +1,257 @@
+{
+  "uid": "8956f58a-e2c1-4345-8d01-caae0056cc97",
+  "domain": "unknown",
+  "language": "lv",
+  "implementation": "LMStudio-qwen/qwen3-vl-4b@Q4_K_M",
+  "timestamp_start": 1775760260509,
+  "timestamp_end": 1775764206192,
+  "error_count": 83,
+  "glossary": [
+    {
+      "term": "algoritms",
+      "definition": "Algoritms iegūst virsotņu L un G heiristiskos vērtējumus – 7 un 5 attiecīgi un ievieto ģenerētās virsotnes sarakstā OPEN, vienlaikus pārkārtojot virsotnes šajā sarakstā atbilstoši heiristiskajiem vērtējumiem no virsotnes ar labāko vērtējumu uz virsotni ar sliktāko vērtējumu. Savukārt virsotne F kā jau apskatīta un izvērsta virsotne tiek pārvietota sarakstā CLOSED. Algoritms paņem virsotni, kas atrodas saraksta OPEN pirmajā pozīcijā – virsotni I, un pārbauda, vai tā ir pārmeklēšanas mērķa virsotne. Tā kā tā nav pārmeklēšanas mērķa virsotne, tiek uzsākta nākamā iterācija. 5. iterācijā algoritms izvērš apskatāmo virsotni I, ģenerējot tās trīs pēctečus – virsotnes J, K un G. Tā kā virsotne K jau ir sarakstā CLOSED un virsotne G – sarakstā OPEN, tās atkārtoti neapskata. Algoritms iegūst virsotnes J heiristisko vērtējumu, kas ir vienāds ar 3, un ievieto šo virsotni sarakstā OPEN, vienlaikus pārkārtojot virsotnes šajā sarakstā atbilstoši heiristiskajiem vērtējumiem no labākās virsotnes uz sliktāko virsotni. Savukārt virsotne I kā jau apskatīta un izvērsta virsotne tiek pārvietota sarakstā CLOSED. Algoritms paņem virsotni, kas atrodas saraksta OPEN pirmajā pozīcijā – virsotni J, un pārbauda, vai tā ir pārmeklēšanas mērķa virsotne. Tā kā tā ir pārmeklēšanas mērķa virsotne, algoritms beidz darbību, paziņojot, ka pārmeklēšanas mērķa virsotne ir sasniegta. Tādējādi šis algoritms vienmēr atrod pārmeklēšanas mērķa virsotni, ja tāda eksistē stāvokļu telpas grafā, bet skaitļošanas resursu patēriņš, it īpaši ja heiristiskā novērtējuma funkcija nav visai labi definēta, var būt ievērojami lielāks nekā pārējiem heiristiski informētas pārmeklēšanas algoritmiem. Starveida pārmeklēšana ir kompromiss starp kalnā kāpšanu, kurā tiek apskatīta tikai viena labākā virsotne, un vislabākā stāvokļa meklēšanu, kurā tiek saglabātas un pakāpeniski apskatītas visas ģenerētas virsotnes. Šis algoritms katrā iterācijā izvēlas tālākajai izvēršanai ierobežotu skaitu labāko virsotņu. Taču tas nerealizē atkāpšanos. Tādējādi pirms algoritma izpildes tiek uzdots stara platums jeb skaitlis, kas nosaka, cik daudz labāko virsotņu tiks apskatītas katrā iterācijā. Katrā iterācijā algoritms izvērš vienlaicīgi visas virsotnes, kas atrodas sarakstā OPEN. Visu izvērsto virsotņu priekšteči / pēcteči (atkarībā no pārmeklēšanas virziena) tiek novērtēti, un no tiem izvēlas un ievieto sarakstā OPEN labākos atbilstoši stara platumam, pārējās virsotnes ievietojot sarakstā CLOSED. Rezultātā saraksts OPEN satur tik daudz virsotņu, cik ir stara platums, izņemot 0. iterāciju, kad OPEN sarakstā tiek ievietota tikai pārmeklēšanas sākuma virsotne, un gadījumu, kad ģenerēto pēcteču / priekšteču skaits ir mazāks nekā stara platums. Algoritms beidz darbību, kad pārmeklēšanas mērķa virsotne ir ievietota sarakstā OPEN vai arī kad ir sasniegtas strupceļa virsotnes, kas nav pārmeklēšanas mērķa virsotne.",
+      "sentence": "Algoritms iegūst virsotņu L un G heiristiskos vērtējumus – 7 un 5 attiecīgi",
+      "language": "lv",
+      "generated": false,
+      "uid": "82f0795a-f117-494b-a3c8-fe7cc78fdc09"
+    },
+    {
+      "term": "pārmeklēšanas algoritma realizācijas piemērs",
+      "definition": "Apskatīsim starveida pārmeklēšanas algoritma realizācijas piemēru",
+      "sentence": "Apskatīsim starveida pārmeklēšanas algoritma realizācijas piemēru",
+      "language": "lv",
+      "generated": false,
+      "uid": "97b1ae59-c0f9-468a-befe-058591894d82"
+    },
+    {
+      "term": "no datiem virzītu pārmeklēšanu",
+      "definition": "Izpildot no datiem virzītu pārmeklēšanu",
+      "sentence": "izpildot no datiem virzītu pārmeklēšanu",
+      "language": "lv",
+      "generated": false,
+      "uid": "7e07c26e-eb39-4fa4-abb6-1ea6bbbd04e1"
+    },
+    {
+      "term": "8. attēlā redzamais grafā",
+      "definition": "8. attēlā redzamais grafā",
+      "sentence": "izpildot no datiem virzītu pārmeklēšanu 8. attēlā redzamajā grafā",
+      "language": "lv",
+      "generated": false,
+      "uid": "37c3aeee-7258-4628-9145-1ad4cb228b65"
+    },
+    {
+      "term": "pārmeklēšanas sākuma virsotne",
+      "definition": "pārmeklēšanas sākuma virsotne ir virsotne A",
+      "sentence": "pārmeklēšanas sākuma virsotne ir virsotne A",
+      "language": "lv",
+      "generated": false,
+      "uid": "30558fe5-5c60-4689-8eac-003eff2c5c14"
+    },
+    {
+      "term": "pārmeklēšanas mērķa virsotne",
+      "definition": "pārmeklēšanas mērķa virsotne ir virsotne K",
+      "sentence": "pārmeklēšanas mērķa virsotne ir virsotne K",
+      "language": "lv",
+      "generated": false,
+      "uid": "08db4d38-1fe6-4325-ab3e-eea3191cc06d"
+    },
+    {
+      "term": "stara platums",
+      "definition": "stara platums ir 2 virsotnes",
+      "sentence": "stara platums ir 2 virsotnes",
+      "language": "lv",
+      "generated": false,
+      "uid": "2a5d504b-9193-4aa6-b68e-bf2fdabe6488"
+    },
+    {
+      "term": "virsotņu heiristiskie vērtējumi",
+      "definition": "virsotņu heiristiskie vērtējumi ir norādīti blakus virsotnēm",
+      "sentence": "virsotņu heiristiskie vērtējumi ir norādīti blakus virsotnēm",
+      "language": "lv",
+      "generated": false,
+      "uid": "797d825e-9c3b-4587-a65a-8fa6917bb2ad"
+    },
+    {
+      "term": "labākais heiristiskais vērtējums",
+      "definition": "labākais heiristiskais vērtējums ir mazākais",
+      "sentence": "labākais heiristiskais vērtējums ir mazākais",
+      "language": "lv",
+      "generated": false,
+      "uid": "4e8191c3-daeb-44b8-a60d-4518491dd103"
+    },
+    {
+      "term": "saraksts OPEN",
+      "definition": "saraksts OPEN ievieto pārmeklēšanas sākuma virsotni kopā ar tās heiristisko vērtējumu",
+      "sentence": "0. iterācijā pārmeklēšanas sākuma virsotne kopā ar tās heiristisko vērtējumu tiek ievietota sarakstā OPEN",
+      "language": "lv",
+      "generated": false,
+      "uid": "b40bb2d0-e738-4eca-957c-1363b44cb0cf"
+    },
+    {
+      "term": "saraksts CLOSED",
+      "definition": "saraksts CLOSED pārvieto apskatītas un izvērstas virsotnes",
+      "sentence": "Saraksts CLOSED ir tukšs, jo neviena virsotne vēl netika izvērsta. ... virsotne A kā jau apskatīta un izvērsta virsotne kopā ar virsotni D, kas tika ģenerēta, bet netika izvēlēta tālākajai apskatīšanai, tiek pārvietotas sarakstā CLOSED.",
+      "language": "lv",
+      "generated": false,
+      "uid": "3fe22c66-4d29-455d-919d-c6075c22157c"
+    },
+    {
+      "term": "iterācija",
+      "definition": "iterācijā algoritms izvērš apskatāmo virsotni, ģenerējot tās pēctečus",
+      "sentence": "0. iterācijā pārmeklēšanas sākuma virsotne kopā ar tās heiristisko vērtējumu tiek ievietota sarakstā OPEN",
+      "language": "lv",
+      "generated": false,
+      "uid": "b5bc6d72-2478-4826-a9a4-fcc05f82c735"
+    },
+    {
+      "term": "apskatāmo virsotni",
+      "definition": "apskatāmo virsotni A, un pārbauda, vai tā ir pārmeklēšanas mērķa virsotne",
+      "sentence": "Algoritms paņem virsotni, kas atrodas sarakstā OPEN – virsotni A, un pārbauda, vai tā ir pārmeklēšanas mērķa virsotne",
+      "language": "lv",
+      "generated": false,
+      "uid": "c1022fbb-d7d9-4c61-b2bc-df6d9474f9b1"
+    },
+    {
+      "term": "pēcteči",
+      "definition": "virsotnei E pēcteči ir virsotnes I, K un F. Virsotnes H pēcteči ir J, I un E",
+      "sentence": "Virsotnei E pēcteči ir virsotnes I, K un F. Virsotnes H pēcteči ir J, I un E.",
+      "language": "lv",
+      "generated": false,
+      "uid": "11442e38-190f-4bf6-a053-30cc96a934e8"
+    },
+    {
+      "term": "izvēlēta tālākajai apskatīšanai",
+      "definition": "izvēlas no tiem divas labākās virsotnes, pamatojoties uz virsotņu heiristiskajiem vērtējumiem",
+      "sentence": "izvēlas no tiem divas labākās virsotnes, pamatojoties uz virsotņu heiristiskajiem vērtējumiem",
+      "language": "lv",
+      "generated": false,
+      "uid": "f0d2bcc6-2ea6-4bf0-ac1c-b9d14a487900"
+    },
+    {
+      "term": "izslēdz no tālākās apskatīšanas",
+      "definition": "No atlikušajām virsotnēm paliek četras unikālas virsotnes I, K, F un J. Tā kā neviena no šīm virsotnēm nav ne sarakstā OPEN, ne sarakstā CLOSED, tad algoritms iegūst visu šo virsotņu heiristiskos vērtējumus – 2, 0, 1 un 3 attiecīgi un, atbilstoši stara platumam, izvēlas no tiem divas labākās virsotnes, pamatojoties uz virsotņu heiristiskajiem vērtējumiem.",
+      "sentence": "No atlikušajām virsotnēm paliek četras unikālas virsotnes I, K, F un J. Tā kā neviena no šīm virsotnēm nav ne sarakstā OPEN, ne sarakstā CLOSED, tad algoritms iegūst visu šo virsotņu heiristiskos vērtējumus – 2, 0, 1 un 3 attiecīgi un, atbilstoši stara platumam, izvēlas no tiem divas labākās virsotnes, pamatojoties uz virsotņu heiristiskajiem vērtējumiem.",
+      "language": "lv",
+      "generated": false,
+      "uid": "061cb957-a5e4-4e2b-af62-f83da5fed68f"
+    },
+    {
+      "term": "algoritms beidz darbību",
+      "definition": "algoritms beidz darbību, paziņojot, ka pārmeklēšanas mērķa virsotne ir sasniegta",
+      "sentence": "Algoritms beidz darbību, paziņojot, ka pārmeklēšanas mērķa virsotne ir sasniegta",
+      "language": "lv",
+      "generated": false,
+      "uid": "641cf314-5186-412d-ba1f-9d82ab17f2f9"
+    },
+    {
+      "term": "pieņemšana",
+      "definition": "Pieņemsim, ir datu kopa ar datiem, kas tika savākti pagātnē.",
+      "sentence": "Pieņemsim, ir datu kopa ar datiem, kas tika savākti pagātnē.",
+      "language": "lq",
+      "generated": false,
+      "uid": "ab00496f-ccaa-4e30-87cb-1b2578654953"
+    },
+    {
+      "term": "datu kopa",
+      "definition": "Datu kopa satur zināmas viena ieejas mainīgā x vērtības. Tas nozīmē, ka datu objektam ir raksturīga viena pazīme (1. tabula).",
+      "sentence": "Datu kopa satur zināmas viena ieejas mainīgā x vērtības. Tas nozīmē, ka datu objektam ir raksturīga viena pazīme (1. tabula).",
+      "language": "lq",
+      "generated": false,
+      "uid": "ce06e7a3-6b4b-44dd-a694-294615e29725"
+    },
+    {
+      "term": "Mašīnmācīšanās modeļa veikuma novērtēšanas metrikas",
+      "definition": "tiek izmantotas, lai salīdzinātu dažādu mašīnmācīšanās algoritmu darbību, tos pielietojot vienai un tai pašai datu kopai, un/ vai analizētu viena un tā paša mašīnmācīšanās algoritma darbību pie dažādām hiperparametru vērtībām",
+      "sentence": "Tēma - Mašīnmācīšanās algoritmu veiktspējas novērtēšanas metrikas Mašīnmācīšanās modeļa veikuma novērtēšanas metrikas tiek izmantotas, lai salīdzinātu dažādu mašīnmācīšanās algoritmu darbību, tos pielietojot vienai un tai pašai datu kopai, un/ vai analizētu viena un tā paša mašīnmācīšanās algoritma darbību pie dažādām hiperparametru vērtībām. Metrikas ir atkarīgas no uzdevuma, kuram mašīnmācīšanās algoritmu pielieto.",
+      "language": "lv",
+      "generated": false,
+      "uid": "f417efc9-4d41-4d30-a5bf-9bc5342b60d1"
+    },
+    {
+      "term": "Regresija",
+      "definition": "pārraudzītās mašīnmācīšanās uzdevums, līdz ar to datu kopā ir pieejamas īstās datu objektu izeju iezīmes un tās tiek izmantotas, lai noteiktu prognozēto datu objektu iezīmju pareizību",
+      "sentence": "Regresijas uzdevumā tiek veikta nepārtrauktajā skalā atspoguļotas vērtības prognozēšana, līdz ar to regresijas rezultāts ir reālais skaitlis, kas atbilst veiktajai prognozei.",
+      "language": "lv",
+      "generated": false,
+      "uid": "b62f22ce-39f0-4f6d-acf4-67446b85f8fc"
+    },
+    {
+      "term": "Vidējā kvadrātkļūda",
+      "definition": "nosaka vidējo vērtību atsevišķu datu objektu prognozēšanas kļūdu kvadrātiem",
+      "sentence": "Vidējā kvadrātkļūda (angļu val. the Mean squared error, MSE) nosaka vidējo vērtību atsevišķu datu objektu prognozēšanas kļūdu kvadrātiem. Kļūdas aprēķina rezultātā tiek iegūta pozitīva vērtība, kas nav vienāda ar nulli.",
+      "language": "lv",
+      "generated": false,
+      "uid": "2ff72e14-cf5a-42ba-a4c4-fe5efab5a820"
+    },
+    {
+      "term": "Kļūda",
+      "definition": "atspoguļos",
+      "sentence": "Šīs kļūdas vērtību nopietni ietekmē datu kopā esošās izlecošās vērtības (angļu val. Vidējā kvadrātiskā kļūda (angļu val. Root mean square error, RMSE) piemēro kvadrātsakni MSE (iepriekš apskatītās kļūdas vērtībai) un tāpēc nodrošina kļūdas mērvienību tajā pašā vienībā kā mērķa mainīgais, piemēram, ja mašīnmācīšanās algoritms prognozē absolventu skaitu, tad kļūda atspoguļos\"absolventu skaitu\"; ja tas prognozē mājokļu cenas EUR, tad kļūdas vērtība būs \"cena EUR\". Jo mazāka ir šīs kļūdas vērtība, jo labāks ir mašīnmācīšanās algoritma veikums.",
+      "language": "lv",
+      "generated": false,
+      "uid": "f1eed2de-f874-4637-b9db-d75ebda702b2"
+    },
+    {
+      "term": "Vidējā kvadrātiskā kļūda",
+      "definition": "piemēro kvadrātsakni MSE (iepriekš apskatītās kļūdas vērtībai) un tāpēc nodrošina kļūdas mērvienību tajā pašā vienībā kā mērķa mainīgais",
+      "sentence": "Vidējā kvadrātiskā kļūda (angļu val. Root mean square error, RMSE) piemēro kvadrātsakni MSE (iepriekš apskatītās kļūdas vērtībai) un tāpēc nodrošina kļūdas mērvienību tajā pašā vienībā kā mērķa mainīgais, piemēram, ja mašīnmācīšanās algoritms prognozē absolventu skaitu, tad kļūda atspoguļos\"absolventu skaitu\"; ja tas prognozē mājokļu cenas EUR, tad kļūdas vērtība būs \"cena EUR\". Jo mazāka ir šīs kļūdas vērtība, jo labāks ir mašīnmācīšanās algoritma veikums.",
+      "language": "lv",
+      "generated": false,
+      "uid": "5466b79e-ecd0-450c-ab60-41ba8b64d312"
+    },
+    {
+      "term": "Vidējā absolūtā kļūda",
+      "definition": "ir absolūtās starpības starp datu objektu īstajām izeju vērtībām un prognozētajām izeju vērtībām summas vidējā vērtība",
+      "sentence": "Vidējā absolūtā kļūda (angļu val. Mean absolute error, MAE) ir absolūtās starpības starp datu objektu īstajām izeju vērtībām un prognozētajām izeju vērtībām summas vidējā vērtība. Tā arī nodrošina kļūdas mērījumu tajā pašā mērvienībā kā mērķa mainīgais. Jo mazāka ir šīs kļūdas vērtība, jo labāks ir mašīnmācīšanās algoritma veikums.",
+      "language": "lv",
+      "generated": false,
+      "uid": "115205ae-d89b-423f-a94e-f717ea129873"
+    },
+    {
+      "term": "R2 koeficients",
+      "definition": "ir pazīstams arī kā determinācijas koeficients. Tas norāda, cik tuvu izveidotais modelis (regresijas algoritma atrastā līnija / plakne) atbilst datu objektiem datu kopā. Koeficienta vērtības atrodas diapazonā [0,1], kur 0 norāda, ka modelis neatbilst datu objektiem, un 1 norāda perfektu atbilstību.",
+      "sentence": "R2 koeficients (angļu val. R2 coefficient) ir pazīstams arī kā determinācijas koeficients. Tas norāda, cik tuvu izveidotais modelis (regresijas algoritma atrastā līnija / plakne) atbilst datu objektiem datu kopā. Koeficienta vērtības atrodas diapazonā [0,1], kur 0 norāda, ka modelis neatbilst datu objektiem, un 1 norāda perfektu atbilstību.",
+      "language": "lv",
+      "generated": false,
+      "uid": "30378b22-4eaa-4e74-8b39-67e48a833350"
+    },
+    {
+      "term": "neirona izejas signāls",
+      "definition": "Šīs funkcijas ir parādītas 4. attēlā, kur y atspoguļo neirona izejas signālu, un x atbilst rezultātam, kas tiek iegūts no neirona summēšanas funkcijas.",
+      "sentence": "Šīs funkcijas ir parādītas 4. attēlā, kur y atspoguļo neirona izejas signālu, un x atbilst rezultātam, kas tiek iegūts no neirona summēšanas funkcijas.",
+      "language": "lq",
+      "generated": false,
+      "uid": "563b74d7-b775-485d-a95f-82aaa85a30b0"
+    },
+    {
+      "term": "Taču problēmrisināšana",
+      "definition": "ir iespējama ne tikai tāpēc, ka cilvēks spēj noteikt tās sākuma stāvokli, mērķa stāvokli un pieejamas darbību alternatīvas, bet arī tāpēc, ka cilvēks, risinot problēmas, izmanto vispārīgas zināšanas par problēmsfēru",
+      "sentence": "Taču problēmrisināšana ir iespējama ne tikai tāpēc, ka cilvēks spēj noteikt tās sākuma stāvokli, mērķa stāvokli un pieejamas darbību alternatīvas, bet arī tāpēc, ka cilvēks, risinot problēmas, izmanto vispārīgas zināšanas par problēmsfēru",
+      "language": "lv",
+      "generated": false,
+      "uid": "1efef1ed-f15a-4f4a-8c4e-7917f1d32233"
+    },
+    {
+      "term": "freimi",
+      "definition": "freimi atspoguļo zināšanas par objektu / jēdzienu vienā vietā organizētajā manierē; freimi nodrošina hierarhisku zināšanu organizāciju; freimi ļauj atspoguļot daudzveidīgas zināšanas par objektu / jēdzienu; freimos ir nodrošināta pārmantošana; freimos ir iespējams pievienot izpildāmos dēmonus slotiem, lai kontrolētu piekļuvi to vērtībām un tādējādi nodrošinātu zināšanu bāzes nepretrunīgumu. Taču freimiem ir raksturīgi arī trūkumi: freimi ir vislabāk piemēroti, lai atspoguļotu statiskas, nevis dinamiskas zināšanas par objektu / jēdzienu; freimiem trūkst labi definētas formālas semantikas; freimi rada problēmas dažu zināšanu veidu atspoguļošanā, piemēram, ir grūtības atspoguļot negāciju (Toms neēd peles), disjunkciju (Jānis brokastīs ēd olas vai burkānu), vairāki / visi / daži / vai nu utt.",
+      "sentence": "Freimiem piemīt šādas priekšrocības: freimi atspoguļo zināšanas par objektu / jēdzienu vienā vietā organizētajā manierē; freimi nodrošina hierarhisku zināšanu organizāciju; freimi ļauj atspoguļot daudzveidīgas zināšanas par objektu / jēdzienu; freimos ir nodrošināta pārmantošana; freimos ir iespējams pievienot izpildāmos dēmonus slotiem, lai kontrolētu piekļuvi to vērtībām un tādējādi nodrošinātu zināšanu bāzes nepretrunīgumu. Taču freimiem ir raksturīgi arī trūkumi: freimi ir vislabāk piemēroti, lai atspoguļotu statiskas, nevis dinamiskas zināšanas par objektu / jēdzienu; freimiem trūkst labi definētas formālas semantikas; freimi rada problēmas dažu zināšanu veidu atspoguļošanā, piemēram, ir grūtības atspoguļot negāciju (Toms neēd peles), disjunkciju (Jānis brokastīs ēd olas vai burkānu), vairāki / visi / daži / vai nu utt.",
+      "language": "lv",
+      "generated": false,
+      "uid": "a1461c27-cf58-4705-8435-cc25003ec0f0"
+    }
+  ],
+  "debug_info": {
+    "chunkSize": 3167,
+    "chunkCount": 91,
+    "contextLength": 4096,
+    "temperature": 0.5,
+    "seed": 42,
+    "prompt": "Your task is to analyze the provided text and create a glossary.\nInstructions:\n1. Extract ALL terms and concepts from the text.\n2. Define them using ONLY the provided text.\n3. NO external knowledge. Synthesize exclusively from source.\n4. DO NOT translate. Keep definitions in the source language.\n5. If no terms found, return an empty list.\n\nText to analyze:\n\n",
+    "elapsedTime": 3945.683,
+    "safeMargin": 0.5,
+    "maxResponseTokens": 4096,
+    "maxTimeout": 599940000,
+    "repeatPenalty": -1,
+    "inputSize": 334911
+  }
+}

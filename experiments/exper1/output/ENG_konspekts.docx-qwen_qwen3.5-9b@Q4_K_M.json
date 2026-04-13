@@ -1,0 +1,911 @@
+{
+  "uid": "e0151b94-52a5-47b0-8d50-2798763f6461",
+  "domain": "unknown",
+  "language": "en",
+  "implementation": "LMStudio-qwen/qwen3.5-9b@Q4_K_M",
+  "timestamp_start": 1774490858365,
+  "timestamp_end": 1774492183785,
+  "error_count": 11,
+  "glossary": [
+    {
+      "term": "Connectionist artificial intelligence",
+      "definition": "An artificial intelligence system that mimics the functioning of human brain (large number of interconnected neurons).",
+      "sentence": "Connectionist representation of knowledge proves to be learnable. Connectionist artificial intelligence solves the problem but is not able to effectively reason the solution.",
+      "language": "en",
+      "generated": false,
+      "uid": "fd5e13e4-41cb-440b-a400-86e40a196f6a"
+    },
+    {
+      "term": "Artificial Intelligence",
+      "definition": "intelligent computer systems are being developed to support humans in the completion of various functions and activities, or, in other words, to cope with different types of problems.",
+      "sentence": "At the beginning of the study course, you learnt out that intelligent computer systems are being developed to support humans in the completion of various functions and activities, or, in other words, to cope with different types of problems.",
+      "language": "en",
+      "generated": false,
+      "uid": "c313971d-2b62-4551-ad69-7a6f68c64c0c"
+    },
+    {
+      "term": "State space graph",
+      "definition": "A representation of a problem-solving process used when building an intelligent computer system. In the state space graph, we have only nodes and the arcs connecting them.",
+      "sentence": "The search start node and the search goal node are known for the search purpose.",
+      "language": "en",
+      "generated": false,
+      "uid": "f5d03a75-3116-431c-8dc6-09dba16ae1d2"
+    },
+    {
+      "term": "intelligent computer system",
+      "definition": "a system that can be developed using weak methods (symbolic manipulation or mathematical calculations) or strong methods (incorporating knowledge into an intelligent computer system).",
+      "sentence": "...not all intelligent systems need the knowledge base because intelligent computer systems can also be developed using weak methods...",
+      "language": "en",
+      "generated": false,
+      "uid": "e07ade25-a442-4c61-a206-b126d33d1da5"
+    },
+    {
+      "term": "search algorithm",
+      "definition": "A task of any search algorithm is to find a solution path if such a path exists in the state space graph. A search algorithm receives the search start node and the search goal node as input data and then uses the state space graph to find a solution path.",
+      "sentence": "Additionally, an intelligent computer system needs a search algorithm that processes the data structure to find a solution to the problem based on known input data (Figure 1). A task of any search algorithm is to find a solution path if such a path exists in the state space graph (Luger, 2009) .",
+      "language": "en",
+      "generated": false,
+      "uid": "2e83e0c1-8723-4da1-9d09-8c21f2bebdd1"
+    },
+    {
+      "term": "solution path",
+      "definition": "The output provided by search algorithms representing the path found to reach the search goal node from the search start node.",
+      "sentence": "They use the state space graph as a data structure to search for a problem solution. The algorithms provide a solution path as their output.",
+      "language": "en",
+      "generated": false,
+      "uid": "c3aa868c-2405-42b0-ab51-efd2f24eeee5"
+    },
+    {
+      "term": "Search start node",
+      "definition": "A known node in the state space graph for the search purpose.",
+      "sentence": "",
+      "language": "en",
+      "generated": false,
+      "uid": "e63ce56b-79ea-4508-882e-083d2cacabc8"
+    },
+    {
+      "term": "Search goal node",
+      "definition": "A known node in the state space graph for the search purpose.",
+      "sentence": "",
+      "language": "en",
+      "generated": false,
+      "uid": "e30274ce-28d5-4615-951e-d57d19fd6428"
+    },
+    {
+      "term": "search direction",
+      "definition": "The direction in which a state space graph may be searched. A state space graph may be searched for in two directions: From the given data of a problem toward a goal (data-driven search), or From a goal back to the data (goal-driven search).",
+      "sentence": "Taking into account that the state space graph includes nodes representing initial states of the problem-solving process and nodes displaying goal states, a state space graph may be searched for in two directions (Luger, 2009) : From the given data of a problem toward a goal. This is called data-driven search or forward chaining . The search process starts from a root node and it proceeds in forward direction in the state space graph. From a goal back to the data. This is called goal-driven search or backward chaining .",
+      "language": "en",
+      "generated": false,
+      "uid": "142b4934-7ed3-4d9c-94f7-510ce67987e0"
+    },
+    {
+      "term": "data-driven search",
+      "definition": "A search process that starts from a root node and it proceeds in forward direction in the state space graph. It is also called forward chaining.",
+      "sentence": "From the given data of a problem toward a goal. This is called data-driven search or forward chaining . The search process starts from a root node and it proceeds in forward direction in the state space graph.",
+      "language": "en",
+      "generated": false,
+      "uid": "8864d96d-bf19-48ab-b117-f5b5f828fdd0"
+    },
+    {
+      "term": "goal-driven search",
+      "definition": "A search process that starts from a leaf node and it proceeds in backward direction in the state space graph. It is also called backward chaining.",
+      "sentence": "From a goal back to the data. This is called goal-driven search or backward chaining . The search process starts from a leaf node and it proceeds in backward direction in the state space graph.",
+      "language": "en",
+      "generated": false,
+      "uid": "e22d9e68-1112-453b-be94-ca5d81fce196"
+    },
+    {
+      "term": "forward chaining",
+      "definition": "Another name for data-driven search. The search process starts from a root node and it proceeds in forward direction in the state space graph.",
+      "sentence": "From the given data of a problem toward a goal. This is called data-driven search or forward chaining . The search process starts from a root node and it proceeds in forward direction in the state space graph.",
+      "language": "en",
+      "generated": false,
+      "uid": "4be87505-ab5d-4a63-b46b-29ab2fe9875a"
+    },
+    {
+      "term": "backward chaining",
+      "definition": "Another name for goal-driven search. The search process starts from a leaf node and it proceeds in backward direction in the state space graph.",
+      "sentence": "From a goal back to the data. This is called goal-driven search or backward chaining . The search process starts from a leaf node and it proceeds in backward direction in the state space graph.",
+      "language": "en",
+      "generated": false,
+      "uid": "4762472e-af8c-4839-8202-da729bb9b58a"
+    },
+    {
+      "term": "open nodes",
+      "definition": "Nodes whose descendants/ancestors have not yet been generated. The search algorithm has already generated these nodes, but their descendants/ancestors have not yet been generated.",
+      "sentence": "As a result of this action, two types of nodes appear: open nodes – the search algorithm has already generated these nodes, but their descendants/ancestors have not yet been generated; closed nodes – they are nodes whose descendants/ancestors have already been generated.",
+      "language": "en",
+      "generated": false,
+      "uid": "074f151e-ac1f-4c36-8edc-fb6bc2bed58d"
+    },
+    {
+      "term": "closed nodes",
+      "definition": "Nodes whose descendants/ancestors have already been generated.",
+      "sentence": "As a result of this action, two types of nodes appear: open nodes – the search algorithm has already generated these nodes, but their descendants/ancestors have not yet been generated; closed nodes – they are nodes whose descendants/ancestors have already been generated.",
+      "language": "en",
+      "generated": false,
+      "uid": "d62a0345-58f9-4add-86d9-951541bc3a51"
+    },
+    {
+      "term": "robot motion trajectory",
+      "definition": "A robot motion trajectory corresponds to a solution path where graph arcs represent actions of the problem-solving process. For example, a robot motion trajectory is left-right-straight ahead or straight ahead-left-right.",
+      "sentence": "One of the solution paths is C1->B1->B2->B3, or, taking into account that graph arcs represent actions of the problem-solving process, we get a robot motion trajectory - the robot should move left-right-straight ahead. Another solution path is C1->C2->B2->B3 - the robot should move straight ahead-left-right.",
+      "language": "en",
+      "generated": false,
+      "uid": "fc412920-002b-41d0-8151-71364274b905"
+    },
+    {
+      "term": "root node",
+      "definition": "A node from which a data-driven search starts. In the context of search direction, the search start node is selected from the set of root nodes if it is data-driven search.",
+      "sentence": "The search process starts from a root node and it proceeds in forward direction in the state space graph. If it is data-driven search, then the search start node is selected from the set of root nodes",
+      "language": "en",
+      "generated": false,
+      "uid": "0e58e22e-64e5-4e1e-b12e-3bbcbdfcd1f4"
+    },
+    {
+      "term": "leaf node",
+      "definition": "A node from which a goal-driven search starts. In the context of search direction, the search start node is selected from the set of leaf nodes if it is goal-driven search.",
+      "sentence": "The search process starts from a leaf node and it proceeds in backward direction in the state space graph. If it is goal-driven search, then the search start node is selected from the set of leaf nodes",
+      "language": "en",
+      "generated": false,
+      "uid": "97fb7ef0-7084-4942-b05f-526e9dbbedbf"
+    },
+    {
+      "term": "expanding the current node",
+      "definition": "One of the three main steps performed by any search algorithm, involving generating descendants/ancestors of the current node.",
+      "sentence": "Uninformed search algorithms receive the search start node and the search goal node as input data (Figure 3). They use the state space graph as a data structure to search for a problem solution. The algorithms provide a solution path as their output.",
+      "language": "en",
+      "generated": false,
+      "uid": "66a4994b-5726-4257-9213-63c424971fea"
+    },
+    {
+      "term": "solution path is generated",
+      "definition": "A state reached when the search goal node is found. If the search goal node is found, then it means that a solution path is generated and search stops.",
+      "sentence": "If the search goal node is found, then it means that a solution path is generated and search stops.",
+      "language": "en",
+      "generated": false,
+      "uid": "9c1fcbec-3489-48a4-bc16-b9c0314c7e04"
+    },
+    {
+      "term": "recommendation system",
+      "definition": "A system that will advise tourists about the selection of roads between two cities.",
+      "sentence": "Imagine that we are building a recommendation system that will advise tourists about the selection of roads between two cities in France: Paris and Toulouse.",
+      "language": "en",
+      "generated": false,
+      "uid": "fec65677-552f-47f5-880a-802afa43b522"
+    },
+    {
+      "term": "uninformed search",
+      "definition": "A type of search where all paths represented in the state space graph are identical because algorithms process only nodes and arcs without additional information about the quality of the nodes.",
+      "sentence": "In the case of uninformed search, all of the paths represented in the state space graph are identical, because uninformed search algorithms process only nodes and arcs of the state space graph.",
+      "language": "en",
+      "generated": false,
+      "uid": "9699ed9c-1753-4357-9bd9-923aa64c9c15"
+    },
+    {
+      "term": "heuristic search",
+      "definition": "A type of search where algorithms can distinguish between paths by taking into account information such as distance, location relative to a reference point, road surface, number of traffic lights, etc.",
+      "sentence": "Heuristic search algorithms are able to distinguish between paths represented in the state space graph.",
+      "language": "en",
+      "generated": false,
+      "uid": "27a7172f-521b-4120-9301-5eb1ec436c17"
+    },
+    {
+      "term": "uninformed search algorithms",
+      "definition": "Algorithms that process only nodes and arcs of the state space graph and do not have additional information about the quality of the nodes.",
+      "sentence": "In the case of uninformed search, all of the paths represented in the state space graph are identical, because uninformed search algorithms process only nodes and arcs of the state space graph.",
+      "language": "en",
+      "generated": false,
+      "uid": "3dcffaf5-ed61-4b1f-9ddd-99ae9292bd11"
+    },
+    {
+      "term": "heuristic search algorithms",
+      "definition": "Search algorithms that can take into account information such as distance between settlements, location relative to Paris, road surface, number of traffic lights, and other factors represented as numerical values showing the quality of each node.",
+      "sentence": "Heuristic search algorithms are able to distinguish between paths represented in the state space graph.",
+      "language": "en",
+      "generated": false,
+      "uid": "7988d7f4-4b0e-4efd-b944-63a011acef42"
+    },
+    {
+      "term": "OPEN list",
+      "definition": "A list containing open nodes, which are nodes that have been already generated but whose ancestors/descendants have not been generated yet.",
+      "sentence": "An OPEN list : it contains open nodes or, in other words, nodes that have been already generated but whose ancestors/descendants (depending on the search direction) have not been generated yet; each search algorithm has a specific approach for adding new nodes to this list.",
+      "language": "en",
+      "generated": false,
+      "uid": "c3bfb34e-9b4f-47a7-867b-6b5bbb6ae635"
+    },
+    {
+      "term": "CLOSED list",
+      "definition": "A list containing closed nodes, which are nodes that have been already expanded.",
+      "sentence": "A CLOSED list contains closed nodes or, in other words, nodes that have been already expanded.",
+      "language": "en",
+      "generated": false,
+      "uid": "3eda3f3d-0436-4193-b1c8-10ea07dcf8ba"
+    },
+    {
+      "term": "Depth-First Search",
+      "definition": "An uninformed search algorithm that goes deeper and deeper into the state space graph by expanding nodes, finding the first path leading to the search goal node and stopping the operation. It is implemented using a stack data structure where new nodes are added to the left side of the OPEN list.",
+      "sentence": "The idea of Depth-First Search is represented by its title (Figure 5): \"depth\" means to go deeper and deeper into the state space graph, while expanding nodes; \"first\" indicates finding the first path that leads to the search goal node and stopping the operation.",
+      "language": "en",
+      "generated": false,
+      "uid": "025ada73-44c8-4f5c-a328-c44da5c05e56"
+    },
+    {
+      "term": "stack",
+      "definition": "A data structure used in Depth-First Search where new nodes are added to the left side of the OPEN list, working according to the \"Last in, First Out\" principle.",
+      "sentence": "Therefore, this list is a type of data structure called a stack. A stack works according to the \"Last in, First Out\" principle: the last data element entered is the first to be processed (Figure 8).",
+      "language": "en",
+      "generated": false,
+      "uid": "886dbd79-ae31-4f05-bcab-eb977de857fb"
+    },
+    {
+      "term": "iteration number",
+      "definition": "A column in a table used to represent OPEN and CLOSED lists, displaying the iteration number of the search process.",
+      "sentence": "The first column displays the iteration number, the second column displays the OPEN list, and the third column displays the CLOSED list.",
+      "language": "en",
+      "generated": false,
+      "uid": "037e5ba4-e59a-462b-8f5c-e9bebb54c87c"
+    },
+    {
+      "term": "Iteration",
+      "definition": "A step in the algorithm where a current node is processed, potentially expanded into descendants, and moved between lists.",
+      "sentence": "Iteration 5: The algorithm expands the current node I by generating its three descendants - nodes J, K, and G.",
+      "language": "en",
+      "generated": false,
+      "uid": "0dc2a039-54ef-40ad-a71e-b2e0a3c0d57a"
+    },
+    {
+      "term": "node K",
+      "definition": "The search goal node.",
+      "sentence": "The node K, which is located on the first position of the OPEN list, becomes the current node. The algorithm checks if it is the search goal node. It is the search goal node. Therefore, the algorithm stops its operation.",
+      "language": "en",
+      "generated": false,
+      "uid": "14f9236c-00b7-4fb7-b847-92181b21cd81"
+    },
+    {
+      "term": "Bidirectional Search",
+      "definition": "An algorithm that performs a search simultaneously in both directions - data-driven search and goal-driven search - until it finds a point of contact in both directions. It uses two OPEN lists and two CLOSED lists, which are filled in simultaneously in both directions.",
+      "sentence": "Bidirectional Search reduces the consumption of computational resources (search time and computer memory), which is the main problem with Breadth-First Search.",
+      "language": "en",
+      "generated": false,
+      "uid": "e458b8b4-96f6-4031-bb80-fd523a5cb268"
+    },
+    {
+      "term": "Heuristic knowledge",
+      "definition": "Human knowledge related to routine situations that is used for solving complex problems with incomplete information when it is not possible to describe or evaluate the problem in full detail.",
+      "sentence": "It is used for solving a) problems that may not have an exact solution because of inherent ambiguities in the problem statement or available data or b) problems that may have an exact solution, but there are not enough computational resources to solve them.",
+      "language": "en",
+      "generated": false,
+      "uid": "69faebae-727b-4e92-b223-5e364dce2559"
+    },
+    {
+      "term": "Heuristic evaluation function",
+      "definition": "A mathematical function used in intelligent computer systems where heuristic knowledge is represented. This function helps the search algorithm to determine the direction of the location of the search goal node.",
+      "sentence": "The purpose of the function is to find a problem solution with minimum costs.",
+      "language": "en",
+      "generated": false,
+      "uid": "5469afb4-8aa8-44a3-8c44-6c23557f2253"
+    },
+    {
+      "term": "Heuristic measures",
+      "definition": "Numerical values assigned to nodes of the state space graph. Heuristic knowledge that we usually formulate verbally should be represented mathematically and made accessible by the intelligent computer system through heuristic measures.",
+      "sentence": "Heuristic measures represent the quality of the nodes.",
+      "language": "en",
+      "generated": false,
+      "uid": "86a95783-9155-4a6a-a4f1-a055630ec7ca"
+    },
+    {
+      "term": "Heuristic evaluation function formula",
+      "definition": "An abstract representation of the heuristic evaluation function as follows: f(n) = g(n) + h(n).",
+      "sentence": "",
+      "language": "en",
+      "generated": false,
+      "uid": "e1e28655-98e8-47c4-bb58-3e04928acd2f"
+    },
+    {
+      "term": "g(n)",
+      "definition": "The distance between the search start node and node n. This value allows the algorithm to choose the shorter paths that are available.",
+      "sentence": "",
+      "language": "en",
+      "generated": false,
+      "uid": "478317b3-db22-40e1-95f1-6070ed76fec4"
+    },
+    {
+      "term": "h(n)",
+      "definition": "A heuristic measure that characterizes the quality of node n or, in other words, the estimation of the distance between the node n and the search goal node. This value allows the algorithm to choose promising paths in a state space graph.",
+      "sentence": "",
+      "language": "en",
+      "generated": false,
+      "uid": "61c8bc95-7e49-4242-8cca-3295ef66c209"
+    },
+    {
+      "term": "Tic-tac-toe",
+      "definition": "A game used as an example for demonstrating the idea of problem-specific factors and their numerical representation in intelligent computer systems.",
+      "sentence": "",
+      "language": "en",
+      "generated": false,
+      "uid": "d6bdaba3-552a-4a38-afd1-efd42cd3a24a"
+    },
+    {
+      "term": "8-puzzle",
+      "definition": "A game used as an example for demonstrating the idea of problem-specific factors and their numerical representation. There are 8 numbered tiles and 9 squares.",
+      "sentence": "",
+      "language": "en",
+      "generated": false,
+      "uid": "b24f7138-21a9-45ce-b63e-cf1a59617a21"
+    },
+    {
+      "term": "sum of distances",
+      "definition": "A factor used in a heuristic evaluation function where the smaller the sum, the closer a state is to the search goal node.",
+      "sentence": "Applying the defined factor, the first and the third node will acquire a value of 6, while the second node will get a value of 4, and therefore, this could be considered a promising move.",
+      "language": "en",
+      "generated": false,
+      "uid": "c6660bef-eb54-47a7-811f-c1aa570a888a"
+    },
+    {
+      "term": "symmetry feature of states",
+      "definition": "A property that allows reducing the number of states in a game tree by considering only representative states (e.g., corner, centre, and side) because it does not matter which specific position within a symmetric group is chosen.",
+      "sentence": "At the first level of the game tree, it is possible to consider only three states: corner, centre, and side, because, for example, it does not matter in which corner the sign is placed. This allows the reduction of the number of states in the game tree from 362,880 (if all nodes are represented) to 12*7! = 60,480 nodes.",
+      "language": "en",
+      "generated": false,
+      "uid": "d27ee758-ecfa-4a1a-a8d9-600262897e11"
+    },
+    {
+      "term": "Hill Climbing",
+      "definition": "An algorithm that always chooses a node whose heuristic measure is higher than the heuristic measure of the current node if the function defines the best heuristic measure to be the highest measure, or always chooses a node whose heuristic measure is less than the heuristic measure of the current node if the function defines the best heuristic measure to be the smallest measure.",
+      "sentence": "Hill Climbing algorithm is able to find the search goal node very quickly if the heuristic evaluation function is well-defined. If the function is not well-defined, Hill Climbing has several shortcomings: the local maximum problem and the plateau problem.",
+      "language": "en",
+      "generated": false,
+      "uid": "3ea3cc30-347d-4ad5-a063-b62dbbdf1bbd"
+    },
+    {
+      "term": "Maximiser",
+      "definition": "A player who aims to win the game, represented by a value of +1 if they win.",
+      "sentence": "If a game has two results (one of the players wins the game, and the other loses): +1 if a node corresponds to a win by the maximiser; −1 if a node corresponds to a win by the minimiser; If a game has three results (a win, a draw, and a defeat): +1 if a node corresponds to a win by the maximiser; 0 if it is a draw; −1 if a node corresponds to a win by the minimiser.",
+      "language": "en",
+      "generated": false,
+      "uid": "08fdbf16-4f32-4b00-b340-c6967ccba308"
+    },
+    {
+      "term": "algorithm",
+      "definition": "The process that goes down and up levels, assigns precise or intermediate heuristic measures, propagates heuristic measures to other nodes, checks ancestors for intermediate heuristic measures, performs cut-offs, and evaluates descendants.",
+      "sentence": "Step 1: The algorithm goes down using the first unconsidered path on the left until it reaches a leaf node. It assigns a precise heuristic measure of “1” to the leaf node...",
+      "language": "en",
+      "generated": false,
+      "uid": "a262fafc-aeb7-40c1-a0b4-040c02b0ed42"
+    },
+    {
+      "term": "intermediate heuristic measure",
+      "definition": "A value assigned to a node when it is not possible to assign a precise heuristic measure, indicating the range of possible values (e.g., >=1 or <=-1) based on known measures and the node's level.",
+      "sentence": "The intermediate heuristic measure of the current node (the α value) is 1 and the measure of the ancestor (the β value) is 1. By comparing the measures, the algorithm finds that the two nodes have only one common value of 1 or, in another words, the α value of the current node is equal to the β value of the ancestor, meaning that a β-cut-off should be performed by cutting off the unconsidered paths below the current node.",
+      "language": "en",
+      "generated": false,
+      "uid": "3f56737a-9192-4a89-b6da-e7f034a5363c"
+    },
+    {
+      "term": "N-ply look-ahead",
+      "definition": "Explores a limited number of levels denoted by n.",
+      "sentence": "N-ply look-ahead explores a limited number of levels denoted by n.",
+      "language": "en",
+      "generated": false,
+      "uid": "7658b423-f5de-404b-b282-b7944008d7f8"
+    },
+    {
+      "term": "Data",
+      "definition": "At the heart of machine learning; can come from different places (like governmental institutions, research institutions, industry, etc.) and be represented in many forms (images, text, numbers, etc.). In machine learning, data are converted into a digital form for further analysis and use in the task.",
+      "sentence": "Data is at the heart of machine learning. They can come from different places (like governmental institutions, research institutions, industry, etc.) and be represented in many forms (images, text, numbers, etc.). In machine learning, data are converted into a digital form for further analysis and use in the task.",
+      "language": "en",
+      "generated": false,
+      "uid": "8b63cb1d-0cbb-4410-8d2a-0edf8ead6f65"
+    },
+    {
+      "term": "unsupervised learning",
+      "definition": "This type of learning is based on unlabelled data. It can be characterised as 'I am self-sufficient in learning!'. The goal of this learning is to reveal patterns/structure of data. Unsupervised learning provides descriptive models. It is also used for data visualisation.",
+      "sentence": "This type of learning is based on unlabelled data (Geron, 2017; Pant, 2019). We can compare it with a child that has a set of bricks of different colours in front of him. Looking at them, he/she starts dividing them into different groups based on their colours. According to (Atul, 2019), unsupervised learning can be characterised as 'I am self-sufficient in learning!'. The goal of this learning is to reveal patterns/structure of data. Unsupervised learning provides descriptive models. It is also used for data visualisation.",
+      "language": "en",
+      "generated": false,
+      "uid": "8a85182e-d831-4aa8-9395-4ab8872d46ca"
+    },
+    {
+      "term": "computational complexity",
+      "definition": "The measure of the computational effort involved in solving a problem, specifically mentioned as very high for inverting a multiplication of a transpose of vector X and vector X.",
+      "sentence": "Moreover, the computational complexity of inverting a multiplication of a transpose of vector X and vector X is very high (Geron, 2017).",
+      "language": "en",
+      "generated": false,
+      "uid": "f186bfa2-c066-4529-8abc-25cc15bf21d0"
+    },
+    {
+      "term": "Euclidean distance",
+      "definition": "A type of distance used to calculate the geometric distance between any pair of data objects for continuous feature values.",
+      "sentence": "for continuous feature values, the geometric distance between any pair of data objects is calculated based on the Euclidean or Manhattan distance",
+      "language": "en",
+      "generated": false,
+      "uid": "bde3baf3-0f65-4125-a396-ab8461e8f0af"
+    },
+    {
+      "term": "agglomerative hierarchical clustering",
+      "definition": "A bottom-up clustering process where a pair of clusters is merged at each hierarchy level until one cluster with all data objects is acquired at the highest level. Clusters having the smallest distance between them are merged at each step of clustering.",
+      "sentence": "attribute each data object to a single cluster. This step results in N clusters, where N is the number of data objects in the dataset; take the two data objects with the smallest dissimilarity and make them one cluster. This step results in N-1 clusters; take the two clusters with the smallest dissimilarity and make them one cluster. This step results in the reduction of the number of clusters by 1; repeat Step 3 until only one cluster is acquired.",
+      "language": "en",
+      "generated": false,
+      "uid": "ccd58223-7d35-41d2-8c63-b495897e159c"
+    },
+    {
+      "term": "Root mean square error (RMSE)",
+      "definition": "Applies a square root to MSE and therefore provides an error measure in the same unit as the target variable. For example, if the classifier predicts the number of graduates, then the error will represent 'the number of persons'; if it predicts the prices of the house in EUR, then the error value will represent 'price in EUR'. The smaller the value, the better the predictive accuracy of the model is.",
+      "sentence": "",
+      "language": "en",
+      "generated": false,
+      "uid": "ce6df612-9329-4629-b28d-3a02d6e38123"
+    },
+    {
+      "term": "artificial neural networks",
+      "definition": "computing structures that are conceptually modeled after the brain and can be used for carrying out both supervised and unsupervised machine learning tasks, mainly for classification tasks of supervised machine learning.",
+      "sentence": "Artificial neural networks have found application in various fields: text classification and categorization, student performance modelling, character recognition, credit card attrition, video surveillance, stock market prediction, cancer cell analysis, vehicle scheduling, etc. Moreover, artificial neural networks can be used for carrying out both supervised and unsupervised machine learning tasks.",
+      "language": "en",
+      "generated": false,
+      "uid": "3e250092-bb88-4db8-ab45-05927c73074f"
+    },
+    {
+      "term": "step and sign activation functions",
+      "definition": "also called hard limit functions, are often used in decision-making neurons for classification and pattern recognition tasks.",
+      "sentence": "The step and sign activation functions, also called hard limit functions, are often used in decision-making neurons for classification and pattern recognition tasks ( Negnevitsky , 2011).",
+      "language": "en",
+      "generated": false,
+      "uid": "90786e4a-e751-4380-931f-d50eeb0d929f"
+    },
+    {
+      "term": "input values",
+      "definition": "values that are modified by the weights at each layer of the network and undergo a lot of modification during their propagation through the networks.",
+      "sentence": "To answer this question, it is necessary to consider that input values are modified by the weights at each layer of the network. So, they undergo a lot of modification during their propagation through the networks.",
+      "language": "en",
+      "generated": false,
+      "uid": "15a529ba-0748-4db7-a806-2dd7882ee7e7"
+    },
+    {
+      "term": "training data",
+      "definition": "data that do not say what value the hidden processing units should have.",
+      "sentence": "The training data do not say what value the hidden processing units should have, and each hidden processing unit is responsible for some fraction of the error in each of the output units (Russell & Norvig, 2010).",
+      "language": "en",
+      "generated": false,
+      "uid": "adf7e278-ef0a-4d76-b9a7-d42ff276d8c2"
+    },
+    {
+      "term": "hidden processing units",
+      "definition": "units that are responsible for some fraction of the error in each of the output units.",
+      "sentence": "The training data do not say what value the hidden processing units should have, and each hidden processing unit is responsible for some fraction of the error in each of the output units (Russell & Norvig, 2010).",
+      "language": "en",
+      "generated": false,
+      "uid": "f8460eea-2c56-401d-a4fc-a2ec5058381f"
+    },
+    {
+      "term": "output units",
+      "definition": "units for which the hidden processing unit is responsible for some fraction of the error.",
+      "sentence": "The training data do not say what value the hidden processing units should have, and each hidden processing unit is responsible for some fraction of the error in each of the output units (Russell & Norvig, 2010).",
+      "language": "en",
+      "generated": false,
+      "uid": "849590f2-d538-43c4-a9ce-cf1ea1a6a3f4"
+    },
+    {
+      "term": "weights",
+      "definition": "values that modify input values at each layer of the network.",
+      "sentence": "To answer this question, it is necessary to consider that input values are modified by the weights at each layer of the network.",
+      "language": "en",
+      "generated": false,
+      "uid": "41991cf5-db7b-456d-9986-b49d7e10d3ed"
+    },
+    {
+      "term": "backpropagation algorithm",
+      "definition": "algorithm that allows modifying weights in all network layers through the propagation of the error from the output layer to the input layer.",
+      "sentence": "The backpropagation algorithm allows modifying weights in all network layers through the propagation of the error from the output layer to the input layer (Fig.",
+      "language": "en",
+      "generated": false,
+      "uid": "7ac1f431-f5ff-474e-ad65-6832b3b4f6c3"
+    },
+    {
+      "term": "output neurons",
+      "definition": "neurons for which we know the predicted output and the real class label, and thus can calculate the error.",
+      "sentence": "In the output neuron, we know the predicted output and the real class label and, thus, can calculate the error in the following way:",
+      "language": "en",
+      "generated": false,
+      "uid": "0ea664d4-b622-4399-b26d-80f22ae3c00a"
+    },
+    {
+      "term": "hidden layers",
+      "definition": "layers of neurons for which the error is calculated differently than for output neurons.",
+      "sentence": "The algorithm uses two types of errors: the first is used for output neurons, and the second is used only for neurons in hidden layers.",
+      "language": "en",
+      "generated": false,
+      "uid": "b77f4623-dc1a-420a-be88-616c4c2f465a"
+    },
+    {
+      "term": "processing unit",
+      "definition": "unit that can be a neuron in hidden layers or an output neuron.",
+      "sentence": "In the hidden layers, the error for each processing unit is calculated in the following way:",
+      "language": "en",
+      "generated": false,
+      "uid": "6f7191f2-1f1b-4f00-8e8a-15a3efe466b1"
+    },
+    {
+      "term": "knowledge representation",
+      "definition": "A natural way of knowledge representation where human experts explain problem-solving using constructions like 'if... then...'.",
+      "sentence": "Production rules are a natural way of knowledge representation because human experts very often explain problem-solving using constructions like 'if... then...' ( Negnevitsky , 2011 );",
+      "language": "en",
+      "generated": false,
+      "uid": "1dd5673d-21af-4737-aac4-494a5e0280e5"
+    },
+    {
+      "term": "intelligent system",
+      "definition": "a system that performs intelligent performance supported by an incorporation of full range formally described knowledge.",
+      "sentence": "It can be defined more precisely as an incorporation of full range formally described knowledge into an intelligent system with the aim of supporting intelligent performance of the system (Graham and Barrett, 1997).",
+      "language": "en",
+      "generated": false,
+      "uid": "822b0c02-21fe-476d-84cc-e814c45c5a42"
+    },
+    {
+      "term": "knowledge base",
+      "definition": "A repository where knowledge is stored. Its processing mechanism is the inference engine.",
+      "sentence": "The structure and the order of production rules in the knowledge base determine how to search the knowledge base and how quickly it will be searched.",
+      "language": "en",
+      "generated": false,
+      "uid": "f5d42dc5-f480-4001-841f-3d7faa39ecd4"
+    },
+    {
+      "term": "inference engine",
+      "definition": "The processing mechanism for the knowledge base.",
+      "sentence": "Knowledge is stored in the knowledge base, but its processing mechanism is the inference engine.",
+      "language": "en",
+      "generated": false,
+      "uid": "b0651ba0-5f5b-435b-893f-19bb3e25adaf"
+    },
+    {
+      "term": "knowledge-based intelligent system",
+      "definition": "a system that solves problems in a narrowly specialised domain in a way and at a performance level similar to one of the human experts.",
+      "sentence": "An expert system is a knowledge-based intelligent system that solves problems in a narrowly specialised domain in a way and at a performance level similar to one of the human experts...",
+      "language": "en",
+      "generated": false,
+      "uid": "d749d5de-a5e9-4aed-be9c-ed08d82207cd"
+    },
+    {
+      "term": "database",
+      "definition": "a system that stores unrelated facts, for example, purchase transactions or grades of students.",
+      "sentence": "The knowledge base differs from a database. The database stores unrelated facts, for example, purchase transactions or grades of students.",
+      "language": "en",
+      "generated": false,
+      "uid": "4831b47f-071a-409f-94cc-be8e4f2a318a"
+    },
+    {
+      "term": "knowledge representation schema",
+      "definition": "a schema that is used to describe knowledge.",
+      "sentence": "Typically, the inference engine depends on a knowledge representation schema that is used to describe knowledge.",
+      "language": "en",
+      "generated": false,
+      "uid": "4d1b300c-b0a6-43a0-a27a-3c860a3b7057"
+    },
+    {
+      "term": "full range formally described knowledge",
+      "definition": "knowledge relevant and important for tasks that the system will solve, described in a formal (mathematical) way with the aim of allowing the intelligent system to use and process it.",
+      "sentence": "It specifies that only knowledge relevant and important for tasks that the system will solve should be acquired and described. Secondly, knowledge should be described in a formal (mathematical) way with the aim of allowing the intelligent system to use and process it.",
+      "language": "en",
+      "generated": false,
+      "uid": "31b3e74a-76fc-41eb-b6c0-bbf7e267d26e"
+    },
+    {
+      "term": "long-term memory",
+      "definition": "a memory that has an unlimited capacity and provides a long-term storage of knowledge.",
+      "sentence": "Humans gain knowledge in different ways and keep it in the long-term memory. This memory has an unlimited capacity and provides a long-term storage of knowledge.",
+      "language": "en",
+      "generated": false,
+      "uid": "1ee1b474-df57-4f70-a3ca-52449033682c"
+    },
+    {
+      "term": "weak methods",
+      "definition": "artificial intelligence methods that do not use knowledge about a problem under consideration, but use general methods like search, logic, syntax-based computation, automatic reasoning.",
+      "sentence": "In the first module of the study course, we considered two groups of artificial intelligence methods: weak methods...",
+      "language": "en",
+      "generated": false,
+      "uid": "af47e8ea-a445-487c-8278-a859baeaff72"
+    },
+    {
+      "term": "strong methods",
+      "definition": "artificial intelligence methods based on the great amount of knowledge about the problem under consideration.",
+      "sentence": "...and strong methods, based on the great amount of knowledge about the problem under consideration.",
+      "language": "en",
+      "generated": false,
+      "uid": "3ac26091-0d93-42fe-8b12-14132254c3ea"
+    },
+    {
+      "term": "knowledge engineer",
+      "definition": "a specialist who knows well methods and tools of artificial intelligence, as well as has knowledge how to describe and represent knowledge in the knowledge base.",
+      "sentence": "...processed by a specialist called a knowledge engineer...",
+      "language": "en",
+      "generated": false,
+      "uid": "e8c93e3f-8cd4-46d7-ad25-293751ad25be"
+    },
+    {
+      "term": "domain expert",
+      "definition": "anyone who has deep knowledge (of both facts and rules) and substantial practical experience in a particular (usually limited) domain.",
+      "sentence": "Anyone can be considered a domain expert if he/she has deep knowledge (of both facts and rules) and substantial practical experience in a particular (usually limited) domain...",
+      "language": "en",
+      "generated": false,
+      "uid": "74775c13-65fd-479e-bf0e-d269c748222f"
+    },
+    {
+      "term": "domain-specific heuristic knowledge",
+      "definition": "knowledge that allows the domain expert to solve problems in a more effective way.",
+      "sentence": "...Moreover, the domain expert has domain-specific heuristic knowledge that allows him to solve problems in a more effective way.",
+      "language": "en",
+      "generated": false,
+      "uid": "768159fe-9614-4e1f-81bc-cfacb598bd34"
+    },
+    {
+      "term": "automated knowledge acquisition system",
+      "definition": "an automated system that could be used either by the domain expert directly or by the knowledge engineer to describe knowledge and to build a knowledge base.",
+      "sentence": "...the domain expert can describe and store knowledge using an automated knowledge acquisition system...",
+      "language": "en",
+      "generated": false,
+      "uid": "f13b51bb-f330-4a2f-91d7-d76f3348d1c3"
+    },
+    {
+      "term": "expert systems",
+      "definition": "intelligent computer systems that emulate the human expert's methodology and performance.",
+      "sentence": "Intelligent computer systems that emulate the human expert's methodology and performance are called expert systems...",
+      "language": "en",
+      "generated": false,
+      "uid": "0fa5c40a-7571-44cf-a13c-a36805af1ea7"
+    },
+    {
+      "term": "knowledge representation schemas",
+      "definition": "means that offer a set of formal conventions and rules used to describe knowledge, using which a knowledge representation or description is created.",
+      "sentence": "Knowledge representation schemas are means that offer a set of formal conventions and rules used to describe knowledge. Using them, a knowledge representation or description is created.",
+      "language": "en",
+      "generated": false,
+      "uid": "fc2a8b19-4983-4e1e-9fe2-be36c3c6575b"
+    },
+    {
+      "term": "logical knowledge representation schemas",
+      "definition": "schemas that represent knowledge in the form of logical statements, using constants, variables, functions, predicates, logical operators, and apply inference rules that allow getting new true knowledge from a set of true knowledge.",
+      "sentence": "...logical knowledge representation schemas represent knowledge in the form of logical statements, using constants, variables, functions, predicates, logical operators, and apply inference rules that allow getting new true knowledge from a set of true knowledge...",
+      "language": "en",
+      "generated": false,
+      "uid": "516f46e0-d7d1-495d-bd96-b6e25550f5d6"
+    },
+    {
+      "term": "networked knowledge representation schemas",
+      "definition": "schemas that represent knowledge in the form of a directed labelled graph, where each node displays a simple object/concept and directed labelled arcs represent relations between them.",
+      "sentence": "...networked knowledge representation schemas represent knowledge in the form of a directed labelled graph, where each node displays a simple object/concept and directed labelled arcs represent relations between them...",
+      "language": "en",
+      "generated": false,
+      "uid": "19ff5a6c-bbc9-40f6-a099-d1cb63186f41"
+    },
+    {
+      "term": "structured knowledge representation schemas",
+      "definition": "schemas that also use a graph to represent knowledge, but each node is displayed as a complex structure with all characteristics and components of the object/ concept.",
+      "sentence": "...structured knowledge representation schemas also use a graph to represent knowledge, but each node is displayed as a complex structure with all characteristics and components of the object/ concept...",
+      "language": "en",
+      "generated": false,
+      "uid": "b8901d10-d394-4f30-8b75-04f1d0e8a673"
+    },
+    {
+      "term": "procedural or rule-based knowledge representation schemas",
+      "definition": "schemas that represent knowledge in the form of a set of procedures/instructions.",
+      "sentence": "...procedural or rule-based knowledge representation schemas represent knowledge in the form of a set of procedures/instructions.",
+      "language": "en",
+      "generated": false,
+      "uid": "8c99b37c-4210-4c71-9a13-9aedd594cf22"
+    },
+    {
+      "term": "associationist theories of human mind",
+      "definition": "theories that postulate that knowledge on different concepts is related by associations in the human mind and these associations define the meaning of a concept in relation to meaning of other concepts.",
+      "sentence": "Networked knowledge representation schemas are based on associationist theories of human mind that were developed in psychology. These theories postulate that knowledge on different concepts is related by associations in the human mind...",
+      "language": "en",
+      "generated": false,
+      "uid": "1a88c931-2d0a-4de4-a63d-3e4f4b46cbdb"
+    },
+    {
+      "term": "semantic network",
+      "definition": "a knowledge representation schema that represents knowledge as a graph: labelled nodes in this graph correspond to domain objects/concepts but directed labelled arcs – to relations between them.",
+      "sentence": "A semantic network is a knowledge representation schema that represents knowledge as a graph: labelled nodes in this graph correspond to domain objects/concepts but directed labelled arcs – to relations between them...",
+      "language": "en",
+      "generated": false,
+      "uid": "43cf95ab-17f6-44d1-a74b-e1d9111a82e9"
+    },
+    {
+      "term": "knowledge base rooted in semantic networks",
+      "definition": "a network of concepts and their relations.",
+      "sentence": "Therefore, a knowledge base rooted in semantic networks includes a network of concepts and their relations.",
+      "language": "en",
+      "generated": false,
+      "uid": "56938db7-3da5-4499-868e-7de1d0470af2"
+    },
+    {
+      "term": "frame",
+      "definition": "a data-structure for representing a stereotyped situation; it is a data structure that represents typical knowledge about an object/concept or, in other words, information relevant to stereotyped entities.",
+      "sentence": "Each frame has a unique title or identifier in the knowledge base. The frame has a specific structure that includes: slot titles, slot values and facets.",
+      "language": "en",
+      "generated": false,
+      "uid": "7ee4786c-2c4d-43aa-b000-c09fb4c66f31"
+    },
+    {
+      "term": "demons",
+      "definition": "Executable parts (the code describing what will happen when the demon is called) that are triggered automatically and should be developed by the developer of the intelligent computer system.",
+      "sentence": "Two demons are defined for the Client insurance card class frame: The demon IF-ADDED will calculate the value of the slot Ensured services when a new client (a frame instance) would be added to the knowledge base. The demon IF-NEEDED will calculate the amount of discount for a particular client when the information on the discount will be requested.",
+      "language": "en",
+      "generated": false,
+      "uid": "9e90d079-484c-4902-90e3-5c0e0ed27c12"
+    },
+    {
+      "term": "working memory",
+      "definition": "A storage where facts have time tags attached to each fact. The expert system first fires the rule whose antecedent uses the data most recently added to the working memory.",
+      "sentence": "This method relies on time tags attached to each fact in the working memory; thus, in the conflict set, the expert system first fires the rule whose antecedent uses the data most recently added to the working memory (Negnevitsky, 2011).",
+      "language": "en",
+      "generated": false,
+      "uid": "e3b1b37f-c5db-4fd9-949d-b576e31dfc2f"
+    },
+    {
+      "term": "production rules",
+      "definition": "A natural way of knowledge representation where human experts explain problem-solving using constructions like 'if... then...'. Production rules offer a unified way of storing knowledge because each rule is an independent unit of knowledge; thus, the very syntax of production rules enables them to be self-documented.",
+      "sentence": "The structure and the order of production rules in the knowledge base determine how to search the knowledge base and how quickly it will be searched.",
+      "language": "en",
+      "generated": false,
+      "uid": "40c3cef7-3896-4efe-b957-796b6a3aad2c"
+    },
+    {
+      "term": "conflict resolution strategy",
+      "definition": "A method of choosing one rule to fire from those that are able to fire, i.e., from the set of enabled rules, known as the conflict set.",
+      "sentence": "Conflict resolution is the method of choosing one rule to fire from those that are able to fire, i.e., from the set of enabled rules, known as the conflict set.",
+      "language": "en",
+      "generated": false,
+      "uid": "51692788-813b-42fe-b856-33cf2bb6880c"
+    },
+    {
+      "term": "conflict set",
+      "definition": "The set of enabled rules from which one rule is chosen to fire.",
+      "sentence": "Conflict resolution is the method of choosing one rule to fire from those that are able to fire, i.e., from the set of enabled rules, known as the conflict set.",
+      "language": "en",
+      "generated": false,
+      "uid": "c2f24515-8a26-4161-ac87-9f6529bb2cf7"
+    },
+    {
+      "term": "conflict resolution",
+      "definition": "The method of choosing one rule to fire from those that are able to fire.",
+      "sentence": "Conflict resolution is the method of choosing one rule to fire from those that are able to fire, i.e., from the set of enabled rules, known as the conflict set.",
+      "language": "en",
+      "generated": false,
+      "uid": "0c540eb7-b279-4b11-b3b4-b8d4162319e4"
+    },
+    {
+      "term": "production systems",
+      "definition": "Systems that utilize different strategies to resolve conflicts in production rules.",
+      "sentence": "There are different strategies how to resolve conflicts in production systems, for example: to fire the first/the last rule found.",
+      "language": "en",
+      "generated": false,
+      "uid": "5db93118-c025-4116-a4c1-b48d57311a2a"
+    },
+    {
+      "term": "production system",
+      "definition": "A system where there are different strategies how to resolve conflicts.",
+      "sentence": "There are different strategies how to resolve conflicts in production systems, for example: to fire the first/the last rule found.",
+      "language": "en",
+      "generated": false,
+      "uid": "0b340b61-fed6-4c7a-b647-264925530523"
+    },
+    {
+      "term": "longest matching strategy",
+      "definition": "A method of resolving conflicts by firing more specific rules. This method is based on the assumption that a specific rule processes more information than a general one.",
+      "sentence": "to fire more specific rules. This method is also known as the longest matching strategy: it is based on the assumption that a specific rule processes more information than a general one ( Negnevitsky , 2011).",
+      "language": "en",
+      "generated": false,
+      "uid": "5fd70dfd-695c-4ad5-8ab8-cac841bcc138"
+    },
+    {
+      "term": "specific rule",
+      "definition": "A rule that has more conditions.",
+      "sentence": "A rule is more specific than another if it has more conditions: IF a THEN c IF a AND b THEN c more specific rule fire the rule that uses the data most recently entered in the working memory.",
+      "language": "en",
+      "generated": false,
+      "uid": "dd23c145-5341-411c-b803-aeb645fcc549"
+    },
+    {
+      "term": "antecedent",
+      "definition": "Part of a production rule that is used to determine if the rule can fire.",
+      "sentence": "This method relies on time tags attached to each fact in the working memory; thus, in the conflict set, the expert system first fires the rule whose antecedent uses the data most recently added to the working memory (Negnevitsky, 2011).",
+      "language": "en",
+      "generated": false,
+      "uid": "eb6bb2e6-28f1-46c7-80c4-b5e78f31c576"
+    },
+    {
+      "term": "rule-based expert systems",
+      "definition": "Systems that have advantages such as production rules being a natural way of knowledge representation, uniform structure, separation of knowledge and control, modularity of production rules, tracing and explanation capabilities, and the ability to deal with incomplete and uncertain knowledge.",
+      "sentence": "Rule-based expert systems have the following advantages: Production rules are a natural way of knowledge representation because human experts very often explain problem-solving using constructions like 'if... then...' ( Negnevitsky , 2011 ); Uniform structure. Production rules offer a unified way of storing knowledge because each rule is an independent unit of knowledge; thus, the very syntax of production rules enables them to be self-documented ( Negnevitsky , 2011). Separation of knowledge and control. Knowledge is stored in the knowledge base, but its processing mechanism is the inference engine.",
+      "language": "en",
+      "generated": false,
+      "uid": "3986798d-dc60-4d93-ac0a-bd5c5acd9ff2"
+    },
+    {
+      "term": "inference mechanism",
+      "definition": "The part that searches the whole knowledge base in each iteration.",
+      "sentence": "in each iteration, the inference mechanism searches the whole knowledge base.",
+      "language": "en",
+      "generated": false,
+      "uid": "e73a19be-ade2-4744-9552-131fe7c6c363"
+    },
+    {
+      "term": "modularity of production rules",
+      "definition": "Rules have no syntactic interactions. Rules may only affect the firing of other rules by changing the pattern in working memory; they may not 'call' another rule directly as if it were a subroutine, nor set the value of variables in other production rules.",
+      "sentence": "Modularity of production rules. Rules have no syntactic interactions. Rules may only affect the firing of other rules by changing the pattern in working memory; they may not 'call' another rule directly as if it were a subroutine, nor set the value of variables in other production rules.",
+      "language": "en",
+      "generated": false,
+      "uid": "dac6260a-28f4-4478-87da-9aa5a69bdb58"
+    },
+    {
+      "term": "separation of knowledge and control",
+      "definition": "Knowledge is stored in the knowledge base, but its processing mechanism is the inference engine. The advantages of this separation include ease of modifying the knowledge base without requiring a change in the code for program control and, conversely, the ability to alter the code for program control without changing the set of production rules.",
+      "sentence": "Separation of knowledge and control. Knowledge is stored in the knowledge base, but its processing mechanism is the inference engine.",
+      "language": "en",
+      "generated": false,
+      "uid": "590531a9-decc-476e-9253-ba2afddf2510"
+    },
+    {
+      "term": "uniform structure",
+      "definition": "Production rules offer a unified way of storing knowledge because each rule is an independent unit of knowledge; thus, the very syntax of production rules enables them to be self-documented.",
+      "sentence": "Uniform structure. Production rules offer a unified way of storing knowledge because each rule is an independent unit of knowledge; thus, the very syntax of production rules enables them to be self-documented ( Negnevitsky , 2011).",
+      "language": "en",
+      "generated": false,
+      "uid": "ef0bb37a-8597-4194-ae84-34c3f5ebeb53"
+    },
+    {
+      "term": "tracing and explanation",
+      "definition": "The modularity of rules and the iterative nature of their execution make it easier to trace the execution of production rules. At each stage of the control cycle 'Recognize-act', the selected rule can be displayed.",
+      "sentence": "Tracing and explanation. The modularity of rules and the iterative nature of their execution make it easier to trace the execution of production rules.",
+      "language": "en",
+      "generated": false,
+      "uid": "f851c779-8990-4ee2-985a-ac45f0069b68"
+    },
+    {
+      "term": "control cycle",
+      "definition": "A cycle with stages like 'Recognize-act'.",
+      "sentence": "At each stage of the control cycle 'Recognize-act', the selected rule can be displayed.",
+      "language": "en",
+      "generated": false,
+      "uid": "73f353c5-d645-4d03-b9f4-b793ad734f57"
+    },
+    {
+      "term": "chunk",
+      "definition": "A single unit of problem-solving knowledge that corresponds to a rule.",
+      "sentence": "In addition, because each rule corresponds to a single 'chunk' of problem-solving knowledge, the rule content can provide a meaningful explanation of the system's current state and action.",
+      "language": "en",
+      "generated": false,
+      "uid": "fccb49a2-0d5f-4853-8d00-505b89f503ee"
+    },
+    {
+      "term": "confidence factors",
+      "definition": "Factors added to allow most rule-based expert systems to represent and reason with incomplete and uncertain knowledge.",
+      "sentence": "Most rule-based expert systems are capable of representing and reasoning with incomplete and uncertain knowledge by adding confidence factors.",
+      "language": "en",
+      "generated": false,
+      "uid": "5a8249ba-9a2b-4608-a17d-3f1413c2ba5b"
+    },
+    {
+      "term": "complete and uncertain knowledge",
+      "definition": "Incomplete and uncertain knowledge that most rule-based expert systems are capable of representing and reasoning with.",
+      "sentence": "Most rule-based expert systems are capable of representing and reasoning with incomplete and uncertain knowledge by adding confidence factors.",
+      "language": "en",
+      "generated": false,
+      "uid": "b73a2c42-15d0-42ab-8eff-e702c1ce69fd"
+    }
+  ],
+  "debug_info": {
+    "chunkSize": 7687,
+    "chunkCount": 41,
+    "contextLength": 4096,
+    "temperature": 0.5,
+    "seed": 42,
+    "prompt": "Your task is to analyze the provided text and create a glossary.\nInstructions:\n1. Extract ALL terms and concepts from the text.\n2. Define them using ONLY the provided text.\n3. NO external knowledge. Synthesize exclusively from source.\n4. DO NOT translate. Keep definitions in the source language.\n5. If no terms found, return an empty list.\n\nText to analyze:\n\n",
+    "elapsedTime": 1325.42,
+    "safeMargin": 0.5,
+    "maxResponseTokens": 4096,
+    "maxTimeout": 599940000
+  }
+}
