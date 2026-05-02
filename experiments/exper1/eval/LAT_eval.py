@@ -76,7 +76,7 @@ def run_evaluation():
             errorc = data.get('error_count', 0)
             chunks = debug.get('chunkCount', 0)
             full_name = impl.split('-', 1)[-1].split('@')[0]
-            model_info = next((m.info for m in llm_only if full_name in m.info.model_key), full_name)
+            model_info = next((m.info for m in llm_only if full_name == m.info.model_key), full_name)
             match = re.search(r"(\d+\.?\d*)", model_info.params_string)
             if match: params = float(match.group(1))
 
@@ -101,7 +101,9 @@ def run_evaluation():
                 "chunk_size": round(debug.get('chunkSize', 0), 1),
                 "safe_margin": round(debug.get('safeMargin', 0), 1),
                 "contextLength": debug.get('contextLength', 0),
-                "temperature": debug.get('temperature', 0)
+                "temperature": debug.get('temperature', 0),
+                "mvision": model_info.vision or False,
+                "mtools": model_info.trained_for_tool_use or False
             }
             results.append(row)
 

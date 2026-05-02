@@ -31,6 +31,8 @@
 
 - Katra modeļa atsevišķos rezultātus var aplūkot šeit: [NOKLIKŠĶINI](exper2/output).
 - Kopējo salīdzinājumu var aplūkot failā ar nosaukumu [LAT_metrics_groups.txt](exper2/eval/LAT_metrics_groups.txt).
-- Salīdzinājuma grafiku modelim Qwen3 VL 4B, kurā var redzēt kļūdas un F1 mēra ietekmi atkarībā no iestatījumiem, var aplūkot failā ar nosaukumu [LAT_eval_groups.png](exper2/eval/LAT_eval_groups.png).
+- Salīdzinājuma grafiku modelim Qwen3 VL 4B, kurā var redzēt kļūdas un F1 mēra ietekmi atkarībā no iestatījumiem, var aplūkot failā ar nosaukumu [LAT_eval_groups_qwen_qwen3-vl-4b.png](exper2/eval/LAT_eval_groups_qwen_qwen3-vl-4b.png).
 
-<p align="center"><img src="exper2/eval/LAT_eval_groups.png"></p>
+<p align="center"><img src="exper2/eval/LAT_eval_groups_qwen_qwen3-vl-4b.png"></p>
+<p align="center"><img src="exper2/eval/LAT_eval_groups_google_gemma-2-9b.png"></p>
+<p align="center"><img src="exper2/eval/LAT_eval_groups_google_gemma-2-27b.png"></p>

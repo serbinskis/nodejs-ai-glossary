@@ -1,0 +1,1546 @@
+{
+  "uid": "b8b3bfad-346a-4b24-b30b-0b668231eb16",
+  "domain": "Artificial Intelligence",
+  "language": "en",
+  "implementation": "LMStudio-nvidia/nemotron-3-nano-4b@Q4_K_M",
+  "timestamp_start": 1775987180282,
+  "timestamp_end": 1775987713518,
+  "error_count": 3,
+  "retry_error_count": 0,
+  "glossary": [
+    {
+      "term": "Artificial Intelligence",
+      "definition": "The development of intelligent computer systems to support humans in completing various functions and activities, or to cope with different types of problems.",
+      "sentence": "intelligent computer systems are being developed to support humans in the completion of various functions and activities, or, in other words, to cope with different types of problems.",
+      "language": "en",
+      "generated": false,
+      "uid": "067c9a14-84c5-492b-8e0c-d912544993b6"
+    },
+    {
+      "term": "symbolic artificial intelligence",
+      "definition": "A paradigm of thinking or a set of assumptions in the field of artificial intelligence that models intellectual behaviour using explicit symbolic representations of problems and their solutions, along with rules for transforming these symbols.",
+      "sentence": "Symbolic artificial intelligence is based on the physical symbol system hypothesis",
+      "language": "en",
+      "generated": false,
+      "uid": "3cc490b9-9bfe-47ef-a99f-76b525244965"
+    },
+    {
+      "term": "Connectionist artificial intelligence",
+      "definition": "An artificial intelligence system that mimics the functioning of human brain (large number of interconnected neurons)",
+      "sentence": "Connectionist representation of knowledge proves to be learnable",
+      "language": "en",
+      "generated": false,
+      "uid": "bce26b1f-c583-405e-9456-1ae184322f85"
+    },
+    {
+      "term": "physical symbol system hypothesis",
+      "definition": "The hypothesis that a physical symbol system has the necessary and sufficient means for general intelligent action, defined by Newell and Simon in 1976. It defines how the general intelligent performance of both humans and computers is achieved.",
+      "sentence": "A physical symbol system has the necessary and sufficient means for general intelligent action",
+      "language": "en",
+      "generated": false,
+      "uid": "73395681-ee7c-4fb6-9056-57b4829b24c5"
+    },
+    {
+      "term": "symbolic structures",
+      "definition": "Structures consisting of symbols that are connected to each other in some way. Symbolic structures depict important aspects of a problem domain; operations (constructing, copying, modifying, and destroying) which allow the use of existing symbolic structures and the creation of new structures; moreover, the operations themselves can be represented by symbols and symbolic structures in the system.",
+      "sentence": "Symbolic structures thus depict important aspects of a problem domain",
+      "language": "en",
+      "generated": false,
+      "uid": "d561bc7a-a7b4-4eb0-aa5f-851b96922d4b"
+    },
+    {
+      "term": "symbolic structure",
+      "definition": "A set of symbols that correspond to meaningful physical patterns and could represent any form of knowledge, experience, concepts and causality. Symbolic structures consist of symbols that are connected to each other in some way.",
+      "sentence": "Symbolic structures thus depict important aspects of a problem domain",
+      "language": "en",
+      "generated": false,
+      "uid": "af48488c-3989-4271-9421-34f2a9df9272"
+    },
+    {
+      "term": "symbol",
+      "definition": "A physical symbol is a meaningful pattern that can represent any form of knowledge, experience, concept and causality. Symbols are combined into strings to represent objects in the world.",
+      "sentence": "These symbols are combined into strings of 0 and 1 to represent objects in the world",
+      "language": "en",
+      "generated": false,
+      "uid": "a878b331-9a30-4a14-89be-6cd564e3a29e"
+    },
+    {
+      "term": "state space graph",
+      "definition": "the graph representing all possible states of a game and their transitions.",
+      "sentence": "The algorithm searches the state space graph using a depth-first search.",
+      "language": "en",
+      "generated": false,
+      "uid": "24aec25c-6916-4a4b-a588-3f910e1d4409"
+    },
+    {
+      "term": "discrepancy between these states",
+      "definition": "a difference in the current game state that needs to be resolved",
+      "sentence": "To eliminate the discrepancy between these states, we perform actions and pass through a series of intermediate states (Figure 2).",
+      "language": "en",
+      "generated": false,
+      "uid": "9f83c957-6c74-4869-be03-20403729b8f4"
+    },
+    {
+      "term": "intermediate states",
+      "definition": "states that occur between the initial state and the final goal state during game progression",
+      "sentence": "we perform actions and pass through a series of intermediate states (Figure 2).",
+      "language": "en",
+      "generated": false,
+      "uid": "8acf885f-14a7-49c8-a62e-72f66116935f"
+    },
+    {
+      "term": "problem-solving process",
+      "definition": "a sequence of actions leading from an initial state to one or more goal states",
+      "sentence": "Playing a game can be seen as a problem-solving process.",
+      "language": "en",
+      "generated": false,
+      "uid": "d52083b2-bcff-4328-a2e4-02db88404f58"
+    },
+    {
+      "term": "initial state",
+      "definition": "the starting condition of the game before any moves are made",
+      "sentence": "In this game, the initial state of the problem-solving process is a blank grid, which appears when you start the game (Figure 3).",
+      "language": "en",
+      "generated": false,
+      "uid": "df531039-9e5c-4520-9382-23c8409e116a"
+    },
+    {
+      "term": "goal state",
+      "definition": "the final configuration in a puzzle that represents success or completion",
+      "sentence": "achieving the goal state that you can see in Figure 5.",
+      "language": "is",
+      "generated": false,
+      "uid": "6b4b1f15-5878-42a7-977a-2912ad633592"
+    },
+    {
+      "term": "move",
+      "definition": "the action of placing a mark on an empty square in the game grid",
+      "sentence": "To reach a goal state, the players make moves by putting their marks in empty squares.",
+      "language": "en",
+      "generated": false,
+      "uid": "0f1fef45-22be-4211-8c9a-c9f7d6137124"
+    },
+    {
+      "term": "intermediate state",
+      "definition": "a state that results from executing one move from another state and is not the initial or goal state",
+      "sentence": "Each of the possible moves produces a specific intermediate state.",
+      "language": "en",
+      "generated": false,
+      "uid": "0eb84738-e2d1-4a4c-bfbc-07484defb96a"
+    },
+    {
+      "term": "node",
+      "definition": "a point in the state space graph representing a specific game state.",
+      "sentence": "The node A is moved to the CLOSED list as an already expanded node.",
+      "language": "en",
+      "generated": false,
+      "uid": "61be0bcf-4ffa-4445-8c96-672c2fa19e2c"
+    },
+    {
+      "term": "arc",
+      "definition": "a connection between two adjacent levels in the state space graph that represents a legal move from one state to another",
+      "sentence": "Its nodes correspond to discrete states of the game, and arcs are used to represent legal moves in the game.",
+      "language": "en",
+      "generated": false,
+      "uid": "4c3c43a4-e9fd-4801-8b98-d40bd9eb8ac8"
+    },
+    {
+      "term": "level",
+      "definition": "a layer in the state space graph representing turns of players, alternating between maximiser and minimiser.",
+      "sentence": "Dividing the state space graph into levels In both cases, the available graph is alternately divided into levels representing the maximiser (labelled as MAX) and minimiser (labelled as MIN)",
+      "language": "en",
+      "generated": false,
+      "uid": "76dd5435-5c26-47e6-aa04-d5f18bcf4f0a"
+    },
+    {
+      "term": "legal move",
+      "definition": "a move that is allowed by the rules of the game and does not violate any constraints",
+      "sentence": "Thus, playing a game involves changing between game states by making legal moves in the game.",
+      "language": "en",
+      "generated": false,
+      "uid": "896a6cf5-6335-47a1-9f6e-a047a57be401"
+    },
+    {
+      "term": "zero-sum",
+      "definition": "a type of game where one player's gain is exactly balanced by the other player's loss",
+      "sentence": "However, please remember that these restrictions are valid only for this specific type of games, not for all state space graphs!",
+      "language": "en",
+      "generated": false,
+      "uid": "cbaeccae-ee3e-42ab-aa80-fbba8e719916"
+    },
+    {
+      "term": "parameters",
+      "definition": "characteristics that describe the current state of the game, such as scores and board configuration, which are updated with each move and stored in nodes",
+      "sentence": "These parameters depend on the game, and thus may be very different; for example, they may include the score of each player, the current game board, or both the scores of the players and the current game board, etc.",
+      "language": "en",
+      "generated": false,
+      "uid": "7e423975-d4a7-4817-8df6-183fe68e85ad"
+    },
+    {
+      "term": "complexity",
+      "definition": "the amount of computational resources required to represent a state space graph, which is critical to avoid overconsumption",
+      "sentence": "It is vital to reduce the complexity to avoid overconsumption of computational resources.",
+      "language": "en",
+      "generated": false,
+      "uid": "a3e76917-acb0-4be0-abeb-f4fd7a004c60"
+    },
+    {
+      "term": "identical nodes",
+      "definition": "nodes at the same level that have the same values for all parameters characteristic of game states, thus representing a single state rather than multiple copies",
+      "sentence": "If there are identical nodes at the same level, they are not displayed several times, but only once per level, in order to save computational resources.",
+      "language": "en",
+      "generated": false,
+      "uid": "bd068c56-f895-4180-a152-73e60cccbc29"
+    },
+    {
+      "term": "numerical string",
+      "definition": "a sequence of numbers that represents the current state of an oversimplified game",
+      "sentence": "A numerical string “2-2-2-3-3” is given at the beginning of the game.",
+      "language": "en",
+      "generated": false,
+      "uid": "58fdd1cf-9b73-49d6-9ac1-acd06015ac83"
+    },
+    {
+      "term": "score",
+      "definition": "a numerical value that represents a player's current advantage in the oversimplified game, which decreases when a number is removed from the string",
+      "sentence": "During a move, a player removes any number from the numerical string and subtracts it from his or her initial score.",
+      "language": "en",
+      "generated": false,
+      "uid": "4525a689-324e-4805-aaec-7c16743af904"
+    },
+    {
+      "term": "leaf node",
+      "definition": "a node in the game tree that has no children, indicating the end of a possible game outcome.",
+      "sentence": "Since this is a state where the maximiser wins the game, because this player has the highest score.",
+      "language": "en",
+      "generated": false,
+      "uid": "2aebd7cd-c6bd-476e-8312-ce3b3ca562c4"
+    },
+    {
+      "term": "search algorithm",
+      "definition": "an algorithm that navigates through a state space graph to find a goal node",
+      "sentence": "this function helps the search algorithm to determine the direction of the location of the search goal node (Poole, 2010). The purpose of the function is to find a problem solution with minimum costs (Ertel, 2011)",
+      "language": "it",
+      "generated": false,
+      "uid": "d92e3ebc-0b78-4876-b54d-17d367f9d969"
+    },
+    {
+      "term": "data structure",
+      "definition": "organizing and storing data about states and actions of the problem-solving process.",
+      "sentence": "It is a data structure organizing and storing data about states and actions of the problem-solving process. Additionally, an intelligent computer system needs a search algorithm that processes the data structure to find a solution to the problem based on known input data (Figure 1).",
+      "language": "en",
+      "generated": false,
+      "uid": "9a8bc4ad-1db7-4fa5-bd53-9abc857085fc"
+    },
+    {
+      "term": "solution path",
+      "definition": "ordered sequence of actions that lead to the solution to the problem.",
+      "sentence": "A solution path is a path through the state space graph from a given search start node to a given search goal node. It corresponds to an ordered sequence of actions that lead to the solution to the problem.",
+      "language": "en",
+      "generated": false,
+      "uid": "43c85fa8-3235-41ce-951f-10e264d3628d"
+    },
+    {
+      "term": "search start node",
+      "definition": "the initial node in the state space graph where the algorithm begins its search.",
+      "sentence": "The search start node is A. The CLOSED list is empty because none of the available nodes has been expanded so far.",
+      "language": "en",
+      "generated": false,
+      "uid": "b8a1b98f-64c1-472f-92f9-a8cd4c0356dc"
+    },
+    {
+      "term": "search goal node",
+      "definition": "the target node in the state space graph that the algorithm aims to reach.",
+      "sentence": "The search goal node is K. The algorithm stops when the search goal node is added to the OPEN list or when leaf nodes with heuristic measures better than the heuristic measure of the search goal node are reached.",
+      "language": "en",
+      "generated": false,
+      "uid": "56e19652-fb78-4cb8-abcf-10d99e58ba93"
+    },
+    {
+      "term": "state space",
+      "definition": "graph representing states and actions of the problem-solving process.",
+      "sentence": "the state space graph (Figure 2). A search start node is a specific node in the state space graph that serves as a starting point for searching for a solution. A search goal node is a particular node in the state space graph that should be reached while searching for a solution.",
+      "language": "en",
+      "generated": false,
+      "uid": "01ef31e4-5624-404b-9c96-9a1399cc6625"
+    },
+    {
+      "term": "search",
+      "definition": "the process of matching patterns against production rules in knowledge base to find logical reasoning chains",
+      "sentence": "The inference engine is a task of the system to relate production rules to find a logical reasoning chain consisting of known facts and conclusions that they support.",
+      "language": "en",
+      "generated": false,
+      "uid": "c25af891-b375-4101-9390-370f442e906a"
+    },
+    {
+      "term": "state",
+      "definition": "node in the state space graph representing a state of the problem-solving process.",
+      "sentence": "the current node is selected, the search algorithm checks, if it is the search goal node. Taking into account that it is not the search goal node, the search algorithm expands it by generating its descendants. As a result of this action, the node C1 becomes a closed node.",
+      "language": "en",
+      "generated": false,
+      "uid": "3fdb4584-da1f-4038-b067-0e1038911537"
+    },
+    {
+      "term": "descendants",
+      "definition": "nodes that result from expanding a given node, representing possible next states in the state space graph.",
+      "sentence": "The algorithm expands the current node A by generating its three descendants—nodes D, H, and E.",
+      "language": "en",
+      "generated": false,
+      "uid": "a2a72140-cba3-47b7-af36-b1ce88066a4b"
+    },
+    {
+      "term": "open node",
+      "definition": "node that has been generated by the search algorithm but its descendants or ancestors have not yet been generated.",
+      "sentence": "the current node is the search start node, which is an open node because its descendants have not yet been generated (Figure 6).",
+      "language": "en",
+      "generated": false,
+      "uid": "7e78ad78-5220-4edc-9c52-88409a2640ee"
+    },
+    {
+      "term": "closed node",
+      "definition": "node whose descendants or ancestors have already been generated.",
+      "sentence": "As a result of this action, the node C1 becomes a closed node. Two open nodes - C2 and B1 - appear.",
+      "language": "en",
+      "generated": false,
+      "uid": "43eabe17-43df-44c1-8dac-ff1f4d7d64d0"
+    },
+    {
+      "term": "search direction",
+      "definition": "the way in which the state space graph is traversed during the search process.",
+      "sentence": "In both cases, the search stops when the search goal node is reached or the state space graph is exhausted without finding the search goal node (Figure 7).",
+      "language": "en",
+      "generated": false,
+      "uid": "860251aa-82e7-4fa3-b252-9c278ec6460e"
+    },
+    {
+      "term": "data-driven search",
+      "definition": "a forward chaining method where inference begins from given data (pattern) in working memory and applies rules to derive conclusions",
+      "sentence": "In data-driven search (Luger, 2005; Mallach, 1994; Negnevitsky , 2011; Winston, 1992): the search begins with a problem description or given data about the problem (a pattern) that are added to the working memory; the control cycle \"Recognize-act\" matches the pattern against the IF part of production rules in the knowledge base; firing a rule, its THEN part is added to the working memory, and the process continues; searching stops when the search goal is found.",
+      "language": "en",
+      "generated": false,
+      "uid": "2d0b93ce-33e4-4e59-8fca-3c79e3549c78"
+    },
+    {
+      "term": "goal-driven search",
+      "definition": "a backward chaining method where inference starts from a goal (hypothetical solution) and works backward to find supporting evidence",
+      "sentence": "In goal-driven search (Luger, 2005; Mallach, 1994; Negnevitsky , 2011; Winston, 1992): a goal (a pattern) is added to the working memory; the control cycle \"Recognize-act\" matches the pattern against the THEN part of production rules in the knowledge base; firing a rule, its IF part is added to the working memory, and the process continues; searching stops when facts about the problem are found.",
+      "language": "en",
+      "generated": false,
+      "uid": "c4141427-2a4a-4679-9746-cdc75a099ec0"
+    },
+    {
+      "term": "root node",
+      "definition": "starting point for data-driven search, selected from the set of root nodes.",
+      "sentence": "If it is data-driven search, then the search start node is selected from the set of root nodes, but the search goal node– from the set of leaf nodes.",
+      "language": "en",
+      "generated": false,
+      "uid": "a6de4f50-473d-49d7-8987-9c4b1e148b43"
+    },
+    {
+      "term": "data",
+      "definition": "input information provided in the problem statement used to guide the search process.",
+      "sentence": "Data-driven search is preferred in the following cases (Luger, 2009) : All or most of the data are given in the initial problem statement. For example, the interpretation of an Rtg image of an organ of the human body fits this search direction because all the data (pixels of the image, their colour and density) are given and the goal is to find areas indicating a pathology.",
+      "language": "en",
+      "generated": false,
+      "uid": "a1898d24-e6cd-497a-a46e-c22cf6c11c94"
+    },
+    {
+      "term": "goal",
+      "definition": "target state or condition that the search algorithm aims to reach.",
+      "sentence": "Data-driven search is preferred in the following cases (Luger, 2009) : All or most of the data are given in the initial problem statement. For example, the interpretation of an Rtg image of an organ of the human body fits this search direction because all the data (pixels of the image, their colour and density) are given and the goal is to find areas indicating a pathology.",
+      "language": "en",
+      "generated": false,
+      "uid": "9bd07966-08fe-4159-8e8e-c7e7332d7bd2"
+    },
+    {
+      "term": "path",
+      "definition": "ordered sequence of actions that lead to the solution to the problem.",
+      "sentence": "A solution path is a path through the state space graph from a given search start node to a given search goal node. It corresponds to an ordered sequence of actions that lead to the solution to the problem.",
+      "language": "en",
+      "generated": false,
+      "uid": "37caa14f-25e8-401d-83d2-5ed84a349196"
+    },
+    {
+      "term": "shortest path",
+      "definition": "path with minimal number of steps or resources consumed.",
+      "sentence": "Checking a property of the solution path, for example, by searching for the shortest path, the longest path, or a path visiting each node only once. It should be noted here that the shortest and longest path could be specified based on time, length, resource consumption, and other aspects.",
+      "language": "en",
+      "generated": false,
+      "uid": "94ee418e-ae83-4a98-b0f5-cdc58eb6ea9e"
+    },
+    {
+      "term": "longest path",
+      "definition": "path with maximum number of steps or resources consumed.",
+      "sentence": "Checking a property of the solution path, for example, by searching for the shortest path, the longest path, or a path visiting each node only once. It should be noted here that the shortest and longest path could be specified based on time, length, resource consumption, and other aspects.",
+      "language": "en",
+      "generated": false,
+      "uid": "6c22ae39-5ef6-4acb-9078-cfd6c810e04e"
+    },
+    {
+      "term": "resource",
+      "definition": "factor such as time, length, or consumption used in evaluating paths.",
+      "sentence": "Checking a property of the solution path, for example, by searching for the shortest path, the longest path, or a path visiting each node only once. It should be noted here that the shortest and longest path could be specified based on time, length, resource consumption, and other aspects.",
+      "language": "en",
+      "generated": false,
+      "uid": "fa4a050c-27a3-4c78-93d8-c288639b3383"
+    },
+    {
+      "term": "action",
+      "definition": "step taken by the robot or system during the search process.",
+      "sentence": "One of the solution paths is C1->B1->B2->B3. The path corresponds to an ordered sequence of actions that lead to the solution to the problem.",
+      "language": "en",
+      "generated": false,
+      "uid": "8bcad4e6-469a-4470-a859-aa5d5bdd05e0"
+    },
+    {
+      "term": "robot",
+      "definition": "system performing the search process in a restricted environment.",
+      "sentence": "Let’s return to our example of the robot that moves in a restricted environment from an entrance to either of two exits (Figure 4).",
+      "language": "en",
+      "generated": false,
+      "uid": "a85a5a84-bca3-49ff-b8f0-5f9a05de0ab1"
+    },
+    {
+      "term": "environment",
+      "definition": "restricted space where the robot operates and performs search.",
+      "sentence": "Let’s return to our example of the robot that moves in a restricted environment from an entrance to either of two exits (Figure 4).",
+      "language": "en",
+      "generated": false,
+      "uid": "3fd4d569-0e71-4315-a65e-da2eff28ca5d"
+    },
+    {
+      "term": "exit",
+      "definition": "destination point for the robot in the restricted environment.",
+      "sentence": "from an entrance to either of two exits (Figure 4).",
+      "language": "en",
+      "generated": false,
+      "uid": "8fba34c7-7900-46d6-9d16-8d880db560ba"
+    },
+    {
+      "term": "C1",
+      "definition": "specific node identifier in the state space graph used as a starting point.",
+      "sentence": "Therefore, the search start node is C1. The search goal node is B3.",
+      "language": "en",
+      "generated": false,
+      "uid": "373dd762-a818-462c-8970-9a01cb1dc41e"
+    },
+    {
+      "term": "B3",
+      "definition": "specific node identifier in the state space graph representing the target condition.",
+      "sentence": "Therefore, the search start node is C1. The search goal node is B3.",
+      "language": "en",
+      "generated": false,
+      "uid": "e51b8c42-a81b-431e-8383-935f17ec0495"
+    },
+    {
+      "term": "road network",
+      "definition": "a set of roads connecting settlements in a city",
+      "sentence": "Imagine that we are building a recommendation system that will advise tourists about the selection of roads between two cities in France: Paris and Toulouse.",
+      "language": "fr",
+      "generated": false,
+      "uid": "0f534032-f79c-4472-bf1a-b3e79c3f81b2"
+    },
+    {
+      "term": "uninformed search",
+      "definition": "a type of search algorithm that processes only nodes and arcs of the state space graph without additional information about node quality",
+      "sentence": "In the case of uninformed search, all of the paths represented in the state space graph are identical, because uninformed search algorithms process only nodes and arcs of the state space graph. They do not have additional information about the quality of the nodes.",
+      "language": "fr",
+      "generated": false,
+      "uid": "647ea106-cd12-4007-865a-eb30768c4bde"
+    },
+    {
+      "term": "heuristic search",
+      "definition": "a type of search algorithm that can distinguish between paths in the state space graph by using additional information such as distance or location",
+      "sentence": "Heuristic search algorithms are able to distinguish between paths represented in the state space graph. Therefore, each path differs from all of the others.",
+      "language": "fr",
+      "generated": false,
+      "uid": "8ad3ce21-5fc9-4ad8-a2b3-80303e5ce7b9"
+    },
+    {
+      "term": "search solution",
+      "definition": "a path found by a search algorithm that leads from the start node to the goal node",
+      "sentence": "The algorithms provide a solution path as their output.",
+      "language": "fr",
+      "generated": false,
+      "uid": "85e20dbb-f6d7-4473-91ed-59e575189bc7"
+    },
+    {
+      "term": "list",
+      "definition": "a data structure that stores a set of elements in sequential order",
+      "sentence": "Search algorithms are often implemented using a data structure called a list. A list stores a set of elements in sequential order.",
+      "language": "fr",
+      "generated": false,
+      "uid": "f792fae0-7fac-43f8-a014-4c4ff6c327f0"
+    },
+    {
+      "term": "OPEN list",
+      "definition": "a data structure that contains nodes currently under consideration for expansion, with a size equal to the beam width except in specific cases.",
+      "sentence": "Therefore, the OPEN list always contains the same number of nodes as the beam width, excluding: iteration 0, when only the search start node is added to the OPEN list, and a case when the number of direct descendants/ancestors is less than the beam width.",
+      "language": "en",
+      "generated": false,
+      "uid": "689d0b12-3319-4250-b822-83b8cffe43ac"
+    },
+    {
+      "term": "CLOSED list",
+      "definition": "a data structure that stores nodes that have been expanded or are no longer eligible for consideration.",
+      "sentence": "Other nodes are placed on the CLOSED list. Therefore, the OPEN list always contains the same number of nodes as the beam width, excluding: iteration 0, when only the search start node is added to the OPEN list, and a case when the number of direct descendants/ancestors is less than the beam width.",
+      "language": "en",
+      "generated": false,
+      "uid": "c00b1c66-f814-4ff8-8719-6d1badbb989f"
+    },
+    {
+      "term": "iteration",
+      "definition": "a single cycle through the search process where a current node is selected and possibly expanded",
+      "sentence": "The algorithm takes the node located on the first position in the OPEN list - the node A - and checks if it is the search goal node.",
+      "language": "fr",
+      "generated": false,
+      "uid": "6100978f-eb58-4852-ac78-6e99065ee3e5"
+    },
+    {
+      "term": "stack",
+      "definition": "a data structure that works according to the “Last in, First Out” principle: the last data element entered is the first to be processed",
+      "sentence": "In the implementation of this algorithm, new nodes are added to the left side of the OPEN list. Therefore, this list is a type of data structure called a stack.",
+      "language": "fr",
+      "generated": false,
+      "uid": "3634f490-b8e9-40da-8cd6-eea33c856996"
+    },
+    {
+      "term": "depth-first search",
+      "definition": "a traversal method that explores as far along each branch as possible before backtracking.",
+      "sentence": "in which it starts with the first unconsidered path on the left and goes deep inside the state space graph until it reaches a leaf node or a node with a precise heuristic measure.",
+      "language": "en",
+      "generated": false,
+      "uid": "dfbbb391-9608-4439-b1e7-d76cf5f45a96"
+    },
+    {
+      "term": "tree",
+      "definition": "a structure where each node has a single parent and multiple children, used as an analogy for state space graph exploration",
+      "sentence": "In this way, it goes deeper and deeper into the state space graph (Figure 6). If we imagine that the state space graph is similar to a tree’s crown, the search start node is located in the tree’s trunk, and the search goal node is located at the end of some branch.",
+      "language": "fr",
+      "generated": false,
+      "uid": "aaad36fd-df58-463a-be41-99512310fd0c"
+    },
+    {
+      "term": "branch",
+      "definition": "a path from the root (search start node) to a leaf node in a tree-like structure",
+      "sentence": "Depth-First Search will explore branches of the tree sequentially, each time going to the ends of these branches.",
+      "language": "fr",
+      "generated": false,
+      "uid": "591f00d2-c9f1-4cd0-b38c-aabfa3766e39"
+    },
+    {
+      "term": "node A",
+      "definition": "the search start node in an example of depth-first search",
+      "sentence": "The search start node is A. The search goal node is K. Iteration 0: The search start node A is added to the OPEN list.",
+      "language": "fr",
+      "generated": false,
+      "uid": "104b194c-6083-4bf5-a8a3-b6d9a45ca234"
+    },
+    {
+      "term": "node K",
+      "definition": "the search goal node in an example of depth-first search",
+      "sentence": "The search start node is A. The search goal node is K. Iteration 0: The search start node A is added to the OPEN list.",
+      "language": "fr",
+      "generated": false,
+      "uid": "53d8ab03-f1ee-4193-bc72-f7b9c5bf5954"
+    },
+    {
+      "term": "node D",
+      "definition": "a descendant of node A in an example of depth-first search",
+      "sentence": "Iteration 1: The algorithm expands the current node A by generating its three descendants - nodes D, H, and E.",
+      "language": "fr",
+      "generated": false,
+      "uid": "4bf94264-2c76-45d9-ad04-f5658c49fadc"
+    },
+    {
+      "term": "node J",
+      "definition": "a leaf node in an example of depth-first search",
+      "sentence": "Iteration 2: The algorithm expands the current node D by generating its descendant - the node J.",
+      "language": "fr",
+      "generated": false,
+      "uid": "9ef96e35-0c3d-4c57-ae38-fbda6e30e0a1"
+    },
+    {
+      "term": "node H",
+      "definition": "a sibling node in an example of depth-first search",
+      "sentence": "Iteration 4: The algorithm expands the current node H by generating its three descendants - nodes J, I, and E.",
+      "language": "fr",
+      "generated": false,
+      "uid": "ee232a39-fe0a-4412-9ba0-1acf63aa020d"
+    },
+    {
+      "term": "node I",
+      "definition": "a new node added to the OPEN list in an example of depth-first search",
+      "sentence": "The node I is added to the left side of the OPEN list as a new node.",
+      "language": "fr",
+      "generated": false,
+      "uid": "cbd8f5a2-c049-4057-88c9-b791b053e81b"
+    },
+    {
+      "term": "computational resources",
+      "definition": "search time and computer memory",
+      "sentence": "The algorithm reduces the consumption of computational resources (search time and computer memory)",
+      "language": "en",
+      "generated": false,
+      "uid": "76b384f6-a32f-40ea-9771-565c2289de04"
+    },
+    {
+      "term": "cognitive workload",
+      "definition": "the mental effort required for in-depth analysis of a problem",
+      "sentence": "It reduces the cognitive workload that would be needed for the in-depth analysis of a problem",
+      "language": "it",
+      "generated": false,
+      "uid": "ff0b25b5-9b26-41ff-b622-d60e041eb976"
+    },
+    {
+      "term": "intelligent computer system",
+      "definition": "a computer system capable of solving problems using heuristic knowledge",
+      "sentence": "the function reduces the number of nodes visited by an intelligent computer system during search and the search time",
+      "language": "by",
+      "generated": false,
+      "uid": "31bfe360-3f69-4d9e-967e-0b7b0fe83f6a"
+    },
+    {
+      "term": "search time",
+      "definition": "the duration required for a computer to complete a search operation",
+      "sentence": "and the search time",
+      "language": "dj",
+      "generated": false,
+      "uid": "b586f0ca-3e85-4261-b006-921e6ae4014b"
+    },
+    {
+      "term": "problem with incomplete information",
+      "definition": "a problem that cannot be fully described or evaluated due to missing details",
+      "sentence": "when it is not possible to describe or evaluate the problem in full detail",
+      "language": "it",
+      "generated": false,
+      "uid": "4981ce0b-940e-4c82-8b6a-8283dca9d368"
+    },
+    {
+      "term": "heuristic knowledge",
+      "definition": "knowledge related to routine situations that helps solve problems quickly",
+      "sentence": "humans also have a lot of heuristic knowledge related to routine (daily) situations",
+      "language": "it",
+      "generated": false,
+      "uid": "bd6f47c6-8bae-4702-a8f3-f0f615fbb031"
+    },
+    {
+      "term": "exact solution",
+      "definition": "a solution that is determined and complete without ambiguity",
+      "sentence": "problems that may have an exact solution, but there are not enough computational resources to solve them",
+      "language": "it",
+      "generated": false,
+      "uid": "f922e954-261c-49d2-a68c-3ec233592b90"
+    },
+    {
+      "term": "heuristic evaluation function",
+      "definition": "a function that computes heuristic measures for nodes to guide the search toward better solutions.",
+      "sentence": "Thus, they all are evaluated by the heuristic evaluation function, which gives heuristic measures of 8, 5, and 4, respectively.",
+      "language": "en",
+      "generated": false,
+      "uid": "2fe62f13-8776-44ff-a4d2-d8e78a7b13e6"
+    },
+    {
+      "term": "problem-specific knowledge",
+      "definition": "knowledge that varies depending on the type of problem being solved",
+      "sentence": "we use problem-specific knowledge called heuristic knowledge that very often is based on our experience. This knowledge depends on the nature of the problem.",
+      "language": "it",
+      "generated": false,
+      "uid": "bc9d9515-b67e-419c-8a6f-a19543f0b907"
+    },
+    {
+      "term": "heuristic measure",
+      "definition": "a value assigned to nodes during the algorithm's evaluation of game states, used to estimate the outcome.",
+      "sentence": "The assigned heuristic measure indicates that in the worst case, the maximiser will have a measure of 1, but in the best case, the measure may be higher since the task of the maximiser is to win the game.",
+      "language": "en",
+      "generated": false,
+      "uid": "65b7406e-5b2b-43db-8590-e6d13461ba1f"
+    },
+    {
+      "term": "quality of a node",
+      "definition": "the evaluative assessment of how close or promising a node is to the search goal",
+      "sentence": "The analysis of the nodes shows the following: the node D does not lead to the search goal node at all; the node F leads to the search goal node, but paths that include this node are longer in the terms of the number of arcs than a path through the node E. The quality of nodes is measured by two factors: the possibility of reaching the search goal node from the given node n or, in other words, checking if the given node n is located on graph paths leading to the search goal node, and the possibility of reaching the search goal node from the given node n by going along the best (usually the shortest) path.",
+      "language": "it",
+      "generated": false,
+      "uid": "29bb27a8-b19f-4d41-9c19-8ed9d9411458"
+    },
+    {
+      "term": "best path",
+      "definition": "the shortest or most efficient route to reach the goal from a given node",
+      "sentence": "the possibility of reaching the search goal node from the given node n by going along the best (usually the shortest) path.",
+      "language": "by",
+      "generated": false,
+      "uid": "9fd7a653-8594-4bc5-980d-64c4f69c0139"
+    },
+    {
+      "term": "polynomial function",
+      "definition": "a mathematical expression used to represent heuristic evaluation in practice",
+      "sentence": "As a result, the heuristic evaluation function can be represented as a polynomial function, as used by Samuel in his checker program ((Samuel, 1959) as cited in (Luger, 2009)): where n – a node under consideration; ai – the weight of the ith factor; xi – the heuristic measure of the ith factor characterizing states in the problem-solving process.",
+      "language": "it",
+      "generated": false,
+      "uid": "47dd15ba-807d-4a22-82cf-cbd5f62b9513"
+    },
+    {
+      "term": "checker program",
+      "definition": "an example implementation of a chess game using heuristic evaluation",
+      "sentence": "(The paragraph is based on the description given in (Luger, 2009)) Another example is the game of 8-puzzle.",
+      "language": "it",
+      "generated": false,
+      "uid": "7e379632-4988-4f6b-93f7-7beeade89c50"
+    },
+    {
+      "term": "Tic-tac-toe",
+      "definition": "a simple board game used to demonstrate heuristic evaluation",
+      "sentence": "Let’s consider examples of two games demonstrating the idea of problem-specific factors and their numerical representation. Imagine we are building an intelligent computer system that will play a game of Tic-tac-toe.",
+      "language": "it",
+      "generated": false,
+      "uid": "a6ba8105-28f2-4d25-863f-4ad47c125ce2"
+    },
+    {
+      "term": "8-puzzle",
+      "definition": "a sliding tile puzzle used to illustrate heuristic evaluation",
+      "sentence": "Another example is the game of 8-puzzle. There are 8 numbered tiles and 9 squares.",
+      "language": "it",
+      "generated": false,
+      "uid": "4a3f994b-4b81-4aa2-8103-5d65f42880ce"
+    },
+    {
+      "term": "tiles out of place",
+      "definition": "a measure indicating how many tiles are not in their correct positions compared to the goal",
+      "sentence": "The logic behind such a heuristic evaluation function is quite simple: the state that has the fewest tiles out of place is probably closer to the goal state.",
+      "language": "is",
+      "generated": false,
+      "uid": "c8dca567-a065-43a9-ba3d-1241aae9f551"
+    },
+    {
+      "term": "Hill Climbing",
+      "definition": "a heuristic algorithm that always selects the best node based on a defined measure",
+      "sentence": "It should be noted that Hill Climbing always selects the best node. The best node is determined by the heuristic measures of nodes.",
+      "language": "tr",
+      "generated": false,
+      "uid": "0b98cdae-1830-46d7-98f1-523dbf3266dc"
+    },
+    {
+      "term": "best node",
+      "definition": "a node with the highest or lowest value according to a defined measure, depending on the function's definition",
+      "sentence": "The best node is determined by the heuristic measures of nodes. Thus, if the function defines the best heuristic measure to be the highest measure, then Hill Climbing will always choose a node whose heuristic measure is higher than the heuristic measure of the current node, and vice versa—if the function defines the best heuristic measure to be the smallest measure, the algorithm will always choose a node whose heuristic measure is less than the heuristic measure of the current node.",
+      "language": "tr",
+      "generated": false,
+      "uid": "2fca1d55-141e-494e-aea6-75b24ee802f8"
+    },
+    {
+      "term": "heuristic measures",
+      "definition": "a value assigned to nodes to determine their quality or direction in search",
+      "sentence": "The best node is determined by the heuristic measures of nodes. Thus, if the function defines the best heuristic measure to be the highest measure, then Hill Climbing will always choose a node whose heuristic measure is higher than the heuristic measure of the current node.",
+      "language": "tr",
+      "generated": false,
+      "uid": "d89e9fc7-730f-4395-a0ee-170cf23a0f91"
+    },
+    {
+      "term": "local maximum problem",
+      "definition": "a situation where the algorithm stops at a node that has a better heuristic measure than its descendants or ancestors, preventing it from reaching the search goal node",
+      "sentence": "the local maximum problem : the algorithm does not reach the search goal node because it finds a node that has a better heuristic measure than the heuristic measures of its descendants/ancestors (depending on the search direction)",
+      "language": "tr",
+      "generated": false,
+      "uid": "f66aa4a0-19d1-4e5b-b696-15a912d117d6"
+    },
+    {
+      "term": "plateau problem",
+      "definition": "a situation where the algorithm cannot continue searching because the best descendant or ancestor has a heuristic measure equal to the current node's measure",
+      "sentence": "the plateau problem : the algorithm cannot continue the search if the heuristic measure of its best descendant/ancestor (depending on the search direction) is equal to the heuristic measure of the current node.",
+      "language": "tr",
+      "generated": false,
+      "uid": "79e7f4d7-e22c-4267-af99-b70616f2cef2"
+    },
+    {
+      "term": "Best-First Search",
+      "definition": "an algorithm that selects the best node from a list, stores all previously found nodes, and expands only one node per iteration based on heuristic measures",
+      "sentence": "The Best-First Search algorithm does not have these shortcomings. Let’s consider it. In each iteration, Best-First Search selects the best node found so far, but it also keeps all of the nodes that were found before.",
+      "language": "tr",
+      "generated": false,
+      "uid": "972af256-4a63-4bf3-b77b-45a8c5789b54"
+    },
+    {
+      "term": "priority queue",
+      "definition": "a data structure that processes nodes based on their heuristic measures, with the highest measure processed first",
+      "sentence": "The priority queue works according to the principle that the node with the best heuristic measure is processed first.",
+      "language": "tr",
+      "generated": false,
+      "uid": "55dd8498-e11a-45c4-be2c-965081659cd7"
+    },
+    {
+      "term": "evaluated",
+      "definition": "a node is assigned a heuristic measure based on a function that measures its quality or direction",
+      "sentence": "Thus, if the function defines the best heuristic measure to be the highest measure, then Hill Climbing will always choose a node whose heuristic measure is higher than the heuristic measure of the current node.",
+      "language": "tr",
+      "generated": false,
+      "uid": "dbee5dc1-2156-4877-9d5e-f1ea0819ad4a"
+    },
+    {
+      "term": "beam width",
+      "definition": "a fixed parameter that determines how many nodes are kept in the OPEN list at each iteration, representing the maximum size of the search frontier.",
+      "sentence": "The algorithm always simultaneously expands all nodes located in the OPEN list at each iteration, evaluates their descendants/ancestors (depending on a search direction), and chooses the best nodes from the generated nodes according to the beam width.",
+      "language": "en",
+      "generated": false,
+      "uid": "b5345802-f371-46f5-ad05-a6c35de8f41b"
+    },
+    {
+      "term": "algorithm",
+      "definition": "a process or set of steps used to solve a problem, in this case generating and selecting nodes based on heuristic measures within a beam search framework.",
+      "sentence": "The algorithm always simultaneously expands all nodes located in the OPEN list at each iteration, evaluates their descendants/ancestors (depending on a search direction), and chooses the best nodes from the generated nodes according to the beam width. Other nodes are placed on the CLOSED list.",
+      "language": "en",
+      "generated": false,
+      "uid": "50bd540a-5dbe-4760-b0e7-37308f5058b7"
+    },
+    {
+      "term": "ancestors",
+      "definition": "nodes from which a given node can be reached, representing previous states in the state space graph.",
+      "sentence": "The algorithm expands all nodes located in the OPEN list at each iteration, evaluates their descendants/ancestors (depending on a search direction)",
+      "language": "en",
+      "generated": false,
+      "uid": "ee9ce7b9-290a-4df6-bf43-aa97a853370c"
+    },
+    {
+      "term": "iterations",
+      "definition": "the process of expanding nodes from the OPEN list in sequence or simultaneously until the goal is reached.",
+      "sentence": "The algorithm takes the node located on the first position in the OPEN list—the node A—and it becomes the current node. The algorithm checks if it is the search goal node.",
+      "language": "en",
+      "generated": false,
+      "uid": "f8b1454b-1874-4684-ac2d-cec6c2d7d6fa"
+    },
+    {
+      "term": "generated nodes",
+      "definition": "nodes that are created by expanding a given node, representing possible next states.",
+      "sentence": "The algorithm expands the current node A by generating its three descendants—nodes D, H, and E.",
+      "language": "en",
+      "generated": false,
+      "uid": "03cbdd69-a4ef-457a-993a-59ee8c0d322d"
+    },
+    {
+      "term": "complete state space graph",
+      "definition": "a full representation of a game's states from start to goal, usable for algorithms that can process the entire graph.",
+      "sentence": "A complete state space graph includes all states, from the initial state of the game (represented by the root node of the graph), to all goal states of the game (represented by leaf nodes).",
+      "language": "en",
+      "generated": false,
+      "uid": "cbeead5e-b904-40b6-b43d-55464ac4bee4"
+    },
+    {
+      "term": "partial state space graph",
+      "definition": "a sub-graph of a complete state space graph, limited in size or depth for computational efficiency.",
+      "sentence": "A partial state space graph is a sub-graph of the complete state space graph, and usually includes states between a specific node and a predefined depth.",
+      "language": "en",
+      "generated": false,
+      "uid": "aafee217-69f6-4aa9-a89f-7b7cb6eb987e"
+    },
+    {
+      "term": "state transition rules",
+      "definition": "the rules that define how a game's state changes from one state to another during gameplay.",
+      "sentence": "if the state-transition rules of the game can easily be formalised.",
+      "language": "en",
+      "generated": false,
+      "uid": "fa79f051-da7f-448c-9269-035e6bf9a259"
+    },
+    {
+      "term": "maximiser",
+      "definition": "the player who aims to achieve a maximum outcome, i.e., to win the game.",
+      "sentence": "The assigned heuristic measure indicates that in the worst case, the maximiser will have a measure of 1, but in the best case, the measure may be higher since the task of the maximiser is to win the game.",
+      "language": "en",
+      "generated": false,
+      "uid": "972553c4-6fc8-42b6-87d5-6297aef457a3"
+    },
+    {
+      "term": "minimiser",
+      "definition": "a player whose strategy is to prevent the other player from winning, in a two-player zero-sum game with perfect information.",
+      "sentence": "a minimiser – where this player's strategy is to do everything possible to prevent the maximiser from winning the game",
+      "language": "en",
+      "generated": false,
+      "uid": "0ee2c9c2-2ea7-4a88-815e-2ca4a839e3b3"
+    },
+    {
+      "term": "unconsidered path",
+      "definition": "a path in the state space graph that has not been evaluated yet during the search process.",
+      "sentence": "only unconsidered paths are cut off!",
+      "language": "en",
+      "generated": false,
+      "uid": "cc713ce7-caee-4e94-8eca-28c194259852"
+    },
+    {
+      "term": "precise heuristic measure",
+      "definition": "a value assigned to a node when it is a leaf or has only one descendant evaluated, based on the descendant's measure.",
+      "sentence": "After making the cut off, the node whose unconsidered paths were cut off acquires a precise heuristic measure based on the heuristic measure of the only descendant evaluated so far. The node acquires the precise heuristic measure of its descendant, i.e. a value of −1.",
+      "language": "en",
+      "generated": false,
+      "uid": "16ed238f-c52c-43f8-9900-e5a6f557e2c6"
+    },
+    {
+      "term": "intermediate heuristic measure",
+      "definition": "a value between -1 and 1 assigned to nodes when precise measures cannot be determined, used as a bound on possible outcomes.",
+      "sentence": "The intermediate heuristic measure of the current node (the α value) is 1 and the measure of the ancestor (the β value) is 1. By comparing the measures, the algorithm finds that the two nodes have only one common value of 1",
+      "language": "en",
+      "generated": false,
+      "uid": "56c8cbe1-4f04-4806-9164-2f3d78d9c910"
+    },
+    {
+      "term": "MAX level",
+      "definition": "a level in the tree where the current player is the maximiser and no other unconsidered descendants exist.",
+      "sentence": "The node does not have other unconsidered descendants, and it therefore assigns a precise heuristic measure based on the level of the current node and the known heuristic measures of the direct descendants. The descendants of the current node have heuristic measures of 1 and 1. The current node is located at the MIN level",
+      "language": "en",
+      "generated": false,
+      "uid": "83553abf-59ea-448e-93e1-1110ab400225"
+    },
+    {
+      "term": "MIN level",
+      "definition": "a level in the tree where the current player is the minimiser and no other unconsidered descendants exist.",
+      "sentence": "The node does not have other unconsidered descendants, and it therefore assigns a precise heuristic measure based on the level of the current node and the known heuristic measures of the direct descendants. The descendants of the current node have heuristic measures of −1 and −1. The current node is located at the MAX level",
+      "language": "en",
+      "generated": false,
+      "uid": "0020ebcc-5d11-435d-bf0e-4837df47ce6b"
+    },
+    {
+      "term": "α-cut-off",
+      "definition": "an operation where unconsidered paths below a node are cut off when α is greater than β.",
+      "sentence": "The algorithm finds that the value of β is smaller than α, meaning that an α-cut-off should be performed by cutting off unconsidered paths below the current node. The algorithm cuts off one unconsidered path.",
+      "language": "en",
+      "generated": false,
+      "uid": "c8ee3b31-7021-4cdf-84c4-385892539ec0"
+    },
+    {
+      "term": "α-value",
+      "definition": "the value of the alpha variable at a given level.",
+      "sentence": "The intermediate heuristic measure of the current node (the β value) is −1 and the measure of the ancestor (the α value) is 1.",
+      "language": "en",
+      "generated": false,
+      "uid": "0c5a4065-99fd-4c6b-a0ad-aaf76b6d3a12"
+    },
+    {
+      "term": "β-value",
+      "definition": "the value of the beta variable at a given level.",
+      "sentence": "The intermediate heuristic measure of the current node (the β value) is −1 and the measure of the ancestor (the α value) is 1.",
+      "language": "en",
+      "generated": false,
+      "uid": "13aaec25-ab86-4810-8f07-3f738c10ea20"
+    },
+    {
+      "term": "pruning",
+      "definition": "the process of eliminating unconsidered paths during the search to reduce computation.",
+      "sentence": "The algorithm cuts off one unconsidered path.",
+      "language": "en",
+      "generated": false,
+      "uid": "be116748-17ad-4eab-acec-c69cb05e8566"
+    },
+    {
+      "term": "ancestor",
+      "definition": "a node that lies on the path from a current node up to the root in the search tree.",
+      "sentence": "When the algorithm has assigned an intermediate heuristic measure, it checks whether the ancestor of the current node in the current path also has an intermediate heuristic measure.",
+      "language": "en",
+      "generated": false,
+      "uid": "bfe267af-eb93-419f-91e0-aa45d07033d4"
+    },
+    {
+      "term": "α value",
+      "definition": "a specific intermediate heuristic measure assigned to a node in the α-cut-off operation.",
+      "sentence": "The intermediate heuristic measure of the current node (the α value) is 1 and the measure of the ancestor (the β value) is 1. By comparing the measures, the algorithm finds that the two nodes have only one common value of 1",
+      "language": "en",
+      "generated": false,
+      "uid": "72a6c5f8-61b6-4431-b6fc-9c953385815d"
+    },
+    {
+      "term": "β value",
+      "definition": "a specific intermediate heuristic measure assigned to a node in the β-cut-off operation.",
+      "sentence": "The intermediate heuristic measure of the current node (the α value) is 1 and the measure of the ancestor (the β value) is 1. By comparing the measures, the algorithm finds that the two nodes have only one common value of 1",
+      "language": "en",
+      "generated": false,
+      "uid": "901125c9-3c84-41d9-aea4-2f9ce59052e9"
+    },
+    {
+      "term": "β-cut-off",
+      "definition": "an operation where unconsidered paths below a node are cut off when β is less than α.",
+      "sentence": "The algorithm finds that the two nodes have only one common value of 1 or, in another words, the α value of the current node is equal to the β value of the ancestor, meaning that a β-cut-off should be performed by cutting off the unconsidered paths below the current node. The algorithm cuts off one unconsidered path.",
+      "language": "en",
+      "generated": false,
+      "uid": "2f90711c-97dc-48aa-af10-23c6f1b6edf2"
+    },
+    {
+      "term": "strategy",
+      "definition": "a method or plan for processing a partial state space graph using the described principles.",
+      "sentence": "Let’s consider these strategies. This is a good result for such a small state space graph. Although we have applied the minimax algorithm and alpha-beta pruning to a complete state space graph in this game, these principles can also be used in strategies for processing a partial state space graph.",
+      "language": "en",
+      "generated": false,
+      "uid": "dbe3b1f3-013c-4486-8f5e-f68fb63bbd77"
+    },
+    {
+      "term": "data object",
+      "definition": "an entity described by input features (x) with a corresponding output value (y) in a dataset used for training linear regression.",
+      "sentence": "In the case of the example given before, it represents the number of state-financed athletes describing a data object “country”. The value of output variable y is also given in the dataset for each data object.",
+      "language": "en",
+      "generated": false,
+      "uid": "391e83e2-3ffe-4525-8e68-d5b853a3da26"
+    },
+    {
+      "term": "dataset",
+      "definition": "a collection of data objects",
+      "sentence": "a set of data about patients who attended Hospital A between January and May in 2019",
+      "language": "en",
+      "generated": false,
+      "uid": "1be0afd3-faf5-4839-a9b3-361d498097ed"
+    },
+    {
+      "term": "feature",
+      "definition": "a measurable characteristic/property of a data object used as an input variable to a machine learning algorithm, for example, the patient's temperature.",
+      "sentence": "a measurable characteristic/property of a data object used as an input variable to a machine learning algorithm",
+      "language": "en",
+      "generated": false,
+      "uid": "b8adf462-38e3-4698-84cf-dcfcfb06cb27"
+    },
+    {
+      "term": "feature value",
+      "definition": "a specific value of a feature, for example, if the feature is “the patient’s temperature”, then its value for a specific patient can be 38oC.",
+      "sentence": "a specific value of a feature",
+      "language": "en",
+      "generated": false,
+      "uid": "4aeb6122-5010-4786-9de7-3f3f84f9c3ad"
+    },
+    {
+      "term": "feature set",
+      "definition": "a set of all features characterising a data object, for example, the patient's temperature, blood pressure, weight, blood test results, and others can represent one patient in the dataset.",
+      "sentence": "a set of all features characterising a data object",
+      "language": "en",
+      "generated": false,
+      "uid": "306401f4-7002-4e0a-8421-a59e25ba1c8c"
+    },
+    {
+      "term": "hyperparameter",
+      "definition": "an external configuration variable whose value is typically set by the developer arbitrarily before the training (for example, learning rate, number of neurons in an artificial neural network, etc.)",
+      "sentence": "an external configuration variable whose value is typically set by the developer arbitrarily before the training",
+      "language": "en",
+      "generated": false,
+      "uid": "e463858b-9d93-4e39-a984-fbdc69057ddb"
+    },
+    {
+      "term": "model",
+      "definition": "an internal configuration variable of the model whose value is found (learnt) by a machine learning algorithm during the training.",
+      "sentence": "an internal configuration variable of the model whose value is found (learnt) by a machine learning algorithm during the training.",
+      "language": "en",
+      "generated": false,
+      "uid": "f40786a3-f26b-4f37-bc1c-f0e086cecf6f"
+    },
+    {
+      "term": "model output",
+      "definition": "a result of applying a model to given data objects.",
+      "sentence": "a result of applying a model to given data objects.",
+      "language": "en",
+      "generated": false,
+      "uid": "c751293e-f56f-4709-b4b8-673f85c1760e"
+    },
+    {
+      "term": "parameter",
+      "definition": "an internal configuration variable of the model whose value is found (learnt) by a machine learning algorithm during the training.",
+      "sentence": "an internal configuration variable of the model whose value is found (learnt) by a machine learning algorithm during the training.",
+      "language": "en",
+      "generated": false,
+      "uid": "84a91958-df3d-4da2-b51f-ca8d6be16d8d"
+    },
+    {
+      "term": "test set",
+      "definition": "a subset of the dataset that is used in the testing of the model.",
+      "sentence": "a subset of the dataset that is used in the testing of the model.",
+      "language": "en",
+      "generated": false,
+      "uid": "73e83309-33f5-4da0-90ad-9ae5d6970e46"
+    },
+    {
+      "term": "testing",
+      "definition": "the process of checking the performance of the model, usually using data previously unseen by the machine learning algorithm.",
+      "sentence": "the process of checking the performance of the model, usually using data previously unseen by the machine learning algorithm.",
+      "language": "en",
+      "generated": false,
+      "uid": "f28320e8-3cb3-479e-806c-1dfd81ea3239"
+    },
+    {
+      "term": "training",
+      "definition": "the process of determining the best values of parameters comprising a model and identifying relationships and patterns in the data.",
+      "sentence": "the process of determining the best values of parameters comprising a model and identifying relationships and patterns in the data.",
+      "language": "en",
+      "generated": false,
+      "uid": "a444f192-250e-402e-b644-c9a4e01a7386"
+    },
+    {
+      "term": "training set",
+      "definition": "a subset of the dataset used in the training of the model.",
+      "sentence": "a subset of the dataset used in the training of the model.",
+      "language": "en",
+      "generated": false,
+      "uid": "0dbeda3a-d6c6-48f7-8173-3220de71223f"
+    },
+    {
+      "term": "data pre-processing",
+      "definition": "typically includes replacing missing or invalid data, data normalisation, identifying key features, reducing dimensionality, transforming textual data into numerical data, etc.",
+      "sentence": "replacing missing or invalid data, data normalisation, identifying key features, reducing dimensionality, transforming textual data into numerical data",
+      "language": "en",
+      "generated": false,
+      "uid": "2e3eb5b4-17b6-4716-8f98-4ef0a0624108"
+    },
+    {
+      "term": "supervised learning",
+      "definition": "a type of machine learning task where the model is trained on a labeled dataset to predict outputs for new inputs.",
+      "sentence": "In this topic, three algorithms – Linear Regression, Logistic Regression, and k-Nearest Neighbours - will be considered to demonstrate both tasks of supervised learning: regression and classification.",
+      "language": "en",
+      "generated": false,
+      "uid": "902064ab-b837-418c-8379-1549a89cecff"
+    },
+    {
+      "term": "explicit learning",
+      "definition": "this type of learning can be characterised as \"Train me!\"",
+      "sentence": "\"Train me!\"",
+      "language": "en",
+      "generated": false,
+      "uid": "932a5ce7-9983-498d-a4c1-2972e7c32905"
+    },
+    {
+      "term": "unsupervised learning",
+      "definition": "one machine learning algorithm can often simplify code and perform better. Complex problems for which there is no good solution at all using a traditional problem-solving approach.",
+      "sentence": "one machine learning algorithm can often simplify code and perform better. Complex problems for which there is no good solution at all using a traditional problem-solving approach.",
+      "language": "en",
+      "generated": false,
+      "uid": "4a605125-6e53-46fa-9b9f-0c10ba3e4df3"
+    },
+    {
+      "term": "reinforcement learning",
+      "definition": "getting insights about complex problems and large amounts of data by finding underlying patterns and structure of data. Machine learning solutions can adapt to new data.",
+      "sentence": "getting insights about complex problems and large amounts of data by finding underlying patterns and structure of data. Machine learning solutions can adapt to new data.",
+      "language": "en",
+      "generated": false,
+      "uid": "d1dcd4ef-2856-47c1-8a53-8f10c5d3bef3"
+    },
+    {
+      "term": "classification",
+      "definition": "performed when labels of data objects are presented as categories like spam or not spam, cat or dog, etc. Therefore, each data object belongs to a specific category/class.",
+      "sentence": "when labels of data objects are presented as categories like spam or not spam, cat or dog, etc. Therefore, each data object belongs to a specific category/class.",
+      "language": "en",
+      "generated": false,
+      "uid": "0dce93dc-3400-4fe6-bae8-9b94e23f85fe"
+    },
+    {
+      "term": "Linear Regression",
+      "definition": "a supervised machine learning algorithm that assumes a linear relationship between input variables and a single output variable, predicting numerical values such as house price or number of graduates.",
+      "sentence": "Linear regression is a supervised machine learning algorithm that assumes a linear relationship between the input variables and the single output variable. Input variables are feature values of data objects. The output variable is a prediction made by the linear regression model. It is a real number in a range from minus infinity to infinity.",
+      "language": "en",
+      "generated": false,
+      "uid": "30e35054-7e16-43c6-a727-02eb1304d1d2"
+    },
+    {
+      "term": "regression",
+      "definition": "a method for finding a cause-and-effect relationship between two variables: one independent and one dependent, where the dependent variable depends on the independent variable.",
+      "sentence": "In general, the concept of regression means searching for a cause-and-effect relationship between two variables: independent one and dependent one (Figure 1). For example, we can assume that there is a cause-and-effect relationship between the education level of an employee (an independent variable) and his/her salary (a dependent variable), i.e., we assume that the salary depends on the education level: the higher is the education level, the higher is the salary.",
+      "language": "en",
+      "generated": false,
+      "uid": "6fe45226-cd06-4431-9b45-43d2a5ee8565"
+    },
+    {
+      "term": "linear",
+      "definition": "the relationship between two variables has a linear pattern and can be represented by a straight line in two-dimensional space.",
+      "sentence": "\"Linear\" means that the relationship expected between the two mentioned variables has a linear pattern and thus can be represented by a straight line in the two-dimensional space, as shown in Figure 1.",
+      "language": "en",
+      "generated": false,
+      "uid": "e410c4c8-5dc8-4200-80a1-3ead43c3ab90"
+    },
+    {
+      "term": "input variable",
+      "definition": "a feature value of a data object that is used to predict the output variable in linear regression.",
+      "sentence": "Linear regression is a supervised machine learning algorithm that assumes a linear relationship between the input variables and the single output variable. Input variables are feature values of data objects.",
+      "language": "en",
+      "generated": false,
+      "uid": "9394b4ad-c685-42cd-9d63-a60eb9681577"
+    },
+    {
+      "term": "output variable",
+      "definition": "a prediction made by the linear regression model, which is a real number representing the dependent variable in the cause-and-effect relationship.",
+      "sentence": "Linear regression is a supervised machine learning algorithm that assumes a linear relationship between the input variables and the single output variable. Input variables are feature values of data objects. The output variable is a prediction made by the linear regression model. It is a real number in a range from minus infinity to infinity.",
+      "language": "en",
+      "generated": false,
+      "uid": "57eaf8d9-8426-49c0-9988-b108f6536bda"
+    },
+    {
+      "term": "supervised machine learning algorithm",
+      "definition": "a type of machine learning algorithm that assumes a linear relationship between input variables and output variable, predicting numerical values such as house price or number of graduates.",
+      "sentence": "Linear regression is a supervised machine learning algorithm that assumes a linear relationship between the input variables and the single output variable. Input variables are feature values of data objects. The output variable is a prediction made by the linear regression model. It is a real number in a range from minus infinity to infinity.",
+      "language": "en",
+      "generated": false,
+      "uid": "5b30373c-5851-4740-883a-16b2cb139a42"
+    },
+    {
+      "term": "x",
+      "definition": "the value of the input variable, representing a specific feature of a data object.",
+      "sentence": "There is a dataset with data collected in the past. The dataset contains the known values of one input variable x , representing a specific feature, i.e. a data object is characterised by one feature (Table 1). For example, we have a dataset characterising countries by the number of state-financed athletes in each country (Table 2). In this case, the number of state-financed athletes is a feature ( x ) describing a data object “country”.",
+      "language": "en",
+      "generated": false,
+      "uid": "633673f0-994b-46dd-967e-6008effb462a"
+    },
+    {
+      "term": "y",
+      "definition": "the value of the output variable, representing a prediction or measurement related to the input variable in regression.",
+      "sentence": "The dataset given in Table 2 contains data collected in the past. However, we want to predict the output value for a new data object (that is not included in the dataset), for example, for a country with 506 state-financed athletes. It means that we need to find a mathematical relationship between x and y hidden in the dataset that we already have, i.e., we need to understand the relationship between the number of state-financed athletes and the number of victories at world tournaments.",
+      "language": "en",
+      "generated": false,
+      "uid": "00e893b9-262e-4fc9-8606-96f48f1245dd"
+    },
+    {
+      "term": "mathematical relationship",
+      "definition": "the hidden pattern between input and output variables that linear regression aims to discover from training data.",
+      "sentence": "It means that we need to find a mathematical relationship between x and y hidden in the dataset that we already have, i.e., we need to understand the relationship between the number of state-financed athletes and the number of victories at world tournaments.",
+      "language": "en",
+      "generated": false,
+      "uid": "68d737fd-e5b8-4954-8af4-a3c4f1cefb97"
+    },
+    {
+      "term": "linear function",
+      "definition": "a mathematical expression y = m*x + b that represents a straight line with slope m and intercept b in two-dimensional space.",
+      "sentence": "\"Linear\" means that the relationship expected between the two mentioned variables has a linear pattern and thus can be represented by a straight line in the two-dimensional space, as shown in Figure 1. Linear regression is a supervised machine learning algorithm that assumes a linear relationship between the input variables and the single output variable.",
+      "language": "en",
+      "generated": false,
+      "uid": "c295e469-618e-4edf-bfda-da0c7101188a"
+    },
+    {
+      "term": "slope",
+      "definition": "the coefficient m in the equation y = m*x + b that represents how much y changes for each unit increase in x.",
+      "sentence": "\"Linear\" means that the relationship expected between the two mentioned variables has a linear pattern and thus can be represented by a straight line in the two-dimensional space, as shown in Figure 1. The equation given above describes a linear function represented as a straight line in the two-dimensional space (Figure 2). In the case of the linear regression used in machine learning, the same equation of the linear relationship is represented as follows: However, it is necessary to consider that the specific data objects in the dataset usually do not lie perfectly on a straight line, as shown in Figure 2. For real datasets, only some data objects (if any) could lie on the line.",
+      "language": "en",
+      "generated": false,
+      "uid": "5ddb7d39-83a4-4fa0-8922-3a232f7063d3"
+    },
+    {
+      "term": "intercept",
+      "definition": "the value of y when x is equal to 0, also called the bias term or coefficient in linear regression.",
+      "sentence": "\"Linear\" means that the relationship expected between the two mentioned variables has a linear pattern and thus can be represented by a straight line in the two-dimensional space, as shown in Figure 1. The equation given above describes a linear function represented as a straight line in the two-dimensional space (Figure 2). In the case of the linear regression used in machine learning, the same equation of the linear relationship is represented as follows: However, it is necessary to consider that the specific data objects in the dataset usually do not lie perfectly on a straight line, as shown in Figure 2. For real datasets, only some data objects (if any) could lie on the line.",
+      "language": "en",
+      "generated": false,
+      "uid": "d7d089af-007c-4f3a-ab57-77a46c121e7b"
+    },
+    {
+      "term": "bias term",
+      "definition": "the intercept term b in the linear regression equation y = m*x + b that represents the value of y when x is zero.",
+      "sentence": "\"Linear\" means that the relationship expected between the two mentioned variables has a linear pattern and thus can be represented by a straight line in the two-dimensional space, as shown in Figure 1. The equation given above describes a linear function represented as a straight line in the two-dimensional space (Figure 2). In the case of the linear regression used in machine learning, the same equation of the linear relationship is represented as follows: However, it is necessary to consider that the specific data objects in the dataset usually do not lie perfectly on a straight line, as shown in Figure 2. For real datasets, only some data objects (if any) could lie on the line.",
+      "language": "en",
+      "generated": false,
+      "uid": "2a70899a-39ba-4b08-977a-edc9d1d289f0"
+    },
+    {
+      "term": "weight",
+      "definition": "a parameter that determines the position and slope of the best-fitting straight line in linear regression.",
+      "sentence": "\"Linear\" means that the relationship expected between the two mentioned variables has a linear pattern and thus can be represented by a straight line in the two-dimensional space, as shown in Figure 1. The equation given above describes a linear function represented as a straight line in the two-dimensional space (Figure 2). In the case of the linear regression used in machine learning, the same equation of the linear relationship is represented as follows: However, it is necessary to consider that the specific data objects in the dataset usually do not lie perfectly on a straight line, as shown in Figure 2. For real datasets, only some data objects (if any) could lie on the line.",
+      "language": "en",
+      "generated": false,
+      "uid": "c525a513-cb63-4091-a075-7d92beb900dd"
+    },
+    {
+      "term": "best fit",
+      "definition": "the line that minimizes the distance between itself and each data object, representing the optimal linear relationship for the dataset.",
+      "sentence": "\"Linear\" means that the relationship expected between the two mentioned variables has a linear pattern and thus can be represented by a straight line in the two-dimensional space, as shown in Figure 1. The equation given above describes a linear function represented as a straight line in the two-dimensional space (Figure 2). In the case of the linear regression used in machine learning, the same equation of the linear relationship is represented as follows: However, it is necessary to consider that the specific data objects in the dataset usually do not lie perfectly on a straight line, as shown in Figure 2. For real datasets, only some data objects (if any) could lie on the line.",
+      "language": "en",
+      "generated": false,
+      "uid": "f8487549-534a-42cc-837d-8caf93551ae3"
+    },
+    {
+      "term": "error",
+      "definition": "the difference between the predicted output value and the actual output value in linear regression.",
+      "sentence": "\"Linear\" means that the relationship expected between the two mentioned variables has a linear pattern and thus can be represented by a straight line in the two-dimensional space, as shown in Figure 1. The equation given above describes a linear function represented as a straight line in the two-dimensional space (Figure 2). In the case of the linear regression used in machine learning, the same equation of the linear relationship is represented as follows: However, it is necessary to consider that the specific data objects in the dataset usually do not lie perfectly on a straight line, as shown in Figure 2. For real datasets, only some data objects (if any) could lie on the line.",
+      "language": "en",
+      "generated": false,
+      "uid": "09e0d0bc-b27f-4170-aa1c-f2344b80c72f"
+    },
+    {
+      "term": "hierarchical clustering",
+      "definition": "building a hierarchy of clusters that is characterised by the following aspects: the clusters at each level of the hierarchy are created by merging/dividing clusters at the next lower level; at the lowest level, each cluster contains a single data object; at the highest level, there is only one cluster containing all of the data objects.",
+      "sentence": "Hierarchical clustering is about building a hierarchy of clusters that is characterised by the following aspects (Hastie, 2017)",
+      "language": "de",
+      "generated": false,
+      "uid": "0c45858a-863c-4846-8418-5bbbb995b0a5"
+    },
+    {
+      "term": "domain",
+      "definition": "The specific field or area of application, such as medical diagnosis, e-commerce, or security, where the performance metrics are evaluated. It is mentioned that the importance of precision and recall depends on the domain.",
+      "sentence": "The importance of precision and recall depends on a domain (Kubat, 2017; Geron, 2017).",
+      "language": "dj",
+      "generated": false,
+      "uid": "2f5b33f1-ecc1-4e16-a591-a9cdcf485c7c"
+    },
+    {
+      "term": "Silhouette score",
+      "definition": "a measure of how similar a data object is to its own cluster compared to other clusters; values range from -1 to 1",
+      "sentence": "The closer values of the Silhouette score is to +1, the better are clusters are separated.",
+      "language": "en",
+      "generated": false,
+      "uid": "af563bcf-e8ec-444b-acf2-0ef4b19f4e2c"
+    },
+    {
+      "term": "knowledge base",
+      "definition": "a set of production rules stored in the system",
+      "sentence": "The knowledge base typically includes many production rules interrelated by sharing knowledge: knowledge units in the THEN part of one rule make the IF part of another rule (Mallach, 1994). The knowledge base for real-world problems includes a considerable number of production rules. In each iteration, all production rules stored in the knowledge base are matched against the pattern.",
+      "language": "en",
+      "generated": false,
+      "uid": "72e19a4c-e66f-4566-adfb-933d9d37c0b9"
+    },
+    {
+      "term": "regular procedure",
+      "definition": "a self-contained piece of computer code written by the developer of an intelligent computer system",
+      "sentence": "A regular procedure is a self-contained piece of computer code written by the developer of an intelligent computer system ( Negnevitsky , 2011).",
+      "language": "en",
+      "generated": false,
+      "uid": "275d2bc4-f5a5-4b64-b0e0-69f6dd76fb1f"
+    },
+    {
+      "term": "demon",
+      "definition": "a procedure that is invoked as a side effect of some other action in the knowledge base",
+      "sentence": "A demon is a procedure that is invoked as a side effect of some other action in the knowledge base (Luger, 2009).",
+      "language": "en",
+      "generated": false,
+      "uid": "4d758033-c011-4ea7-bd20-d1f67574c984"
+    },
+    {
+      "term": "slot value",
+      "definition": "the value stored for a particular slot in a frame",
+      "sentence": "Demons are triggered automatically when a slot value is accessed (Mallach, 1994).",
+      "language": "en",
+      "generated": false,
+      "uid": "a84bffed-ba69-48ad-9a81-c504582fb3eb"
+    },
+    {
+      "term": "class",
+      "definition": "a high-level frame that defines shared slots and behavior for multiple instances",
+      "sentence": "There are standard demons defined for frames, although different shells for creating frame-based knowledge bases can offer a slightly different set of demons with different titles. The common demons are: IF-NEEDED – it is triggered when the slot value is unspecified, and it is necessary to calculate/to set it; IF-CHANGED – it is triggered when a slot value changes; IF-ADDED – it is triggered when a slot value is unspecified, and it is added to the frame; IF-REMOVED – it is triggered when a slot value is deleted. Although the demons are triggered automatically, their executable part (the code describing what will happen when the demon is called) should be developed by the developer of the intelligent computer system.",
+      "language": "en",
+      "generated": false,
+      "uid": "34ad1589-5b60-48e5-b7b8-0735deb14328"
+    },
+    {
+      "term": "frame",
+      "definition": "a structured representation that stores knowledge about an object in one place, with hierarchical organization and support for inheritance and executable demons",
+      "sentence": "Frames store knowledge about each object in one place in a structured way; frames provide the hierarchical organization of knowledge; frames allow the representation of various knowledge about objects; frames support inheritance; frames allow adding executable demons to slots to control access to slot values and, therefore, ensure the knowledge base's integrity.",
+      "language": "en",
+      "generated": false,
+      "uid": "3e078ff6-1deb-445e-852b-451e928c34c8"
+    },
+    {
+      "term": "instance",
+      "definition": "a specific realization or object of a class frame",
+      "sentence": "TreeAlex and BrownLucie are instances for the Person class frame; Tom is an instance for the Cat class frame; Rex is an instance for the Dog class frame.",
+      "language": "en",
+      "generated": false,
+      "uid": "d1c369bb-6af7-48a3-a2c6-11eb4337ce4c"
+    },
+    {
+      "term": "class slot",
+      "definition": "a shared slot defined in a class frame that is inherited by sub-class frames and instance frames",
+      "sentence": "The generalization relation is defined between TreeAlex-Person , BrownLucie-Person , Tom-Cat , Rex-Dog , Cat-Animal , Dog-Animal . It is represented as a Class slot in the sub-class frames and instance frames.",
+      "language": "en",
+      "generated": false,
+      "uid": "afa4eec6-5f35-4f2c-983b-59b66fdcd500"
+    },
+    {
+      "term": "sub-class frame",
+      "definition": "a specialized version of a class frame that inherits slots from its super-class and may add new ones",
+      "sentence": "They inherit slots from the Animal class frame, and each of them has new slots added: Affectionate in the Cat sub-class and Roar and Barking in the Dog sub-class.",
+      "language": "en",
+      "generated": false,
+      "uid": "8a1f3c8f-faab-4bc2-9103-c204944f3edb"
+    },
+    {
+      "term": "associative relation",
+      "definition": "a bidirectional relationship between two frames that represents a connection or ownership",
+      "sentence": "The frame system also represents the following associative relations between frames: BrownLucie - Tom , the relation Owns , and Tom- BrownLucie , the relation Animal owner; TreeAlex - Rex , the relation Owns , and Rex- TreeAlex , the relation Animal owner; Tom – Rex , the relation Afraid of.",
+      "language": "en",
+      "generated": false,
+      "uid": "51858294-a8cb-4f1b-b8bc-640c635656eb"
+    },
+    {
+      "term": "procedural knowledge representation schema",
+      "definition": "a set of problem-solving instructions not a knowledge about objects/concepts, represented in the form of rules",
+      "sentence": "Rule-based or procedural knowledge representation schemas are used to develop such systems. They represent a set of problem-solving instructions not a knowledge about objects/concepts.",
+      "language": "en",
+      "generated": false,
+      "uid": "92f73194-90b4-48b8-8fe8-d71a326488e6"
+    },
+    {
+      "term": "production rule",
+      "definition": "a logical statement in the form IF... THEN..., used to infer conclusions from facts",
+      "sentence": "The inference engine performs the control cycle \"Recognize-act\" (Luger, 2009) to link the rules given in the knowledge base with the facts provided in the working memory. Thus, the inference engine carries out the reasoning by interpreting and applying the rules whereby the rule-based expert system reaches a solution.",
+      "language": "en",
+      "generated": false,
+      "uid": "7c546878-e647-4a6e-ad6d-cfabc62937f1"
+    },
+    {
+      "term": "condition",
+      "definition": "a part of a production rule that consists of an object and its value linked by an operator such as is, are, is not, are not, mathematical operators, etc.",
+      "sentence": "Regarding the parts of condition and consequence, it is worst to remember that ( Negnevitsky , 2011): a rule can have multiple conditions and consequences joined by the logic operators AND, OR or a combination of both; the parts of condition and consequence usually incorporates two parts: an object (linguistic object) and its value. An operator (such as is, are, is not, are not, mathematical operators) links the object and its value.",
+      "language": "en",
+      "generated": false,
+      "uid": "57d19fd0-8d96-44e4-b842-a731df93c4f5"
+    },
+    {
+      "term": "consequence",
+      "definition": "the part of a production rule that follows the condition and may include an action, statement, or conclusion",
+      "sentence": "According to (Winston, 1992), if statements are added to the THEN part of rules, then a deductive intelligent system is acquired; however, if the THEN part of rules contains actions, then a reactive intelligent system is acquired.",
+      "language": "en",
+      "generated": false,
+      "uid": "6eeb31eb-1221-4fb7-a7eb-b5a6cf41fb5a"
+    },
+    {
+      "term": "object",
+      "definition": "a linguistic object that has a value and is used in conditions or consequences of production rules",
+      "sentence": "An operator (such as is, are, is not, are not, mathematical operators) links the object and its value.",
+      "language": "en",
+      "generated": false,
+      "uid": "97bee934-31be-4401-a5eb-a50fdc77e7e6"
+    },
+    {
+      "term": "value",
+      "definition": "the specific value assigned to an object in a condition or consequence of a production rule",
+      "sentence": "Objects’ values – 30, 10, big, brown and bear.",
+      "language": "en",
+      "generated": false,
+      "uid": "9b609573-67e5-4ac7-b466-429f5ccbd827"
+    },
+    {
+      "term": "logic operator",
+      "definition": "an operator that joins multiple conditions or consequences in a production rule using AND, OR, or combinations of both",
+      "sentence": "a rule can have multiple conditions and consequences joined by the logic operators AND, OR or a combination of both.",
+      "language": "en",
+      "generated": false,
+      "uid": "dab2ff32-7624-4064-831c-12344915e323"
+    },
+    {
+      "term": "deductive intelligent system",
+      "definition": "an intelligent system that acquires knowledge when if statements are added to the THEN part of rules without actions",
+      "sentence": "(Winston, 1992), if statements are added to the THEN part of rules, then a deductive intelligent system is acquired; however, if the THEN part of rules contains actions, then a reactive intelligent system is acquired.",
+      "language": "en",
+      "generated": false,
+      "uid": "4e4bc69d-137a-4537-aca7-eeb72dcd4a7b"
+    },
+    {
+      "term": "reactive intelligent system",
+      "definition": "an intelligent system that acquires knowledge when the THEN part of rules contains actions",
+      "sentence": "(Winston, 1992), if the THEN part of rules contains actions, then a reactive intelligent system is acquired.",
+      "language": "en",
+      "generated": false,
+      "uid": "918ffcc4-0b00-4915-89e9-fd7e02ef4d8f"
+    },
+    {
+      "term": "production system",
+      "definition": "rule-based expert system that consists of three parts: a knowledge base, a working memory, and an inference engine",
+      "sentence": "Production systems are rule-based expert systems that consist of three parts (Callan, 2003; Luger, 2005; Negnevitsky , 2011): a knowledge base that contains a set of production rules; a working memory; an inference engine.",
+      "language": "en",
+      "generated": false,
+      "uid": "bdb3a22c-a7b3-4adc-9309-b0ea96f607bc"
+    },
+    {
+      "term": "working memory",
+      "definition": "a storage component that holds facts, conclusions, confidence measures, dead ends, etc., related to the current problem-solving state",
+      "sentence": "The working memory contains a description of the current state of the problem-solving process (Callan, 2003; Luger, 2009) that is called a pattern. The case-specific data are separated from the knowledge base... These data are assumed to be correct when they are used.",
+      "language": "en",
+      "generated": false,
+      "uid": "dfcfccd4-ce27-4e6e-96cf-4a2d8fbd47fd"
+    },
+    {
+      "term": "pattern",
+      "definition": "a description of the current state of the problem-solving process stored in working memory, used for pattern-directed search",
+      "sentence": "The case-specific data are separated from the knowledge base (Luger, 2009). These data are assumed to be correct when they are used. The working memory contains a description of the current state of the problem-solving process that is called a pattern.",
+      "language": "en",
+      "generated": false,
+      "uid": "8e4ab8c9-137f-435b-984f-3320f897e0c4"
+    },
+    {
+      "term": "inference engine",
+      "definition": "a component that links production rules with facts in working memory to perform reasoning and reach conclusions",
+      "sentence": "The inference engine performs the control cycle \"Recognize-act\" (Luger, 2009) to link the rules given in the knowledge base with the facts provided in the working memory. Thus, the inference engine carries out the reasoning by interpreting and applying the rules whereby the rule-based expert system reaches a solution.",
+      "language": "en",
+      "generated": false,
+      "uid": "87d2a2e7-da7b-4ba6-aa7c-6558c45107d2"
+    },
+    {
+      "term": "explanation facilities",
+      "definition": "system capabilities that provide user with reasoning justification for recommendations or conclusions",
+      "sentence": "Explanation facilities are essential for any expert system because an expert system provides the user with a recommendation, plan, advice, conclusion, or any other result. However, to accept the system’s recommendation, the human expert should be aware of how a particular conclusion was reached, what was the line of reasoning and whether it is valid or not.",
+      "language": "en",
+      "generated": false,
+      "uid": "de6590cc-cff0-4239-9f8d-b87d132fcf23"
+    },
+    {
+      "term": "conflict set",
+      "definition": "a group of production rules that match a pattern simultaneously during search, leading to multiple possible rule applications",
+      "sentence": "If several rules match the pattern, a conflict set is acquired. Production rules in the conflict set are called to be enabled.",
+      "language": "en",
+      "generated": false,
+      "uid": "585bc279-15a2-4623-9db4-b405c8789cac"
+    },
+    {
+      "term": "conflict resolution",
+      "definition": "the strategy used to select one rule from an enabled conflict set and apply it to update working memory during search",
+      "sentence": "For this purpose, a conflict resolution strategy is used; one of the enabled rules is fired, and it changes the content of the working memory because its IF or THEN part is added to the working memory (depending on the search direction )",
+      "language": "en",
+      "generated": false,
+      "uid": "ee5275fc-5f73-44d3-b5eb-d1dccc47f0d5"
+    },
+    {
+      "term": "control cycle",
+      "definition": "the sequence \"Recognize-act\" that drives inference in expert systems, involving pattern matching and rule application",
+      "sentence": "The control cycle \"Recognize-act\" makes the basis of the inference mechanism. It implements a pattern-directed search in the knowledge base by searching for a match between the content of the working memory and production rules.",
+      "language": "en",
+      "generated": false,
+      "uid": "948fdbd3-d841-4af4-bf33-95e2fa7f983c"
+    },
+    {
+      "term": "pattern-directed search",
+      "definition": "a search method that matches patterns from working memory against IF or THEN parts of production rules to find relevant rules",
+      "sentence": "While implementing the pattern-directed search, the control cycle performs the following steps: the working memory contains a pattern corresponding to the current state of the problem-solving process; the pattern is matched against the IF or THEN part (it depends on the search direction) of all rules available in the knowledge base",
+      "language": "en",
+      "generated": false,
+      "uid": "2fcde6a0-02cd-4258-83d8-d2cecb912769"
+    },
+    {
+      "term": "search control strategy",
+      "definition": "a method used to make search more effective by selecting among search direction, rule sequence/structure, or conflict resolution strategy",
+      "sentence": "It is possible to perform two types of search in rule-based expert systems... Three search control strategies are used for this purpose (Luger, 2009): control through the selection of search direction; control through the selection of rule sequence and structure; control through the selection of conflict resolution strategy.",
+      "language": "en",
+      "generated": false,
+      "uid": "20ca1cdb-f771-4f12-8dcf-e2169087da90"
+    },
+    {
+      "term": "forward chaining",
+      "definition": "a forward chaining technique where information is gathered from data and conclusions are inferred step by step until a goal is reached or no further matches occur",
+      "sentence": "Forward chaining is a technique for gathering information and then inferring from it whatever can be inferred (Negnevitsky , 2011). It is typically used for problems of interpretation because, in this type of problems, most of the data are initially given, and the system searches for their interpretation.",
+      "language": "en",
+      "generated": false,
+      "uid": "95a56000-49ac-471c-8aa0-42b34850dca3"
+    },
+    {
+      "term": "backward chaining",
+      "definition": "a goal-driven search method that decomposes a goal into simpler subgoals to find evidence for it",
+      "sentence": "Backward chaining corresponds to a decomposition of the problem’s goal into simpler subgoals; thus, backward search in an expert system corresponds roughly to the process of hypothesis testing in human problem solving.",
+      "language": "en",
+      "generated": false,
+      "uid": "f73fe83d-8837-46b5-a619-97a1af5d326b"
+    },
+    {
+      "term": "rule-based expert system",
+      "definition": "a computer program that uses production rules to solve problems by applying logical inference.",
+      "sentence": "It is possible to combine both search directions in a rule-based expert system ( Negnevitsky , 2011; Winston, 1992).",
+      "language": "en",
+      "generated": false,
+      "uid": "1188298e-d88f-4272-ab5d-56f45f3a3fff"
+    }
+  ],
+  "debug_info": {
+    "chunkSize": 7656,
+    "chunkCount": 41,
+    "contextLength": 4096,
+    "temperature": 0.5,
+    "seed": 42,
+    "prompt": "Your task is to analyze the provided text and create a glossary.\nInstructions:\n1. Extract ALL terms and concepts from the text.\n2. Define them using ONLY the provided text.\n3. NO external knowledge. Synthesize exclusively from source.\n4. DO NOT translate. Keep definitions in the source language.\n5. If no terms found, return an empty list.\n\nText to analyze:\n\n",
+    "elapsedTime": 533.226,
+    "safeMargin": 0.5,
+    "maxResponseTokens": 4096,
+    "maxTimeout": 599940000,
+    "repeatPenalty": -1,
+    "inputSize": 312389
+  }
+}

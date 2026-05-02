@@ -59,6 +59,9 @@ def parse_filename(filename):
             category = "quantization"
             value = exp_part.replace("quant_", "")
             value = quant_code_to_bits(value)
+        elif exp_part.startswith("custom"):
+            category = "custom"
+            value = exp_part.replace("custom_", "")
 
     return model_name, quant, category, value
 
@@ -114,7 +117,7 @@ def run_evaluation():
         model_name, quant, category, value = parse_filename(filename)
 
         full_name = impl.split('-', 1)[-1].split('@')[0]
-        model_info = next((m.info for m in llm_only if full_name in m.info.model_key), None)
+        model_info = next((m.info for m in llm_only if full_name == m.info.model_key), None)
 
         display = model_info.display_name
         match = re.search(r"(\d+\.?\d*)", model_info.params_string)
@@ -141,10 +144,12 @@ def run_evaluation():
             "gold_total": len(gold_set),
             "time_min": round(debug.get('elapsedTime', 0) / 60, 1),
             "chunk_size": round(debug.get('chunkSize', 0), 1),
-            "safe_margin": round(debug.get('safeMargin', 0), 1),
+            "safe_margin": debug.get('safeMargin', 0),
             "contextLength": debug.get('contextLength', 0),
             "temperature": debug.get('temperature', 0),
-            "repeat_penalty": debug.get('repeatPenalty', 0)
+            "repeat_penalty": debug.get('repeatPenalty', 0),
+            "mvision": model_info.vision or False,
+            "mtools": model_info.trained_for_tool_use or False
         }
 
         results.append(row)

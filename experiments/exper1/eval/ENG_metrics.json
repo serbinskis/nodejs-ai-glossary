@@ -1,5 +1,30 @@
 [
   {
+    "filename": "ENG_konspekts.docx-allenai_olmo-3-32b-think@Q4_K_M.json",
+    "model": "olmo-3-32b-think",
+    "display": "Olmo 3 32B Think",
+    "params": 32.0,
+    "quantization": "Q4_K_M",
+    "error": 0.0,
+    "errors": 0,
+    "chunks": 41,
+    "precision": 31.2,
+    "recall": 18.3,
+    "f1": 23.1,
+    "tp": 40,
+    "fp": 88,
+    "fn": 178,
+    "extract_total": 128,
+    "gold_total": 218,
+    "time_min": 65.2,
+    "chunk_size": 7829,
+    "safe_margin": 0.5,
+    "contextLength": 4096,
+    "temperature": 0.5,
+    "mvision": false,
+    "mtools": false
+  },
+  {
     "filename": "ENG_konspekts.docx-allenai_olmocr-2-7b@Q4_K_M.json",
     "model": "olmocr-2-7b",
     "display": "Olmocr 2 7B",
@@ -20,7 +45,34 @@
     "chunk_size": 7669,
     "safe_margin": 0.5,
     "contextLength": 4096,
-    "temperature": 0.5
+    "temperature": 0.5,
+    "mvision": true,
+    "mtools": false
+  },
+  {
+    "filename": "ENG_konspekts.docx-baidu_ernie-4.5-21b-a3b@Q4_K_M.json",
+    "model": "ernie-4.5-21b-a3b",
+    "display": "Ernie 4.5 21B A3B",
+    "params": 21.0,
+    "quantization": "Q4_K_M",
+    "error": 2.4,
+    "errors": 1,
+    "chunks": 42,
+    "precision": 34.4,
+    "recall": 61.5,
+    "f1": 44.1,
+    "tp": 134,
+    "fp": 256,
+    "fn": 84,
+    "extract_total": 390,
+    "gold_total": 218,
+    "time_min": 45.1,
+    "chunk_size": 7532,
+    "safe_margin": 0.5,
+    "contextLength": 4096,
+    "temperature": 0.5,
+    "mvision": false,
+    "mtools": false
   },
   {
     "filename": "ENG_konspekts.docx-bytedance_seed-oss-36b@Q4_K_M.json",
@@ -43,7 +95,9 @@
     "chunk_size": 7653,
     "safe_margin": 0.5,
     "contextLength": 4096,
-    "temperature": 0.5
+    "temperature": 0.5,
+    "mvision": false,
+    "mtools": true
   },
   {
     "filename": "ENG_konspekts.docx-deepseek_deepseek-r1-0528-qwen3-8b@Q4_K_M.json",
@@ -66,7 +120,9 @@
     "chunk_size": 7669,
     "safe_margin": 0.5,
     "contextLength": 4096,
-    "temperature": 0.5
+    "temperature": 0.5,
+    "mvision": false,
+    "mtools": false
   },
   {
     "filename": "ENG_konspekts.docx-essentialai_rnj-1@Q4_K_M.json",
@@ -89,7 +145,9 @@
     "chunk_size": 7829,
     "safe_margin": 0.5,
     "contextLength": 4096,
-    "temperature": 0.5
+    "temperature": 0.5,
+    "mvision": false,
+    "mtools": true
   },
   {
     "filename": "ENG_konspekts.docx-google_gemma-2-27b@Q4_K_M.json",
@@ -112,7 +170,9 @@
     "chunk_size": 7690,
     "safe_margin": 0.5,
     "contextLength": 4096,
-    "temperature": 0.5
+    "temperature": 0.5,
+    "mvision": false,
+    "mtools": false
   },
   {
     "filename": "ENG_konspekts.docx-google_gemma-2-9b@Q4_K_M.json",
@@ -135,7 +195,9 @@
     "chunk_size": 7690,
     "safe_margin": 0.5,
     "contextLength": 4096,
-    "temperature": 0.5
+    "temperature": 0.5,
+    "mvision": false,
+    "mtools": false
   },
   {
     "filename": "ENG_konspekts.docx-google_gemma-3-12b@Q4_K_M.json",
@@ -158,7 +220,9 @@
     "chunk_size": 7674,
     "safe_margin": 0.5,
     "contextLength": 4096,
-    "temperature": 0.5
+    "temperature": 0.5,
+    "mvision": true,
+    "mtools": false
   },
   {
     "filename": "ENG_konspekts.docx-google_gemma-3-1b@Q4_0.json",
@@ -181,7 +245,9 @@
     "chunk_size": 7674,
     "safe_margin": 0.5,
     "contextLength": 4096,
-    "temperature": 0.5
+    "temperature": 0.5,
+    "mvision": false,
+    "mtools": false
   },
   {
     "filename": "ENG_konspekts.docx-google_gemma-3-27b@Q4_0.json",
@@ -204,7 +270,9 @@
     "chunk_size": 7674,
     "safe_margin": 0.5,
     "contextLength": 4096,
-    "temperature": 0.5
+    "temperature": 0.5,
+    "mvision": true,
+    "mtools": false
   },
   {
     "filename": "ENG_konspekts.docx-google_gemma-3-4b@Q4_K_M.json",
@@ -227,7 +295,9 @@
     "chunk_size": 7674,
     "safe_margin": 0.5,
     "contextLength": 4096,
-    "temperature": 0.5
+    "temperature": 0.5,
+    "mvision": true,
+    "mtools": false
   },
   {
     "filename": "ENG_konspekts.docx-google_gemma-3n-e4b@Q4_K_M.json",
@@ -250,7 +320,109 @@
     "chunk_size": 7674,
     "safe_margin": 0.5,
     "contextLength": 4096,
-    "temperature": 0.5
+    "temperature": 0.5,
+    "mvision": false,
+    "mtools": false
+  },
+  {
+    "filename": "ENG_konspekts.docx-google_gemma-4-26b-a4b@Q4_K_M.json",
+    "model": "gemma-4-26b-a4b",
+    "display": "Gemma 4 26B A4B",
+    "params": 26.0,
+    "quantization": "Q4_K_M",
+    "error": 68.3,
+    "errors": 28,
+    "chunks": 41,
+    "precision": 30.0,
+    "recall": 2.8,
+    "f1": 5.0,
+    "tp": 6,
+    "fp": 14,
+    "fn": 212,
+    "extract_total": 20,
+    "gold_total": 218,
+    "time_min": 75.5,
+    "chunk_size": 7674,
+    "safe_margin": 0.5,
+    "contextLength": 4096,
+    "temperature": 0.5,
+    "mvision": true,
+    "mtools": true
+  },
+  {
+    "filename": "ENG_konspekts.docx-google_gemma-4-31b@Q4_K_M.json",
+    "model": "gemma-4-31b",
+    "display": "Gemma 4 31B",
+    "params": 31.0,
+    "quantization": "Q4_K_M",
+    "error": 39.0,
+    "errors": 16,
+    "chunks": 41,
+    "precision": 35.7,
+    "recall": 27.5,
+    "f1": 31.1,
+    "tp": 60,
+    "fp": 108,
+    "fn": 158,
+    "extract_total": 168,
+    "gold_total": 218,
+    "time_min": 321.3,
+    "chunk_size": 7674,
+    "safe_margin": 0.5,
+    "contextLength": 4096,
+    "temperature": 0.5,
+    "mvision": true,
+    "mtools": true
+  },
+  {
+    "filename": "ENG_konspekts.docx-google_gemma-4-e2b@Q4_K_M.json",
+    "model": "gemma-4-e2b",
+    "display": "Gemma 4 E2B",
+    "params": 4.6,
+    "quantization": "Q4_K_M",
+    "error": 2.4,
+    "errors": 1,
+    "chunks": 41,
+    "precision": 28.4,
+    "recall": 52.3,
+    "f1": 36.8,
+    "tp": 114,
+    "fp": 287,
+    "fn": 104,
+    "extract_total": 401,
+    "gold_total": 218,
+    "time_min": 11.0,
+    "chunk_size": 7674,
+    "safe_margin": 0.5,
+    "contextLength": 4096,
+    "temperature": 0.5,
+    "mvision": true,
+    "mtools": true
+  },
+  {
+    "filename": "ENG_konspekts.docx-google_gemma-4-e4b@Q4_K_M.json",
+    "model": "gemma-4-e4b",
+    "display": "Gemma 4 E4B",
+    "params": 7.5,
+    "quantization": "Q4_K_M",
+    "error": 4.9,
+    "errors": 2,
+    "chunks": 41,
+    "precision": 36.9,
+    "recall": 58.3,
+    "f1": 45.2,
+    "tp": 127,
+    "fp": 217,
+    "fn": 91,
+    "extract_total": 344,
+    "gold_total": 218,
+    "time_min": 22.1,
+    "chunk_size": 7674,
+    "safe_margin": 0.5,
+    "contextLength": 4096,
+    "temperature": 0.5,
+    "mvision": true,
+    "mtools": true
   },
   {
     "filename": "ENG_konspekts.docx-ibm_granite-3.1-8b@Q4_K_M.json",
@@ -273,7 +445,9 @@
     "chunk_size": 6696,
     "safe_margin": 0.5,
     "contextLength": 4096,
-    "temperature": 0.5
+    "temperature": 0.5,
+    "mvision": false,
+    "mtools": false
   },
   {
     "filename": "ENG_konspekts.docx-ibm_granite-3.2-8b@Q4_K_M.json",
@@ -296,7 +470,9 @@
     "chunk_size": 6696,
     "safe_margin": 0.5,
     "contextLength": 4096,
-    "temperature": 0.5
+    "temperature": 0.5,
+    "mvision": false,
+    "mtools": false
   },
   {
     "filename": "ENG_konspekts.docx-ibm_granite-4-h-tiny@Q4_K_M.json",
@@ -319,7 +495,9 @@
     "chunk_size": 7829,
     "safe_margin": 0.5,
     "contextLength": 4096,
-    "temperature": 0.5
+    "temperature": 0.5,
+    "mvision": false,
+    "mtools": true
   },
   {
     "filename": "ENG_konspekts.docx-liquid_lfm2-1.2b@Q4_K_M.json",
@@ -342,7 +520,34 @@
     "chunk_size": 7748,
     "safe_margin": 0.5,
     "contextLength": 4096,
-    "temperature": 0.5
+    "temperature": 0.5,
+    "mvision": false,
+    "mtools": false
+  },
+  {
+    "filename": "ENG_konspekts.docx-liquid_lfm2-24b-a2b@Q4_K_M.json",
+    "model": "lfm2-24b-a2b",
+    "display": "Lfm2 24B A2B",
+    "params": 64.0,
+    "quantization": "Q4_K_M",
+    "error": 7.3,
+    "errors": 3,
+    "chunks": 41,
+    "precision": 26.5,
+    "recall": 53.7,
+    "f1": 35.5,
+    "tp": 117,
+    "fp": 325,
+    "fn": 101,
+    "extract_total": 442,
+    "gold_total": 218,
+    "time_min": 26.5,
+    "chunk_size": 7748,
+    "safe_margin": 0.5,
+    "contextLength": 4096,
+    "temperature": 0.5,
+    "mvision": false,
+    "mtools": true
   },
   {
     "filename": "ENG_konspekts.docx-liquid_lfm2.5-1.2b@Q4_K_M.json",
@@ -365,7 +570,9 @@
     "chunk_size": 7748,
     "safe_margin": 0.5,
     "contextLength": 4096,
-    "temperature": 0.5
+    "temperature": 0.5,
+    "mvision": false,
+    "mtools": true
   },
   {
     "filename": "ENG_konspekts.docx-meta_llama-3.3-70b@Q4_K_M.json",
@@ -388,7 +595,9 @@
     "chunk_size": 7829,
     "safe_margin": 0.5,
     "contextLength": 4096,
-    "temperature": 0.5
+    "temperature": 0.5,
+    "mvision": false,
+    "mtools": true
   },
   {
     "filename": "ENG_konspekts.docx-microsoft_phi-4-mini-reasoning@Q4_K_M.json",
@@ -411,7 +620,84 @@
     "chunk_size": 7873,
     "safe_margin": 0.5,
     "contextLength": 4096,
-    "temperature": 0.5
+    "temperature": 0.5,
+    "mvision": false,
+    "mtools": false
+  },
+  {
+    "filename": "ENG_konspekts.docx-microsoft_phi-4-reasoning-plus@Q4_K_M.json",
+    "model": "phi-4-reasoning-plus",
+    "display": "Phi 4 Reasoning Plus",
+    "params": 15.0,
+    "quantization": "Q4_K_M",
+    "error": 0.0,
+    "errors": 0,
+    "chunks": 41,
+    "precision": 25.3,
+    "recall": 61.0,
+    "f1": 35.8,
+    "tp": 133,
+    "fp": 393,
+    "fn": 85,
+    "extract_total": 526,
+    "gold_total": 218,
+    "time_min": 49.7,
+    "chunk_size": 7829,
+    "safe_margin": 0.5,
+    "contextLength": 4096,
+    "temperature": 0.5,
+    "mvision": false,
+    "mtools": false
+  },
+  {
+    "filename": "ENG_konspekts.docx-mistralai_magistral-small-2509@Q4_K_M.json",
+    "model": "magistral-small-2509",
+    "display": "Magistral Small 2509",
+    "params": 24.0,
+    "quantization": "Q4_K_M",
+    "error": 24.4,
+    "errors": 10,
+    "chunks": 41,
+    "precision": 28.0,
+    "recall": 50.9,
+    "f1": 36.2,
+    "tp": 111,
+    "fp": 285,
+    "fn": 107,
+    "extract_total": 396,
+    "gold_total": 218,
+    "time_min": 180.3,
+    "chunk_size": 7656,
+    "safe_margin": 0.5,
+    "contextLength": 4096,
+    "temperature": 0.5,
+    "mvision": true,
+    "mtools": true
+  },
+  {
+    "filename": "ENG_konspekts.docx-mistralai_magistral-small@Q4_K_M.json",
+    "model": "magistral-small",
+    "display": "Magistral Small",
+    "params": 24.0,
+    "quantization": "Q4_K_M",
+    "error": 2.4,
+    "errors": 1,
+    "chunks": 41,
+    "precision": 32.3,
+    "recall": 63.8,
+    "f1": 42.9,
+    "tp": 139,
+    "fp": 291,
+    "fn": 79,
+    "extract_total": 430,
+    "gold_total": 218,
+    "time_min": 142.2,
+    "chunk_size": 7656,
+    "safe_margin": 0.5,
+    "contextLength": 4096,
+    "temperature": 0.5,
+    "mvision": false,
+    "mtools": false
   },
   {
     "filename": "ENG_konspekts.docx-mistralai_ministral-3-14b-reasoning@Q4_K_M.json",
@@ -434,7 +720,9 @@
     "chunk_size": 7656,
     "safe_margin": 0.5,
     "contextLength": 4096,
-    "temperature": 0.5
+    "temperature": 0.5,
+    "mvision": true,
+    "mtools": true
   },
   {
     "filename": "ENG_konspekts.docx-mistralai_ministral-3-3b@Q4_K_M.json",
@@ -457,7 +745,9 @@
     "chunk_size": 7656,
     "safe_margin": 0.5,
     "contextLength": 4096,
-    "temperature": 0.5
+    "temperature": 0.5,
+    "mvision": true,
+    "mtools": true
   },
   {
     "filename": "ENG_konspekts.docx-mistralai_mistral-7b-instruct-v0.3@Q4_K_M.json",
@@ -480,7 +770,34 @@
     "chunk_size": 7306,
     "safe_margin": 0.5,
     "contextLength": 4096,
-    "temperature": 0.5
+    "temperature": 0.5,
+    "mvision": false,
+    "mtools": false
+  },
+  {
+    "filename": "ENG_konspekts.docx-mistralai_mistral-nemo-instruct-2407@Q4_K_M.json",
+    "model": "mistral-nemo-instruct-2407",
+    "display": "Mistral Nemo Instruct 2407",
+    "params": 12.0,
+    "quantization": "Q4_K_M",
+    "error": 0.0,
+    "errors": 0,
+    "chunks": 41,
+    "precision": 40.7,
+    "recall": 57.3,
+    "f1": 47.6,
+    "tp": 125,
+    "fp": 182,
+    "fn": 93,
+    "extract_total": 307,
+    "gold_total": 218,
+    "time_min": 22.9,
+    "chunk_size": 7656,
+    "safe_margin": 0.5,
+    "contextLength": 4096,
+    "temperature": 0.5,
+    "mvision": false,
+    "mtools": true
   },
   {
     "filename": "ENG_konspekts.docx-mistralai_mistral-small-3.2@Q4_K_M.json",
@@ -503,7 +820,9 @@
     "chunk_size": 7656,
     "safe_margin": 0.5,
     "contextLength": 4096,
-    "temperature": 0.5
+    "temperature": 0.5,
+    "mvision": true,
+    "mtools": false
   },
   {
     "filename": "ENG_konspekts.docx-nousresearch_hermes-4-70b@Q4_K_M.json",
@@ -526,7 +845,59 @@
     "chunk_size": 7829,
     "safe_margin": 0.5,
     "contextLength": 4096,
-    "temperature": 0.5
+    "temperature": 0.5,
+    "mvision": false,
+    "mtools": true
+  },
+  {
+    "filename": "ENG_konspekts.docx-nvidia_nemotron-3-nano-4b@Q4_K_M.json",
+    "model": "nemotron-3-nano-4b",
+    "display": "Nemotron 3 Nano 4B",
+    "params": 4.0,
+    "quantization": "Q4_K_M",
+    "error": 7.3,
+    "errors": 3,
+    "chunks": 41,
+    "precision": 31.3,
+    "recall": 25.7,
+    "f1": 28.2,
+    "tp": 56,
+    "fp": 123,
+    "fn": 162,
+    "extract_total": 179,
+    "gold_total": 218,
+    "time_min": 8.9,
+    "chunk_size": 7656,
+    "safe_margin": 0.5,
+    "contextLength": 4096,
+    "temperature": 0.5,
+    "mvision": false,
+    "mtools": true
+  },
+  {
+    "filename": "ENG_konspekts.docx-nvidia_nemotron-3-nano-omni@Q4_K_M.json",
+    "model": "nemotron-3-nano-omni",
+    "display": "Nemotron 3 Nano Omni",
+    "params": 30.0,
+    "quantization": "Q4_K_M",
+    "error": 19.5,
+    "errors": 8,
+    "chunks": 41,
+    "precision": 30.6,
+    "recall": 35.8,
+    "f1": 33.0,
+    "tp": 78,
+    "fp": 177,
+    "fn": 140,
+    "extract_total": 255,
+    "gold_total": 218,
+    "time_min": 71.0,
+    "chunk_size": 7656,
+    "safe_margin": 0.5,
+    "contextLength": 4096,
+    "temperature": 0.5,
+    "mvision": true,
+    "mtools": true
   },
   {
     "filename": "ENG_konspekts.docx-nvidia_nemotron-3-nano@Q4_K_M.json",
@@ -549,7 +920,9 @@
     "chunk_size": 7656,
     "safe_margin": 0.5,
     "contextLength": 4096,
-    "temperature": 0.5
+    "temperature": 0.5,
+    "mvision": false,
+    "mtools": true
   },
   {
     "filename": "ENG_konspekts.docx-openai_gpt-oss-20b@MXFP4.json",
@@ -572,7 +945,9 @@
     "chunk_size": 7873,
     "safe_margin": 0.5,
     "contextLength": 4096,
-    "temperature": 0.5
+    "temperature": 0.5,
+    "mvision": false,
+    "mtools": true
   },
   {
     "filename": "ENG_konspekts.docx-qwen_qwen2.5-vl-7b@Q4_K_M.json",
@@ -595,7 +970,9 @@
     "chunk_size": 7669,
     "safe_margin": 0.5,
     "contextLength": 4096,
-    "temperature": 0.5
+    "temperature": 0.5,
+    "mvision": true,
+    "mtools": false
   },
   {
     "filename": "ENG_konspekts.docx-qwen_qwen3-1.7b@Q4_K_M.json",
@@ -618,7 +995,9 @@
     "chunk_size": 7669,
     "safe_margin": 0.5,
     "contextLength": 4096,
-    "temperature": 0.5
+    "temperature": 0.5,
+    "mvision": false,
+    "mtools": true
   },
   {
     "filename": "ENG_konspekts.docx-qwen_qwen3-14b@Q4_K_M.json",
@@ -641,7 +1020,34 @@
     "chunk_size": 7669,
     "safe_margin": 0.5,
     "contextLength": 4096,
-    "temperature": 0.5
+    "temperature": 0.5,
+    "mvision": false,
+    "mtools": true
+  },
+  {
+    "filename": "ENG_konspekts.docx-qwen_qwen3-30b-a3b-2507@Q4_K_M.json",
+    "model": "qwen3-30b-a3b-2507",
+    "display": "Qwen3 30B A3B 2507",
+    "params": 30.0,
+    "quantization": "Q4_K_M",
+    "error": 65.9,
+    "errors": 27,
+    "chunks": 41,
+    "precision": 28.3,
+    "recall": 36.2,
+    "f1": 31.8,
+    "tp": 79,
+    "fp": 200,
+    "fn": 139,
+    "extract_total": 279,
+    "gold_total": 218,
+    "time_min": 153.8,
+    "chunk_size": 7669,
+    "safe_margin": 0.5,
+    "contextLength": 4096,
+    "temperature": 0.5,
+    "mvision": false,
+    "mtools": true
   },
   {
     "filename": "ENG_konspekts.docx-qwen_qwen3-32b@Q4_K_M.json",
@@ -664,7 +1070,9 @@
     "chunk_size": 7669,
     "safe_margin": 0.5,
     "contextLength": 4096,
-    "temperature": 0.5
+    "temperature": 0.5,
+    "mvision": false,
+    "mtools": true
   },
   {
     "filename": "ENG_konspekts.docx-qwen_qwen3-4b-2507@Q4_K_M.json",
@@ -687,7 +1095,9 @@
     "chunk_size": 7669,
     "safe_margin": 0.5,
     "contextLength": 4096,
-    "temperature": 0.5
+    "temperature": 0.5,
+    "mvision": false,
+    "mtools": true
   },
   {
     "filename": "ENG_konspekts.docx-qwen_qwen3-4b-thinking-2507@Q4_K_M.json",
@@ -710,7 +1120,9 @@
     "chunk_size": 7669,
     "safe_margin": 0.5,
     "contextLength": 4096,
-    "temperature": 0.5
+    "temperature": 0.5,
+    "mvision": false,
+    "mtools": true
   },
   {
     "filename": "ENG_konspekts.docx-qwen_qwen3-4b@Q4_K_M.json",
@@ -733,7 +1145,9 @@
     "chunk_size": 7669,
     "safe_margin": 0.5,
     "contextLength": 4096,
-    "temperature": 0.5
+    "temperature": 0.5,
+    "mvision": false,
+    "mtools": true
   },
   {
     "filename": "ENG_konspekts.docx-qwen_qwen3-8b@Q4_K_M.json",
@@ -756,7 +1170,34 @@
     "chunk_size": 7669,
     "safe_margin": 0.5,
     "contextLength": 4096,
-    "temperature": 0.5
+    "temperature": 0.5,
+    "mvision": false,
+    "mtools": true
+  },
+  {
+    "filename": "ENG_konspekts.docx-qwen_qwen3-vl-30b@Q4_K_M.json",
+    "model": "qwen3-vl-30b",
+    "display": "Qwen3 VL 30B",
+    "params": 30.0,
+    "quantization": "Q4_K_M",
+    "error": 80.5,
+    "errors": 33,
+    "chunks": 41,
+    "precision": 36.2,
+    "recall": 23.4,
+    "f1": 28.4,
+    "tp": 51,
+    "fp": 90,
+    "fn": 167,
+    "extract_total": 141,
+    "gold_total": 218,
+    "time_min": 117.1,
+    "chunk_size": 7669,
+    "safe_margin": 0.5,
+    "contextLength": 4096,
+    "temperature": 0.5,
+    "mvision": true,
+    "mtools": true
   },
   {
     "filename": "ENG_konspekts.docx-qwen_qwen3-vl-4b@Q4_K_M.json",
@@ -779,7 +1220,9 @@
     "chunk_size": 7669,
     "safe_margin": 0.5,
     "contextLength": 4096,
-    "temperature": 0.5
+    "temperature": 0.5,
+    "mvision": true,
+    "mtools": true
   },
   {
     "filename": "ENG_konspekts.docx-qwen_qwen3-vl-8b@Q4_K_M.json",
@@ -802,7 +1245,9 @@
     "chunk_size": 7669,
     "safe_margin": 0.5,
     "contextLength": 4096,
-    "temperature": 0.5
+    "temperature": 0.5,
+    "mvision": true,
+    "mtools": true
   },
   {
     "filename": "ENG_konspekts.docx-qwen_qwen3.5-35b-a3b@Q4_K_M.json",
@@ -825,7 +1270,9 @@
     "chunk_size": 7687,
     "safe_margin": 0.5,
     "contextLength": 4096,
-    "temperature": 0.5
+    "temperature": 0.5,
+    "mvision": true,
+    "mtools": true
   },
   {
     "filename": "ENG_konspekts.docx-qwen_qwen3.5-9b@Q4_K_M.json",
@@ -848,7 +1295,84 @@
     "chunk_size": 7687,
     "safe_margin": 0.5,
     "contextLength": 4096,
-    "temperature": 0.5
+    "temperature": 0.5,
+    "mvision": true,
+    "mtools": true
+  },
+  {
+    "filename": "ENG_konspekts.docx-qwen_qwen3.6-27b@Q4_K_M.json",
+    "model": "qwen3.6-27b",
+    "display": "Qwen3.6 27B",
+    "params": 27.0,
+    "quantization": "Q4_K_M",
+    "error": 65.9,
+    "errors": 27,
+    "chunks": 41,
+    "precision": 29.4,
+    "recall": 30.7,
+    "f1": 30.0,
+    "tp": 67,
+    "fp": 161,
+    "fn": 151,
+    "extract_total": 228,
+    "gold_total": 218,
+    "time_min": 340.0,
+    "chunk_size": 7687,
+    "safe_margin": 0.5,
+    "contextLength": 4096,
+    "temperature": 0.5,
+    "mvision": true,
+    "mtools": true
+  },
+  {
+    "filename": "ENG_konspekts.docx-qwen_qwen3.6-35b-a3b@Q4_K_M.json",
+    "model": "qwen3.6-35b-a3b",
+    "display": "Qwen3.6 35B A3B",
+    "params": 35.0,
+    "quantization": "Q4_K_M",
+    "error": 41.5,
+    "errors": 17,
+    "chunks": 41,
+    "precision": 37.4,
+    "recall": 53.2,
+    "f1": 43.9,
+    "tp": 116,
+    "fp": 194,
+    "fn": 102,
+    "extract_total": 310,
+    "gold_total": 218,
+    "time_min": 82.6,
+    "chunk_size": 7687,
+    "safe_margin": 0.5,
+    "contextLength": 4096,
+    "temperature": 0.5,
+    "mvision": true,
+    "mtools": true
+  },
+  {
+    "filename": "ENG_konspekts.docx-qwen_qwq-32b@Q4_K_M.json",
+    "model": "qwq-32b",
+    "display": "Qwq 32B",
+    "params": 32.0,
+    "quantization": "Q4_K_M",
+    "error": 0.0,
+    "errors": 0,
+    "chunks": 41,
+    "precision": 32.0,
+    "recall": 54.1,
+    "f1": 40.2,
+    "tp": 118,
+    "fp": 251,
+    "fn": 100,
+    "extract_total": 369,
+    "gold_total": 218,
+    "time_min": 219.1,
+    "chunk_size": 7669,
+    "safe_margin": 0.5,
+    "contextLength": 4096,
+    "temperature": 0.5,
+    "mvision": false,
+    "mtools": true
   },
   {
     "filename": "ENG_konspekts.docx-zai-org_glm-4.6v-flash@Q4_K_M.json",
@@ -871,6 +1395,33 @@
     "chunk_size": 7845,
     "safe_margin": 0.5,
     "contextLength": 4096,
-    "temperature": 0.5
+    "temperature": 0.5,
+    "mvision": true,
+    "mtools": true
+  },
+  {
+    "filename": "ENG_konspekts.docx-zai-org_glm-4.7-flash@Q4_K_M.json",
+    "model": "glm-4.7-flash",
+    "display": "Glm 4.7 Flash",
+    "params": 30.0,
+    "quantization": "Q4_K_M",
+    "error": 35.0,
+    "errors": 14,
+    "chunks": 40,
+    "precision": 22.8,
+    "recall": 47.7,
+    "f1": 30.9,
+    "tp": 104,
+    "fp": 352,
+    "fn": 114,
+    "extract_total": 456,
+    "gold_total": 218,
+    "time_min": 169.1,
+    "chunk_size": 7845,
+    "safe_margin": 0.5,
+    "contextLength": 4096,
+    "temperature": 0.5,
+    "mvision": false,
+    "mtools": true
   }
 ]

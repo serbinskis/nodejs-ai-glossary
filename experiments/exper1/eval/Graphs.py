@@ -16,6 +16,12 @@ def corr_description(r):
     elif -1.0 < r <= -0.7: return "Spēcīga negatīva korelācija"
     elif r == -1.0: return "Pilnīga negatīva korelācija"
 
+def format_ratio(eng_avg, lat_avg):
+    if eng_avg == 0: return "N/A"
+    ratio = lat_avg / eng_avg
+    if ratio >= 1: return f"{ratio:.2f}x vairāk"
+    else: return f"{1/ratio:.2f}x mazāk"
+
 if __name__ == "__main__":
     eng_df = pd.read_json("ENG_metrics.json").sort_values("params")
     lat_df = pd.read_json("LAT_metrics.json").sort_values("params")
@@ -40,7 +46,7 @@ if __name__ == "__main__":
 
     low, high = min(eng_avg, lat_avg), max(eng_avg, lat_avg)
     ax.plot([x_pos, x_pos], [low+0.5, high], color="black", linewidth=2)
-    ax.text(x_pos + 1, (eng_avg + lat_avg)/2, f"Δ {diff_pct:.1f}%", va="center", fontsize=10)
+    ax.text(x_pos + 1, (eng_avg + lat_avg)/2, f"Δ {diff_pct:.1f}% (LAT: {format_ratio(eng_avg, lat_avg)})", va="center", fontsize=10)
 
     corr_error_eng = eng_df["params"].corr(eng_df["error"])
     corr_error_lat = lat_df["params"].corr(lat_df["error"])
@@ -75,7 +81,7 @@ if __name__ == "__main__":
 
     low, high = min(eng_avg, lat_avg), max(eng_avg, lat_avg)
     ax.plot([x_pos, x_pos], [low+0.5, high], color="black", linewidth=2)
-    ax.text(x_pos + 1, (eng_avg + lat_avg)/2, f"Δ {diff_pct:.1f}%", va="center", fontsize=10)
+    ax.text(x_pos + 1, (eng_avg + lat_avg)/2, f"Δ {diff_pct:.1f}% (LAT: {format_ratio(eng_avg, lat_avg)})", va="center", fontsize=10)
 
     corr_f1_eng = eng_df["params"].corr(eng_df["f1"])
     corr_f1_lat = lat_df["params"].corr(lat_df["f1"])
@@ -110,7 +116,7 @@ if __name__ == "__main__":
 
     low, high = min(eng_avg, lat_avg), max(eng_avg, lat_avg)
     ax.plot([x_pos, x_pos], [low+0.5, high], color="black", linewidth=2)
-    ax.text(x_pos + 1, (eng_avg + lat_avg)/2, f"Δ {diff_pct:.1f}%", va="center", fontsize=10)
+    ax.text(x_pos + 1, (eng_avg + lat_avg)/2, f"Δ {diff_pct:.1f}% (LAT: {format_ratio(eng_avg, lat_avg)})", va="center", fontsize=10)
 
     corr_f1_eng = eng_df["params"].corr(eng_df["time_min"])
     corr_f1_lat = lat_df["params"].corr(lat_df["time_min"])
@@ -134,4 +140,54 @@ if __name__ == "__main__":
 
     plt.tight_layout()
     plt.savefig("LAT_ENG_metrics.png", dpi=300)
+    plt.show()
+
+
+    def plot_group(ax, df, feature, title, true_color, false_color, metric="f1"):
+        df_true = df[df[feature] == True]
+        df_false = df[df[feature] == False]
+
+        sns.scatterplot(data=df_true, x="params", y=metric, color=true_color, label=f"{feature}=True", s=40, ax=ax)
+        sns.scatterplot(data=df_false, x="params", y=metric, color=false_color, label=f"{feature}=False", s=40, ax=ax)
+
+        if not df_true.empty:
+            avg_true = df_true[metric].mean()
+            ax.axhline(avg_true, color=true_color, linestyle="--", linewidth=1.5, label=f"True avg: {avg_true:.1f}")
+
+        if not df_false.empty:
+            avg_false = df_false[metric].mean()
+            ax.axhline(avg_false, color=false_color, linestyle="--", linewidth=1.5, label=f"False avg: {avg_false:.1f}")
+
+        ax.set_title(title)
+        ax.set_xlabel("Parametru skaits (Miljardos)")
+
+        if (metric == "f1"):
+            ax.set_ylabel("F1 (%)")
+            ax.set_ylim(-4, 104)
+            ax.set_yticks(range(0, 101, 5))
+        else:
+            ax.set_ylabel("Kļūda (%)")
+            ax.set_ylim(-4, 104)
+            ax.set_yticks(range(0, 101, 5))
+
+        ax.set_xlim(-2, 72)
+        ax.set_xticks(range(0, 71, 5))
+        ax.legend()
+
+    fig, axes = plt.subplots(2, 4, figsize=(24, 10))
+
+    plot_group(axes[0, 0], eng_df, "mvision", "Vision funkcionalitātes esamības ietekme uz F1 (ENG)", true_color="gold", false_color="#444444" )
+    plot_group(axes[0, 1], lat_df, "mvision", "Vision funkcionalitātes esamības ietekme uz F1 (LAT)", true_color="gold", false_color="#444444")
+
+    plot_group(axes[1, 0], eng_df, "mtools", "Tools funkcionalitātes esamības ietekme uz F1 (ENG)", true_color="blue", false_color="#444444")
+    plot_group(axes[1, 1], lat_df, "mtools", "Tools funkcionalitātes esamības ietekme uz F1 (LAT)", true_color="blue", false_color="#444444")
+
+    plot_group(axes[0, 2], eng_df, "mvision", "Vision funkcionalitātes esamības ietekme uz kļūdu (ENG)", true_color="gold", false_color="#444444", metric="error")
+    plot_group(axes[0, 3], lat_df, "mvision", "Vision funkcionalitātes esamības ietekme uz kļūdu (LAT)", true_color="gold", false_color="#444444", metric="error")
+
+    plot_group(axes[1, 2], eng_df, "mtools", "Tools funkcionalitātes esamības ietekme uz kļūdu (ENG)", true_color="blue", false_color="#444444", metric="error")
+    plot_group(axes[1, 3], lat_df, "mtools", "Tools funkcionalitātes esamības ietekme uz kļūdu (LAT)", true_color="blue", false_color="#444444", metric="error")
+
+    plt.tight_layout()
+    plt.savefig("LAT_ENG_metrics_vision_tools.png", dpi=300)
     plt.show()
