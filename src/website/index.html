@@ -200,7 +200,7 @@
             </div>
         </div>
     </div>
-    <footer class="py-4 border-t border-gray-200 dark:border-gray-700 text-center text-sm text-gray-500 dark:text-gray-400 transition-colors duration-300">
+    <footer class="hidden py-4 border-t border-gray-200 dark:border-gray-700 text-center text-sm text-gray-500 dark:text-gray-400 transition-colors duration-300">
         <p>
             &copy; <span id="current-year">0000</span> <span data-lang="app_title">Glossary Extractor</span> &middot;
             <a href="mailto:contact@example.com" class="hover:underline" data-lang="contact">Contact</a> &middot;
@@ -329,8 +329,10 @@
 
 
         function renderJobTracker(jobs) {
+            console.log('tracker-update', jobs);
             window.lastJobsState = jobs;
-            jobList.innerHTML = jobs && jobs.length > 0 ? '' : lang[currentLang].no_active_jobs;
+            if (!jobs || jobs.length === 0) { return jobList.innerHTML = lang[currentLang].no_active_jobs; }
+            if (document.querySelectorAll(".job-item").length == 0) { jobList.innerHTML = ''; }
 
             const statusMap = {
                 'Queued': lang[currentLang].job_queued,
@@ -340,17 +342,30 @@
                 'Failed': lang[currentLang].job_failed
             };
 
+            const activeJobs = (jobs || []).slice(0, 5);
+            const currentJobIds = Array.from(document.querySelectorAll(".job-item")).map(e => e.id);
+            const removedJobIds = currentJobIds.filter(id => !activeJobs.some(job => job.id === id));
+            removedJobIds.forEach(id => document.getElementById(id)?.remove());
+
             (jobs || []).slice(0, 5).forEach(job => {
-                const progress = Math.round(job.progress);
-                const jobItem = document.createElement('div');
+                const progress = job.progress.toFixed(1);
                 const localizedStatus = statusMap[job.status] || job.status;
-                jobItem.className = 'mb-2';
+
+                const progressBar = document.getElementById(job.id);
+                if (progressBar) { progressBar.querySelector("span:last-child").textContent = `${localizedStatus} (${progress}%)`; }
+                if (progressBar) { return progressBar.querySelector('.job-item-progress-bar').style.width = `${progress}%`; }
+
+                const jobItem = document.createElement('div');
+                jobItem.className = 'mb-2 job-item';
+                jobItem.id = job.id;
                 jobItem.innerHTML = `
                     <div class="flex justify-between text-sm">
                         <span class="font-semibold truncate pr-2 text-gray-700 dark:text-gray-300">${job.filename}</span>
-                        <span class="text-gray-500 dark:text-gray-400">${localizedStatus}</span>
+                        <span class="text-gray-500 dark:text-gray-400">${localizedStatus} (${progress}%)</span>
                     </div>
-                    <div class="w-full bg-gray-200 dark:bg-gray-600 rounded-full h-1.5"><div class="bg-blue-600 h-1.5 rounded-full" style="width: ${progress}%"></div></div>`;
+                    <div class="w-full bg-gray-200 dark:bg-gray-600 rounded-full h-1.5">
+                        <div class="job-item-progress-bar bg-blue-600 h-1.5 rounded-full transition-all duration-300 ease-out" style="width: ${progress}%"></div>
+                    </div>`;
                 jobList.appendChild(jobItem);
             });
         }

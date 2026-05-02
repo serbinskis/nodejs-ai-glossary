@@ -6,6 +6,7 @@ import { cpus } from 'os';
 import { LlamaModelOptions, LlamaOptions } from 'node-llama-cpp';
 import { VAD_OPTIONS_DEFAULT } from './whisper/vad_adapter.js';
 import { WhisperOptions } from './whisper/whisper.js';
+import { GlossaryGeneratorType } from './glossary/factory.js';
 
 const configuration = {
     DEBUG: true,
@@ -20,12 +21,13 @@ const configuration = {
     WORKER_COUNT: 1,
     GLOSSARY_MODEL: 'LiquidAI/LFM2-1.2B-GGUF/LFM2-1.2B-Q8_0.gguf',
     GLOSSARY_OPTIONS: { model: { modelPath: null, gpuLayers: 'auto' }, llama: { gpu: 'vulkan' } } as unknown as { llama: LlamaOptions, model: LlamaModelOptions },
-    GEMINI_API_KEY: (process.env.GEMINI_API_KEY || '').split(';')[0],
     OPENAI_API_KEY: (process.env.OPENAI_API_KEY || '').split(';')[0],
 
     WHISER_OPTIONS: { modelName: 'ggml-large-v3.bin' , gpu: true, threads: 8, beamSize: 5, temperature: 0, language: 'auto', backend: 'vulkan' } as WhisperOptions,
     VAD_ADAPTER_OPTIONS: VAD_OPTIONS_DEFAULT,
 
+    DEFAULT_GLOSSARY_GENERATOR: 'lmstudio' as GlossaryGeneratorType,
+    JOB_TRACKER_DELTA_THRESHOLD: 0.1,
     MAX_FILENAME_LENGTH: 250,
     PUBLIC_IP_ADDRESS: null as unknown as string,
     HASH_REGEX: new RegExp(/^[a-f0-9]{64}$/i),
@@ -41,19 +43,42 @@ const configuration = {
                         '4. DO NOT translate. Keep definitions in the source language.\n' +
                         '5. If no terms found, return an empty list.\n\n' +
                         'Text to analyze:\n\n',
-        DEFAULT_MODEL: 'google/gemma-2-9b',
+        DEFAULT_MODEL: 'google/gemma-2-9b@Q4_K_M',
         CPU_THREADS: Math.max(1, cpus().length - 1),
         DEDUPLICATE: true,
         FLASH_ATTENTION: true,
         DEFAULT_CONTEXT: 8192,
-        DEFAULT_TEMPERATURE: 0.5,
+        DEFAULT_TEMPERATURE: 0.25,
         DEFAULT_STRCUTRED_TOKENS: 0,
         MIN_PROCESS_SIZE: 100,
-        DEFAULT_SAFE_MARGIN: 0.5,
-        MAX_RESPONSE_TOKENS: 4000,
-        REPEAT_PENALTY: -1,
-        ERROR_RETRY_COUNT: 0,
+        DEFAULT_SAFE_MARGIN: 0.625,
+        MAX_RESPONSE_TOKENS: 5120,
+        REPEAT_PENALTY: 1.15,
+        ERROR_RETRY_COUNT: 2,
+        DELTA_TEMPERATURE: -0.05,
+        DELTA_REPEAT_PENALTY: 0.05,
         TIMEOUT: 5 * 60 * 1000,
+        SEED: 42,
+    },
+
+    GOOGLE_STUDIO: {
+        API_KEY: (process.env.GEMINI_API_KEY || '').split(';')[0],
+        DEFAULT_PROMPT: 'Your task is to analyze the provided text and create a glossary.\n' +
+                        'Instructions:\n' +
+                        '1. Extract ALL terms and concepts from the text.\n' +
+                        '2. Define them using ONLY the provided text.\n' +
+                        '3. NO external knowledge. Synthesize exclusively from source.\n' +
+                        '4. DO NOT translate. Keep definitions in the source language.\n' +
+                        '5. If no terms found, return an empty list.\n\n' +
+                        'Text to analyze:\n\n',
+        DEFAULT_MODEL: 'gemini-flash-lite-latest',
+        DEDUPLICATE: true,
+        DEFAULT_CONTEXT: 3072,
+        MIN_PROCESS_SIZE: 100,
+        DEFAULT_TEMPERATURE: 0.25,
+        REPEAT_PENALTY: 1.15,
+        TIMEOUT: 10 * 60 * 1000,
+        RATE_LIMIT_TIMEOUT: 1000,
         SEED: 42,
     },
 

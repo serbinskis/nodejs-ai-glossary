@@ -1,5 +1,5 @@
 import config from "../../config.js";
-import { GlossaryGenerator, GlossaryReport } from "../glossary.js";
+import { GlossaryGenerator, GlossaryReport, ProgressLevel } from "../glossary.js";
 import { LLM, LLMPredictionFragment, LLMRespondOpts, LMStudioClient, StructuredPredictionResult } from "@lmstudio/sdk";
 import { Tokenizer } from "../tokenizer.js";
 import { Utils } from "../../utils.js";
@@ -7,7 +7,8 @@ import { cpus } from 'os';
 import { z } from "zod";
 
 export class LMStudioGlossary extends GlossaryGenerator {
-    private static MAX_32BIT_INT = 2_147_483_647;
+    protected static MAX_32BIT_INT = 2_147_483_647;
+    private static CLASS_NAME = 'LMStudioGlossary';
     private static DEFAULT_MODEL: string = config.LMSTUDIO.DEFAULT_MODEL || 'google/gemma-3-4b';
     private static DEFAULT_PROMPT = 'Your task is to analyze the provided text and create a glossary.\n' +
                                     'Instructions:\n' +
@@ -28,47 +29,55 @@ export class LMStudioGlossary extends GlossaryGenerator {
     private static REPEAT_PENALTY: number = config.LMSTUDIO.REPEAT_PENALTY || -1;
     private static TIMEOUT: number = config.LMSTUDIO.TIMEOUT || 5 * 60 * 1000;
     private static ERROR_RETRY_COUNT: number = config.LMSTUDIO.ERROR_RETRY_COUNT || 0;
+    private static DELTA_TEMPERATURE: number = config.LMSTUDIO.DELTA_TEMPERATURE || -0.05;
+    private static DELTA_REPEAT_PENALTY: number = config.LMSTUDIO.DELTA_REPEAT_PENALTY || 0.05;
     private static CPU_THREADS: number = config.LMSTUDIO.CPU_THREADS || Math.max(1, cpus().length - 1);
     private static SEED = config.LMSTUDIO.SEED || 42;
 
-    private modelKey: string;
-    private model: LLM;
-    private client: LMStudioClient;
-    private deffaultPrompt: string;
-    private structuredTokens: number;
-    private contextLength: number;
-    private temperature: number;
-    private safeMargin: number;
-    private minProcessSize: number;
-    private promptContext: number;
-    private maxResponseTokens: number;
-    private repeatPenalty: number;
-    private maxTimeout: number;
-    private retryCount: number;
-    private cpuThreads: number;
-    private seed: number;
+    protected modelKey: string;
+    protected model: LLM;
+    protected client: LMStudioClient;
+    protected deffaultPrompt: string;
+    protected structuredTokens: number;
+    protected contextLength: number;
+    protected temperature: number;
+    protected safeMargin: number;
+    protected minProcessSize: number;
+    protected promptContext: number;
+    protected maxResponseTokens: number;
+    protected repeatPenalty: number;
+    protected maxTimeout: number;
+    protected retryCount: number;
+    protected deltaTemperature: number;
+    protected deltaRepeatPenalty: number;
+    protected cpuThreads: number;
+    protected deduplicate: boolean;
+    protected seed: number;
 
-    private constructor(client: LMStudioClient, model: LLM, modelKey?: string) {
-        super(`LMStudio-${modelKey || model.modelKey}`);
-        this.deffaultPrompt = config.LMSTUDIO.DEFAULT_PROMPT || LMStudioGlossary.DEFAULT_PROMPT;
-        this.structuredTokens = config.LMSTUDIO.DEFAULT_STRCUTRED_TOKENS || LMStudioGlossary.DEFAULT_STRCUTRED_TOKENS;
-        this.contextLength = config.LMSTUDIO.DEFAULT_CONTEXT || LMStudioGlossary.DEFAULT_CONTEXT;
-        this.temperature = config.LMSTUDIO.DEFAULT_TEMPERATURE || LMStudioGlossary.DEFAULT_TEMPERATURE;
-        this.safeMargin = config.LMSTUDIO.DEFAULT_SAFE_MARGIN || LMStudioGlossary.DEFAULT_SAFE_MARGIN;
-        this.minProcessSize = config.LMSTUDIO.MIN_PROCESS_SIZE || LMStudioGlossary.MIN_PROCESS_SIZE;
+    protected constructor(client: LMStudioClient, model: LLM, modelKey?: string, implementation?: string) {
+        super(implementation || `LMStudio-${modelKey || model?.modelKey}`);
+        this.deffaultPrompt = (config.LMSTUDIO.DEFAULT_PROMPT !== undefined) ? config.LMSTUDIO.DEFAULT_PROMPT : LMStudioGlossary.DEFAULT_PROMPT;
+        this.structuredTokens = (config.LMSTUDIO.DEFAULT_STRCUTRED_TOKENS !== undefined) ? config.LMSTUDIO.DEFAULT_STRCUTRED_TOKENS : LMStudioGlossary.DEFAULT_STRCUTRED_TOKENS;
+        this.contextLength = (config.LMSTUDIO.DEFAULT_CONTEXT !== undefined) ? config.LMSTUDIO.DEFAULT_CONTEXT : LMStudioGlossary.DEFAULT_CONTEXT;
+        this.temperature = (config.LMSTUDIO.DEFAULT_TEMPERATURE !== undefined) ? config.LMSTUDIO.DEFAULT_TEMPERATURE : LMStudioGlossary.DEFAULT_TEMPERATURE;
+        this.safeMargin = (config.LMSTUDIO.DEFAULT_SAFE_MARGIN !== undefined) ? config.LMSTUDIO.DEFAULT_SAFE_MARGIN : LMStudioGlossary.DEFAULT_SAFE_MARGIN;
+        this.minProcessSize = (config.LMSTUDIO.MIN_PROCESS_SIZE !== undefined) ? config.LMSTUDIO.MIN_PROCESS_SIZE : LMStudioGlossary.MIN_PROCESS_SIZE;
         this.promptContext = this.contextLength - this.structuredTokens;
-        this.maxResponseTokens = config.LMSTUDIO.MAX_RESPONSE_TOKENS || LMStudioGlossary.MAX_RESPONSE_TOKENS;
-        this.repeatPenalty = config.LMSTUDIO.REPEAT_PENALTY || LMStudioGlossary.REPEAT_PENALTY;
-        this.maxTimeout = config.LMSTUDIO.TIMEOUT || LMStudioGlossary.TIMEOUT;
-        this.retryCount = config.LMSTUDIO.ERROR_RETRY_COUNT || LMStudioGlossary.ERROR_RETRY_COUNT;
-        this.cpuThreads = config.LMSTUDIO.CPU_THREADS || LMStudioGlossary.CPU_THREADS;
-        this.seed = config.LMSTUDIO.SEED || LMStudioGlossary.SEED;
-        this.modelKey = modelKey || model.modelKey;
+        this.maxResponseTokens = (config.LMSTUDIO.MAX_RESPONSE_TOKENS !== undefined) ? config.LMSTUDIO.MAX_RESPONSE_TOKENS : LMStudioGlossary.MAX_RESPONSE_TOKENS;
+        this.repeatPenalty = (config.LMSTUDIO.REPEAT_PENALTY !== undefined) ? config.LMSTUDIO.REPEAT_PENALTY : LMStudioGlossary.REPEAT_PENALTY;
+        this.maxTimeout = (config.LMSTUDIO.TIMEOUT !== undefined) ? config.LMSTUDIO.TIMEOUT : LMStudioGlossary.TIMEOUT;
+        this.retryCount = (config.LMSTUDIO.ERROR_RETRY_COUNT !== undefined) ? config.LMSTUDIO.ERROR_RETRY_COUNT : LMStudioGlossary.ERROR_RETRY_COUNT;
+        this.deltaTemperature = (config.LMSTUDIO.DELTA_TEMPERATURE !== undefined) ? config.LMSTUDIO.DELTA_TEMPERATURE : LMStudioGlossary.DELTA_TEMPERATURE;
+        this.deltaRepeatPenalty = (config.LMSTUDIO.DELTA_REPEAT_PENALTY !== undefined) ? config.LMSTUDIO.DELTA_REPEAT_PENALTY : LMStudioGlossary.DELTA_REPEAT_PENALTY;
+        this.cpuThreads = (config.LMSTUDIO.CPU_THREADS !== undefined) ? config.LMSTUDIO.CPU_THREADS : LMStudioGlossary.CPU_THREADS;
+        this.deduplicate = (config.LMSTUDIO.DEDUPLICATE !== undefined) ? config.LMSTUDIO.DEDUPLICATE : true;
+        this.seed = (config.LMSTUDIO.SEED !== undefined) ? config.LMSTUDIO.SEED : LMStudioGlossary.SEED;
+        this.modelKey = modelKey || model?.modelKey;
         this.model = model;
         this.client = client;
     }
 
-    private async prompt(text: string): Promise<Partial<GlossaryReport> | null> {
+    protected async prompt(text: string): Promise<Partial<GlossaryReport> | null> {
         if (config.DEBUG) { console.debug(`[LMStudioGlossary.prompt] -> input: ${text.slice(this.deffaultPrompt.length).replace(/\s+/g, ' ').slice(0, 500)}`); }
 
         const glossaryEntrySchema = z.object({
@@ -83,31 +92,51 @@ export class LMStudioGlossary extends GlossaryGenerator {
             glossary: z.array(glossaryEntrySchema).describe("The list of glossary entries, the list also may be empty if no terms were found."),
         });
 
-        let onPredictionFragment: ((fragment: LLMPredictionFragment) => void) | undefined = undefined;
-        if (config.DEBUG) { onPredictionFragment = (fragment: LLMPredictionFragment) => { process.stdout.write(fragment.content); }; }
+        let predictCallbacks: ((fragment: LLMPredictionFragment) => void)[] = [];
+        let onPredictionFragment: ((fragment: LLMPredictionFragment) => void) = (fragment: LLMPredictionFragment) => predictCallbacks.forEach(callback => callback(fragment));
+        if (config.DEBUG) { predictCallbacks.push((fragment: LLMPredictionFragment) => { process.stdout.write(fragment.content); }); }
         let opts: LLMRespondOpts = { structured: glossaryReportSchema, temperature: this.temperature, contextOverflowPolicy: 'stopAtLimit', cpuThreads: this.cpuThreads, onPredictionFragment };
         if (this.maxResponseTokens > 0) { opts.maxTokens = this.maxResponseTokens; }
         if (this.repeatPenalty > 0) { opts.repeatPenalty = this.repeatPenalty; }
         let result: StructuredPredictionResult | null = null;
 
         for (let attempt = 0; attempt <= this.retryCount; attempt++) {
-            let seed = this.seed + (attempt * Math.floor(Math.random() * 999999));
-            opts.temperature = Math.min(this.temperature + (attempt * 0.1), 2);
-            if (this.repeatPenalty > 0) { opts.repeatPenalty = Math.min(this.repeatPenalty + (attempt * 0.05), 1.5); }
-            if (config.DEBUG) { console.log(`[LMStudioGlossary.prompt] -> Attempt ${attempt + 1} of ${this.retryCount + 1}, seed: ${seed}, temperature: ${opts.temperature}`); }
-            if (attempt > 0) { this.retryCount++; }
-            await this.reloadModel((p) => this.setProgress(p * 10), seed);
-            let response = this.model.respond(text, opts);
-            let interval = setInterval(async () => await response.cancel(), Math.min(this.maxTimeout, LMStudioGlossary.MAX_32BIT_INT));
+            let content = '';
+            let totalTokenOutput: number = 0;
+            predictCallbacks.push((fragment: LLMPredictionFragment) => {
+                content += fragment.content;
+                if (!(this.maxResponseTokens > 0)) { return; }
+                totalTokenOutput += fragment.tokensCount || 0;
+                let chunkProgress = (1 / this.totalChunks) * 90;
+                let currentStart = 10 + (this.currentChunk / this.totalChunks) * 90;
+                let responseProgress = Math.min((totalTokenOutput / this.maxResponseTokens) * 100, 100);
+                let promptProgress = (attempt == 0) ? (responseProgress * 0.5) : (0.5 + (responseProgress * 0.5 * (attempt / this.retryCount)));
+                let overallProgress = currentStart + (chunkProgress * (promptProgress / 100));
+                this.setProgress(overallProgress, ProgressLevel.PROMPTING);
+            });
 
-            try { result = await response as StructuredPredictionResult; } catch (e) { console.error("[LMStudioGlossary.createGlossary] -> Error during LM response:", e); }
-            clearInterval(interval);
-            if (result?.parsed) { break; }
+            let seed = this.seed + (attempt * Math.floor(Math.random() * 999999));
+            opts.temperature = Utils.clamp(this.temperature + (attempt * this.deltaTemperature), 0, 2);
+            if (this.repeatPenalty > 0) { opts.repeatPenalty = Utils.clamp(this.repeatPenalty + (attempt * this.deltaRepeatPenalty), 1, 1.5); }
+            if (config.DEBUG) { console.log(`[LMStudioGlossary.prompt] -> Attempt ${attempt + 1} of ${this.retryCount + 1}, seed: ${seed}, temperature: ${opts.temperature}, repeatPenalty: ${opts.repeatPenalty}`); }
+            if (attempt > 0) { this.retry_error_count++; }
+            await this.reloadModel((p) => this.setProgress(p * 10, ProgressLevel.LOADING_MODEL), seed);
+            let response = this.model.respond(text, opts);
+            let timeout = setTimeout(async () => await response.cancel(), Math.min(this.maxTimeout, LMStudioGlossary.MAX_32BIT_INT));
+
+            try { result = await response as StructuredPredictionResult; } catch (e: any) { console.error("[LMStudioGlossary.createGlossary] -> Error during LM response:", e); }
+            clearTimeout(timeout);
+            predictCallbacks.pop();
+            if (result?.parsed) { break; } else if (content) { this.addError(content); }
         }
 
-        if (result && !result?.parsed) { console.error("[LMStudioGlossary.createGlossary] -> Failed to parse LM response:", (result as any)?.text); }
+        if (result && !result?.parsed) { console.error(`[${LMStudioGlossary.CLASS_NAME}.createGlossary] -> Failed to parse LM response:`, (result as any)?.text); }
         if (config.DEBUG && result) { console.dir(result?.parsed || null, { depth: null }); }
         return result?.parsed ? result.parsed : null;
+    }
+
+    protected async countTokens(text: string): Promise<number> {
+        return await this.model.countTokens(text);
     }
 
     public async createGlossary(text: string): Promise<GlossaryReport> {
@@ -115,27 +144,29 @@ export class LMStudioGlossary extends GlossaryGenerator {
         const startTime = Number(new Date());
         const allReports: Partial<GlossaryReport>[] = [];
 
-        if (config.DEBUG) { console.debug(`[LMStudioGlossary.createGlossary] -> input: "${Tokenizer.cleanText(text).slice(0, 100)}...", size: ${text?.length}/${Tokenizer.cleanText(text).length}`); }
-        const tokenizer = async (input: string) => await this.model.countTokens(input);
+        if (config.DEBUG) { console.debug(`[${LMStudioGlossary.CLASS_NAME}.createGlossary] -> input: "${Tokenizer.cleanText(text).slice(0, 100)}...", size: ${text?.length}/${Tokenizer.cleanText(text).length}`); }
+        const tokenizer = async (input: string) => await this.countTokens(input);
         const { chunkSize, prompts } = await Tokenizer.preparePrompts(text, this.deffaultPrompt, this.promptContext, tokenizer, this.safeMargin);
-        if (config.DEBUG) { console.debug(`[LMStudioGlossary.createGlossary] -> chunkSize: ${chunkSize}, prompts.length: ${prompts.length}`); }
+        if (config.DEBUG) { console.debug(`[${LMStudioGlossary.CLASS_NAME}.createGlossary] -> chunkSize: ${chunkSize}, prompts.length: ${prompts.length}`); }
 
         for (var i = 0; i < prompts.length; i++) {
             let result: Partial<GlossaryReport> | null = null;
             let isTooSmall = prompts[i].length - prompts.length < this.minProcessSize;
+            this.setProgressInfo(i, prompts.length);
             if (!isTooSmall) { result = await this.prompt(prompts[i]); }
-            this.setProgress(10 + ((i + 1) / prompts.length) * 90);
+            this.setProgress(10 + ((i + 1) / prompts.length) * 90, ProgressLevel.CHUNKING);
             if (!isTooSmall && !result) { this.error_count++; }
             allReports.push(result ? result : this.emptyReport())
         }
 
-        this.setProgress(100);
+        await this.free();
+        this.setProgress(100, ProgressLevel.CHUNKING);
         let debugInfo = { chunkSize: chunkSize, chunkCount: prompts.length, contextLength: this.contextLength, temperature: this.temperature, seed: this.seed, prompt: this.deffaultPrompt, elapsedTime: (Number(new Date()) - startTime) / 1000 };
-        debugInfo = Object.assign(debugInfo, { safeMargin: this.safeMargin, maxResponseTokens: this.maxResponseTokens, maxTimeout: this.maxTimeout, repeatPenalty: this.repeatPenalty, inputSize: text.length });
-        return this.exportReport(allReports, startTime, debugInfo, config.LMSTUDIO.DEDUPLICATE);
+        debugInfo = Object.assign(debugInfo, { safeMargin: this.safeMargin, maxResponseTokens: this.maxResponseTokens, maxTimeout: this.maxTimeout, repeatPenalty: this.repeatPenalty, inputSize: text.length, retryCount: this.retryCount, deltaTemperature: this.deltaTemperature, deltaRepeatPenalty: this.deltaRepeatPenalty });
+        return this.exportReport(allReports, startTime, debugInfo, this.deduplicate);
     }
 
-    public async reloadModel(progress?: (percentage: number) => void, seed?: number): Promise<void> {
+    private async reloadModel(progress?: (percentage: number) => void, seed?: number): Promise<void> {
         await this.model.unload();
         seed = (seed !== undefined) ? seed : this.seed;
         let instance = await LMStudioGlossary.getInstance(progress, this.modelKey, seed);
@@ -143,7 +174,7 @@ export class LMStudioGlossary extends GlossaryGenerator {
         if (progress) { progress(1); }
     }
 
-    public async free(): Promise<void> {
+    protected async free(): Promise<void> {
         await this.model.unload();
     }
 
@@ -167,7 +198,7 @@ export class LMStudioGlossary extends GlossaryGenerator {
                     onProgress: progress || (() => {}),
                 });
             } catch (e) {
-                console.error(`[LMStudioGlossary.getInstance] -> Failed to load model "${modelKey}", Retrying.. in 5 seconds. Details:`, e);
+                console.error(`[${LMStudioGlossary.CLASS_NAME}.getInstance] -> Failed to load model "${modelKey}", Retrying.. in 5 seconds. Details:`, e);
                 await Utils.wait(5000);
             }
         }

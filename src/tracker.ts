@@ -59,7 +59,7 @@ class JobTrackerController {
         const newProgress = Math.min(100, Math.max(0, progress));
         const statusChanged = job.status !== status;
         const messageChanged = message && job.message !== message;
-        const progressChangedSignificantly = (newProgress - job.progress) > 0.5;
+        const progressChangedSignificantly = (newProgress - job.progress) > config.JOB_TRACKER_DELTA_THRESHOLD;
         if (!statusChanged && !messageChanged && !progressChangedSignificantly) { return; }
 
         job.status = status;

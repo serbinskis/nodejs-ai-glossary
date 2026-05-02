@@ -41,8 +41,12 @@ export class Utils {
         }
     }
 
-    public static between = (num: number, a: number, b: number) => {
-        let min = Math.min.apply(Math, [a, b]), max = Math.max.apply(Math, [a, b]);
-        return (num != null) && (num >= min && num <= max);
+    public static between(num: number, a: number, b: number): boolean {
+        let min = Math.min(a, b), max = Math.max(a, b);
+        return (num != null) && ((num >= min) && (num <= max));
     };
+
+    public static clamp(num: number, min: number, max: number): number {
+        return Math.min(Math.max(num, min), max);
+    }
 }

@@ -25,11 +25,20 @@ export type GlossaryReport = {
     glossary: GlossaryEntry[];
 };
 
+export enum ProgressLevel {
+    LOADING_MODEL = 'loading_model',
+    PROMPTING = 'prompting',
+    CHUNKING = 'chunking',
+}
+
 export abstract class GlossaryGenerator extends EventEmitter {
     protected implementation: string = "unknown";
     protected error_count: number = 0;
     protected retry_error_count: number = 0;
     protected progress: number = 0;
+    protected errors: string[] = [];
+    protected currentChunk: number = 0;
+    protected totalChunks: number = 0;
 
     protected constructor(implementation: string) {
         super();
@@ -44,14 +53,27 @@ export abstract class GlossaryGenerator extends EventEmitter {
         throw new Error("Not implemented");
     }
 
-    public async countTokens(text: string): Promise<number> {
+    protected async countTokens(text: string): Promise<number> {
         return await Tokenizer.countTokens(text);
     }
 
-    public setProgress(progress: number) {
+    public setProgress(progress: number, level?: ProgressLevel) {
         if (progress < this.progress) { return; }
-        this.progress = progress;
-        this.emit('progress', progress);
+        this.progress = Utils.clamp(progress, 0, 100);
+        this.emit('progress', this.progress, level);
+    }
+
+    public setProgressInfo(currentChunk: number, totalChunks: number) {
+        this.currentChunk = currentChunk;
+        this.totalChunks = totalChunks;
+    }
+
+    public getProgress(): number {
+        return this.progress;
+    }
+
+    public addError(error: string) {
+        this.errors.push(error);
     }
 
     public emptyReport(): GlossaryReport {
@@ -86,7 +108,7 @@ export abstract class GlossaryGenerator extends EventEmitter {
             glossary: uniqueGlossary.map(entry => ({ ...entry, generated: false, uid: crypto.randomUUID() })) as GlossaryEntry[],
         };
 
-        if (debugInfo) { finalReport.debug_info = debugInfo; }
+        if (debugInfo) { finalReport.debug_info = { ...debugInfo, errors: this.errors }; }
         return finalReport;
     }
 }
