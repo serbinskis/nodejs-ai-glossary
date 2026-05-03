@@ -17,8 +17,9 @@
 - Salīdzinājuma grafiku, kurā tika salīdzinātas visu modeļu kļūdas, F1 mērs un laiks atkarībā no parametru skaita, var aplūkot failā ar nosaukumu [LAT_ENG_metrics.png](exper1/eval/LAT_ENG_metrics.png).
 
 <p align="center"><img src="exper1/eval/LAT_ENG_metrics.png"></p>
+<p align="center"><img src="exper1/eval/LAT_ENG_metrics_vision_tools.png"></p>
 
-## Eksperiments 2
+## Eksperiments 2 A
 Šajā eksperimentā tika manuāli salīdzināti divu modeļu rezultāti: Gemma 2 9B un Gemma 2 27B.
 
 - Salīdzinājuma novērtējumu var aplūkot failā ar nosaukumu [LAT_manual_eval.txt](exper1/eval/LAT_manual_eval.txt).
@@ -26,7 +27,7 @@
 
 <p align="center"><img src="exper1/eval/LAT_manual_eval.png"></p>
 
-## Eksperiments 3
+## Eksperiments 2 B
 Šajā eksperimentā tika salīdzināti trīs modeļu (Gemma 2 9B, Gemma 2 27B un Qwen3 VL 4B) rezultāti ar dažādiem iestatījumiem, lai noteiktu, kādi iestatījumi ietekmē modeļa kļūdu un veiktspēju, izmantojot latviešu valodas materiālus.
 
 - Katra modeļa atsevišķos rezultātus var aplūkot šeit: [NOKLIKŠĶINI](exper2/output).
@@ -36,3 +37,12 @@
 <p align="center"><img src="exper2/eval/LAT_eval_groups_qwen_qwen3-vl-4b.png"></p>
 <p align="center"><img src="exper2/eval/LAT_eval_groups_google_gemma-2-9b.png"></p>
 <p align="center"><img src="exper2/eval/LAT_eval_groups_google_gemma-2-27b.png"></p>
+<p align="center"><img src="exper2/eval/LAT_eval_groups_google_gemma-3-27b.png"></p>
+<p align="center"><img src="exper2/eval/LAT_eval_groups_google_gemma-3n-e4b.png"></p>
+<p align="center"><img src="exper2/eval/LAT_eval_groups_google_gemma-4-e4b.png"></p>
+
+## Eksperiments 3
+Šajā eksperimentā tika salīdzināti ārējie modeļi no Google AI Studio.
+
+- Katra modeļa atsevišķos rezultātus var aplūkot šeit: [NOKLIKŠĶINI](exper3/output).
+- Kopējo salīdzinājumu var aplūkot failos ar nosaukumiem [LAT_metrics.txt](exper3/eval/LAT_metrics.txt) un [ENG_metrics.txt](exper3/eval/ENG_metrics.txt).
