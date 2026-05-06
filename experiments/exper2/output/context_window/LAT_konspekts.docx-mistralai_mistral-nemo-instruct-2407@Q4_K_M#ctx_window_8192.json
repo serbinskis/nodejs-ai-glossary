@@ -1,0 +1,1816 @@
+{
+  "uid": "13542836-7e35-49ce-af28-87193ff9df02",
+  "domain": "Tēma - Mākslīgā intelekta definīcija",
+  "language": "lv",
+  "implementation": "LMStudio-mistralai/mistral-nemo-instruct-2407@Q4_K_M",
+  "timestamp_start": 1777923769149,
+  "timestamp_end": 1777925517036,
+  "error_count": 1,
+  "retry_error_count": 0,
+  "glossary": [
+    {
+      "term": "intelekts",
+      "definition": "Kopējais apzīmējums cilvēka, dzīvnieku un augu spējām uztvert, apstrādāt un izmantot informāciju, lai veiktu spriešanas procesus un realizētu mērķus.",
+      "sentence": "Tēma - Mākslīgā intelekta definīcija Lai izprastu, kas ir mākslīgais intelekts, šis jēdziens būtu jāaplūko ciešā saiknē ar mūsu izpratni par to, kas ir intelekts vispārīgi.",
+      "language": "lv",
+      "generated": false,
+      "uid": "e9164145-a328-4a0f-80ad-57553fd3a1d7"
+    },
+    {
+      "term": "Mākslīgais intelekts",
+      "definition": "Datorzinātnes apakšnozare, kas ietver metožu un tehnoloģiju daudzveidību, piemēram, pārmeklēšanas tehnikas, zināšanu atspoguļošanu, dabiskas valodas apstrādi, datorredzi, mašīnmācīšanos, robotiku, evolucionārās skaitļošanas modeļus, bioloģiski iedvesmotus modeļus, tēlu pazīšanu, intelektiskus aģentus, u.c.",
+      "sentence": "Mākslīgais intelekts ir datorzinātnes apakšnozare, kas ietver sevī metožu un tehnoloģiju daudzveidību, piemēram, pārmeklēšanas tehnikas, zināšanu atspoguļošanu, dabiskas valodas apstrādi, datorredzi, mašīnmācīšanos, robotiku, evolucionārās skaitļošanas modeļus, bioloģiski iedvesmotus modeļus, tēlu pazīšanu, intelektiskus aģentus, u.c.",
+      "language": "lv",
+      "generated": false,
+      "uid": "acbc4d14-2b70-4e07-8aee-48ec05d9052f"
+    },
+    {
+      "term": "cilvēka intelekts",
+      "definition": "Intelekta forma cilvēkiem.",
+      "sentence": "Cilvēka intelekts vispusīgi tiek pētīts daudzās zinātnes nozarēs, piemēram, filozofijā, lingvistikā, neirozinātnē, taču tieši psiholoģijā ir izstrādāta virkne teoriju par cilvēka intelekta būtību un ir atklātas daudzas īpašības, kas raksturo intelektu.",
+      "language": "lv",
+      "generated": false,
+      "uid": "bc1567d1-9df3-4f0b-b875-a47eb395fba4"
+    },
+    {
+      "term": "dzīvnieku intelekts",
+      "definition": "Intelekta forma dzīvniekiem.",
+      "sentence": "Daudz mazāk mēs zinām par dzīvnieku intelektu. Tas lielākoties tiek saistīts ar izzināšanas spēju, kas piemīt tādiem dzīvniekiem, kā pērtiķi, ziloni, delfīni, žurkas, vārnas.",
+      "language": "lv",
+      "generated": false,
+      "uid": "10b79204-6bc6-4f7f-bf29-38a48add638b"
+    },
+    {
+      "term": "augu intelekts",
+      "definition": "Intelekta forma augiem.",
+      "sentence": "Zināšanas par augu intelektu ir vēl ierobežotākas. Šobrīd ir zināms, ka augu intelekts nebalstās uz smadzeņu un nervu sistēmas esamību.",
+      "language": "lv",
+      "generated": false,
+      "uid": "a0fdebf7-6bdc-4991-adb2-19c3af91972b"
+    },
+    {
+      "term": "Tjūringa tests",
+      "definition": "Mākslīgā intelekta mērīšanas metode, kurā testētājs nezin atšķirību starp cilvēku un datorsistēmu.",
+      "sentence": "Tjūringa tests veido pamatu sistēmām, kuras darbojas kā cilvēki, un tas ir arī viens no fundamentālajiem testiem mākslīgā intelekta jomā, lai noteiktu, vai datorsistēmai piemīt vai nepiemīt intelekts.",
+      "language": "lv",
+      "generated": false,
+      "uid": "058fcfa3-0979-407c-9980-b1f9dd3465ac"
+    },
+    {
+      "term": "izziņas modelēšanas pieeja",
+      "definition": "Pieeja mākslīgā intelekta izstrādāšanai, kurā cilvēku prātiskais procesu modelēšana ir pamatīgi.",
+      "sentence": "Izziņas modelēšanas pieeja ir pamatā sistēmām, kuras domā kā cilvēki. Tajā cilvēks tiek uzskatīts par informācijas apstrādes sistēmu un tiek pētīts, kā cilvēks atspoguļo, apstrādā, pārveido un saglabā informāciju savā prātā, un tālāk to imitē datoros.",
+      "language": "lv",
+      "generated": false,
+      "uid": "e0cb6e4d-89f0-480e-b1bb-b201bcfcea18"
+    },
+    {
+      "term": "domāšanas likumu pieeja",
+      "definition": "Pieeja mākslīgā intelekta izstrādāšanai, kurā domāšanas likumi ir pamatīgi.",
+      "sentence": "Sistēmas, kuras domā saprātīgi, pamatojas uz domāšanas likumu pieeju, līdz ar to atspoguļo zināšanas loģisko likumu veidā.",
+      "language": "lv",
+      "generated": false,
+      "uid": "578dc640-b834-45a2-85c9-b1b65ff79126"
+    },
+    {
+      "term": "saprātīgs aģents",
+      "definition": "Aģents, kas uztver vidi un darbojas tajā, mēģinot sasniegt vislabāko rezultātu.",
+      "sentence": "Sistēmas, kuras domā saprātīgi, pamatojas uz saprātīgu aģentu pieeju. Šajā kontekstā aģents ir jebkas, kas uztver vidi un darbojas tajā.",
+      "language": "lv",
+      "generated": false,
+      "uid": "ce4f688c-42ae-4640-be9c-9d15f0a22ae1"
+    },
+    {
+      "term": "Filozofija",
+      "definition": "Zinātnes nozare, kurā tiek meklētas atbildes uz jautājumiem par prāta un zināšanu rašanos un izmantošanu;",
+      "sentence": "Tā saknes ir meklējamas šādās nozarēs (Russell and Norvig, 2020): filozofijā, kurā tiek meklētas atbildes uz jautājumiem par prāta un zināšanu rašanos un izmantošanu;",
+      "language": "lv",
+      "generated": false,
+      "uid": "545f9b64-dfa2-4277-946a-572c0544d544"
+    },
+    {
+      "term": "Matemātika",
+      "definition": "Zinātnes nozare, kas nodrošina līdzekļus risināmo uzdevumu formālajam atspoguļojumam un darbam ar loģikā sakņotiem apgalvojumiem un nenoteiktiem, varbūtiskiem spriedumiem.",
+      "sentence": "matemātikā, kas nodrošināja līdzekļus risināmo uzdevumu formālajam atspoguļojumam un darbam ar loģikā sakņotiem apgalvojumiem un nenoteiktiem, varbūtiskiem spriedumiem;",
+      "language": "lv",
+      "generated": false,
+      "uid": "f1bada13-d3d5-49e8-bd74-5de8bebcd9b3"
+    },
+    {
+      "term": "Ekonomika",
+      "definition": "Zinātnes nozare, kura piedāvāja teorijas par to, kā veikt izvēles, kas ved pie vēlamajiem rezultātiem, un lika pamatus saprātīgu aģentu pētījumiem.",
+      "sentence": "ekonomikā, kura piedāvāja teorijas par to, kā veikt izvēles, kas ved pie vēlamajiem rezultātiem, un lika pamatus saprātīgu aģentu pētījumiem;",
+      "language": "lv",
+      "generated": false,
+      "uid": "e6625814-39a3-4638-bfae-110f771d6086"
+    },
+    {
+      "term": "Neirozinātne",
+      "definition": "Zinātnes nozare, kura sniedza pētījumu atziņas par to, kā cilvēku smadzeņu apstrādā informāciju, un noveda pie mākslīgo neironu tīklu parādīšanās.",
+      "sentence": "neirozinātnē, kura sniedza pētījumu atziņas par to, kā cilvēku smadzeņu apstrādā informāciju, un noveda pie mākslīgo neironu tīklu parādīšanās;",
+      "language": "lv",
+      "generated": false,
+      "uid": "34e0f4d8-9f25-4643-87e9-e5a28e4dcf36"
+    },
+    {
+      "term": "Psiholoģija",
+      "definition": "Zinātnes nozare, kura atklāja cilvēku un dzīvnieku domāšanas un darbības modeļus.",
+      "sentence": "psiholoģijā, kura atklāja cilvēku un dzīvnieku domāšanas un darbības modeļus;",
+      "language": "lv",
+      "generated": false,
+      "uid": "ecd2b154-bb32-484d-b61f-ef3a6748bc42"
+    },
+    {
+      "term": "Datorinženierija",
+      "definition": "Zinātnes nozare, kas nodrošināja sasniegumus datoru ātruma un atmiņas apjoma attīstībā, padarot datorus jaudīgākus, kas bija nepieciešams dažādu mākslīgā intelekta lietojumu izstrādēi;",
+      "sentence": "datorinženierijā, kas nodrošināja sasniegumus datoru ātruma un atmiņas apjoma attīstībā, padarot datorus jaudīgākus, kas bija nepieciešams dažādu mākslīgā intelekta lietojumu izstrādēi;",
+      "language": "lv",
+      "generated": false,
+      "uid": "afd4aa25-5e48-460c-be18-e10db77804c8"
+    },
+    {
+      "term": "Vadības teorija un kibernētika",
+      "definition": "Zinātnes nozare, kura definēja atgriezeniskās saites teoriju un lika pamatus intelektiskiem risinājumiem, kuri var darboties, paši sevi kontrolējot;",
+      "sentence": "vadības teorijā un kibernētikā, kura definēja atgriezeniskās saites teoriju un lika pamatus intelektiskiem risinājumiem, kuri var darboties, paši sevi kontrolējot;",
+      "language": "lv",
+      "generated": false,
+      "uid": "ccb146b3-2684-4582-9636-d0a9bf2ca61d"
+    },
+    {
+      "term": "Lingvistika",
+      "definition": "Zinātnes nozare, kuras pētījumi par to, kā valoda saistās ar domāšanu, deva ieguldījumu dabiskās valodas apstrādē un zināšanu atspoguļošanā.",
+      "sentence": "lingvistikā, kuras pētījumi par to, kā valoda saistās ar domāšanu, deva ieguldījumu dabiskās valodas apstrādē un zināšanu atspoguļošanā. ",
+      "language": "lv",
+      "generated": false,
+      "uid": "0719e76e-b0f8-4529-bd27-4cdb7fa3db25"
+    },
+    {
+      "term": "Simboliskais mākslīgais intelekts",
+      "definition": "Mākslīgā intelekta sistēma, kas balstīta uz problēmu simbolisku (cilvēkam saprotamu) atspoguļojumu.",
+      "sentence": "Simboliskais zināšanu atspoguļojums nav pārāk apgūstams.",
+      "language": "lv",
+      "generated": false,
+      "uid": "c35e3b9e-6817-4e51-9de4-04c17e572e47"
+    },
+    {
+      "term": "Konekcionistiskais mākslīgais intelekts",
+      "definition": "Mākslīgā intelekta sistēma, kas atdarina cilvēka smadzeņu darbību (liels skaits savstarpēji savienotu mākslīgo neironu).",
+      "sentence": "Konekcionistiskais zināšanu atspoguļojums ir sistēmai apgūstams mācīšanās ceļā.",
+      "language": "lv",
+      "generated": false,
+      "uid": "f21bd51b-1d14-4f86-aad7-93810c30a981"
+    },
+    {
+      "term": "Fizisko simbolu sistēma",
+      "definition": "Hipotēze, kas definē, kā tiek sasniegta gan cilvēka, gan datora vispārīga intelektuāla darbība un ir formulēta šādi: “Fizisko simbolu sistēmai ir nepieciešamie un pietiekamie līdzekļi vispārīgai intelektuālai darbībai”.",
+      "sentence": "Tādējādi fizisko simbolu sistēma ietver sevī (Bermúdez, 2014; Luger, 2009; Poole and Mackworth, 2010): simbolus, kas atbilst jēgpilniem fiziskiem modeļiem un var atspoguļot jebkuras formas zināšanas, pieredzi, jēdzienus un cēloņsakarības;",
+      "language": "lv",
+      "generated": false,
+      "uid": "d5a650d5-c106-4b34-b3b8-79e0991d6e53"
+    },
+    {
+      "term": "Simboliskā struktūra",
+      "definition": "Sistēma, kas sastāv no simboliem, kas ir savienoti savā starpā kādā veidā. Tādējādi simboliskās struktūras atspoguļo nozīmīgus problēmsfēras aspektus;",
+      "sentence": "Tādējādi fizisko simbolu sistēma ietver sevī (Bermúdez, 2014; Luger, 2009; Poole and Mackworth, 2010): simboliskās struktūras, kuras sastāv no simboliem, kas ir savienoti savā starpā kādā veidā. Tādējādi simboliskās struktūras atspoguļo nozīmīgus problēmsfēras aspektus;",
+      "language": "lv",
+      "generated": false,
+      "uid": "cc1368de-6553-412b-be18-7b4ad8e4d9eb"
+    },
+    {
+      "term": "Operācijas",
+      "definition": "Procedūras, kas ļauj izmantot esošās simboliskās struktūras un radīt jaunas struktūras; turklāt pašas operācijas var tikt attēlotas ar simboliem un simboliskām struktūrām sistēmā.",
+      "sentence": "Tādējādi fizisko simbolu sistēma ietver sevī (Bermúdez, 2014; Luger, 2009; Poole and Mackworth, 2010): operācijas (veidošana, kopēšana, modificēšana un iznīcināšana), kuras ļauj izmantot esošās simboliskās struktūras un radīt jaunas struktūras; turklāt pašas operācijas var tikt attēlotas ar simboliem un simboliskām struktūrām sistēmā.",
+      "language": "lv",
+      "generated": false,
+      "uid": "f1b1b542-ab4f-4f75-bc56-1c815793b4ae"
+    },
+    {
+      "term": "Zināšanas",
+      "definition": "Informācija, kas tiek apgūta un modificēta fizisko simbolu sistēmās. Šīs zināšanas galvenokārt sastāv no vispārinājumiem, kas ir pieejami attiecīgajā problēmsfērā.",
+      "sentence": "Tādējādi intelektiskas datorsistēmas, kas balstās uz šo paradigmu, tiešā veidā atspoguļo problēmsfēras zināšanas (objektus un to attiecības), izmantojot simbolu kopumu (Luger, 2009). Šīs zināšanas galvenokārt sastāv no vispārinājumiem, kas ir pieejami attiecīgajā problēmsfērā. Tomēr tās nav viegli apgūstamas un modificējamas.",
+      "language": "lv",
+      "generated": false,
+      "uid": "23a12397-55a1-4a70-8d67-fcab3ebca697"
+    },
+    {
+      "term": "Mākslīgo neironu tīkli",
+      "definition": "Vienkāršoti cilvēka smadzeņu modeļi, kas sastāv no liela skaita savienotu apstrādes vienību (mākslīgo neironu), kuras imitē cilvēka smadzeņu neironus, un skaitliskiem svariem, kas ir pievienoti savienojumiem starp vienībām, atspoguļojot šo savienojumu spēku.",
+      "sentence": "Tāpēc intelektiskas datorsistēmas, kas balstās uz šo paradigmu, tiešā veidā atspoguļo problēmsfēras zināšanas (objektus un to attiecības), izmantojot simbolu kopumu (Luger, 2009). Šīs zināšanas galvenokārt sastāv no vispārinājumiem, kas ir pieejami attiecīgajā problēmsfērā. Tomēr tās nav viegli apgūstamas un modificējamas.",
+      "language": "lv",
+      "generated": false,
+      "uid": "1bdef6ea-d385-4038-acbc-5415f9eddb22"
+    },
+    {
+      "term": "Zināšanu atspoguļošana",
+      "definition": "Procesu kopums, kurā fizisko simbolu sistēma izmantojot simbolus un operācijas, atspoguļo zināšanas par problēmu un tās risinājumu attiecībām.",
+      "sentence": "Zināšanu atspoguļošana ir processu kopums, kurā fizisko simbolu sistēma izmantojot simbolus un operācijas, atspoguļo zināšanas par problēmu un tās risinājumu attiecībām.",
+      "language": "lv",
+      "generated": false,
+      "uid": "47101d67-36cd-4a9b-9221-e49256f92e2c"
+    },
+    {
+      "term": "Dabiskās valodas apstrādē",
+      "definition": "Procesu kopums, kurā fizisko simbolu sistēma izmantojot simbolus un operācijas, atspoguļo zināšanas par dabiskajām valodām un tās struktūru attiecībām.",
+      "sentence": "Dabiskās valodas apstrādē ir procesu kopums, kurā fizisko simbolu sistēma izmantojot simbolus un operācijas, atspoguļo zināšanas par dabiskajām valodām un tās struktūru attiecībām.",
+      "language": "lv",
+      "generated": false,
+      "uid": "6e0e3a5a-6d61-4a1e-9cf5-50f118d87d25"
+    },
+    {
+      "term": "Mašīnmācīšanās",
+      "definition": "Procesu kopums, kurā fizisko simbolu sistēma māca sevi atspoguļot zināšanas par problēmu un tās risinājumu attiecībām.",
+      "sentence": "Mašīnmācīšanās ir procesu kopums, kurā fizisko simbolu sistēma māca sevi atspoguļot zināšanas par problēmu un tās risinājumu attiecībām.",
+      "language": "lv",
+      "generated": false,
+      "uid": "b20e2ced-1847-44da-8b4d-263cb5a42cd8"
+    },
+    {
+      "term": "Pārmeklēšana",
+      "definition": "Meklēšana pēc problēmas risinājuma, sākot no sākuma stāvokļa līdz mērķa stāvoklim.",
+      "sentence": "Pārmeklēšanas mērķa virsotnes atrašanas efektivitāti var uzlabot, izmantojot heiristiski informētas pārmeklēšanas algoritmus.",
+      "language": "lv",
+      "generated": false,
+      "uid": "006aa049-5046-4a9b-b0ca-7084b6cdd7a0"
+    },
+    {
+      "term": "Robotika",
+      "definition": "Zinātnes nozare, kas nodarbojas ar robotu izstrādēm un tās lietošanu. Roboti ir mehāniskas sistēmas, kas spēj darboties neatkarīgi vai kontrolētas no cilvēkiem.",
+      "sentence": "Robotika ir zinātnes nozare, kas nodarbojas ar robotu izstrādēm un tās lietošanu. Roboti ir mehāniskas sistēmas, kas spēj darboties neatkarīgi vai kontrolētas no cilvēkiem.",
+      "language": "lv",
+      "generated": false,
+      "uid": "52970f1f-9457-4efe-9b20-6c67fe930a84"
+    },
+    {
+      "term": "Evolucionārās skaitļošanas modeļi",
+      "definition": "Modeļi, kuru pamatā ir evolūcija un dabas izdzīvošanas principi, kas tiek lietoti mākslīgajā intelektā.",
+      "sentence": "Evolucionārās skaitļošanas modeļi ir modeļi, kuru pamatā ir evolūcija un dabas izdzīvošanas principi, kas tiek lietoti mākslīgajā intelektā.",
+      "language": "lv",
+      "generated": false,
+      "uid": "49bbe2de-fde5-42c9-b85c-8511110b2749"
+    },
+    {
+      "term": "Bioloģiski iedvesmotie modeļi",
+      "definition": "Modeļi, kuri balstās uz bioloģisko sistēmu darbības principiem un mehānismiem, kas tiek lietoti mākslīgajā intelektā.",
+      "sentence": "Bioloģiski iedvesmotie modeļi ir modeļi, kuri balstās uz bioloģisko sistēmu darbības principiem un mehānismiem, kas tiek lietoti mākslīgajā intelektā.",
+      "language": "lv",
+      "generated": false,
+      "uid": "ff1deff9-d617-4374-a7a0-57ed5ca95a83"
+    },
+    {
+      "term": "Tēlu pazīšana",
+      "definition": "Procesu kopums, kurā fizisko simbolu sistēma izmanto simbolus un operācijas, lai atpazītu tēlus un izmantotu šos tēlus risināšanai problēmām.",
+      "sentence": "Tēlu pazīšana ir procesu kopums, kurā fizisko simbolu sistēma izmanto simbolus un operācijas, lai atpazītu tēlus un izmantotu šos tēlus risināšanai problēmām.",
+      "language": "lv",
+      "generated": false,
+      "uid": "2e327733-b358-43fa-8735-f7ab36a4316d"
+    },
+    {
+      "term": "Intelektiskie aģenti",
+      "definition": "Datorsistēmas vai programmatūra, kas spēj darboties neatkarīgi un mācīties no apkārtējās vides.",
+      "sentence": "Intelektiskie aģenti ir datorsistēmas vai programmatūra, kas spēj darboties neatkarīgi un mācīties no apkārtējās vides.",
+      "language": "lv",
+      "generated": false,
+      "uid": "b88d5d96-0bf4-46bd-954a-911116513184"
+    },
+    {
+      "term": "Mašīnmācīšanā",
+      "definition": "Procesu kopums, kurā fizisko simbolu sistēma māca sevi atspoguļot zināšanas par problēmu un tās risinājumu attiecībām.",
+      "sentence": "Mašīnmācīšanā ir procesu kopums, kurā fizisko simbolu sistēma māca sevi atspoguļot zināšanas par problēmu un tās risinājumu attiecībām.",
+      "language": "lv",
+      "generated": false,
+      "uid": "54f4f447-aef8-402e-ac13-03950d11806a"
+    },
+    {
+      "term": "Vienkāršs (vājais) mākslīgais intelekts",
+      "definition": "Mākslīgā intelekta sistēma, kas balstās uz uzskatu, ka intelekts ir spēju kopums, un līdz ar to tas ir saistīts ar risinājumu izstrādi atsevišķiem specifiskiem uzdevumiem.",
+      "sentence": "Tā ir vienīga pieeja, kurā mūsdienās ir sasniegts ievērojams progress.",
+      "language": "lv",
+      "generated": false,
+      "uid": "cfc8ad86-c8c1-428a-ad4c-06d7a7a06587"
+    },
+    {
+      "term": "Vispārīgais (spēcīgais) mākslīgais intelekts",
+      "definition": "Mākslīgā intelekta sistēma, kas uzskata intelektu par vispārēju spēju, ko var kopēt / atveidot.",
+      "sentence": "Tādējādi, šajā pieejā tiek mēģināts panākt tādu intelektiskas datorsistēmas intelektuālas darbības līmeni, kad sistēma spēj atrisināt plašu uzdevumu klāstu, tostarp jaunus uzdevumus, un paveikt tos tikpat labi kā cilvēks.",
+      "language": "lv",
+      "generated": false,
+      "uid": "41715706-a6c0-4234-9d25-6648823b04c5"
+    },
+    {
+      "term": "Mākslīgais superintelekts",
+      "definition": "Intelekts, kas pārspēj cilvēka spējas un līdz ar to ir gudrāks par jebkuru cilvēka prātu jebkurā jomā.",
+      "sentence": "Mākslīgais superintelekts ir intelekts, kas pārspēj cilvēka spējas (Russell and Norvig, 2020) un līdz ar to ir gudrāks par jebkuru cilvēka prātu jebkurā jomā, ieskaitot zinātnisko radošumu, vispārīgu gudrību un sociālās prasmes (Bostrom, 2015).",
+      "language": "lv",
+      "generated": false,
+      "uid": "ebea1479-da1d-4a53-baa0-e8f507bd6bdd"
+    },
+    {
+      "term": "Jaunais mākslīgais intelekts",
+      "definition": "Mākslīgā intelekta sistēma, kas uzskata, ka patiess intelekts ietver spēju funkcionēt reālās pasaules vidē.",
+      "sentence": "Šīs pieejas pamatlicējs Brūks (Brooks, 1990) ir akcentējis, ka jaunā mākslīgā intelekta pamatā ir hipotēze par to, ka, lai izveidotu intelektisku sistēmu, ir nepieciešams, lai tajā esošie atspoguļojumi būtu pamatoti fiziskajā pasaulē.",
+      "language": "lv",
+      "generated": false,
+      "uid": "12657c61-e9c0-49ca-b637-447b30cb06b1"
+    },
+    {
+      "term": "Spietu intelekts",
+      "definition": "Paradigma jaunā mākslīgā intelekta, kas uzskata, ka kolektīvais intelekts rodas daudzu mazāk intelektuālu aģentu mijiedarbības un sadarbības rezultātā.",
+      "sentence": "Tā uzskata, ka kolektīvais intelekts rodas daudzu mazāk intelektuālu aģentu mijiedarbības un sadarbības rezultātā. Tas ietver skudru kolonijas optimizāciju, kas pēta varbūtīgus algoritmus, iedvesmojoties no skudru uzvedības, meklējot barību, un optimizēšanu ar daļiņu spieta metodi, kas pēta varbūtīgus algoritmus, iedvesmojoties no putniem un zivīm (Brownlee, 2011).",
+      "language": "lv",
+      "generated": false,
+      "uid": "6017eae9-885b-4dc7-a4b7-4edf8789ddbc"
+    },
+    {
+      "term": "Vājas mākslīgā intelekta metodes",
+      "definition": "Mākslīgā intelekta metodes, kas izmanto vispārīgas metodes (piemēram, vispārīga rakstura meklēšanu, loģiku, uz sintakses apstrādi balstītus aprēķinus, automātisku spriešanu, utt.), ko var pielietot plašam problēmu klāstam, neizmantojot zināšanas par apskatāmo problēmu.",
+      "sentence": "Vājas mākslīgā intelekta metodes izmanto vispārīgas metodes (piemēram, vispārīga rakstura meklēšanu, loģiku, uz sintakses apstrādi balstītus aprēķinus, automātisku spriešanu, utt.), ko var pielietot plašam problēmu klāstam, neizmantojot zināšanas par apskatāmo problēmu.",
+      "language": "lv",
+      "generated": false,
+      "uid": "beb14578-b8ad-4b9e-bd45-68739390b1f2"
+    },
+    {
+      "term": "Stipras mākslīgā intelekta metodes",
+      "definition": "Mākslīgā intelekta metodes, kas pamatojas uz liela apjoma zināšanām par apskatāmo problēmu un līdz ar to ņem vērā problēmas risināšanas kontekstu.",
+      "sentence": "Stipras mākslīgā intelekta metodes pamatojas uz liela apjoma zināšanām par apskatāmo problēmu un līdz ar to ņem vērā problēmas risināšanas kontekstu. Tās bieži izmanto vājas metodes.",
+      "language": "lv",
+      "generated": false,
+      "uid": "7c6879d4-fa68-466f-9a09-9cdda423f477"
+    },
+    {
+      "term": "problēma",
+      "definition": "Atšķirība starp sākuma stāvokli un mērķa stāvokli.",
+      "sentence": "Jūsu gadījumā problēmrisināšanas procesa sākuma stāvoklis ir Jūsu dzīvoklis A vietā un mērķa stāvoklis ir darba devēja birojs B vietā un, tā kā Jūs joprojām esat savā dzīvoklī, ir atšķirība starp problēmrisināšanas procesa sākuma un mērķa stāvokļiem, kas nozīmē to, ka Jums ir problēma.",
+      "language": "lv",
+      "generated": false,
+      "uid": "2c421884-a560-4a64-abd3-8e7e9077f2d6"
+    },
+    {
+      "term": "sākuma stāvoklis",
+      "definition": "Stāvoklis kurā mēs atrodamies pašreizējā brīdī.",
+      "sentence": "Problēmas definēšana paredz, ka mēs nosakām, kurā stāvoklī mēs atrodamies pašreizējā brīdī (tā saucamais problēmrisināšanas procesa sākuma stāvoklis).",
+      "language": "lv",
+      "generated": false,
+      "uid": "7bb0a0c8-b912-474e-aef5-ded13dcfc4c9"
+    },
+    {
+      "term": "mērķa stāvoklis",
+      "definition": "Stāvoklis kurā mēs vēlētos būt.",
+      "sentence": "Problēmas definēšana paredz, ka mēs nosakām, kurā stāvoklī mēs atrodamies pašreizējā brīdī (tā saucamais problēmrisināšanas procesa sākuma stāvoklis), kurā stāvoklī mēs vēlētos būt (tā saucamais problēmrisināšanas procesa mērķa stāvoklis).",
+      "language": "lv",
+      "generated": false,
+      "uid": "943e8f7b-a125-4e5d-8b1b-9c5021f02c9b"
+    },
+    {
+      "term": "problēmrisināšana",
+      "definition": "Proces, kura gaitā mēs nosakām sākuma stāvokli, mērķa stāvokli un atrodam risinājumu, kā no sākuma stāvokļa sasniegt mērķa stāvokli.",
+      "sentence": "Kad esam nodefinējuši problēmu, mēs varam sākt domāt par mums pieejamiem resursiem un iespējām, kuras kopā nosaka darbības, ko mēs varam izpildīt, lai problēmu atrisinātu.",
+      "language": "lv",
+      "generated": false,
+      "uid": "518773ef-5c29-4e5d-9f74-33334d3420a2"
+    },
+    {
+      "term": "darbība",
+      "definition": "Akcija kas izmaina stāvokli no sākuma līdz mērķam.",
+      "sentence": "Tas viss ļautu Jums noteikt pieejamas darbību alternatīvas jeb ar ko braukt un pie kādiem nosacījumiem.",
+      "language": "lv",
+      "generated": false,
+      "uid": "504020ee-f474-4920-acbe-ab75f2fb577e"
+    },
+    {
+      "term": "stāvokļa telpas grafs",
+      "definition": "Formāls apraksts problēmrisināšanas procesam, kas sastāv no virsotnēm, kas atbilst problēmrisināšanas procesa stāvokļiem, un orientētiem lokiem, kas norāda pāreju no viena stāvokļa uz citu, izpildot kādas noteiktas darbības.",
+      "sentence": "Tātad problēmrisināšanas procesā, kas ir daļa no mūsu reālās pasaules, ietilpst problēmrisināšanas procesa stāvokļi un darbības. Stāvokļu telpas grafā problēmrisināšanas procesa stāvokļiem atbilst virsotnes, bet darbībām – loki.",
+      "language": "lv",
+      "generated": false,
+      "uid": "e8f36da6-5a30-4bb5-bdd3-ed1b673167c3"
+    },
+    {
+      "term": "Otrais ierobežojums",
+      "definition": "Nosaka, ka spēles koka loki nevar būt citu līmeņu starpā. Ja tiktu izveidots loks, kas iet pāri līmeņiem, tas norādītu, ka viens spēlētājs veic vairākus gājienus pēc kārtas, neievērojot pretinieka iespējamos gājienus.",
+      "sentence": "Otrais ierobežojums nosaka, ka spēles koka loki nevar būt citu līmeņu starpā.",
+      "language": "lv",
+      "generated": false,
+      "uid": "9318b80c-744c-4524-9152-d8f1087eed98"
+    },
+    {
+      "term": "Spēles stāvokļus raksturojošie parametri",
+      "definition": "Ir visa tā informācija jeb faktori, kas mainās spēles gaitā pēc gājiena izpildes; tie ir saistīti tikai un vienīgi ar spēli, nevis ar spēles koka raksturojumiem tādiem kā virsotņu skaits, līmeņu skaits, loku skaits, utt.; šie parametri ir atkarīgi no spēles un līdz ar to tie var būt dažādi, piemēram, spēles lauciņa izskats konkrētajā brīdī, katra spēlētāja punktu skaits, spēlētāju punktu skaits un spēles lauciņa izskats noteiktajā laika brīdī, utt.",
+      "sentence": "Spēles stāvokļus raksturojošie parametri: ir visa tā informācija jeb faktori, kas mainās spēles gaitā pēc gājiena izpildes; tie ir saistīti tikai un vienīgi ar spēli, nevis ar spēles koka raksturojumiem tādiem kā virsotņu skaits, līmeņu skaits, loku skaits, utt.; šie parametri ir atkarīgi no spēles un līdz ar to tie var būt dažādi, piemēram, spēles lauciņa izskats konkrētajā brīdī, katra spēlētāja punktu skaits, spēlētāju punktu skaits un spēles lauciņa izskats noteiktajā laika brīdī, utt.",
+      "language": "lv",
+      "generated": false,
+      "uid": "a6a28d59-10ae-4894-a9f9-2b8ce7828637"
+    },
+    {
+      "term": "Pārmeklēšanas sākuma virsotne",
+      "definition": "Virsotne, no kurienes sākas pārmeklēšana stāvokļu telpas grafā.",
+      "sentence": "0. iterācijā pārmeklēšanas sākuma virsotne kopā ar tās heiristisko vērtējumu tiek ievietota sarakstā OPEN, jo tā kļūst par pirmo apskatāmo virsotni.",
+      "language": "lv",
+      "generated": false,
+      "uid": "ef91a166-9aed-4a4c-885d-f8a5fb9f83ca"
+    },
+    {
+      "term": "Pārmeklēšanas mērķa virsotne",
+      "definition": "Virsotne, kuru mēģina sasniegt pārmeklēšanā stāvokļu telpas grafā.",
+      "sentence": "0. iterācijā pārmeklēšanas sākuma virsotne kopā ar tās heiristisko vērtējumu tiek ievietota sarakstā OPEN, jo tā kļūst par pirmo apskatāmo virsotni.",
+      "language": "lv",
+      "generated": false,
+      "uid": "ee33e526-2910-4469-8952-6cb4ff8e140f"
+    },
+    {
+      "term": "Atrisinājuma ceļš",
+      "definition": "Atbilst darbību secībai, kura ir jāizpilda, lai atrisinātu problēmu. Vienā un tajā pašā stāvokļu telpas grafā var būt vairāki atrisinājuma ceļi, jo uzdoto pārmeklēšanas mērķa virsotni var sasniegt pa dažādiem ceļiem no uzdotās pārmeklēšanas sākuma virsotnes.",
+      "sentence": "Atrisinājuma ceļš sākas uzdotajā pārmeklēšanas sākuma virsotnē, beidzas uzdotajā pārmeklēšanas mērķa virsotnē un atbilst darbību secībai, kura ir jāizpilda, lai atrisinātu problēmu. Vienā un tajā pašā stāvokļu telpas grafā var būt vairāki atrisinājuma ceļi, jo uzdoto pārmeklēšanas mērķa virsotni var sasniegt pa dažādiem ceļiem no uzdotās pārmeklēšanas sākuma virsotnes.",
+      "language": "lv",
+      "generated": false,
+      "uid": "724b2b12-23ff-4b64-a1b5-1aa298ad99ef"
+    },
+    {
+      "term": "Stāvokļu telpas grafs",
+      "definition": "Grafiskā attēlojuma veids, kas parāda dažādus stāvokļus un ceļus starp tiem.",
+      "sentence": "Eksperimenta rezultāti parādīja, ka jau stāvokļu telpas grafa pārmeklēšana līdz 10 līmenim var aizņemt līdz 3 stundām, nerunājot par ilgāku laiku pie lielākā līmeņu skaita.",
+      "language": "ne",
+      "generated": false,
+      "uid": "0d15e106-8602-4a11-9883-eedcf7705150"
+    },
+    {
+      "term": "pārmeklēšanas mērķis",
+      "definition": "Virsotne stāvokļu telpas grafā, kas ir galvenais mērķis pārmeklēšanas procesā.",
+      "sentence": "Situācijas, kad ir piemērotāka no datiem virzīta pārmeklēšana (Luger, 2008): Problēmas dati nav doti, un šajā gadījumā no mērķa virzīta pārmeklēšana var palīdzēt vadīt datu iegūšanu.",
+      "language": "lv",
+      "generated": false,
+      "uid": "b72dfaf5-df59-4be7-9a57-880512798076"
+    },
+    {
+      "term": "Pārmeklēšanas algoritms",
+      "definition": "Algoritms, kas izmantojot stāvokļu telpas grafu kā resursu, atrod ceļu no sākuma virsotnes līdz mērķa virsotnei.",
+      "sentence": "Kuri no identificētajiem parametriem varētu liecināt par pārmeklēšanas virzīšanos uz pārmeklēšanas mērķa virsotni?",
+      "language": "lv",
+      "generated": false,
+      "uid": "e1fb6cb7-2738-4c36-8563-36ee7b153c1e"
+    },
+    {
+      "term": "Stāvokļa telpa",
+      "definition": "Iespējamo stāvokļu kopums, kas tiek analizēts pārmeklēšanas algoritma darbības kontekstā.",
+      "sentence": "Spēlē ar 8 kauliņiem tika identificēti trīs faktori, pamatojoties uz kuriem var definēt dažādas heiristiskā novērtējuma funkcijas: viena faktora funkcijas: f(n) = kauliņu skaits pareizajās vietās f(n) = attālumu summa f(n) = blakusstāvošu kauliņu pārvietošanas sarežģītība",
+      "language": "lv",
+      "generated": false,
+      "uid": "26631ac4-de85-4c84-ab85-53d75bc33243"
+    },
+    {
+      "term": "pārmeklēšanas ceļš",
+      "definition": "Sekcija stāvokļu telpas grafā, kas savieno pārmeklēšanas sākuma virsotni ar pārmeklēšanas mērķa virsotni.",
+      "sentence": "Situācijas, kad ir piemērotāka no datiem virzīta pārmeklēšana (Luger, 2008): Problēmas dati nav doti, un šajā gadījumā no mērķa virzīta pārmeklēšana var palīdzēt vadīt datu iegūšanu.",
+      "language": "lv",
+      "generated": false,
+      "uid": "7d212307-7312-47d7-8814-3329075c3207"
+    },
+    {
+      "term": "pārmeklēšanas beigas",
+      "definition": "Punktā, kad pārmeklēšanas algoritms sasniedz pārmeklēšanas mērķa virsotni vai ir pārbaudījis visas stāvokļu telpas grafā esošās virsotnes.",
+      "sentence": "Situācijas, kad ir piemērotāka no datiem virzīta pārmeklēšana (Luger, 2008): Problēmas dati nav doti, un šajā gadījumā no mērķa virzīta pārmeklēšana var palīdzēt vadīt datu iegūšanu.",
+      "language": "lv",
+      "generated": false,
+      "uid": "8cdf1b61-f3e3-4d0b-8f8e-ba7290c7fb3f"
+    },
+    {
+      "term": "pārmeklēšanas sākuma stāvoklis",
+      "definition": "Stāvokļa telpa, no kurienes sāk pārmeklēšanu stāvokļu telpas grafā.",
+      "sentence": "Situācijas, kad ir piemērotāka no datiem virzīta pārmeklēšana (Luger, 2008): Problēmas dati nav doti, un šajā gadījumā no mērķa virzīta pārmeklēšana var palīdzēt vadīt datu iegūšanu.",
+      "language": "lv",
+      "generated": false,
+      "uid": "311527f4-25cf-4958-9e65-3a4371679b29"
+    },
+    {
+      "term": "pārmeklēšanas beigu stāvoklis",
+      "definition": "Stāvokļa telpa, kurā pārtrauc pārmeklēšana stāvokļu telpas grafā.",
+      "sentence": "Situācijas, kad ir piemērotāka no datiem virzīta pārmeklēšana (Luger, 2008): Problēmas dati nav doti, un šajā gadījumā no mērķa virzīta pārmeklēšana var palīdzēt vadīt datu iegūšanu.",
+      "language": "lv",
+      "generated": false,
+      "uid": "d7fbb382-9b54-4506-949c-c81dccb6efd0"
+    },
+    {
+      "term": "pārmeklēšanas ceļa garums",
+      "definition": "Skaits stāvokļu telpas grafā no pārmeklēšanas sākuma virsotnes līdz pārmeklēšanas mērķa virsotnei.",
+      "sentence": "Situācijas, kad ir piemērotāka no datiem virzīta pārmeklēšana (Luger, 2008): Problēmas dati nav doti, un šajā gadījumā no mērķa virzīta pārmeklēšana var palīdzēt vadīt datu iegūšanu.",
+      "language": "lv",
+      "generated": false,
+      "uid": "786d2f26-a470-4951-955b-c4665e07e9bb"
+    },
+    {
+      "term": "Stāvokļu telpa",
+      "definition": "Grafa, kur katrai virsotnei ir definēts heiristisks vērtējums.",
+      "sentence": "Ja mēs iedomāsimies, ka stāvokļu telpas grafs, kur katrai virsotnei ir definēts heiristisks vērtējums, ir līdzīgs kalnam, tad pārmeklēšanas mērķa virsotne var tikt uzskatīta par kalna virsotni.",
+      "language": "lv",
+      "generated": false,
+      "uid": "c762f70f-862c-4a97-9bc0-7da4b8ae5c1e"
+    },
+    {
+      "term": "pārmeklēšana dziļumā",
+      "definition": "Pārmeklēšana dziļumā ir algoritms, kas izvēršot virsotnes visu laiku iedziļinās grafā. Šis algoritms sāk no sākuma stāvokļa un izpilda visas iespējamas darbības līdz mērķa stāvoklim sasniegšanas. Tas tiek realizēts, pievienojot jaunas virsotnes sarakstam OPEN kreisajā pusē pēc principa ‘Pēdējais iekšā, Pirmais ārā’. Šis algoritms neguarantē īsākā ceļa atrašanu līdz pārmeklēšanas mērķa virsotnei.",
+      "sentence": "Realizējot šo algoritmu, jaunas virsotnes tiek pievienotas saraksta OPEN kreisajai pusei, tādējādi, šis saraksts atbilst datu struktūrai – steks, kas darbojas pēc principa ‘Pēdējais iekšā, Pirmais ārā’.",
+      "language": "lv",
+      "generated": false,
+      "uid": "c1914014-d221-4d3b-a60f-d50a9670453c"
+    },
+    {
+      "term": "pārmeklēšana plašumā",
+      "definition": "Pārmeklēšana plašumā ir algoritms, kas pēta stāvokļu telpas grafu līmeni pa līmeni. Šis algoritms vispirms pēta tuvākus zarus un pakāpeniski aiziet līdz zaru galiem. Jaunas virsotnes tiek pievienotas saraksta OPEN labajai pusei pēc principa ‘Pirmais iekšā, Pirmais ārā’. Šis algoritms garantē pārmeklēšanas mērķa virsotnes atrašanu un īsākā ceļa līdz pārmeklēšanas mērķa virsotnei atrašanu, ja tāds eksistē stāvokļu telpas grafā.",
+      "sentence": "Realizējot pārmeklēšanu plašumā, jaunas virsotnes tiek pievienotas saraksta OPEN labajai pusei, tādējādi, šis saraksts atbilst datu struktūrai – rinda, kas darbojas pēc principa ‘Pirmais iekšā, Pirmais ārā’.",
+      "language": "lv",
+      "generated": false,
+      "uid": "5c3f659d-d596-46d8-893b-7275ae1ee3b1"
+    },
+    {
+      "term": "Pārmeklēšana dziļumā ar ierobežotu dziļumu",
+      "definition": "Pārmeklēšanas algoritms, kas tiek izstrādāts, lai novērstu ‘bezgalīgu’ ceļu problēmu. Pirms algoritma uzsākšanas tiek uzdots dziļuma ierobežojums, kas nosaka, cik dziļi stāvokļu telpas grafs tiks pārmeklēts.",
+      "sentence": "Pārmeklēšana dziļumā ar ierobežotu dziļumu ir pārmeklēšanas dziļumā modifikācija, kas tika izstrādāta, lai novērstu ‘bezgalīgu’ ceļu problēmu.",
+      "language": "ne",
+      "generated": false,
+      "uid": "f085dcd9-1c54-4797-ba5c-640f0124321a"
+    },
+    {
+      "term": "Virsotnes uzdotajā dziļuma ierobežojumā tiek uzskatītas par virsotnēm, kurām nav pēcteču jeb strupceļa virsotnēm",
+      "definition": "Virsotnes, kas atrodas zemāk par uzdoto dziļuma ierobežojumu un tādējādi tiek uzskatītas par strupceļa virsotnēm, jo tām nav pēcteču.",
+      "sentence": "Virsotnes uzdotajā dziļuma ierobežojumā tiek uzskatītas par virsotnēm, kurām nav pēcteču jeb strupceļa virsotnēm, līdz ar to algoritms nepēta virsotnes, kas tiek izvietotas zemāk par dziļuma ierobežojumu.",
+      "language": "ne",
+      "generated": false,
+      "uid": "560c9b2e-6d7b-4406-9c4a-8f89147e8f82"
+    },
+    {
+      "term": "Pārbaudi, vai apskatāmā virsotne ir pārmeklēšanas mērķa virsotne",
+      "definition": "Pārbaude, kas tiek veikta algoritmā, lai noteiktu, vai apskatāma virsotne ir tāda pati kā pārmeklēšanas mērķa virsotne.",
+      "sentence": "Apskatīsim pārmeklēšanas dziļumā ar ierobežotu dziļumu realizācijas piemēru, izpildot no datiem virzītu pārmeklēšanu 12. attēlā redzamajā grafā, kur pārmeklēšanas sākuma virsotne ir A, pārmeklēšanas mērķa virsotne ir K un dziļuma ierobežojums ir 2 līmeņi.",
+      "language": "ne",
+      "generated": false,
+      "uid": "376da5f0-3f96-43a9-a3cb-faf2a79149b8"
+    },
+    {
+      "term": "Pārbaudi, vai tās dziļums ir mazāks par uzdoto dziļuma ierobežojumu",
+      "definition": "Pārbaude, kas tiek veikta algoritmā pēc pārbaudīšanas, vai apskatāma virsotne ir pārmeklēšanas mērķa virsotne. Šajā pārbaudē tiek pārbaudīts, vai dziļums no pārmeklēšanas sākuma līdz apskatāmai virsotnei ir mazāks par uzdoto dziļuma ierobežojumu.",
+      "sentence": "Apskatīsim pārmeklēšanas dziļumā ar ierobežotu dziļumu realizācijas piemēru, izpildot no datiem virzītu pārmeklēšanu 12. attēlā redzamajā grafā, kur pārmeklēšanas sākuma virsotne ir A, pārmeklēšanas mērķa virsotne ir K un dziļuma ierobežojums ir 2 līmeņi.",
+      "language": "ne",
+      "generated": false,
+      "uid": "8bbbed57-678c-49b5-a14d-14de21ac11ab"
+    },
+    {
+      "term": "Divvirzienu pārmeklēšana plašumā",
+      "definition": "Pārmeklēšanas algoritms, kas izpilda pārmeklēšanu abos pārmeklēšanas virzienos - gan no datiem, gan no mērķa - līdz brīdim, kad atrod saskares virsotni abos pārmeklēšanas virzienos.",
+      "sentence": "Divvirzienu pārmeklēšana plašumā ir pārmeklēšanas plašumā modifikācija, kas novērš liela skaitļošanas resursu patēriņa problēmu, kura piemīt pārmeklēšanai plašumā. Tā izpilda pārmeklēšanu abos pārmeklēšanas virzienos vienlaicīgi - gan no datiem, gan no mērķa - līdz brīdim, kad atrod saskares virsotni abos pārmeklēšanas virzienos.",
+      "language": "ne",
+      "generated": false,
+      "uid": "3ead31e1-b9fa-4203-9b02-effda8214bb4"
+    },
+    {
+      "term": "Saskares virsotne",
+      "definition": "Virsotne, kas tiek atrasta pēc tam, kad divvirzienu pārmeklēšana plašumā ir veikta abos pārmeklēšanas virzienos un tās ir atrodas tieši pirms saskares virsotnes.",
+      "sentence": "Realizējot šo algoritmu, tiek izmantoti divi saraksti OPEN un divi saraksti CLOSED pa vienam katram pārmeklēšanas virzienam. Turklāt šie saraksti tiek aizpildīti paralēli. Katrā iterācijā algoritms veic pārbaudi, vai OPEN sarakstos ir kaut viena kopīga virsotne. Ja kopīga virsotne tiek atrasta, tad algoritms darbu beidz.",
+      "language": "ne",
+      "generated": false,
+      "uid": "352ee633-e503-4ec0-90c7-6d0806651bc2"
+    },
+    {
+      "term": "Heiristikas zināšanas",
+      "definition": "Pieredzē-balstītie likumi, kas ļauj cilvēkiem efektīvāk risināt problēmas un pieņemt lēmumus.",
+      "sentence": "Mūsdienās plaši izmantojamais vārdu salikums “life hack” atbilst tam, ko saprot ar heiristiskām zināšanām. Vispārīgā gadījumā heiristiskas zināšanas ir pieredzē-balstītie likumi, kas ļauj cilvēkiem efektīvāk risināt problēmas, pieņemt lēmumus un spriest.",
+      "language": "lv",
+      "generated": false,
+      "uid": "c519f368-ffb9-4e53-815c-df434738f02e"
+    },
+    {
+      "term": "Heiristiskā novērtējuma funkcija",
+      "definition": "Funkcija, kas palīdz pārmeklēšanas algoritmam noteikt virzienu, kurā atrodas pārmeklēšanas mērķa virsotne.",
+      "sentence": "Tādējādi 1. tabulā ir definēts, ka heiristiskās zināšanas intelektiskās datorsistēmās tiek atspoguļotas heiristiskā novērtējuma funkcijas veidā. Šī funkcija palīdz pārmeklēšanas algoritmam noteikt virzienu, kurā atrodas pārmeklēšanas mērķa virsotne (Poole, 2010).",
+      "language": "lv",
+      "generated": false,
+      "uid": "5a8c350b-b788-421e-ab2c-8fbdd439d930"
+    },
+    {
+      "term": "Heiristisks vērtējums",
+      "definition": "Skaitliskā vērtība, kas dodas no heiristiskās novērtējuma funkcijas un tiek izmantota stāvokļu telpas grafā.",
+      "sentence": "Tādējādi problēmai specifiskas zināšanas tiek izteiktas matemātiskā veidā. Skaitliskās vērtības tiek piešķirtas stāvokļu telpas grafa virsotnēm un izmantotas, lai efektīvāk meklētu pārmeklēšanas mērķa virsotni.",
+      "language": "lv",
+      "generated": false,
+      "uid": "234c1fbe-9a77-4521-9161-7501082cb0c7"
+    },
+    {
+      "term": "Stāvokļu telpas grafa virsotnes kvalitāte",
+      "definition": "Mērs, kas raksturo virsotnes nozīmi stāvokļu telpas grafā un attāluma novērtējumu līdz pārmeklēšanas mērķa virsotnei.",
+      "sentence": "Stāvokļu telpas grafa virsotņu kvalitāte tiek mērīta, ņemot vērā divus faktorus: vai n- tā virsotne vispār ļauj sasniegt pārmeklēšanas mērķa virsotni, t.i.vai n- tā virsotne atrodas uz tādiem stāvokļu telpas grafa ceļiem, kas ved uz pārmeklēšanas mērķa virsotni, un vai n- tā virsotne ļauj sasniegt pārmeklēšanas mērķa virsotni pa vislabāko (bieži vien īsāko) ceļu.",
+      "language": "lv",
+      "generated": false,
+      "uid": "4a423b10-cf0e-4aa8-b3dd-6941148d6178"
+    },
+    {
+      "term": "Heiristisks mērs",
+      "definition": "Mērs, kas raksturo virsotnes kvalitāti stāvokļu telpas grafā un attāluma novērtējumu līdz pārmeklēšanas mērķa virsotnei.",
+      "sentence": "f(n) = g(n) + h(n), kur n – apskatāmā virsotne; g(n) – attālums no pārmeklēšanas sākuma virsotnes līdz virsotnei n; šī vērtība virza pārmeklēšanu pa īsāko ceļu; h(n) – heiristisks mērs, kas raksturo virsotnes kvalitāti jeb attāluma novērtējumu no virsotnes n līdz pārmeklēšanas mērķa virsotnei; šī vērtība vada pārmeklēšanu caur virsotnēm, kas visticamāk ved uz pārmeklēšanas mērķa virsotni.",
+      "language": "lv",
+      "generated": false,
+      "uid": "8589c28c-7730-4a97-aa6f-e6f33d789614"
+    },
+    {
+      "term": "Stāvokļu telpas grafika",
+      "definition": "Grafisks attēlojums, kurā katrs stāvoklis ir norādīts kā grafa virsotne un tieši saistītie stāvokļi ir norādīti kā virsotņu savienojumi.",
+      "sentence": "Reālās pasaules problēmām stāvokļu telpas grafs var būt milzīgi liels, piemēram, dambretē tas ietver ap 1040 virsotņu, šahā - 10120 virsotņu un pat spēlē “Krustiņi-nullītes”, ņemot vērā, ka tā ir pietiekami vienkārša spēle, stāvokļus skaits ir ap ir 362 880 virsotņu, ja katrā līmenī tiek atspoguļotas visas (arī identiskas) virsotnes.",
+      "language": "lv",
+      "generated": false,
+      "uid": "f8cd2cc4-48a8-48c5-8372-35acee27616f"
+    },
+    {
+      "term": "Heiristiska novērtējuma funkcija",
+      "definition": "Funkcija, kas izmanto pieredzē-balstītus vērtējumus, lai noteiktu virsotņu nozīmi pārmeklēšanas algoritma darbības kontekstā.",
+      "sentence": "Heiristiskā novērtējuma funkcija šai spēlei var tikt balstīta uz tādu faktoru kā potenciāli uzvarētu stāvokļu skaits datoram.",
+      "language": "lv",
+      "generated": false,
+      "uid": "1d373e15-8119-4cbf-8912-4f52605a5e06"
+    },
+    {
+      "term": "Heiristiski informētas pārmeklēšanas algoritms",
+      "definition": "Pārmeklēšanas algoritms, kas izmanto pieredzē-balstītus vērtējumus, lai noteiktu virsotņu nozīmi stāvokļu telpas grafā un izvēlētos labākās virsotnes vai sakārtotu virsotnes atbilstoši heiristiskajiem vērtējumiem.",
+      "sentence": "Heiristiski informētas pārmeklēšanas algoritmus realizē, izmantojot Jums jau labi zināmus sarakstus OPEN un CLOSED, kurus mēs šī studiju kursa ietvaros turpināsim atspoguļot tabulas veidā.",
+      "language": "lv",
+      "generated": false,
+      "uid": "e7ba66f5-5fd2-4c37-8731-78e7a77eceb5"
+    },
+    {
+      "term": "Neinformētas pārmeklēšanas algoritms",
+      "definition": "Pārmeklēšanas algoritms, kas neizmanto pieredzē-balstītus vērtējumus un izmanto tikai stāvokļu telpas grafu kā resursu.",
+      "sentence": "Tādējādi neinformētas pārmeklēšanas algoritmi saņem kā ieejas datus pārmeklēšanas sākuma virsotni un pārmeklēšanas mērķa virsotni, kā resursu – stāvokļu telpas grafu, kurā tie veic pārmeklēšanu, un rezultātā tie izdod atrisinājuma ceļu.",
+      "language": "lv",
+      "generated": false,
+      "uid": "9d96c295-3b82-49d2-b239-e33abfa6d6b3"
+    },
+    {
+      "term": "Faktors (heiristiskā novērtējuma funkcijā)",
+      "definition": "Aspekts, kas tiek analizēts, lai noteiktu virsotņu nozīmi stāvokļu telpas grafā un izvēlētos labākās virsotnes vai sakārtotu virsotnes atbilstoši heiristiskajiem vērtējumiem.",
+      "sentence": "Tādējādi spēlei ar 8 kauliņiem tika identificēti trīs faktori, pamatojoties uz kuriem var definēt dažādas heiristiskā novērtējuma funkcijas:",
+      "language": "lv",
+      "generated": false,
+      "uid": "be6f40f2-5eb2-475f-9462-0b1caea22355"
+    },
+    {
+      "term": "Saraksts OPEN",
+      "definition": "Saraksts, kurā tiek saglabātas virsotnes, kas vēl nav tikti pārmeklēšanas algoritma darbības kontekstā un tām ir piešķirts heiristiskais vērtējums.",
+      "sentence": "Ar šiem sarakstiem ir saistīti šādi svarīgi aspekti: abos sarakstos virsotnes ievieto kopā ar to heiristiskajiem vērtējumiem;",
+      "language": "lv",
+      "generated": false,
+      "uid": "196ded4a-a072-4e03-a440-ac81c60f58b2"
+    },
+    {
+      "term": "Saraksts CLOSED",
+      "definition": "Saraksts, kurā tiek saglabātas virsotnes, kas jau ir tiktas pārmeklēšanas algoritma darbības kontekstā un tām ir piešķirts heiristiskais vērtējums.",
+      "sentence": "Ar šiem sarakstiem ir saistīti šādi svarīgi aspekti: abos sarakstos virsotnes ievieto kopā ar to heiristiskajiem vērtējumiem;",
+      "language": "lv",
+      "generated": false,
+      "uid": "9238261e-0065-42af-8f9c-b08235cf2ce8"
+    },
+    {
+      "term": "Kalnā kāpšanas algoritms",
+      "definition": "Vienmēr virzīties uz labāko virsotni stāvokļu telpas grafā.",
+      "sentence": "Kalna kāpšanas algoritma ideja ir vienmēr virzīties uz labāko virsotni stāvokļu telpas grafā.",
+      "language": "lv",
+      "generated": false,
+      "uid": "871dd376-ed8f-4e8b-ac71-afb531144ff7"
+    },
+    {
+      "term": "Virsotnes",
+      "definition": "Punkti stāvokļu telpas grafā.",
+      "sentence": "Ja mēs iedomāsimies, ka stāvokļu telpas grafs, kur katrai virsotnei ir definēts heiristisks vērtējums, ir līdzīgs kalnam, tad pārmeklēšanas mērķa virsotne var tikt uzskatīta par kalna virsotni.",
+      "language": "lv",
+      "generated": false,
+      "uid": "2cf86714-e431-4bcf-833e-5b8cc5cf0012"
+    },
+    {
+      "term": "Heiristiskais vērtējums",
+      "definition": "Vērtējums, kas ir definēts katrai virsotnei stāvokļu telpas grafā.",
+      "sentence": "Ja mēs iedomāsimies, ka stāvokļu telpas grafs, kur katrai virsotnei ir definēts heiristisks vērtējums, ir līdzīgs kalnam, tad pārmeklēšanas mērķa virsotne var tikt uzskatīta par kalna virsotni.",
+      "language": "lv",
+      "generated": false,
+      "uid": "fd673812-e642-4624-a2e9-b5b71e021138"
+    },
+    {
+      "term": "OPEN saraksts",
+      "definition": "Saraksts, kurā tiek glabātas un pakārtojas visas ģenerētas virsotnes stāvokļu telpas grafā pēc heiristiskajiem vērtējumiem no labākās virsotnes uz sliktāko virsotni.",
+      "sentence": "0. iterācijā pārmeklēšanas sākuma virsotne kopā ar tās heiristisko vērtējumu tiek ievietota sarakstā OPEN, jo tā kļūst par pirmo apskatāmo virsotni.",
+      "language": "lv",
+      "generated": false,
+      "uid": "5fb9bd64-24b8-4f53-b8fe-67dd1cb5a330"
+    },
+    {
+      "term": "CLOSED saraksts",
+      "definition": "Saraksts, kurā tiek glabātas visas jau apskatītas un izvērstās virsotnes stāvokļu telpas grafā.",
+      "sentence": "Saraksts CLOSED ir tukšs, jo neviena virsotne vēl netika izvērsta.",
+      "language": "lv",
+      "generated": false,
+      "uid": "8e5c686a-1e20-46a2-845f-e87370de0703"
+    },
+    {
+      "term": "Visu izvērsto virsotņu priekšteči / pēcteči",
+      "definition": "Izvēlētie un izvērsti virsotņu priekšteči un pēcteči pēc pārmeklēšanas virziena.",
+      "sentence": "Visu izvērsto virsotņu priekšteči / pēcteči tiek novērtēti, un no tiem izvēlas un ievieto sarakstā OPEN labākos atbilstoši stara platumam, pārējās virsotnes ievietojot sarakstā CLOSED.",
+      "language": "lv",
+      "generated": false,
+      "uid": "1d8e4455-98d5-4025-a9ad-26b92dca0417"
+    },
+    {
+      "term": "Uzvaru nesošs ceļš",
+      "definition": "Ceļš, kas sākas saknes virsotnē un iet līdz strupceļa virsotnei, apmierinot šādus nosacījumus: visas ceļa virsotnes ir savstarpēji saistītas; visām ceļa virsotnēm ir vienādi heiristiskie vērtējumi, kas sakrīt ar spēles rezultātu.",
+      "sentence": "Uzvaru nesošs ceļš ir ceļš, kas sākas saknes virsotnē un iet līdz strupceļa virsotnei, apmierinot šādus nosacījumus: visas ceļa virsotnes ir savstarpēji saistītas; visām ceļa virsotnēm ir vienādi heiristiskie vērtējumi, kas sakrīt ar spēles rezultātu.",
+      "language": "lv",
+      "generated": false,
+      "uid": "43791b88-fa56-448b-9c27-436305ca637b"
+    },
+    {
+      "term": "daļēji pieejama spēles koka gadījumā",
+      "definition": "Gadījumā, kad nepieciešams identificēt labākais stāvoklis un meklēt ceļus līdz tam, bet pilna spēles koka izveide nav iespējama.",
+      "sentence": "Daļēji pieejama spēles koka gadījumā pēc labākā stāvokļa identificēšanas tiek noteikti ceļi, kas ved uz šo stāvokli. Tie nav uzvaru nesošie ceļi! Tie ir ceļi, kas ved uz labāko stāvokli pēc n- gājieniem.",
+      "language": "lv",
+      "generated": false,
+      "uid": "9dc795cb-4f94-4b2d-b3fe-81d2eb6513ce"
+    },
+    {
+      "term": "pilnībā pieejama spēles koka gadījumā",
+      "definition": "Gadījumā, kad ir iespējams izveidot pilnu spēles koku un meklēt ceļus līdz labākajam stāvoklim.",
+      "sentence": "Pilnībā pieejama spēles koka gadījumā tiek izmantoti Minimaksa algoritms vai Alfa-beta algoritms.",
+      "language": "lv",
+      "generated": false,
+      "uid": "26864d0a-59e7-4d06-a897-0fb87f85d537"
+    },
+    {
+      "term": "Minimaksa algoritms",
+      "definition": "Algoritms, kas izmantots pilnībā pieejamā spēles koka gadījumā, lai meklētu uzvaru nesošus ceļus un noteiktu labākais stāvoklis.",
+      "sentence": "Minimaksa algoritms ietver sevī šādus soļus (Luger, 2009): pilna spēles koka izveide; spēles koka sadalīšana MAX un MIN līmeņos; heiristisko vērtējumu piešķiršana visām strupceļa virsotnēm, analizējot, kurš spēlētājs uzvar konkrētajā virsotnē;strupceļa virsotņu heiristisko vērtējumu pārnešanu uz augšu līdz spēles koka saknei, pamatojoties uz šādiem nosacījumiem: a) ja kārtējā spēles koka virsotne atrodas maksimizētāja līmenī, tad virsotnei piešķir maximize heiristisko vērtējumu no šīs virsotnes tiešo pēcteču heiristiskajiem vērtējumiem, vai b) ja kārtējā spēles koka virsotne atrodas minimizētāja līmenī, tad virsotnei piešķir minimize heiristisko vērtējumu no šīs virsotnes tiešo pēcteču heiristiskajiem vērtējumiem; spēles rezultāta un uzvaru nesošu ceļu noteikšana.",
+      "language": "lv",
+      "generated": false,
+      "uid": "eef659a1-87e3-414c-9620-ce0569cd9320"
+    },
+    {
+      "term": "Alfa-beta algoritms",
+      "definition": "Uzlabots Minimaksa algoritms, kas samazinot novērtējamo virsotņu skaitu un kopējo pārmeklēšanas laiku.",
+      "sentence": "Alfa-beta algoritms piešķir divus skaitļus (Jones, 2009; Luger, 2009): alfa skaitli piešķir virsotnei, kura atrodas MAX līmenī. Šī vērtība nedrīkst samazināties. Ja tā samazinās, tad tas ir slikts gājiens. Tādējādi šis skaitlis definē vislabāko gājienu, ko var izdarīt, lai maksimizētu spēles rezultātu; beta skaitli piešķir virsotnei, kura atrodas MIN līmenī. Šī vērtība nedrīkst palielināties. Ja tā palielinās, tad tas ir slikts gājiens. Tādējādi šis skaitlis definē vislabāko gājienu, ko var izpildīt, lai minimizētu spēles rezultātu. Algoritms izmanto divus likumus, lai veiktu neperspektīvu ceļu nogriešanu, pamatojoties uz alfa un beta vērtībām (Luger, 2009): alfa – nogriešana - pārmeklēšanu pārtrauc zem jebkuras MIN līmeņa virsotnes, kurai beta vērtība ir mazāka vai vienāda ar alfa vērtību (beta≤alfa) jebkurai no šīs virsotnes tiešo priekšteču virsotnēm; beta – nogriešana - pārmeklēšanu pārtrauc zem jebkuras MAX līmeņa virsotnes, kurai alfa vērtība ir lielāka vai vienāda ar beta vērtību (alfa≥beta) jebkurai no šīs virsotnes tiešo priekšteču virsotnēm.",
+      "language": "lv",
+      "generated": false,
+      "uid": "aedb979d-233a-4f26-b90c-d3b4a8647241"
+    },
+    {
+      "term": "pārlūkošana uz priekšu pār n- gājieniem",
+      "definition": "A search strategy that involves exploring the decision tree to a certain depth (n) before making a decision, allowing for more informed choices but also increasing computational complexity.",
+      "sentence": "Pārlūkošana uz priekšu pār n- gājienus var tikt balstīta gan uz Minimaksa, gan uz Alfa-beta algoritmu principiem. Tās darbība ne ar ko neatšķiras no minētajiem algoritmiem, izņemot to ka algoritms apstrādā noteiktā dziļuma spēles koka apakškoku un ir jāizmanto heiristiskā novērtējuma funkcija virsotņu kvalitātes novērtēšanai.",
+      "language": "lv",
+      "generated": false,
+      "uid": "7425704b-e876-4b9c-b12f-a0243d5196c0"
+    },
+    {
+      "term": "Progresējošās iedziļināšanas metodi",
+      "definition": "Metode, kas tiek izmantota daļēji pieejamā spēles koka gadījumā, lai identificētu labākais stāvoklis un meklētu ceļus līdz tam.",
+      "sentence": "Daļēji pieejama spēles koka gadījumā tiek lieto Pārlūkošana uz priekšu pār n- gājiem vai Progresējošās iedziļināšanas metodi.",
+      "language": "lv",
+      "generated": false,
+      "uid": "b985d0d4-6548-48c7-8876-a2a89cf5e6af"
+    },
+    {
+      "term": "starpvērtējums",
+      "definition": "A temporary evaluation given to a node in the decision tree during the search process, indicating its potential value.",
+      "sentence": "Pēc starpvērtējuma piešķiršanas 12. solī, veidojas situācija kad ir pieejami divi starpvērtējumi virsotnēm kas veido ceļu pa kuru algoritms ir nolaidis.",
+      "language": "lv",
+      "generated": false,
+      "uid": "58f1e498-4b62-41ec-ba0b-0651f56f63cf"
+    },
+    {
+      "term": "virsotne",
+      "definition": "A node in the decision tree that represents a possible state or choice in the search space.",
+      "sentence": "Virsotnei “5-2” ir starpvērtējums “>=1” un saknes virsotnei – “<=1”.",
+      "language": "lv",
+      "generated": false,
+      "uid": "1e850849-dfa6-487e-b8ed-72164138beec"
+    },
+    {
+      "term": "ceļš",
+      "definition": "A sequence of decisions or choices that leads from the root node to a specific leaf node in the decision tree.",
+      "sentence": "Tādējādi 13. solī tiek veikta beta- nogriešana, nogriežot zem virsotnes “5-2” vēl neapskatītos ceļus.",
+      "language": "lv",
+      "generated": false,
+      "uid": "5e991662-07b9-40e8-8886-6593bdf377fb"
+    },
+    {
+      "term": "beta-nogriešana",
+      "definition": "A pruning technique used in the alpha-beta search algorithm to reduce the number of nodes explored by eliminating dominated branches from the decision tree.",
+      "sentence": "Tādējādi 13. solī tiek veikta beta- nogriešana, nogriežot zem virsotnes “5-2” vēl neapskatītos ceļus.",
+      "language": "lv",
+      "generated": false,
+      "uid": "d42a0364-9df9-4c6f-81be-49ed48af796e"
+    },
+    {
+      "term": "heirisstisks vērtējums",
+      "definition": "A final evaluation given to a leaf node in the decision tree after the search process is complete, indicating its actual value or utility.",
+      "sentence": "Pēc nogriešanas izpildes, virsotnei, zem kuras notika nogriešana, tiek piešķirts precīzs heiristisks vērtējums, pamatojoties uz vienīgā novērtētā pēcteča heiristisko vērtējumu.",
+      "language": "lv",
+      "generated": false,
+      "uid": "1bb34b5c-aed2-4125-9fb7-8f2fcb5dcbe1"
+    },
+    {
+      "term": "pēctecis",
+      "definition": "A child node of a given node in the decision tree, representing the next possible state or choice after making a specific decision.",
+      "sentence": "Pārnešanas laikā algoritms konstatē, ka virsotnei “4-3” ir vēl neapskatīts pēctecis. Šajā gadījumā nav iespējams piešķirt precīzu heiristisku vērtējumu, un algoritms 15. solī piešķir starpvērtējumu “>=1”, ņemot vērā līmeni kurā virsotne ir izvietota, un vienīgā līdz šim atrastā pēcteča heiristisko vērtējumu.",
+      "language": "lv",
+      "generated": false,
+      "uid": "14b1f6db-5ee3-4f7e-a5d5-0e4f601d0958"
+    },
+    {
+      "term": "progresējošās iedziļināšanas metode",
+      "definition": "A search strategy that involves incrementally exploring the decision tree, starting from the root node and expanding only one level at a time until a certain depth is reached or a stopping criterion is met.",
+      "sentence": "Progresējošās iedziļināšanas metode tiek izmantota spēlēm kurās ir laika ierobežojums gājiena izpildei. Šādās spēlēs nav iespējams izmantot Pārlūkošanu uz priekšu pār n- gājieniem, jo saģenerētais apakškoks var būt tik liels ka gājienam atvēlētais laiks var iztecēt kamēr tiek veikta apakškoka novērtēšana.",
+      "language": "lv",
+      "generated": false,
+      "uid": "1fea2e9b-e590-45c9-a698-2590d29df8c6"
+    },
+    {
+      "term": "Dimensiju skaita samazināšana",
+      "definition": "Proces, kurā izvēlas un lieto tikai vissvarīgākās pazīmes no sākotnējām datiem, lai veidotu mašīnmācīšanās modeļa matemātisko modeli. Tas tiek veikts, izslēdzot mazāk svarīgas pazīmes vai apvienojot savstarpēji saistītās pazīmes.",
+      "sentence": "Dimensiju skaita samazināšana ir saistīta ar vissvarīgāko pazīmju atrašanu, lai samazinātu sākotnējo pazīmju kopu, īpaši izslēdzot mazāk svarīgas pazīmes vai apvienojot savstarpēji saistītās pazīmes.",
+      "language": "lv",
+      "generated": false,
+      "uid": "090cf33b-87d0-4035-9fee-a7a74b4ed7da"
+    },
+    {
+      "term": "kļūda",
+      "definition": "Kļūda ir atšķirība starp prognozētām un īstajām vērtībām datu objektiem uz lineārās regresijas modeļa iegūtajā taisnei vai plaknes.",
+      "sentence": "Kad visi datu objekti un izvietoti uz lineārās regresijas modeļa atrastās taisnes vai plaknes, kļūda, protams, ir vienāda ar nulli.",
+      "language": "lv",
+      "generated": false,
+      "uid": "4af15dda-2f97-4b2d-a417-5d18a44a0f4e"
+    },
+    {
+      "term": "lineārās regresijas algoritms",
+      "definition": "Lineārās regresijas algoritms ir matemātisks modelis, kas izmantojot datus par datu objektu pazīmēm, atrod lineārās funkciju, kas paredzēta uzrakstīt izejas vērtību (prognozi) pēc ieejas vērtībām.",
+      "sentence": "Lineārās regresijas algoritms iteratīvi samazina kļūdu, veicot šādas darbības: tas uzsāk darbību ar nejaušām svaru vērtībām; tas aprēķina lineārās regresijas modeļa prognozēto izeju katram datu objektam; tas aprēķina izmaksu funkciju un pārbauda, vai ir sasniegta iespējami zemākā kļūda; ja iespējami zemākā kļūda nav sasniegta, tas aprēķina jaunas svaru vērtības; tas turpina darbību, līdz algoritms atrod lineārās regresijas funkcijas svarus, kuri dod iespējami zemāko kļūdu.",
+      "language": "lv",
+      "generated": false,
+      "uid": "250e9cd8-8ab9-4f97-8113-4488ef11be4e"
+    },
+    {
+      "term": "izmaksu funkcija",
+      "definition": "Izmaksu funkcija ir funkcija, kas aprēķina kopējo kļūdu visai datu kopai pēc noteikta modela. Tā tiek izmantota lineārās regresijas algoritmā, lai novērtētu iegūtā modeļa kopējo kļūdu.",
+      "sentence": "Visai datu kopai tiek aprēķināta izmaksu funkcija, lai novērtētu iegūtā modeļa kopējo kļūdu. To aprēķina šādi:",
+      "language": "lv",
+      "generated": false,
+      "uid": "33cf3bf3-4197-4262-b792-90ff23a078af"
+    },
+    {
+      "term": "kļūdas funkcija",
+      "definition": "Kļūdas funkcija ir funkcija, kas aprēķina atšķirību starp datu objektu īstajām un prognozētājām vērtībām pēc noteikta modela. Tā tiek izmantota lineārās regresijas algoritmā, lai novērtētu iegūtā modeļa kļūdu katram datu objektam.",
+      "sentence": "Visai datu kopai tiek aprēķināta izmaksu funkcija, lai novērtētu iegūtā modeļa kopējo kļūdu. To aprēķina šādi:",
+      "language": "lv",
+      "generated": false,
+      "uid": "6db855ec-d5ad-43cd-bd73-236b381db0bd"
+    },
+    {
+      "term": "lineārās funkcijas svaru vērtības",
+      "definition": "Lineārās funkcijas svaru vērtības ir matemātiskie koeficienti, kas norāda, kādā mērā katra ievades pazīme ietekmē izņēmienu uz lineārās regresijas modeļa iegūtajā taisnei vai plaknes.",
+      "sentence": "Tādējādi gradienta nolaišanās paņēmiens ļauj minimizēt lineārās regresijas kopējo kļūda atbilstoši izmaiņām lineārās funkcijas svaru vērtībās.",
+      "language": "lv",
+      "generated": false,
+      "uid": "2a874193-2ff6-40e6-97e2-8e0f9b1c6c99"
+    },
+    {
+      "term": "gradienta nolaišanos",
+      "definition": "Gradienta nolaišanos ir optimizācijas paņēmiens, ko izmanto, lai noteiktu izmaiņas izejā / rezultātā saistībā ar izmaiņām ievades vērtībās. Tā pamatā ir daļēja atvasinājuma aprēķins attiecībā uz visiem neatkarīgajiem mainīgajiem.",
+      "sentence": "Tādējādi gradienta nolaišanās paņēmiens ļauj minimizēt lineārās regresijas kopējo kļūda atbilstoši izmaiņām lineārās funkcijas svaru vērtībās. Patiesībā jums nav detalizēti jāzina gradienta nolaišanos pamatā esošais aprēķins, jo rīki, kas ļauj veidot lineārās regresijas modeli, automātiski veic šos aprēķinus.",
+      "language": "lv",
+      "generated": false,
+      "uid": "d9653921-711a-4db9-9337-30b0b6baa641"
+    },
+    {
+      "term": "mācīšanās ātrums",
+      "definition": "Mācīšanās ātrums ir hiperparametrs, kas tiek izmantots gradienta nolaišanas algoritmā. Tas norāda uz ātrumu, ar kādu lineārā regresija atjaunina lineārās funkcijas svarus.",
+      "sentence": "Lai pielietotu gradienta nolaišanos, tiek izmantots hiperparametrs α, ko sauc par mācīšanās ātrumu. Tas atspoguļo ātrumu, ar kādu lineārā regresija atjaunina lineārās funkcijas svarus.",
+      "language": "lv",
+      "generated": false,
+      "uid": "7a59e259-3a36-455d-94d5-9c4faba45341"
+    },
+    {
+      "term": "Klasifikācijas uzdevums",
+      "definition": "Uzdevums, kurš ir saistīts ar datu objekta attiecināšanu uz noteiktu kategoriju / klasi.",
+      "sentence": "Klasifikācijas uzdevums arī ir pārraudzītās mašīnmācīšanās uzdevums, līdz ar to datu kopā ir pieejamas īstās klašu iezīmes un tās tiek izmantotas, lai noteiktu algoritma prognozēto klašu iezīmju pareizību. Uzdevums ir saistīts ar datu objekta attiecināšanu uz noteiktu kategoriju / klasi.",
+      "language": "lv",
+      "generated": false,
+      "uid": "183bf843-8a9f-471b-833c-eae7ca570329"
+    },
+    {
+      "term": "Binārā klasifikācija",
+      "definition": "Klasifikācijas veids, kurā ir tikai divas iespējamās klases / kategorijas.",
+      "sentence": "Binārā klasifikācijā ir tikai divas iespējamās klases / kategorijas, kuru atspoguļošanai izmanto iezīmes: 0 (negatīvs vai nav spēkā) un 1 (pozitīvs vai ir spēkā);",
+      "language": "lv",
+      "generated": false,
+      "uid": "f01e7475-0e1f-4e23-a324-8bd5c5621635"
+    },
+    {
+      "term": "Daudzklašu klasifikācija",
+      "definition": "Klasifikācijas veids, kurā ir vairāk nekā divas klases, kurām var piederēt datu objekti.",
+      "sentence": "Daudzklašu klasifikācijā ir vairāk nekā divas klases, kurām var piederēt datu objekti, un līdz ar to ir vairākas klases iezīmes, kuras var tikt iegūtas prognozēšanas rezultātā. Daudzklašu klasifikācija ir binārās klasifikācijas uzdevuma paplašinājums;",
+      "language": "lv",
+      "generated": false,
+      "uid": "e7f0199c-4227-4a12-8f75-adc050ebbe82"
+    },
+    {
+      "term": "loģistiskā regresija",
+      "definition": "Loģistiskā regresija ir mašīnmācīšanās algoritms, kas tiek izmantots klasifikācijas uzdevumiem, īpaši binārās klasifikācijas gadījumā. Tā atrod matemātisko funkciju, kas saista ievades datus ar izvēli starp divām klases iezīmēm.",
+      "sentence": "Tādējādi loģistiskā regresija nosaka datu objekta piederību vienai no divām klasēm / kategorijām (piemēram, veiksme / neveiksme, labs/ slikts, jā / nē, uzvara / zaudējums utt.). Tātad lineārā regresija iegūst kā ievades datus datu objektu pazīmju vērtības un izdod reālā skaitļa vērtību kā savu rezultātu. Piemēram, pamatojoties uz datiem par mājas platību, stāvu skaitu un zemes platību, tā var sniegt prognozi par mājas cenu. Savukārt loģistiskā regresija arī saņem kā ievades datus datu objektu pazīmju vērtības, bet izvada kā rezultātu šī objekta bināro klases iezīmi.",
+      "language": "lv",
+      "generated": false,
+      "uid": "c151c66a-1f4f-4779-b127-65a7b66b5d36"
+    },
+    {
+      "term": "k- tuvāko kaimiņu metode (K-Nearest Neighbours, kNN)",
+      "definition": "K- tuvāko kaimiņu metode ir pārraudzītās mašīnmācīšanās algoritms, kas tiek izmantots gan klasifikācijas, gan regresijas uzdevumiem. Tas identificē datu objektus pēc līdzības ar jau esošajiem datu objektiem un piešķir tiem klases vai vērtības atbilstoši šiem līdzīgajiem datu objektiem.",
+      "sentence": "k- tuvāko kaimiņu metode jeb kNN algoritms ir ļoti vienkāršs pārraudzītās mašīnmācīšanās algoritms, ko pielieto gan klasifikācijas, gan regresijas uzdevumiem. Definēsim šī algoritma ideju, par pamatu izmantojot klasifikācijas uzdevumu.",
+      "language": "lv",
+      "generated": false,
+      "uid": "71fc1b23-3141-4654-a84a-2db39dcd429b"
+    },
+    {
+      "term": "Eiklīda attālums",
+      "definition": "Metrika, kas izmanto kvadrātsakni no absolūta starpības summas starp visām datu objektu pazīmju vērtībām, lai noteiktu līdzību starp diviem datu objektiem.",
+      "sentence": "Tādā gadījumā Eiklīda attālums var būt pareizā izvēle datu objektu līdzības noteikšanai (Jones, 2009; Kubat, 2017).",
+      "language": "lv",
+      "generated": false,
+      "uid": "2e90c78e-da22-4954-94ed-5fe4e6f1ec22"
+    },
+    {
+      "term": "Manhetenas attālums",
+      "definition": "Metrika, kas izmanto kvadrātsakni no absolūta starpības summas starp visām datu objektu pazīmju vērtībām, lai noteiktu līdzību starp diviem datu objektiem.",
+      "sentence": "Vēl viena attāluma metrika nepārtrauktām pazīmju vērtībām ir Manhetenas attālums (Kubat, 2017).",
+      "language": "lv",
+      "generated": false,
+      "uid": "15641e3c-792f-43ee-9942-5d85ec7d5cd0"
+    },
+    {
+      "term": "Heminga attālums",
+      "definition": "Metrika, kas aprēķina pazīmju skaitu, kurās divi datu objekti atšķiras, lai noteiktu līdzību starp diviem datu objektiem.",
+      "sentence": "Kategoriskām pazīmju vērtībām tiek aprēķināts Heminga attālums (Russell & Norvig, 2010).",
+      "language": "lv",
+      "generated": false,
+      "uid": "1e4c4980-61a0-406e-a426-142d63922dee"
+    },
+    {
+      "term": "kNN algoritms",
+      "definition": "Nepārraudzītās mašīnmācīšanās algoritms, kas klasificē vai identificē jaunu datu objektu pēc tā tuvākajiem kaimiņiem datu kopā.",
+      "sentence": "1NN versijā (viens tuvākais kaimiņš) algoritms klasificē jaunu datu objektu, atrodot vienu tuvāko datu objektu datu kopā (Jones, 2009).",
+      "language": "lv",
+      "generated": false,
+      "uid": "09479ae4-aca3-4983-a92e-f7524f4ba6a6"
+    },
+    {
+      "term": "k",
+      "definition": "Hiperparametrs kNN algoritmā, kas nosaka tuvākā datu objekta skaitu, kas tiks ņemts vērā, lai identificētu jauna datu objekta klases vērtību.",
+      "sentence": "Tā kā parasti datu kopas satur jaukta tipa datus – gan nepārtrauktas, gan kategoriskas pazīmju vērtības, lai tiktu galā ar šādiem datiem, aprēķini tiek veikti šādā veidā (Kubat, 2017):",
+      "language": "lv",
+      "generated": false,
+      "uid": "3f615318-c8fc-4315-aef8-e36270882877"
+    },
+    {
+      "term": "klasterēšana",
+      "definition": "Nepārraudzītās mašīnmācīšanās uzdevums, kas sadala pieejamo datu kopu apakškopās, kurām ir līdzība, veidojot klasterus.",
+      "sentence": "Viens no nepārraudzītās mašīnmācīšanās uzdevumiem ir klasterēšana. Tas ir process, kurā pieejamo datu kopu sadala apakškopās, kurām ir līdzība (Kubat, 2017).",
+      "language": "lv",
+      "generated": false,
+      "uid": "1e570c02-ce22-40cc-be97-dbdced9c3fd2"
+    },
+    {
+      "term": "klasteris",
+      "definition": "Apakškopa datu kopā, kas sastāv no viena vai vairākiem datu objektiem un ir raksturota pēc datu objektu līdzības klastera ietvaros un datu objektu atšķirības starp klasteriem.",
+      "sentence": "Šīs datu apakškopas sauc par klasteriem; piemēram, uzņēmums var grupēt klientus, pamatojoties uz viņu ienākumu līmeni (klienti ar augstiem, vidējiem un zemiem ienākumiem) vai bibliotekārs var grupēt grāmatas, pamatojoties uz tēmu (romantiskas grāmatas, zinātniskā fantastika, detektīvi utt.).",
+      "language": "lv",
+      "generated": false,
+      "uid": "ae75336e-faa6-4ab2-a332-91932a2b4621"
+    },
+    {
+      "term": "K- vidējo algoritms",
+      "definition": "Algoritms, kas veic klasterēšanu, atlasot nejauši K datu objektus no pieejamās datu kopas kā sākotnējie klasteru centroīdi. Tālāk katram datu objektam tiek aprēķināts attālums starp to un katru no centroīdiem, identificējot mazākais no aprēķinātajiem attālumiem un datu objekts tiek attiecināts uz atbilstošā centroīda klasteri. Pēc tam tiek pārbaudīts, vai ir sasniegts pēdējais datu objekts datu kopā, un ja tas tā nav, tiek paņemts nākamais datu objekts un notiek atgriešanās pie attālumu aprēķina šīm datu objektam. Ja ir sasniegts pēdējais datu objekts, tiek pārrēķinātas centroīdu vērtības, par tām ņemot konkrētā centroīda klasterim piederošo datu objektu visu pazīmju vidējās vērtības. Ja jaunas centroīdu vērtības atšķiras no iepriekšējām vērtībām, tad tiek uzsākta nākamā datu kopas apstrādes iterācija līdz centroīdu vērtības nemainās. Pretējā gadījumā algoritms beidz darbību.",
+      "sentence": "K- vidējo algoritma pamatā ir šādas darbības: Nejauši tiek atlasīti K datu objekti no pieejamās datu kopas; tie būs sākotnējie klasteru centroīdi. K ir šī algoritma hiperparametrs, kas nosaka, cik klasteri (K skaits) būtu jāizveido algoritmam.",
+      "language": "kp",
+      "generated": false,
+      "uid": "2ae199f7-8167-419d-ab1e-1d562af471b0"
+    },
+    {
+      "term": "attālums",
+      "definition": "Līdzības metrika, kas izmanto attāluma jēdzienu, lai grupētu datu objektus klasteros.",
+      "sentence": "Attālums ir līdzības metrika, ko izmanto, lai grupētu datu objektus klasteros (sk. 2. tēmu).",
+      "language": "lv",
+      "generated": false,
+      "uid": "4858d297-73f1-474b-bf68-a718c8144906"
+    },
+    {
+      "term": "centroīds",
+      "definition": "Datu objekts klastera centrā, ap kuru citi datu objekti tiek grupēti, ņemot vērā to attālumu līdz centroīdam. Tas ir klasterim piederošo datu objektu pazīmju vektoru kopas vidējā vērtība klasterī.",
+      "sentence": "Tas nozīmē, ka datu objekti, kas attāluma ziņā ir tuvāk centroīdam, veido klasteri.",
+      "language": "lv",
+      "generated": false,
+      "uid": "2aac2296-a185-4d7a-872a-a8716e77ec30"
+    },
+    {
+      "term": "Regresijas uzdevums",
+      "definition": "Uzdevums, kurā tiek veikta nepārtrauktajā skalā atspoguļotas vērtības prognozēšana.",
+      "sentence": "Regresijas uzdevumā tiek veikta nepārtrauktajā skalā atspoguļotas vērtības prognozēšana, līdz ar to regresijas rezultāts ir reālais skaitlis, kas atbilst veiktajai prognozei.",
+      "language": "lv",
+      "generated": false,
+      "uid": "54b0c419-b21e-459b-af08-8e4d27cb9b58"
+    },
+    {
+      "term": "Vidējā kvadrātkļūda (MSE)",
+      "definition": "Metrika, kura nosaka vidējo vērtību atsevišķu datu objektu prognozēšanas kļūdu kvadrātiem.",
+      "sentence": " Vidējā kvadrātkļūda (angļu val. the Mean squared error, MSE) nosaka vidējo vērtību atsevišķu datu objektu prognozēšanas kļūdu kvadrātiem.",
+      "language": "lv",
+      "generated": false,
+      "uid": "2f824494-dbab-44ce-afc7-208867761e64"
+    },
+    {
+      "term": "Kļūdas aprēķināšana",
+      "definition": "Procedūra, kas ļauj aprēķināt pozitīvu vērtību, kas nav vienāda ar nulli un norāda uz mašīnmācīšanās algoritma veikumu.",
+      "sentence": "Kļūdas aprēķina rezultātā tiek iegūta pozitīvā vērtība, kas nav vienāda ar nulli. To aprēķina šādi: Jo mazāka ir šīs kļūdas vērtība, jo labāks ir mašīnmācīšanās algoritma veikums.",
+      "language": "lv",
+      "generated": false,
+      "uid": "aef80efa-d59e-4b45-b243-1b85ce8c5f0a"
+    },
+    {
+      "term": "Vidējā absolūtā kļūda (MAE)",
+      "definition": "Metrika, kura aprēķina absolutās starpības summas vidējo vērtību starp datu objektu īstajām izeju vērtībām un prognozētajām izeju vērtībām.",
+      "sentence": "Vidējā absolūtā kļūda (angļu val. Mean absolute error, MAE) ir absolūtās starpības starp datu objektu īstajām izeju vērtībām un prognozētajām izeju vērtībām summas vidējā vērtība.",
+      "language": "lv",
+      "generated": false,
+      "uid": "b9852910-0b80-4852-80d1-a060dbabf0df"
+    },
+    {
+      "term": "R2 koeficients",
+      "definition": "Metrika, kura norāda uz to cik tuvu izveidotais modelis atbilst datu objektiem datu kopā.",
+      "sentence": " R2 koeficients (angļu val. R2 coefficient) ir pazīstams arī kā determinācijas koeficients. Tas norāda, cik tuvu izveidotais modelis (regresijas algoritma atrastā līnija / plakne) atbilst datu objektiem datu kopā.",
+      "language": "lv",
+      "generated": false,
+      "uid": "cc42b0e7-89e4-4fcb-b4f4-0813bfc2ded0"
+    },
+    {
+      "term": "Kļūdu matrica (confusion matrix)",
+      "definition": "Tabula, kurā norādīts, cik bieži noteiktās klases / kategorijas datu objekti tiek pareizi klasificēti vai nepareizi klasificēti.",
+      "sentence": "Tā ir divdimensiju tabula, kurā norādīts, cik bieži noteiktās klases / kategorijas datu objekti tiek pareizi klasificēti vai nepareizi klasificēti (Russell & Norvig. Tādējādi tā atspoguļo detalizētu informāciju par pareizo un kļūdaino prognožu skaitu katrai klasei / kategorijai.",
+      "language": "lv",
+      "generated": false,
+      "uid": "3ca49a70-997c-4014-a4e0-e845aa6fc68c"
+    },
+    {
+      "term": "Precizitātes metrika (accuracy)",
+      "definition": "Metrika, kura novērtē pareizi klasificētu datu objektu proporciju.",
+      "sentence": " Precizitātes metrika (angļu val. accuracy) novērtē pareizi klasificētu datu objektu proporciju. To aprēķina šādi (Kubat, 2017):",
+      "language": "lv",
+      "generated": false,
+      "uid": "eb7dae3c-2f73-4147-9491-aba1f96a4276"
+    },
+    {
+      "term": "Pozitīvā prognozējošā vērtība (precision)",
+      "definition": "Metrika, kura novērtē proporciju tam, cik daudz no datu objektiem, kuri tika klasificēti kā pozitīvie, realitātē ir pareizi pozitīvi.",
+      "sentence": " Pozitīvā prognozējošā vērtība (angļu val. precision) novērtē proporciju tam, cik daudz no datu objektiem, kuri tika klasificēti kā pozitīvie, realitātē ir pareizi pozitīvi.",
+      "language": "lv",
+      "generated": false,
+      "uid": "42380011-9d2a-4455-a81f-056d92d38a87"
+    },
+    {
+      "term": "Jutīguma metrika (recall)",
+      "definition": "Metrika, kura aprēķina to datu objektu proporciju, kuri tika klasificēti kā pozitīvie, salīdzinājumā ar kopējo datu objektu skaitu datu kopā ar pozitīvām iezīmēm.",
+      "sentence": " Jutīguma metrika (angļu val. recall) aprēķina to datu objektu proporciju, kuri tika klasificēti kā pozitīvie, salīdzinājumā ar kopējo datu objektu skaitu datu kopā ar pozitīvām iezīmēm.",
+      "language": "lv",
+      "generated": false,
+      "uid": "a06917de-6d31-4401-aeb3-f22d058f9314"
+    },
+    {
+      "term": "jutīgums",
+      "definition": "Jutīgums ir metrika, kas aprēķina summu kļūdaini negatīvo vērtību rindā, kas atbilst konkrētai klasei. Jautājumu klasifikācijas uzdevumā vispirms tiek aprēķināts jutīgums katrai konkrētai klasei, ņemot vērā vērtību galvenajā diagonālē kā pareizi pozitīvus un citu vērtību summu rindā, kas atbilst klasei, kā kļūdaini negatīvus. Pēc tam tiek aprēķināts uzdevuma makro-vidējais jutīgums, summējot jutīguma vērtības visām klasēm un dalot summu ar klašu skaitu datu kopā.",
+      "sentence": "Daudzklašu klasifikācijas uzdevumā vispirms tiek aprēķināts jutīgums katrai konkrētai klasei, ņemot vērā vērtību galvenajā diagonālē kā pareizi pozitīvus un citu vērtību summu rindā, kas atbilst klasei, kā kļūdaini negatīvus.",
+      "language": "lv",
+      "generated": false,
+      "uid": "a0b909f3-1ad1-4b33-a7fb-cb37512c9b4d"
+    },
+    {
+      "term": "pozitīvās prognozējošās vērtības",
+      "definition": "Pozitīvās prognozējošās vērtības ir metrika, kas aprēķina pozitīvos rezultātus uzdevumā. Pozitīvās prognozējošās vērtības un jutīguma metriku nozīme ir atkarīga no problēmsfēras (Kubat, 2017; Geron, 2017).",
+      "sentence": "Pozitīvās prognozējošās vērtības un jutīguma metriku nozīme ir atkarīga no problēmsfēras (Kubat, 2017; Geron, 2017).",
+      "language": "lv",
+      "generated": false,
+      "uid": "1b9774f8-9c2b-4290-8866-c18c58e57585"
+    },
+    {
+      "term": "F1 mērs",
+      "definition": "F1 mērs ir rādītājs, ko izmanto klasifikācijas uzdevumos. Tas atspoguļo pozitīvās prognozējošās vērtības un jutīguma harmonisko vidējo vērtību, jo mašīnmācīšanās algoritms iegūst augstu F1 mēru tikai tad, ja gan jutīgums, gan pozitīvā prognozējošā vērtība ir augstas (Geron, 2017). Tādējādi tas novērtē pareizi klasificēto datu objektu skaitu.",
+      "sentence": "F1 mērs (angļu val. F1 score) ir vēl viens rādītājs, ko izmanto klasifikācijas uzdevumos. Tas atspoguļo pozitīvās prognozējošās vērtības un jutīguma harmonisko vidējo vērtību, jo mašīnmācīšanās algoritms iegūst augstu F1 mēru tikai tad, ja gan jutīgums, gan pozitīvā prognozējošā vērtība ir augstas (Geron, 2017).",
+      "language": "lv",
+      "generated": false,
+      "uid": "b4c3abb5-19c6-4e3c-bd3e-ef65690984d1"
+    },
+    {
+      "term": "ROC līkne",
+      "definition": "ROC līkne tiek veidota, attēlojot katrai hiperparametra vērtībai kļūdaini pozitīvu skaitu uz x ass un jutīguma vērtības uz y ass, palīdzot vizualizēt vērtības un atrastu saprātīgu kompromisu (Russell & Norvig, 2010; Geron, 2017). Ideāls gadījums ir situācija, kad ROC līkne sasniedz augšējo kreiso stūri, kas parāda nulles kļūdu īpatsvaru kļūdaini pozitīvajiem rezultātiem un 100% precizitāti pareizi pozitīvajiem (Kubat, 2017).",
+      "sentence": "ROC līkne tiek veidota, attēlojot katrai hiperparametra vērtībai kļūdaini pozitīvu skaitu uz x ass un jutīguma vērtības uz y ass, palīdzot vizualizēt vērtības un atrastu saprātīgu kompromisu (Russell & Norvig, 2010; Geron, 2017).",
+      "language": "lv",
+      "generated": false,
+      "uid": "320f16ae-2b22-487e-9320-6f26724f1c06"
+    },
+    {
+      "term": "AUC",
+      "definition": "Laukums zem ROC līknes (angļu val. Area under the ROC Curve, AUC) ļauj salīdzināt dažādus klasifikatorus. Tas nodrošina ROC līknes kopsavilkumu viena skaitlī (Russell & Norvig, 2010). Šis rādītājs mēra visu divdimensiju laukumu zem ROC līknes. Tas atgriež vērtību diapazonā [0, 1]. Ļoti precīzam klasifikatoram ROC AUC būs vienāds ar 1; turpretim tīri nejaušam klasifikatoram ROC AUC būs vienāds ar 0,5 (Geron, 2017).",
+      "sentence": "Laukums zem ROC līknes (angļu val. Area under the ROC Curve, AUC) ļauj salīdzināt dažādus klasifikatorus. Tas nodrošina ROC līknes kopsavilkumu viena skaitlī (Russell & Norvig, 2010). Šis rādītājs mēra visu divdimensiju laukumu zem ROC līknes. Tas atgriež vērtību diapazonā [0, 1]. Ļoti precīzam klasifikatoram ROC AUC būs vienāds ar 1; turpretim tīri nejaušam klasifikatoram ROC AUC būs vienāds ar 0,5 (Geron, 2017).",
+      "language": "lv",
+      "generated": false,
+      "uid": "4f74ed74-9353-4197-924c-6a736e9fe44d"
+    },
+    {
+      "term": "Silhueta koeficients",
+      "definition": "Silueta koeficientu aprēķina šādi: kur a - vidējais attālums klastera iekšā (vidējais attālums starp katru datu objektu klasterī), b - vidējais attālums starp klasteriem (vidējais attālums starp visiem klasteriem). Tādējādi Silueta koeficients atspoguļo katra klastera datu objektu tuvumu blakus esošo klasteru datu objektiem. Silueta koeficienta vērtības atrodas diapazonā [-1, 1]. Jo tuvāk Silueta koeficienta vērtības ir +1, jo labāk klasteri ir atdalāmi. Vērtība 0 norāda, ka attālums starp blakus esošajiem klasteriem nav nozīmīgs. Tādējādi datu objekti atrodas uz lēmuma robežas un var tikt attiecināti gan uz vienu, gan uz otru klasteri. Silueta koeficienta negatīvās vērtības norāda, ka datu objekti, iespējams, ir attiecinātu uz nepareizajiem klasteriem.",
+      "sentence": "Silueta koeficients atspoguļo katra klastera datu objektu tuvumu blakus esošo klasteru datu objektiem. Silueta koeficienta vērtības atrodas diapazonā [-1, 1]. Jo tuvāk Silueta koeficienta vērtības ir +1, jo labāk klasteri ir atdalāmi. Vērtība 0 norāda, ka attālums starp blakus esošajiem klasteriem nav nozīmīgs. Tādējādi datu objekti atrodas uz lēmuma robežas un var tikt attiecināti gan uz vienu, gan uz otru klasteri.",
+      "language": "lv",
+      "generated": false,
+      "uid": "596aafcd-c5e1-4247-9946-dd85cf25857b"
+    },
+    {
+      "term": "Mākslīgais neirons",
+      "definition": "Mākslīgais neirons ir apliekta funkcija, kas saņem ieejas signālus no vides vai citiem neironiem un apvieno tos, izmantojot noteiktu funkciju (piemēram, aprēķinot ieejas signālu svērto summu). Vērtība, kas tiek iegūta pēc summēšanas funkcijas piemērošanas, nonāk neirona aktivizācijas funkcijā, kura nosaka neirona izejas signālu. Pēc tam izejas signāls tiek nosūtīts uz vidi vai citiem neironiem.",
+      "sentence": "Mākslīgais neirons darbojas pēc šādiem principiem (3. att.). Tas saņem ieejas signālus no vides vai citiem neironiem un apvieno tos, izmantojot noteiktu funkciju (piemēram, aprēķinot ieejas signālu svērto summu). Vērtība, kas tiek iegūta pēc summēšanas funkcijas piemērošanas, nonāk neirona aktivizācijas funkcijā, kura nosaka neirona izejas signālu. Pēc tam izejas signāls tiek nosūtīts uz vidi vai citiem neironiem.",
+      "language": "lv",
+      "generated": false,
+      "uid": "8930559e-1a6b-46f9-b6bd-79d78de79175"
+    },
+    {
+      "term": "Ieeja",
+      "definition": "Ieeja ir skaitlisks signāls, kas ienāk mākslīgajā neironā no vides vai citiem neironiem. Svaru kopa (pa vienam katrai no ieejām), kas izsaka katra neirona ieejas spēku, jeb, citiem vārdiem sakot, katras neirona ieejas svarīgumu, ņemot vērā tās ietekmi uz izeju. Svari tiek atspoguļoti kā reālie skaitļi, kas tiek noteikti mākslīgo neironu tīklu apmācības procesā. Tie ir ilgtermiņa atmiņas pamatelementi mākslīgo neironu tīklos.",
+      "sentence": "Ieeja ir skaitlisks signāls, kas ienāk mākslīgajā neironā no vides vai citiem neironiem. Svaru kopa (pa vienam katrai no ieejām), kas izsaka katra neirona ieejas spēku, jeb, citiem vārdiem sakot, katras neirona ieejas svarīgumu, ņemot vērā tās ietekmi uz izeju. Svari tiek atspoguļoti kā reālie skaitļi, kas tiek noteikti mākslīgo neironu tīklu apmācības procesā. Tie ir ilgtermiņa atmiņas pamatelementi mākslīgo neironu tīklos.",
+      "language": "lv",
+      "generated": false,
+      "uid": "402966a5-9e25-4394-9c39-2e006203d533"
+    },
+    {
+      "term": "Ieejas signāls",
+      "definition": "Ieejas signāls ir skaitlisks vērtība, kas ienāk mākslīgajā neironā no vides vai citiem neironiem. Svaru kopa (pa vienam katrai no ieejām), kas izsaka katra neirona ieejas spēku, jeb, citiem vārdiem sakot, katras neirona ieejas svarīgumu, ņemot vērā tās ietekmi uz izeju. Svari tiek atspoguļoti kā reālie skaitļi, kas tiek noteikti mākslīgo neironu tīklu apmācības procesā. Tie ir ilgtermiņa atmiņas pamatelementi mākslīgo neironu tīklos.",
+      "sentence": "Ieejas signāls ir skaitlisks vērtība, kas ienāk mākslīgajā neironā no vides vai citiem neironiem. Svaru kopa (pa vienam katrai no ieejām), kas izsaka katra neirona ieejas spēku, jeb, citiem vārdiem sakot, katras neirona ieejas svarīgumu, ņemot vērā tās ietekmi uz izeju. Svari tiek atspoguļoti kā reālie skaitļi, kas tiek noteikti mākslīgo neironu tīklu apmācības procesā. Tie ir ilgtermiņa atmiņas pamatelementi mākslīgo neironu tīklos.",
+      "language": "lv",
+      "generated": false,
+      "uid": "6592cc72-ee72-4d63-87bb-81e88de38939"
+    },
+    {
+      "term": "Svaru kopa",
+      "definition": "Svaru kopa ir kopums no reālajiem skaitļiem, kas izsaka katra neirona ieejas spēku un svarīgumu, ņemot vērā tās ietekmi uz izeju. Svari tiek noteikti mākslīgo neironu tīklu apmācības procesā un ir ilgtermiņa atmiņas pamatelementi mākslīgo neironu tīklos.",
+      "sentence": "Svaru kopa ir kopums no reālajiem skaitļiem, kas izsaka katra neirona ieejas spēku un svarīgumu, ņemot vērā tās ietekmi uz izeju. Svari tiek noteikti mākslīgo neironu tīklu apmācības procesā un ir ilgtermiņa atmiņas pamatelementi mākslīgo neironu tīklos.",
+      "language": "lv",
+      "generated": false,
+      "uid": "46ce4fc8-587b-4011-bbc5-21d0ae51b3c5"
+    },
+    {
+      "term": "Izieja",
+      "definition": "Izieja ir skaitlisks signāls, kas iziet no mākslīgā neironā uz vidi vai citiem neironiem pēc aktivizācijas funkcijas piemērošanas. Tā atspoguļo skaitlisku vērtību un var būt mākslīgo neironu tīkla gala risinājums vai ieeja citos neironos.",
+      "sentence": "Izieja ir skaitlisks signāls, kas iziet no mākslīgā neironā uz vidi vai citiem neironiem pēc aktivizācijas funkcijas piemērošanas. Tā atspoguļo skaitlisku vērtību un var būt mākslīgo neironu tīkla gala risinājums vai ieeja citos neironos.",
+      "language": "lv",
+      "generated": false,
+      "uid": "d68668d2-d14c-418f-96af-989bc36649a0"
+    },
+    {
+      "term": "Funkcija",
+      "definition": "Funkcija ir matemātiska formula, kas izsaka attiecību starp ieejām un izejām mākslīgajā neironā. Tās ietver summēšanas funkciju, kas aprēķina ieejas signālu svērto summu, un aktivizācijas funkciju, kura nosaka neirona izeju.",
+      "sentence": "Funkcija ir matemātiska formula, kas izsaka attiecību starp ieejām un izejām mākslīgajā neironā. Tās ietver summēšanas funkciju, kas aprēķina ieejas signālu svērto summu, un aktivizācijas funkciju, kura nosaka neirona izeju.",
+      "language": "lv",
+      "generated": false,
+      "uid": "80779b08-e968-4a85-a450-20773817bae9"
+    },
+    {
+      "term": "Summēšanas funkcija",
+      "definition": "Summēšanas funkcija ir matemātiska formula, kas aprēķina ieejas signālu svērto summu. Tā tiek izmantota mākslīgajā neironā, lai apvienotu ieejas signālus un iegūtu vērtību, kas nonāk aktivizācijas funkcijā.",
+      "sentence": "Summēšanas funkcija ir matemātiska formula, kas aprēķina ieejas signālu svērto summu. Tā tiek izmantota mākslīgajā neironā, lai apvienotu ieejas signālus un iegūtu vērtību, kas nonāk aktivizācijas funkcijā.",
+      "language": "lv",
+      "generated": false,
+      "uid": "bf16d4c8-2d37-44aa-bcd4-c020ae55fcab"
+    },
+    {
+      "term": "Aktivizācijas funkcija",
+      "definition": "Aktivizācijas funkcija ir matemātiska formula, kura nosaka neirona izeju. Tā izsaka attiecību starp vērtību, kas tiek iegūta pēc summēšanas funkcijas piemērošanas, un neirona izejas signālu. Pēc aktivizācijas funkcijas piemērošanas izejas signāls tiek nosūtīts uz vidi vai citiem neironiem.",
+      "sentence": "Aktivizācijas funkcija ir matemātiska formula, kura nosaka neirona izeju. Tā izsaka attiecību starp vērtību, kas tiek iegūta pēc summēšanas funkcijas piemērošanas, un neirona izejas signālu. Pēc aktivizācijas funkcijas piemērošanas izejas signāls tiek nosūtīts uz vidi vai citiem neironiem.",
+      "language": "lv",
+      "generated": false,
+      "uid": "92358aae-cf97-4688-9668-a04acc04f959"
+    },
+    {
+      "term": "Mākslīgais neironu tīkls",
+      "definition": "Mākslīgais neironu tīkls ir kopums no viena vai vairākiem savienotiem mākslīgajiem neironiem. Tie veido hierarhisku struktūru, kurā tīklā esošie neironi ir izvietoti pa slāņiem: ieejas slānis, slēptais slānis un izejas slānis. Katrs neirons apstrādā skaitliskās vērtības un nodod tos nākamajiem neironiem tīklā. Tādā veidā mākslīgais neironu tīkls spēj veikt sarežģītus uzdevumus, izmantojot paralēlismu un apmācību.",
+      "sentence": "Mākslīgais neironu tīkls ir kopums no viena vai vairākiem savienotiem mākslīgajiem neironiem. Tie veido hierarhisku struktūru, kurā tīklā esošie neironi ir izvietoti pa slāņiem: ieejas slānis, slēptais slānis un izejas slānis. Katrs neirons apstrādā skaitliskās vērtības un nodod tos nākamajiem neironiem tīklā. Tādā veidā mākslīgais neironu tīkls spēj veikt sarežģītus uzdevumus, izmantojot paralēlismu un apmācību.",
+      "language": "lv",
+      "generated": false,
+      "uid": "8c01590b-9c8c-4432-946f-9cdf43176294"
+    },
+    {
+      "term": "Apmācība",
+      "definition": "Apmācība ir process, kura mērķis ir koreģēt mākslīgo neironu tīkla svarus un veicināt tīkla apmācību. Tas notiek, izmantojot datu kopas datus, kuri tiek apstrādāti mākslīgajā neironu tīklā. Apstrādes rezultātā iegūst izeju, kas salīdzināma ar zināmo izejas vērtību no datu kopas. Ja ir atšķirība starp tīkla prognozēto izeju un zināmo izejas vērtību, tad tīkla svaru koriģēšanas likums tiek piemērots un nākamo apstrādes soli tīkls uzsāk ar atjaunotām svaru vērtībām. Pretējā gadījumā apstrādei tiek paņemts nākamais datu objekts.",
+      "sentence": "Apmācība ir process, kura mērķis ir koreģēt mākslīgo neironu tīkla svarus un veicināt tīkla apmācību. Tas notiek, izmantojot datu kopas datus, kuri tiek apstrādāti mākslīgajā neironu tīklā. Apstrādes rezultātā iegūst izeju, kas salīdzināma ar zināmo izejas vērtību no datu kopas. Ja ir atšķirība starp tīkla prognozēto izeju un zināmo izejas vērtību, tad tīkla svaru koriģēšanas likums tiek piemērots un nākamo apstrādes soli tīkls uzsāk ar atjaunotām svaru vērtībām. Pretējā gadījumā apstrādei tiek paņemts nākamais datu objekts.",
+      "language": "lv",
+      "generated": false,
+      "uid": "f071cf6f-dc5a-46ff-b5ff-00009734eadd"
+    },
+    {
+      "term": "Perceptrons",
+      "definition": "Perceptrons ir vienslāņu mākslīgais neironu tīkla veids, kas sastāv no ieejas slāņa un izejas slāņa. Visas ieejas ir tiešā veidā savienotas ar izejām. Perceptrona apmācība balstās uz nelielām svaru korekcijām, kur sākotnējie tīkla svari tiek izvēlēti nejauši un procesa beigu kritērijs ir kāds noteikts kritērijs vai maksimāli pieļaujama kļūda. Perceptrons identificē labākās iespējamās svaru vērtības, kas ļauj pareizi klasificēt datus.",
+      "sentence": "Perceptrons ir vienslāņu mākslīgais neironu tīkla veids, kas sastāv no ieejas slāņa un izejas slāņa. Visas ieejas ir tiešā veidā savienotas ar izejām. Perceptrona apmācība balstās uz nelielām svaru korekcijām, kur sākotnējie tīkla svari tiek izvēlēti nejauši un procesa beigu kritērijs ir kāds noteikts kritērijs vai maksimāli pieļaujama kļūda. Perceptrons identificē labākās iespējamās svaru vērtības, kas ļauj pareizi klasificēt datus.",
+      "language": "lv",
+      "generated": false,
+      "uid": "e044da94-acc3-4e66-a2bf-a0fda352d8e1"
+    },
+    {
+      "term": "Apmācības likums",
+      "definition": "Apmācības likums ir matemātiska formula, kura izmantoja mākslīgo neironu tīklos, lai koreģētu tīkla svarus un veicinātu tīkla apmācību. Tā tiek izmantota, lai salīdzinātu tīkla prognozēto izeju ar zināmo izejas vērtību no datu kopas un koreģētu svaru vērtības, lai tīkls varētu pareizi klasificēt datus.",
+      "sentence": "Apmācības likums ir matemātiska formula, kura izmantoja mākslīgajos neironu tīklos, lai koreģētu tīkla svarus un veicinātu tīkla apmācību. Tā tiek izmantota, lai salīdzinātu tīkla prognozēto izeju ar zināmo izejas vērtību no datu kopas un koreģētu svaru vērtības, lai tīkls varētu pareizi klasificēt datus.",
+      "language": "lv",
+      "generated": false,
+      "uid": "c555d695-425e-4e87-be09-88b2d85fda63"
+    },
+    {
+      "term": "Svara korekcija",
+      "definition": "Svara korekcija ir process, kura mērķis ir koreģēt mākslīgo neironu tīkla svarus un veicināt tīkla apmācību. Tā notiek pēc katras apstrādes soli, kad tīkls salīdzina savu prognozēto izeju ar zināmo izejas vērtību no datu kopas. Ja ir atšķirība starp tīkla prognozēto izeju un zināmo izejas vērtību, tad svaru korekcija tiek veikta un tīkla svari tiek atjaunoti. Tāpēc svaru korekcija ir esmezis processs, kas veic nelielas izmaiņas mākslīgajā neironu tīklā, lai uzlabotu tās apmācību un pareizu klasificēšanu datus.",
+      "sentence": "Svara korekcija ir process, kura mērķis ir koreģēt mākslīgo neironu tīkla svarus un veicināt tīkla apmācību. Tā notiek pēc katras apstrādes soli, kad tīkls salīdzina savu prognozēto izeju ar zināmo izejas vērtību no datu kopas. Ja ir atšķirība starp tīkla prognozēto izeju un zināmo izejas vērtību, tad svaru korekcija tiek veikta un tīkla svari tiek atjaunoti. Tāpēc svaru korekcija ir esmezis processs, kas veic nelielas izmaiņas mākslīgajā neironu tīklā, lai uzlabotu tās apmācību un pareizu klasificēšanu datus.",
+      "language": "lv",
+      "generated": false,
+      "uid": "0a69d71c-ebb6-4bfb-a26e-9a92546de5cb"
+    },
+    {
+      "term": "Iepāršināšanas funkcija",
+      "definition": "Iepāršināšanas funkcija ir matemātiska formula, kura izsaka attiecību starp ieejām un izejām mākslīgajā neironā. Tā tiek izmantota kopā ar summēšanas funkciju un aktivizācijas funkciju, lai apstrādātu skaitliskās vērtības un nododotos nākamajiem neironiem tīklā. Iepāršināšanas funkcija ir svarīga matemātiska formula, kura mākslīgais neironu tīkla izmanto apmācību un klasificēšanu datus.",
+      "sentence": "Iepāršināšanas funkcija ir matemātiska formula, kura izsaka attiecību starp ieejām un izejām mākslīgajā neironā. Tā tiek izmantota kopā ar summēšanas funkciju un aktivizācijas funkciju, lai apstrādātu skaitliskās vērtības un nododotos nākamajiem neironiem tīklā. Iepāršināšanas funkcija ir svarīga matemātiska formula, kura mākslīgais neironu tīkla izmanto apmācību un klasificēšanu datus.",
+      "language": "lv",
+      "generated": false,
+      "uid": "3051cae2-87d6-40ef-b6de-eeab5039c8ba"
+    },
+    {
+      "term": "Neirobota",
+      "definition": "Neirobota ir zinātnes nozare, kura pēta mākslīgos neironu tīklus un toiblioteca lietošanu. Tā ietver mākslīgais intelligences lietošanu un mākslīgo apmācību algoritmus. Neirobota ir svarīga zinātnes nozare, kura pēta mākslīgos neironu tīklus un toiblioteca lietošanu, lai uzlabotu mākslīgo intelligences lietošanu.",
+      "sentence": "Neirobota ir zinātnes nozare, kura pēta mākslīgos neironu tīklus un toiblioteca lietošanu. Tā ietver mākslīgais intelligences lietošanu un mākslīgo apmācību algoritmus. Neirobota ir svarīga zinātnes nozare, kura pēta mākslīgos neironu tīklus un toiblioteca lietošanu, lai uzlabotu mākslīgo intelligences lietošanu.",
+      "language": "lv",
+      "generated": false,
+      "uid": "7925157e-feed-46c7-914a-8abac040b6b4"
+    },
+    {
+      "term": "Mākslīgais neironu tīkla apmācība",
+      "definition": "Mākslīgais neironu tīkla apmācība ir process, kura mērķis ir veicināt tīkla apmācību un koreģēt tīkla svarus. Tā notiek, izmantojot datu kopas datus, kuri tiek apstrādāti mākslīgajā neironu tīklā. Apstrādes rezultātā iegūst izeju, kas salīdzināma ar zināmo izejas vērtību no datu kopas. Ja ir atšķirība starp tīkla prognozēto izeju un zināmo izejas vērtību, tad svaru korekcija tiek veikta un tīkla svari tiek atjaunoti. Tāpēc mākslīgais neironu tīkla apmācība ir esmezis processs, kas veic nelielas izmaiņas mākslīgajā neironu tīklā, lai uzlabotu tās apmācību un pareizu klasificēšanu datus.",
+      "sentence": "Mākslīgais neironu tīkla apmācība ir process, kura mērķis ir veicināt tīkla apmācību un koreģēt tīkla svarus. Tā notiek, izmantojot datu kopas datus, kuri tiek apstrādāti mākslīgajā neironu tīklā. Apstrādes rezultātā iegūst izeju, kas salīdzināma ar zināmo izejas vērtību no datu kopas. Ja ir atšķirība starp tīkla prognozēto izeju un zināmo izejas vērtību, tad svaru korekcija tiek veikta un tīkla svari tiek atjaunoti. Tāpēc mākslīgais neironu tīkla apmācība ir esmezis processs, kas veic nelielas izmaiņas mākslīgajā neironu tīklā, lai uzlabotu tās apmācību un pareizu klasificēšanu datus.",
+      "language": "lv",
+      "generated": false,
+      "uid": "7438c6a7-2e21-4604-9c27-262b72cb5f29"
+    },
+    {
+      "term": "Mākslīgo apmācību algoritms",
+      "definition": "Mākslīgo apmācību algoritms ir matemātiska formula, kura izmanto mākslīgajā neironu tīklā, lai koreģētu tīkla svarus un veicinātu tīkla apmācību. Tā tiek izmantota kopā ar datu kopas datus, kuri tiek apstrādāti mākslīgajā neironu tīklā. Apstrādes rezultātā iegūst izeju, kas salīdzināma ar zināmo izejas vērtību no datu kopas. Ja ir atšķirība starp tīkla prognozēto izeju un zināmo izejas vērtību, tad svaru korekcija tiek veikta un tīkla svari tiek atjaunoti. Tāpēc mākslīgo apmācību algoritms ir esmezis matemātiska formula, kura mākslīgais neironu tīkla izmanto apmācību un koreģēšanu tīkla svarus.",
+      "sentence": "Mākslīgo apmācību algoritms ir matemātiska formula, kura izmanto mākslīgajā neironu tīklā, lai koreģētu tīkla svarus un veicinātu tīkla apmācību. Tā tiek izmantota kopā ar datu kopas datus, kuri tiek apstrādāti mākslīgajā neironu tīklā. Apstrādes rezultātā iegūst izeju, kas salīdzināma ar zināmo izejas vērtību no datu kopas. Ja ir atšķirība starp tīkla prognozēto izeju un zināmo izejas vērtību, tad svaru korekcija tiek veikta un tīkla svari tiek atjaunoti. Tāpēc mākslīgo apmācību algoritms ir esmezis matemātiska formula, kura mākslīgais neironu tīkla izmanto apmācību un koreģēšanu tīkla svarus.",
+      "language": "lv",
+      "generated": false,
+      "uid": "737d4fee-3362-4851-b251-ae4b646d94a3"
+    },
+    {
+      "term": "Mākslīgo intelligences lietošana",
+      "definition": "Mākslīgo intelligences lietošana ir zinātnes nozare, kura pēta mākslīgo apmācību algoritmus un toiblioteca lietošanu. Tā ietver mākslīgo apmācību un mākslīgo neironu tīkla lietošanu. Mākslīgo intelligences lietošana ir svarīga zinātnes nozare, kura pēta mākslīgo apmācību algoritmus un toiblioteca lietošanu, lai uzlabotu mākslīgais neironu tīkla lietošanu.",
+      "sentence": "Mākslīgo intelligences lietošana ir zinātnes nozare, kura pēta mākslīgo apmācību algoritmus un toiblioteca lietošanu. Tā ietver mākslīgo apmācību un mākslīgo neironu tīkla lietošanu. Mākslīgo intelligences lietošana ir svarīga zinātnes nozare, kura pēta mākslīgo apmācību algoritmus un toiblioteca lietošanu, lai uzlabotu mākslīgais neironu tīkla lietošanu.",
+      "language": "lv",
+      "generated": false,
+      "uid": "cddbfe9e-cc3a-44a5-9ab9-d9cead8a1eb9"
+    },
+    {
+      "term": "Epohu skaits",
+      "definition": "Daudzslāņu perceptrona apmācības procesā eksperimenti tiek veikti ar dažādiem epohu skaita vērtībām, lai atrastu piemērotu skaitu. Rezultātā izveido grafiķi, lai attēlotu epohu skaitu un tīkla kopējo kļūdu.",
+      "sentence": "Parasti eksperimentē ar dažādām epohu skaita vērtībām, lai atrastu piemērotu skaitu daudzslāņu perceptrona apmācības procesā.",
+      "language": "lv",
+      "generated": false,
+      "uid": "e5439624-744a-4436-b700-c42117d90517"
+    },
+    {
+      "term": "Daudzslāņu perceptrons",
+      "definition": "Vienvirziena mākslīgo neironu tīkla pamattips, kas spēj atspoguļot daudz sarežģītākas funkcijas nekā vienslāņa perceptrons. Tas var modelēt praktiski jebkuru patvaļīgas sarežģītības funkciju, kur ieeju skaits un slēpto slāņu skaits nosaka funkcijas sarežģītību.",
+      "sentence": "Daudzslāņu perceptrons ir vienvirziena mākslīgo neironu tīkla pamattips, kas spēj atspoguļot daudz sarežģītākas funkcijas nekā vienslāņa perceptrons.",
+      "language": "lv",
+      "generated": false,
+      "uid": "136f6a53-3af5-444b-962f-ec280fa1b025"
+    },
+    {
+      "term": "Ieejas slānis",
+      "definition": "Daudzslāņu perceptrona arhitektūras sastāvdaļa, kas ir iepriekš noteikts pēc ieejas pazīmju skaita. Katrs neirons šajā slānī ir savienots ar visiem nākamā slāņa neironiem.",
+      "sentence": "Ieejas slānis ir daudzslāņu perceptrona arhitektūras sastāvdaļa, kas ir iepriekš noteikts pēc ieejas pazīmju skaita.",
+      "language": "lv",
+      "generated": false,
+      "uid": "0e43011c-85ce-415c-b31b-32169bfde69e"
+    },
+    {
+      "term": "Izejas slānis",
+      "definition": "Daudzslāņu perceptrona arhitektūras sastāvdaļa, kurā neironu skaits atbilst klašu skaitam klasifikācijas uzdevumā. Katrs neirons šajā slānī aprēķina ieejas signālu svērto summu un pielieto aktivizācijas funkciju.",
+      "sentence": "Izejas slānis ir daudzslāņu perceptrona arhitektūras sastāvdaļa, kurā neironu skaits atbilst klašu skaitam klasifikācijas uzdevumā.",
+      "language": "lv",
+      "generated": false,
+      "uid": "44445bbd-c8ae-4e5c-88e1-63993d27700f"
+    },
+    {
+      "term": "Slēptais slānis",
+      "definition": "Daudzslāņu perceptrona arhitektūras sastāvdaļa, kurā neironus nevar novērot izmantojot ieeju / izeju darbību. Katrs neirons šajā slānī aprēķina ieejas signālu svērto summu un pielieto aktivizācijas funkciju.",
+      "sentence": "Daudzslāņu perceptrona arhitektūras sastāvdaļa, kurā neironus nevar novērot izmantojot ieeju / izeju darbību.",
+      "language": "lv",
+      "generated": false,
+      "uid": "ecd75d88-4829-46ae-b1f8-9e19b2c0e72d"
+    },
+    {
+      "term": "Kļūdas atgriezeniskās izplatīšanas algoritms",
+      "definition": "Apmācības algoritms, kas ļauj koriģēt svarus visos tīkla slāņos, izplatot kļūdu no izejas slāņa atpakaļ uz ieejas slāni. Tas ietver divas galvenās fāzes: ieejas signālu izplatīšanu uz priekšu tīklā un kļūdas atpakaļizplatīšanu.",
+      "sentence": "Kļūdas atgriezeniskās izplatīšanas algoritms ļauj koriģēt svarus visos tīkla slāņos, izplatot kļūdu no izejas slāņa atpakaļ uz ieejas slāni.",
+      "language": "lv",
+      "generated": false,
+      "uid": "f7d10426-4035-48ad-9fbb-a9fbbdf6463e"
+    },
+    {
+      "term": "Kopējā klasifikācijas kļūda",
+      "definition": "Mērķis apmācības procesa beigās, kuru var pārtraukt, ja kopējā klasifikācijas kļūda visiem datu objektiem sasniedz iepriekš definēto maksimāli pieļaujamo kļūdu vai tiek sasniegts iepriekš noteikts iterāciju skaits.",
+      "sentence": "Kopējā klasifikācijas kļūda ir mērķis apmācības procesa beigās, kuru var pārtraukt pēc noteiktiem kritērijiem.",
+      "language": "lv",
+      "generated": false,
+      "uid": "b2966294-895d-452c-80ea-b01d2ee80f37"
+    },
+    {
+      "term": "Zināšanu bāze",
+      "definition": "Kopība zināšanas, kas tiek izmantota mākslīgajā intelekta sistēmās.",
+      "sentence": "Kā zināšanas nokļūst zināšanu bāzē?",
+      "language": "lv",
+      "generated": false,
+      "uid": "d533fc31-085c-4e1b-a11d-660cd90305a7"
+    },
+    {
+      "term": "Zināšanu inženieris",
+      "definition": "Specialists, kas apstrādā un izveido zināšanu bāzi, izmantojot mākslīgā intelekta metodes un līdzekļus.",
+      "sentence": "Zināšanu inženieris ir speciālists, kas pārzina mākslīgā intelekta metodes un līdzekļus, zina, kā aprakstīt zināšanas un ievietot tās zināšanu bāzē, bet viņš nav speciālists visās problēmsfērās.",
+      "language": "lv",
+      "generated": false,
+      "uid": "71bbbe76-6821-4911-a961-24858e6112ef"
+    },
+    {
+      "term": "Problēmsfēras eksperts",
+      "definition": "Cilvēks ar padziļinātām zināšanām un būtisko praktisko pieredzi noteiktā jomā.",
+      "sentence": "Ikvienu var uzskatīt par problēmsfēras ekspertu, ja viņam ir padziļinātas zināšanas (gan par faktiem, gan par likumiem) un būtiska praktiskā pieredze noteiktā (parasti ierobežotā) jomā.",
+      "language": "lv",
+      "generated": false,
+      "uid": "c73b879d-c86c-402c-acdd-e2a05b701681"
+    },
+    {
+      "term": "Automatizēta zināšanu iegūšanas sistēma",
+      "definition": "Automatizēta sistēma, kuru var izmantot gan problēmsfēras eksperts, gan zināšanu inženieris, lai aprakstītu zināšanas un izveidotu zināšanu bāzi.",
+      "sentence": "Automatizēta zināšanu iegūšanas sistēma ir automatizēta sistēma, kuru var izmantot gan problēmsfēras eksperts, gan zināšanu inženieris, lai aprakstītu zināšanas un veidotu zināšanu bāzi.",
+      "language": "lv",
+      "generated": false,
+      "uid": "2a80aa67-0326-4bbf-bd5e-92f987d8ae3f"
+    },
+    {
+      "term": "Ekspertsistēma",
+      "definition": "Zināšanās sakņotā intelektiskā sistēma, kas risina problēmas šauri specializētā jomā tādā veidā un darbības līmenī, kas ir līdzīgs cilvēku ekspertiem.",
+      "sentence": "Ekspertsistēma ir zināšanās sakņotā intelektiskā sistēma, kas risina problēmas šauri specializētā jomā tādā veidā un darbības līmenī, kas ir līdzīgs cilvēku ekspertiem.",
+      "language": "lv",
+      "generated": false,
+      "uid": "3ba44933-6b9b-459b-b8df-56450ef34bfa"
+    },
+    {
+      "term": "Zināšanu atspoguļošanas shēma",
+      "definition": "Liekumi un likumu kopas zināšanu aprakstīšanai, kas tiek izmantoti mākslīgajā intelekta sistēmās.",
+      "sentence": "Zināšanu atspoguļošanas shēmas ir līdzekļi, kas piedāvā formālu vienošanos un likumu kopu zināšanu aprakstīšanai. Tās lietojot, tiek veidots zināšanu atspoguļojums jeb apraksts.",
+      "language": "lv",
+      "generated": false,
+      "uid": "a381c703-12df-4f5e-ad71-253e269be0e0"
+    },
+    {
+      "term": "Loģiskā zināšanu atspoguļošanas shēma",
+      "definition": "Zināšanu atspoguļošanas shēma, kas izmanto loģisku izteikumu veidu un secināšanas likumus.",
+      "sentence": "Loģiskās zināšanu atspoguļošanas shēmas apraksta zināšanas loģisku izteikuma veidā, izmantojot konstantes, mainīgos, funkcijas, predikātus, loģiskus operatorus, un lieto secināšanas likumus, kas ļauj iegūt jaunas patiesas zināšanas no patiesu zināšanu kopas.",
+      "language": "lv",
+      "generated": false,
+      "uid": "43dbe9a2-b88b-4d23-97f7-3bebb4d1f26c"
+    },
+    {
+      "term": "Tīklveida zināšanu atspoguļošanas shēma",
+      "definition": "Zināšanu atspoguļošanas shēma, kas izmanto orientētu grafu, kur katra virsotne atspoguļo vienkāršu objektu / jēdzienu un orientētie iezīmētie loki attēlo attiecības starp tiem.",
+      "sentence": "Tīklveida zināšanu atspoguļošanas shēmas atspoguļo zināšanas orientēta iezīmēta grafa veidā, kur katra virsotne atspoguļo vienkāršu objektu / jēdzienu un orientētie iezīmētie loki attēlo attiecības starp tiem.",
+      "language": "lv",
+      "generated": false,
+      "uid": "6aaa29ef-d29a-4c2f-b6a5-387961737ce9"
+    },
+    {
+      "term": "Strukturizētas zināšanu atspoguļošanas shēma",
+      "definition": "Zināšanu atspoguļošanas shēma, kas izmanto grafu, kur katru virsotni atspoguļojot kā sarežģītu struktūru ar visām objektam / jēdzienam raksturīgajām īpašībām un sastāvdaļām.",
+      "sentence": "Strukturizētas zināšanu atspoguļošanas shēmas arī izmanto grafu zināšanu atspoguļošanai, katru virsotni tajā atspoguļojot kā sarežģītu struktūru ar visām objektam / jēdzienam raksturīgajām īpašībām un sastāvdaļām.",
+      "language": "lv",
+      "generated": false,
+      "uid": "572e0ca9-943a-45a0-94fd-fd09ee5530c2"
+    },
+    {
+      "term": "Procesuālās jeb likumos balstītas zināšanu atspoguļošanas shēmas",
+      "definition": "Zināšanu atspoguļošanas shēma, kas izmanto procedūru / instrukciju kopas veidu.",
+      "sentence": "Procesuālās jeb likumos balstītas zināšanu atspoguļošanas shēmas atspoguļo zināšanas procedūru / instrukciju kopas veidā.",
+      "language": "lv",
+      "generated": false,
+      "uid": "54835a03-b1ea-4073-ae8b-eee0c93b332e"
+    },
+    {
+      "term": "semantiskais tīkls",
+      "definition": "Zināšanas par Mārtiņa automobili un tajā var redzēt visus iepriekšminētos attiecību veidus. Lai intelektiska datorsistēma spētu izmantot zināšanas, kas ir atspoguļotas semantiskā tīkla veidā, tai ir vajadzīgs izveduma mehānisms.",
+      "sentence": "13. attēls atspoguļo semantisko tīklu, kas apraksta zināšanas par Mārtiņa automobili un tajā var redzēt visus iepriekšminētos attiecību veidus. Lai intelektiska datorsistēma spētu izmantot zināšanas, kas ir atspoguļotas semantiskā tīkla veidā, tai ir vajadzīgs izveduma mehānisms.",
+      "language": "lv",
+      "generated": false,
+      "uid": "97c4d989-d19e-49c3-81ed-3d91b5f3cea3"
+    },
+    {
+      "term": "transportlīdzekļi",
+      "definition": "Automobiļu apakšklase, kas ir transportlīdzekļu klase.",
+      "sentence": "Sakarā ar to, ka automobilis ir transportlīdzekļa apakšklase, tas pārmanto abas īpašības, t.i., jebkuram automobilim ir marka un modelis. Pārmantošana ļauj samazināt zināšanu bāzes izmēru, neatspoguļojot vairākkārtēji vienas un tās pašas zināšanas, bet realizējot zināšanu pārmantošanu tad, kad konkrētas zināšanas ir vajadzīgas intelektiskas datorsistēmas darbībai.",
+      "language": "lv",
+      "generated": false,
+      "uid": "e4574386-9de4-4761-ab9e-d16c7ab4293d"
+    },
+    {
+      "term": "izveduma mehānisms",
+      "definition": "Mehānisms, kas realizē spriešanu, interpretējot un pielietojot likumus, pamatojoties uz kuriem likumos sakņota ekspertsistēma sasniedz risinājumu.",
+      "sentence": "Tādējādi izveduma mehānisms realizē spriešanu, interpretējot un pielietojot likumus... (Hopgood, 2001; Negnevitsky, 2011).",
+      "language": "lv",
+      "generated": false,
+      "uid": "1ef460a5-2f06-4566-b095-0ae228caae62"
+    },
+    {
+      "term": "freims",
+      "definition": "Strukturizētās zināšanu atspoguļošanas shēma, kuras ideju izstrādāja Minski (Minsky) 1975. gadā.",
+      "sentence": "Tēma - Strukturizētas zināšanu atspoguļošanas shēmas un freimi kā to piemērs Strukturizētas zināšanu atspoguļošanas shēmas arī izmanto grafu par pamatu zināšanu atspoguļošanai. Taču atšķirībā no tīklveida zināšanu atspoguļošanas shēmām, grafa virsotnes atspoguļo nevis vienkāršu objektu / jēdzienu, bet sarežģītu datu struktūru, kas tipiski apraksta kādu objektu / jēdzienu kopā ar tā īpašībām un sastāvdaļām. Turklāt attiecības starp grafa virsotnēm netiek norādītas tiešā veidā kā loki semantiskajos tīklos, bet to izveide balstās uz atsaukšanas principu, kad viena virsotne atsaucas uz citu virsotni, izmantojot tās nosaukumu. Freimi ir piemērs strukturizētām zināšanu atspoguļošanas shēmām.",
+      "language": "lv",
+      "generated": false,
+      "uid": "2cf72609-b691-4506-a838-908db6879a6c"
+    },
+    {
+      "term": "klases freims",
+      "definition": "Freims, kas atspoguļo vispārīgas īpašības kādai objektu / jēdzienu kopai / klasei / veidam / tipam.",
+      "sentence": "Ir divi galvenie freimu tipi: Klases freims atspoguļo vispārīgas īpašības kādai objektu / jēdzienu kopai / klasei / veidam / tipam. Klašu freimi ļauj attēlot problēmu abstraktā formā (Negnevitsky, 2011) un tipiski satur sevī: objektu / jēdzienu kopas aprakstošo nosaukumu, īpašību kopu, kas ir raksturīgas visiem objektiem / jēdzieniem šajā klasē, un īpašību vērtības, kas ir kopīgas visiem klases objektiem / jēdzieniem (4. att.).",
+      "language": "lv",
+      "generated": false,
+      "uid": "033e51e7-436d-41cf-b2bc-3b19d8ae7ee0"
+    },
+    {
+      "term": "eksemplāra freims",
+      "definition": "Freims, kas atspoguļo detalizētas zināšanas par kādu konkrētu objektu / jēdzienu problēmsfērā.",
+      "sentence": "Eksemplāra freims atspoguļo detalizētas zināšanas par kādu konkrētu objektu / jēdzienu problēmsfērā (6. att.). Eksemplāra freimos lielākoties visas slotu vērtības ir zināmas un aizpildītas un šie freimi tiek atvasināti no klašu / apakšklašu freimiem. Taču eksemplāru freimi var saturēt arī slotus, kuri nav definēti klašu / apakšklašu freimos, no kuriem eksemplāra freims ir atvasināts. Tieši šos freimus izmanto intelektiska datorsistēma, risinot problēmas.",
+      "language": "lv",
+      "generated": false,
+      "uid": "c3da5ede-dcb5-4c10-8279-8e83ab527b35"
+    },
+    {
+      "term": "atsaukšanas princips",
+      "definition": "Princips, kas ļauj saistīt divus freimus, izmantojot cita freima nosaukumu kā vērtību.",
+      "sentence": "Freimus saista tikai un vienīgi caur slotu vērtībām (7. att.), nevis caur slotu nosaukumiem, jo slotu nosaukumi būtībā satur paskaidrojošo informāciju tai vērtībai, kas glabājas konkrētajā slotā. Freimu saistīšanai var tiks izmantotas trīs veidu attiecības (Negnevitsky, 2011): Vispārināšanas attiecība tiek definēta starp apakšklases un klases freimiem, eksemplāra un apakšklases freimiem, eksemplāra un klases freimiem, ļaujot veidot hierarhijas līmeņus, kur vispārīgākais freims ir atspoguļots hierarhijas visaugstākajā līmenī un konkrētu eksemplāru freimi zemākajos līmeņos. Tās izveidei tiek izmantots slots ar nosaukumu “Klase”, kurā norāda klases freima nosaukumu.",
+      "language": "lv",
+      "generated": false,
+      "uid": "bb4cbc0d-9f79-40dd-8018-088b43a098ed"
+    },
+    {
+      "term": "Agregācijas attiecība",
+      "definition": "Saista sastāvdaļas un veselus objektus. Citiem vārdiem sakot, freims, kas atbilst veselam objektam, tiek saistīts ar freimu, kas attēlo objekta sastāvdaļu.",
+      "sentence": "Agregācijas attiecība saista sastāvdaļas un veselus objektus. Citiem vārdiem sakot, freims, kas atbilst veselam objektam, tiek saistīts ar freimu, kas attēlo objekta sastāvdaļu.",
+      "language": "vk",
+      "generated": false,
+      "uid": "cf2d3018-f4ea-4b22-ab12-6ece49873927"
+    },
+    {
+      "term": "paraugs",
+      "definition": "Apraksts par pašreizēju stāvokli problēmrisināšanas procesā.",
+      "sentence": "Pašreizējo problēmrisināšanas procesa stāvokļa aprakstu sauc par paraugu.",
+      "language": "lv",
+      "generated": false,
+      "uid": "10a79c65-6cc8-4f11-ae8f-7aad35c95819"
+    },
+    {
+      "term": "problēmgadījumam specifiski dati",
+      "definition": "Dati, kas atdalīti no zināšanu bāzes un ir pareizi laikā, kad tie tiek izmantoti.",
+      "sentence": "Tiek pieņemts, ka šie dati ir pareizi laikā, kad tie tiek izmantoti (Hopgood, 2001).",
+      "language": "lv",
+      "generated": false,
+      "uid": "be020859-84e6-4846-9b44-d2cae5b2b8b6"
+    },
+    {
+      "term": "skaidrojumu izvades iespējas",
+      "definition": "Iespējas ekspertsistēmai sniedziet lietotājam ieteikumu, plānu, padomu, slēdzienu vai jebkādu citu rezultātu.",
+      "sentence": "Skaidrojumu izvades iespējas ir būtiskas jebkurai ekspertsistēmai...",
+      "language": "lv",
+      "generated": false,
+      "uid": "0224627c-65e0-4f72-82d6-f84392431aba"
+    },
+    {
+      "term": "vadības cikls ‘atpazīt-darboties’",
+      "definition": "Cikls, kas realizē paraugā virzītu pārmeklēšanu zināšanu bāzē, meklējot atbilstību starp darba atmiņas saturu un produkciju likumiem.",
+      "sentence": "Izveduma mehānisma pamatā ir vadības cikls ‘atpazīt-darboties’, kas realizē paraugā virzītu pārmeklēšanu zināšanu bāzē...",
+      "language": "lv",
+      "generated": false,
+      "uid": "a732b357-dd74-473a-a8c3-a9b5e92a8fc6"
+    },
+    {
+      "term": "konfliktu atrisināšana",
+      "definition": "Procedūra, kurā izvēlēts viens likums no konfliktu kopas, kas veidojas, ja vairāki likumi sakrīt ar paraugu.",
+      "sentence": "Viena likuma izvēli no konfliktu kopas sauc par konflikta atrisināšanu...",
+      "language": "lv",
+      "generated": false,
+      "uid": "afa49432-b8f7-4c08-8ca9-3ededd167a31"
+    },
+    {
+      "term": "konfliktu atrisināšanas stratēģija",
+      "definition": "Stratēģija, kas tiek lietota, lai izrisinātu konfliktus produkciju sistēmās.",
+      "sentence": "Konfliktu atrisināšanai tiek lietota kāda konfliktu atrisināšanas stratēģija...",
+      "language": "lv",
+      "generated": false,
+      "uid": "9f76e3e8-d17c-4764-86d1-c33954526567"
+    },
+    {
+      "term": "likumu secība",
+      "definition": "Secība, kādā likumi tiek pārmeklēti zināšanu bāzē.",
+      "sentence": "Likumu struktūra un likumu secība zināšanu bāzē nosaka, kā tiks pārmeklēta zināšanu bāze un cik ātri notoks pārmeklēšana... (Luger, 2009)",
+      "language": "lv",
+      "generated": false,
+      "uid": "95532bf0-f026-4da1-bdff-11aa9a8a27cd"
+    },
+    {
+      "term": "likumu struktūra",
+      "definition": "Struktūra, kādā likumi ir organizēti zināšanu bāzē.",
+      "sentence": "Gan likumu secībai, gan struktūrai bieži vien nozīme ir tieši izvēlētās konfliktu atrisināšanas stratēģijas kontekstā...",
+      "language": "lv",
+      "generated": false,
+      "uid": "e292a985-43c8-44cc-9f4d-1c094502efbb"
+    },
+    {
+      "term": "produciju sistēmas",
+      "definition": "Sistēmas, kas izmanto produkciju likumus, lai realizētu ekspertsistēmām raksturīgo spriešanu.",
+      "sentence": "Produkciju sistēmās var izvēlēties pārmeklēšanas virzienu... (Luger, 2009; Mallach, 1994; Negnevitsky, 2011; Winston, 1992)",
+      "language": "lv",
+      "generated": false,
+      "uid": "07a7929a-4cd8-414f-86d6-546314fa87e4"
+    },
+    {
+      "term": "produciju likumi",
+      "definition": "Likumi, kas izmanto IF... THEN... struktūru un tiek izmantoti ekspertsistēmās, lai realizētu spriešanu.",
+      "sentence": "Produciju likumi ir dabisks zināšanu atspoguļošanas veids, jo cilvēki bieži risina problēmas, izmantojot struktūru ‘ja... tad...’ (Negnevitsky, 2011)...",
+      "language": "lv",
+      "generated": false,
+      "uid": "994bd1ff-9ae3-47cf-b4cc-985645a28ed6"
+    },
+    {
+      "term": "produkciju likumu kopas",
+      "definition": "Kopa no produkciju likumiem, kas tiek pārbaudīti zināšanu bāzē.",
+      "sentence": "Visi likumi, kas ietilpst konfliktu kopā, ir sagatavotie likumi...",
+      "language": "lv",
+      "generated": false,
+      "uid": "6b954715-1f0c-4314-bdb2-40cff43ebd56"
+    },
+    {
+      "term": "konfliktu kopa",
+      "definition": "Kopa no produkciju likumiem, kas sakrīt ar paraugu un veido konflikta situāciju.",
+      "sentence": "Visi likumi, kas ietilpst konfliktu kopā, ir sagatavotie likumi...",
+      "language": "lv",
+      "generated": false,
+      "uid": "d1a30285-e23a-4641-bd07-4c1f37b87aca"
+    },
+    {
+      "term": "produciju sistēmas lietotājiem",
+      "definition": "Lietotāji, kas izmanto produkciju sistēmu.",
+      "sentence": "Tomēr, lai pieņemtu sistēmas ieteikumu, cilvēkam-ekspertam ir jāzina... (Luger, 2009; Negnevitsky, 2011)",
+      "language": "lv",
+      "generated": false,
+      "uid": "a5c084b9-d200-464c-ba9a-21b4923b4c3a"
+    },
+    {
+      "term": "konfliktu atrisināšanas stratēģijas",
+      "definition": "Stratēģijas, kas tiek lietotas, lai atrisinātu konfliktus produkciju sistēmās.",
+      "sentence": "Pastāv dažādas stratēģijas, kā atrisināt konfliktus produkciju sistēmās... (Hopgood, 2001)",
+      "language": "lv",
+      "generated": false,
+      "uid": "ffcc5c76-f9df-4319-b96c-c98cc5bb7b41"
+    },
+    {
+      "term": "produciju sistēmas izstrādātāja saskarne",
+      "definition": "Sistēma, kas ļauj ekspertsistēmai piekļūt ārējiem datu failiem un programmu rezultātiem; savukārt izstrādātāja saskarne ir paredzēta tam, lai rediģētu likumus zināšanu bāzē... (Negnevitsky, 2011)",
+      "sentence": "Izstrādātāja saskarne ir paredzēta tam, lai rediģētu likumus zināšanu bāzē...",
+      "language": "lv",
+      "generated": false,
+      "uid": "07b94c27-c5aa-4dd8-8359-6b7777a517a1"
+    },
+    {
+      "term": "konfliktu atrisināšanas stratēģijas izvēle",
+      "definition": "Procedūra, kurā tiek izvēlēts konflikta atrisināšanas veids produkciju sistēmās.",
+      "sentence": "Konfliktu atrisināšanai tiek lietota kāda konfliktu atrisināšanas stratēģija...",
+      "language": "lv",
+      "generated": false,
+      "uid": "9b6350ea-d4be-4a8d-849f-8ebe5357c26f"
+    },
+    {
+      "term": "konflikta atrisināšana",
+      "definition": "Procedūra, kas risina konflikta situācijas produkciju sistēmās.",
+      "sentence": "Viena likuma izvēli no konfliktu kopas sauc par konflikta atrisināšanu...",
+      "language": "lv",
+      "generated": false,
+      "uid": "43f082fe-82b8-4137-a98c-17960e55b5cb"
+    },
+    {
+      "term": "konflikta atrisināšanas metodes",
+      "definition": "Metodes, kas tiek lietotas, lai atrisinātu konfliktus produkciju sistēmās.",
+      "sentence": "iedarbināt specifiskākus likumus. šīs metodes pamatā ir pieņēmums... (Negnevitsky, 2011)",
+      "language": "lv",
+      "generated": false,
+      "uid": "2f72cc75-346f-4116-9864-ea254085c30b"
+    },
+    {
+      "term": "konflikta atrisināšanas algoritms",
+      "definition": "Algoritms, kas tiek lietots, lai risinās konfliktus produkciju sistēmās.",
+      "sentence": "iedarbināt likumus, pamatojoties uz to prioritātēm... (Hopgood, 2001)",
+      "language": "lv",
+      "generated": false,
+      "uid": "3921b296-45b9-40af-9f5d-bb1bde0787a4"
+    },
+    {
+      "term": "konflikta atrisināšanas prioritātes",
+      "definition": "Prioritātes, kas tiek lietotas, lai noteiktu, kurš no konfliktiem pēc kārtas jāatrisinās produkciju sistēmās.",
+      "sentence": "iedarbināt likumus, pamatojoties uz to prioritātēm... (Hopgood, 2001)",
+      "language": "lv",
+      "generated": false,
+      "uid": "10cadb4d-6173-4199-b3dc-96f02d3f1c3d"
+    },
+    {
+      "term": "konflikta atrisināšanas secība",
+      "definition": "Secība, kādā konfliktu atrisināšanas metodes tiek lietotas produkciju sistēmās.",
+      "sentence": "Gan likumu secībai, gan struktūrai bieži vien nozīme ir tieši izvēlētās konfliktu atrisināšanas stratēģijas kontekstā...",
+      "language": "lv",
+      "generated": false,
+      "uid": "77b12343-fcd3-46cc-ac30-88157665a788"
+    },
+    {
+      "term": "konflikta atrisināšanas rezultāts",
+      "definition": "Rezultāts, kas tiek iegūts pēc konflikta risināšanas produkciju sistēmās.",
+      "sentence": "Tādējādi ekspertsistēmai ir jāpaskaidro veiktais secināšanas process un jāpamato rezultāts... (Negnevitsky, 2011)",
+      "language": "lv",
+      "generated": false,
+      "uid": "ae80ad5f-d22a-4700-bf10-d7e8c75fd734"
+    },
+    {
+      "term": "konflikta atrisināšanas stratēģijas izvēles kritēriji",
+      "definition": "Kriteriji, pēc kuriem tiek izvēlēts konflikta atrisināšanas veids produkciju sistēmās.",
+      "sentence": "Pastāv dažādas stratēģijas, kā atrisināt konfliktus produkciju sistēmās... (Hopgood, 2001)",
+      "language": "lv",
+      "generated": false,
+      "uid": "230faad1-2842-4d6c-a154-2f4b99d58429"
+    },
+    {
+      "term": "konflikta atrisināšanas rezultātu apstrādāšana",
+      "definition": "Procedūra, kurā tiek apstrādāts konflikta risināšanas rezultāts produkciju sistēmās.",
+      "sentence": "Tādējādi ekspertsistēmai ir jāpaskaidro veiktais secināšanas process un jāpamato rezultāts... (Negnevitsky, 2011)",
+      "language": "lv",
+      "generated": false,
+      "uid": "d468f155-a1cd-463a-929b-3ceb0a8c0119"
+    },
+    {
+      "term": "konflikta atrisināšanas procesa modelis",
+      "definition": "Modelis, kas apraksta konflikta risināšanas procesu produkciju sistēmās.",
+      "sentence": "Tādējādi ekspertsistēmai ir jāpaskaidro veiktais secināšanas process un jāpamato rezultāts... (Negnevitsky, 2011)",
+      "language": "lv",
+      "generated": false,
+      "uid": "87468887-87a1-4f20-98c1-fb9bafc32d42"
+    },
+    {
+      "term": "konflikta atrisināšanas procesa apraksts",
+      "definition": "Apraksts par to, kā tiek risināti konflikti produkciju sistēmās.",
+      "sentence": "Tādējādi ekspertsistēmai ir jāpaskaidro veiktais secināšanas process un jāpamato rezultāts... (Negnevitsky, 2011)",
+      "language": "lv",
+      "generated": false,
+      "uid": "be8196e1-1749-442f-9ea9-fed5fe72076d"
+    },
+    {
+      "term": "konflikta atrisināšanas procesa apraksta kodi",
+      "definition": "Kodi, kas tiek izmantoti, lai aprakstītu konflikta risināšanas procesu produkciju sistēmās.",
+      "sentence": "Tādējādi ekspertsistēmai ir jāpaskaidro veiktais secināšanas process un jāpamato rezultāts... (Negnevitsky, 2011)",
+      "language": "lv",
+      "generated": false,
+      "uid": "55a91223-e8b4-444f-a0a5-14065eb5739c"
+    },
+    {
+      "term": "konflikta atrisināšanas procesa apraksta valoda",
+      "definition": "Valoda, kura tiek izmantota, lai aprakstītu konflikta risināšanas procesu produkciju sistēmās.",
+      "sentence": "Tādējādi ekspertsistēmai ir jāpaskaidro veiktais secināšanas process un jāpamato rezultāts... (Negnevitsky, 2011)",
+      "language": "lv",
+      "generated": false,
+      "uid": "1d5b0051-53e0-45d0-814a-47b8cab85ef1"
+    },
+    {
+      "term": "konflikta atrisināšanas procesa apraksta simbolika",
+      "definition": "Simbolika, kura tiek izmantota, lai aprakstītu konflikta risināšanas procesu produkciju sistēmās.",
+      "sentence": "Tādējādi ekspertsistēmai ir jāpaskaidro veiktais secināšanas process un jāpamato rezultāts... (Negnevitsky, 2011)",
+      "language": "lv",
+      "generated": false,
+      "uid": "00ee0c36-647a-4b75-98d8-2e9a70945465"
+    },
+    {
+      "term": "konflikta atrisināšanas procesa apraksta formāts",
+      "definition": "Formāts, kura tiek izmantots, lai aprakstītu konflikta risināšanas procesu produkciju sistēmās.",
+      "sentence": "Tādējādi ekspertsistēmai ir jāpaskaidro veiktais secināšanas process un jāpamato rezultāts... (Negnevitsky, 2011)",
+      "language": "lv",
+      "generated": false,
+      "uid": "971e79a6-cf7c-4be5-a06e-ca73bda2aedb"
+    },
+    {
+      "term": "konflikta atrisināšanas procesa apraksta veids",
+      "definition": "Veids, kura tiek izmantots, lai aprakstītu konflikta risināšanas procesu produkciju sistēmās.",
+      "sentence": "Tādējādi ekspertsistēmai ir jāpaskaidro veiktais secināšanas process un jāpamato rezultāts... (Negnevitsky, 2011)",
+      "language": "lv",
+      "generated": false,
+      "uid": "97cea1ed-186d-49df-a080-02b88b71e893"
+    },
+    {
+      "term": "Šī sintaktiskā neatkarība",
+      "definition": "This syntactic independence allows for the gradual development of production systems by sequentially adding, deleting or modifying knowledge (rules) based on textual fragments that are supported by information provided by experts in the field.",
+      "sentence": "Šī sintaktiskā neatkarība ļauj pakāpeniski izstrādāt produkciju sistēmas, secīgi pievienojot, dzēšot vai mainot zināšanas (likumus) (teksta fragments ir balstīts uz informāciju, kas sniegta (Luger, 2009; Negnevitsky, 2011); Likumu izsekošana un skaidrojumu izvades iespējas.",
+      "language": "in",
+      "generated": false,
+      "uid": "60faf4a8-f995-4adb-9166-81b297d18018"
+    },
+    {
+      "term": "likums",
+      "definition": "A rule in an expert system that encapsulates a piece of problem-solving knowledge, used to make decisions or guide the system's behavior.",
+      "sentence": "Turklāt, tā kā katrs likums atbilst vienai problēmrisināšanas zināšanu vienībai, likuma saturs var sniegt jēgpilnu skaidrojumu par sistēmas pašreizējo stāvokli un darbību (teksta fragments ir balstīts uz informāciju, kas sniegta (Luger, 2009);",
+      "language": "in",
+      "generated": false,
+      "uid": "72955456-cf33-4279-bc71-b9b1f0c720ab"
+    },
+    {
+      "term": "produkciju sistēma",
+      "definition": "A production system is a type of expert system that employs rules to process information and make decisions.",
+      "sentence": "Šī sintaktiskā neatkarība ļauj pakāpeniski izstrādāt produkciju sistēmas, secīgi pievienojot, dzēšot vai mainot zināšanas (likumus) (teksta fragments ir balstīts uz informāciju, kas sniegta (Luger, 2009; Negnevitsky, 2011);",
+      "language": "in",
+      "generated": false,
+      "uid": "f97621c8-2b77-4f11-98f5-c0cd025237bc"
+    },
+    {
+      "term": "likumu modularitāte",
+      "definition": "The property of rules in an expert system that allows them to be independent and self-contained, enabling easy maintenance and updates.",
+      "sentence": "Likumu modularitāte un to izpildes iteratīvais raksturs ļauj vieglāk izsekot produkciju likuma aktivizācijai, jo katrā vadības cikla “Atpazīt-darboties” iterācijā var tikt izvadīts izvēlētais likums.",
+      "language": "in",
+      "generated": false,
+      "uid": "ec4cb1da-6235-4abb-8c8c-8fb6a1f2af89"
+    },
+    {
+      "term": "likuma aktivizācija",
+      "definition": "The process by which a rule in an expert system is triggered and executed based on the current state of the system and the given input data.",
+      "sentence": "Likumu modularitāte un to izpildes iteratīvais raksturs ļauj vieglāk izsekot produkciju likuma aktivizācijai, jo katrā vadības cikla “Atpazīt-darboties” iterācijā var tikt izvadīts izvēlētais likums.",
+      "language": "in",
+      "generated": false,
+      "uid": "73da045b-0688-4ea8-ada0-88a49c5598c5"
+    },
+    {
+      "term": "nepilnīgām un nenoteiktām zināšanām",
+      "definition": "Incomplete and uncertain knowledge that is typical in many real-world domains, where definitive information may not be available.",
+      "sentence": "Lielākā daļa likumos sakņotu ekspertsistēmu spēj spriest ar nepilnīgām un nenoteiktām zināšanām, pievienojot likumiem ticamības faktorus.",
+      "language": "in",
+      "generated": false,
+      "uid": "43b5f22a-41bf-4393-916d-2a722f1d26d1"
+    },
+    {
+      "term": "trūkumi",
+      "definition": "Limitations or weaknesses of production systems, such as difficulties in assessing the contribution of individual rules and the computational overhead of processing large rule sets.",
+      "sentence": "Taču produkciju sistēmām ir raksturīgi arī trūkumi (Negnevitsky, 2011): kad ir liels likumu skaits, ir grūti noteikt, kādu ieguldījumu atsevišķs likums veic problēmas risināšanā;",
+      "language": "in",
+      "generated": false,
+      "uid": "b8142454-e771-4157-bfab-306defbd9a38"
+    },
+    {
+      "term": "reāllaika lietošanai",
+      "definition": "The ability of a system to respond in real-time, processing information and making decisions quickly enough to keep up with the demands of a dynamic environment.",
+      "sentence": "ekspertsistēmas ar lielu likumu kopumu (vairāk nekā 100 likumu) var darboties lēni, un tāpēc tās var nebūt piemērotas reāllaika lietošanai;",
+      "language": "in",
+      "generated": false,
+      "uid": "babeaeb4-301c-4906-8610-f67966a72595"
+    },
+    {
+      "term": "novecojis",
+      "definition": "Obsolete or outdated knowledge that is no longer relevant or accurate, which can lead to poor decision-making in expert systems.",
+      "sentence": "produkciju sistēmai ir maz iespēju apmācīties un noteikt, kad likums ir novecojis.",
+      "language": "in",
+      "generated": false,
+      "uid": "a4d2a275-00d8-4cfe-9630-6c8497629dec"
+    }
+  ],
+  "debug_info": {
+    "chunkSize": 10263,
+    "chunkCount": 28,
+    "contextLength": 8192,
+    "temperature": 0.5,
+    "seed": 42,
+    "prompt": "Your task is to analyze the provided text and create a glossary.\nInstructions:\n1. Extract ALL terms and concepts from the text.\n2. Define them using ONLY the provided text.\n3. NO external knowledge. Synthesize exclusively from source.\n4. DO NOT translate. Keep definitions in the source language.\n5. If no terms found, return an empty list.\n\nText to analyze:\n\n",
+    "elapsedTime": 1747.886,
+    "safeMargin": 0.5,
+    "maxResponseTokens": 8192,
+    "maxTimeout": 599940000,
+    "repeatPenalty": -1,
+    "inputSize": 334911,
+    "retryCount": 0,
+    "deltaTemperature": -0.05,
+    "deltaRepeatPenalty": 0.05,
+    "errors": [
+      "{ \"domain\": \"mašīnmācīšanās\", \"glossary\": [ { \"term\": \"Tieši pretēji izstrādātāji\", \"definition\": \"Izstrādātāji, kas sniedz tikai vispārīgas vadlīnijas tam matemātiskajam modelim, kas būtu jāizmanto.\" ,\"sentence\":\"Tieši pretēji izstrādātāji sniedz tikai vispārīgas vadlīnijas tam matemātiskajam modelim, kas būtu jāizmanto.\" ,\"language\":\"lv\" },{ \"term\": \"matemātiskais modelis\", \"definition\": \"Matemātiski izteikta sakarība starp mašīnmācīšanās algoritma ievades un izvades datiem. To raksturo noteikti konfigurācijas mainīgie (saukti arī par parametriem).\", \"sentence\":\"Tieši pretēji izstrādātāji sniedz tikai vispārīgas vadlīnijas tam matemātiskajam modelim, kas būtu jāizmanto.\", \"language\":\"lv\" },{ \"term\": \"modeļa sākotnējā konfigurācijas mainīgo (hiperparametru) vērtības\", \"definition\": \"Konfigurācijas mainīgais, kura vērtību izstrādātājs parasti nosaka patvaļīgi pirms modeļa apmācības.\", \"sentence\":\"Tieši pretēji izstrādātāji sniedz tikai vispārīgas vadlīnijas tam matemātiskajam modelim, kas būtu jāizmanto. Tomēr pēc tam mašīnmācīšanās algoritms veic matemātiskās darbības ar tam dotajiem datiem atbilstoši norādītajam modelim ar mērķi atrast labākās parametru vērtības, kuras nodrošinās precīzāku prognozi, datu klasifikāciju vai datu sadalīšanu klasteros.\", \"language\":\"lv\" },{ \"term\": \"matemātiskās darbības\", \"definition\": \"Matemātiskās darbības, kas veic mašīnmācīšanās algoritms ar tam dotajiem datiem atbilstoši norādītajam modelim ar mērķi atrast labākās parametru vērtības.\", \"sentence\":\"Tieši pretēji izstrādātāji sniedz tikai vispārīgas vadlīnijas tam matemātiskajam modelim, kas būtu jāizmanto. Tomēr pēc tam mašīnmācīšanās algoritms veic matemātiskās darbības ar tam dotajiem datiem atbilstoši norādītajam modelim ar mērķi atrast labākās parametru vērtības, kuras nodrošinās precīzāku prognozi, datu klasifikāciju vai datu sadalīšanu klasteros.\", \"language\":\"lv\" },{ \"term\": \"precīzāka prognoze\", \"definition\": \"Prognoze, kas nodrošina precīzāku rezultātu sakarībā ar ievades datumiem.\", \"sentence\":\"Tieši pretēji izstrādātāji sniedz tikai vispārīgas vadlīnijas tam matemātiskajam modelim, kas būtu jāizmanto. Tomēr pēc tam mašīnmācīšanās algoritms veic matemātiskās darbības ar tam dotajiem datiem atbilstoši norādītajam modelim ar mērķi atrast labākās parametru vērtības, kuras nodrošinās precīzāku prognozi, datu klasifikāciju vai datu sadalīšanu klasteros.\", \"language\":\"lv\" },{ \"term\": \"datu klasifikācija\", \"definition\": \"Proces, kura laikā dati tiek iedalīti noteiktās kategorijās vai klasēs pēc dažādiem kritērijiem.\", \"sentence\":\"Tieši pretēji izstrādātāji sniedz tikai vispārīgas vadlīnijas tam matemātiskajam modelim, kas būtu jāizmanto. Tomēr pēc tam mašīnmācīšanās algoritms veic matemātiskās darbības ar tam dotajiem datiem atbilstoši norādītajam modelim ar mērķi atrast labākās parametru vērtības, kuras nodrošinās precīzāku prognozi, datu klasifikāciju vai datu sadalīšanu klasteros.\", \"language\":\"lv\" },{ \"term\": \"datu sadalīšana klasteros\", \"definition\": \"Proces, kura laikā dati tiek sadalīti dažādās grupās pēc līdzības kritērijiem.\", \"sentence\":\"Tieši pretēji izstrādātāji sniedz tikai vispārīgas vadlīnijas tam matemātiskajam modelim, kas būtu jāizmanto. Tomēr pēc tam mašīnmācīšanās algoritms veic matemātiskās darbības ar tam dotajiem datiem atbilstoši norādītajam modelim ar mērķi atrast labākās parametru vērtības, kuras nodrošinās precīzāku prognozi, datu klasifikāciju vai datu sadalīšanu klasteros.\", \"language\":\"lv\" },{ \"term\": \"mašīnmācīšanās algoritms\", \"definition\": \"Algoritms, kas veic matemātiskās darbības ar tam dotajiem datiem atbilstoši norādītajam modelim ar mērķi atrast labākās parametru vērtības.\", \"sentence\":\"Tieši pretēji izstrādātāji sniedz tikai vispārīgas vadlīnijas tam matemātiskajam modelim, kas būtu jāizmanto. Tomēr pēc tam mašīnmācīšanās algoritms veic matemātiskās darbības ar tam dotajiem datiem atbilstoši norādītajam modelim ar mērķi atrast labākās parametru vērtības, kuras nodrošinās precīzāku prognozi, datu klasifikāciju vai datu sadalīšanu klasteros.\", \"language\":\"lv\" },{ \"term\": \"labākās parametru vērtības\", \"definition\": \"Konfigurācijas mainīgais, kas nodrošina labāko rezultātu sakarībā ar ievades datumiem.\", \"sentence\":\"Tieši pretēji izstrādātāji sniedz tikai vispārīgas vadlīnijas tam matemātiskajam modelim, kas būtu jāizmanto. Tomēr pēc tam mašīnmācīšanās algoritms veic matemātiskās darbības ar tam dotajiem datiem atbilstoši norādītajam modelim ar mērķi atrast labākās parametru vērtības, kuras nodrošinās precīzāku prognozi, datu klasifikāciju vai datu sadalīšanu klasteros.\", \"language\":\"lv\" },{ \"term\": \"datu objekts\", \"definition\": \"Konkrēta datu vienība, ko tipiski raksturo vairāku pazīmju vērtības, piemēram, datu objekts var attēlot vienu konkrētu pacientu, pamatojoties uz tādām pacienta pazīmēm kā pacienta temperatūra, asinsspiediens, svars, asins analīžu rezultāti, u.c.\", \"sentence\":\"Tieši pretēji izstrādātāji sniedz tikai vispārīgas vadlīnijas tam matemātiskajam modelim, kas būtu jāizmanto. Tomēr pēc tam mašīnmācīšanās algoritms veic matemātiskās darbības ar tam dotajiem datiem atbilstoši norādītajam modelim ar mērķi atrast labākās parametru vērtības, kuras nodrošinās precīzāku prognozi, datu klasifikāciju vai datu sadalīšanu klasteros.\", \"language\":\"lv\" },{ \"term\": \"datu kopa\", \"definition\": \"Datu objektu kolekcija, piemēram, datu kopa par pacientiem, kuri apmeklēja A. slimnīcu laika posmā no 2019. gada janvāra līdz maijam.\", \"sentence\":\"Tieši pretēji izstrādātāji sniedz tikai vispārīgas vadlīnijas tam matemātiskajam modelim, kas būtu jāizmanto. Tomēr pēc tam mašīnmācīšanās algoritms veic matemātiskās darbības ar tam dotajiem datiem atbilstoši norādītajam modelim ar mērķi atrast labākās parametru vērtības, kuras nodrošinās precīzāku prognozi, datu klasifikāciju vai datu sadalīšanu klasteros.\", \"language\":\"lv\" },{ \"term\": \"pazīme (saukta arī par atribūtu)\", \"definition\": \"Izmērāms datu objekta raksturojums / īpašība, ko izmanto kā ieejas mainīgo mašīnmācīšanās algoritmā, piemēram, pacienta temperatūra.\", \"sentence\":\"Tieši pretēji izstrādātāji sniedz tikai vispārīgas vadlīnijas tam matemātiskajam modelim, kas būtu jāizmanto. Tomēr pēc tam mašīnmācīšanās algoritms veic matemātiskās darbības ar tam dotajiem datiem atbilstoši norādītajam modelim ar mērķi atrast labākās parametru vērtības, kuras nodrošinās precīzāku prognozi, datu klasifikāciju vai datu sadalīšanu klasteros.\", \"language\":\"lv\" },{ \"term\": \"pazīmju kopa\", \"definition\": \"Visu pazīmju kopums, kas raksturo datu objektu, piemēram, pacienta temperatūra, asinsspiediens, svars, asins analīžu rezultāti un citas pazīmes datu kopā var raksturot vienu pacientu.\", \"sentence\":\"Tieši pretēji izstrādātāji sniedz tikai vispārīgas vadlīnijas tam matemātiskajam modelim, kas būtu jāizmanto. Tomēr pēc tam mašīnmācīšanās algoritms veic matemātiskās darbības ar tam dotajiem datiem atbilstoši norādītajam modelim ar mērķi atrast labākās parametru vērtības, kuras nodrošinās precīzāku prognozi, datu klasifikāciju vai datu sadalīšanu klasteros.\", \"language\":\"lv\" },{ \"term\": \"hiperparametrs (saukts arī par modeļa hiperparametru)\", \"definition\": \"Ārējs konfigurācijas mainīgais, kura vērtību izstrādātājs parasti nosaka patvaļīgi pirms modeļa apmācības (piemēram, mācīšanās ātrums, neironu skaits mākslīgajā neironu tīklā, utt.).\", \"sentence\":\"Tieši pretēji izstrādātāji sniedz tikai vispārīgas vadlīnijas tam matemātiskajam modelim, kas būtu jāizmanto. Tomēr pēc tam mašīnmācīšanās algoritms veic matemātiskās darbības ar tam dotajiem datiem atbilstoši norādītajam modelim ar mērķi atrast labākās parametru vērtības, kuras nodrošinās precīzāku prognozi, datu klasifikāciju vai datu sadalīšanu klasteros.\", \"language\":\"lv\" },{ \"term\": \"modeļa sākotnējā konfigurācijas mainīgo (hiperparametru) vērtības\", \"definition\": \"Konfigurācijas mainīgais, kura vērtību izstrādātājs parasti nosaka patvaļīgi pirms modeļa apmācības.\", \"sentence\":\"Tieši pretēji izstrādātāji sniedz tikai vispārīgas vadlīnijas tam matemātiskajam modelim, kas būtu jāizmanto. Tomēr pēc tam mašīnmācīšanās algoritms veic matemātiskās darbības ar tam dotajiem datiem atbilstoši norādītajam modelim ar mērķi atrast labākās parametru vērtības, kuras nodrošinās precīzāku prognozi, datu klasifikāciju vai datu sadalīšanu klasteros.\", \"language\":\"lv\" },{ \"term\": \"modeļa izeja\", \"definition\": \" Rezultāts, kas tiek iegūts, pielietojot modeli noteiktiem datu objektiem.\", \"sentence\":\"Tieši pretēji izstrādātāji sniedz tikai vispārīgas vadlīnijas tam matemātiskajam modelim, kas būtu jāizmanto. Tomēr pēc tam mašīnmācīšanās algoritms veic matemātiskās darbības ar tam dotajiem datiem atbilstoši norādītajam modelim ar mērķi atrast labākās parametru vērtības, kuras nodrošinās precīzāku prognozi, datu klasifikāciju vai datu sadalīšanu klasteros.\", \"language\":\"lv\" },{ \"term\": \"parametrs (saukts arī par modeļa parametru)\", \"definition\": \"Modeļa iekšējais konfigurācijas mainīgais, kura vērtību apmācības laikā atrod (iegūst) mašīnmācīšanās algoritms.\", \"sentence\":\"Tieši pretēji izstrādātāji sniedz tikai vispārīgas vadlīnijas tam matemātiskajam modelim, kas būtu jāizmanto. Tomēr pēc tam mašīnmācīšanās algoritms veic matemātiskās darbības ar tam dotajiem datiem atbilstoši norādītajam modelim ar mērķi atrast labākās parametru vērtības, kuras nodrošinās precīzāku prognozi, datu klasifikāciju vai datu sadalīšanu klasteros.\", \"language\":\"lv\" },{ \"term\": \"testa kopa\", \"definition\": \"Datu kopas apakškopa, kas tiek izmantota modeļa testēšanā. Testēšana - modeļa darbības pārbaudes process, parasti izmantojot datus, kuri iepriekš netika padoti mašīnmācīšanās algoritmam.\", \"sentence\":\"Tieši pretēji izstrādātāji sniedz tikai vispārīgas vadlīnijas tam matemātiskajam modelim, kas būtu jāizmanto. Tomēr pēc tam mašīnmācīšanās algoritms veic matemātiskās darbības ar tam dotajiem datiem atbilstoši norādītajam modelim ar mērķi atrast labākās parametru vērtības, kuras nodrošinās precīzāku prognozi, datu klasifikāciju vai datu sadalīšanu klasteros.\", \"language\":\"lv\" },{ \"term\": \"testēšana\", \"definition\": \"Modeļa darbības pārbaudes process, parasti izmantojot datus, kuri iepriekš netika padoti mašīnmācīšanās algoritmam.\", \"sentence\":\"Tieši pretēji izstrādātāji sniedz tikai vispārīgas vadlīnijas tam matemātiskajam modelim, kas būtu jāizmanto. Tomēr pēc tam mašīnmācīšanās algoritms veic matemātiskās darbības ar tam dotajiem datiem atbilstoši norādītajam modelim ar mērķi atrast labākās parametru vērtības, kuras nodrošinās precīzāku prognozi, datu klasifikāciju vai datu sadalīšanu klasteros.\", \"language\":\"lv\" },{ \"term\": \"apmācība\", \"definition\": \"Proces, kura laikā tiek noteiktas modeļa parametru (konfigurācijas mainīgo) labākās vērtības un tiek identificētas datos pastāvošas attiecības un struktūrmodeļi.\", \"sentence\":\"Tieši pretēji izstrādātāji sniedz tikai vispārīgas vadlīnijas tam matemātiskajam modelim, kas būtu jāizmanto. Tomēr pēc tam mašīnmācīšanās algoritms veic matemātiskās darbības ar tam dotajiem datiem atbilstoši norādītajam modelim ar mērķi atrast labākās parametru vērtības, kuras nodrošinās precīzāku prognozi, datu klasifikāciju vai datu sadalīšanu klasteros.\", \"language\":\"lv\" },{ \"term\": \"apmācības kopa\", \"definition\": \"Datu kopas apakškopa, kura tiek izmantota modeļa apmācībā. Apmācība – process, kura laikā tiek noteiktas modeļa parametru (konfigurācijas mainīgo) labākās vērtības un tiek identificētas datos pastāvošas attiecības un struktūrmodeļi.\", \"sentence\":\"Tieši pretēji izstrādātāji sniedz tikai vispārīgas vadlīnijas tam matemātiskajam modelim, kas būtu jāizmanto. Tomēr pēc tam mašīnmācīšanās algoritms veic matemātiskas darbības ar tam dotajiem datiem atbilstoši norādītajam modelim ar mērķi atrast labākās parametru vērtības, kuras nodrošinās precīzāku prognozi, datu klasifikāciju vai datu sadalīšanu klasteros.\", \"language\":\"lv\" },{ \"term\": \"precīzāka prognoze\", \"definition\": \"Prognoze, kas nodrošina labāku rezultātu sakarībā ar ievades datumiem.\", \"sentence\":\"Tieši pretēji izstrādātāji sniedz tikai vispārīgas vadlīnijas tam matemātiskajam modelim, kas būtu jāizmanto. Tomēr pēc tam mašīnmācīšanās algoritms veic matemātiskas darbības ar tam dotajiem datiem atbilstoši norādītajam modelim ar mērķi atrast labākās parametru vērtības, kuras nodrošinās precīzāku prognozi, datu klasifikāciju vai datu sadalīšanu klasteros.\", \"language\":\"lv\" },{ \"term\": \"labākā rezultātu\", \"definition\": \"Labākais rezultāts sakarībā ar ievades datumiem.\", \"sentence\":\"Tieši pretēji izstrādātāji sniedz tikai vispārīgas vadlīnijas tam matemātiskajam modelim, kas būtu jāizmanto. Tomēr pēc tam mašīnmācīšanās algoritms veic matemātiskas darbības ar tam dotajiem datiem atbilstoši norādītajam modelim ar mērķi atrast labākās parametru vērtības, kuras nodrošinās precīzāku prognozi, datu klasifikāciju vai datu sadalīšanu klasteros.\", \"language\":\"lv\" },{ \"term\": \"labāka rezultātu\", \"definition\": \"Labākais rezultāts sakarībā ar ievades datumiem.\", \"sentence\":\"Tieši pretēji izstrādātāji sniedz tikai vispārīgas vadlīnijas tam matemātiskajam modelim, kas būtu jāizmanto. Tomēr pēc tam mašīnmācīšanās algoritms veic matemātiskas darbības ar tam dotajiem datiem atbilstoši norādītajam modelim ar mērķi atrast labākās parametru vērtības, kuras nodrošinās precīzāku prognozi, datu klasifikāciju vai datu sadalīšanu klasteros.\", \"language\":\"lv\" },{ \"term\": \"datu klasifikācijas\", \"definition\": \"Proces, kura laikā dati tiek iedalīti noteiktās kategorijās vai klasēs pamatojoties uz dažādiem kritērijiem.\", \"sentence\":\"Tieši pretēji izstrādātāji sniedz tikai vispārīgas vadlīnijas tam matemātiskajam modelim, kas būtu jāizmanto. Tomēr pēc tam mašīnmācīšanās algoritms veic matemātiskas darbības ar tam dotajiem datiem atbilstoši norādītajam modelim ar mērķi atrast labākās parametru vērtības, kuras nodrošinās precīzāku prognozi, datu klasifikāciju vai datu sadalīšanu klasteros.\", \"language\":\"lv\" },{ \"term\": \"datu sadalīšanu klasteros\", \"definition\": \"Proces, kura laikā dati tiek sadalīti dažādās grupās pamatojoties uz līdzības kritērijiem.\", \"sentence\":\"Tieši pretēji izstrādātāji sniedz tikai vispārīgas vadlīnijas tam matemātiskajam modelim, kas būtu jāizmanto. Tomēr pēc tam mašīnmācīšanās algoritms veic matemātiskas darbības ar tam dotajiem datiem atbilstoši norādītajam modelim ar mērķi atrast labākās parametru vērtības, kuras nodrošinās precīzāku prognozi, datu klasifikāciju vai datu sadalīšanu klasteros.\", \"language\":\"lv\" },{ \"term\": \"dažādās grupās\", \"definition\": \"Dažādās grupas, kura veido dažādās kategorijas vai klasēs pamatojoties uz līdzības kritērijiem.\", \"sentence\":\"Tieši pretēji izstrādātāji sniedz tikai vispārīgas vadlīnijas tam matemātiskajam modelim, kas būtu jāizmanto. Tomēr pēc tam mašīnmācīšanās algoritms veic matemātiskas darbības ar tam dotajiem datiem atbilstoši norādītajam modelim ar mērķi atrast labākās parametru vērtības, kuras nodrošinās precīzāku prognozi, datu klasifikāciju vai datu sadalīšanu klasteros.\", \"language\":\"lv\" },{ \"term\": \"līdzības kritērijiem\", \"definition\": \"Kritēriji, kas pamatojas uz līdzības noteikšanai starp dažādām grupām vai kategorijām.\", \"sentence\":\"Tieši pretēji izstrādātāji sniedz tikai vispārīigas vadlīnijas tam matemātiskajam modelim, kas būtu jāizmanto. Tomēr pēc tam mašīnmācīšanās algoritms veic matemātiskas darbības ar tam dotajiem datiem atbilstoši norādītajam modelim ar mērķi atrast labākās parametru vērtības, kuras nodrošinās precīzāku prognozi, datu klasifikāciju vai datu sadalīšanu klasteros.\", \"language\":\"lv\" },{ \"term\": \"dažādām grupām\", \"definition\": \"Dažādām grupām, kuras izveido dažādās kategorijas vai klasēs pamatojoties uz līdzības kritērijiem.\", \"sentence\":\"Tieši pretēji izstrādātāji sniedz tikai vispārīigas vadlīnijas tam matemātiskajam modelim, kas būtu jāizmanto. Tomēr pēc tam mašīnmācīšanās algoritms veic matemātiskas darbības ar tam dotajiem datiem atbilstoši norādītajam modelim ar mērķi atrast labākās parametru vērtības, kuras nodrošinās precīzāku prognozi, datu klasifikāciju vai datu sadalīšanu klasteros.\", \"language\":\"lv\" },{ \"term\": \"dažādās kategorijas\", \"definition\": \"Dažādās kategorijas vai klasēs, kuras izveido pamatojoties uz līdzības kritērijiem.\", \"sentence\":\"Tieši pretēji izstrādātāji sniedz tikai vispārīigas vadlīnijas tam matemātiskajam modelim, kas būtu jāizmanto. Tomēr pēc tam mašīnmācīšanās algoritms veic matemātiskas darbības ar tam dotajiem datiem atbilstoši norādītajam modelim ar mērķi atrast labākās parametru vērtības, kuras nodrošinās precīzāku prognozi, datu klasifikāciju vai datu sadalīšanu klasteros.\", \"language\":\"lv\" },{ \"term\": \"izveido dažādās kategorijas\", \"definition\": \"Izveido dažādās kategorijas vai klasēs pamatojoties uz līdzības kritērijiem.\", \"sentence\":\"Tieši pretēji izstrādātāji sniedz tikai vispārīigas vadlīnijas tam matemātiskajam modelim, kas būtu jāizmanto. Tomēr pēc tam mašīnmācīšanās algoritms veic matemātiskas darbības ar tam dotajiem datiem atbilstoši norādītajam modelim ar mērķi atrast labākās parametru vērtības, kuras nodrošinās precīzāku prognozi, datu klasifikāciju vai datu sadalīšanu klasteros.\", \"language\":\"lv\" },{ \"term\": \"izveido dažādās klasēs\", \"definition\": \"Izveido dažādās klasēs pamatojoties uz līdzības kritērijiem.\", \"sentence\":\"Tieši pretēji izstrādātāji sniedz tikai vispārīigas vadlīnijas tam matemātiskajam modelim, kas būtu jāizmanto. Tomēr pēc tam mašīnmācīšanās algoritms veic matemātiskas darbības ar tam dotajiem datiem atbilstoši norādītajam modelim ar mērķi atrast labākās parametru vērtības, kuras nodrošinās precīzāku prognozi, datu klasifikāciju vai datu sadalīšanu klasteros.\", \"language\":\"lv\" },{ \"term\": \"pamatojoties uz līdzības kritērijiem\", \"definition\": \"Pamatojas uz līdzības noteikšanai starp dažādām grupām vai kategorijām.\", \"sentence\":\"Tieši pretēji izstrādātāji sniedz tikai vispārīigas vadlīnijas tam matemātiskajam modelim, kas būtu jāizmanto. Tomēr pēc tam mašīnmācīšanās algoritms veic matemātiskas darbības ar tam dotajiem datiem atbilstoši norādītajam modelim ar mērķi atrast labākās parametru vērtības, kuras nodrošinās precīzāku prognozi, datu klasifikāciju vai datu sadalīšanu klasteros.\", \"language\":\"lv\" },{ \"term\": \"dažādām grupām\", \"definition\": \"Dažādām grupām, kuras izveido dažādās kategorijas vai klasēs pamatojoties uz līdzības kritērijiem.\", \"sentence\":\"Tieši pretēji izstrādātāji sniedz tikai vispārīigas vadlīnijas tam matemātiskajam modelim, kas būtu jāizmanto. Tomēr pēc tam mašīnmācīšanās algoritms veic matemātiskas darbības ar tam dotajiem datiem atbilstoši norādītajam modelim ar mērķi atrast labākās parametru vērtības, kuras nodrošinās precīzāku prognozi, datu klasifikāciju vai datu sadalīšanu klasteros.\", \"language\":\"lv\" },{ \"term\": \"izveido dažādās kategorijas\", \"definition\": \"Izveido dažādās kategorijas vai klasēs pamatojoties uz līdzības kritērijiem.\", \"sentence\":\"Tieši pretēji izstrādātāji sniedz tikai vispārīigas vadlīnijas tam matemātiskajam modelim, kas būtu jāizmanto. Tomēr pēc tam mašīnmācīšanās algoritms veic matemātiskas darbības ar tam dotajiem datiem atbilstoši norādītajam modelim ar mērķi atrast labākās parametru vērtības, kuras nodrošinās precīzāku prognozi, datu klasifikāciju vai datu sadalīšanu klasteros.\", \"language\":\"lv\" },{ \"term\": \"izveido dažādās klasēs\", \"definition\": \"Izveido dažādās klasēs pamatojoties uz līdzības kritērijiem.\", \"sentence\":\"Tieši pretēji izstrādātāji sniedz tikai vispārīigas vadlīnijas tam matemātiskajam modelim, kas būtu jāizmanto. Tomēr pēc tam mašīnmācīšanās algoritms veic matemātiskas darbības ar tam dotajiem datiem atbilstoši norādītajam modelim ar mērķi atrast labākās parametru vērtības, kuras nodrošinās precīzāku prognozi, datu klasifikāciju vai datu sadalīšanu klasteros.\", \"language\":\"lv\" },{ \"term\": \"pamatojoties uz līdzības kritērijiem\", \"definition\": \"Pamatojas uz līdzības noteikšanai starp dažādām grupām vai kategorijām.\", \"sentence\":\"Tieši pretēji izstrādātāji sniedz tikai vispārīigas vadlīnijas tam matemātiskajam modelim, kas būtu jāizmanto. Tomēr pēc tam mašīnmācīšanās algoritms veic matemātiskas darbības ar tam dotajiem datiem atbilstoši norādītajam modelim ar mērķi atrast labākās parametru vērtības, kuras nodrošinās precīzāku prognozi, datu klasifikāciju vai datu sadalīšanu klasteros.\", \"language\":\"lv\" },{ \"term\": \"izveido dažādās kategorijas\", \"definition\": \"Izveido dažādās kategorijas vai klasēs pamatojoties uz līdzības kritērijiem.\", \"sentence\":\"Tieši pretēji izstrādātāji sniedz tikai vispārīigas vadlīnijas tam matemātiskajam modelim, kas būtu jāizmanto. Tomēr pēc tam mašīnmācīšanās algoritms veic matemātiskas darbības ar tam dotajiem datiem atbilstoši norādītajam modelim ar mērķi atrast labākās parametru vērtības, kuras nodrošinās precīzāku prognozi, datu klasifikāciju vai datu sadalīšanu klasteros.\", \"language\":\"lv\" },{ \"term\": \"izveido dažādās klasēs\", \"definition\": \"Izveido dažādās klasēs pamatojoties uz līdzības kritērijiem.\", \"sentence\":\"Tieši pretēji izstrādātāji sniedz tikai vispārīigas vadlīnijas tam matemātiskajam modelim, kas būtu jāizmanto. Tomēr pēc tam mašīnmācīšanās algoritms veic matemātiskas darbības ar tam dotajiem datiem atbilstoši norādītajam modelim ar mērķi atrast labākās parametru vērtības, kuras nodrošinās precīzāku prognozi, datu klasifikāciju vai datu sadalīšanu klasteros.\", \"language\":\"lv\" },{ \"term\": \"pamatojoties uz līdzības kritērijiem\", \"definition\": \"Pamatojas uz līdzības noteikšanai starp dažādām grupām vai kategorijām.\", \"sentence\":\"Tieši pretēji izstrādātāji sniedz tikai vispārīigas vadlīnijas tam matemātiskajam modelim, kas būtu jāizmanto. Tomēr pēc tam mašīnmācīšanās algoritms veic matemātiskas darbības ar tam dotajiem datiem atbilstoši norādītajam modelim ar mērķi atrast labākās parametru vērtības, kuras nodrošinās precīzāku prognozi, datu klasifikāciju vai datu sadalīšanu klasteros.\", \"language\":\"lv\" },{ \"term\": \"izveido dažādās kategorijas\", \"definition\": \"Izveido dažādās kategorijas vai klasēs pamatojoties uz līdzības kritērijiem.\", \"sentence\":\"Tieši pretēji izstrādātāji sniedz tikai vispārīigas vadlīnijas tam matemātiskajam modelim, kas būtu jāizmanto. Tomēr pēc tam mašīnmācīšanās algoritms veic matemātiskas darbības ar tam dotajiem datiem atbilstoši norādītajam modelim ar mērķi atrast labākās parametru vērtības, kuras nodrošinās precīzāku prognozi, datu klasifikāciju vai datu sadalīšanu klasteros.\", \"language\":\"lv\" },{ \"term\": \"izveido dažādās klasēs\", \"definition\": \"Izveido dažādās klasēs pamatojoties uz līdzības kritērijiem.\", \"sentence\":\"Tieši pretēji izstrādātāji"
+    ]
+  }
+}

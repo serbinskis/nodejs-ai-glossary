@@ -5,6 +5,7 @@ import re
 import lmstudio as lms
 import pandas as pd
 import stanza
+import requests
 from functools import lru_cache
 
 
@@ -40,6 +41,7 @@ def run_evaluation():
 
     results = []
     llm_only = lms.list_downloaded_models("llm")
+    api_models = requests.get("http://localhost:1234/api/v1/models").json()["models"]
 
     search_path = os.path.join(output_folder, "LAT_*.json")
     for file_path in glob.glob(search_path):
@@ -77,8 +79,10 @@ def run_evaluation():
             chunks = debug.get('chunkCount', 0)
             full_name = impl.split('-', 1)[-1].split('@')[0]
             model_info = next((m.info for m in llm_only if full_name == m.info.model_key), full_name)
+            api_info = next((m for m in api_models if full_name == m["key"]), {})
             match = re.search(r"(\d+\.?\d*)", model_info.params_string)
             if match: params = float(match.group(1))
+            if (model_name == "lfm2-24b-a2b"): params = 24.0
 
             row = {
                 "filename": os.path.basename(file_path),
@@ -103,7 +107,9 @@ def run_evaluation():
                 "contextLength": debug.get('contextLength', 0),
                 "temperature": debug.get('temperature', 0),
                 "mvision": model_info.vision or False,
-                "mtools": model_info.trained_for_tool_use or False
+                "mtools": model_info.trained_for_tool_use or False,
+                "mreasoning": api_info.get("capabilities", {}).get("reasoning", {}).get("default") == "on",
+                "has_any_capability": any([model_info.vision, model_info.trained_for_tool_use, api_info.get("capabilities", {}).get("reasoning", {}).get("default") == "on"])
             }
             results.append(row)
 

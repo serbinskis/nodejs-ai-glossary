@@ -5,6 +5,7 @@ import re
 import lmstudio as lms
 import pandas as pd
 import stanza
+import requests
 from functools import lru_cache
 
 
@@ -80,6 +81,7 @@ def run_evaluation():
         gold_set = {normalize_term(t) for t in gold_terms_raw if t}
 
     llm_only = lms.list_downloaded_models("llm")
+    api_models = requests.get("http://localhost:1234/api/v1/models").json()["models"]
     results = []
     aggregated = {}
 
@@ -87,7 +89,8 @@ def run_evaluation():
     if not files: print("No LAT_*.json files found.")
     if not files: return
 
-    for file_path in files:
+    for i, file_path in enumerate(files, 1):
+        print(f"Processing {i}/{len(files)}: {os.path.basename(file_path)}")
         with open(file_path, 'r', encoding='utf-8') as f:
             try: data = json.load(f)
             except: continue
@@ -118,6 +121,7 @@ def run_evaluation():
 
         full_name = impl.split('-', 1)[-1].split('@')[0]
         model_info = next((m.info for m in llm_only if full_name == m.info.model_key), None)
+        api_info = next((m for m in api_models if full_name == m["key"]), {})
 
         display = model_info.display_name
         match = re.search(r"(\d+\.?\d*)", model_info.params_string)
@@ -149,7 +153,9 @@ def run_evaluation():
             "temperature": debug.get('temperature', 0),
             "repeat_penalty": debug.get('repeatPenalty', 0),
             "mvision": model_info.vision or False,
-            "mtools": model_info.trained_for_tool_use or False
+            "mtools": model_info.trained_for_tool_use or False,
+            "mreasoning": api_info.get("capabilities", {}).get("reasoning", {}).get("default") == "on",
+            "has_any_capability": any([model_info.vision, model_info.trained_for_tool_use, api_info.get("capabilities", {}).get("reasoning", {}).get("default") == "on"])
         }
 
         results.append(row)

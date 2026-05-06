@@ -174,20 +174,28 @@ if __name__ == "__main__":
         ax.set_xticks(range(0, 71, 5))
         ax.legend()
 
-    fig, axes = plt.subplots(2, 4, figsize=(24, 10))
+    fig, axes = plt.subplots(4, 4, figsize=(22, 14))
 
     plot_group(axes[0, 0], eng_df, "mvision", "Vision funkcionalitātes esamības ietekme uz F1 (ENG)", true_color="gold", false_color="#444444" )
     plot_group(axes[0, 1], lat_df, "mvision", "Vision funkcionalitātes esamības ietekme uz F1 (LAT)", true_color="gold", false_color="#444444")
-
     plot_group(axes[1, 0], eng_df, "mtools", "Tools funkcionalitātes esamības ietekme uz F1 (ENG)", true_color="blue", false_color="#444444")
     plot_group(axes[1, 1], lat_df, "mtools", "Tools funkcionalitātes esamības ietekme uz F1 (LAT)", true_color="blue", false_color="#444444")
 
     plot_group(axes[0, 2], eng_df, "mvision", "Vision funkcionalitātes esamības ietekme uz kļūdu (ENG)", true_color="gold", false_color="#444444", metric="error")
     plot_group(axes[0, 3], lat_df, "mvision", "Vision funkcionalitātes esamības ietekme uz kļūdu (LAT)", true_color="gold", false_color="#444444", metric="error")
-
     plot_group(axes[1, 2], eng_df, "mtools", "Tools funkcionalitātes esamības ietekme uz kļūdu (ENG)", true_color="blue", false_color="#444444", metric="error")
     plot_group(axes[1, 3], lat_df, "mtools", "Tools funkcionalitātes esamības ietekme uz kļūdu (LAT)", true_color="blue", false_color="#444444", metric="error")
 
+    plot_group(axes[2, 0], eng_df, "mreasoning", "Reasoning funkcionalitātes esamības ietekme uz F1 (ENG)", "green", "#444444")
+    plot_group(axes[2, 1], lat_df, "mreasoning", "Reasoning funkcionalitātes esamības ietekme uz F1 (LAT)", "green", "#444444")
+    plot_group(axes[2, 2], eng_df, "mreasoning", "Reasoning funkcionalitātes esamības ietekme uz kļūdu (ENG)", "green", "#444444", metric="error")
+    plot_group(axes[2, 3], lat_df, "mreasoning", "Reasoning funkcionalitātes esamības ietekme uz kļūdu (LAT)", "green", "#444444", metric="error")
+
+    plot_group(axes[3, 0], eng_df, "has_any_capability", "Jebkuras funkcionalitātes esamības ietekme uz F1 (ENG)", "magenta", "#444444")
+    plot_group(axes[3, 1], lat_df, "has_any_capability", "Jebkuras funkcionalitātes esamības ietekme uz F1 (LAT)", "magenta", "#444444")
+    plot_group(axes[3, 2], eng_df, "has_any_capability", "Jebkuras funkcionalitātes esamības ietekme uz kļūdu (ENG)", "magenta", "#444444", metric="error")
+    plot_group(axes[3, 3], lat_df, "has_any_capability", "Jebkuras funkcionalitātes esamības ietekme uz kļūdu (LAT)", "magenta", "#444444", metric="error")
+
     plt.tight_layout()
-    plt.savefig("LAT_ENG_metrics_vision_tools.png", dpi=300)
+    plt.savefig("LAT_ENG_metrics_capabilities.png", dpi=300)
     plt.show()

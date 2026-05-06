@@ -17,7 +17,7 @@
 - Salīdzinājuma grafiku, kurā tika salīdzinātas visu modeļu kļūdas, F1 mērs un laiks atkarībā no parametru skaita, var aplūkot failā ar nosaukumu [LAT_ENG_metrics.png](exper1/eval/LAT_ENG_metrics.png).
 
 <p align="center"><img src="exper1/eval/LAT_ENG_metrics.png"></p>
-<p align="center"><img src="exper1/eval/LAT_ENG_metrics_vision_tools.png"></p>
+<p align="center"><img src="exper1/eval/LAT_ENG_metrics_capabilities.png"></p>
 
 ## Eksperiments 2 A
 Šajā eksperimentā tika manuāli salīdzināti divu modeļu rezultāti: Gemma 2 9B un Gemma 2 27B.

@@ -98,7 +98,7 @@ async function runExperiment1(filename: string) {
 async function runExperiment2(filename: string) {
     const models = await getLLMModels();
     const text = await getInputText(filename);
-    const allowed = ["qwen/qwen3-vl-4b", "google/gemma-2-9b", "google/gemma-2-27b", "google/gemma-3-27b", "google/gemma-4-e4b", "google/gemma-3n-e4b"];
+    const allowed = ["qwen/qwen3-vl-4b", "google/gemma-2-9b", "google/gemma-2-27b", "google/gemma-3-27b", "google/gemma-4-e4b", "google/gemma-3n-e4b", "google/gemma-3-12b", "mistralai/mistral-nemo-instruct-2407"];
     const filtered = models.filter(m => allowed.includes(m.modelKey));
 
     const runSubExperiment = async (modelKey: string, taskName: string, description: string) => {
